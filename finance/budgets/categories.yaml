@@ -1,0 +1,8 @@
+prototype:
+  cap: 200
+  notes: PCB fab, assembly, parts for EVT
+tooling:
+  cap: 200
+licenses:
+  cap: 50
+
