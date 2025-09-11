@@ -21,12 +21,7 @@ High-level needs and constraints for the overall system.
 - **SR-5:** The gateway shall have a buzzer.
 - **SR-6:** The gateway shall have a button to allow a hard factory reset and to pair/unpair wireless sensors.
 - **SR-7:** The gateway shall have three LEDs—green, yellow, and red—to indicate its status.
-- **SR-8:** The gateway's red LED shall always be ON in case of a low battery condition.
-- **SR-9:** The gateway's red LED shall flash in case of an alert condition.
-- **SR-10:** The gateway's yellow LED shall indicate when sensors are being added.
-- **SR-11:** The gateway's yellow LED shall indicate when no sensors are being monitored.
-- **SR-12:** The gateway's yellow LED shall indicate when one or more sensors have low battery.
-- **SR-13:** The gateway's green LED shall flash as a heartbeat, indicating the gateway is working properly and is operational.
+- **SR-8:** The gateway shall use LEDs to indicate: heartbeat (green), configuration/low-battery status (yellow), and alerts/low-battery (red). Detailed behavior is defined in FR section.
 
 ---
 
@@ -51,11 +46,12 @@ Detailed functions the system must perform.
 
 - **FR-10:** In monitoring mode, the gateway shall detect open and close events of the main door.
 
-- **FR-11:** In monitoring mode, if the main door is opened and any window is also open, the gateway shall trigger an alert while the door remains open.
-
-- **FR-12:** In monitoring mode, if the main door is closed, the gateway shall suspend any active alert, regardless of the window states.
-
-- **FR-13:** In monitoring mode, if the main door is open and the alert is active, the gateway shall suspend the alert if all windows are closed.
+- **FR-11:** In monitoring mode, the gateway shall evaluate window states whenever the main door changes state:
+  - If the main door is **opened**:
+    - If one or more windows are **OPEN** → the gateway shall trigger an alert (buzzer + flashing red LED) and keep it active while the door remains open.
+    - If **all windows are CLOSED** → the gateway shall not trigger an alert and shall blink the green LED once to indicate all clear.
+  - If the main door is **closed**:
+    - The gateway shall immediately suspend any active alert, regardless of the window states.
 
 - **FR-14:** The alert signal shall consist of a continuous buzzer and the red LED flashing every 200 ms with a 50% duty cycle.
 
@@ -90,14 +86,16 @@ Detailed functions the system must perform.
 Qualities of the system, not directly tied to functions.
 
 - **NFR-1 (Performance):** The gateway shall trigger an alert within 500 ms after the main door is opened.
+- **NFR-1 (Performance):** The system shall support reliable operation over at least 20 m indoors through 2 walls.
 - **NFR-2 (Reliability):** The sensor battery life shall be at least 3 years.
 - **NFR-3 (Reliability):** The gateway battery life shall be at least 1 year.
+- **NFR-4 (Reliability):** The buzzer acoustic level shall be ~85–95 dB at 1 m to ensure usability.
 - **NFR-4 (Reliability):** The sensor shall be able to send the data packet at least 3 times per open/close event.
 - **NFR-5 (Reliability):** The gateway battery shall be able to operate for at least 7 more days after a low battery alert.
 - **NFR-6 (Reliability):** The gateway shall have a watchdog to perform a hard RESET in case of issues.
 - **NFR-7 (Maintainability):** The sensor shall not have any MCU or firmware. (Note: This is a strong constraint; ensure feasibility for your use case.)
 - **NFR-8 (Maintainability):** The gateway shall allow pairing and unpairing of sensors.
-- **NFR-9 (Maintainability):** The gateway shall use no more than two AA batteries.
+- **NFR-9 (Maintainability):** The gateway shall use no more than two AA batteries, alkaline or NiMH.
 - **NFR-10 (Maintainability):** If the gateway has batteries and is being supplied by mains power, it shall switch to battery mode in case of a power failure. The switch shall be seamless, with no interruption to system operation.
 - **NFR-11 (Usability):** End-user configuration shall be performed via a push button and three LEDs.
 - **NFR-12 (Usability):** The end-user shall assign numbers to each sensor after adding it to the gateway, to identify which one needs battery replacement.
