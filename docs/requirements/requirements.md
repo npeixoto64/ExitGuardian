@@ -33,7 +33,7 @@ Detailed functions the system must perform.
 - **FR-2:** The sensor data packet shall include the battery status and the event type (open or close).
 - **FR-3:** Each sensor shall have a unique identifier (ID).
 - **FR-4:** The gateway shall indicate it is operating properly by flashing the green LED for 100 ms every two seconds.
-- **FR-5:** The gateway shall support three modes of operation: waiting for configuration, listening for new sensors, and monitoring.
+- **FR-5:** The gateway shall support four modes of operation: waiting for configuration, listening for new sensors, remove sensors and monitoring.
 - **FR-6:** The gateway shall enter waiting-for-configuration mode when there are no sensors attached.
 - **FR-7:** In waiting-for-configuration mode, the yellow LED shall remain ON continuously.
 - **FR-8:** After a factory RESET event, the gateway shall enter waiting-for-configuration mode.
@@ -50,14 +50,19 @@ Detailed functions the system must perform.
 - **FR-14:** If the gateway push button is double-pressed within a 1-second time frame, the gateway shall enter listening-for-new-sensors mode.
 - **FR-15:** In listening-for-new-sensors mode, the gateway shall wait up to 20 seconds for a new sensor packet. During this period, the yellow LED shall flash every 500 ms with a 50% duty cycle, and the buzzer shall beep every second.
 - **FR-16:** If no new sensor signal is received within 20 seconds in listening-for-new-sensors mode, the gateway shall exit this mode, return the yellow LED to its previous state, and turn the buzzer OFF.
-- **FR-17:** If a signal from a new sensor ID is received in listening-for-new-sensors mode, the gateway shall add it to the monitored sensors list, turn the yellow LED OFF, and sound the buzzer continuously for 3 seconds.
+- **FR-17:** If a signal from a new sensor ID is received in listening-for-new-sensors mode, the gateway shall add it to the monitored sensors list, turn the yellow LED OFF, and sound the buzzer continuously for 2 seconds.
 - **FR-18:** If a known sensor from the monitored list sends a signal in listening-for-new-sensors mode, the gateway shall update its status and continue listening until the 20-second period expires.
 - **FR-19:** In listening-for-new-sensors mode, inserting the battery or changing the status of a sensor (open/close event) shall be sufficient to add it to the gateway.
-- **FR-20:** If any sensor reports a low battery, the gateway shall indicate this condition by flashing the yellow LED synchronized with the green heartbeat LED. 
+- **FR-20:** If any sensor reports a low battery, the gateway shall indicate this condition by flashing the yellow LED synchronized with the green heartbeat LED.
   - This indication means that all sensor batteries should be replaced.
   - If no sensor has reported a low battery, the yellow LED shall remain OFF in normal monitoring mode.
-- **FR-21:** If the gateway push button is pressed for more than 5 seconds, all LEDs shall start flashing; when the push button is released, a factory RESET shall occur.
-- **FR-22:** After a factory RESET, the gateway shall have no sensors attached.
+- **FR-21:** If the gateway push button is triple-pressed within a 2-second time frame, the gateway shall enter “remove-sensor” mode.
+  - In this mode, the yellow LED shall flash rapidly (e.g., every 200 ms) to indicate active removal.
+  - The gateway shall wait up to 20 seconds for a signal from a known sensor.
+  - If a signal is received from a known sensor ID, the gateway shall remove that sensor from the monitored list, stop flashing the yellow LED, and sound the buzzer continuously for 2 seconds to confirm removal.
+  - If no known sensor signal is received within 20 seconds, the gateway shall exit remove-sensor mode and return the yellow LED to its previous state.
+- **FR-22:** If the gateway push button is pressed for more than 5 seconds, all LEDs shall start flashing; when the push button is released, a factory RESET shall occur.
+- **FR-23:** After a factory RESET, the gateway shall have no sensors attached.
 
 ---
 
@@ -77,8 +82,12 @@ Qualities of the system, not directly tied to functions.
 - **NFR-10 (Maintainability):** The gateway shall use no more than two AA batteries, alkaline or NiMH.
 - **NFR-11 (Maintainability):** If the gateway has batteries and is being supplied by mains power, it shall switch to battery mode in case of a power failure. The switch shall be seamless, with no interruption to system operation.
 - **NFR-12 (Usability):** End-user configuration shall be performed via a push button and three LEDs.
-- **NFR-13 (Usability):** The end-user shall assign numbers to each sensor after adding it to the gateway, to identify which one needs battery replacement.
+- **NFR-13 (Usability):** The gateway shall maintain a stable list of paired sensors in non-volatile memory (NVM) to ensure consistent operation after power loss.
+  - The system shall not require the user to track individual sensor numbers for maintenance.
+  - When a low-battery condition is reported, the user is instructed to replace the batteries of all sensors.
 - **NFR-14 (Usability):** The gateway shall save the status of each sensor in non-volatile memory (NvM).
+
+Include te unpairing functionality and it's done. Later ask ChatGPT to create the product with this input.
 
 ---
 
@@ -90,7 +99,6 @@ Qualities of the system, not directly tied to functions.
 - The gateway may be powered by mains (option A) or batteries (option B).
 - The system shall operate within standard indoor environmental conditions (0–40°C, 10–90% RH, non-condensing).
 - The sensor shall not have any MCU or firmware.
-- When a sensor has low battery it's recommended to replace the batteries of all sensors.
 
 ---
 
