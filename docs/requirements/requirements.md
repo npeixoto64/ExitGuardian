@@ -118,6 +118,39 @@ Qualities of the system, not directly tied to functions.
 
 ## 8. Traceability
 
-(If needed later: map requirements → design → implementation → tests.)
+
+---
+
+## 9. Glossary
+
+**AC/DC:** Alternating Current/Direct Current. Refers to the two types of electrical power supply.
+
+**Buzzer:** An electronic signaling device that produces a sound, used for alerts.
+
+**CE Marking:** Certification indicating conformity with health, safety, and environmental protection standards for products sold within the European Economic Area.
+
+**Duty Cycle:** The percentage of one period in which a signal or system is active.
+
+**Factory RESET:** A process that restores the device to its original settings, removing all paired sensors and user configurations.
+
+**Gateway:** The central device that receives data from wireless sensors and manages alerts and user interaction.
+
+**LED:** Light Emitting Diode. Used as an indicator for system status.
+
+**Low Voltage Directive:** European directive for electrical equipment designed for use within certain voltage limits.
+
+**MCU:** Microcontroller Unit. A small computer on a single integrated circuit.
+
+**NVM / NvM:** Non-Volatile Memory. Memory that retains data when power is removed.
+
+**NiMH:** Nickel-Metal Hydride. A type of rechargeable battery.
+
+**RF:** Radio Frequency. Used for wireless communication between sensors and the gateway.
+
+**RoHS / REACH:** European Union directives for restricting hazardous substances and regulating chemicals in products.
+
+**Sensor:** A wireless device that detects window or door open/close events and transmits status to the gateway.
+
+**Watchdog:** A hardware or software timer that triggers a system reset if the main program fails to operate correctly.
 
 ---
