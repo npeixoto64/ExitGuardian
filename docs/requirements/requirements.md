@@ -20,7 +20,7 @@ High-level needs and constraints for the overall system.
 - **SR-4:** The gateway shall support both power supply options: replaceable battery and AC/DC connection to the main power socket (230V AC). Both options must be available simultaneously, and the system shall automatically switch to battery power in case of main power failure.
 - **SR-5:** The gateway shall have a buzzer.
 - **SR-6:** The gateway shall have a button to allow a hard factory reset and to pair/unpair wireless sensors.
-- **SR-7:** The gateway shall have three LEDs—green, yellow, and red—to indicate its status.
+- **SR-7:** The gateway shall have three LEDs (green, yellow, and red) to indicate its status.
 - **SR-8:** The gateway shall use LEDs to indicate: heartbeat (green), configuration/low-battery status (yellow), and alerts/low-battery (red). Detailed behavior is defined in the FR section.
 
 ---
@@ -63,6 +63,7 @@ Detailed functions the system must perform.
   - If no known sensor signal is received within 20 seconds, the gateway shall exit remove-sensor mode and return the yellow LED to its previous state.
 - **FR-22:** If the gateway push button is pressed for more than 5 seconds, all LEDs shall start flashing; when the push button is released, a factory RESET shall occur.
 - **FR-23:** After a factory RESET, the gateway shall have no sensors attached.
+- **FR-24:** If both gateway and sensor low-battery conditions occur simultaneously, both indications (red ON + yellow flashing) shall be active.
 
 ---
 
@@ -71,7 +72,7 @@ Detailed functions the system must perform.
 Qualities of the system, not directly tied to functions.
 
 - **NFR-1 (Performance):** The gateway shall trigger an alert within 500 ms after the main door is opened.
-- **NFR-2 (Performance):** The system shall support reliable operation over at least 20 m indoors through 2 walls.
+- **NFR-2 (Performance):** The system shall support reliable operation over at least 20 m indoors through 2 concrete walls, 20 cm width.
 - **NFR-3 (Reliability):** The sensor battery life shall be at least 3 years.
 - **NFR-4 (Reliability):** The gateway battery life shall be at least 1 year.
 - **NFR-5 (Reliability):** The buzzer acoustic level shall be ~85–95 dB at 1 m to ensure usability.
@@ -85,20 +86,18 @@ Qualities of the system, not directly tied to functions.
 - **NFR-13 (Usability):** The gateway shall maintain a stable list of paired sensors in non-volatile memory (NVM) to ensure consistent operation after power loss.
   - The system shall not require the user to track individual sensor numbers for maintenance.
   - When a low-battery condition is reported, the user is instructed to replace the batteries of all sensors.
-- **NFR-14 (Usability):** The gateway shall save the status of each sensor in non-volatile memory (NvM).
-
-Include te unpairing functionality and it's done. Later ask ChatGPT to create the product with this input.
+- **NFR-14 (Usability):** The gateway shall save the status of each sensor in NvM (Non-volatile Memory).
 
 ---
 
 ## 5. System Assumptions & Constraints
 
 - Security is not a critical factor. No tamper detection or advanced security features are included.
-- If the user wants to remove a sensor, the user should perform a factory reset and add all sensors again.
+- It's not possible to know, at least, directly, which sensor has low battery.
 - The sensor does not have any user interface other than battery insertion.
 - The gateway may be powered by mains (option A) or batteries (option B).
 - The system shall operate within standard indoor environmental conditions (0–40°C, 10–90% RH, non-condensing).
-- The sensor shall not have any MCU or firmware.
+- The sensor shall use a low-power RF encoder or equivalent solution; no complex MCU firmware is required.
 
 ---
 
