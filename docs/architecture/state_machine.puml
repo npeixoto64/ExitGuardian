@@ -1,0 +1,38 @@
+@startuml State Machine
+[*] --> WAIT_CFG : No sensors paired
+
+state WAIT_CFG {
+  YELLOW=ON;
+  GREEN heartbeat;
+  RF/ignore except pairing;
+}
+
+WAIT_CFG --> PAIR_LISTEN : Button double-press (<=1s)
+MONITOR --> PAIR_LISTEN : Button double-press (<=1s)
+
+state PAIR_LISTEN {
+  :YELLOW blink 500ms;\nBUZZER beep 1Hz;
+  RF(new ID) / add ID; BUZZER 2s; YELLOW=OFF; -> MONITOR
+  RF(known ID) / update status; (stay)
+  after 20s / exit -> (prev state)
+}
+
+MONITOR : YELLOW=OFF;\nGREEN heartbeat 2s 100ms
+WAIT_CFG --> MONITOR : ≥1 sensor paired
+MONITOR --> REMOVE_LISTEN : Button triple-press (<=2s)
+
+state REMOVE_LISTEN {
+  :YELLOW fast blink 200ms;
+  RF(known ID) / remove ID; BUZZER 2s; -> MONITOR
+  after 20s / exit -> MONITOR
+}
+
+MONITOR --> RESET_PENDING : Button press >5s
+WAIT_CFG --> RESET_PENDING : Button press >5s
+
+state RESET_PENDING {
+  :ALL LEDs flash;
+  release / Factory RESET;\nClear NVM;\n-> WAIT_CFG
+}
+
+@enduml

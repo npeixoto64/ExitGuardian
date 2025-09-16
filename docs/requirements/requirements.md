@@ -118,7 +118,6 @@ Qualities of the system, not directly tied to functions.
 
 ## 8. Traceability
 
-
 ---
 
 ## 9. Glossary

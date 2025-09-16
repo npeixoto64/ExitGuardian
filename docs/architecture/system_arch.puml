@@ -1,0 +1,16 @@
+@startuml System Architecture
+skinparam componentStyle rectangle
+skinparam defaultFontName Monospace
+
+
+cloud "Wireless Sensors (n≥1)" as S {
+component "Sensor 1" as S1
+component "Sensor 2" as S2
+component "Sensor N" as Sn
+}
+
+
+S1 -down-> [Gateway] : 868MHz RF (ID, EVT, Batt)
+S2 -down-> [Gateway] : 868MHz RF (ID, EVT, Batt)
+Sn -down-> [Gateway] : 868MHz RF (ID, EVT, Batt)
+@enduml
