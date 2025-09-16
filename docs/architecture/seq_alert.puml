@@ -22,7 +22,6 @@ MCU -> LEDG : blink once
 end
 
 
-over RFRX,SENS : (later) window state updates arrive
 SENS -> RFRX : RF(ID, EVT=CLOSE) ×3
 RFRX -> MCU : Packet(ID, CLOSE)
 MCU -> MCU : update window state

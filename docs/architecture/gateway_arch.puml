@@ -21,6 +21,6 @@ node "Gateway" as GW {
 [RF Receiver 868MHz] -down-> [MCU + NvM]
 [Button] -down-> [MCU + NvM]
 [LEDs: G/Y/R] -down-> [MCU + NvM]
-[Buzzer] -right-> [MCU + NvM]
+[Buzzer] -left-> [MCU + NvM]
 [Power Mux\n(+5V DC + 2xAA)] -down-> [MCU + NvM] : 3.3V
 @enduml
