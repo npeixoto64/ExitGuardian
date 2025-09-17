@@ -1,38 +1,51 @@
 @startuml State Machine
 [*] --> WAIT_CFG : No sensors paired
-
-state WAIT_CFG {
-  YELLOW=ON;
-  GREEN heartbeat;
-  RF/ignore except pairing;
-}
-
+WAIT_CFG : GREEN heartbeat 2s 100ms
+WAIT_CFG : YELLOW=ON;
+WAIT_CFG : RF/ignored;
 WAIT_CFG --> PAIR_LISTEN : Button double-press (<=1s)
-MONITOR --> PAIR_LISTEN : Button double-press (<=1s)
-
-state PAIR_LISTEN {
-  :YELLOW blink 500ms;\nBUZZER beep 1Hz;
-  RF(new ID) / add ID; BUZZER 2s; YELLOW=OFF; -> MONITOR
-  RF(known ID) / update status; (stay)
-  after 20s / exit -> (prev state)
-}
-
-MONITOR : YELLOW=OFF;\nGREEN heartbeat 2s 100ms
 WAIT_CFG --> MONITOR : ≥1 sensor paired
-MONITOR --> REMOVE_LISTEN : Button triple-press (<=2s)
-
-state REMOVE_LISTEN {
-  :YELLOW fast blink 200ms;
-  RF(known ID) / remove ID; BUZZER 2s; -> MONITOR
-  after 20s / exit -> MONITOR
-}
-
-MONITOR --> RESET_PENDING : Button press >5s
 WAIT_CFG --> RESET_PENDING : Button press >5s
 
-state RESET_PENDING {
-  :ALL LEDs flash;
-  release / Factory RESET;\nClear NVM;\n-> WAIT_CFG
+MONITOR : GREEN heartbeat 2s 100ms
+MONITOR : YELLOW=OFF
+MONITOR : RED=OFF
+MONITOR --> REMOVE_LISTEN : Button triple-press (<=2s)
+MONITOR --> PAIR_LISTEN : Button double-press (<=1s)
+MONITOR --> RESET_PENDING : Button press >5s
+MONITOR --> ALERT : door open & windows open > 0 (from NvM)
+
+ALERT : GREEN heartbeat 2s 100ms
+ALERT : RED=ON
+ALERT --> MONITOR : door closed || all windows closed (from NvM)
+ALERT --> RESET_PENDING : Button press >5s
+
+state PAIR_LISTEN {
+  [*] --> Listening_add
+  Listening_add : GREEN heartbeat 2s 100ms
+  Listening_add : YELLOW blink 500ms
+  Listening_add : BUZZER beep 1Hz
+  Listening_add --> RF_new_ID : new sensor ID
+  RF_new_ID : set BUZZER 2s
+  RF_new_ID : YELLOW=OFF
+  Listening_add --> MONITOR : after 20s
+  RF_new_ID --> MONITOR
 }
 
+state REMOVE_LISTEN {
+  [*] --> Listening_remove
+  Listening_remove : GREEN heartbeat 2s 100ms
+  Listening_remove : YELLOW fast blink 200ms
+  Listening_remove : BUZZER beep 1Hz
+  Listening_remove --> RF_remove_ID : remove sensor ID
+  RF_remove_ID : set BUZZER 2s
+  RF_remove_ID : YELLOW=OFF
+  Listening_remove --> MONITOR : after 20s
+  RF_remove_ID --> MONITOR
+  RF_remove_ID --> WAIT_CFG : no sensors paired
+}
+
+RESET_PENDING : ALL LEDs flash
+RESET_PENDING : Clear NVM
+RESET_PENDING --> WAIT_CFG : on button release
 @enduml
