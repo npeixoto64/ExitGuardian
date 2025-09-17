@@ -34,14 +34,14 @@ This repository contains the architecture diagrams for the Exit Guardian system,
 - RF at 868 MHz EU ISM, short event-driven packets.
 - Gateway has wired reed for main door, RF for windows/outside doors.
 - UI: Button with patterns (double ≤1s, triple ≤2s, long >5s), LEDs (G/Y/R), and buzzer.
-- Power: AC/DC + 2×AA with seamless switchover.
+- Power: DC/DC 5 to 3.3 V + 2×AA with seamless switchover.
 
 ## Traceability (short)
 - FR-5, FR-14–FR-23 → `state_machine.puml`
 - FR-10, FR-11, FR-12, FR-24 → `seq_alert.puml`
 - FR-14–FR-19 → `seq_pairing.puml`
 - FR-21 → `seq_remove.puml`
-- SR-1..SR-8 → `architecture.puml`
+- SR-1..SR-8 → `system_arch.puml`
 
 ````
 
