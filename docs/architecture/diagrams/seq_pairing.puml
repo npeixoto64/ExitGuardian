@@ -1,0 +1,35 @@
+@startuml Sequence: Pair a New Sensor
+skinparam defaultFontName Monospace
+actor User
+participant Button as BTN
+participant "Gateway MCU" as MCU
+participant "LED Y" as LEDY
+participant Buzzer
+participant "RF Rx" as RFRX
+participant "New Sensor" as SENS
+
+
+User -> BTN : double-press (≤1s)
+BTN -> MCU : INT(ButtonPattern=Double)
+activate MCU
+MCU -> LEDY : blink 500ms @50%
+MCU -> Buzzer : beep 1Hz
+MCU -> RFRX : enable pairing window (20s)
+
+
+SENS -> RFRX : RF(ID=new, EVT, Batt) ×3
+RFRX -> MCU : Packet(ID=new)
+MCU -> MCU : add to paired list (NVM)
+MCU -> LEDY : OFF
+MCU -> Buzzer : ON 2s
+MCU -> RFRX : disable pairing window
+MCU -> MCU : switch state → MONITOR
+
+alt Timeout (20s)
+MCU -> LEDY : restore previous state
+MCU -> RFRX : disable remove window
+MCU -> MCU : state → MONITOR
+end
+
+deactivate MCU
+@enduml

@@ -1,0 +1,26 @@
+@startuml Gateway Architecture
+skinparam componentStyle rectangle
+skinparam defaultFontName Monospace
+skinparam linetype ortho
+skinparam nodesep 150
+skinparam ranksep 100
+
+
+node "Gateway" as GW {
+[MCU + NvM]
+[RF Receiver 868MHz]
+[Button]
+[LEDs: G/Y/R]
+[Buzzer]
+[Power Mux\n(+5V DC + 2xAA)]
+[Door Sensor (Reed)]
+}
+
+
+[Door Sensor (Reed)] -right-> [MCU + NvM] : GPIO
+[RF Receiver 868MHz] -down-> [MCU + NvM]
+[Button] -down-> [MCU + NvM]
+[LEDs: G/Y/R] -down-> [MCU + NvM]
+[Buzzer] -left-> [MCU + NvM]
+[Power Mux\n(+5V DC + 2xAA)] -down-> [MCU + NvM] : 3.3V
+@enduml

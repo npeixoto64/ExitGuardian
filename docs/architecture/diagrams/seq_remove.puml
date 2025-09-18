@@ -1,0 +1,36 @@
+@startuml Sequence: Remove a Sensor
+skinparam defaultFontName Monospace
+actor User
+participant Button as BTN
+participant "Gateway MCU" as MCU
+participant "LED Y" as LEDY
+participant Buzzer
+participant "RF Rx" as RFRX
+participant "Paired Sensor" as SENS
+
+
+User -> BTN : triple-press (≤2s)
+BTN -> MCU : INT(ButtonPattern=Triple)
+activate MCU
+MCU -> LEDY : fast blink 200ms
+MCU -> RFRX : enable remove window (20s)
+
+
+SENS -> RFRX : RF(ID=known, EVT) ×1..3
+RFRX -> MCU : Packet(ID=known)
+MCU -> MCU : remove from paired list (NVM)
+MCU -> LEDY : OFF
+MCU -> Buzzer : ON 2s
+MCU -> RFRX : disable remove window
+MCU -> MCU : state → MONITOR
+
+
+alt Timeout (20s)
+MCU -> LEDY : restore previous state
+MCU -> RFRX : disable remove window
+MCU -> MCU : state → MONITOR
+end
+
+
+deactivate MCU
+@enduml

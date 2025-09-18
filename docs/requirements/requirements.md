@@ -17,7 +17,7 @@ High-level needs and constraints for the overall system.
 - **SR-1:** The system shall be composed of one or more wireless sensors and a gateway.
 - **SR-2:** The wireless sensors shall send the status of the window to the gateway upon an open or close event.
 - **SR-3:** The wireless sensors shall be powered by a replaceable battery.
-- **SR-4:** The gateway shall support both power supply options: replaceable battery and AC/DC connection to the main power socket (230V AC). Both options must be available simultaneously, and the system shall automatically switch to battery power in case of main power failure.
+- **SR-4:** The gateway shall support both power supply options: replaceable battery and +5V DC. Both options must be available simultaneously, and the system shall automatically switch to battery power in case of main power failure.
 - **SR-5:** The gateway shall have a buzzer.
 - **SR-6:** The gateway shall have a button to allow a hard factory reset and to pair/unpair wireless sensors.
 - **SR-7:** The gateway shall have three LEDs (green, yellow, and red) to indicate its status.
@@ -95,7 +95,7 @@ Qualities of the system, not directly tied to functions.
 - Security is not a critical factor. No tamper detection or advanced security features are included.
 - It's not possible to know, at least, directly, which sensor has low battery.
 - The sensor does not have any user interface other than battery insertion.
-- The gateway may be powered by mains (option A) or batteries (option B).
+- The gateway may be powered by 5V DC jack or batteries.
 - The system shall operate within standard indoor environmental conditions (0–40°C, 10–90% RH, non-condensing).
 - The sensor shall use a low-power RF encoder or equivalent solution; no complex MCU firmware is required.
 
@@ -118,12 +118,9 @@ Qualities of the system, not directly tied to functions.
 
 ## 8. Traceability
 
-
 ---
 
 ## 9. Glossary
-
-**AC/DC:** Alternating Current/Direct Current. Refers to the two types of electrical power supply.
 
 **Buzzer:** An electronic signaling device that produces a sound, used for alerts.
 

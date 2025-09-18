@@ -1,0 +1,16 @@
+@startuml Context
+' Exit Guardian - Context (C4 Level 1)
+!include <C4/C4_Container>
+
+
+Person(user, "User")
+System(exitg, "Exit Guardian", "Alerts when leaving with windows open")
+System_Ext(sensors, "Window Sensors", "UID + OPEN/CLOSED + LOWBAT")
+
+
+Rel(user, exitg, "Door opens/closes, button presses; hears buzzer/LEDs")
+Rel(sensors, exitg, "RF events (868 MHz OOK)")
+
+
+SHOW_LEGEND()
+@enduml

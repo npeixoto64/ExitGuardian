@@ -1,0 +1,27 @@
+@startuml Container View
+' Exit Guardian - Container View (C4 Level 2)
+!include <C4/C4_Container>
+
+
+Person(user, "User")
+System_Boundary(gw, "Gateway") {
+Container(app, "Firmware", "C / Embedded", "Mode manager, Door logic, RF decode, State table, UI, Power mgr, Watchdog")
+Container(rf, "RF Frontend", "868 MHz OOK", "RX (Continuous or WOR)")
+Container(io, "I/O", "HW", "Door reed, Buzzer, LEDs, Button")
+ContainerDb(nvm, "NVM", "Flash/EEPROM", "Sensor table + config")
+Container(power, "Power", "HW", "5V DC + LDO (Variant A) or 2xAA + regulator (Variant B)")
+}
+System_Ext(sensors, "Sensors", "Event-only TX")
+
+
+Rel(sensors, rf, "OOK frames")
+Rel(rf, app, "Decoded frames / interrupts")
+Rel(app, io, "Control: buzzer/LEDs")
+Rel(io, app, "Door / Button events")
+Rel(app, nvm, "Persist/restore state")
+Rel(power, app, "Brownout flags / supply state")
+Rel(user, io, "Press button; sees LEDs; hears buzzer")
+
+
+SHOW_LEGEND()
+@enduml

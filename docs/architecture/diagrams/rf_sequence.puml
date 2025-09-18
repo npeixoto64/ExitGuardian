@@ -1,0 +1,18 @@
+@startuml RF Sequence
+' EV1527 burst and WOR capture
+hide footbox
+participant Sensor as S
+participant "Gateway RF (WOR)" as R
+participant Decoder as D
+
+
+R -> R : WOR cycle: OFF ~300ms / ON ~3ms (configurable)
+S -> R : EV1527 burst (~150–200ms, repeated frames)
+R -> R : RSSI triggers wake → stay RX
+R -> D : Bitstream to decoder
+D -> D : Validate ≥2 matching frames within 120ms window
+D -> D : Extract UID, STATE, LOWBAT
+D -> "State Table" : Update entry
+
+
+@enduml

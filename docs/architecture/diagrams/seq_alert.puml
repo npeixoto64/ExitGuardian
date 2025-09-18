@@ -1,0 +1,43 @@
+@startuml Sequence: Door Open Alert Evaluation
+skinparam defaultFontName Monospace
+actor User
+participant "Main Door Reed" as DOOR
+participant "Gateway MCU" as MCU
+participant "LED G" as LEDG
+participant "LED R" as LEDR
+participant Buzzer
+participant "RF Rx" as RFRX
+participant "Window Sensors" as SENS
+
+
+DOOR -> MCU : GPIO change → OPEN
+activate MCU
+MCU -> MCU : read cached window states (NVM)
+MCU -> MCU : if any window == OPEN ?
+alt Any window OPEN
+MCU -> Buzzer : ON (continuous)
+MCU -> LEDR : flash 200ms @50%
+else All windows CLOSED
+MCU -> LEDG : blink once
+end
+
+
+SENS -> RFRX : RF(ID, EVT=CLOSE) ×3
+RFRX -> MCU : Packet(ID, CLOSE)
+MCU -> MCU : update window state
+
+
+DOOR -> MCU : GPIO change → CLOSE
+MCU -> Buzzer : OFF
+MCU -> LEDR : OFF
+
+
+' Battery indicators (may coexist)
+MCU -> LEDR : ON solid if gateway battery low
+MCU -> LEDG : heartbeat 2s 100ms
+MCU -> LEDG : sync clock for YELLOW flashing
+MCU -> MCU : if any sensor low-batt -> YELLOW flash synced with GREEN
+
+
+deactivate MCU
+@enduml
