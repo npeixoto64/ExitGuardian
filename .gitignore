@@ -53,3 +53,77 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# -------------------------------------------------------------------
+# Python
+# -------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# -------------------------------------------------------------------
+# Sphinx documentation
+# -------------------------------------------------------------------
+# Ignore built documentation
+docs/_build/
+docs/_autosummary/
+
+# Editor backup files
+*~
+
+# -------------------------------------------------------------------
+# KiCad / PCB design
+# -------------------------------------------------------------------
+# Backup and autosave
+*.bak
+*.bck
+*.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.sch-bak
+*.dcm-bak
+
+# Simulation and temp
+*.tmp
+*.net
+*.xml
+
+# Gerber / fabrication outputs (often generated)
+*.gbr
+*.drl
+*.zip
+
+# Cache
+*.kicad_sch-bak
+*.kicad_pcb-bak
+fp-info-cache
+sym-lib-table-bak
+*.kicad_pcb-bak2
+*.kicad_sch-bak2
+
+# -------------------------------------------------------------------
+# OS / Editor junk
+# -------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
