@@ -7,4 +7,4 @@ Welcome! This site captures **requirements** and **architecture**.
 :caption: Contents
 
 requirements/requirements
-architecture/context
+architecture/overview

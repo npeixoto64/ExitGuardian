@@ -1,16 +1,19 @@
-# Project Requirements
 
-## 1. Introduction
+Requirements
+===================
 
-- **Project Name:**  Exit Guardian
-- **Version:**  v1.0.0
-- **Author(s):**  Nuno Peixoto
-- **Date:**  11/09/2025
-- **Purpose:** A device installed on the main exit door that triggers an alert with a buzzer when the main exit door is open and any window or outside door is also open. When the main door is closed, the alert is always turned off. The device is intended for use in residential and commercial buildings.
+Introduction
+------------
 
----
+**Project Name:**  Exit Guardian  
+**Version:**  v1.0.0  
+**Author(s):**  Nuno Peixoto  
+**Date:**  11/09/2025  
+**Purpose:** A device installed on the main exit door that triggers an alert with a buzzer when the main exit door is open and any window or outside door is also open. When the main door is closed, the alert is always turned off. The device is intended for use in residential and commercial buildings.
 
-## 2. Overall System Requirements
+
+Overall System Requirements
+--------------------------
 
 High-level needs and constraints for the overall system.
 
@@ -23,9 +26,9 @@ High-level needs and constraints for the overall system.
 - **SR-7:** The gateway shall have three LEDs (green, yellow, and red) to indicate its status.
 - **SR-8:** The gateway shall use LEDs to indicate: heartbeat (green), configuration/low-battery status (yellow), and alerts/low-battery (red). Detailed behavior is defined in the FR section.
 
----
 
-## 3. System Functional Requirements
+System Functional Requirements
+-----------------------------
 
 Detailed functions the system must perform.
 
@@ -65,9 +68,9 @@ Detailed functions the system must perform.
 - **FR-23:** After a factory RESET, the gateway shall have no sensors attached.
 - **FR-24:** If both gateway and sensor low-battery conditions occur simultaneously, both indications (red ON + yellow flashing) shall be active.
 
----
 
-## 4. System Non-Functional Requirements
+System Non-Functional Requirements
+----------------------------------
 
 Qualities of the system, not directly tied to functions.
 
@@ -88,9 +91,9 @@ Qualities of the system, not directly tied to functions.
   - When a low-battery condition is reported, the user is instructed to replace the batteries of all sensors.
 - **NFR-14 (Usability):** The gateway shall save the status of each sensor in NvM (Non-volatile Memory).
 
----
 
-## 5. System Assumptions & Constraints
+System Assumptions & Constraints
+-------------------------------
 
 - Security is not a critical factor. No tamper detection or advanced security features are included.
 - It's not possible to know, at least, directly, which sensor has low battery.
@@ -99,28 +102,28 @@ Qualities of the system, not directly tied to functions.
 - The system shall operate within standard indoor environmental conditions (0–40°C, 10–90% RH, non-condensing).
 - The sensor shall use a low-power RF encoder or equivalent solution; no complex MCU firmware is required.
 
----
 
-## 6. Legal & Regulatory Requirements
+Legal & Regulatory Requirements
+------------------------------
 
 - **LR-1 (Safety):** Device shall comply with CE marking requirements (Low Voltage Directive, EMC Directive).
 - **LR-2 (Radio):** RF module shall operate only on frequencies allowed in the EU (e.g., 868 MHz ISM band, duty cycle limits).
 - **LR-3 (Environment):** Materials must comply with RoHS / REACH.
 - **LR-4 (Battery):** Product must comply with EU Battery Directive for labeling and recycling.
 
----
 
-## 7. Open Issues
+Open Issues
+-----------
 
 - None.
 
----
 
-## 8. Traceability
+Traceability
+------------
 
----
 
-## 9. Glossary
+Glossary
+--------
 
 **Buzzer:** An electronic signaling device that produces a sound, used for alerts.
 
@@ -149,5 +152,3 @@ Qualities of the system, not directly tied to functions.
 **Sensor:** A wireless device that detects window or door open/close events and transmits status to the gateway.
 
 **Watchdog:** A hardware or software timer that triggers a system reset if the main program fails to operate correctly.
-
----
