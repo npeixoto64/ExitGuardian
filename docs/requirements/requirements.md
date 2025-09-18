@@ -95,7 +95,7 @@ Qualities of the system, not directly tied to functions.
 - Security is not a critical factor. No tamper detection or advanced security features are included.
 - It's not possible to know, at least, directly, which sensor has low battery.
 - The sensor does not have any user interface other than battery insertion.
-- The gateway may be powered by mains (option A) or batteries (option B).
+- The gateway may be powered by 5V DC jack or batteries.
 - The system shall operate within standard indoor environmental conditions (0–40°C, 10–90% RH, non-condensing).
 - The sensor shall use a low-power RF encoder or equivalent solution; no complex MCU firmware is required.
 

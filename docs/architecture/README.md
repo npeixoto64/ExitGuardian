@@ -12,13 +12,17 @@ This canvas includes a ready-to-use **README.md** and a set of **PlantUML** diag
 This repository contains the architecture diagrams for the Exit Guardian system, derived directly from the requirements document.
 
 ## Contents
-- `docs/architecture/system_arch.puml` — System block diagram
-- `docs/architecture/sensor_arch.puml` — Sensor block diagram
-- `docs/architecture/gateway_arch.puml` — Gateway block diagram
-- `docs/architecture/state_machine.puml` — Gateway modes & transitions
-- `docs/architecture/seq_pairing.puml` — Sequence: Pair a new sensor
-- `docs/architecture/seq_remove.puml` — Sequence: Remove a paired sensor
-- `docs/architecture/seq_alert.puml` — Sequence: Door-open alert evaluation
+- `docs/architecture/diagrams/context.puml` — Context Diagram (C4 L1)
+- `docs/architecture/diagrams/container_view.puml` — Container View (C4 L2)
+- `docs/architecture/diagrams/system_arch.puml` — System block diagram
+- `docs/architecture/diagrams/sensor_arch.puml` — Sensor block diagram
+- `docs/architecture/diagrams/gateway_arch.puml` — Gateway block diagram
+- `docs/architecture/diagrams/top_level_state_machine.puml` — Top Level State Machine
+- `docs/architecture/diagrams/rf_sequence.puml` — RF Sequence
+- `docs/architecture/diagrams/state_machine.puml` — Gateway modes & transitions
+- `docs/architecture/diagrams/seq_pairing.puml` — Sequence: Pair a new sensor
+- `docs/architecture/diagrams/seq_remove.puml` — Sequence: Remove a paired sensor
+- `docs/architecture/diagrams/seq_alert.puml` — Sequence: Door-open alert evaluation
 
 ## How to Render
 1. Install PlantUML (or use VS Code extension *PlantUML*).

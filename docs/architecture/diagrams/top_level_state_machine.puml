@@ -1,0 +1,22 @@
+@startuml Top Level state Machine
+' Top‑level mode management (Wait, Listen‑Add, Monitor, Remove, Factory Reset)
+
+
+[*] --> WaitForConfig : no sensors in NVM
+WaitForConfig : Yellow LED ON
+WaitForConfig --> ListenAdd : Double‑press (<=1s)
+WaitForConfig --> FactoryReset : Long‑press (>5s) hold+release
+ListenAdd : Yellow 500ms flash, buzzer beep 1s
+ListenAdd --> Monitor : New UID paired OR timeout 20s
+ListenAdd --> ListenAdd : Known UID update (continue until 20s)
+Monitor : Green heartbeat 100ms every 2s
+Monitor --> ListenAdd : Double‑press (<=1s)
+Monitor --> RemoveSensor : Triple‑press (<=2s)
+RemoveSensor : Yellow fast flash (200ms)
+RemoveSensor --> Monitor : Known UID seen -> remove + buzzer 2s
+RemoveSensor --> Monitor : Timeout 20s
+FactoryReset : All LEDs flash while pressed
+FactoryReset --> WaitForConfig : On release -> erase NVM
+
+
+@enduml
