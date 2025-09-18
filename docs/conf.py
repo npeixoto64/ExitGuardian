@@ -14,7 +14,7 @@ extensions = [
     "sphinxcontrib.plantuml", # PlantUML (local)
 ]
 
-myst_enable_extensions = ["deflist", "colon_fence", "substitution", "attrs"]
+myst_enable_extensions = ["deflist", "colon_fence", "substitution", "attrs_block"]
 
 templates_path = ["_templates"]
 exclude_patterns = ["_build"]
