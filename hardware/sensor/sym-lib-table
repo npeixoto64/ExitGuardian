@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ATTINY202-SSN")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/ATTINY202-SSN.kicad_sym")(options "")(descr ""))
+)
