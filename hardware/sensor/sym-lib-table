@@ -1,4 +1,6 @@
 (sym_lib_table
   (version 7)
   (lib (name "ATTINY202-SSN")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/ATTINY202-SSN.kicad_sym")(options "")(descr ""))
+  (lib (name "Si4012-C1001GTR")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/Si4012-C1001GTR.kicad_sym")(options "")(descr ""))
+  (lib (name "TPS3839L30DBZR")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/TPS3839L30DBZR.kicad_sym")(options "")(descr ""))
 )

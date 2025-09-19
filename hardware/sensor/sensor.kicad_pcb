@@ -87,6 +87,332 @@
 	(net 6 "unconnected-(IC1-PA1-Pad4)")
 	(net 7 "unconnected-(IC1-VDD-Pad1)")
 	(net 8 "unconnected-(IC1-PA3{slash}EXTCLK-Pad7)")
+	(net 9 "unconnected-(IC2-TXP-Pad4)")
+	(net 10 "unconnected-(IC2-NIRQ-Pad7)")
+	(net 11 "unconnected-(IC2-LED-Pad6)")
+	(net 12 "unconnected-(IC2-SDA-Pad10)")
+	(net 13 "unconnected-(IC2-XTAL-Pad1)")
+	(net 14 "unconnected-(IC2-TXM-Pad3)")
+	(net 15 "unconnected-(IC2-GND-Pad2)")
+	(net 16 "unconnected-(IC2-SDN-Pad8)")
+	(net 17 "unconnected-(IC2-SCL-Pad9)")
+	(net 18 "unconnected-(IC2-VDD-Pad5)")
+	(net 19 "unconnected-(IC3-VDD-Pad3)")
+	(net 20 "unconnected-(IC3-GND-Pad1)")
+	(net 21 "unconnected-(IC3-~{RESET}-Pad2)")
+	(footprint "MyParts:SOT95P237X112-3N"
+		(layer "F.Cu")
+		(uuid "55ba2240-7657-4cf9-8d41-39d3aaebd9b3")
+		(at 32.557 35.812)
+		(descr "DBZ0003A-1")
+		(tags "Integrated Circuit")
+		(property "Reference" "IC3"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "fdf2d401-dbb9-49a4-9352-350368a9db5d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "TPS3839L30DBZR"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "07eba52f-86cc-40f4-837c-6c2038e6d7b3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/TPS3839"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8655fb0-c62b-494d-a9d9-0fb4e4bb8112")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Ultra-Low Power, Supply Voltage Supervisor"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "31869ea9-823d-4983-aab8-80b7b564ec25")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "1.12"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "849ad10e-7600-44c5-819d-bf4762c75e23")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "595-TPS3839L30DBZR"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c2871e4-6be4-4970-81cf-e54ecc001250")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS3839L30DBZR?qs=4whTb%2F0XQMhk4SkTOVaKEw%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "44fd8b09-a665-414a-89b6-d774645b6ce1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Texas Instruments"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eba2e62d-13a9-453f-8b3a-8b16b4f2928a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "TPS3839L30DBZR"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ba053a6b-1dbd-4c3c-8710-c7910c8cdad3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/e7f3404b-3cc3-4ee1-95d8-59c2af5daef5")
+		(sheetname "/")
+		(sheetfile "sensor.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -1.675 -1.5)
+			(end -0.425 -1.5)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "663c3589-b560-461b-93f7-63256fe7b816")
+		)
+		(fp_line
+			(start -0.075 -1.46)
+			(end 0.075 -1.46)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7c08021e-5713-4b66-9b53-c0b2b507131d")
+		)
+		(fp_line
+			(start -0.075 1.46)
+			(end -0.075 -1.46)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "77939f62-fc8b-49f1-8e37-ed13a83f44e9")
+		)
+		(fp_line
+			(start 0.075 -1.46)
+			(end 0.075 1.46)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7c7f8c1c-262c-474d-b69e-360cf5ade72d")
+		)
+		(fp_line
+			(start 0.075 1.46)
+			(end -0.075 1.46)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "228e480a-ea54-4623-8353-abe5733d8e16")
+		)
+		(fp_line
+			(start -1.925 -1.77)
+			(end 1.925 -1.77)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "80f369ba-c4b3-4a44-8404-09362aa72460")
+		)
+		(fp_line
+			(start -1.925 1.77)
+			(end -1.925 -1.77)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "59c6b667-f707-4b44-9457-df131053b805")
+		)
+		(fp_line
+			(start 1.925 -1.77)
+			(end 1.925 1.77)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b5630aed-e0c7-41e0-bf02-23e9ba9d8b1c")
+		)
+		(fp_line
+			(start 1.925 1.77)
+			(end -1.925 1.77)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3bc8b758-7262-4fff-bc2d-9951bdbf7d22")
+		)
+		(fp_line
+			(start -0.65 -1.46)
+			(end 0.65 -1.46)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bcf93e3f-d9c3-4b8e-9a9c-a246686019b6")
+		)
+		(fp_line
+			(start -0.65 -0.51)
+			(end 0.3 -1.46)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ee64a0bd-ddc4-4078-9f3b-6c16f3230c56")
+		)
+		(fp_line
+			(start -0.65 1.46)
+			(end -0.65 -1.46)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c5255f95-62ab-4dd2-8823-3e796e5bc363")
+		)
+		(fp_line
+			(start 0.65 -1.46)
+			(end 0.65 1.46)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a79a9897-4576-450d-bd79-4ffdcc1b508f")
+		)
+		(fp_line
+			(start 0.65 1.46)
+			(end -0.65 1.46)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "760abe59-86e4-4651-b9c6-3b5b867ff0b1")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "ee442f0e-a28f-4850-a5d0-6d33fb1393dc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -1.05 -0.95 90)
+			(size 0.6 1.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 20 "unconnected-(IC3-GND-Pad1)")
+			(pinfunction "GND")
+			(pintype "passive")
+			(uuid "d7dea41d-1929-4d4a-8666-6880b392cbdd")
+		)
+		(pad "2" smd rect
+			(at -1.05 0.95 90)
+			(size 0.6 1.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 21 "unconnected-(IC3-~{RESET}-Pad2)")
+			(pinfunction "~{RESET}")
+			(pintype "passive")
+			(uuid "ed5404ec-4748-489d-8e81-3d16e67c1f5a")
+		)
+		(pad "3" smd rect
+			(at 1.05 0 90)
+			(size 0.6 1.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 19 "unconnected-(IC3-VDD-Pad3)")
+			(pinfunction "VDD")
+			(pintype "passive")
+			(uuid "b4a5264a-9a78-4bb9-8801-28887416ab85")
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/libraries/3dmodels/MyParts/TPS3839L30DBZR.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "MyParts:SOIC127P600X175-8N"
 		(layer "F.Cu")
 		(uuid "73562765-550d-4d6b-bd6e-c76ce99ecf76")
@@ -434,6 +760,382 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/libraries/3dmodels/MyParts/ATTINY202-SSN.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "MyParts:SOP50P490X110-10N"
+		(layer "F.Cu")
+		(uuid "e3053d97-e07f-4e18-ab4b-a6d7190d85bc")
+		(at 33.782 31.242)
+		(descr "10 pin MSOP")
+		(tags "Integrated Circuit")
+		(property "Reference" "IC2"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "42ef7722-e6b1-430f-be49-13a219280c2c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "Si4012-C1001GTR"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d067fcf0-9679-4df4-8432-406296400e02")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd5c22a3-b7db-4d39-bb86-747c5e953a0b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "RF Transmitter 8051 Sub-GHz RF transmitter"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1c034549-bcdb-4fff-8e4c-ec41a7ea7ab2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "1.1"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a3dc999-7b64-439c-a20c-654808c8059a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "634-SI4012-C1001GTR"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1a64103c-b16d-48d9-ac85-7759c3751f2e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Silicon-Labs/SI4012-C1001GTR?qs=p9T7GgSe1IG9YBSygWUqHw%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "828260ee-215b-485c-950c-1d06db644fca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Silicon Labs"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6dfe8eb4-58a6-4f1f-b0a8-779439a0aa76")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Si4012-C1001GTR"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "706cdc6c-07f4-455b-a993-cf373ecba1c5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/d2cf943e-e799-4e23-b301-174d162e9c44")
+		(sheetname "/")
+		(sheetfile "sensor.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -2.9 -1.5)
+			(end -1.5 -1.5)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "728f225f-63a6-4942-a3f9-977f68036698")
+		)
+		(fp_line
+			(start -1.15 -1.5)
+			(end 1.15 -1.5)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b5f7c180-d5b5-40d1-8adc-0a54e05f1c09")
+		)
+		(fp_line
+			(start -1.15 1.5)
+			(end -1.15 -1.5)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "77121e15-1e94-4ef4-b5d2-358fc4b0ad27")
+		)
+		(fp_line
+			(start 1.15 -1.5)
+			(end 1.15 1.5)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f186c993-9933-4262-9439-cde0698078a1")
+		)
+		(fp_line
+			(start 1.15 1.5)
+			(end -1.15 1.5)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "61fe4ea2-c0ab-43dc-b24e-3f8f166122e4")
+		)
+		(fp_line
+			(start -3.15 -1.75)
+			(end 3.15 -1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "7ceae717-13f9-421d-a4b1-5ffdfa283861")
+		)
+		(fp_line
+			(start -3.15 1.75)
+			(end -3.15 -1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b79d55f3-714e-46b3-8d19-3a897a54c531")
+		)
+		(fp_line
+			(start 3.15 -1.75)
+			(end 3.15 1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f4ae3585-ed8d-4576-a5fb-15216d302fb8")
+		)
+		(fp_line
+			(start 3.15 1.75)
+			(end -3.15 1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "38832cb1-953c-486a-9765-de7e499d618e")
+		)
+		(fp_line
+			(start -1.5 -1.5)
+			(end 1.5 -1.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "386a8d27-fafe-4b3a-b327-07db1b80cf41")
+		)
+		(fp_line
+			(start -1.5 -1)
+			(end -1 -1.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "aaf7d6d4-a5cb-4bf1-a7a5-0f9e486fb0d6")
+		)
+		(fp_line
+			(start -1.5 1.5)
+			(end -1.5 -1.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0622a901-f871-4e0e-848c-e6f6b99d7fa2")
+		)
+		(fp_line
+			(start 1.5 -1.5)
+			(end 1.5 1.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2c54d07c-4239-4e32-93eb-aa267972b1de")
+		)
+		(fp_line
+			(start 1.5 1.5)
+			(end -1.5 1.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d37dab62-eb74-4521-93c5-bc761432b1e4")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "4b9e071e-c058-48de-8f99-c17fbda044bc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -2.2 -1 90)
+			(size 0.3 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 13 "unconnected-(IC2-XTAL-Pad1)")
+			(pinfunction "XTAL")
+			(pintype "passive")
+			(uuid "8fef5b4c-bada-484d-aba9-4ab69cdd864f")
+		)
+		(pad "2" smd rect
+			(at -2.2 -0.5 90)
+			(size 0.3 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 15 "unconnected-(IC2-GND-Pad2)")
+			(pinfunction "GND")
+			(pintype "passive")
+			(uuid "b6196f4d-3014-470e-9d73-418e35780597")
+		)
+		(pad "3" smd rect
+			(at -2.2 0 90)
+			(size 0.3 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 14 "unconnected-(IC2-TXM-Pad3)")
+			(pinfunction "TXM")
+			(pintype "passive")
+			(uuid "97932bf7-4e9f-4714-9d6d-e5e57fd9c543")
+		)
+		(pad "4" smd rect
+			(at -2.2 0.5 90)
+			(size 0.3 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 9 "unconnected-(IC2-TXP-Pad4)")
+			(pinfunction "TXP")
+			(pintype "passive")
+			(uuid "0395cef8-c8d0-4738-ba93-aaaa6e9f8cca")
+		)
+		(pad "5" smd rect
+			(at -2.2 1 90)
+			(size 0.3 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 18 "unconnected-(IC2-VDD-Pad5)")
+			(pinfunction "VDD")
+			(pintype "passive")
+			(uuid "f2a7a339-87f4-4eb0-a2d9-7ce91b511ccb")
+		)
+		(pad "6" smd rect
+			(at 2.2 1 90)
+			(size 0.3 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 11 "unconnected-(IC2-LED-Pad6)")
+			(pinfunction "LED")
+			(pintype "passive")
+			(uuid "7185d6e1-f3d7-4986-b3fd-3dd0f4bf0ee5")
+		)
+		(pad "7" smd rect
+			(at 2.2 0.5 90)
+			(size 0.3 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 10 "unconnected-(IC2-NIRQ-Pad7)")
+			(pinfunction "NIRQ")
+			(pintype "passive")
+			(uuid "33e3cfd6-fe31-43d1-9847-29155c483a52")
+		)
+		(pad "8" smd rect
+			(at 2.2 0 90)
+			(size 0.3 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 16 "unconnected-(IC2-SDN-Pad8)")
+			(pinfunction "SDN")
+			(pintype "passive")
+			(uuid "d25cbd6f-ef81-46c5-9a72-afa9e82f9877")
+		)
+		(pad "9" smd rect
+			(at 2.2 -0.5 90)
+			(size 0.3 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 17 "unconnected-(IC2-SCL-Pad9)")
+			(pinfunction "SCL")
+			(pintype "passive")
+			(uuid "ec426e69-5fa0-4093-acd4-9edb20ac487a")
+		)
+		(pad "10" smd rect
+			(at 2.2 -1 90)
+			(size 0.3 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 12 "unconnected-(IC2-SDA-Pad10)")
+			(pinfunction "SDA")
+			(pintype "passive")
+			(uuid "8a4a10aa-6266-40af-ba0d-9c83819ad541")
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/libraries/3dmodels/MyParts/Si4012-C1001GTR.stp"
 			(offset
 				(xyz 0 0 0)
 			)
