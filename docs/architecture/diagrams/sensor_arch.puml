@@ -3,34 +3,26 @@ skinparam componentStyle rectangle
 skinparam defaultFontName Monospace
 skinparam linetype ortho
 skinparam nodesep 150
-skinparam ranksep 100
+skinparam ranksep 50
 
 
 node "Sensor" {
 [BAT] as BAT
-[Power Gate\n(P-MOS + timer)] as PG
-[Monostable\n(100-200 ms)] as MONO
 [Reed Switch] as REED
-[RC + Schmitt\nPulse Shaper] as PS
-[Voltage Supervisor\n(Batt Low Comparator)] as VS
-[RF Encoder IC\n(ID + D0..D3)] as ENC
+[MCU] as MCU
+[Voltage Supervisor] as VS
 [OOK TX 868 MHz] as TX
 [Antenna] as ANT
 }
 
 
-REED -right---> PS : open/close edge
-PS -right-> MONO : trigger
-MONO -right-> PG : EN (gate ON ~150 ms)
-
-BAT -down- PG
-PG -down-> ENC
-PG -down-> TX
-
+BAT -down- MCU
 BAT -down- VS
-VS -right-> ENC : batt_low flag → D2
+BAT -down- TX
 
-REED -down-> ENC : D0/D1 mapping\n(D0=OPEN, D1=CLOSE)
-ENC -down-> TX : encoded bursts ×3 (spaced 10–30 ms)
+REED -right---> MCU : open/close edge
+VS -right-> MCU: batt_low flag
+
+MCU -right-> TX : encoded bursts ×3
 TX -right-> ANT
 @enduml
