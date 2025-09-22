@@ -118,6 +118,7 @@ fp-info-cache
 sym-lib-table-bak
 *.kicad_pcb-bak2
 *.kicad_sch-bak2
+*.kicad_sch.lck
 
 # -------------------------------------------------------------------
 # OS / Editor junk

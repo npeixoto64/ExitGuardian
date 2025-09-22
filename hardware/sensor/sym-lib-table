@@ -3,4 +3,6 @@
   (lib (name "ATTINY202-SSN")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/ATTINY202-SSN.kicad_sym")(options "")(descr ""))
   (lib (name "Si4012-C1001GTR")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/Si4012-C1001GTR.kicad_sym")(options "")(descr ""))
   (lib (name "TPS3839L30DBZR")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/TPS3839L30DBZR.kicad_sym")(options "")(descr ""))
+  (lib (name "MASM-14R-8-10")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/MASM-14R-8-10.kicad_sym")(options "")(descr ""))
+  (lib (name "BAT-HLD-006-SMT")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/BAT-HLD-006-SMT.kicad_sym")(options "")(descr ""))
 )
