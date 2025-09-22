@@ -2,10 +2,10 @@
 
 ## 1. Introduction
 
-**Project Name:** Exit Guardian  
-**Version:** v1.0.0  
-**Author(s):** Nuno Peixoto  
-**Date:** 11/09/2025  
+**Project Name:** Exit Guardian
+**Version:** v1.0.1
+**Author(s):** Nuno Peixoto
+**Date:** 22/09/2025
 **Purpose:** A device installed on the main exit door that triggers an alert with a buzzer when the main exit door is open and any window or outside door is also open. When the main door is closed, the alert is always turned off. The device is intended for use in residential and commercial buildings.
 
 ## 2. Overall System Requirements
@@ -402,7 +402,6 @@ The gateway shall save the status of each sensor in NvM (Non-volatile Memory).
 - Sensor has no UI beyond battery insertion.  
 - Gateway may be powered by 5V DC jack or batteries.  
 - System operates in 0–40 °C, 10–90% RH, non-condensing.  
-- Sensor shall use a low-power RF encoder (no complex MCU FW required).  
 
 ## 6. Legal & Regulatory Requirements
 
