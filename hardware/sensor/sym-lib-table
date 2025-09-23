@@ -5,4 +5,6 @@
   (lib (name "TPS3839L30DBZR")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/TPS3839L30DBZR.kicad_sym")(options "")(descr ""))
   (lib (name "MASM-14R-8-10")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/MASM-14R-8-10.kicad_sym")(options "")(descr ""))
   (lib (name "BAT-HLD-006-SMT")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/BAT-HLD-006-SMT.kicad_sym")(options "")(descr ""))
+  (lib (name "M20-9770342")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/M20-9770342.kicad_sym")(options "")(descr ""))
+  (lib (name "ANT-868-HESM")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/ANT-868-HESM.kicad_sym")(options "")(descr ""))
 )
