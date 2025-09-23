@@ -4860,7 +4860,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "ANT868HETH"
+		(property "Footprint" "MyParts:ANT-868-HESM"
 			(at 182.88 242.24 0)
 			(effects
 				(font
