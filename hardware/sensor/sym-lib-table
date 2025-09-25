@@ -7,4 +7,5 @@
   (lib (name "BAT-HLD-006-SMT")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/BAT-HLD-006-SMT.kicad_sym")(options "")(descr ""))
   (lib (name "M20-9770342")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/M20-9770342.kicad_sym")(options "")(descr ""))
   (lib (name "ANT-868-HESM")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/ANT-868-HESM.kicad_sym")(options "")(descr ""))
+  (lib (name "BLM18KG601SN1D")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/BLM18KG601SN1D.kicad_sym")(options "")(descr ""))
 )
