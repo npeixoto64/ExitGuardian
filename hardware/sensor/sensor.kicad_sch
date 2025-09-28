@@ -2289,6 +2289,12 @@
 		(uuid "0df94df1-d649-4bb9-8b4d-6eeef7b1ec12")
 	)
 	(junction
+		(at 59.69 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "181f2493-be77-459a-b192-06769bbb9a43")
+	)
+	(junction
 		(at 73.66 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2325,6 +2331,12 @@
 		(uuid "3d1b8bf8-e561-479b-8ba5-836b74576042")
 	)
 	(junction
+		(at 59.69 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3f88b3aa-cdc6-4fab-9980-fe8a39802fee")
+	)
+	(junction
 		(at 119.38 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2353,12 +2365,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9b2e030a-e758-4d46-b6aa-1a35e89e0854")
-	)
-	(junction
-		(at 59.69 171.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a4a6fd1c-6f76-4041-b287-6e95c0c34dec")
 	)
 	(junction
 		(at 143.51 140.97)
@@ -2397,16 +2403,14 @@
 		(uuid "d51b9794-adeb-4d47-8ff8-a93b33295eab")
 	)
 	(junction
-		(at 48.26 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e03fcd26-5b19-4e07-9cf7-1dc3dd525b0d")
-	)
-	(junction
 		(at 149.86 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2d9e27c-cb50-48e3-8270-fc7bb0139b65")
+	)
+	(no_connect
+		(at 52.07 173.99)
+		(uuid "2e4a2af4-8f32-4417-a61a-750706aa0b2d")
 	)
 	(no_connect
 		(at 186.69 99.06)
@@ -2419,10 +2423,6 @@
 	(no_connect
 		(at 158.75 88.9)
 		(uuid "79fa8601-3972-4149-850b-885ccdd6c642")
-	)
-	(no_connect
-		(at 52.07 168.91)
-		(uuid "8151e30b-b47c-488e-94ce-bd9bef2b8dbb")
 	)
 	(wire
 		(pts
@@ -2606,6 +2606,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 171.45) (xy 59.69 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "288051d1-0aa7-4f5f-84bd-374ee8297a89")
+	)
+	(wire
+		(pts
 			(xy 111.76 129.54) (xy 119.38 129.54)
 		)
 		(stroke
@@ -2633,6 +2643,16 @@
 			(type default)
 		)
 		(uuid "34769217-77a8-4ddf-9106-4f1cd9eb1c58")
+	)
+	(wire
+		(pts
+			(xy 59.69 34.29) (xy 59.69 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35773d4f-3776-4b93-9797-302cce53dd3a")
 	)
 	(wire
 		(pts
@@ -2793,6 +2813,16 @@
 			(type default)
 		)
 		(uuid "5db3592e-b1b0-4936-8b30-3711bbb75ad5")
+	)
+	(wire
+		(pts
+			(xy 59.69 34.29) (xy 66.04 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e44e79f-1cb5-47a7-b6a6-4af23aebe242")
 	)
 	(wire
 		(pts
@@ -3166,16 +3196,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 34.29) (xy 48.26 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f957f45-c3ed-465b-874e-19234287a5b2")
-	)
-	(wire
-		(pts
 			(xy 151.13 124.46) (xy 151.13 132.08)
 		)
 		(stroke
@@ -3296,7 +3316,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 34.29) (xy 66.04 34.29)
+			(xy 41.91 34.29) (xy 59.69 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3546,16 +3566,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 34.29) (xy 48.26 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e864d920-820b-411e-90e5-c9ee24a409e6")
-	)
-	(wire
-		(pts
 			(xy 242.57 38.1) (xy 248.92 38.1)
 		)
 		(stroke
@@ -3593,16 +3603,6 @@
 			(type default)
 		)
 		(uuid "ec6a25c4-037f-42a8-b75c-31eb878478a3")
-	)
-	(wire
-		(pts
-			(xy 52.07 171.45) (xy 59.69 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "edb2c865-e97e-42c2-bb2f-68603c52680d")
 	)
 	(wire
 		(pts
@@ -4466,73 +4466,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 48.26 49.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1c75cd9e-f64c-4a2b-9945-b5ec29859569")
-		(property "Reference" "#PWR031"
-			(at 48.26 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 48.26 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 48.26 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 48.26 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 48.26 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b4cf411c-7e02-40d9-ab8f-1c3ffe7182ce")
-		)
-		(instances
-			(project "sensor"
-				(path "/0111ad26-080c-47bf-9fe6-1fe36fa86fb2"
-					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 204.47 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5089,16 +5022,16 @@
 	)
 	(symbol
 		(lib_id "ANT-868-HESM:ANT-868-HESM")
-		(at 52.07 171.45 180)
+		(at 52.07 171.45 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3e789ea5-c692-4470-8c91-55f7911ddc65")
 		(property "Reference" "ANT1"
-			(at 41.91 161.29 0)
+			(at 41.91 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5106,7 +5039,7 @@
 			)
 		)
 		(property "Value" "ANT-868-HESM"
-			(at 41.91 163.83 0)
+			(at 41.91 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5114,7 +5047,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:ANT-868-HESM"
-			(at 35.56 76.53 0)
+			(at 35.56 266.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5124,7 +5057,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7Fant-868-hexx%7FA%7Fpdf%7FEnglish%7FENG_DS_ant-868-hexx_A.pdf%7FANT-868-HETH"
-			(at 35.56 -23.47 0)
+			(at 35.56 366.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5143,7 +5076,7 @@
 			)
 		)
 		(property "Height" "8.9"
-			(at 35.56 -223.47 0)
+			(at 35.56 566.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5153,7 +5086,7 @@
 			)
 		)
 		(property "Mouser Part Number" "712-ANT-868-HESM"
-			(at 35.56 -323.47 0)
+			(at 35.56 666.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5163,7 +5096,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-868-HESM?qs=hWgE7mdIu5TTyqPbNERfhg%3D%3D"
-			(at 35.56 -423.47 0)
+			(at 35.56 766.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5173,7 +5106,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "TE Connectivity"
-			(at 35.56 -523.47 0)
+			(at 35.56 866.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5183,7 +5116,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "ANT-868-HETH"
-			(at 35.56 -623.47 0)
+			(at 35.56 966.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7379,6 +7312,73 @@
 			(project "sensor"
 				(path "/0111ad26-080c-47bf-9fe6-1fe36fa86fb2"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 59.69 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8df6b699-b308-44b8-8802-0509995f70c8")
+		(property "Reference" "#PWR034"
+			(at 59.69 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 59.69 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 59.69 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "42b14310-1e15-45a8-b48a-42395aeea806")
+		)
+		(instances
+			(project "sensor"
+				(path "/0111ad26-080c-47bf-9fe6-1fe36fa86fb2"
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
