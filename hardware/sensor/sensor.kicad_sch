@@ -2289,16 +2289,16 @@
 		(uuid "0df94df1-d649-4bb9-8b4d-6eeef7b1ec12")
 	)
 	(junction
+		(at 59.69 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "181f2493-be77-459a-b192-06769bbb9a43")
+	)
+	(junction
 		(at 73.66 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1d5ca1da-7ae6-4537-a502-88af463be1f9")
-	)
-	(junction
-		(at 104.14 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1d686ce3-bf98-45cf-b113-8398019a5d98")
 	)
 	(junction
 		(at 204.47 88.9)
@@ -2355,16 +2355,22 @@
 		(uuid "9b2e030a-e758-4d46-b6aa-1a35e89e0854")
 	)
 	(junction
-		(at 59.69 171.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a4a6fd1c-6f76-4041-b287-6e95c0c34dec")
-	)
-	(junction
 		(at 143.51 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ac9a8a8f-d20d-4298-9f9b-4ffbd42f32bd")
+	)
+	(junction
+		(at 59.69 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0018de9-e30e-4ca0-965a-6f1a300414b5")
+	)
+	(junction
+		(at 113.03 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b92ce101-86ac-42cf-b7b8-0e33ed04400c")
 	)
 	(junction
 		(at 44.45 31.75)
@@ -2376,13 +2382,7 @@
 		(at 78.74 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c4003b29-d1ea-4b59-a5be-5f40464ef0bd")
-	)
-	(junction
-		(at 113.03 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d0079512-7832-40b6-94d5-918e948154a6")
+		(uuid "d31e235f-6dfe-4178-b23a-e64466b7f87a")
 	)
 	(junction
 		(at 171.45 35.56)
@@ -2397,16 +2397,20 @@
 		(uuid "d51b9794-adeb-4d47-8ff8-a93b33295eab")
 	)
 	(junction
-		(at 48.26 34.29)
+		(at 104.14 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e03fcd26-5b19-4e07-9cf7-1dc3dd525b0d")
+		(uuid "dbc8283e-f36e-4846-a821-fd7152dd8c6d")
 	)
 	(junction
 		(at 149.86 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2d9e27c-cb50-48e3-8270-fc7bb0139b65")
+	)
+	(no_connect
+		(at 52.07 173.99)
+		(uuid "2e4a2af4-8f32-4417-a61a-750706aa0b2d")
 	)
 	(no_connect
 		(at 186.69 99.06)
@@ -2421,8 +2425,8 @@
 		(uuid "79fa8601-3972-4149-850b-885ccdd6c642")
 	)
 	(no_connect
-		(at 52.07 168.91)
-		(uuid "8151e30b-b47c-488e-94ce-bd9bef2b8dbb")
+		(at 41.91 36.83)
+		(uuid "7a8e3654-ea74-4f59-885c-093db00604f2")
 	)
 	(wire
 		(pts
@@ -2486,16 +2490,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 171.45) (xy 78.74 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e30a9c8-1e83-4698-b530-399dc9c38e39")
-	)
-	(wire
-		(pts
 			(xy 119.38 171.45) (xy 119.38 172.72)
 		)
 		(stroke
@@ -2516,16 +2510,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 101.6) (xy 116.84 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "188c251c-d263-4d8d-b17c-3949a5241b92")
-	)
-	(wire
-		(pts
 			(xy 26.67 93.98) (xy 39.37 93.98)
 		)
 		(stroke
@@ -2536,6 +2520,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 101.6) (xy 116.84 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1be4bcc5-b4d5-4dee-9db9-6a0128e077b8")
+	)
+	(wire
+		(pts
 			(xy 186.69 91.44) (xy 193.04 91.44)
 		)
 		(stroke
@@ -2543,6 +2537,16 @@
 			(type default)
 		)
 		(uuid "1db3a806-7228-4c2a-a990-ec1d9d89a834")
+	)
+	(wire
+		(pts
+			(xy 20.32 96.52) (xy 54.61 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2033399a-c006-41e2-9e20-fc5c43d4d0ef")
 	)
 	(wire
 		(pts
@@ -2606,6 +2610,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 171.45) (xy 59.69 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "288051d1-0aa7-4f5f-84bd-374ee8297a89")
+	)
+	(wire
+		(pts
 			(xy 111.76 129.54) (xy 119.38 129.54)
 		)
 		(stroke
@@ -2613,6 +2627,16 @@
 			(type default)
 		)
 		(uuid "2d2a0ca5-0b7d-41c5-9efb-173e8d4e48d4")
+	)
+	(wire
+		(pts
+			(xy 73.66 171.45) (xy 78.74 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e4dbb88-564b-4ff9-8e48-3843be6c51ed")
 	)
 	(wire
 		(pts
@@ -2633,6 +2657,16 @@
 			(type default)
 		)
 		(uuid "34769217-77a8-4ddf-9106-4f1cd9eb1c58")
+	)
+	(wire
+		(pts
+			(xy 59.69 34.29) (xy 59.69 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35773d4f-3776-4b93-9797-302cce53dd3a")
 	)
 	(wire
 		(pts
@@ -2686,16 +2720,6 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 99.06) (xy 54.61 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "454ef2fc-7693-4fbe-93f8-2072a4d682d7")
-	)
-	(wire
-		(pts
 			(xy 133.35 140.97) (xy 143.51 140.97)
 		)
 		(stroke
@@ -2713,16 +2737,6 @@
 			(type default)
 		)
 		(uuid "5061a511-c25a-4176-8e5d-4b5e8030a06d")
-	)
-	(wire
-		(pts
-			(xy 104.14 96.52) (xy 116.84 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51b7f3d7-82d0-4f39-a9b3-f7c01f44db6c")
 	)
 	(wire
 		(pts
@@ -2776,16 +2790,6 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 101.6) (xy 54.61 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5bb8f996-ed7f-44c9-8d63-67b4615bd075")
-	)
-	(wire
-		(pts
 			(xy 113.03 90.17) (xy 113.03 101.6)
 		)
 		(stroke
@@ -2793,6 +2797,16 @@
 			(type default)
 		)
 		(uuid "5db3592e-b1b0-4936-8b30-3711bbb75ad5")
+	)
+	(wire
+		(pts
+			(xy 59.69 34.29) (xy 66.04 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e44e79f-1cb5-47a7-b6a6-4af23aebe242")
 	)
 	(wire
 		(pts
@@ -2856,16 +2870,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 36.83) (xy 44.45 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66398bac-d4ac-442e-826a-6f589d0cea60")
-	)
-	(wire
-		(pts
 			(xy 73.66 44.45) (xy 73.66 36.83)
 		)
 		(stroke
@@ -2896,16 +2900,6 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 96.52) (xy 54.61 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bb28393-e5c9-4851-aa4c-e8cd9d693870")
-	)
-	(wire
-		(pts
 			(xy 191.77 35.56) (xy 191.77 39.37)
 		)
 		(stroke
@@ -2913,16 +2907,6 @@
 			(type default)
 		)
 		(uuid "6d375fb3-0502-4de3-8488-43c42a881f66")
-	)
-	(wire
-		(pts
-			(xy 41.91 36.83) (xy 44.45 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6dfcd581-dee1-45dd-bc9d-f15922967236")
 	)
 	(wire
 		(pts
@@ -3016,6 +3000,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 171.45) (xy 66.04 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "853f4eb7-9e5b-43d2-a69b-d0337a155a1e")
+	)
+	(wire
+		(pts
 			(xy 95.25 101.6) (xy 113.03 101.6)
 		)
 		(stroke
@@ -3023,6 +3017,16 @@
 			(type default)
 		)
 		(uuid "8774b5f9-84b8-4286-949e-14eec8def94d")
+	)
+	(wire
+		(pts
+			(xy 20.32 99.06) (xy 54.61 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89e761d3-08ef-41ee-84f2-e912aaf409bb")
 	)
 	(wire
 		(pts
@@ -3043,6 +3047,16 @@
 			(type default)
 		)
 		(uuid "8afd3ae3-460c-46a2-9fa5-ce980735708c")
+	)
+	(wire
+		(pts
+			(xy 104.14 96.52) (xy 116.84 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b8c619d-aeec-4c49-aff3-4296358feb6a")
 	)
 	(wire
 		(pts
@@ -3116,16 +3130,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 171.45) (xy 64.77 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9794f6e1-6758-4529-9324-5e1d6d825232")
-	)
-	(wire
-		(pts
 			(xy 149.86 78.74) (xy 149.86 82.55)
 		)
 		(stroke
@@ -3163,16 +3167,6 @@
 			(type default)
 		)
 		(uuid "9f3b1158-f49b-4e5d-accf-7d6b0ad4d1bc")
-	)
-	(wire
-		(pts
-			(xy 41.91 34.29) (xy 48.26 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f957f45-c3ed-465b-874e-19234287a5b2")
 	)
 	(wire
 		(pts
@@ -3296,7 +3290,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 34.29) (xy 66.04 34.29)
+			(xy 41.91 34.29) (xy 59.69 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3466,6 +3460,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 101.6) (xy 54.61 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d805498e-1ded-412a-9ec0-5567a665c055")
+	)
+	(wire
+		(pts
 			(xy 142.24 99.06) (xy 158.75 99.06)
 		)
 		(stroke
@@ -3546,16 +3550,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 34.29) (xy 48.26 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e864d920-820b-411e-90e5-c9ee24a409e6")
-	)
-	(wire
-		(pts
 			(xy 242.57 38.1) (xy 248.92 38.1)
 		)
 		(stroke
@@ -3593,16 +3587,6 @@
 			(type default)
 		)
 		(uuid "ec6a25c4-037f-42a8-b75c-31eb878478a3")
-	)
-	(wire
-		(pts
-			(xy 52.07 171.45) (xy 59.69 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "edb2c865-e97e-42c2-bb2f-68603c52680d")
 	)
 	(wire
 		(pts
@@ -3944,7 +3928,7 @@
 	)
 	(global_label "LOW_BAT"
 		(shape input)
-		(at 24.13 96.52 180)
+		(at 24.13 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3954,7 +3938,7 @@
 		)
 		(uuid "ca4733c7-5d43-4caa-8407-7f914151f11d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 13.041 96.52 0)
+			(at 13.041 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3966,7 +3950,7 @@
 	)
 	(global_label "SDN"
 		(shape input)
-		(at 20.32 101.6 180)
+		(at 20.32 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3976,7 +3960,7 @@
 		)
 		(uuid "e6624a32-c4e4-4709-8027-90daec0553d1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 13.5248 101.6 0)
+			(at 13.5248 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4466,73 +4450,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 48.26 49.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1c75cd9e-f64c-4a2b-9945-b5ec29859569")
-		(property "Reference" "#PWR031"
-			(at 48.26 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 48.26 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 48.26 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 48.26 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 48.26 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b4cf411c-7e02-40d9-ab8f-1c3ffe7182ce")
-		)
-		(instances
-			(project "sensor"
-				(path "/0111ad26-080c-47bf-9fe6-1fe36fa86fb2"
-					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 204.47 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4658,127 +4575,6 @@
 			(project "sensor"
 				(path "/0111ad26-080c-47bf-9fe6-1fe36fa86fb2"
 					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "BAT-HLD-006-SMT:BAT-HLD-006-SMT")
-		(at 41.91 36.83 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2aa03eec-ae2e-492a-bda7-8565f7f586dc")
-		(property "Reference" "H1"
-			(at 30.226 24.638 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BAT-HLD-006-SMT"
-			(at 30.226 27.178 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MyParts:BATHLD006SMT"
-			(at 30.48 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7FC-BAT-HLD-006-SMT%7FA%7Fpdf%7FEnglish%7FENG_CD_C-BAT-HLD-006-SMT_A.pdf%7FBAT-HLD-006-SMT"
-			(at 22.86 -158.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Coin Cell Battery Holders Holder for 2450 Batteries, Surface Mount, Bulk Packaging"
-			(at 41.91 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "6.7"
-			(at 22.86 -358.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "712-BAT-HLD-006-SMT"
-			(at 22.86 -458.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-006-SMT?qs=TuK3vfAjtkUyTQHMSqIP6A%3D%3D"
-			(at 22.86 -558.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "TE Connectivity"
-			(at 22.86 -658.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "BAT-HLD-006-SMT"
-			(at 22.86 -758.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "bc17d576-4e41-42de-9797-802e56059f9b")
-		)
-		(pin "2"
-			(uuid "d121433c-4eb9-4bbe-870b-127a55b11ddb")
-		)
-		(pin "1"
-			(uuid "bd5a92f0-0720-4422-b8b9-2b06381f3067")
-		)
-		(instances
-			(project ""
-				(path "/0111ad26-080c-47bf-9fe6-1fe36fa86fb2"
-					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -5210,16 +5006,16 @@
 	)
 	(symbol
 		(lib_id "ANT-868-HESM:ANT-868-HESM")
-		(at 52.07 171.45 180)
+		(at 52.07 171.45 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3e789ea5-c692-4470-8c91-55f7911ddc65")
 		(property "Reference" "ANT1"
-			(at 41.91 161.29 0)
+			(at 41.91 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5227,7 +5023,7 @@
 			)
 		)
 		(property "Value" "ANT-868-HESM"
-			(at 41.91 163.83 0)
+			(at 41.91 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5235,7 +5031,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:ANT-868-HESM"
-			(at 35.56 76.53 0)
+			(at 35.56 266.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5245,7 +5041,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7Fant-868-hexx%7FA%7Fpdf%7FEnglish%7FENG_DS_ant-868-hexx_A.pdf%7FANT-868-HETH"
-			(at 35.56 -23.47 0)
+			(at 35.56 366.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5264,7 +5060,7 @@
 			)
 		)
 		(property "Height" "8.9"
-			(at 35.56 -223.47 0)
+			(at 35.56 566.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5274,7 +5070,7 @@
 			)
 		)
 		(property "Mouser Part Number" "712-ANT-868-HESM"
-			(at 35.56 -323.47 0)
+			(at 35.56 666.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5284,7 +5080,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-868-HESM?qs=hWgE7mdIu5TTyqPbNERfhg%3D%3D"
-			(at 35.56 -423.47 0)
+			(at 35.56 766.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5294,7 +5090,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "TE Connectivity"
-			(at 35.56 -523.47 0)
+			(at 35.56 866.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5304,7 +5100,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "ANT-868-HETH"
-			(at 35.56 -623.47 0)
+			(at 35.56 966.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6049,6 +5845,128 @@
 		)
 	)
 	(symbol
+		(lib_id "BAT-HLD-006-SMT:BAT-HLD-006-SMT")
+		(at 41.91 36.83 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5334fd9b-c314-4c3b-994c-e1b513659428")
+		(property "Reference" "H1"
+			(at 30.48 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BAT-HLD-006-SMT"
+			(at 30.48 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:BATHLD006SMT"
+			(at 30.48 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7FC-BAT-HLD-006-SMT%7FA%7Fpdf%7FEnglish%7FENG_CD_C-BAT-HLD-006-SMT_A.pdf%7FBAT-HLD-006-SMT"
+			(at 22.86 -158.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Coin Cell Battery Holders Holder for 2450 Batteries, Surface Mount, Bulk Packaging"
+			(at 41.91 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "6.7"
+			(at 22.86 -358.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "712-BAT-HLD-006-SMT"
+			(at 22.86 -458.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-006-SMT?qs=TuK3vfAjtkUyTQHMSqIP6A%3D%3D"
+			(at 22.86 -558.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 22.86 -658.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "BAT-HLD-006-SMT"
+			(at 22.86 -758.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "05dec1ce-3fcc-4b3b-9e30-710d6d7e8251")
+		)
+		(pin "1"
+			(uuid "69263e98-0f28-460b-88d0-65dbde6d092f")
+		)
+		(pin "3"
+			(uuid "7fd01ea9-0133-4da4-80b5-45ca6f895635")
+		)
+		(instances
+			(project ""
+				(path "/0111ad26-080c-47bf-9fe6-1fe36fa86fb2"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L")
 		(at 119.38 137.16 0)
 		(unit 1)
@@ -6381,110 +6299,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
-		(at 68.58 171.45 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5fccf3c5-706b-446b-94ba-df7c7461114d")
-		(property "Reference" "Lseries1"
-			(at 68.58 166.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "15nH"
-			(at 68.58 168.91 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
-			(at 68.58 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 68.58 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "994-0402HP-15NXJRW"
-			(at 68.58 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://eu.mouser.com/ProductDetail/Coilcraft/0402HP-15NXJRW?qs=QNEnbhJQKvYIHcbZYhY5ig%3D%3D"
-			(at 68.58 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Coilcraft"
-			(at 68.58 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "0402HP-15NXJRW "
-			(at 68.58 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b1642809-0592-4744-9a8c-850247a0d675")
-		)
-		(pin "2"
-			(uuid "1965c60a-ebbd-4dcf-a5b2-1789f43e18d5")
-		)
-		(instances
-			(project "sensor"
-				(path "/0111ad26-080c-47bf-9fe6-1fe36fa86fb2"
-					(reference "Lseries1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 119.38 176.53 0)
 		(unit 1)
@@ -6782,7 +6596,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0pF"
+		(property "Value" "NC"
 			(at 82.55 177.7999 0)
 			(effects
 				(font
@@ -6791,7 +6605,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 79.7052 180.34 0)
 			(effects
 				(font
@@ -6846,6 +6660,15 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
+			(at 78.74 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "NO"
 			(at 78.74 176.53 0)
 			(effects
 				(font
@@ -7280,129 +7103,6 @@
 		)
 	)
 	(symbol
-		(lib_id "M20-9770342:M20-9770342")
-		(at 242.57 38.1 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7866b829-85d7-41d2-b6df-06f5b05c9600")
-		(property "Reference" "J1"
-			(at 232.41 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "M20-9770342"
-			(at 232.41 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MyParts:HDRV3W66P0X254_1X3_762X254X855P"
-			(at 226.06 -56.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn.harwin.com/pdfs/M20-977.pdf"
-			(at 226.06 -156.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "2.54mm (0.1\") Pitch SIL Vertical Throughboard Pin Header, 5.8mm mating pin height, selective gold + tin, 3 contacts"
-			(at 242.57 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "8.55"
-			(at 226.06 -356.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "855-M20-9770342"
-			(at 226.06 -456.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
-			(at 226.06 -556.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Harwin"
-			(at 226.06 -656.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "M20-9770342"
-			(at 226.06 -756.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "fc1212d9-d394-4422-9e92-848a2cdbe324")
-		)
-		(pin "1"
-			(uuid "06188fcd-f4cb-4ebd-8522-cf09d42d3616")
-		)
-		(pin "3"
-			(uuid "7a0a691b-bba8-4017-b552-a893039b1a4a")
-		)
-		(instances
-			(project ""
-				(path "/0111ad26-080c-47bf-9fe6-1fe36fa86fb2"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 181.61 35.56 270)
 		(unit 1)
@@ -7501,6 +7201,73 @@
 			(project "sensor"
 				(path "/0111ad26-080c-47bf-9fe6-1fe36fa86fb2"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 59.69 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8df6b699-b308-44b8-8802-0509995f70c8")
+		(property "Reference" "#PWR034"
+			(at 59.69 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 59.69 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 59.69 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "42b14310-1e15-45a8-b48a-42395aeea806")
+		)
+		(instances
+			(project "sensor"
+				(path "/0111ad26-080c-47bf-9fe6-1fe36fa86fb2"
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -8472,6 +8239,110 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 69.85 171.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9bd445e-51e8-4166-bae2-ec9cdac96a50")
+		(property "Reference" "R6"
+			(at 69.85 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 69.85 167.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 69.85 173.228 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 69.85 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "71-CRCW0603-0-E3"
+			(at 69.85 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Vishay/CRCW06030000Z0EA?qs=sGAEpiMZZMvdGkrng054t1X0qgDPqELU%252B4gm%252BoQ%252B0vM%3D"
+			(at 69.85 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at 69.85 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW06030000Z0EA"
+			(at 69.85 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "632ade44-c585-45a2-9c2c-c7dd265c1165")
+		)
+		(pin "2"
+			(uuid "46e29330-3c29-4316-a932-74b264d95d17")
+		)
+		(instances
+			(project ""
+				(path "/0111ad26-080c-47bf-9fe6-1fe36fa86fb2"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 171.45 17.78 0)
 		(unit 1)
@@ -9201,7 +9072,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0pF"
+		(property "Value" "NC"
 			(at 63.5 177.7999 0)
 			(effects
 				(font
@@ -9210,7 +9081,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 60.6552 180.34 0)
 			(effects
 				(font
@@ -9265,6 +9136,15 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
+			(at 59.69 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Populate" "NO"
 			(at 59.69 176.53 0)
 			(effects
 				(font
@@ -10050,6 +9930,129 @@
 			(project "sensor"
 				(path "/0111ad26-080c-47bf-9fe6-1fe36fa86fb2"
 					(reference "CM1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "M20-9770342:M20-9770342")
+		(at 242.57 38.1 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f7a42af0-6f1b-472b-87c5-7e743ca0259a")
+		(property "Reference" "J1"
+			(at 232.41 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M20-9770342"
+			(at 232.41 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:HDRV3W66P0X254_1X3_762X254X855P"
+			(at 226.06 -56.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.harwin.com/pdfs/M20-977.pdf"
+			(at 226.06 -156.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "2.54mm (0.1\") Pitch SIL Vertical Throughboard Pin Header, 5.8mm mating pin height, selective gold + tin, 3 contacts"
+			(at 242.57 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "8.55"
+			(at 226.06 -356.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "855-M20-9770342"
+			(at 226.06 -456.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
+			(at 226.06 -556.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Harwin"
+			(at 226.06 -656.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "M20-9770342"
+			(at 226.06 -756.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "ec0481f6-e37e-4bba-9e65-8d7271998526")
+		)
+		(pin "1"
+			(uuid "32d3c93d-a539-405f-a7ab-e0c2f2e45857")
+		)
+		(pin "2"
+			(uuid "73a9ce36-3f66-4289-9afa-b5791a4b0993")
+		)
+		(instances
+			(project ""
+				(path "/0111ad26-080c-47bf-9fe6-1fe36fa86fb2"
+					(reference "J1")
 					(unit 1)
 				)
 			)

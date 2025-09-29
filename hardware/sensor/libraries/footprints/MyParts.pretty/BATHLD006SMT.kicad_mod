@@ -186,44 +186,84 @@
 		(uuid "3a73ef97-1207-4283-a247-019e36c171de")
 	)
 	(fp_line
-		(start -19.4 -13.7)
-		(end 19.4 -13.7)
+		(start -19 -6)
+		(end -11.5 -13)
 		(stroke
-			(width 0.1)
-			(type solid)
+			(width 0.05)
+			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "08faf3b2-8f50-47f4-a362-d87b395c5995")
+		(uuid "d16ae3a7-bdbc-45bb-b371-65ac1642784a")
 	)
 	(fp_line
-		(start -19.4 12.5)
-		(end -19.4 -13.7)
+		(start -19 6.5)
+		(end -19 -6)
 		(stroke
-			(width 0.1)
-			(type solid)
+			(width 0.05)
+			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "57908577-52b8-4aa7-a811-4a916057844c")
+		(uuid "f41f7b50-d0db-4aa2-a2f4-b81526103595")
 	)
 	(fp_line
-		(start 19.4 -13.7)
-		(end 19.4 12.5)
+		(start -11.5 -13)
+		(end 12 -13)
 		(stroke
-			(width 0.1)
-			(type solid)
+			(width 0.05)
+			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "3e6250b3-7375-4249-b863-110a4c72d44f")
+		(uuid "58fa0aa1-cd24-402b-8f4f-d1013a942696")
 	)
 	(fp_line
-		(start 19.4 12.5)
-		(end -19.4 12.5)
+		(start -11.5 12)
+		(end -19 6.5)
 		(stroke
-			(width 0.1)
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "5113f60a-127f-43c5-a085-e02817b9074f")
+	)
+	(fp_line
+		(start 11 12)
+		(end -11.5 12)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "2362a8bc-0c13-4848-b42e-bed75d48835f")
+	)
+	(fp_line
+		(start 12 -13)
+		(end 19 -6)
+		(stroke
+			(width 0.05)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "2ca584fb-75fa-47be-ac47-bf239a855f67")
+		(uuid "48fac428-af70-4de4-ae1e-4d28025f9df4")
+	)
+	(fp_line
+		(start 19 -6)
+		(end 19 6)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "7906c3b2-ab3b-4d81-abfb-cb3cd346a6c4")
+	)
+	(fp_line
+		(start 19 6)
+		(end 11 12)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "73ff9966-f944-4a16-a3db-9c6aac344fda")
 	)
 	(fp_line
 		(start -12.75 -6)
@@ -378,7 +418,7 @@
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/libraries/3dmodels/MyParts/BAT-HLD-006-SMT.stp"
 		(offset
-			(xyz 0 -5 3.5)
+			(xyz 0 -5 3)
 		)
 		(scale
 			(xyz 1 1 1)
