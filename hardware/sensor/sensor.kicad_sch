@@ -2325,12 +2325,6 @@
 		(uuid "3d1b8bf8-e561-479b-8ba5-836b74576042")
 	)
 	(junction
-		(at 59.69 171.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3f88b3aa-cdc6-4fab-9980-fe8a39802fee")
-	)
-	(junction
 		(at 119.38 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2367,6 +2361,12 @@
 		(uuid "ac9a8a8f-d20d-4298-9f9b-4ffbd42f32bd")
 	)
 	(junction
+		(at 59.69 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0018de9-e30e-4ca0-965a-6f1a300414b5")
+	)
+	(junction
 		(at 113.03 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2382,7 +2382,7 @@
 		(at 78.74 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c4003b29-d1ea-4b59-a5be-5f40464ef0bd")
+		(uuid "d31e235f-6dfe-4178-b23a-e64466b7f87a")
 	)
 	(junction
 		(at 171.45 35.56)
@@ -2423,6 +2423,10 @@
 	(no_connect
 		(at 158.75 88.9)
 		(uuid "79fa8601-3972-4149-850b-885ccdd6c642")
+	)
+	(no_connect
+		(at 41.91 36.83)
+		(uuid "7a8e3654-ea74-4f59-885c-093db00604f2")
 	)
 	(wire
 		(pts
@@ -2483,16 +2487,6 @@
 			(type default)
 		)
 		(uuid "0d93efdc-4f3f-4449-8ab7-84bdcb3a0b5e")
-	)
-	(wire
-		(pts
-			(xy 72.39 171.45) (xy 78.74 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e30a9c8-1e83-4698-b530-399dc9c38e39")
 	)
 	(wire
 		(pts
@@ -2633,6 +2627,16 @@
 			(type default)
 		)
 		(uuid "2d2a0ca5-0b7d-41c5-9efb-173e8d4e48d4")
+	)
+	(wire
+		(pts
+			(xy 73.66 171.45) (xy 78.74 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e4dbb88-564b-4ff9-8e48-3843be6c51ed")
 	)
 	(wire
 		(pts
@@ -2866,16 +2870,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 36.83) (xy 44.45 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66398bac-d4ac-442e-826a-6f589d0cea60")
-	)
-	(wire
-		(pts
 			(xy 73.66 44.45) (xy 73.66 36.83)
 		)
 		(stroke
@@ -2913,16 +2907,6 @@
 			(type default)
 		)
 		(uuid "6d375fb3-0502-4de3-8488-43c42a881f66")
-	)
-	(wire
-		(pts
-			(xy 41.91 36.83) (xy 44.45 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6dfcd581-dee1-45dd-bc9d-f15922967236")
 	)
 	(wire
 		(pts
@@ -3013,6 +2997,16 @@
 			(type default)
 		)
 		(uuid "81ffe752-c5e4-4178-bac5-2612109267ab")
+	)
+	(wire
+		(pts
+			(xy 59.69 171.45) (xy 66.04 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "853f4eb7-9e5b-43d2-a69b-d0337a155a1e")
 	)
 	(wire
 		(pts
@@ -3133,16 +3127,6 @@
 			(type default)
 		)
 		(uuid "9633d385-9716-40b6-b3fe-b248a5f93f7d")
-	)
-	(wire
-		(pts
-			(xy 59.69 171.45) (xy 64.77 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9794f6e1-6758-4529-9324-5e1d6d825232")
 	)
 	(wire
 		(pts
@@ -6315,110 +6299,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
-		(at 68.58 171.45 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5fccf3c5-706b-446b-94ba-df7c7461114d")
-		(property "Reference" "Lseries1"
-			(at 68.58 166.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "15nH"
-			(at 68.58 168.91 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
-			(at 68.58 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 68.58 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "994-0402HP-15NXJRW"
-			(at 68.58 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://eu.mouser.com/ProductDetail/Coilcraft/0402HP-15NXJRW?qs=QNEnbhJQKvYIHcbZYhY5ig%3D%3D"
-			(at 68.58 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Coilcraft"
-			(at 68.58 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "0402HP-15NXJRW "
-			(at 68.58 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b1642809-0592-4744-9a8c-850247a0d675")
-		)
-		(pin "2"
-			(uuid "1965c60a-ebbd-4dcf-a5b2-1789f43e18d5")
-		)
-		(instances
-			(project "sensor"
-				(path "/0111ad26-080c-47bf-9fe6-1fe36fa86fb2"
-					(reference "Lseries1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 119.38 176.53 0)
 		(unit 1)
@@ -6716,7 +6596,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0pF"
+		(property "Value" "NC"
 			(at 82.55 177.7999 0)
 			(effects
 				(font
@@ -6725,7 +6605,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 79.7052 180.34 0)
 			(effects
 				(font
@@ -6780,6 +6660,15 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
+			(at 78.74 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "NO"
 			(at 78.74 176.53 0)
 			(effects
 				(font
@@ -8350,6 +8239,110 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 69.85 171.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9bd445e-51e8-4166-bae2-ec9cdac96a50")
+		(property "Reference" "R6"
+			(at 69.85 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 69.85 167.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 69.85 173.228 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 69.85 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "71-CRCW0603-0-E3"
+			(at 69.85 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Vishay/CRCW06030000Z0EA?qs=sGAEpiMZZMvdGkrng054t1X0qgDPqELU%252B4gm%252BoQ%252B0vM%3D"
+			(at 69.85 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at 69.85 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW06030000Z0EA"
+			(at 69.85 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "632ade44-c585-45a2-9c2c-c7dd265c1165")
+		)
+		(pin "2"
+			(uuid "46e29330-3c29-4316-a932-74b264d95d17")
+		)
+		(instances
+			(project ""
+				(path "/0111ad26-080c-47bf-9fe6-1fe36fa86fb2"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 171.45 17.78 0)
 		(unit 1)
@@ -9079,7 +9072,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0pF"
+		(property "Value" "NC"
 			(at 63.5 177.7999 0)
 			(effects
 				(font
@@ -9088,7 +9081,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 60.6552 180.34 0)
 			(effects
 				(font
@@ -9143,6 +9136,15 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" ""
+			(at 59.69 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Populate" "NO"
 			(at 59.69 176.53 0)
 			(effects
 				(font

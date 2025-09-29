@@ -418,7 +418,7 @@
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/libraries/3dmodels/MyParts/BAT-HLD-006-SMT.stp"
 		(offset
-			(xyz 0 -5 3.5)
+			(xyz 0 -5 3)
 		)
 		(scale
 			(xyz 1 1 1)
