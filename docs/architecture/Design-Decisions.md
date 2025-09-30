@@ -229,11 +229,69 @@ Sleep
 IRQ
 ATtiny406: 20-Pin VQFN
 
+# Storage events
+If you update on every open/close, use external I²C FRAM.
+ATtiny406’s EEPROM (~100k cycles) will wear out fast if you flip bits for many windows over a year.
+FRAM: https://pt.mouser.com/ProductDetail/Ramxeed/MB85RC64TAPNF-G-BDERE1?qs=sGAEpiMZZMuIiYGg9i1FDKlM%252Bqda5guug2rKlLpEIh9%2FUl1rXCJRlg%3D%3D
+
+What to keep in NVM (FRAM recommended)
+
+Header: magic, format version, counts, pointers (for journal), CRC.
+Registry (fixed table): one record per sensor you’ve paired.
+id (e.g., EV1527 24-bit or your own 32-bit)
+type (window, door, etc.)
+flags (paired, muted, low-bat last seen…)
+rssi_avg (8-bit)
+last_seen (u32, seconds)
+state (1 bit: open/close, plus tamper bit if you use it)
+Status bitmap (fast read): 1 bit per sensor mirroring state for instant boot/UI.
+Append-only journal (events): tiny records you append on every open/close (and optionally low-battery/tamper). Used to reconstruct after a crash, and for history if you want it.
+Snapshot block: a periodic copy of the status bitmap + per-sensor last_seen so you don’t have to replay a huge journal on boot.
+Concrete sizes (example)
+Assume up to 128 sensors.
+Registry record (16 bytes):
+u32 id | u8 type | u8 flags | u8 rssi | u8 state_ver | u32 last_seen | u16 reserved | u16 crc
+Registry: 16 B × 128 = 2 KB
+Status bitmap: ceil(128/8) = 16 B
+Snapshot (bitmap + compact last_seen deltas + CRC): ≈ 256–512 B typical
+
+Journal record (6–8 bytes):
+e.g., u16 seq | u7 sensor_idx | u1 new_state | u8 evt | u16 dt_seconds | u8 crc
+Keep a few KB rolling window (e.g., 8–16 KB) and prune on each snapshot.
+Even a tiny 32 KB FRAM (MB85RC256V) is plenty for this.
+Write pattern (battery-friendly)
+On each event (open/close/low-bat): update RAM mirror → append one journal record (6–8 B).
+Periodically (e.g., every 15–30 min or every 64 events): write a snapshot and advance the journal head.
+On boot: load latest snapshot → replay journal → done (fast).
+
+Why this works well
+FRAM → effectively unlimited endurance and instant writes (no erase), perfect for frequent state flips.
+Crash-safe → append-only + CRC; you never corrupt the registry if power dies mid-write.
+Fast boot → status bitmap gives instant “which windows are open,” then you can lazily read per-sensor details.
+If you must start without FRAM
+Internal EEPROM is OK for a small fleet (say ≤16–20 sensors) if you batch writes (e.g., every 10–30 minutes) and implement a simple ring/wear-level per record. Still, FRAM is strongly preferred for per-event updates.
+
 # OOK RF Receiver
 
 CC1101
 
 # Balun
+From CC1101 Datasheet:
+- L131 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
+- L132 [18 nH, ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
+- L121 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
+- L122 [18 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
+- L123 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
+- L124 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
+- L125 [3.3 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
+
+- C131 [1.5 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
+- C121 [1.0 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
+- C122 [1.5 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
+- C124 [100 pF ± 5%, 0402 NP0]: Murata GRM1555C series
+- C123 [3.3 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
+- C125 [12 pF ± 5%, 0402 NP0]: Murata GRM1555C series
+- C126 [47 pF ± 5%, 0402 NP0]: Murata GRM1555C series
 
 # Gateway Antenna
 50 ohms monopole:

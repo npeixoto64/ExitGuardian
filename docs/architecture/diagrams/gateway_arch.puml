@@ -7,7 +7,8 @@ skinparam ranksep 100
 
 
 node "Gateway" as GW {
-[MCU + NvM] as MCU
+[MCU] as MCU
+[FRAM] as FRAM
 [ANTENNA] as ANT
 [PI_MATCHING] as PI
 [BALUN] as BALUN
@@ -28,7 +29,8 @@ BAT -down-> BZDRV : Vdd
 ANT -right-> PI: 50ohms
 PI -right-> BALUN: 50ohms
 BALUN -right-> RF: to differential
-RF -down-> MCU : SPI
+RF <-down-> MCU : SPI
+FRAM <-right-> MCU : I2C
 REED -down-> MCU : GPIO
 BTN -right-> MCU: GPIO
 MCU -right-> LEDS : GPIO
