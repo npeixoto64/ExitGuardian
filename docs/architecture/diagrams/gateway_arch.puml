@@ -7,20 +7,32 @@ skinparam ranksep 100
 
 
 node "Gateway" as GW {
-[MCU + NvM]
-[RF Receiver 868MHz]
-[Button]
-[LEDs: G/Y/R]
-[Buzzer]
-[Power Mux\n(+5V DC + 2xAA)]
-[Door Sensor (Reed)]
+[MCU + NvM] as MCU
+[ANTENNA] as ANT
+[PI_MATCHING] as PI
+[BALUN] as BALUN
+[RF Receiver 868MHz] as RF
+[Button] as BTN
+[LEDs: G/Y/R] as LEDS
+[Buzzer Driver] as BZDRV
+[Buzzer] as BZR
+[Battery: 2xAA] as BAT
+[Door Sensor (Reed)] as REED
 }
 
 
-[Door Sensor (Reed)] -right-> [MCU + NvM] : GPIO
-[RF Receiver 868MHz] -down-> [MCU + NvM]
-[Button] -down-> [MCU + NvM]
-[LEDs: G/Y/R] -down-> [MCU + NvM]
-[Buzzer] -left-> [MCU + NvM]
-[Power Mux\n(+5V DC + 2xAA)] -down-> [MCU + NvM] : 3.3V
+BAT -down-> MCU : Vdd
+BAT -down-> BALUN : Vdd
+BAT -down-> RF : Vdd
+BAT -down-> BZDRV : Vdd
+ANT -right-> PI: 50ohms
+PI -right-> BALUN: 50ohms
+BALUN -right-> RF: to differential
+RF -down-> MCU : SPI
+REED -down-> MCU : GPIO
+BTN -right-> MCU: GPIO
+MCU -right-> LEDS : GPIO
+MCU -right-> BZDRV: GPIO
+BZDRV -right-> BZR: step-up
+
 @enduml

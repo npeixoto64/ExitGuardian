@@ -207,8 +207,8 @@ ANT-868-HESM => https://eu.mouser.com/ProductDetail/TE-Connectivity-Linx-Technol
 
 # Box/Case: PCB size and format
 
-2 layers or 4 layers PCB?
-2 Layers.
+2 layers PCB.
+Box not selected yet.
 
 https://eu.mouser.com/c/enclosures
 https://www.takachi-enclosure.com/search/detail
@@ -219,8 +219,6 @@ Mouser Part Number
 Mouser Price/Stock
 Manufacturer_Name
 Manufacturer_Part_Number
-
-# Eurocircuits DRC
 
 ## Gateway MCU
 
@@ -238,11 +236,151 @@ CC1101
 # Balun
 
 # Gateway Antenna
+50 ohms monopole:
+ANT-868-HESM => https://eu.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-868-HESM?qs=hWgE7mdIu5TTyqPbNERfhg%3D%3D
 
-# Power and Power Switch
+# Power Supply
+Let's see if it will be directly. I need to discuss that.
+Directly from battery: MCU and CC1101.
 
-# Low battery detection??
+Recommended architecture (simple, longest life)
+Run everything straight from the battery rail (VBAT) and avoid a always-on regulator.
+VBAT range (2 cells):
+• Alkaline: ~3.2 V fresh → ~1.8 V at end
+• Ni-MH (LSD types like Eneloop): ~2.8–3.0 V fresh → ~2.0 V at end
+Device limits:
+• ATtiny406: 1.8–5.5 V → OK across VBAT range
+• CC1101: 1.8–3.6 V → OK across VBAT range
+Implication: you can skip the LDO/buck-boost (saves quiescent current) and just size Brown-Out Detect (BOD) around ~2.0–2.2 V so the MCU never runs too low.
 
-## Buzzer
+Parts notes
+Reverse polarity: P-MOSFET SOT-23 (e.g., –20…–30 V, RDS(on) ≤ 50 mΩ). Source→VBAT, Drain→SYS_3V, Gate→VBAT via 100 k, plus 100 Ω series from gate to VBAT node (optional) to tame hot-plug.
+ESD/TVS: if user-replaceable cells in harsh env, add a small 5–6 V TVS at the battery input.
+Sense battery: use the bandgap-vs-VCC ADC trick (zero extra parts) or a gated high-value divider to an ADC pin for better accuracy.
 
-## Gateway Reed Switch
+Why not regulate?
+LDO: even the best low-Iq LDOs burn some headroom and drop out below ~VOUT+dropout → you throw away tail capacity under 2.2–2.4 V.
+Buck-boost: gives constant 3.0–3.3 V, but typical Iq = 10–30 µA (or more), which eats into a ~270 µA average budget for 1-year life. If you ever need it, choose one with ≤1–2 µA Iq and gate it off during deep sleep.
+Alkaline vs Ni-MH: what changes?
+Alkaline: higher initial voltage and energy at low current; more internal resistance at high pulse loads and cold. Great for your duty-cycled design.
+Ni-MH (LSD): more flat discharge and better pulse current; slightly lower starting voltage. They self-discharge (LSD fixes most), so shelf life is shorter than alkaline if device sits unused for many months.
+Firmware: keep two threshold tables (WARN/CRITICAL) since the curves differ. Example starting points (tune after measuring):
+Alkaline: WARN ~2.5 V, CRIT ~2.2 V
+Ni-MH: WARN ~2.3–2.4 V, CRIT ~2.0–2.1 V
+Interactions with your buzzer boost
+Your 12 V boost for the piezo is on its own EN pin → off = ~0 µA.
+During beeps, VBAT droops a bit; keep beep bursts short (e.g., 200 ms) and add 22–47 µF on the boost output to keep tone amplitude stable.
+
+# Low battery detection
+Use the MCU
+1) Divider-less (zero extra parts) — measure VCC via the internal bandgap
+Configure the ADC to use VCC as the ADC reference and select the internal bandgap channel as the input.
+
+Read the ADC value adc_bg; since ADC = 1024 * VBG / VCC, compute:
+VCC(mV) ≈ VBG(mV)×1024 / adc_bg
+
+Use the nominal bandgap (e.g., ~1100 mV) or store a calibrated value during production for better accuracy.
+Pros: no resistors, zero bleed current.
+Cons: accuracy limited by bandgap/ADC tolerance (often ±5–10% uncalibrated). Calibrate once and you’re golden.
+
+2) Higher accuracy — tiny resistor divider to an ADC pin
+Use the ADC with internal fixed reference (e.g., ~1.1 V) and feed VBAT through a high-value divider (e.g., 1.0 MΩ : 330 kΩ → ~0.33×).
+Add a 100 nF cap from ADC pin to GND for a steady reading.
+To eliminate divider bleed in sleep, switch the high leg with a GPIO (set high only while measuring) or a small P-MOSFET.
+Pros: better absolute accuracy and temperature stability.
+Cons: two resistors (+ optional FET).
+Practical thresholds for 2×AA (alkaline or NiMH)
+Pick two levels with hysteresis so you don’t flap around the boundary:
+WARN: ~2.4–2.5 V (alkaline getting low / NiMH near nominal under load)
+CRITICAL: ~2.1–2.2 V (below this many radios/MCUs get flaky)
+Also set BOD (Brown-Out Detect) near your minimum safe VCC (e.g., ~2.0–2.2 V) so you never run code at an unsafe voltage. Use BOD-in-sleep off if you need ultra-low standby current and your risk analysis allows it.
+Make the reading robust
+Measure under (light) load occasionally (e.g., keep CC1101 on for a few ms or blink a small LED) so you see real droop, not just open-circuit voltage.
+Average 4–8 samples, discard obvious spikes, and apply hysteresis between WARN↔OK.
+Do it rarely to save power (e.g., once every 10–30 minutes, or after wake events).
+Temperature matters—if you don’t calibrate, keep a little margin on thresholds.
+
+# Type of Buzzer
+Piezo or magnetic buzzer?
+Piezo: low current, but not so loud.
+Magnetic buzzer: high current, but loud enough.
+With some technics we can get a piezo lounder.
+However, I found a louder one, and it's piezo, but needs driver circuit and boots from 3 V to 12 V:
+https://pt.mouser.com/ProductDetail/Murata-Electronics/PKMCS1818E20A0-R1?qs=2m8Gdae5Lr0i0Y6WwcK3JA%3D%3D
+We need 4 KHz PWM, which is easy with the MCU. A driver is needed.
+
+Topology (overview)
+Boost to 12 V (only during beep)
+Use a tiny inductor boost with EN pin → 12 V.
+Good fit: LT1615 (up to 34 V out, shutdown ≈0.5 µA). 
+Analog Devices
++1
+Dual CMOS driver @ 12 V
+Use a dual MOSFET gate driver (built to drive capacitive loads) powered from the 12 V rail. Feed it a PWM + its inverse. Connect the two outputs straight to the piezo’s two pins → bridge drive = ~24 Vpp from a 12 V rail.
+Good fit: TC4427A (12 V supply ok, TTL-compatible inputs). 
+Mouser Electronics
++1
+Transducer
+Murata PKMCS1818E20A0-R1 (rated 100 dB typ @ 12 V_o-p, 2 kHz, 10 cm). 
+Mouser Electronics
++1
+Schematic sketch (blocks)
+2×AA → ATtiny406 (3 V domain)
+Boost (LT1615) VIN=3 V → VOUT=12 V
+L = 10 µH (e.g., 2–3 A sat SMD inductor),
+D = Schottky 30–40 V (SOD-123),
+COUT = 2.2–4.7 µF (25 V X5R/X7R),
+EN pin from Tiny406 GPIO (active only during beep).
+TC4427A VDD=12 V, GND=0 V
+IN-A = PWM from Tiny406 (3 V logic)
+IN-B = inverted PWM (from Tiny or via XOR/not in code)
+OUT-A → Piezo pin 1
+OUT-B → Piezo pin 2
+Optional 33–68 Ω series resistors at each OUT for EMI softening
+1 MΩ across piezo pins (bleeder to discharge after beep)
+Murata PKMCS1818E20A0-R1 mounted with a front sound port/vent.
+This gives ~+/-12 V on the piezo (swapping ends each half-cycle), i.e., ~24 Vpp, which matches Murata’s SPL test condition and is noticeably louder than any 3 V drive. 
+Mouser Electronics
+Control sequence (Tiny406)
+Set PWM frequency near the buzzer’s loud spot (start at ~2.0–2.5 kHz; Murata’s sheet uses 2 kHz; you can sweep 1.8–3.5 kHz to peak in your enclosure). 
+Enable boost (EN=1); wait ~2–5 ms for 12 V to rise.
+Enable TC4427A drive (start PWM + inverted PWM).
+Beep pattern (e.g., 200 ms on / 200 ms off × N).
+Stop PWM, EN=0 on boost. (The 1 MΩ bleeds the piezo.)
+The LT1615’s shutdown current is sub-µA, so idle battery impact is negligible; all power is spent only during beep.
+
+# Gateway Reed Switch
+Same as Wireless Sensor reed switch.
+
+# Battery holder
+https://pt.mouser.com/ProductDetail/Keystone-Electronics/2462?qs=sGAEpiMZZMvxqoKe%252BDjhrte%252BlrLaYtz%2F4XqS9Isgiuc%3D
+
+Electrical notes:
+Reverse polarity protection: Add a P-FET ideal diode or a low-Vf Schottky between the holder and 3 V rail.
+Fuse: Optional resettable PTC (~250–500 mA hold) for abuse tolerance.
+VBAT sensing: If you want to measure battery level, place a divider (or use ATtiny band-gap trick) on the holder’s positive before the protection diode.
+
+PCB & Layout tips
+Footprint: Use the manufacturer drawing — Keystone publishes CAD/STEP and PCB land pattern. (KiCad libraries also have it under Battery_Holder:BatteryHolder_Keystone_2462_2xAA).
+Keep-out: Leave at least 5 mm clearance between battery edge and any RF keep-out zone/antenna region. Batteries are large conductive bodies → can detune your 868 MHz antenna.
+Silkscreen: Mark “+ / –” clearly at both ends; helps avoid reversed insertion during assembly/testing.
+Support: If the device is handheld or shaken, add side walls or bosses in enclosure to prevent lateral stress on solder joints.
+Access: Place the holder so cells can be dropped in/out without colliding with tall components or enclosure lips.
+
+# Type of Push Button
+VCC (≈3.0 V)
+  |
+  Rpull-up 680 kΩ … 1 MΩ   ← ultra-low standby current
+  |
+  +-----> MCU pin (ATtiny406 GPIO with Schmitt input)
+  |         |
+  |        Cdebounce 10–47 nF
+  |         |
+ Button     Rseries 100–220 Ω (ESD/EMI damp)
+  |         |
+ GND       ESD diode (if user-exposed)  → to GND
+ 
+ https://pt.mouser.com/ProductDetail/Omron-Electronics/B3F-1070?qs=CX134%252BdLMDEbZOltqAbCng%3D%3D
+ 
+# Eurocircuits DRC
+
