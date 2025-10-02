@@ -329,6 +329,14 @@ Interactions with your buzzer boost
 Your 12 V boost for the piezo is on its own EN pin → off = ~0 µA.
 During beeps, VBAT droops a bit; keep beep bursts short (e.g., 200 ms) and add 22–47 µF on the boost output to keep tone amplitude stable.
 
+# Polarity Inversion protection
+
+https://www.onsemi.com/download/application-notes/pdf/and90146-d.pdf
+https://www.powerelectronicsnews.com/comparing-n-channel-and-p-channel-mosfets-which-is-best-for-your-application/
+
+Best fit:
+https://pt.mouser.com/ProductDetail/Infineon-Technologies/IRLML6402TRPBF?qs=9%252BKlkBgLFf0HuZuONx2Ewg%3D%3D
+
 # Low battery detection
 Use the MCU
 1) Divider-less (zero extra parts) — measure VCC via the internal bandgap
@@ -407,6 +415,22 @@ Beep pattern (e.g., 200 ms on / 200 ms off × N).
 Stop PWM, EN=0 on boost. (The 1 MΩ bleeds the piezo.)
 The LT1615’s shutdown current is sub-µA, so idle battery impact is negligible; all power is spent only during beep.
 
+Boost: LT1615ES5-1#TRMPBF: https://pt.mouser.com/ProductDetail/Analog-Devices/LT1615ES5-1TRMPBF?qs=ytflclh7QUUp0a%252Bd7RWj%2FQ%3D%3D
+Dual MOSFET: MIC4427YM: https://pt.mouser.com/ProductDetail/Microchip-Technology/MIC4427YM?qs=kh6iOki%2FeLEkjJUQ4zBy0A%3D%3D
+
+Boost:
+Cin: [0805, 10uF, 6.3V, X7R] [CGA4J1X7R0J106K125AC] https://pt.mouser.com/ProductDetail/TDK/CGA4J1X7R0J106K125AC?qs=NRhsANhppD%2FK4ZRLurir6Q%3D%3D
+Cout: [1210, 4.7uF, 25V, X7S] [MCJCT32MAB7475KPPA01] https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/MCJCT32MAB7475KPPA01?qs=tlsG%2FOw5FFjfKFWRiQhUjA%3D%3D
+Schottky Diode: [0.5A, 20V] [MBR0520LT3G] https://pt.mouser.com/ProductDetail/onsemi/MBR0520LT3G?qs=3JMERSakebrHITezQJBmeQ%3D%3D
+
+Feedback Resistors:
+[0402]
+R1 = 1.15M
+R2 = 130K
+Vout = 12.11 V
+
+L = 10uH (calculated => 11.2uH) [CD43NP-100MC] https://pt.mouser.com/ProductDetail/Sumida/CD43NP-100MC?qs=ttApTud31Jaza%252BoSAZtv6w%3D%3D
+
 # Gateway Reed Switch
 Same as Wireless Sensor reed switch.
 
@@ -438,7 +462,13 @@ VCC (≈3.0 V)
   |         |
  GND       ESD diode (if user-exposed)  → to GND
  
+ B3F1070
  https://pt.mouser.com/ProductDetail/Omron-Electronics/B3F-1070?qs=CX134%252BdLMDEbZOltqAbCng%3D%3D
+ 
+ # LEDs
+ Blue: [WP710A10LVBC_D] https://pt.mouser.com/ProductDetail/Kingbright/WP710A10LVBC-D?qs=6oMev5NRZMF7xED66hMqMg%3D%3D
+ Yellow: [TLHY4400-AS12Z] https://pt.mouser.com/ProductDetail/Vishay-Semiconductors/TLHY4400-AS12Z?qs=sGAEpiMZZMvVL5Kk7ZYykSSdL1QvRuGruSF7bleI1Sw%3D
+ Red: [TLHR4400-AS12Z] https://pt.mouser.com/ProductDetail/Vishay-Semiconductors/TLHR4400-AS12Z?qs=sGAEpiMZZMvVL5Kk7ZYykSSdL1QvRuGrmGBvu1dktLk%3D
  
 # Eurocircuits DRC
 
