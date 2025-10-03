@@ -232,7 +232,7 @@ ATtiny406: 20-Pin VQFN
 # Storage events
 If you update on every open/close, use external I²C FRAM.
 ATtiny406’s EEPROM (~100k cycles) will wear out fast if you flip bits for many windows over a year.
-FRAM: https://pt.mouser.com/ProductDetail/Ramxeed/MB85RC64TAPNF-G-BDERE1?qs=sGAEpiMZZMuIiYGg9i1FDKlM%252Bqda5guug2rKlLpEIh9%2FUl1rXCJRlg%3D%3D
+FRAM: [MB85RC64TAPNF-G-BDERE1] https://pt.mouser.com/ProductDetail/Ramxeed/MB85RC64TAPNF-G-BDERE1?qs=sGAEpiMZZMuIiYGg9i1FDKlM%252Bqda5guug2rKlLpEIh9%2FUl1rXCJRlg%3D%3D
 
 What to keep in NVM (FRAM recommended)
 
