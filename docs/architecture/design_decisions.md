@@ -275,6 +275,8 @@ Internal EEPROM is OK for a small fleet (say ≤16–20 sensors) if you batch wr
 
 CC1101
 
+Crystal: [NX3225GA-26.000M-STD-CRG-2, 26MHz], https://pt.mouser.com/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D
+
 # Balun
 From CC1101 Datasheet:
 - L131 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)

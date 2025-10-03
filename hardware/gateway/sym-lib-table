@@ -17,4 +17,5 @@
   (lib (name "MIC4427YM")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/MIC4427YM.kicad_sym")(options "")(descr ""))
   (lib (name "MBR0520LT3G")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/MBR0520LT3G.kicad_sym")(options "")(descr ""))
   (lib (name "CD43NP-100MC")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/CD43NP-100MC.kicad_sym")(options "")(descr ""))
+  (lib (name "ANT-868-HESM")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/ANT-868-HESM.kicad_sym")(options "")(descr ""))
 )
