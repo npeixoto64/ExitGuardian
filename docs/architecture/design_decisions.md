@@ -1,5 +1,14 @@
 ### Wireless Sensor
 
+Minimum voltage: 1,8 V
+Have a deep sleep mode (uA), waking up from ext. interrupt from input pin.
+2 digital inputs
+1 digital output
+1 I2C
+
+[STM8L001J3M3] https://pt.mouser.com/ProductDetail/STMicroelectronics/STM8L001J3M3?qs=W0yvOO0ixfEEZjTt2jCv0Q%3D%3D
+
+
 # Power budgets
 
 MCU: ATtiny 20x/22x (we’ll call it ATtiny220 here)
@@ -471,6 +480,19 @@ VCC (≈3.0 V)
  Blue: [WP710A10LVBC_D] https://pt.mouser.com/ProductDetail/Kingbright/WP710A10LVBC-D?qs=6oMev5NRZMF7xED66hMqMg%3D%3D
  Yellow: [TLHY4400-AS12Z] https://pt.mouser.com/ProductDetail/Vishay-Semiconductors/TLHY4400-AS12Z?qs=sGAEpiMZZMvVL5Kk7ZYykSSdL1QvRuGruSF7bleI1Sw%3D
  Red: [TLHR4400-AS12Z] https://pt.mouser.com/ProductDetail/Vishay-Semiconductors/TLHR4400-AS12Z?qs=sGAEpiMZZMvVL5Kk7ZYykSSdL1QvRuGrmGBvu1dktLk%3D
- 
+
+
+# Requirements
+Minimum supply voltage: 1,8 V
+Have a deep sleep mode (uA), waking up from ext. Interrupt from input pin.
+1 analog input
+2 digital inputs
+4 digital outputs
+1 differential PWM output
+1 SPI
+1 I2C
+
+[STM8L151K4T6] https://pt.mouser.com/ProductDetail/STMicroelectronics/STM8L151K4T6?qs=H8t2elxe2QfV%252BTwO2SHNjg%3D%3D
+
 # Eurocircuits DRC
 
