@@ -494,5 +494,8 @@ Have a deep sleep mode (uA), waking up from ext. Interrupt from input pin.
 
 [STM8L151K4T6] https://pt.mouser.com/ProductDetail/STMicroelectronics/STM8L151K4T6?qs=H8t2elxe2QfV%252BTwO2SHNjg%3D%3D
 
+4 pin header:
+https://pt.mouser.com/ProductDetail/Amphenol-Commercial-Products/G8250041000YEU?qs=f9yNj16SXrKPzZ0fvYmqsg%3D%3D
+
 # Eurocircuits DRC
 
