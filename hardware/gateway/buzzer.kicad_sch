@@ -2453,17 +2453,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 31.75 49.53 0)
+		(lib_id "Device:C")
+		(at 78.74 107.95 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0ae83299-6dc0-41b2-98c1-955e2b5d43aa")
-		(property "Reference" "R12"
-			(at 34.29 48.2599 0)
+		(uuid "13f192de-b112-44cb-92ad-c7193bdf0973")
+		(property "Reference" "C18"
+			(at 74.93 106.6799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2471,8 +2471,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100K"
-			(at 34.29 50.7999 0)
+		(property "Value" "4.7uF, 25V"
+			(at 74.93 109.2199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2480,8 +2480,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 32.766 49.784 90)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 77.7748 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2490,7 +2490,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 49.53 0)
+			(at 78.74 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2498,8 +2498,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 31.75 49.53 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 78.74 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2507,16 +2507,158 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "83781190-ee44-4138-b398-ff0141e21427")
+		(property "Mouser Part Number" "963-MCAST21GBC7475KT"
+			(at 78.74 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/MCAST21GBC7475KTCA01?qs=sGAEpiMZZMt7gvpyg0xT8jBHDtGZvLzXb941vLF5SVj2yozhZB9mcA%3D%3D"
+			(at 78.74 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Taiyo Yuden"
+			(at 78.74 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MCAST21GBC7475KTCA01"
+			(at 78.74 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "cd9f7441-7eaf-444c-a7f0-6180a5473c5b")
+			(uuid "11fa00a4-56cd-4074-b52c-fd9648f2e5a5")
+		)
+		(pin "1"
+			(uuid "64cf8079-9af5-4ed7-9f76-7a31b74e9120")
 		)
 		(instances
-			(project ""
+			(project "gateway"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/fe77db69-068b-4697-8152-e8993e362189"
-					(reference "R12")
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 115.57 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2422a870-1eb7-45f6-b0f5-42f2482a3c34")
+		(property "Reference" "C17"
+			(at 119.38 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF, 25V"
+			(at 119.38 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 116.5352 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 115.57 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "963-MCAST21GBC7475KT"
+			(at 115.57 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/MCAST21GBC7475KTCA01?qs=sGAEpiMZZMt7gvpyg0xT8jBHDtGZvLzXb941vLF5SVj2yozhZB9mcA%3D%3D"
+			(at 115.57 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Taiyo Yuden"
+			(at 115.57 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MCAST21GBC7475KTCA01"
+			(at 115.57 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "595b9c24-7533-44d2-9575-30b62cf147cb")
+		)
+		(pin "1"
+			(uuid "75cb8ab0-3d24-45be-9d5a-243f0ccbe726")
+		)
+		(instances
+			(project "gateway"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/fe77db69-068b-4697-8152-e8993e362189"
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -2531,8 +2673,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "26621b7c-fbbc-40f1-b525-e26c24997726")
-		(property "Reference" "C1"
+		(uuid "28787c38-36ae-4cbe-9cc0-564cd231a4d4")
+		(property "Reference" "C15"
 			(at 46.99 48.2599 0)
 			(effects
 				(font
@@ -2550,7 +2692,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 44.1452 53.34 0)
 			(effects
 				(font
@@ -2577,16 +2719,52 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "305491d8-b869-4276-83d7-071f87927752")
+		(property "Mouser Part Number" "81-GGM31CD70J226KE2L"
+			(at 43.18 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GGM31CD70J226KE02L?qs=sGAEpiMZZMt7gvpyg0xT8jBHDtGZvLzXbIFnZ8CFMEeTkIVGCJ8NdQ%3D%3D"
+			(at 43.18 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 43.18 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GGM31CD70J226KE02L"
+			(at 43.18 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "e73f5800-88bf-4429-a44b-6b75dc86a854")
+			(uuid "ea30a511-ecba-4870-bfff-fd7f5d71b765")
+		)
+		(pin "1"
+			(uuid "83ad76a0-17ec-4db5-99c8-9deb88a3c633")
 		)
 		(instances
-			(project ""
+			(project "gateway"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/fe77db69-068b-4697-8152-e8993e362189"
-					(reference "C1")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -2594,31 +2772,32 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 104.14 100.33 90)
+		(at 104.14 100.33 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3ddbec1f-0b7e-47f3-87af-9796c7e7665c")
-		(property "Reference" "R21"
-			(at 104.14 104.394 90)
+		(uuid "2b02ba96-d0a0-41c2-90e9-2880de4914b0")
+		(property "Reference" "R19"
+			(at 104.14 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "33"
-			(at 104.14 106.934 90)
+		(property "Value" "33R"
+			(at 104.14 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 104.394 99.314 90)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 103.886 99.314 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2644,51 +2823,8 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "39f4c229-e86d-4c3d-8f4d-51fc1580cc1b")
-		)
-		(pin "2"
-			(uuid "208c22d3-cbc4-41c7-8f0b-fff454198d83")
-		)
-		(instances
-			(project "gateway"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/fe77db69-068b-4697-8152-e8993e362189"
-					(reference "R21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 86.36 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "473ae568-2dad-4c85-bcac-4c6dfe28b62c")
-		(property "Reference" "C9"
-			(at 90.17 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 90.17 109.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.3252 111.76 0)
+		(property "Mouser Part Number" "667-ERJ-S02J330X"
+			(at 104.14 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2696,8 +2832,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 86.36 107.95 0)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-S02J330X?qs=sGAEpiMZZMvdGkrng054t%252BB3dTvXmYJZ97y%2FhHbL7G0%3D"
+			(at 104.14 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2705,8 +2841,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 86.36 107.95 0)
+		(property "Manufacturer_Name" "Panasonic"
+			(at 104.14 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ERJ-S02J330X"
+			(at 104.14 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2715,15 +2860,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "98609319-9021-4503-90cb-466c63f0aac7")
+			(uuid "bd76bd74-28c2-4b59-8943-8ba6edf3bb15")
 		)
 		(pin "2"
-			(uuid "0255b819-3ef5-4d13-879a-30b56922e046")
+			(uuid "e1629d61-7327-47ee-9caf-96ee87c55bdc")
 		)
 		(instances
 			(project "gateway"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/fe77db69-068b-4697-8152-e8993e362189"
-					(reference "C9")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -2731,34 +2876,32 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 99.06 46.99 0)
+		(at 104.14 95.25 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4db95c8b-307a-4e81-82a4-2e1aec096a39")
+		(uuid "357d94e5-76ac-4d9e-8295-c9560bfe8a92")
 		(property "Reference" "R18"
-			(at 101.6 45.7199 0)
+			(at 104.14 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "130K"
-			(at 101.6 48.2599 0)
+		(property "Value" "33R"
+			(at 104.14 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 100.076 47.244 90)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 103.886 96.266 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2767,7 +2910,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 99.06 46.99 0)
+			(at 104.14 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2776,7 +2919,43 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 99.06 46.99 0)
+			(at 104.14 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "667-ERJ-S02J330X"
+			(at 104.14 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-S02J330X?qs=sGAEpiMZZMvdGkrng054t%252BB3dTvXmYJZ97y%2FhHbL7G0%3D"
+			(at 104.14 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Panasonic"
+			(at 104.14 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ERJ-S02J330X"
+			(at 104.14 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2785,10 +2964,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "e62e8193-4b88-4a22-940d-cdfb4188d428")
+			(uuid "e6257f20-70cb-42d3-aa4b-468542b249e4")
 		)
 		(pin "2"
-			(uuid "541066b5-98f2-4883-81d2-ffa839b24787")
+			(uuid "6e082dd9-1849-45e8-87a6-d275c8a887d2")
 		)
 		(instances
 			(project "gateway"
@@ -2801,34 +2980,34 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 123.19 97.79 0)
-		(mirror y)
+		(at 99.06 46.99 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4fbc4b01-67d5-46a4-9cb9-05d22a0683de")
-		(property "Reference" "R19"
-			(at 120.65 96.5199 0)
+		(fields_autoplaced yes)
+		(uuid "47de7d74-5866-411e-bc6e-8712896170b5")
+		(property "Reference" "R16"
+			(at 101.6 45.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "1M"
-			(at 120.65 99.0599 0)
+		(property "Value" "130K"
+			(at 101.6 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 122.174 98.044 90)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 98.044 46.736 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2837,7 +3016,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 123.19 97.79 0)
+			(at 99.06 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2846,7 +3025,43 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 123.19 97.79 0)
+			(at 99.06 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "603-RC0402DR-07130KL"
+			(at 99.06 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402DR-07130KL?qs=sGAEpiMZZMvdGkrng054t2bZ0yF35f3tzAahqkT9t8Y32vJwWK6EuA%3D%3D"
+			(at 99.06 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 99.06 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0402DR-07130KL"
+			(at 99.06 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2855,15 +3070,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "e634b57c-6fba-4bc9-8761-30046e29c9c8")
+			(uuid "9af43b09-5f76-47c9-8377-9a5357b59521")
 		)
 		(pin "2"
-			(uuid "c5a3dd1b-791c-4b81-8b14-cf652ea1ed5d")
+			(uuid "c88c01b9-5bd1-446a-819b-648350c26e62")
 		)
 		(instances
 			(project "gateway"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/fe77db69-068b-4697-8152-e8993e362189"
-					(reference "R19")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -2936,35 +3151,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 115.57 46.99 0)
+		(lib_id "Device:R_US")
+		(at 107.95 38.1 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5da1541b-54c5-4b07-bfdd-50640faa4910")
-		(property "Reference" "C2"
-			(at 119.38 45.7199 0)
+		(uuid "5cd9f4ad-527c-406d-919f-c7258ab203b4")
+		(property "Reference" "R17"
+			(at 107.95 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "4.7uF, 25V"
-			(at 119.38 48.2599 0)
+		(property "Value" "1.15M"
+			(at 107.95 41.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 116.5352 50.8 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 108.204 39.116 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2973,7 +3186,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 46.99 0)
+			(at 107.95 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2981,8 +3194,44 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 115.57 46.99 0)
+		(property "Description" "Resistor, US symbol"
+			(at 107.95 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "603-RC0402FR-071M15L"
+			(at 107.95 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402FR-071M15L?qs=sGAEpiMZZMvdGkrng054tx7%2F6%252BNA3LAJCTMduANnvMU%3D"
+			(at 107.95 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 107.95 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0402FR-071M15L"
+			(at 107.95 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2991,15 +3240,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c134af4a-f530-46c4-81d9-2c5f2b51e1f0")
+			(uuid "2c9f5f99-beb7-4ebd-a845-faf1498c78cd")
 		)
 		(pin "2"
-			(uuid "74ac095b-1c49-4e77-b13e-5400ca3c7086")
+			(uuid "558810bd-ac78-4022-9505-a9348e1a83c4")
 		)
 		(instances
-			(project ""
+			(project "gateway"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/fe77db69-068b-4697-8152-e8993e362189"
-					(reference "C2")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -3773,144 +4022,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 78.74 107.95 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "94049e75-5d9f-43f7-a93d-7c478aa238ed")
-		(property "Reference" "C8"
-			(at 74.93 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7uF, 25V"
-			(at 74.93 109.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 77.7748 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 78.74 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 78.74 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "73cc80c5-98bd-4986-be1d-5fb612aa32dc")
-		)
-		(pin "2"
-			(uuid "0b05341b-bfe9-4ee1-a6da-675995dfb8ae")
-		)
-		(instances
-			(project "gateway"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/fe77db69-068b-4697-8152-e8993e362189"
-					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 107.95 33.02 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a835d13d-444d-4766-8d2d-01a952b0f439")
-		(property "Reference" "C3"
-			(at 107.95 25.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.7pF"
-			(at 107.95 27.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 32.0548 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 107.95 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 107.95 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e63b0504-3095-43e1-acc0-e672eb7e2ef3")
-		)
-		(pin "2"
-			(uuid "717936c1-fc03-4ca6-b72f-a97a09933721")
-		)
-		(instances
-			(project "gateway"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/fe77db69-068b-4697-8152-e8993e362189"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 40.64 119.38 0)
 		(unit 1)
@@ -4110,99 +4221,34 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 104.14 95.25 90)
+		(at 31.75 49.53 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c166fc53-73ca-4b8c-94b5-a20901ce819e")
-		(property "Reference" "R20"
-			(at 104.14 88.9 90)
+		(uuid "cadc65da-f56f-42a3-9219-2da2909618e3")
+		(property "Reference" "R15"
+			(at 34.29 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "33"
-			(at 104.14 91.44 90)
+		(property "Value" "100K"
+			(at 34.29 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 104.394 94.234 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 104.14 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 104.14 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6f11fcb5-e9f2-4daf-b3ab-d4375bab3ce7")
-		)
-		(pin "2"
-			(uuid "3f9690ca-6a05-45f0-b47b-b2895bb976dd")
-		)
-		(instances
-			(project "gateway"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/fe77db69-068b-4697-8152-e8993e362189"
-					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 107.95 38.1 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c5821392-22ac-4a51-9fef-938324cde86d")
-		(property "Reference" "R17"
-			(at 107.95 41.148 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1.15M"
-			(at 107.95 43.688 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 108.204 37.084 90)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 30.734 49.276 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4211,7 +4257,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 38.1 0)
+			(at 31.75 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4220,7 +4266,43 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 107.95 38.1 0)
+			(at 31.75 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "603-RC0402JR-7D100KL"
+			(at 31.75 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D100KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNDqn1Y%252B6zGYVTl0poVAV1uA%3D%3D"
+			(at 31.75 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 31.75 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0402JR-7D100KL"
+			(at 31.75 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4229,15 +4311,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "806cbf50-c556-4381-b023-05f2e0a259f4")
+			(uuid "aa2815d7-ac70-4a79-a8f2-8b2649fc49da")
 		)
 		(pin "2"
-			(uuid "12183b7d-e66b-41ab-b82f-18afefa11d95")
+			(uuid "7d38d899-ca67-4e5c-9f4a-a0210a7cee9e")
 		)
 		(instances
 			(project "gateway"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/fe77db69-068b-4697-8152-e8993e362189"
-					(reference "R17")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -4304,6 +4386,324 @@
 			(project "gateway"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/fe77db69-068b-4697-8152-e8993e362189"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 86.36 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e32bab0e-0e2d-4f99-85e9-6ff256a52dd0")
+		(property "Reference" "C19"
+			(at 90.17 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 90.17 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 87.3252 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 86.36 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-GCJ188R72A104KA1D"
+			(at 86.36 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GCJ188R72A104KA01D?qs=vAU15TnRQM%2FvAWQMlXkQEQ%3D%3D"
+			(at 86.36 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 86.36 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GCJ188R72A104KA1D"
+			(at 86.36 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "16c8ef65-deb7-4a83-9d90-9f4bbd9053a6")
+		)
+		(pin "1"
+			(uuid "f567ac39-c927-47e1-be06-c58d526c8fc5")
+		)
+		(instances
+			(project "gateway"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/fe77db69-068b-4697-8152-e8993e362189"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 123.19 97.79 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e790dd80-65e0-4b62-8957-c1284604bc0b")
+		(property "Reference" "R20"
+			(at 125.73 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1M"
+			(at 125.73 99.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 122.174 97.536 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 123.19 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "603-RC0402JR-7D1ML"
+			(at 123.19 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D1ML?qs=sGAEpiMZZMvdGkrng054t%252BT3WHYFVvJgwwPSFtsadAuv8VwIG4USFA%3D%3D"
+			(at 123.19 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 123.19 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0402JR-7D1ML"
+			(at 123.19 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6710718a-d2ee-4bfe-88e3-d3f1355bc0c5")
+		)
+		(pin "2"
+			(uuid "4638bc3b-e1e9-4d05-8a2f-de820d766b62")
+		)
+		(instances
+			(project "gateway"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/fe77db69-068b-4697-8152-e8993e362189"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 107.95 33.02 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f7951187-061b-43ba-9b55-d6aefa7eb49c")
+		(property "Reference" "C16"
+			(at 106.68 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7pF"
+			(at 106.6801 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 104.14 32.0548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 107.95 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-GCM1555C2A4R7BE2D"
+			(at 107.95 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GCM1555C2A4R7BE02D?qs=ZcfC38r4PosznFwfuEub%252Bw%3D%3D"
+			(at 107.95 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 107.95 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GCM1555C2A4R7BE02D"
+			(at 107.95 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b3897d53-bb28-437e-bd65-30bc02209b8a")
+		)
+		(pin "1"
+			(uuid "6dd1142f-4dc6-4350-b1be-efc81f2bbddd")
+		)
+		(instances
+			(project "gateway"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/fe77db69-068b-4697-8152-e8993e362189"
+					(reference "C16")
 					(unit 1)
 				)
 			)
