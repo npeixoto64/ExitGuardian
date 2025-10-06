@@ -14,7 +14,7 @@ node "Gateway" as GW {
 [BALUN] as BALUN
 [RF Receiver 868MHz] as RF
 [Button] as BTN
-[LEDs: G/Y/R] as LEDS
+[LEDs: B/Y/R] as LEDS
 [Buzzer Driver] as BZDRV
 [Buzzer] as BZR
 [Battery: 2xAA] as BAT
