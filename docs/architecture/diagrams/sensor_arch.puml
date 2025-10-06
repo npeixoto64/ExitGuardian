@@ -12,17 +12,21 @@ node "Sensor" {
 [MCU] as MCU
 [Voltage Supervisor] as VS
 [OOK TX 868 MHz] as TX
+[Balun] as BALUN
+[Pi-Matching] as PI
 [Antenna] as ANT
 }
 
 
-BAT -down- MCU
-BAT -down- VS
-BAT -down- TX
+BAT -down- MCU: Vdd
+BAT -down- VS: Vdd
+BAT -down- TX: Vdd
 
 REED -right---> MCU : open/close edge
 VS -right-> MCU: batt_low flag
 
 MCU -right-> TX : encoded bursts ×3
-TX -right-> ANT
+TX -right-> BALUN: differential OOK RF
+BALUN -right-> PI: 50ohms
+PI -right-> ANT: RF radiation
 @enduml

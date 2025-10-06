@@ -1,0 +1,131 @@
+(footprint "ANT-868-HESM"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "ANT-868-HESM")
+	(property "Reference" "ANT-868-HESM"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "eb75bafa-7f29-4e02-ae39-626fecb4b7e3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "ANT-868-HESM"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b341b1d2-592d-4737-bf27-5f32d7c7843a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "97a7ae71-58e3-4032-a691-274559114eb4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c84a8b4e-83bc-4eac-9433-54d0a6317eda")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -14.35 -14.25)
+		(end 14.3 3.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "478ea258-d155-400e-91c5-f7a3e5c625aa")
+	)
+	(fp_rect
+		(start -14.3 -14.25)
+		(end 14.4 3.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "b77f912d-8243-4727-becb-03a34184f55c")
+	)
+	(fp_rect
+		(start -14.33 -14.25)
+		(end 14.32 3.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "81cab4b8-12d0-435d-8a17-fb3247a630e2")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "efac3db9-6a7a-497d-b975-740cf982f2fa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -12.7 0)
+		(size 2.8 5.1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "1ec8fefc-4e9c-473e-97d8-8e6afab07ce7")
+	)
+	(pad "2" smd roundrect
+		(at 12.7 0)
+		(size 2.8 5.1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "2dc01048-14bc-472d-a063-b3422e0ebd42")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/libraries/3dmodels/MyParts/ANT-868-HESM.stp"
+		(offset
+			(xyz 0 -2.5 4.6)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
