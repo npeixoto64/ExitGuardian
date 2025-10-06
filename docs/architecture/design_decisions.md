@@ -1,15 +1,14 @@
-### Wireless Sensor
+## Sensor MCU
 
-Minimum voltage: 1,8 V
-Have a deep sleep mode (uA), waking up from ext. interrupt from input pin.
-2 digital inputs
-1 digital output
-1 I2C
+Minimum voltage supply: 1,8 V
+Have a deep sleep mode (uA), waking up from external interrupt from input pin.
+2 x digital inputs
+1 x digital output
+1 x I2C
 
 [STM8L001J3M3] https://pt.mouser.com/ProductDetail/STMicroelectronics/STM8L001J3M3?qs=W0yvOO0ixfEEZjTt2jCv0Q%3D%3D
 
-
-# Power budgets
+## Sensor Power budgets
 
 MCU: ATtiny 20x/22x (we’ll call it ATtiny220 here)
 TX: Silicon Labs Si4012 @ 868.3 MHz (OOK)
@@ -91,7 +90,7 @@ Total ≈ 0.081 mAh/day → 200 mAh / 0.081 ≈ 2,470 days ≈ 6.8 years
 Practical expectation: ~3–5 years on CR2032; 4–7 years on CR2450, depending on temperature and traffic.
 
 
-## Battery
+## Sensor Battery
 
 # CR2032
 
@@ -134,11 +133,11 @@ Re-tune the π-match after final battery/enclosure placement.
 Keep the TPS3839-L30 (2.63 V) + BOD ~2.4–2.6 V; thresholds still appropriate.
 Bottom line: If the enclosure can handle it, CR2450 buys you real robustness (longer life, fewer cold-sag issues). For a commercial product aimed at “install and forget,” I’d choose CR2450 and design the mechanics around it.
 
-# Bulk capacitor of 47 uF near the Si4012
+# Sensor Bulk capacitor of 47 uF near the Si4012
 
 https://pt.mouser.com/ProductDetail/KEMET/C0805C476M9PAC7800?qs=xL%2FyUNPmvLY2BGnZa3AdBg%3D%3D
 
-## Reed Switch
+## Sensor Reed Switch
 
 Sensitivity is measured in Ampere-Turns (AT).
 Lower AT more sensitive, closes at larger distance.
@@ -159,12 +158,12 @@ So: 6–10 AT → ~5–12 mm actuation range with a modest NdFeB magnet.
 The reed switch shall be SMT.
 The AT shall be 8-10.
 
-# Magnet
+# Sensor Magnet
 
 Size: 8 - 10 mm diammeter, 2-3 mm thickness.
 Type: NdFeB
 
-# Interface Reed -> MCU
+# Sensor Interface Reed -> MCU
 
 VBAT ── 1 MΩ ──●──── Reed ── GND        (pull-up + switch to ground)
                │
@@ -177,16 +176,7 @@ Ultra-low quiescent: Using an external 1 MΩ pull-up and disabling the MCU’s i
 Debounce + pulse stretch: 100 kΩ + 100 nF gives ~10 ms RC, killing contact bounce and ensuring even very quick taps still look like a clean edge to the MCU.
 EMI-friendly: The series 100 kΩ limits surge into the MCU pin; the 100 nF to GND shunts HF noise.
 
-# MCU
-
-Reset: unconnected.
-Debug, Flash.
-Use the UPDI pin (same as RESET). It should be available as well as Vdd, GND in a 3 pin header.
-
-Header part number on Mouser:
-https://pt.mouser.com/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D
-
-# Matching Balun (antenna interface)
+# Sensor Matching Balun (antenna interface)
 
 Inductors (high-Q (SRF>2GHz)) - Coilcraft 0402HP series:
 - [B] LM1: 120nH => https://eu.mouser.com/ProductDetail/Coilcraft/0603HP-R12XGLU?qs=zCSbvcPd3pbJT9Wmlao8cg%3D%3D
@@ -203,9 +193,9 @@ Capacitors (NP0/C0G) - Murata GRM155 series:
 - [T] CM6: 5.1pF => https://eu.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H5R1WA01D?qs=ouTquLLW2S6Ac9DkjU6j%2Fw%3D%3D
 - [T] CC1: 68pF => https://eu.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H680FA01J?qs=e%252BE4OD6MgMf0uVE7NpHJPw%3D%3D
 
-# PI-match:
+# Sensor PI-match:
 
-[T] Lseries = 15 nH => https://eu.mouser.com/ProductDetail/Coilcraft/0402HP-15NXJRW?qs=QNEnbhJQKvYIHcbZYhY5ig%3D%3D: Currently a shunt.
+[T] Lseries = 0 => Currently a shunt.
 [T] Csh = 0pF
 [T] Csh = 0pF
 
@@ -214,7 +204,7 @@ Capacitors (NP0/C0G) - Murata GRM155 series:
 50 ohms monopole:
 ANT-868-HESM => https://eu.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-868-HESM?qs=hWgE7mdIu5TTyqPbNERfhg%3D%3D
 
-# Box/Case: PCB size and format
+# Sensor Box/Case: PCB size and format
 
 2 layers PCB.
 Box not selected yet.
@@ -222,23 +212,19 @@ Box not selected yet.
 https://eu.mouser.com/c/enclosures
 https://www.takachi-enclosure.com/search/detail
 
-# Support
+# Gateway MCU
+Minimum voltage supply: 1,8 V
+Have a deep sleep mode (uA), waking up from external interrupt from input pin.
+1 analog input
+2 digital inputs
+4 digital outputs
+1 differential PWM output
+1 SPI
+1 I2C
 
-Mouser Part Number
-Mouser Price/Stock
-Manufacturer_Name
-Manufacturer_Part_Number
+[STM8L151K4T6] https://pt.mouser.com/ProductDetail/STMicroelectronics/STM8L151K4T6?qs=H8t2elxe2QfV%252BTwO2SHNjg%3D%3D
 
-## Gateway MCU
-
-4 outputs: 3x LEDs + Buzzer
-2 inputs: reed, button
-SPI (TDI. TDO, CS, CLK)
-Sleep
-IRQ
-ATtiny406: 20-Pin VQFN
-
-# Storage events
+# Gateway Storage Events
 If you update on every open/close, use external I²C FRAM.
 ATtiny406’s EEPROM (~100k cycles) will wear out fast if you flip bits for many windows over a year.
 FRAM: [MB85RC64TAPNF-G-BDERE1] https://pt.mouser.com/ProductDetail/Ramxeed/MB85RC64TAPNF-G-BDERE1?qs=sGAEpiMZZMuIiYGg9i1FDKlM%252Bqda5guug2rKlLpEIh9%2FUl1rXCJRlg%3D%3D
@@ -280,13 +266,13 @@ Fast boot → status bitmap gives instant “which windows are open,” then you
 If you must start without FRAM
 Internal EEPROM is OK for a small fleet (say ≤16–20 sensors) if you batch writes (e.g., every 10–30 minutes) and implement a simple ring/wear-level per record. Still, FRAM is strongly preferred for per-event updates.
 
-# OOK RF Receiver
+# Gateway OOK RF Receiver
 
 CC1101
 
 Crystal: [NX3225GA-26.000M-STD-CRG-2, 26MHz], https://pt.mouser.com/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D
 
-# Balun
+# Gateway Balun
 From CC1101 Datasheet:
 - L131 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
 - L132 [18 nH, ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
@@ -308,7 +294,7 @@ From CC1101 Datasheet:
 50 ohms monopole:
 ANT-868-HESM => https://eu.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-868-HESM?qs=hWgE7mdIu5TTyqPbNERfhg%3D%3D
 
-# Power Supply
+# Gateway Power Supply
 Let's see if it will be directly. I need to discuss that.
 Directly from battery: MCU and CC1101.
 
@@ -340,7 +326,7 @@ Interactions with your buzzer boost
 Your 12 V boost for the piezo is on its own EN pin → off = ~0 µA.
 During beeps, VBAT droops a bit; keep beep bursts short (e.g., 200 ms) and add 22–47 µF on the boost output to keep tone amplitude stable.
 
-# Polarity Inversion protection
+# Gateway Polarity Inversion Potection
 
 https://www.onsemi.com/download/application-notes/pdf/and90146-d.pdf
 https://www.powerelectronicsnews.com/comparing-n-channel-and-p-channel-mosfets-which-is-best-for-your-application/
@@ -348,7 +334,7 @@ https://www.powerelectronicsnews.com/comparing-n-channel-and-p-channel-mosfets-w
 Best fit:
 https://pt.mouser.com/ProductDetail/Infineon-Technologies/IRLML6402TRPBF?qs=9%252BKlkBgLFf0HuZuONx2Ewg%3D%3D
 
-# Low battery detection
+# Gateway Low Battery Detection
 Use the MCU
 1) Divider-less (zero extra parts) — measure VCC via the internal bandgap
 Configure the ADC to use VCC as the ADC reference and select the internal bandgap channel as the input.
@@ -377,7 +363,7 @@ Average 4–8 samples, discard obvious spikes, and apply hysteresis between WARN
 Do it rarely to save power (e.g., once every 10–30 minutes, or after wake events).
 Temperature matters—if you don’t calibrate, keep a little margin on thresholds.
 
-# Type of Buzzer
+# Gateway Type of Buzzer
 Piezo or magnetic buzzer?
 Piezo: low current, but not so loud.
 Magnetic buzzer: high current, but loud enough.
@@ -445,7 +431,7 @@ L = 10uH (calculated => 11.2uH) [CD43NP-100MC] https://pt.mouser.com/ProductDeta
 # Gateway Reed Switch
 Same as Wireless Sensor reed switch.
 
-# Battery holder
+# Gateway Battery Holder
 https://pt.mouser.com/ProductDetail/Keystone-Electronics/2462?qs=sGAEpiMZZMvxqoKe%252BDjhrte%252BlrLaYtz%2F4XqS9Isgiuc%3D
 
 Electrical notes:
@@ -460,7 +446,7 @@ Silkscreen: Mark “+ / –” clearly at both ends; helps avoid reversed insert
 Support: If the device is handheld or shaken, add side walls or bosses in enclosure to prevent lateral stress on solder joints.
 Access: Place the holder so cells can be dropped in/out without colliding with tall components or enclosure lips.
 
-# Type of Push Button
+# Gateway Type of Push Button
 VCC (≈3.0 V)
   |
   Rpull-up 680 kΩ … 1 MΩ   ← ultra-low standby current
@@ -476,26 +462,19 @@ VCC (≈3.0 V)
  B3F1070
  https://pt.mouser.com/ProductDetail/Omron-Electronics/B3F-1070?qs=CX134%252BdLMDEbZOltqAbCng%3D%3D
  
- # LEDs
+ # Gateway LEDs
  Blue: [WP710A10LVBC_D] https://pt.mouser.com/ProductDetail/Kingbright/WP710A10LVBC-D?qs=6oMev5NRZMF7xED66hMqMg%3D%3D
  Yellow: [TLHY4400-AS12Z] https://pt.mouser.com/ProductDetail/Vishay-Semiconductors/TLHY4400-AS12Z?qs=sGAEpiMZZMvVL5Kk7ZYykSSdL1QvRuGruSF7bleI1Sw%3D
  Red: [TLHR4400-AS12Z] https://pt.mouser.com/ProductDetail/Vishay-Semiconductors/TLHR4400-AS12Z?qs=sGAEpiMZZMvVL5Kk7ZYykSSdL1QvRuGrmGBvu1dktLk%3D
 
-
-# Requirements
-Minimum supply voltage: 1,8 V
-Have a deep sleep mode (uA), waking up from ext. Interrupt from input pin.
-1 analog input
-2 digital inputs
-4 digital outputs
-1 differential PWM output
-1 SPI
-1 I2C
-
-[STM8L151K4T6] https://pt.mouser.com/ProductDetail/STMicroelectronics/STM8L151K4T6?qs=H8t2elxe2QfV%252BTwO2SHNjg%3D%3D
-
-4 pin header:
+# Gateway 4 Pin Programming Header:
 https://pt.mouser.com/ProductDetail/Amphenol-Commercial-Products/G8250041000YEU?qs=f9yNj16SXrKPzZ0fvYmqsg%3D%3D
 
-# Eurocircuits DRC
+# KiCad BOM support
 
+Mouser Part Number
+Mouser Price/Stock
+Manufacturer_Name
+Manufacturer_Part_Number
+
+# Eurocircuits DRC

@@ -39,7 +39,7 @@ The wireless sensors shall be powered by a replaceable battery.
 :status: approved
 :component: gateway
 
-The gateway shall support both power supply options: replaceable battery and +5V DC. Both options must be available simultaneously, and the system shall automatically switch to battery power in case of main power failure.
+The gateway shall be powered by 2 AA type batteries, which could be rechargeable or non-rechargeable.
 ```
 
 ```{req} Gateway buzzer
@@ -63,7 +63,7 @@ The gateway shall have a button to allow a hard factory reset and to pair/unpair
 :status: approved
 :component: gateway
 
-The gateway shall have three LEDs (green, yellow, and red) to indicate its status.
+The gateway shall have three LEDs (blue, yellow, and red) to indicate its status.
 ```
 
 ```{req} LED usage (heartbeat, config, alerts)
@@ -71,7 +71,7 @@ The gateway shall have three LEDs (green, yellow, and red) to indicate its statu
 :status: approved
 :component: gateway
 
-The gateway shall use LEDs to indicate: heartbeat (green), configuration/low-battery status (yellow), and alerts/low-battery (red). Detailed behavior is defined in the FR section.
+The gateway shall use LEDs to indicate: heartbeat (blue), configuration/low-battery status (yellow), and alerts/low-battery (red). Detailed behavior is defined in the FR section.
 ```
 
 ## 3. System Functional Requirements
@@ -100,12 +100,12 @@ The sensor data packet shall include the battery status and the event type (open
 Each sensor shall have a unique identifier (ID).
 ```
 
-```{req} Green LED heartbeat
+```{req} blue LED heartbeat
 :id: FR_004
 :status: approved
 :component: gateway
 
-The gateway shall indicate it is operating properly by flashing the green LED for 100 ms every two seconds.
+The gateway shall indicate it is operating properly by flashing the blue LED for 100 ms every two seconds.
 ```
 
 ```{req} Gateway operating modes
@@ -164,7 +164,7 @@ In monitoring mode, the gateway shall detect open and close events of the main d
 In monitoring mode, the gateway shall evaluate window states whenever the main door changes state:
   - If the main door is **opened**:
     - If one or more windows are **OPEN** → the gateway shall trigger an alert (buzzer + flashing red LED) and keep it active while the door remains open.
-    - If **all windows are CLOSED** → the gateway shall not trigger an alert and shall blink the green LED once to indicate all clear.
+    - If **all windows are CLOSED** → the gateway shall not trigger an alert and shall blink the blue LED once to indicate all clear.
   - If the main door is **closed**:
     - The gateway shall immediately suspend any active alert, regardless of the window states.
 ```
@@ -233,12 +233,12 @@ If a known sensor from the monitored list sends a signal in listening-for-new-se
 In listening-for-new-sensors mode, inserting the battery or changing the status of a sensor (open/close event) shall be sufficient to add it to the gateway.
 ```
 
-```{req} Indicate sensor low battery via yellow + green sync
+```{req} Indicate sensor low battery via yellow + blue sync
 :id: FR_020
 :status: approved
 :component: gateway
 
-If any sensor reports a low battery, the gateway shall indicate this condition by flashing the yellow LED synchronized with the green heartbeat LED.
+If any sensor reports a low battery, the gateway shall indicate this condition by flashing the yellow LED synchronized with the blue heartbeat LED.
   - This indication means that all sensor batteries should be replaced.
 ```
 
@@ -397,11 +397,10 @@ The gateway shall save the status of each sensor in NvM (Non-volatile Memory).
 ## 5. System Assumptions & Constraints
 
 - Security is not a critical factor.  
-- No tamper detection or advanced security features.  
-- Cannot directly identify which sensor has low battery.  
-- Sensor has no UI beyond battery insertion.  
-- Gateway may be powered by 5V DC jack or batteries.  
-- System operates in 0–40 °C, 10–90% RH, non-condensing.  
+- No tamper detection or advanced security features.
+- Cannot directly identify which sensor has low battery.
+- Sensor has no UI beyond battery insertion.
+- System operates in 0–40 °C, 10–90% RH, non-condensing.
 
 ## 6. Legal & Regulatory Requirements
 
