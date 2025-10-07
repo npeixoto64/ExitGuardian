@@ -211,10 +211,13 @@ ANT-868-HESM => https://eu.mouser.com/ProductDetail/TE-Connectivity-Linx-Technol
 ### Sensor Box/Case: PCB size and format
 
 2 layers PCB.
-Box not selected yet.
+Electronic minimum enclosure: 70x35x10 mm
 
-https://eu.mouser.com/c/enclosures
-https://www.takachi-enclosure.com/search/detail
+Best fit: https://www.takachi-enclosure.com/products/SIC: SIC5-9-2B 90x45x20 (external) 78.5x39.5x10.9 (internal)
+
+https://www.takachi-enclosure.com/products/SIM: wall mount SIM5-9-2W 90x45x22 (external)
+
+Other manufacturer: https://www.okw.co.uk/en/category/6f17cc51-6957-11e5-a071-bc764e08a0ea/products?vs=dcce8e60-8f56-11e2-8591-0050568225d7$$8e260530-be00-11e2-a8ac-0050568225d7
 
 ## Gateway
 
