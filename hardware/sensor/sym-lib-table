@@ -9,4 +9,5 @@
   (lib (name "ANT-868-HESM")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/ANT-868-HESM.kicad_sym")(options "")(descr ""))
   (lib (name "BLM18KG601SN1D")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/BLM18KG601SN1D.kicad_sym")(options "")(descr ""))
   (lib (name "6SVP470M")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/6SVP470M.kicad_sym")(options "")(descr ""))
+  (lib (name "STM8L001J3M3")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/STM8L001J3M3.kicad_sym")(options "")(descr ""))
 )
