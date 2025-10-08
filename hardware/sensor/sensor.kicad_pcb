@@ -9696,7 +9696,7 @@
 		(layer "Edge.Cuts")
 		(uuid "d621d699-15f2-408b-92fa-23e76229e08b")
 	)
-	(gr_text "Exit Guardian\nWireless Sensor REV0.0\nNPX4U 2025"
+	(gr_text "Exit Guardian\nWindow Sensor REV0.0\nNPX4U 2025"
 		(at 244.6 157 90)
 		(layer "F.SilkS")
 		(uuid "2c6f390b-1d77-4924-a26f-fc75a462e60d")
