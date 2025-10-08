@@ -93,7 +93,6 @@ C_sleep/day ≈ 0.015 mAh
 Total ≈ 0.081 mAh/day → 200 mAh / 0.081 ≈ 2,470 days ≈ 6.8 years
 Practical expectation: ~3–5 years on CR2032; 4–7 years on CR2450, depending on temperature and traffic.
 
-
 ### Sensor Battery
 
 #### CR2032
@@ -208,17 +207,41 @@ Capacitors (NP0/C0G) - Murata GRM155 series:
 50 ohms monopole:
 ANT-868-HESM => https://eu.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-868-HESM?qs=hWgE7mdIu5TTyqPbNERfhg%3D%3D
 
-### Sensor Box/Case: PCB size and format
+### Sensor Enclosure/Box/Case: PCB size and format
 
 2 layers PCB.
-Box not selected yet.
+Electronic internal minimum enclosure: 68 (D) x 32(W) x 10(H) mm
 
-https://eu.mouser.com/c/enclosures
-https://www.takachi-enclosure.com/search/detail
+#### Takachi
+
+SIC products catalog: https://www.takachi-enclosure.com/products/SIC
+
+Option 1 (without battery holder):
+SIC5-9-2W: 90 (D) x 45 (W) x 20 (H) => PCB changes needed (holes and dimensions).
+
+CS products catalog: https://www.takachi-enclosure.com/products/CS
+
+Option 2 (with CR2032 battery holder):
+CS90-W 90 (D) x 45 (W) x 12 (H) => PCB changes needed
+
+Option 3 (with CR2450 battery holder):
+CS100-W 100 (D) x 50 (W) x 16.8 (H) => PCB changes needed
+
+#### OKW
+
+https://www.okw.co.uk/
+
+Option 1 (without battery holder):
+A9050107 Soft-case S: 82 (D) x 43 (W) x 14 (H) => PCB changes needed (holes and dimensions).
+
+https://www.okw.co.uk/en/category/735e0180-6957-11e5-a071-bc764e08a0ea/products?vs=af314fc0-c2e5-11e2-8e2c-0050568225d7$$cd762270-d51f-11e2-a4df-0050568225d7
+
+https://www.okw.co.uk/en/Soft-Case/A9050107.htm?var=af314fc0-c2e5-11e2-8e2c-0050568225d7
 
 ## Gateway
 
 ### Gateway MCU
+
 Minimum voltage supply: 1,8 V
 Have a deep sleep mode (uA), waking up from external interrupt from input pin.
 1 analog input
@@ -231,6 +254,7 @@ Have a deep sleep mode (uA), waking up from external interrupt from input pin.
 [STM8L151K4T6] https://pt.mouser.com/ProductDetail/STMicroelectronics/STM8L151K4T6?qs=H8t2elxe2QfV%252BTwO2SHNjg%3D%3D
 
 ### Gateway Storage Events
+
 If you update on every open/close, use external I²C FRAM.
 ATtiny406’s EEPROM (~100k cycles) will wear out fast if you flip bits for many windows over a year.
 FRAM: [MB85RC64TAPNF-G-BDERE1] https://pt.mouser.com/ProductDetail/Ramxeed/MB85RC64TAPNF-G-BDERE1?qs=sGAEpiMZZMuIiYGg9i1FDKlM%252Bqda5guug2rKlLpEIh9%2FUl1rXCJRlg%3D%3D
@@ -279,6 +303,7 @@ CC1101
 Crystal: [NX3225GA-26.000M-STD-CRG-2, 26MHz], https://pt.mouser.com/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D
 
 ### Gateway Balun
+
 From CC1101 Datasheet:
 - L131 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
 - L132 [18 nH, ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
@@ -297,10 +322,12 @@ From CC1101 Datasheet:
 - C126 [47 pF ± 5%, 0402 NP0]: Murata GRM1555C series
 
 ### Gateway Antenna
+
 50 ohms monopole:
 ANT-868-HESM => https://eu.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-868-HESM?qs=hWgE7mdIu5TTyqPbNERfhg%3D%3D
 
 ### Gateway Power Supply
+
 Let's see if it will be directly. I need to discuss that.
 Directly from battery: MCU and CC1101.
 
@@ -341,6 +368,7 @@ Best fit:
 https://pt.mouser.com/ProductDetail/Infineon-Technologies/IRLML6402TRPBF?qs=9%252BKlkBgLFf0HuZuONx2Ewg%3D%3D
 
 ### Gateway Low Battery Detection
+
 Use the MCU
 1) Divider-less (zero extra parts) — measure VCC via the internal bandgap
 Configure the ADC to use VCC as the ADC reference and select the internal bandgap channel as the input.
@@ -370,6 +398,7 @@ Do it rarely to save power (e.g., once every 10–30 minutes, or after wake even
 Temperature matters—if you don’t calibrate, keep a little margin on thresholds.
 
 ### Gateway Type of Buzzer
+
 Piezo or magnetic buzzer?
 Piezo: low current, but not so loud.
 Magnetic buzzer: high current, but loud enough.
@@ -435,9 +464,11 @@ Vout = 12.11 V
 L = 10uH (calculated => 11.2uH) [CD43NP-100MC] https://pt.mouser.com/ProductDetail/Sumida/CD43NP-100MC?qs=ttApTud31Jaza%252BoSAZtv6w%3D%3D
 
 ### Gateway Reed Switch
+
 Same as Wireless Sensor reed switch.
 
 ### Gateway Battery Holder
+
 https://pt.mouser.com/ProductDetail/Keystone-Electronics/2462?qs=sGAEpiMZZMvxqoKe%252BDjhrte%252BlrLaYtz%2F4XqS9Isgiuc%3D
 
 Electrical notes:
@@ -453,6 +484,7 @@ Support: If the device is handheld or shaken, add side walls or bosses in enclos
 Access: Place the holder so cells can be dropped in/out without colliding with tall components or enclosure lips.
 
 ### Gateway Type of Push Button
+
 VCC (≈3.0 V)
   |
   Rpull-up 680 kΩ … 1 MΩ   ← ultra-low standby current
@@ -464,7 +496,7 @@ VCC (≈3.0 V)
  Button     Rseries 100–220 Ω (ESD/EMI damp)
   |         |
  GND       ESD diode (if user-exposed)  → to GND
- 
+
  B3F1070
  https://pt.mouser.com/ProductDetail/Omron-Electronics/B3F-1070?qs=CX134%252BdLMDEbZOltqAbCng%3D%3D
  
