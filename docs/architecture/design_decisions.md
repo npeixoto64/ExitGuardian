@@ -513,22 +513,12 @@ https://pt.mouser.com/ProductDetail/Amphenol-Commercial-Products/G8250041000YEU?
 2 layers PCB.
 Electronic internal minimum enclosure: ?(D) x ?(W) x ?(H) mm
 
-#### Takachi (to fix)
+#### Takachi
 
 SIC products catalog: https://www.takachi-enclosure.com/products/SIC
 
 Option 1 (without battery holder):
-SIC5-9-2W: 90 (D) x 45 (W) x 20 (H) => PCB changes needed (holes and dimensions).
-
-#### OKW (to fix)
-
-https://www.okw.co.uk/
-
-Option 1 (with battery holder):
-105 x 65 x 19
-
-Option 1 (without battery holder):
-A9050107 Soft-case S: 82 (D) x 43 (W) x 14 (H) => PCB changes needed (holes and dimensions).
+SIC6-12-4W: 120 (D) x 60 (W) x 38 (H)
 
 ## Support
 

@@ -1806,10 +1806,10 @@
 		(uuid "031802a3-dc74-4645-b548-2efe467e2e12")
 	)
 	(junction
-		(at 222.25 81.28)
+		(at 121.92 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0a821a49-d751-42b4-9ce7-873e3600d739")
+		(uuid "2d021942-3f6a-4b2a-8e7f-5047ac79d420")
 	)
 	(junction
 		(at 100.33 54.61)
@@ -1824,13 +1824,7 @@
 		(uuid "301ada74-71f7-45e0-baf7-f14740606c23")
 	)
 	(junction
-		(at 205.74 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "30aee7cd-0da3-4e69-8b5e-f2f7df55e187")
-	)
-	(junction
-		(at 144.78 86.36)
+		(at 163.83 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "39414c32-867b-4d5f-a8a3-0ccfbfa8e4d0")
@@ -1842,25 +1836,25 @@
 		(uuid "40108d84-ac6c-4342-84e6-a9e719f2a31b")
 	)
 	(junction
-		(at 173.99 81.28)
+		(at 193.04 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "414bde89-c4f2-4bc8-ab5a-e56fca43bd41")
 	)
 	(junction
-		(at 146.05 76.2)
+		(at 165.1 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6a873cfa-67e3-4fb2-820a-7a5b2213c286")
 	)
 	(junction
-		(at 142.24 86.36)
+		(at 161.29 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "89689243-8a58-4fd4-a1c8-b7e725739cb9")
 	)
 	(junction
-		(at 229.87 81.28)
+		(at 220.98 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8eea1a52-bd3d-48c7-821f-4e28418a7513")
@@ -1878,7 +1872,7 @@
 		(uuid "9ac6f09e-824e-40b9-8897-6f1485e34120")
 	)
 	(junction
-		(at 142.24 76.2)
+		(at 161.29 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ac8cdc1a-81de-4f9a-9059-2ddab94fd149")
@@ -1896,10 +1890,22 @@
 		(uuid "bc0431d2-65f9-4eac-8b5e-2aa49b9513b7")
 	)
 	(junction
-		(at 162.56 81.28)
+		(at 181.61 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c0d02279-9045-4c74-b608-c7aecc2f2a9b")
+	)
+	(junction
+		(at 121.92 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5fc41a1-cf10-4b6f-a52d-255d7ceaad11")
+	)
+	(junction
+		(at 107.95 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ccb326f2-5b21-4a69-868e-2ff03f234559")
 	)
 	(junction
 		(at 69.85 130.81)
@@ -1908,10 +1914,10 @@
 		(uuid "d319d913-74b4-4718-87b3-91cb6430e5c6")
 	)
 	(junction
-		(at 137.16 33.02)
+		(at 76.2 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d340edc4-63c5-48a5-988c-2b339ba051d1")
+		(uuid "d80fa537-3698-4fbd-ab3f-c1b24b5b4b3d")
 	)
 	(junction
 		(at 97.79 45.72)
@@ -1936,7 +1942,7 @@
 		(uuid "9a12130e-f379-4c75-8580-ea9baf7ccafd")
 	)
 	(no_connect
-		(at 243.84 83.82)
+		(at 234.95 83.82)
 		(uuid "df6dbc78-5fd2-44f6-8d4d-72547b3fd3fa")
 	)
 	(wire
@@ -1961,7 +1967,17 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 76.2) (xy 162.56 76.2)
+			(xy 139.7 58.42) (xy 139.7 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03bb0b54-b151-4010-90bf-eb4f80cd896b")
+	)
+	(wire
+		(pts
+			(xy 179.07 76.2) (xy 181.61 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1981,7 +1997,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 97.79) (xy 144.78 99.06)
+			(xy 163.83 97.79) (xy 163.83 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2011,23 +2027,13 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 86.36) (xy 142.24 86.36)
+			(xy 163.83 86.36) (xy 161.29 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "08281f16-3cf5-45dc-9048-b475db034a6a")
-	)
-	(wire
-		(pts
-			(xy 205.74 91.44) (xy 205.74 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08c02a18-6795-456d-8dde-7135a02e637b")
 	)
 	(wire
 		(pts
@@ -2041,6 +2047,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 67.31) (xy 139.7 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ca4b43d-b2f6-460f-b9b7-4316aaf8e0a6")
+	)
+	(wire
+		(pts
 			(xy 125.73 130.81) (xy 125.73 148.59)
 		)
 		(stroke
@@ -2051,7 +2067,17 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 62.23) (xy 139.7 60.96)
+			(xy 111.76 41.91) (xy 111.76 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e85cf20-24d9-4ac2-af61-0ec60f37f467")
+	)
+	(wire
+		(pts
+			(xy 158.75 62.23) (xy 158.75 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2061,7 +2087,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 76.2) (xy 142.24 76.2)
+			(xy 158.75 76.2) (xy 161.29 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2071,13 +2097,23 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 81.28) (xy 176.53 81.28)
+			(xy 193.04 81.28) (xy 195.58 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "17150954-27f2-4d6f-b866-3d1790498b17")
+	)
+	(wire
+		(pts
+			(xy 107.95 54.61) (xy 121.92 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19dc538d-60cf-4aab-b671-607ae641ad68")
 	)
 	(wire
 		(pts
@@ -2088,6 +2124,16 @@
 			(type default)
 		)
 		(uuid "1b209e6b-18c2-4ccd-ad57-5be41980c5dc")
+	)
+	(wire
+		(pts
+			(xy 54.61 96.52) (xy 54.61 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b9713c6-9d8a-4cdb-aa9d-e07101b71608")
 	)
 	(wire
 		(pts
@@ -2111,7 +2157,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 91.44) (xy 173.99 93.98)
+			(xy 193.04 91.44) (xy 193.04 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2128,6 +2174,16 @@
 			(type default)
 		)
 		(uuid "23e59016-877f-47b7-bb09-52c2bccaa8c5")
+	)
+	(wire
+		(pts
+			(xy 121.92 54.61) (xy 121.92 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2407a1d6-84b1-4cb7-a87d-f27a18ff44d2")
 	)
 	(wire
 		(pts
@@ -2151,7 +2207,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 82.55) (xy 128.27 86.36)
+			(xy 147.32 82.55) (xy 147.32 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2191,7 +2247,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 106.68) (xy 144.78 110.49)
+			(xy 163.83 106.68) (xy 163.83 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2211,6 +2267,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 95.25) (xy 139.7 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ed75f94-7195-4d04-ac61-81435e36e269")
+	)
+	(wire
+		(pts
 			(xy 133.35 137.16) (xy 133.35 128.27)
 		)
 		(stroke
@@ -2221,7 +2287,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 86.36) (xy 162.56 86.36)
+			(xy 179.07 86.36) (xy 181.61 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2231,7 +2297,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 33.02) (xy 121.92 33.02)
+			(xy 130.81 33.02) (xy 121.92 33.02)
 		)
 		(stroke
 			(width 0)
@@ -2261,7 +2327,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 81.28) (xy 205.74 81.28)
+			(xy 217.17 81.28) (xy 220.98 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2291,7 +2357,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 86.36) (xy 142.24 86.36)
+			(xy 158.75 86.36) (xy 161.29 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2311,6 +2377,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 87.63) (xy 139.7 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5708363d-eea8-4553-8c2c-096d9054262d")
+	)
+	(wire
+		(pts
 			(xy 76.2 82.55) (xy 76.2 54.61)
 		)
 		(stroke
@@ -2321,7 +2397,17 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 76.2) (xy 152.4 76.2)
+			(xy 121.92 58.42) (xy 121.92 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c038bf6-5f39-4649-91c2-3399441abd32")
+	)
+	(wire
+		(pts
+			(xy 165.1 76.2) (xy 171.45 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2341,13 +2427,23 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 81.28) (xy 229.87 81.28)
+			(xy 107.95 31.75) (xy 107.95 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6d85553a-33b5-4aad-8586-f76fcd486f36")
+		(uuid "68dfb5cb-a1c4-43a3-af77-8f9e9330f658")
+	)
+	(wire
+		(pts
+			(xy 54.61 88.9) (xy 54.61 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69d405a5-a858-49fa-875d-8ce9c6f44521")
 	)
 	(wire
 		(pts
@@ -2371,7 +2467,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 86.36) (xy 132.08 86.36)
+			(xy 147.32 86.36) (xy 151.13 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2381,7 +2477,17 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 60.96) (xy 146.05 63.5)
+			(xy 54.61 82.55) (xy 76.2 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "754f4eea-4a63-472b-b7dc-3001e4bfa6bb")
+	)
+	(wire
+		(pts
+			(xy 165.1 60.96) (xy 165.1 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2391,7 +2497,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 44.45) (xy 137.16 49.53)
+			(xy 130.81 44.45) (xy 130.81 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2401,7 +2507,17 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 80.01) (xy 229.87 81.28)
+			(xy 121.92 114.3) (xy 148.59 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76dfe70e-2f49-45f7-8f99-cdb093d420ca")
+	)
+	(wire
+		(pts
+			(xy 220.98 80.01) (xy 220.98 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2441,7 +2557,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 76.2) (xy 162.56 81.28)
+			(xy 181.61 76.2) (xy 181.61 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2461,7 +2577,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 90.17) (xy 144.78 86.36)
+			(xy 163.83 90.17) (xy 163.83 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2501,7 +2617,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 81.28) (xy 173.99 81.28)
+			(xy 190.5 81.28) (xy 193.04 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2511,7 +2627,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 81.28) (xy 173.99 83.82)
+			(xy 193.04 81.28) (xy 193.04 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2521,7 +2637,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 71.12) (xy 146.05 76.2)
+			(xy 165.1 71.12) (xy 165.1 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2541,7 +2657,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 60.96) (xy 146.05 60.96)
+			(xy 158.75 60.96) (xy 165.1 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2571,7 +2687,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 86.36) (xy 152.4 86.36)
+			(xy 163.83 86.36) (xy 171.45 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2591,7 +2707,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 86.36) (xy 162.56 81.28)
+			(xy 181.61 86.36) (xy 181.61 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2611,13 +2727,13 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 33.02) (xy 137.16 33.02)
+			(xy 111.76 31.75) (xy 107.95 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aa5483df-3bd0-4c01-9e00-fa7b1d6b6505")
+		(uuid "a9b15181-d8cd-4f31-8e5b-013d9bc4bd68")
 	)
 	(wire
 		(pts
@@ -2641,23 +2757,13 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 54.61) (xy 121.92 74.93)
+			(xy 148.59 114.3) (xy 148.59 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b39bf7c5-f53b-4bf8-9c66-50db0f047abd")
-	)
-	(wire
-		(pts
-			(xy 205.74 81.28) (xy 205.74 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b46175c5-4488-4bbf-ac8b-5fd028e9abcc")
+		(uuid "afbd46d9-0a75-4b71-b5d4-6e6bdecb23f7")
 	)
 	(wire
 		(pts
@@ -2671,7 +2777,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 80.01) (xy 128.27 76.2)
+			(xy 147.32 80.01) (xy 147.32 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2711,17 +2817,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 81.28) (xy 210.82 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bcadadbe-0dad-4172-816f-279df5c7151c")
-	)
-	(wire
-		(pts
-			(xy 162.56 81.28) (xy 163.83 81.28)
+			(xy 181.61 81.28) (xy 182.88 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2731,7 +2827,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 82.55) (xy 128.27 82.55)
+			(xy 118.11 82.55) (xy 147.32 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2771,7 +2867,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 76.2) (xy 146.05 76.2)
+			(xy 161.29 76.2) (xy 165.1 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2781,7 +2877,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 80.01) (xy 128.27 80.01)
+			(xy 118.11 80.01) (xy 147.32 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2811,6 +2907,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 85.09) (xy 125.73 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd1a7b0f-9544-4d8e-a635-f7a6a307011e")
+	)
+	(wire
+		(pts
 			(xy 121.92 128.27) (xy 133.35 128.27)
 		)
 		(stroke
@@ -2821,13 +2927,13 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 91.44) (xy 222.25 93.98)
+			(xy 139.7 77.47) (xy 121.92 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d1a09e61-b733-4698-a0b6-55f727ec9ca2")
+		(uuid "cff21fda-1d39-4ee0-abc4-00b4374dbba2")
 	)
 	(wire
 		(pts
@@ -2841,7 +2947,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 44.45) (xy 149.86 49.53)
+			(xy 125.73 95.25) (xy 125.73 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2891,16 +2997,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 36.83) (xy 149.86 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da5d8067-1da1-474d-9b15-6391417fc269")
-	)
-	(wire
-		(pts
 			(xy 97.79 45.72) (xy 105.41 45.72)
 		)
 		(stroke
@@ -2921,6 +3017,26 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 87.63) (xy 125.73 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0be49fd-83b1-40d5-8d7e-81ae7d6629a7")
+	)
+	(wire
+		(pts
+			(xy 148.59 124.46) (xy 148.59 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0ea04ed-830b-4f41-afd4-e30f6f91993e")
+	)
+	(wire
+		(pts
 			(xy 68.58 111.76) (xy 92.71 111.76)
 		)
 		(stroke
@@ -2931,7 +3047,17 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 54.61) (xy 121.92 54.61)
+			(xy 121.92 58.42) (xy 139.7 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e79e9e55-57c8-4ca4-8d70-b19d3ddba8c6")
+	)
+	(wire
+		(pts
+			(xy 100.33 54.61) (xy 107.95 54.61)
 		)
 		(stroke
 			(width 0)
@@ -2941,7 +3067,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 81.28) (xy 243.84 81.28)
+			(xy 220.98 81.28) (xy 234.95 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2951,7 +3077,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 81.28) (xy 190.5 81.28)
+			(xy 203.2 81.28) (xy 209.55 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2961,7 +3087,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 76.2) (xy 132.08 76.2)
+			(xy 147.32 76.2) (xy 151.13 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2971,7 +3097,17 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 76.2) (xy 142.24 77.47)
+			(xy 111.76 31.75) (xy 111.76 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecdaabf6-f887-4a56-8e7a-4118d51c1f97")
+	)
+	(wire
+		(pts
+			(xy 161.29 76.2) (xy 161.29 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2981,17 +3117,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 81.28) (xy 218.44 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "edc59bc9-d2e0-4d24-bd55-981267ea1378")
-	)
-	(wire
-		(pts
-			(xy 137.16 36.83) (xy 137.16 33.02)
+			(xy 130.81 36.83) (xy 130.81 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3001,17 +3127,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 83.82) (xy 222.25 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef9f246c-5b4f-4ad2-bec8-a2ec25c80f5e")
-	)
-	(wire
-		(pts
-			(xy 142.24 86.36) (xy 142.24 85.09)
+			(xy 161.29 86.36) (xy 161.29 85.09)
 		)
 		(stroke
 			(width 0)
@@ -3030,7 +3146,7 @@
 		(uuid "ffd383e9-acc4-4edb-a2db-1e079ca521c9")
 	)
 	(label "RF_LINE"
-		(at 229.87 80.01 0)
+		(at 220.98 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3096,7 +3212,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 135.89 76.2 90)
+		(at 154.94 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3105,7 +3221,7 @@
 		(fields_autoplaced yes)
 		(uuid "01d18ebd-42f0-45e5-bd31-7ba66bf16c60")
 		(property "Reference" "L131"
-			(at 135.89 71.12 90)
+			(at 154.94 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3113,7 +3229,7 @@
 			)
 		)
 		(property "Value" "12nH"
-			(at 135.89 73.66 90)
+			(at 154.94 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3121,7 +3237,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
-			(at 135.89 76.2 0)
+			(at 154.94 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3130,7 +3246,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 135.89 76.2 0)
+			(at 154.94 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3139,7 +3255,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 135.89 76.2 0)
+			(at 154.94 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3148,7 +3264,7 @@
 			)
 		)
 		(property "Mouser Part Number" "81-LQW15AN12NJ80D"
-			(at 135.89 76.2 90)
+			(at 154.94 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3157,7 +3273,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
-			(at 135.89 76.2 90)
+			(at 154.94 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3166,7 +3282,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Murata"
-			(at 135.89 76.2 90)
+			(at 154.94 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3175,7 +3291,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LQW15AN12NJ80D"
-			(at 135.89 76.2 90)
+			(at 154.94 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3266,7 +3382,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 173.99 93.98 0)
+		(at 193.04 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3275,7 +3391,7 @@
 		(fields_autoplaced yes)
 		(uuid "079cac7c-0314-4e9d-8e88-dacaf4c1482c")
 		(property "Reference" "#PWR037"
-			(at 173.99 100.33 0)
+			(at 193.04 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3284,7 +3400,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 173.99 99.06 0)
+			(at 193.04 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3292,7 +3408,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 93.98 0)
+			(at 193.04 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3301,7 +3417,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 93.98 0)
+			(at 193.04 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3310,7 +3426,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 173.99 93.98 0)
+			(at 193.04 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3331,112 +3447,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 214.63 81.28 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0adfb308-8677-44d6-a016-edb9affb38b6")
-		(property "Reference" "R14"
-			(at 214.63 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 214.63 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 214.884 80.264 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 214.63 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 214.63 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "71-CRCW06030000Z0TAH"
-			(at 214.63 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Vishay/CRCW06030000Z0TAHP?qs=sGAEpiMZZMvdGkrng054txLI%2FDB4oIKDBYOET7Waf2ppOTnZPUfSNg%3D%3D"
-			(at 214.63 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Vishay"
-			(at 214.63 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "CRCW06030000Z0TAHP"
-			(at 214.63 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3ea51ad7-4b38-43fa-a8ae-418fd290a491")
-		)
-		(pin "2"
-			(uuid "bd55edfd-ee42-4af4-9871-bc35e8cb6a8f")
-		)
-		(instances
-			(project "gateway"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 142.24 81.28 180)
+		(at 161.29 81.28 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3444,7 +3456,7 @@
 		(dnp no)
 		(uuid "0eb5ddca-760a-4ad7-9a8a-847ef4d4f138")
 		(property "Reference" "C121"
-			(at 150.622 80.264 0)
+			(at 169.672 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3453,7 +3465,7 @@
 			)
 		)
 		(property "Value" "1pF"
-			(at 150.876 82.55 0)
+			(at 169.926 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3462,7 +3474,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 141.2748 77.47 0)
+			(at 160.3248 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3471,7 +3483,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 142.24 81.28 0)
+			(at 161.29 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3480,7 +3492,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 142.24 81.28 0)
+			(at 161.29 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3489,7 +3501,7 @@
 			)
 		)
 		(property "Mouser Part Number" "81-GRM1555C1H1R0BA1J"
-			(at 142.24 81.28 0)
+			(at 161.29 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3498,7 +3510,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H1R0BA01J?qs=ouTquLLW2S5DcHZ7kLUjdg%3D%3D"
-			(at 142.24 81.28 0)
+			(at 161.29 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3507,7 +3519,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Murata"
-			(at 142.24 81.28 0)
+			(at 161.29 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3516,7 +3528,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "GRM1555C1H1R0BA01J"
-			(at 142.24 81.28 0)
+			(at 161.29 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3541,7 +3553,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 194.31 81.28 90)
+		(at 213.36 81.28 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3549,7 +3561,7 @@
 		(dnp no)
 		(uuid "11232682-bbe2-4fdf-b3ff-a28fb1c1c463")
 		(property "Reference" "C125"
-			(at 196.596 75.184 90)
+			(at 215.646 75.184 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3558,7 +3570,7 @@
 			)
 		)
 		(property "Value" "12pF"
-			(at 196.8499 77.47 90)
+			(at 215.8999 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3567,7 +3579,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 198.12 80.3148 0)
+			(at 217.17 80.3148 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3576,7 +3588,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 194.31 81.28 0)
+			(at 213.36 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3585,7 +3597,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 194.31 81.28 0)
+			(at 213.36 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3594,7 +3606,7 @@
 			)
 		)
 		(property "Mouser Part Number" "81-GRM1555C1H120FA1D"
-			(at 194.31 81.28 0)
+			(at 213.36 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3603,7 +3615,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H120FA01D?qs=ouTquLLW2S4GiX6b03cbUg%3D%3D"
-			(at 194.31 81.28 0)
+			(at 213.36 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3612,7 +3624,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Murata"
-			(at 194.31 81.28 0)
+			(at 213.36 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3621,7 +3633,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "GRM1555C1H120FA01D"
-			(at 194.31 81.28 0)
+			(at 213.36 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3646,7 +3658,7 @@
 	)
 	(symbol
 		(lib_id "ANT-868-HESM:ANT-868-HESM")
-		(at 243.84 81.28 0)
+		(at 234.95 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3655,7 +3667,7 @@
 		(fields_autoplaced yes)
 		(uuid "1248dea8-2f15-4b29-a5fa-97cee91f17df")
 		(property "Reference" "ANT1"
-			(at 260.35 81.2799 0)
+			(at 251.46 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3664,7 +3676,7 @@
 			)
 		)
 		(property "Value" "ANT-868-HESM"
-			(at 260.35 83.8199 0)
+			(at 251.46 83.8199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3673,7 +3685,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:ANT-868-HESM"
-			(at 260.35 176.2 0)
+			(at 251.46 176.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3683,7 +3695,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7Fant-868-hexx%7FA%7Fpdf%7FEnglish%7FENG_DS_ant-868-hexx_A.pdf%7FANT-868-HETH"
-			(at 260.35 276.2 0)
+			(at 251.46 276.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3693,7 +3705,7 @@
 			)
 		)
 		(property "Description" "868MHz ISM, LPWA Helical RF Antenna 862MHz ~ 876MHz 5.6dBi Solder Through Hole"
-			(at 243.84 81.28 0)
+			(at 234.95 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3702,7 +3714,7 @@
 			)
 		)
 		(property "Height" "8.9"
-			(at 260.35 476.2 0)
+			(at 251.46 476.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3712,7 +3724,7 @@
 			)
 		)
 		(property "Mouser Part Number" "712-ANT-868-HESM"
-			(at 260.35 576.2 0)
+			(at 251.46 576.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3722,7 +3734,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://eu.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-868-HESM?qs=hWgE7mdIu5TTyqPbNERfhg%3D%3D"
-			(at 260.35 676.2 0)
+			(at 251.46 676.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3732,7 +3744,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "TE Connectivity"
-			(at 260.35 776.2 0)
+			(at 251.46 776.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3742,7 +3754,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "ANT-868-HETH"
-			(at 260.35 876.2 0)
+			(at 251.46 876.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3873,7 +3885,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 146.05 67.31 180)
+		(at 165.1 67.31 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3881,7 +3893,7 @@
 		(dnp no)
 		(uuid "1e75fbd1-529f-44a7-af3f-ef69a9766787")
 		(property "Reference" "C131"
-			(at 154.432 66.294 0)
+			(at 173.482 66.294 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3890,7 +3902,7 @@
 			)
 		)
 		(property "Value" "1.5pF"
-			(at 154.686 68.58 0)
+			(at 173.736 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3899,7 +3911,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 145.0848 63.5 0)
+			(at 164.1348 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3908,7 +3920,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.05 67.31 0)
+			(at 165.1 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3917,7 +3929,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 146.05 67.31 0)
+			(at 165.1 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3926,7 +3938,7 @@
 			)
 		)
 		(property "Mouser Part Number" "81-GRM1555C1E1R5BA1D"
-			(at 146.05 67.31 0)
+			(at 165.1 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3935,7 +3947,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1E1R5BA01D?qs=ouTquLLW2S6xHAnxxZWZ1w%3D%3D"
-			(at 146.05 67.31 0)
+			(at 165.1 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3944,7 +3956,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Murata"
-			(at 146.05 67.31 0)
+			(at 165.1 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3953,7 +3965,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "GRM1555C1E1R5BA01D"
-			(at 146.05 67.31 0)
+			(at 165.1 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3977,114 +3989,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 137.16 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "256e1443-4ee6-4299-b2ec-1c6c74b81237")
-		(property "Reference" "C10"
-			(at 140.97 39.3699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 140.97 41.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 138.1252 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 137.16 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 137.16 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "963-MBASE168SB7105KT"
-			(at 137.16 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/MBASE168SB7105KTNA18?qs=tlsG%2FOw5FFjIAHVuuey7kA%3D%3D"
-			(at 137.16 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "TAYO YUDEN"
-			(at 137.16 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "MBASE168SB7105KTNA18"
-			(at 137.16 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a34a343d-21f1-4269-b733-ce1ba351c232")
-		)
-		(pin "1"
-			(uuid "fddfcb11-ef92-42a0-8f68-9d54c6f8a0e1")
-		)
-		(instances
-			(project "gateway"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
-		(at 135.89 86.36 90)
+		(at 154.94 86.36 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4093,7 +3999,7 @@
 		(fields_autoplaced yes)
 		(uuid "30d0c715-d8f1-4fc1-8b41-873ba12f068c")
 		(property "Reference" "L121"
-			(at 135.89 81.28 90)
+			(at 154.94 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4101,7 +4007,7 @@
 			)
 		)
 		(property "Value" "12nH"
-			(at 135.89 83.82 90)
+			(at 154.94 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4109,7 +4015,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
-			(at 135.89 86.36 0)
+			(at 154.94 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4118,7 +4024,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 135.89 86.36 0)
+			(at 154.94 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4127,7 +4033,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 135.89 86.36 0)
+			(at 154.94 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4136,7 +4042,7 @@
 			)
 		)
 		(property "Mouser Part Number" "81-LQW15AN12NJ80D"
-			(at 135.89 86.36 90)
+			(at 154.94 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4145,7 +4051,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
-			(at 135.89 86.36 90)
+			(at 154.94 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4154,7 +4060,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Murata"
-			(at 135.89 86.36 90)
+			(at 154.94 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4163,7 +4069,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LQW15AN12NJ80D"
-			(at 135.89 86.36 90)
+			(at 154.94 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4188,16 +4094,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 137.16 49.53 0)
+		(at 54.61 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "347ef52c-bbd3-437c-ae8f-26fb00312522")
-		(property "Reference" "#PWR049"
-			(at 137.16 55.88 0)
+		(uuid "332ec6f0-a803-41c3-9aad-c6bda8726578")
+		(property "Reference" "#PWR051"
+			(at 54.61 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4206,7 +4112,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 137.16 54.61 0)
+			(at 54.61 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4214,7 +4120,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 49.53 0)
+			(at 54.61 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4223,7 +4129,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 49.53 0)
+			(at 54.61 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4232,7 +4138,73 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 137.16 49.53 0)
+			(at 54.61 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6394402d-ae0f-48e3-add9-dceff12fcc27")
+		)
+		(instances
+			(project "gateway"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 130.81 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "347ef52c-bbd3-437c-ae8f-26fb00312522")
+		(property "Reference" "#PWR049"
+			(at 130.81 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 130.81 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 130.81 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4431,7 +4403,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 144.78 102.87 180)
+		(at 163.83 102.87 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4439,7 +4411,7 @@
 		(dnp no)
 		(uuid "434b7a97-9ef2-4901-9568-7e279c7b1668")
 		(property "Reference" "C124"
-			(at 153.162 101.854 0)
+			(at 172.212 101.854 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4448,7 +4420,7 @@
 			)
 		)
 		(property "Value" "100pF"
-			(at 153.416 104.14 0)
+			(at 172.466 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4457,7 +4429,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 143.8148 99.06 0)
+			(at 162.8648 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4466,7 +4438,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 144.78 102.87 0)
+			(at 163.83 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4475,7 +4447,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 144.78 102.87 0)
+			(at 163.83 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4484,7 +4456,7 @@
 			)
 		)
 		(property "Mouser Part Number" "81-GRM1555C1H101FA1J"
-			(at 144.78 102.87 0)
+			(at 163.83 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4493,7 +4465,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H101FA01J?qs=ouTquLLW2S5iwhfDVY6IbQ%3D%3D"
-			(at 144.78 102.87 0)
+			(at 163.83 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4502,7 +4474,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Murata"
-			(at 144.78 102.87 0)
+			(at 163.83 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4511,7 +4483,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "GRM1555C1H101FA01J"
-			(at 144.78 102.87 0)
+			(at 163.83 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4535,33 +4507,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
-		(at 167.64 81.28 90)
+		(lib_id "Device:C")
+		(at 148.59 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "48080ad4-4dfe-4e99-9568-7d5e14673aa9")
-		(property "Reference" "L123"
-			(at 167.64 76.2 90)
+		(uuid "458dbc75-3245-41e0-8740-fa313a4549ae")
+		(property "Reference" "C17"
+			(at 152.4 119.3799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "12nH"
-			(at 167.64 78.74 90)
+		(property "Value" "100nF"
+			(at 152.4 121.9199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
-			(at 167.64 81.28 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 149.5552 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4570,7 +4544,111 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 167.64 81.28 0)
+			(at 148.59 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 148.59 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "603-CC402KRX7R7BB104"
+			(at 148.59 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+			(at 148.59 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 148.59 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+			(at 148.59 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "28f09dc2-622d-43c0-ba0e-bbccfa54860a")
+		)
+		(pin "1"
+			(uuid "599b1b69-d0e2-42a7-8f57-20218d1b19c3")
+		)
+		(instances
+			(project "gateway"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 186.69 81.28 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48080ad4-4dfe-4e99-9568-7d5e14673aa9")
+		(property "Reference" "L123"
+			(at 186.69 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "12nH"
+			(at 186.69 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
+			(at 186.69 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 186.69 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4579,7 +4657,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 167.64 81.28 0)
+			(at 186.69 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4588,7 +4666,7 @@
 			)
 		)
 		(property "Mouser Part Number" "81-LQW15AN12NJ80D"
-			(at 167.64 81.28 90)
+			(at 186.69 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4597,7 +4675,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
-			(at 167.64 81.28 90)
+			(at 186.69 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4606,7 +4684,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Murata"
-			(at 167.64 81.28 90)
+			(at 186.69 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4615,7 +4693,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LQW15AN12NJ80D"
-			(at 167.64 81.28 90)
+			(at 186.69 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4647,7 +4725,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4968db07-1e78-40fb-9e40-dd36dc8478d3")
-		(property "Reference" "C14"
+		(property "Reference" "C19"
 			(at 137.16 139.6999 0)
 			(effects
 				(font
@@ -4737,113 +4815,7 @@
 		(instances
 			(project "gateway"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 68.58 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5436256f-b5c8-46bc-9363-6c31f28cabb7")
-		(property "Reference" "C12"
-			(at 72.39 91.4399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 72.39 93.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 69.5452 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 68.58 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "81-GCJ188R72A104KA1D"
-			(at 68.58 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GCJ188R72A104KA01D?qs=vAU15TnRQM%2FvAWQMlXkQEQ%3D%3D"
-			(at 68.58 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Murata"
-			(at 68.58 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "GCJ188R72A104KA1D"
-			(at 68.58 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9b534822-de5b-4d39-9480-3e874292c854")
-		)
-		(pin "1"
-			(uuid "c0f9b7b8-fdc6-4f09-a2aa-9328e3ff6819")
-		)
-		(instances
-			(project "gateway"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C12")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -4971,7 +4943,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 139.7 62.23 0)
+		(at 158.75 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4980,7 +4952,7 @@
 		(fields_autoplaced yes)
 		(uuid "6b50ebd8-b2d7-4fdc-be9e-225c5ea0777d")
 		(property "Reference" "#PWR035"
-			(at 139.7 68.58 0)
+			(at 158.75 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4989,7 +4961,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 67.31 0)
+			(at 158.75 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4997,7 +4969,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 62.23 0)
+			(at 158.75 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5006,7 +4978,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 62.23 0)
+			(at 158.75 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5015,7 +4987,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 139.7 62.23 0)
+			(at 158.75 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5102,219 +5074,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 222.25 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6ebb6d1a-1b9c-4a30-9b1b-9548e9e6e548")
-		(property "Reference" "#PWR053"
-			(at 222.25 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 222.25 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 222.25 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 222.25 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 222.25 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "05f8aa10-17d1-4291-9936-7564cb753054")
-		)
-		(instances
-			(project "gateway"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "#PWR053")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 222.25 87.63 0)
+		(at 139.7 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "71a04cd2-c6cc-4cd4-b9dd-7c040c645b96")
-		(property "Reference" "Csh2"
-			(at 226.06 86.3599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0"
-			(at 226.06 88.8999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 223.2152 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 222.25 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 222.25 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3d7c647d-03ea-423d-8059-56e745d9ecfe")
-		)
-		(pin "1"
-			(uuid "8da7291a-f2d1-4134-bc73-cc2dfb898a3a")
-		)
-		(instances
-			(project ""
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "Csh2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 205.74 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "73e8bf46-48b5-42ed-954c-654cda1fa4aa")
-		(property "Reference" "#PWR052"
-			(at 205.74 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 205.74 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 205.74 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "29672b50-eb1f-49e5-974d-2049a439a056")
-		)
-		(instances
-			(project "gateway"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "#PWR052")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 149.86 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "800f61f7-3d13-42c0-8e66-535c96fca412")
-		(property "Reference" "C11"
-			(at 153.67 39.3699 0)
+		(uuid "7ab0b0c7-d4f6-479b-a322-1ef2670ea9e2")
+		(property "Reference" "C14"
+			(at 143.51 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5323,7 +5093,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 153.67 41.9099 0)
+			(at 143.51 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5331,8 +5101,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 150.8252 44.45 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 140.6652 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5341,7 +5111,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 149.86 40.64 0)
+			(at 139.7 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5350,7 +5120,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 149.86 40.64 0)
+			(at 139.7 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5358,8 +5128,8 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "81-GCJ188R72A104KA1D"
-			(at 149.86 40.64 0)
+		(property "Mouser Part Number" "603-CC402KRX7R7BB104"
+			(at 139.7 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5367,8 +5137,8 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GCJ188R72A104KA01D?qs=vAU15TnRQM%2FvAWQMlXkQEQ%3D%3D"
-			(at 149.86 40.64 0)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+			(at 139.7 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5376,8 +5146,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
-			(at 149.86 40.64 0)
+		(property "Manufacturer_Name" "Yageo"
+			(at 139.7 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5385,8 +5155,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GCJ188R72A104KA1D"
-			(at 149.86 40.64 0)
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+			(at 139.7 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5395,15 +5165,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "022f0986-0c8e-4beb-a37f-1821d83f63ed")
+			(uuid "d61b01fa-e099-4384-8b26-089733a3dfc9")
 		)
 		(pin "1"
-			(uuid "13cc2688-3736-4f54-9242-da2ea36de50d")
+			(uuid "2e4dd17a-f9c1-4ac8-8704-50847aa8f262")
 		)
 		(instances
 			(project "gateway"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C11")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -5470,6 +5240,112 @@
 			(project "gateway"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
 					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 68.58 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "84445158-e316-48cd-8022-a34614f66c9f")
+		(property "Reference" "C11"
+			(at 72.39 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 72.39 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 69.5452 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 68.58 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "603-CC402KRX7R7BB104"
+			(at 68.58 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+			(at 68.58 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 68.58 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+			(at 68.58 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "11cd40d7-b578-407b-864e-26900ee5c5b2")
+		)
+		(pin "1"
+			(uuid "47d0828f-bd09-43cb-81cf-422555fa50c5")
+		)
+		(instances
+			(project "gateway"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -5675,7 +5551,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 149.86 49.53 0)
+		(at 125.73 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5684,7 +5560,7 @@
 		(fields_autoplaced yes)
 		(uuid "9ee58048-47b7-4fee-84d0-e2bf0a045b2d")
 		(property "Reference" "#PWR050"
-			(at 149.86 55.88 0)
+			(at 125.73 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5693,7 +5569,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 149.86 54.61 0)
+			(at 125.73 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5701,7 +5577,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 49.53 0)
+			(at 125.73 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5710,7 +5586,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 49.53 0)
+			(at 125.73 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5719,7 +5595,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 149.86 49.53 0)
+			(at 125.73 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5741,7 +5617,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 144.78 110.49 0)
+		(at 163.83 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5750,7 +5626,7 @@
 		(fields_autoplaced yes)
 		(uuid "a37dbdcd-25a8-4204-ab5b-a37396f48dac")
 		(property "Reference" "#PWR036"
-			(at 144.78 116.84 0)
+			(at 163.83 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5759,7 +5635,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 144.78 115.57 0)
+			(at 163.83 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5767,7 +5643,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 110.49 0)
+			(at 163.83 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5776,7 +5652,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 110.49 0)
+			(at 163.83 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5785,7 +5661,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 144.78 110.49 0)
+			(at 163.83 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5800,6 +5676,112 @@
 			(project "gateway"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
 					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 125.73 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "abff309a-d73d-4f9c-a09f-a23ce6297275")
+		(property "Reference" "C15"
+			(at 129.54 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 129.54 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 126.6952 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 125.73 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "603-CC402KRX7R7BB104"
+			(at 125.73 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+			(at 125.73 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 125.73 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+			(at 125.73 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "21a4620c-8160-4eaa-8c55-599a4b0d2965")
+		)
+		(pin "1"
+			(uuid "dad5471c-47d6-45ac-a760-1cbd8c3caa9a")
+		)
+		(instances
+			(project "gateway"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -5978,6 +5960,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 139.7 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1949d86-7949-44a1-82ec-9ba9390aae82")
+		(property "Reference" "#PWR053"
+			(at 139.7 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 139.7 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0f53ce5e-86cf-4bf9-9548-aa22216e1a87")
+		)
+		(instances
+			(project "gateway"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 69.85 140.97 0)
 		(mirror y)
@@ -5987,7 +6035,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c1d8d825-ac9e-46b4-a45f-79ed6b18f326")
-		(property "Reference" "C13"
+		(property "Reference" "C18"
 			(at 66.04 139.6999 0)
 			(effects
 				(font
@@ -6077,7 +6125,7 @@
 		(instances
 			(project "gateway"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C13")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -6085,7 +6133,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 144.78 93.98 0)
+		(at 163.83 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6094,7 +6142,7 @@
 		(fields_autoplaced yes)
 		(uuid "c590b003-3c11-478b-877a-258adc518e1f")
 		(property "Reference" "L122"
-			(at 146.05 92.7099 0)
+			(at 165.1 92.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6103,7 +6151,7 @@
 			)
 		)
 		(property "Value" "18nH"
-			(at 146.05 95.2499 0)
+			(at 165.1 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6112,7 +6160,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
-			(at 144.78 93.98 0)
+			(at 163.83 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6121,7 +6169,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 144.78 93.98 0)
+			(at 163.83 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6130,7 +6178,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 144.78 93.98 0)
+			(at 163.83 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6139,7 +6187,7 @@
 			)
 		)
 		(property "Mouser Part Number" "81-LQG15HH18NJ02D"
-			(at 144.78 93.98 90)
+			(at 163.83 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6148,7 +6196,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQG15HH18NJ02D?qs=%2F%252BYoplLUB5jGNEzMsrpOaQ%3D%3D"
-			(at 144.78 93.98 90)
+			(at 163.83 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6157,7 +6205,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Murata"
-			(at 144.78 93.98 90)
+			(at 163.83 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6166,7 +6214,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LQG15HH18NJ02D"
-			(at 144.78 93.98 90)
+			(at 163.83 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6190,16 +6238,83 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 173.99 87.63 180)
+		(lib_id "power:GND")
+		(at 111.76 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c9469be9-c285-41d8-b973-de7d4d808f4b")
-		(property "Reference" "C123"
-			(at 182.372 86.614 0)
+		(fields_autoplaced yes)
+		(uuid "c8b8fa21-69aa-4544-bbe8-a2fd395f81fa")
+		(property "Reference" "#PWR058"
+			(at 111.76 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 111.76 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 111.76 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aa7afe0e-73e6-481a-adb1-adf9ff60ac1f")
+		)
+		(instances
+			(project "gateway"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 130.81 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9199088-a7cb-423f-9b24-7071f74a4781")
+		(property "Reference" "C13"
+			(at 134.62 39.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6207,8 +6322,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3.3pF"
-			(at 182.626 88.9 0)
+		(property "Value" "1uF"
+			(at 134.62 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6217,7 +6332,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 173.0248 83.82 0)
+			(at 131.7752 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6226,7 +6341,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 173.99 87.63 0)
+			(at 130.81 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6235,7 +6350,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 173.99 87.63 0)
+			(at 130.81 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6243,8 +6358,8 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "81-GRM1555C1H3R3WA1D"
-			(at 173.99 87.63 0)
+		(property "Mouser Part Number" "81-GXT155R60J105KE1D"
+			(at 130.81 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6252,8 +6367,8 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H3R3WA01D?qs=ouTquLLW2S75fzkTIuiuIg%3D%3D"
-			(at 173.99 87.63 0)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R60J105KE01D?qs=d0WKAl%252BL4Kb4JfV7cPss8A%3D%3D"
+			(at 130.81 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6262,7 +6377,112 @@
 			)
 		)
 		(property "Manufacturer_Name" "Murata"
-			(at 173.99 87.63 0)
+			(at 130.81 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GXT155R60J105KE01D "
+			(at 130.81 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ba119e06-9003-488a-80c2-d2cf05b73dd9")
+		)
+		(pin "1"
+			(uuid "892dbff8-07f2-4bf2-80fd-c2f96e381d18")
+		)
+		(instances
+			(project "gateway"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 193.04 87.63 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c9469be9-c285-41d8-b973-de7d4d808f4b")
+		(property "Reference" "C123"
+			(at 201.422 86.614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3.3pF"
+			(at 201.676 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 192.0748 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 193.04 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 193.04 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-GRM1555C1H3R3WA1D"
+			(at 193.04 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H3R3WA01D?qs=ouTquLLW2S75fzkTIuiuIg%3D%3D"
+			(at 193.04 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 193.04 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6271,7 +6491,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "GRM1555C1H3R3WA01D"
-			(at 173.99 87.63 0)
+			(at 193.04 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6296,7 +6516,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 156.21 76.2 90)
+		(at 175.26 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6305,7 +6525,7 @@
 		(fields_autoplaced yes)
 		(uuid "d0fe3689-bd54-4892-9917-2d0ec27d489a")
 		(property "Reference" "L132"
-			(at 156.21 71.12 90)
+			(at 175.26 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6313,7 +6533,7 @@
 			)
 		)
 		(property "Value" "18nH"
-			(at 156.21 73.66 90)
+			(at 175.26 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6321,7 +6541,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
-			(at 156.21 76.2 0)
+			(at 175.26 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6330,7 +6550,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 156.21 76.2 0)
+			(at 175.26 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6339,7 +6559,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 156.21 76.2 0)
+			(at 175.26 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6348,7 +6568,7 @@
 			)
 		)
 		(property "Mouser Part Number" "81-LQG15HH18NJ02D"
-			(at 156.21 76.2 90)
+			(at 175.26 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6357,7 +6577,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQG15HH18NJ02D?qs=%2F%252BYoplLUB5jGNEzMsrpOaQ%3D%3D"
-			(at 156.21 76.2 90)
+			(at 175.26 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6366,7 +6586,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Murata"
-			(at 156.21 76.2 90)
+			(at 175.26 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6375,7 +6595,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LQG15HH18NJ02D"
-			(at 156.21 76.2 90)
+			(at 175.26 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6465,8 +6685,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 139.7 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d361dc8a-576f-4e7d-a8f5-1de755c895f9")
+		(property "Reference" "#PWR052"
+			(at 139.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 139.7 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec95e526-3556-4fd3-bf1c-5f750f5b6d6f")
+		)
+		(instances
+			(project "gateway"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L")
-		(at 180.34 81.28 90)
+		(at 199.39 81.28 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6475,7 +6761,7 @@
 		(fields_autoplaced yes)
 		(uuid "d48a6497-1603-4d91-819a-e6dce50af009")
 		(property "Reference" "L124"
-			(at 180.34 76.2 90)
+			(at 199.39 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6483,7 +6769,7 @@
 			)
 		)
 		(property "Value" "12nH"
-			(at 180.34 78.74 90)
+			(at 199.39 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6491,7 +6777,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
-			(at 180.34 81.28 0)
+			(at 199.39 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6500,7 +6786,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 81.28 0)
+			(at 199.39 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6509,7 +6795,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 180.34 81.28 0)
+			(at 199.39 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6518,7 +6804,7 @@
 			)
 		)
 		(property "Mouser Part Number" "81-LQW15AN12NJ80D"
-			(at 180.34 81.28 90)
+			(at 199.39 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6527,7 +6813,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
-			(at 180.34 81.28 90)
+			(at 199.39 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6536,7 +6822,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Murata"
-			(at 180.34 81.28 90)
+			(at 199.39 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6545,7 +6831,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LQW15AN12NJ80D"
-			(at 180.34 81.28 90)
+			(at 199.39 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6563,6 +6849,178 @@
 			(project "gateway"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
 					(reference "L124")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 139.7 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db6d3d33-db8b-4830-a1a8-dd0552c98214")
+		(property "Reference" "C16"
+			(at 143.51 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 143.51 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 140.6652 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "603-CC402KRX7R7BB104"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e4cd0dd5-7283-4b67-b6b8-3f46b56fba3f")
+		)
+		(pin "1"
+			(uuid "1df41ca7-aba0-4c35-97f8-6c68e972f1cd")
+		)
+		(instances
+			(project "gateway"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 148.59 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ddf64fb9-5efa-4799-acef-cf32b471a7ca")
+		(property "Reference" "#PWR059"
+			(at 148.59 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 148.59 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 148.59 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97451674-dcab-46c9-b65c-860b84a0c946")
+		)
+		(instances
+			(project "gateway"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -6827,6 +7285,112 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 111.76 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eeec1f07-4af5-45b8-a540-d3d8d9557c29")
+		(property "Reference" "C12"
+			(at 115.57 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 115.57 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 112.7252 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 111.76 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "603-CC402KRX7R7BB104"
+			(at 111.76 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+			(at 111.76 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 111.76 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+			(at 111.76 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f9fd3508-efc6-4e4e-b26a-d0ff3075731d")
+		)
+		(pin "1"
+			(uuid "956c6be5-39a8-4a1f-9289-5a34153c82f6")
+		)
+		(instances
+			(project "gateway"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 74.93 148.59 0)
 		(unit 1)
@@ -6960,7 +7524,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 156.21 86.36 90)
+		(at 175.26 86.36 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6968,7 +7532,7 @@
 		(dnp no)
 		(uuid "fd1391ec-1dbf-44e4-a43e-6f0b18094faa")
 		(property "Reference" "C122"
-			(at 158.496 90.424 90)
+			(at 177.546 90.424 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6977,7 +7541,7 @@
 			)
 		)
 		(property "Value" "1.5pF"
-			(at 158.496 92.964 90)
+			(at 177.546 92.964 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6986,7 +7550,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 160.02 85.3948 0)
+			(at 179.07 85.3948 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6995,7 +7559,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 156.21 86.36 0)
+			(at 175.26 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7004,7 +7568,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 156.21 86.36 0)
+			(at 175.26 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7013,7 +7577,7 @@
 			)
 		)
 		(property "Mouser Part Number" "81-GRM1555C1E1R5BA1D"
-			(at 156.21 86.36 0)
+			(at 175.26 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7022,7 +7586,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1E1R5BA01D?qs=ouTquLLW2S6xHAnxxZWZ1w%3D%3D"
-			(at 156.21 86.36 0)
+			(at 175.26 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7031,7 +7595,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Murata"
-			(at 156.21 86.36 0)
+			(at 175.26 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7040,7 +7604,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "GRM1555C1E1R5BA01D"
-			(at 156.21 86.36 0)
+			(at 175.26 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7065,16 +7629,16 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 205.74 87.63 0)
+		(at 54.61 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fdb994b4-3a55-4fdd-9b11-ee81f9f04d13")
-		(property "Reference" "Csh1"
-			(at 209.55 86.3599 0)
+		(uuid "fe945822-9e37-45d7-be4d-19d6562aad7b")
+		(property "Reference" "C10"
+			(at 58.42 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7082,8 +7646,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0"
-			(at 209.55 88.8999 0)
+		(property "Value" "100nF"
+			(at 58.42 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7091,8 +7655,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 206.7052 91.44 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 55.5752 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7101,7 +7665,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 205.74 87.63 0)
+			(at 54.61 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7110,7 +7674,43 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 205.74 87.63 0)
+			(at 54.61 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "603-CC402KRX7R7BB104"
+			(at 54.61 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+			(at 54.61 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 54.61 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+			(at 54.61 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7119,15 +7719,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "7a41bc22-8f11-4736-ba29-f497b7bd3005")
+			(uuid "47ac96a8-299b-4c1d-abf8-2e96d5c8ec47")
 		)
 		(pin "1"
-			(uuid "d32ab201-6a1b-47a0-8847-525a15dea35b")
+			(uuid "81c67d75-c945-48ac-a98c-3e7c82a662ea")
 		)
 		(instances
-			(project ""
+			(project "gateway"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "Csh1")
+					(reference "C10")
 					(unit 1)
 				)
 			)
