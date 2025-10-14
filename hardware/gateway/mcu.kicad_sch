@@ -199,194 +199,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "B3F-1070:B3F-1070"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "S"
-				(at 26.67 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "B3F-1070"
-				(at 26.67 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "MyParts:B3F1060"
-				(at 26.67 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf"
-				(at 26.67 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "Switch Tact SPST,flat 9.5mm act,PC Pins Plunger Tactile Switch, SPST-NO 0.05 A@ 24 V dc 6.1mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "7"
-				(at 26.67 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "653-B3F-1070"
-				(at 26.67 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1070?qs=CX134%252BdLMDEbZOltqAbCng%3D%3D"
-				(at 26.67 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Omron Electronics"
-				(at 26.67 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "B3F-1070"
-				(at 26.67 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "B3F-1070_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 25.4 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "NO_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "COM_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 30.48 0 180)
-					(length 5.08)
-					(name "NO_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 30.48 -2.54 180)
-					(length 5.08)
-					(name "COM_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -2331,6 +2143,194 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "TL6120DF160QG:TL6120DF160QG"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "S"
+				(at 16.51 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "TL6120DF160QG"
+				(at 16.51 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "MyParts:TL6120DF160QG"
+				(at 16.51 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://configured-product-images.s3.amazonaws.com/2D/specs/TL6120DF160QG.pdf"
+				(at 16.51 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "TACT, 50mA, 12VDC SPST-NO, Off-(On) Surface Mount"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "10.1"
+				(at 16.51 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "612-TL6120DF160QG"
+				(at 16.51 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/E-Switch/TL6120DF160QG?qs=QtyuwXswaQhSGW5Q0e27eA%3D%3D"
+				(at 16.51 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "E-Switch"
+				(at 16.51 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "TL6120DF160QG"
+				(at 16.51 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "TL6120DF160QG_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 15.24 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -2.54 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "TLHR4400-AS12Z:TLHR4400-AS12Z"
 			(pin_names
 				(hide yes)
@@ -3380,7 +3380,7 @@
 		)
 	)
 	(junction
-		(at 257.81 71.12)
+		(at 243.84 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "03a34063-edc5-44da-b2d1-48644379d1cb")
@@ -3404,7 +3404,7 @@
 		(uuid "1080d9d3-4f18-4c28-a52a-474a5f6d14d4")
 	)
 	(junction
-		(at 257.81 86.36)
+		(at 243.84 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "20812091-667d-4c8b-a806-a660cea9c0fb")
@@ -3428,7 +3428,7 @@
 		(uuid "5c8fad73-d8b7-4ad2-a485-7f3eaba8983e")
 	)
 	(junction
-		(at 180.34 72.39)
+		(at 166.37 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5dba99a2-0f1f-4141-938d-e750eab2d03b")
@@ -3446,7 +3446,7 @@
 		(uuid "75963ccc-61c0-4c6b-98f3-46db46075b23")
 	)
 	(junction
-		(at 137.16 78.74)
+		(at 127 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "90abf69a-c041-4287-9be8-ea95723d4e56")
@@ -3470,7 +3470,7 @@
 		(uuid "98768159-dd69-43ad-8144-49b313abde2b")
 	)
 	(junction
-		(at 137.16 85.09)
+		(at 127 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a805e2da-5139-4173-8ecc-37eea69edfc5")
@@ -3488,7 +3488,7 @@
 		(uuid "ae670e04-61a8-4ff0-acd4-414fd5472e0e")
 	)
 	(junction
-		(at 165.1 72.39)
+		(at 151.13 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c94345be-23a9-40d1-9426-214afdf407da")
@@ -3585,7 +3585,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 69.85) (xy 165.1 72.39)
+			(xy 151.13 69.85) (xy 151.13 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3625,7 +3625,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 74.93) (xy 99.06 74.93)
+			(xy 127 74.93) (xy 99.06 74.93)
 		)
 		(stroke
 			(width 0)
@@ -3775,7 +3775,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 58.42) (xy 236.22 58.42)
+			(xy 215.9 58.42) (xy 222.25 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3795,7 +3795,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 82.55) (xy 180.34 86.36)
+			(xy 166.37 82.55) (xy 166.37 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3875,7 +3875,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 72.39) (xy 165.1 74.93)
+			(xy 151.13 72.39) (xy 151.13 74.93)
 		)
 		(stroke
 			(width 0)
@@ -3885,7 +3885,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 58.42) (xy 222.25 58.42)
+			(xy 203.2 58.42) (xy 208.28 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3955,7 +3955,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 81.28) (xy 132.08 81.28)
+			(xy 127 81.28) (xy 121.92 81.28)
 		)
 		(stroke
 			(width 0)
@@ -4035,7 +4035,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 86.36) (xy 222.25 86.36)
+			(xy 203.2 86.36) (xy 208.28 86.36)
 		)
 		(stroke
 			(width 0)
@@ -4045,7 +4045,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 57.15) (xy 165.1 62.23)
+			(xy 151.13 57.15) (xy 151.13 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4055,7 +4055,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 78.74) (xy 139.7 78.74)
+			(xy 127 78.74) (xy 129.54 78.74)
 		)
 		(stroke
 			(width 0)
@@ -4085,7 +4085,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 72.39) (xy 180.34 72.39)
+			(xy 162.56 72.39) (xy 166.37 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4155,7 +4155,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 71.12) (xy 257.81 71.12)
+			(xy 237.49 71.12) (xy 243.84 71.12)
 		)
 		(stroke
 			(width 0)
@@ -4205,7 +4205,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 86.36) (xy 257.81 86.36)
+			(xy 237.49 86.36) (xy 243.84 86.36)
 		)
 		(stroke
 			(width 0)
@@ -4295,7 +4295,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 72.39) (xy 180.34 74.93)
+			(xy 166.37 72.39) (xy 166.37 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4305,7 +4305,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 72.39) (xy 168.91 72.39)
+			(xy 151.13 72.39) (xy 154.94 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4335,7 +4335,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 71.12) (xy 257.81 86.36)
+			(xy 243.84 71.12) (xy 243.84 86.36)
 		)
 		(stroke
 			(width 0)
@@ -4345,7 +4345,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 85.09) (xy 137.16 81.28)
+			(xy 127 85.09) (xy 127 81.28)
 		)
 		(stroke
 			(width 0)
@@ -4355,7 +4355,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 85.09) (xy 137.16 85.09)
+			(xy 99.06 85.09) (xy 127 85.09)
 		)
 		(stroke
 			(width 0)
@@ -4365,7 +4365,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 86.36) (xy 236.22 86.36)
+			(xy 215.9 86.36) (xy 222.25 86.36)
 		)
 		(stroke
 			(width 0)
@@ -4415,7 +4415,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 78.74) (xy 137.16 78.74)
+			(xy 121.92 78.74) (xy 127 78.74)
 		)
 		(stroke
 			(width 0)
@@ -4485,7 +4485,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 88.9) (xy 137.16 85.09)
+			(xy 127 88.9) (xy 127 85.09)
 		)
 		(stroke
 			(width 0)
@@ -4505,7 +4505,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 58.42) (xy 257.81 71.12)
+			(xy 243.84 58.42) (xy 243.84 71.12)
 		)
 		(stroke
 			(width 0)
@@ -4575,7 +4575,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 58.42) (xy 257.81 58.42)
+			(xy 237.49 58.42) (xy 243.84 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4605,7 +4605,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 86.36) (xy 257.81 95.25)
+			(xy 243.84 86.36) (xy 243.84 95.25)
 		)
 		(stroke
 			(width 0)
@@ -4645,7 +4645,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 72.39) (xy 186.69 72.39)
+			(xy 166.37 72.39) (xy 172.72 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4705,7 +4705,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 78.74) (xy 137.16 74.93)
+			(xy 127 78.74) (xy 127 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4715,7 +4715,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 71.12) (xy 236.22 71.12)
+			(xy 215.9 71.12) (xy 222.25 71.12)
 		)
 		(stroke
 			(width 0)
@@ -4845,7 +4845,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 71.12) (xy 222.25 71.12)
+			(xy 203.2 71.12) (xy 208.28 71.12)
 		)
 		(stroke
 			(width 0)
@@ -4885,7 +4885,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 82.55) (xy 165.1 86.36)
+			(xy 151.13 82.55) (xy 151.13 86.36)
 		)
 		(stroke
 			(width 0)
@@ -5035,7 +5035,7 @@
 	)
 	(global_label "V_MEAS"
 		(shape input)
-		(at 186.69 72.39 0)
+		(at 172.72 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5045,7 +5045,7 @@
 		)
 		(uuid "04b7c46f-9b1b-4544-a26c-0775c23e02d0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 196.6299 72.39 0)
+			(at 182.6599 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5101,7 +5101,7 @@
 	)
 	(global_label "LED_B"
 		(shape input)
-		(at 217.17 58.42 180)
+		(at 203.2 58.42 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5111,7 +5111,7 @@
 		)
 		(uuid "177439b4-5c83-4c8a-8338-3488048437df")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 208.5001 58.42 0)
+			(at 194.5301 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5233,7 +5233,7 @@
 	)
 	(global_label "LED_Y"
 		(shape input)
-		(at 217.17 71.12 180)
+		(at 203.2 71.12 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5243,7 +5243,7 @@
 		)
 		(uuid "44b73d60-52d7-4e09-b312-1b0bda86d7a6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 208.6815 71.12 0)
+			(at 194.7115 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5453,7 +5453,7 @@
 	)
 	(global_label "BTN"
 		(shape input)
-		(at 139.7 78.74 0)
+		(at 129.54 78.74 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5463,7 +5463,7 @@
 		)
 		(uuid "e09ba37e-19a2-4069-bfb1-6b80ab454710")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 146.2533 78.74 0)
+			(at 136.0933 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5541,7 +5541,7 @@
 	)
 	(global_label "LED_R"
 		(shape input)
-		(at 217.17 86.36 180)
+		(at 203.2 86.36 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5551,7 +5551,7 @@
 		)
 		(uuid "f706605f-1faf-4247-bb19-2a1f33dab7eb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 208.5001 86.36 0)
+			(at 194.5301 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5651,7 +5651,7 @@
 	)
 	(symbol
 		(lib_id "WP710A10LVBC_D:WP710A10LVBC_D")
-		(at 251.46 58.42 0)
+		(at 237.49 58.42 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5660,7 +5660,7 @@
 		(dnp no)
 		(uuid "011b65fb-e6ce-4e61-a785-bd0ca1639520")
 		(property "Reference" "LED1"
-			(at 243.84 48.26 0)
+			(at 229.87 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5668,7 +5668,7 @@
 			)
 		)
 		(property "Value" "WP710A10LVBC_D"
-			(at 243.84 50.8 0)
+			(at 229.87 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5676,7 +5676,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:WP710A10LVBCD"
-			(at 238.76 152.07 0)
+			(at 224.79 152.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5686,7 +5686,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.kingbrightusa.com/images/catalog/SPEC/WP710A10LVBC-D.pdf"
-			(at 238.76 252.07 0)
+			(at 224.79 252.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5696,7 +5696,7 @@
 			)
 		)
 		(property "Description" "Standard LEDs - Through Hole 3MM LOW CURRENT BLUE LED"
-			(at 251.46 58.42 0)
+			(at 237.49 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5705,7 +5705,7 @@
 			)
 		)
 		(property "Height" "5.4"
-			(at 238.76 452.07 0)
+			(at 224.79 452.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5715,7 +5715,7 @@
 			)
 		)
 		(property "Mouser Part Number" "604-WP710A10LVBCD"
-			(at 238.76 552.07 0)
+			(at 224.79 552.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5725,7 +5725,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Kingbright/WP710A10LVBC-D?qs=6oMev5NRZMF7xED66hMqMg%3D%3D"
-			(at 238.76 652.07 0)
+			(at 224.79 652.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5735,7 +5735,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Kingbright"
-			(at 238.76 752.07 0)
+			(at 224.79 752.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5745,7 +5745,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "WP710A10LVBC/D"
-			(at 238.76 852.07 0)
+			(at 224.79 852.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6174,7 +6174,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 172.72 72.39 90)
+		(at 158.75 72.39 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6183,7 +6183,7 @@
 		(fields_autoplaced yes)
 		(uuid "1ed63874-7ebb-4192-b17c-afa96f859e15")
 		(property "Reference" "R7"
-			(at 172.72 66.04 90)
+			(at 158.75 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6191,7 +6191,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 172.72 68.58 90)
+			(at 158.75 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6199,7 +6199,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 172.974 71.374 90)
+			(at 159.004 71.374 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6208,7 +6208,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 172.72 72.39 0)
+			(at 158.75 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6217,7 +6217,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 172.72 72.39 0)
+			(at 158.75 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6226,7 +6226,7 @@
 			)
 		)
 		(property "Mouser Part Number" "603-RC0402JR-7D1KL"
-			(at 172.72 72.39 0)
+			(at 158.75 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6235,7 +6235,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D1KL?qs=sGAEpiMZZMvdGkrng054t%252BT3WHYFVvJgmss%252BDRYp36bZlKBftiz5dg%3D%3D"
-			(at 172.72 72.39 0)
+			(at 158.75 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6244,7 +6244,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Yageo"
-			(at 172.72 72.39 0)
+			(at 158.75 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6253,7 +6253,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "RC0402JR-7D1KL"
-			(at 172.72 72.39 0)
+			(at 158.75 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6482,7 +6482,7 @@
 	)
 	(symbol
 		(lib_id "TLHR4400-AS12Z:TLHR4400-AS12Z")
-		(at 251.46 86.36 0)
+		(at 237.49 86.36 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6491,7 +6491,7 @@
 		(dnp no)
 		(uuid "2cc53ef8-68c2-404b-ba2c-36ccf1c875f2")
 		(property "Reference" "LED3"
-			(at 243.84 93.98 0)
+			(at 229.87 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6499,7 +6499,7 @@
 			)
 		)
 		(property "Value" "TLHR4400-AS12Z"
-			(at 243.84 91.44 0)
+			(at 229.87 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6507,7 +6507,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:TLHR4400AS12Z"
-			(at 238.76 180.01 0)
+			(at 224.79 180.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6517,7 +6517,7 @@
 			)
 		)
 		(property "Datasheet" "https://componentsearchengine.com/Datasheets/2/TLHR4400-AS12Z.pdf"
-			(at 238.76 280.01 0)
+			(at 224.79 280.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6527,7 +6527,7 @@
 			)
 		)
 		(property "Description" "Standard LEDs - Through Hole Red 13mcd; 3mm 612-625nm; 2V Typ"
-			(at 251.46 86.36 0)
+			(at 237.49 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6536,7 +6536,7 @@
 			)
 		)
 		(property "Height" "6.1"
-			(at 238.76 480.01 0)
+			(at 224.79 480.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6546,7 +6546,7 @@
 			)
 		)
 		(property "Mouser Part Number" "78-TLHR4400-AS12Z"
-			(at 238.76 580.01 0)
+			(at 224.79 580.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6556,7 +6556,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHR4400-AS12Z?qs=nQ9vpdMXC6AwxmxsGskxgg%3D%3D"
-			(at 238.76 680.01 0)
+			(at 224.79 680.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6566,7 +6566,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Vishay"
-			(at 238.76 780.01 0)
+			(at 224.79 780.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6576,7 +6576,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "TLHR4400-AS12Z"
-			(at 238.76 880.01 0)
+			(at 224.79 880.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6793,7 +6793,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 165.1 86.36 0)
+		(at 151.13 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6802,7 +6802,7 @@
 		(fields_autoplaced yes)
 		(uuid "359d4e24-4f10-4e0c-bf49-9b98dd0492b4")
 		(property "Reference" "#PWR044"
-			(at 165.1 92.71 0)
+			(at 151.13 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6811,7 +6811,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 165.1 91.44 0)
+			(at 151.13 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6819,7 +6819,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 86.36 0)
+			(at 151.13 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6828,7 +6828,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 86.36 0)
+			(at 151.13 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6837,7 +6837,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 165.1 86.36 0)
+			(at 151.13 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7097,7 +7097,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 165.1 78.74 180)
+		(at 151.13 78.74 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7105,7 +7105,7 @@
 		(dnp no)
 		(uuid "405fcc29-f340-436d-92e5-a63fa8f23f84")
 		(property "Reference" "R6"
-			(at 158.242 77.47 0)
+			(at 144.272 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7114,7 +7114,7 @@
 			)
 		)
 		(property "Value" "510K"
-			(at 158.242 80.01 0)
+			(at 144.272 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7123,7 +7123,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 164.084 78.486 90)
+			(at 150.114 78.486 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7132,7 +7132,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 78.74 0)
+			(at 151.13 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7141,7 +7141,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 165.1 78.74 0)
+			(at 151.13 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7150,7 +7150,7 @@
 			)
 		)
 		(property "Mouser Part Number" "667-ERJ-2RKD5103X"
-			(at 165.1 78.74 0)
+			(at 151.13 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7159,7 +7159,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-2RKD5103X?qs=sGAEpiMZZMvdGkrng054t1eOZL8aqEcIL%252BpAv8RhwTE3NX8BgYoG6A%3D%3D"
-			(at 165.1 78.74 0)
+			(at 151.13 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7168,7 +7168,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Panasonic"
-			(at 165.1 78.74 0)
+			(at 151.13 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7177,7 +7177,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "ERJ-2RKD5103X"
-			(at 165.1 78.74 0)
+			(at 151.13 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8104,7 +8104,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 180.34 86.36 0)
+		(at 166.37 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8113,7 +8113,7 @@
 		(fields_autoplaced yes)
 		(uuid "6fa7c3f7-05c1-4a92-85e6-f1ca98ae7c1f")
 		(property "Reference" "#PWR040"
-			(at 180.34 92.71 0)
+			(at 166.37 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8122,7 +8122,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 180.34 91.44 0)
+			(at 166.37 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8130,7 +8130,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 86.36 0)
+			(at 166.37 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8139,7 +8139,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 86.36 0)
+			(at 166.37 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8148,7 +8148,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 180.34 86.36 0)
+			(at 166.37 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8302,7 +8302,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 137.16 88.9 0)
+		(at 127 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8311,7 +8311,7 @@
 		(fields_autoplaced yes)
 		(uuid "86316ca6-a2ef-4c32-8a28-148512bd90a0")
 		(property "Reference" "#PWR022"
-			(at 137.16 95.25 0)
+			(at 127 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8320,7 +8320,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 137.16 93.98 0)
+			(at 127 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8328,7 +8328,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 88.9 0)
+			(at 127 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8337,7 +8337,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 88.9 0)
+			(at 127 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8346,7 +8346,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 137.16 88.9 0)
+			(at 127 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8434,7 +8434,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 226.06 58.42 90)
+		(at 212.09 58.42 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8443,7 +8443,7 @@
 		(fields_autoplaced yes)
 		(uuid "8f08931d-f9e0-4d30-ba18-b6721030a2af")
 		(property "Reference" "R8"
-			(at 226.06 52.07 90)
+			(at 212.09 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8451,7 +8451,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 226.06 54.61 90)
+			(at 212.09 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8459,7 +8459,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 226.314 57.404 90)
+			(at 212.344 57.404 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8468,7 +8468,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 226.06 58.42 0)
+			(at 212.09 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8477,7 +8477,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 226.06 58.42 0)
+			(at 212.09 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8486,7 +8486,7 @@
 			)
 		)
 		(property "Mouser Part Number" "603-AC0402JR-7D100RL"
-			(at 226.06 58.42 0)
+			(at 212.09 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8495,7 +8495,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D100RL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOjcefxgwQ1rBhn17Ol%252BS3w%3D%3D"
-			(at 226.06 58.42 0)
+			(at 212.09 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8504,7 +8504,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Yageo"
-			(at 226.06 58.42 0)
+			(at 212.09 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8513,7 +8513,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "AC0402JR-7D100RL"
-			(at 226.06 58.42 0)
+			(at 212.09 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8597,6 +8597,132 @@
 			(project "gateway"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TL6120DF160QG:TL6120DF160QG")
+		(at 101.6 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a98f5f66-7cf4-42e0-938f-2a56aa9e5414")
+		(property "Reference" "S2"
+			(at 111.76 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL6120DF160QG"
+			(at 111.76 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:TL6120DF160QG"
+			(at 118.11 173.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://configured-product-images.s3.amazonaws.com/2D/specs/TL6120DF160QG.pdf"
+			(at 118.11 273.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "TACT, 50mA, 12VDC SPST-NO, Off-(On) Surface Mount"
+			(at 101.6 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "10.1"
+			(at 118.11 473.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "612-TL6120DF160QG"
+			(at 118.11 573.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/E-Switch/TL6120DF160QG?qs=QtyuwXswaQhSGW5Q0e27eA%3D%3D"
+			(at 118.11 673.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "E-Switch"
+			(at 118.11 773.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "TL6120DF160QG"
+			(at 118.11 873.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4c603bed-2032-4ded-9546-82782149227b")
+		)
+		(pin "4"
+			(uuid "bbfe6b0e-5f3b-4927-87cc-59c14d130a91")
+		)
+		(pin "1"
+			(uuid "a5bcd548-d8a7-4051-bb6d-c8ab48426c55")
+		)
+		(pin "3"
+			(uuid "8085e441-42f2-4065-a6b9-6073847536b9")
+		)
+		(instances
+			(project ""
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
+					(reference "S2")
 					(unit 1)
 				)
 			)
@@ -8736,7 +8862,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 257.81 95.25 0)
+		(at 243.84 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8745,7 +8871,7 @@
 		(fields_autoplaced yes)
 		(uuid "ad4187c4-7650-4db8-8ec9-42a07535b9bf")
 		(property "Reference" "#PWR021"
-			(at 257.81 101.6 0)
+			(at 243.84 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8754,7 +8880,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 257.81 100.33 0)
+			(at 243.84 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8762,7 +8888,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 257.81 95.25 0)
+			(at 243.84 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8771,7 +8897,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 257.81 95.25 0)
+			(at 243.84 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8780,7 +8906,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 257.81 95.25 0)
+			(at 243.84 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8867,133 +8993,8 @@
 		)
 	)
 	(symbol
-		(lib_id "B3F-1070:B3F-1070")
-		(at 132.08 81.28 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b0d863d3-e769-4c1a-8e06-004917066104")
-		(property "Reference" "S2"
-			(at 116.84 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "B3F-1070"
-			(at 116.84 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MyParts:B3F1060"
-			(at 105.41 -13.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf"
-			(at 105.41 -113.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Switch Tact SPST,flat 9.5mm act,PC Pins Plunger Tactile Switch, SPST-NO 0.05 A@ 24 V dc 6.1mm"
-			(at 132.08 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "7"
-			(at 105.41 -313.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "653-B3F-1070"
-			(at 105.41 -413.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1070?qs=CX134%252BdLMDEbZOltqAbCng%3D%3D"
-			(at 105.41 -513.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Omron Electronics"
-			(at 105.41 -613.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "B3F-1070"
-			(at 105.41 -713.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5f823425-019e-48ce-a1bc-9052306c08f0")
-		)
-		(pin "1"
-			(uuid "4eb45ce1-a51d-4f01-959d-74ca435138d4")
-		)
-		(pin "3"
-			(uuid "6863b0ce-4071-4456-b469-c34b7e00f95e")
-		)
-		(pin "4"
-			(uuid "1960abc7-6850-4da2-9b2b-eb72ae7724a1")
-		)
-		(instances
-			(project "gateway"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "S2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
-		(at 226.06 86.36 90)
+		(at 212.09 86.36 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9002,7 +9003,7 @@
 		(fields_autoplaced yes)
 		(uuid "b30388f1-f332-4e3c-8083-fab030151ac2")
 		(property "Reference" "R10"
-			(at 226.06 80.01 90)
+			(at 212.09 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9010,7 +9011,7 @@
 			)
 		)
 		(property "Value" "50"
-			(at 226.06 82.55 90)
+			(at 212.09 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9018,7 +9019,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 226.314 85.344 90)
+			(at 212.344 85.344 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9027,7 +9028,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 226.06 86.36 0)
+			(at 212.09 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9036,7 +9037,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 226.06 86.36 0)
+			(at 212.09 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9045,7 +9046,7 @@
 			)
 		)
 		(property "Mouser Part Number" "603-AC0402JR-0750RL"
-			(at 226.06 86.36 0)
+			(at 212.09 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9054,7 +9055,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-0750RL?qs=sGAEpiMZZMvdGkrng054twVr7TWeaA0sucIozKrfIlI%3D"
-			(at 226.06 86.36 0)
+			(at 212.09 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9063,7 +9064,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Yageo"
-			(at 226.06 86.36 0)
+			(at 212.09 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9072,7 +9073,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "AC0402JR-0750RL"
-			(at 226.06 86.36 0)
+			(at 212.09 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9561,7 +9562,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 165.1 57.15 0)
+		(at 151.13 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9570,7 +9571,7 @@
 		(fields_autoplaced yes)
 		(uuid "be17621e-dab1-4933-b248-9ca1b6116c43")
 		(property "Reference" "#PWR045"
-			(at 165.1 60.96 0)
+			(at 151.13 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9579,7 +9580,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 165.1 52.07 0)
+			(at 151.13 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9587,7 +9588,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 57.15 0)
+			(at 151.13 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9596,7 +9597,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 57.15 0)
+			(at 151.13 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9605,7 +9606,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 165.1 57.15 0)
+			(at 151.13 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10181,7 +10182,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 226.06 71.12 90)
+		(at 212.09 71.12 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10190,7 +10191,7 @@
 		(fields_autoplaced yes)
 		(uuid "defbc503-a59f-45c7-9995-066b2b5ac9e9")
 		(property "Reference" "R9"
-			(at 226.06 64.77 90)
+			(at 212.09 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10198,7 +10199,7 @@
 			)
 		)
 		(property "Value" "50"
-			(at 226.06 67.31 90)
+			(at 212.09 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10206,7 +10207,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 226.314 70.104 90)
+			(at 212.344 70.104 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10215,7 +10216,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 226.06 71.12 0)
+			(at 212.09 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10224,7 +10225,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 226.06 71.12 0)
+			(at 212.09 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10233,7 +10234,7 @@
 			)
 		)
 		(property "Mouser Part Number" "603-AC0402JR-0750RL"
-			(at 226.06 71.12 0)
+			(at 212.09 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10242,7 +10243,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-0750RL?qs=sGAEpiMZZMvdGkrng054twVr7TWeaA0sucIozKrfIlI%3D"
-			(at 226.06 71.12 0)
+			(at 212.09 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10251,7 +10252,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Yageo"
-			(at 226.06 71.12 0)
+			(at 212.09 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10260,7 +10261,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "AC0402JR-0750RL"
-			(at 226.06 71.12 0)
+			(at 212.09 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10285,7 +10286,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 165.1 66.04 180)
+		(at 151.13 66.04 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10293,7 +10294,7 @@
 		(dnp no)
 		(uuid "df177fae-4f7e-4217-a088-19b441b25d55")
 		(property "Reference" "R5"
-			(at 159.766 64.77 0)
+			(at 145.796 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10302,7 +10303,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 159.766 67.31 0)
+			(at 145.796 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10311,7 +10312,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 164.084 65.786 90)
+			(at 150.114 65.786 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10320,7 +10321,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 66.04 0)
+			(at 151.13 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10329,7 +10330,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 165.1 66.04 0)
+			(at 151.13 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10338,7 +10339,7 @@
 			)
 		)
 		(property "Mouser Part Number" "667-ERJ-2RKD1004X"
-			(at 165.1 66.04 0)
+			(at 151.13 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10347,7 +10348,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-2RKD1004X?qs=sGAEpiMZZMvdGkrng054t3RItZpbp26uiFcI252hzZk%3D"
-			(at 165.1 66.04 0)
+			(at 151.13 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10356,7 +10357,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Panasonic"
-			(at 165.1 66.04 0)
+			(at 151.13 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10365,7 +10366,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "ERJ-2RKD1004X"
-			(at 165.1 66.04 0)
+			(at 151.13 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10794,7 +10795,7 @@
 	)
 	(symbol
 		(lib_id "TLHY4400-AS12Z:TLHY4400-AS12Z")
-		(at 251.46 71.12 0)
+		(at 237.49 71.12 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10803,7 +10804,7 @@
 		(dnp no)
 		(uuid "f3e247c5-f64d-43d6-9304-4aa1fb9c002a")
 		(property "Reference" "LED2"
-			(at 243.84 78.74 0)
+			(at 229.87 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10811,7 +10812,7 @@
 			)
 		)
 		(property "Value" "TLHY4400-AS12Z"
-			(at 243.84 76.2 0)
+			(at 229.87 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10819,7 +10820,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:TLHY4400AS12Z"
-			(at 238.76 164.77 0)
+			(at 224.79 164.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10829,7 +10830,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/83006/tlhg440.pdf"
-			(at 238.76 264.77 0)
+			(at 224.79 264.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10839,7 +10840,7 @@
 			)
 		)
 		(property "Description" "Standard LEDs - Through Hole Yel 10mcd; 3mm 581-594nm, 2.4V Typ"
-			(at 251.46 71.12 0)
+			(at 237.49 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10848,7 +10849,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 238.76 464.77 0)
+			(at 224.79 464.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10858,7 +10859,7 @@
 			)
 		)
 		(property "Mouser Part Number" "78-TLHY4400-AS12Z"
-			(at 238.76 564.77 0)
+			(at 224.79 564.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10868,7 +10869,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHY4400-AS12Z?qs=nQ9vpdMXC6D7BUjVD5tUJw%3D%3D"
-			(at 238.76 664.77 0)
+			(at 224.79 664.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10878,7 +10879,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Vishay"
-			(at 238.76 764.77 0)
+			(at 224.79 764.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10888,7 +10889,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "TLHY4400-AS12Z"
-			(at 238.76 864.77 0)
+			(at 224.79 864.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11086,7 +11087,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 180.34 78.74 0)
+		(at 166.37 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11095,7 +11096,7 @@
 		(fields_autoplaced yes)
 		(uuid "fdef89f9-4a12-4573-8f23-d5ad2da6c32a")
 		(property "Reference" "C2"
-			(at 184.15 77.4699 0)
+			(at 170.18 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11104,7 +11105,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 184.15 80.0099 0)
+			(at 170.18 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11113,7 +11114,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 181.3052 82.55 0)
+			(at 167.3352 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11122,7 +11123,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 78.74 0)
+			(at 166.37 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11131,7 +11132,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 180.34 78.74 0)
+			(at 166.37 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11140,7 +11141,7 @@
 			)
 		)
 		(property "Mouser Part Number" "603-CC402KRX7R7BB104"
-			(at 180.34 78.74 0)
+			(at 166.37 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11149,7 +11150,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
-			(at 180.34 78.74 0)
+			(at 166.37 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11158,7 +11159,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Yageo"
-			(at 180.34 78.74 0)
+			(at 166.37 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11167,7 +11168,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
-			(at 180.34 78.74 0)
+			(at 166.37 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
