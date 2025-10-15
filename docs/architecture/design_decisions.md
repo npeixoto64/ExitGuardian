@@ -508,6 +508,18 @@ VCC (≈3.0 V)
 ### Gateway 4 Pin Programming Header:
 https://pt.mouser.com/ProductDetail/Amphenol-Commercial-Products/G8250041000YEU?qs=f9yNj16SXrKPzZ0fvYmqsg%3D%3D
 
+### Gateway Enclosure/Box/Case: PCB size and format
+
+2 layers PCB.
+Electronic internal minimum enclosure: ?(D) x ?(W) x ?(H) mm
+
+#### Takachi
+
+SIC products catalog: https://www.takachi-enclosure.com/products/SIC
+
+Option 1 (without battery holder):
+SIC6-12-4W: 120 (D) x 60 (W) x 38 (H)
+
 ## Support
 
 ### KiCad BOM support
