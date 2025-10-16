@@ -9316,10 +9316,10 @@
 		(layer "Edge.Cuts")
 		(uuid "d621d699-15f2-408b-92fa-23e76229e08b")
 	)
-	(gr_text "Exit Guardian\nWindow Sensor REV0.0\nNPX4U 2025"
-		(at 224.65 161.05 90)
+	(gr_text "Exit Guardian - Sensor REV0.0\nNPX4U 2025"
+		(at 223.5 160.35 90)
 		(layer "F.SilkS")
-		(uuid "2c6f390b-1d77-4924-a26f-fc75a462e60d")
+		(uuid "43d94d40-460a-4ebc-8db2-bc29ac896adb")
 		(effects
 			(font
 				(size 1 1)
