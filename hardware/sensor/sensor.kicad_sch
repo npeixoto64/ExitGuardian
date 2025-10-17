@@ -82,7 +82,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://eu.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-868-HESM?qs=hWgE7mdIu5TTyqPbNERfhg%3D%3D"
+			(property "Supplier Link" "https://eu.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-868-HESM?qs=hWgE7mdIu5TTyqPbNERfhg%3D%3D"
 				(at 16.51 -594.92 0)
 				(effects
 					(font
@@ -92,7 +92,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "TE Connectivity"
+			(property "Manufacturer" "TE Connectivity"
 				(at 16.51 -694.92 0)
 				(effects
 					(font
@@ -102,7 +102,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "ANT-868-HETH"
+			(property "Manufacturer Part Number" "ANT-868-HETH"
 				(at 16.51 -794.92 0)
 				(effects
 					(font
@@ -233,7 +233,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-006-SMT?qs=TuK3vfAjtkUyTQHMSqIP6A%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-006-SMT?qs=TuK3vfAjtkUyTQHMSqIP6A%3D%3D"
 				(at 19.05 -594.92 0)
 				(effects
 					(font
@@ -243,7 +243,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "TE Connectivity"
+			(property "Manufacturer" "TE Connectivity"
 				(at 19.05 -694.92 0)
 				(effects
 					(font
@@ -253,7 +253,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "BAT-HLD-006-SMT"
+			(property "Manufacturer Part Number" "BAT-HLD-006-SMT"
 				(at 19.05 -794.92 0)
 				(effects
 					(font
@@ -403,7 +403,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
 				(at 16.51 -594.92 0)
 				(effects
 					(font
@@ -413,7 +413,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "Murata Electronics"
+			(property "Manufacturer" "Murata Electronics"
 				(at 16.51 -694.92 0)
 				(effects
 					(font
@@ -423,7 +423,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "BLM18KG601SN1D"
+			(property "Manufacturer Part Number" "BLM18KG601SN1D"
 				(at 16.51 -794.92 0)
 				(effects
 					(font
@@ -980,7 +980,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
 				(at 16.51 -594.92 0)
 				(effects
 					(font
@@ -990,7 +990,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "Harwin"
+			(property "Manufacturer" "Harwin"
 				(at 16.51 -694.92 0)
 				(effects
 					(font
@@ -1000,7 +1000,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "M20-9770342"
+			(property "Manufacturer Part Number" "M20-9770342"
 				(at 16.51 -794.92 0)
 				(effects
 					(font
@@ -1149,7 +1149,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Littelfuse/MASM-14R-8-10?qs=5ptrxOxu%252BRY84YYgQdk4WQ%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Littelfuse/MASM-14R-8-10?qs=5ptrxOxu%252BRY84YYgQdk4WQ%3D%3D"
 				(at 16.51 -594.92 0)
 				(effects
 					(font
@@ -1159,7 +1159,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "LITTELFUSE"
+			(property "Manufacturer" "LITTELFUSE"
 				(at 16.51 -694.92 0)
 				(effects
 					(font
@@ -1169,7 +1169,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "MASM-14R-8-10"
+			(property "Manufacturer Part Number" "MASM-14R-8-10"
 				(at 16.51 -794.92 0)
 				(effects
 					(font
@@ -1384,7 +1384,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM8L001J3M3?qs=W0yvOO0ixfEEZjTt2jCv0Q%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM8L001J3M3?qs=W0yvOO0ixfEEZjTt2jCv0Q%3D%3D"
 				(at 151.13 -594.92 0)
 				(effects
 					(font
@@ -1394,7 +1394,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "STMicroelectronics"
+			(property "Manufacturer" "STMicroelectronics"
 				(at 151.13 -694.92 0)
 				(effects
 					(font
@@ -1404,7 +1404,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "STM8L001J3M3"
+			(property "Manufacturer Part Number" "STM8L001J3M3"
 				(at 151.13 -794.92 0)
 				(effects
 					(font
@@ -1643,7 +1643,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Silicon-Labs/SI4012-C1001GTR?qs=p9T7GgSe1IG9YBSygWUqHw%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Silicon-Labs/SI4012-C1001GTR?qs=p9T7GgSe1IG9YBSygWUqHw%3D%3D"
 				(at 24.13 -594.92 0)
 				(effects
 					(font
@@ -1653,7 +1653,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "Silicon Labs"
+			(property "Manufacturer" "Silicon Labs"
 				(at 24.13 -694.92 0)
 				(effects
 					(font
@@ -1663,7 +1663,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "Si4012-C1001GTR"
+			(property "Manufacturer Part Number" "Si4012-C1001GTR"
 				(at 24.13 -794.92 0)
 				(effects
 					(font
@@ -1938,7 +1938,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS3839L30DBZR?qs=4whTb%2F0XQMhk4SkTOVaKEw%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS3839L30DBZR?qs=4whTb%2F0XQMhk4SkTOVaKEw%3D%3D"
 				(at 26.67 -594.92 0)
 				(effects
 					(font
@@ -1948,7 +1948,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "Texas Instruments"
+			(property "Manufacturer" "Texas Instruments"
 				(at 26.67 -694.92 0)
 				(effects
 					(font
@@ -1958,7 +1958,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "TPS3839L30DBZR"
+			(property "Manufacturer Part Number" "TPS3839L30DBZR"
 				(at 26.67 -794.92 0)
 				(effects
 					(font
@@ -4314,7 +4314,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/JMK325B7476MM-PR?qs=Zy5V7Kj3rCX4DwGK2%252BK4QQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/JMK325B7476MM-PR?qs=Zy5V7Kj3rCX4DwGK2%252BK4QQ%3D%3D"
 			(at 40.64 152.4 0)
 			(effects
 				(font
@@ -4323,7 +4323,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "TAYO YUDEN"
+		(property "Manufacturer" "TAYO YUDEN"
 			(at 40.64 152.4 0)
 			(effects
 				(font
@@ -4332,7 +4332,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "JMK325B7476MM-PR"
+		(property "Manufacturer Part Number" "JMK325B7476MM-PR"
 			(at 40.64 152.4 0)
 			(effects
 				(font
@@ -4514,7 +4514,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM8L001J3M3?qs=W0yvOO0ixfEEZjTt2jCv0Q%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM8L001J3M3?qs=W0yvOO0ixfEEZjTt2jCv0Q%3D%3D"
 			(at 237.49 677.47 0)
 			(effects
 				(font
@@ -4524,7 +4524,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 237.49 777.47 0)
 			(effects
 				(font
@@ -4534,7 +4534,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "STM8L001J3M3"
+		(property "Manufacturer Part Number" "STM8L001J3M3"
 			(at 237.49 877.47 0)
 			(effects
 				(font
@@ -4657,7 +4657,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/AC0603JR-7W10KL?qs=sGAEpiMZZMvdGkrng054t7z4BkURc4LzlWKoaan0o76lkH299GXmgg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0603JR-7W10KL?qs=sGAEpiMZZMvdGkrng054t7z4BkURc4LzlWKoaan0o76lkH299GXmgg%3D%3D"
 			(at 256.54 72.39 0)
 			(effects
 				(font
@@ -4666,7 +4666,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 256.54 72.39 0)
 			(effects
 				(font
@@ -4675,7 +4675,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "AC0603JR-7W10KL"
+		(property "Manufacturer Part Number" "AC0603JR-7W10KL"
 			(at 256.54 72.39 0)
 			(effects
 				(font
@@ -5134,7 +5134,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Littelfuse/MASM-14R-8-10?qs=5ptrxOxu%252BRY84YYgQdk4WQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Littelfuse/MASM-14R-8-10?qs=5ptrxOxu%252BRY84YYgQdk4WQ%3D%3D"
 			(at 149.86 -556.82 0)
 			(effects
 				(font
@@ -5144,7 +5144,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "LITTELFUSE"
+		(property "Manufacturer" "LITTELFUSE"
 			(at 149.86 -656.82 0)
 			(effects
 				(font
@@ -5154,7 +5154,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MASM-14R-8-10"
+		(property "Manufacturer Part Number" "MASM-14R-8-10"
 			(at 149.86 -756.82 0)
 			(effects
 				(font
@@ -5259,7 +5259,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/MBASE168SB7105KTNA18?qs=tlsG%2FOw5FFjIAHVuuey7kA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/MBASE168SB7105KTNA18?qs=tlsG%2FOw5FFjIAHVuuey7kA%3D%3D"
 			(at 257.81 147.32 0)
 			(effects
 				(font
@@ -5268,7 +5268,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "TAYO YUDEN"
+		(property "Manufacturer" "TAYO YUDEN"
 			(at 257.81 147.32 0)
 			(effects
 				(font
@@ -5277,7 +5277,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MBASE168SB7105KTNA18"
+		(property "Manufacturer Part Number" "MBASE168SB7105KTNA18"
 			(at 257.81 147.32 0)
 			(effects
 				(font
@@ -5458,7 +5458,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-868-HESM?qs=hWgE7mdIu5TTyqPbNERfhg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-868-HESM?qs=hWgE7mdIu5TTyqPbNERfhg%3D%3D"
 			(at 35.56 772.72 0)
 			(effects
 				(font
@@ -5468,7 +5468,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "TE Connectivity"
+		(property "Manufacturer" "TE Connectivity"
 			(at 35.56 872.72 0)
 			(effects
 				(font
@@ -5478,7 +5478,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ANT-868-HETH"
+		(property "Manufacturer Part Number" "ANT-868-HETH"
 			(at 35.56 972.72 0)
 			(effects
 				(font
@@ -5649,7 +5649,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/AC0603JR-7W10KL?qs=sGAEpiMZZMvdGkrng054t7z4BkURc4LzlWKoaan0o76lkH299GXmgg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0603JR-7W10KL?qs=sGAEpiMZZMvdGkrng054t7z4BkURc4LzlWKoaan0o76lkH299GXmgg%3D%3D"
 			(at 247.65 72.39 0)
 			(effects
 				(font
@@ -5658,7 +5658,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 247.65 72.39 0)
 			(effects
 				(font
@@ -5667,7 +5667,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "AC0603JR-7W10KL"
+		(property "Manufacturer Part Number" "AC0603JR-7W10KL"
 			(at 247.65 72.39 0)
 			(effects
 				(font
@@ -5771,7 +5771,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GCJ188R72A104KA01D?qs=vAU15TnRQM%2FvAWQMlXkQEQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GCJ188R72A104KA01D?qs=vAU15TnRQM%2FvAWQMlXkQEQ%3D%3D"
 			(at 73.66 48.26 0)
 			(effects
 				(font
@@ -5780,7 +5780,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata Electronics"
 			(at 73.66 48.26 0)
 			(effects
 				(font
@@ -5789,7 +5789,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GCJ188R72A104KA1D"
+		(property "Manufacturer Part Number" "GCJ188R72A104KA1D"
 			(at 73.66 48.26 0)
 			(effects
 				(font
@@ -6026,7 +6026,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/ROHM-Semiconductor/SFR03EZPJ105?qs=sGAEpiMZZMvdGkrng054t7z4BkURc4Lzl1WyxFadKNwUJSL%2FdgazDw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/ROHM-Semiconductor/SFR03EZPJ105?qs=sGAEpiMZZMvdGkrng054t7z4BkURc4Lzl1WyxFadKNwUJSL%2FdgazDw%3D%3D"
 			(at 171.45 26.67 0)
 			(effects
 				(font
@@ -6035,7 +6035,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Rohm"
+		(property "Manufacturer" "Rohm"
 			(at 171.45 26.67 0)
 			(effects
 				(font
@@ -6044,7 +6044,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "SFR03EZPJ105 "
+		(property "Manufacturer Part Number" "SFR03EZPJ105 "
 			(at 171.45 26.67 0)
 			(effects
 				(font
@@ -6224,7 +6224,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-006-SMT?qs=TuK3vfAjtkUyTQHMSqIP6A%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-006-SMT?qs=TuK3vfAjtkUyTQHMSqIP6A%3D%3D"
 			(at 22.86 -558.09 0)
 			(effects
 				(font
@@ -6234,7 +6234,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "TE Connectivity"
+		(property "Manufacturer" "TE Connectivity"
 			(at 22.86 -658.09 0)
 			(effects
 				(font
@@ -6244,7 +6244,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "BAT-HLD-006-SMT"
+		(property "Manufacturer Part Number" "BAT-HLD-006-SMT"
 			(at 22.86 -758.09 0)
 			(effects
 				(font
@@ -6352,7 +6352,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://eu.mouser.com/ProductDetail/Coilcraft/0402HP-30NXJRW?qs=QNEnbhJQKvYt2krW1zXeEQ%3D%3D"
+		(property "Supplier Link" "https://eu.mouser.com/ProductDetail/Coilcraft/0402HP-30NXJRW?qs=QNEnbhJQKvYt2krW1zXeEQ%3D%3D"
 			(at 93.98 143.51 0)
 			(effects
 				(font
@@ -6361,7 +6361,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Coilcraft"
+		(property "Manufacturer" "Coilcraft"
 			(at 93.98 143.51 0)
 			(effects
 				(font
@@ -6370,7 +6370,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0402HP-30NXJRW"
+		(property "Manufacturer Part Number" "0402HP-30NXJRW"
 			(at 93.98 143.51 0)
 			(effects
 				(font
@@ -6485,7 +6485,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
 			(at 21.59 -456.49 0)
 			(effects
 				(font
@@ -6495,7 +6495,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 21.59 -556.49 0)
 			(effects
 				(font
@@ -6505,7 +6505,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "BLM18KG601SN1D"
+		(property "Manufacturer Part Number" "BLM18KG601SN1D"
 			(at 21.59 -656.49 0)
 			(effects
 				(font
@@ -6610,7 +6610,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://eu.mouser.com/ProductDetail/Coilcraft/0402HP-3N6XGRW?qs=QNEnbhJQKvZDgcR8AxBsbw%3D%3D"
+		(property "Supplier Link" "https://eu.mouser.com/ProductDetail/Coilcraft/0402HP-3N6XGRW?qs=QNEnbhJQKvZDgcR8AxBsbw%3D%3D"
 			(at 118.11 142.24 0)
 			(effects
 				(font
@@ -6619,7 +6619,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Coilcraft"
+		(property "Manufacturer" "Coilcraft"
 			(at 118.11 142.24 0)
 			(effects
 				(font
@@ -6628,7 +6628,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0402HP-3N6XGRW"
+		(property "Manufacturer Part Number" "0402HP-3N6XGRW"
 			(at 118.11 142.24 0)
 			(effects
 				(font
@@ -6803,7 +6803,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "81-GRM1555C1H5R1WA1D"
+		(property "Mouser Part Number" "81-GCQ1555C1H5R1WB1D"
 			(at 93.98 182.88 0)
 			(effects
 				(font
@@ -6812,7 +6812,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://eu.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H5R1WA01D?qs=ouTquLLW2S6Ac9DkjU6j%2Fw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GCQ1555C1H5R1WB01D?qs=0lQeLiL1qyb1w9RbymBs8A%3D%3D"
 			(at 93.98 182.88 0)
 			(effects
 				(font
@@ -6821,7 +6821,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata Electronics"
 			(at 93.98 182.88 0)
 			(effects
 				(font
@@ -6830,7 +6830,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM1555C1H5R1WA01D"
+		(property "Manufacturer Part Number" "GCQ1555C1H5R1WB01D"
 			(at 93.98 182.88 0)
 			(effects
 				(font
@@ -6925,7 +6925,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "994-0603HP-R12XGLU"
+		(property "Mouser Part Number" "0603DC-R12XJRW"
 			(at 125.73 142.24 0)
 			(effects
 				(font
@@ -6934,7 +6934,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Coilcraft/0603HP-R12XGLU?qs=zCSbvcPd3pbJT9Wmlao8cg%3D%3D"
+		(property "Supplier Link" "https://eu.mouser.com/ProductDetail/Coilcraft/0603DC-R12XJRW?qs=KUoIvG%2F9IlbgwNB48TnBTw%3D%3D"
 			(at 125.73 142.24 0)
 			(effects
 				(font
@@ -6943,7 +6943,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Coilcraft"
+		(property "Manufacturer" "Coilcraf"
 			(at 125.73 142.24 0)
 			(effects
 				(font
@@ -6952,7 +6952,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603HP-R12XGLU"
+		(property "Manufacturer Part Number" "994-0603DC-R12XJRW"
 			(at 125.73 142.24 0)
 			(effects
 				(font
@@ -7123,7 +7123,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://eu.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H2R4WA01D?qs=ouTquLLW2S5u9sxTRF7zdQ%3D%3D"
+		(property "Supplier Link" "https://eu.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H2R4WA01D?qs=ouTquLLW2S5u9sxTRF7zdQ%3D%3D"
 			(at 107.95 152.4 90)
 			(effects
 				(font
@@ -7132,7 +7132,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata Electronics"
 			(at 107.95 152.4 90)
 			(effects
 				(font
@@ -7141,7 +7141,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM1555C1H2R4WA01D"
+		(property "Manufacturer Part Number" "GRM1555C1H2R4WA01D"
 			(at 107.95 152.4 90)
 			(effects
 				(font
@@ -7245,7 +7245,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GCJ188R72A104KA01D?qs=vAU15TnRQM%2FvAWQMlXkQEQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GCJ188R72A104KA01D?qs=vAU15TnRQM%2FvAWQMlXkQEQ%3D%3D"
 			(at 45.72 104.14 0)
 			(effects
 				(font
@@ -7254,7 +7254,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata Electronics"
 			(at 45.72 104.14 0)
 			(effects
 				(font
@@ -7263,7 +7263,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GCJ188R72A104KA1D"
+		(property "Manufacturer Part Number" "GCJ188R72A104KA1D"
 			(at 45.72 104.14 0)
 			(effects
 				(font
@@ -7563,7 +7563,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Vishay-Draloric/RCA0603100KJNEA?qs=sGAEpiMZZMvdGkrng054t0wRT%252B902PGcFNqKPAMrbTk%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Vishay-Draloric/RCA0603100KJNEA?qs=sGAEpiMZZMvdGkrng054t0wRT%252B902PGcFNqKPAMrbTk%3D"
 			(at 181.61 35.56 0)
 			(effects
 				(font
@@ -7572,7 +7572,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 181.61 35.56 0)
 			(effects
 				(font
@@ -7581,7 +7581,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RCA0603100KJNEA "
+		(property "Manufacturer Part Number" "RCA0603100KJNEA "
 			(at 181.61 35.56 0)
 			(effects
 				(font
@@ -7741,7 +7741,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "81-GRM1555C1H1R2WA1D"
+		(property "Mouser Part Number" "581-04025A1R2DAT2A"
 			(at 104.14 177.8 90)
 			(effects
 				(font
@@ -7750,7 +7750,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H1R2WA01D?qs=ouTquLLW2S4ZARlph37hBQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/KYOCERA-AVX/04025A1R2DAT2A?qs=vQavLFFWqfz%252Ba9yV8qz9Hg%3D%3D"
 			(at 104.14 177.8 90)
 			(effects
 				(font
@@ -7759,7 +7759,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Kyocera"
 			(at 104.14 177.8 90)
 			(effects
 				(font
@@ -7768,7 +7768,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM1555C1H1R2WA01D"
+		(property "Manufacturer Part Number" "04025A1R2DAT2A"
 			(at 104.14 177.8 90)
 			(effects
 				(font
@@ -7872,7 +7872,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://eu.mouser.com/ProductDetail/Coilcraft/0402HP-3N6XGRW?qs=QNEnbhJQKvZDgcR8AxBsbw%3D%3D"
+		(property "Supplier Link" "https://eu.mouser.com/ProductDetail/Coilcraft/0402HP-3N6XGRW?qs=QNEnbhJQKvZDgcR8AxBsbw%3D%3D"
 			(at 118.11 161.29 0)
 			(effects
 				(font
@@ -7881,7 +7881,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Coilcraft"
+		(property "Manufacturer" "Coilcraft"
 			(at 118.11 161.29 0)
 			(effects
 				(font
@@ -7890,7 +7890,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0402HP-3N6XGRW"
+		(property "Manufacturer Part Number" "0402HP-3N6XGRW"
 			(at 118.11 161.29 0)
 			(effects
 				(font
@@ -8126,7 +8126,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://eu.mouser.com/ProductDetail/Coilcraft/0402HP-6N8XGRW?qs=QNEnbhJQKvb1RBRny2c9yA%3D%3D"
+		(property "Supplier Link" "https://eu.mouser.com/ProductDetail/Coilcraft/0402HP-6N8XGRW?qs=QNEnbhJQKvb1RBRny2c9yA%3D%3D"
 			(at 83.82 177.8 0)
 			(effects
 				(font
@@ -8135,7 +8135,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Coilcraft"
+		(property "Manufacturer" "Coilcraft"
 			(at 83.82 177.8 0)
 			(effects
 				(font
@@ -8144,7 +8144,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0402HP-6N8XGRW"
+		(property "Manufacturer Part Number" "0402HP-6N8XGRW"
 			(at 83.82 177.8 0)
 			(effects
 				(font
@@ -8395,7 +8395,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/JMK325B7476MM-PR?qs=Zy5V7Kj3rCX4DwGK2%252BK4QQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/JMK325B7476MM-PR?qs=Zy5V7Kj3rCX4DwGK2%252BK4QQ%3D%3D"
 			(at 59.69 104.14 0)
 			(effects
 				(font
@@ -8404,7 +8404,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "TAYO YUDEN"
+		(property "Manufacturer" "TAYO YUDEN"
 			(at 59.69 104.14 0)
 			(effects
 				(font
@@ -8413,7 +8413,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "JMK325B7476MM-PR"
+		(property "Manufacturer Part Number" "JMK325B7476MM-PR"
 			(at 59.69 104.14 0)
 			(effects
 				(font
@@ -8583,7 +8583,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GCJ188R72A104KA01D?qs=vAU15TnRQM%2FvAWQMlXkQEQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GCJ188R72A104KA01D?qs=vAU15TnRQM%2FvAWQMlXkQEQ%3D%3D"
 			(at 191.77 43.18 0)
 			(effects
 				(font
@@ -8592,7 +8592,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata Electronics"
 			(at 191.77 43.18 0)
 			(effects
 				(font
@@ -8601,7 +8601,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GCJ188R72A104KA1D"
+		(property "Manufacturer Part Number" "GCJ188R72A104KA1D"
 			(at 191.77 43.18 0)
 			(effects
 				(font
@@ -8705,7 +8705,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/MBASE168SB7105KTNA18?qs=tlsG%2FOw5FFjIAHVuuey7kA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/MBASE168SB7105KTNA18?qs=tlsG%2FOw5FFjIAHVuuey7kA%3D%3D"
 			(at 33.02 104.14 0)
 			(effects
 				(font
@@ -8714,7 +8714,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "TAYO YUDEN"
+		(property "Manufacturer" "TAYO YUDEN"
 			(at 33.02 104.14 0)
 			(effects
 				(font
@@ -8723,7 +8723,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MBASE168SB7105KTNA18"
+		(property "Manufacturer Part Number" "MBASE168SB7105KTNA18"
 			(at 33.02 104.14 0)
 			(effects
 				(font
@@ -8968,7 +8968,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Silicon-Labs/SI4012-C1001GTR?qs=p9T7GgSe1IG9YBSygWUqHw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Silicon-Labs/SI4012-C1001GTR?qs=p9T7GgSe1IG9YBSygWUqHw%3D%3D"
 			(at 215.9 -457.76 0)
 			(effects
 				(font
@@ -8978,7 +8978,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Silicon Labs"
+		(property "Manufacturer" "Silicon Labs"
 			(at 215.9 -557.76 0)
 			(effects
 				(font
@@ -8988,7 +8988,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "Si4012-C1001GTR"
+		(property "Manufacturer Part Number" "Si4012-C1001GTR"
 			(at 215.9 -657.76 0)
 			(effects
 				(font
@@ -9108,7 +9108,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "81-GRM1555C1H5R1WA1D"
+		(property "Mouser Part Number" "81-GCQ1555C1H5R1WB1D"
 			(at 74.93 182.88 0)
 			(effects
 				(font
@@ -9117,7 +9117,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://eu.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H5R1WA01D?qs=ouTquLLW2S6Ac9DkjU6j%2Fw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GCQ1555C1H5R1WB01D?qs=0lQeLiL1qyb1w9RbymBs8A%3D%3D"
 			(at 74.93 182.88 0)
 			(effects
 				(font
@@ -9126,7 +9126,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata Electronics"
 			(at 74.93 182.88 0)
 			(effects
 				(font
@@ -9135,7 +9135,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM1555C1H5R1WA01D"
+		(property "Manufacturer Part Number" "GCQ1555C1H5R1WB01D"
 			(at 74.93 182.88 0)
 			(effects
 				(font
@@ -9570,7 +9570,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Vishay-Draloric/RCA0603100KJNEA?qs=sGAEpiMZZMvdGkrng054t0wRT%252B902PGcFNqKPAMrbTk%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Vishay-Draloric/RCA0603100KJNEA?qs=sGAEpiMZZMvdGkrng054t0wRT%252B902PGcFNqKPAMrbTk%3D"
 			(at 203.2 124.46 0)
 			(effects
 				(font
@@ -9579,7 +9579,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 203.2 124.46 0)
 			(effects
 				(font
@@ -9588,7 +9588,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RCA0603100KJNEA "
+		(property "Manufacturer Part Number" "RCA0603100KJNEA "
 			(at 203.2 124.46 0)
 			(effects
 				(font
@@ -9701,7 +9701,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Texas-Instruments/TPS3839L30DBZR?qs=4whTb%2F0XQMhk4SkTOVaKEw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Texas-Instruments/TPS3839L30DBZR?qs=4whTb%2F0XQMhk4SkTOVaKEw%3D%3D"
 			(at 83.82 -558.09 0)
 			(effects
 				(font
@@ -9711,7 +9711,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Texas Instruments"
+		(property "Manufacturer" "Texas Instruments"
 			(at 83.82 -658.09 0)
 			(effects
 				(font
@@ -9721,7 +9721,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "TPS3839L30DBZR"
+		(property "Manufacturer Part Number" "TPS3839L30DBZR"
 			(at 83.82 -758.09 0)
 			(effects
 				(font
@@ -9960,7 +9960,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://eu.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H680FA01J?qs=e%252BE4OD6MgMf0uVE7NpHJPw%3D%3D"
+		(property "Supplier Link" "https://eu.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H680FA01J?qs=e%252BE4OD6MgMf0uVE7NpHJPw%3D%3D"
 			(at 66.04 177.8 90)
 			(effects
 				(font
@@ -9969,7 +9969,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata Electronics"
 			(at 66.04 177.8 90)
 			(effects
 				(font
@@ -9978,7 +9978,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM1555C1H680FA01J"
+		(property "Manufacturer Part Number" "GRM1555C1H680FA01J"
 			(at 66.04 177.8 90)
 			(effects
 				(font
@@ -10213,7 +10213,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://eu.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H2R4WA01D?qs=ouTquLLW2S5u9sxTRF7zdQ%3D%3D"
+		(property "Supplier Link" "https://eu.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H2R4WA01D?qs=ouTquLLW2S5u9sxTRF7zdQ%3D%3D"
 			(at 82.55 135.89 90)
 			(effects
 				(font
@@ -10222,7 +10222,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata Electronics"
 			(at 82.55 135.89 90)
 			(effects
 				(font
@@ -10231,7 +10231,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM1555C1H2R4WA01D"
+		(property "Manufacturer Part Number" "GRM1555C1H2R4WA01D"
 			(at 82.55 135.89 90)
 			(effects
 				(font
@@ -10346,7 +10346,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
 			(at 226.06 -556.82 0)
 			(effects
 				(font
@@ -10356,7 +10356,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Harwin"
+		(property "Manufacturer" "Harwin"
 			(at 226.06 -656.82 0)
 			(effects
 				(font
@@ -10366,7 +10366,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "M20-9770342"
+		(property "Manufacturer Part Number" "M20-9770342"
 			(at 226.06 -756.82 0)
 			(effects
 				(font
@@ -10474,7 +10474,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Vishay-Vitramon/VJ0603Y101MXQCW1BC?qs=Bfn3yGQ%252Bnqr2VEQNr%252BrwkA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Vishay-Vitramon/VJ0603Y101MXQCW1BC?qs=Bfn3yGQ%252Bnqr2VEQNr%252BrwkA%3D%3D"
 			(at 270.51 147.32 0)
 			(effects
 				(font
@@ -10483,7 +10483,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 270.51 147.32 0)
 			(effects
 				(font
@@ -10492,7 +10492,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "VJ0603Y101MXQCW1BC"
+		(property "Manufacturer Part Number" "VJ0603Y101MXQCW1BC"
 			(at 270.51 147.32 0)
 			(effects
 				(font
