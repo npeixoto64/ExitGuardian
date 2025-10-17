@@ -531,7 +531,7 @@
       "plot": "output/",
       "pos_files": "output/",
       "specctra_dsn": "",
-      "step": "sensor.step",
+      "step": "output/PCBA/sensor.step",
       "svg": "",
       "vrml": ""
     },
