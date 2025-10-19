@@ -73,7 +73,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT1615ES5-1TRMPBF?qs=ytflclh7QUUp0a%252Bd7RWj%2FQ%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT1615ES5-1TRMPBF?qs=ytflclh7QUUp0a%252Bd7RWj%2FQ%3D%3D"
 			(at 24.13 -594.92 0)
 			(effects
 				(font
@@ -83,7 +83,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Analog Devices"
+		(property "Manufacturer" "Analog Devices"
 			(at 24.13 -694.92 0)
 			(effects
 				(font
@@ -93,7 +93,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "LT1615ES5-1#TRMPBF"
+		(property "Manufacturer Part Number" "LT1615ES5-1#TRMPBF"
 			(at 24.13 -794.92 0)
 			(effects
 				(font

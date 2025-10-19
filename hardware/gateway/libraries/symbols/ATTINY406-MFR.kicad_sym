@@ -73,7 +73,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/ATTINY406-MFR?qs=rrS6PyfT74ewLszrdlfJzw%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/ATTINY406-MFR?qs=rrS6PyfT74ewLszrdlfJzw%3D%3D"
 			(at 31.75 -572.06 0)
 			(effects
 				(font
@@ -83,7 +83,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Microchip"
+		(property "Manufacturer" "Microchip"
 			(at 31.75 -672.06 0)
 			(effects
 				(font
@@ -93,7 +93,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ATTINY406-MFR"
+		(property "Manufacturer Part Number" "ATTINY406-MFR"
 			(at 31.75 -772.06 0)
 			(effects
 				(font

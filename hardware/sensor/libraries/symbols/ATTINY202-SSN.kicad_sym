@@ -73,7 +73,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/ATTINY202-SSN?qs=3HJ2avRr9PJtfHljUri%252BhA%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/ATTINY202-SSN?qs=3HJ2avRr9PJtfHljUri%252BhA%3D%3D"
 			(at 36.83 -594.92 0)
 			(effects
 				(font
@@ -83,7 +83,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Microchip"
+		(property "Manufacturer" "Microchip"
 			(at 36.83 -694.92 0)
 			(effects
 				(font
@@ -93,7 +93,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ATTINY202-SSN"
+		(property "Manufacturer Part Number" "ATTINY202-SSN"
 			(at 36.83 -794.92 0)
 			(effects
 				(font

@@ -525,8 +525,8 @@ SIC6-12-4W: 120 (D) x 60 (W) x 38 (H)
 ### KiCad BOM support
 
 Mouser Part Number
-Mouser Price/Stock
-Manufacturer_Name
-Manufacturer_Part_Number
+Supplier Link
+Manufacturer
+Manufacturer Part Number
 
 ### Eurocircuits DRC

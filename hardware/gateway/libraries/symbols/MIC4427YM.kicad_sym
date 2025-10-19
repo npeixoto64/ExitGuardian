@@ -73,7 +73,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MIC4427YM?qs=kh6iOki%2FeLEkjJUQ4zBy0A%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MIC4427YM?qs=kh6iOki%2FeLEkjJUQ4zBy0A%3D%3D"
 			(at 24.13 -594.92 0)
 			(effects
 				(font
@@ -83,7 +83,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Microchip"
+		(property "Manufacturer" "Microchip"
 			(at 24.13 -694.92 0)
 			(effects
 				(font
@@ -93,7 +93,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MIC4427YM"
+		(property "Manufacturer Part Number" "MIC4427YM"
 			(at 24.13 -794.92 0)
 			(effects
 				(font

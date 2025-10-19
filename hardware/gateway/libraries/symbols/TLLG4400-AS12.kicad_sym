@@ -76,7 +76,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLLG4400-AS12?qs=ZTK%252Bjoi3Sg6xGMde4j6A1A%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLLG4400-AS12?qs=ZTK%252Bjoi3Sg6xGMde4j6A1A%3D%3D"
 			(at 12.7 -593.65 0)
 			(effects
 				(font
@@ -86,7 +86,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 12.7 -693.65 0)
 			(effects
 				(font
@@ -96,7 +96,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "TLLG4400-AS12"
+		(property "Manufacturer Part Number" "TLLG4400-AS12"
 			(at 12.7 -793.65 0)
 			(effects
 				(font

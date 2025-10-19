@@ -641,14 +641,14 @@
         },
         {
           "group_by": false,
-          "label": "Manufacturer_Name",
-          "name": "Manufacturer_Name",
+          "label": "Manufacturer",
+          "name": "Manufacturer",
           "show": true
         },
         {
           "group_by": false,
-          "label": "Manufacturer_Part_Number",
-          "name": "Manufacturer_Part_Number",
+          "label": "Manufacturer Part Number",
+          "name": "Manufacturer Part Number",
           "show": true
         },
         {
@@ -659,8 +659,8 @@
         },
         {
           "group_by": false,
-          "label": "Mouser Price/Stock",
-          "name": "Mouser Price/Stock",
+          "label": "Supplier Link",
+          "name": "Supplier Link",
           "show": true
         },
         {

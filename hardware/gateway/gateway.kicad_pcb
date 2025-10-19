@@ -258,7 +258,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R60J105KE01D?qs=d0WKAl%252BL4Kb4JfV7cPss8A%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R60J105KE01D?qs=d0WKAl%252BL4Kb4JfV7cPss8A%3D%3D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -271,7 +271,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -284,7 +284,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GXT155R60J105KE01D "
+		(property "Manufacturer Part Number" "GXT155R60J105KE01D "
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -523,7 +523,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLML6402TRPBF?qs=9%252BKlkBgLFf0HuZuONx2Ewg%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLML6402TRPBF?qs=9%252BKlkBgLFf0HuZuONx2Ewg%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -536,7 +536,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Infineon"
+		(property "Manufacturer" "Infineon"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -549,7 +549,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "IRLML6402TRPBF"
+		(property "Manufacturer Part Number" "IRLML6402TRPBF"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -824,7 +824,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-PA2F5602X?qs=sGAEpiMZZMvdGkrng054t39FRO7iDkA6z1H%252BqyfqNLr9YdfcpMbawA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-PA2F5602X?qs=sGAEpiMZZMvdGkrng054t39FRO7iDkA6z1H%252BqyfqNLr9YdfcpMbawA%3D%3D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -837,7 +837,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Panasonic"
+		(property "Manufacturer" "Panasonic"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -850,7 +850,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ERJ-PA2F5602X"
+		(property "Manufacturer Part Number" "ERJ-PA2F5602X"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1089,7 +1089,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MIC4427YM?qs=kh6iOki%2FeLEkjJUQ4zBy0A%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MIC4427YM?qs=kh6iOki%2FeLEkjJUQ4zBy0A%3D%3D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1102,7 +1102,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Microchip"
+		(property "Manufacturer" "Microchip"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1115,7 +1115,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MIC4427YM"
+		(property "Manufacturer Part Number" "MIC4427YM"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1447,7 +1447,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Fujitsu-Semiconductor/MB85RC64TAPNF-G-BDERE1?qs=HBWAp0VN4RjAfCGOi84Ipw%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Fujitsu-Semiconductor/MB85RC64TAPNF-G-BDERE1?qs=HBWAp0VN4RjAfCGOi84Ipw%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1460,7 +1460,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Ramxeed"
+		(property "Manufacturer" "Ramxeed"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1473,7 +1473,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MB85RC64TAPNF-G-BDERE1"
+		(property "Manufacturer Part Number" "MB85RC64TAPNF-G-BDERE1"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1793,7 +1793,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1E1R5BA01D?qs=ouTquLLW2S6xHAnxxZWZ1w%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1E1R5BA01D?qs=ouTquLLW2S6xHAnxxZWZ1w%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1806,7 +1806,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1819,7 +1819,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM1555C1E1R5BA01D"
+		(property "Manufacturer Part Number" "GRM1555C1E1R5BA01D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2046,7 +2046,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2059,7 +2059,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2072,7 +2072,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2299,7 +2299,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D1ML?qs=sGAEpiMZZMvdGkrng054t%252BT3WHYFVvJgwwPSFtsadAuv8VwIG4USFA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D1ML?qs=sGAEpiMZZMvdGkrng054t%252BT3WHYFVvJgwwPSFtsadAuv8VwIG4USFA%3D%3D"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2312,7 +2312,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2325,7 +2325,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RC0402JR-7D1ML"
+		(property "Manufacturer Part Number" "RC0402JR-7D1ML"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2552,7 +2552,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R60J105KE01D?qs=d0WKAl%252BL4Kb4JfV7cPss8A%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R60J105KE01D?qs=d0WKAl%252BL4Kb4JfV7cPss8A%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2565,7 +2565,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2578,7 +2578,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GXT155R60J105KE01D "
+		(property "Manufacturer Part Number" "GXT155R60J105KE01D "
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2805,7 +2805,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D100KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNDqn1Y%252B6zGYVTl0poVAV1uA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D100KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNDqn1Y%252B6zGYVTl0poVAV1uA%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2818,7 +2818,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2831,7 +2831,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RC0402JR-7D100KL"
+		(property "Manufacturer Part Number" "RC0402JR-7D100KL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3058,7 +3058,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H101FA01J?qs=ouTquLLW2S5iwhfDVY6IbQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H101FA01J?qs=ouTquLLW2S5iwhfDVY6IbQ%3D%3D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3071,7 +3071,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3084,7 +3084,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM1555C1H101FA01J"
+		(property "Manufacturer Part Number" "GRM1555C1H101FA01J"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3311,7 +3311,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3324,7 +3324,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3337,7 +3337,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3576,7 +3576,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM8L151K4T6?qs=H8t2elxe2QfV%252BTwO2SHNjg%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM8L151K4T6?qs=H8t2elxe2QfV%252BTwO2SHNjg%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3589,7 +3589,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3602,7 +3602,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "STM8L151K4T6"
+		(property "Manufacturer Part Number" "STM8L151K4T6"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4139,7 +4139,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D10KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOH1F3ozffN%252Bh1q4oB3r5hQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D10KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOH1F3ozffN%252Bh1q4oB3r5hQ%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4152,7 +4152,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Panasonic"
+		(property "Manufacturer" "Panasonic"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4165,7 +4165,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "AC0402JR-7D10KL"
+		(property "Manufacturer Part Number" "AC0402JR-7D10KL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4392,7 +4392,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H120FA01D?qs=ouTquLLW2S4GiX6b03cbUg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H120FA01D?qs=ouTquLLW2S4GiX6b03cbUg%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4405,7 +4405,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4418,7 +4418,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM1555C1H120FA01D"
+		(property "Manufacturer Part Number" "GRM1555C1H120FA01D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4645,7 +4645,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/KEMET/C0402C120F5GACAUTO?qs=rrS6PyfT74fKM3c0c1DHjw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/KEMET/C0402C120F5GACAUTO?qs=rrS6PyfT74fKM3c0c1DHjw%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4658,7 +4658,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Kemet"
+		(property "Manufacturer" "Kemet"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4671,7 +4671,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "C0402C120F5GACAUTO"
+		(property "Manufacturer Part Number" "C0402C120F5GACAUTO"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4898,7 +4898,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4911,7 +4911,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4924,7 +4924,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5151,7 +5151,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5164,7 +5164,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5177,7 +5177,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5404,7 +5404,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5417,7 +5417,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5430,7 +5430,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5669,7 +5669,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Littelfuse/MASM-14R-8-10?qs=5ptrxOxu%252BRY84YYgQdk4WQ%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Littelfuse/MASM-14R-8-10?qs=5ptrxOxu%252BRY84YYgQdk4WQ%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5682,7 +5682,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "LITTELFUSE"
+		(property "Manufacturer" "LITTELFUSE"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5695,7 +5695,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MASM-14R-8-10"
+		(property "Manufacturer Part Number" "MASM-14R-8-10"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6056,7 +6056,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6069,7 +6069,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6082,7 +6082,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "BLM18KG601SN1D"
+		(property "Manufacturer Part Number" "BLM18KG601SN1D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6298,7 +6298,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D100RL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOjcefxgwQ1rBhn17Ol%252BS3w%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D100RL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOjcefxgwQ1rBhn17Ol%252BS3w%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6311,7 +6311,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6324,7 +6324,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "AC0402JR-7D100RL"
+		(property "Manufacturer Part Number" "AC0402JR-7D100RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6551,7 +6551,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-2RKD1004X?qs=sGAEpiMZZMvdGkrng054t3RItZpbp26uiFcI252hzZk%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-2RKD1004X?qs=sGAEpiMZZMvdGkrng054t3RItZpbp26uiFcI252hzZk%3D"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6564,7 +6564,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Panasonic"
+		(property "Manufacturer" "Panasonic"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6577,7 +6577,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ERJ-2RKD1004X"
+		(property "Manufacturer Part Number" "ERJ-2RKD1004X"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6804,7 +6804,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R71C103KE01D?qs=sGAEpiMZZMt7gvpyg0xT8jBHDtGZvLzXRBbEpz5mViCnwrtFZT9VWg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R71C103KE01D?qs=sGAEpiMZZMt7gvpyg0xT8jBHDtGZvLzXRBbEpz5mViCnwrtFZT9VWg%3D%3D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6817,7 +6817,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6830,7 +6830,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GXT155R71C103KE01D"
+		(property "Manufacturer Part Number" "GXT155R71C103KE01D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7069,7 +7069,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Sumida/CD43NP-100MC?qs=ttApTud31Jaza%252BoSAZtv6w%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Sumida/CD43NP-100MC?qs=ttApTud31Jaza%252BoSAZtv6w%3D%3D"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7082,7 +7082,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Sumida"
+		(property "Manufacturer" "Sumida"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7095,7 +7095,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CD43NP-100MC"
+		(property "Manufacturer Part Number" "CD43NP-100MC"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7321,7 +7321,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H1R0BA01J?qs=ouTquLLW2S5DcHZ7kLUjdg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H1R0BA01J?qs=ouTquLLW2S5DcHZ7kLUjdg%3D%3D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7334,7 +7334,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7347,7 +7347,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM1555C1H1R0BA01J"
+		(property "Manufacturer Part Number" "GRM1555C1H1R0BA01J"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7574,7 +7574,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7587,7 +7587,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7600,7 +7600,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "LQW15AN12NJ80D"
+		(property "Manufacturer Part Number" "LQW15AN12NJ80D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7821,7 +7821,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7834,7 +7834,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "NDK"
+		(property "Manufacturer" "NDK"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7847,7 +7847,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "NX3225GA-26.000M-STD-CRG-2"
+		(property "Manufacturer Part Number" "NX3225GA-26.000M-STD-CRG-2"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8113,7 +8113,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D100KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNDqn1Y%252B6zGYVTl0poVAV1uA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D100KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNDqn1Y%252B6zGYVTl0poVAV1uA%3D%3D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8126,7 +8126,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8139,7 +8139,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RC0402JR-7D100KL"
+		(property "Manufacturer Part Number" "RC0402JR-7D100KL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8366,7 +8366,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-S02J330X?qs=sGAEpiMZZMvdGkrng054t%252BB3dTvXmYJZ97y%2FhHbL7G0%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-S02J330X?qs=sGAEpiMZZMvdGkrng054t%252BB3dTvXmYJZ97y%2FhHbL7G0%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8379,7 +8379,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Panasonic"
+		(property "Manufacturer" "Panasonic"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8392,7 +8392,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ERJ-S02J330X"
+		(property "Manufacturer Part Number" "ERJ-S02J330X"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8619,7 +8619,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8632,7 +8632,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8645,7 +8645,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8872,7 +8872,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8885,7 +8885,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8898,7 +8898,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "LQW15AN12NJ80D"
+		(property "Manufacturer Part Number" "LQW15AN12NJ80D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9208,7 +9208,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D100KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNDqn1Y%252B6zGYVTl0poVAV1uA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D100KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNDqn1Y%252B6zGYVTl0poVAV1uA%3D%3D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9221,7 +9221,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9234,7 +9234,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RC0402JR-7D100KL"
+		(property "Manufacturer Part Number" "RC0402JR-7D100KL"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9461,7 +9461,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/KEMET/C0402C120F5GACAUTO?qs=rrS6PyfT74fKM3c0c1DHjw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/KEMET/C0402C120F5GACAUTO?qs=rrS6PyfT74fKM3c0c1DHjw%3D%3D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9474,7 +9474,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Kemet"
+		(property "Manufacturer" "Kemet"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9487,7 +9487,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "C0402C120F5GACAUTO"
+		(property "Manufacturer Part Number" "C0402C120F5GACAUTO"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9726,7 +9726,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Commercial-Products/G8250041000YEU?qs=f9yNj16SXrKPzZ0fvYmqsg%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Amphenol-Commercial-Products/G8250041000YEU?qs=f9yNj16SXrKPzZ0fvYmqsg%3D%3D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9739,7 +9739,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Amphenol"
+		(property "Manufacturer" "Amphenol"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9752,7 +9752,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "G8250041000YEU"
+		(property "Manufacturer Part Number" "G8250041000YEU"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10024,7 +10024,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1E1R5BA01D?qs=ouTquLLW2S6xHAnxxZWZ1w%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1E1R5BA01D?qs=ouTquLLW2S6xHAnxxZWZ1w%3D%3D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10037,7 +10037,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10050,7 +10050,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM1555C1E1R5BA01D"
+		(property "Manufacturer Part Number" "GRM1555C1E1R5BA01D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10277,7 +10277,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/JMK325B7476MM-PR?qs=Zy5V7Kj3rCX4DwGK2%252BK4QQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/JMK325B7476MM-PR?qs=Zy5V7Kj3rCX4DwGK2%252BK4QQ%3D%3D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10290,7 +10290,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "TAYO YUDEN"
+		(property "Manufacturer" "TAYO YUDEN"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10303,7 +10303,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "JMK325B7476MM-PR"
+		(property "Manufacturer Part Number" "JMK325B7476MM-PR"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10530,7 +10530,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R60J105KE01D?qs=d0WKAl%252BL4Kb4JfV7cPss8A%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R60J105KE01D?qs=d0WKAl%252BL4Kb4JfV7cPss8A%3D%3D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10543,7 +10543,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10556,7 +10556,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GXT155R60J105KE01D "
+		(property "Manufacturer Part Number" "GXT155R60J105KE01D "
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10884,7 +10884,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-2RKD5103X?qs=sGAEpiMZZMvdGkrng054t1eOZL8aqEcIL%252BpAv8RhwTE3NX8BgYoG6A%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-2RKD5103X?qs=sGAEpiMZZMvdGkrng054t1eOZL8aqEcIL%252BpAv8RhwTE3NX8BgYoG6A%3D%3D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10897,7 +10897,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Panasonic"
+		(property "Manufacturer" "Panasonic"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10910,7 +10910,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ERJ-2RKD5103X"
+		(property "Manufacturer Part Number" "ERJ-2RKD5103X"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11151,7 +11151,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://eu.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-868-HESM?qs=hWgE7mdIu5TTyqPbNERfhg%3D%3D"
+		(property "Supplier Link" "https://eu.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-868-HESM?qs=hWgE7mdIu5TTyqPbNERfhg%3D%3D"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11164,7 +11164,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "TE Connectivity"
+		(property "Manufacturer" "TE Connectivity"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11177,7 +11177,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ANT-868-HETH"
+		(property "Manufacturer Part Number" "ANT-868-HETH"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11341,7 +11341,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11354,7 +11354,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11367,7 +11367,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11594,7 +11594,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/MCAST21GBC7475KTCA01?qs=sGAEpiMZZMt7gvpyg0xT8jBHDtGZvLzXb941vLF5SVj2yozhZB9mcA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/MCAST21GBC7475KTCA01?qs=sGAEpiMZZMt7gvpyg0xT8jBHDtGZvLzXb941vLF5SVj2yozhZB9mcA%3D%3D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11607,7 +11607,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Taiyo Yuden"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11620,7 +11620,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MCAST21GBC7475KTCA01"
+		(property "Manufacturer Part Number" "MCAST21GBC7475KTCA01"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11847,7 +11847,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H3R3WA01D?qs=ouTquLLW2S75fzkTIuiuIg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H3R3WA01D?qs=ouTquLLW2S75fzkTIuiuIg%3D%3D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11860,7 +11860,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11873,7 +11873,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM1555C1H3R3WA01D"
+		(property "Manufacturer Part Number" "GRM1555C1H3R3WA01D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12100,7 +12100,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12113,7 +12113,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12126,7 +12126,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12353,7 +12353,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-S02J330X?qs=sGAEpiMZZMvdGkrng054t%252BB3dTvXmYJZ97y%2FhHbL7G0%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-S02J330X?qs=sGAEpiMZZMvdGkrng054t%252BB3dTvXmYJZ97y%2FhHbL7G0%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12366,7 +12366,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Panasonic"
+		(property "Manufacturer" "Panasonic"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12379,7 +12379,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ERJ-S02J330X"
+		(property "Manufacturer Part Number" "ERJ-S02J330X"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12606,7 +12606,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402DR-07130KL?qs=sGAEpiMZZMvdGkrng054t2bZ0yF35f3tzAahqkT9t8Y32vJwWK6EuA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402DR-07130KL?qs=sGAEpiMZZMvdGkrng054t2bZ0yF35f3tzAahqkT9t8Y32vJwWK6EuA%3D%3D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12619,7 +12619,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12632,7 +12632,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RC0402DR-07130KL"
+		(property "Manufacturer Part Number" "RC0402DR-07130KL"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12871,7 +12871,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/PKMCS1818E20A0-R1?qs=2m8Gdae5Lr0i0Y6WwcK3JA%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/PKMCS1818E20A0-R1?qs=2m8Gdae5Lr0i0Y6WwcK3JA%3D%3D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12884,7 +12884,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12897,7 +12897,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "PKMCS1818E20A0-R1"
+		(property "Manufacturer Part Number" "PKMCS1818E20A0-R1"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13243,7 +13243,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-0750RL?qs=sGAEpiMZZMvdGkrng054twVr7TWeaA0sucIozKrfIlI%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-0750RL?qs=sGAEpiMZZMvdGkrng054twVr7TWeaA0sucIozKrfIlI%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13256,7 +13256,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13269,7 +13269,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "AC0402JR-0750RL"
+		(property "Manufacturer Part Number" "AC0402JR-0750RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13496,7 +13496,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402FR-071M15L?qs=sGAEpiMZZMvdGkrng054tx7%2F6%252BNA3LAJCTMduANnvMU%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402FR-071M15L?qs=sGAEpiMZZMvdGkrng054tx7%2F6%252BNA3LAJCTMduANnvMU%3D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13509,7 +13509,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13522,7 +13522,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RC0402FR-071M15L"
+		(property "Manufacturer Part Number" "RC0402FR-071M15L"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13749,7 +13749,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13762,7 +13762,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13775,7 +13775,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "LQW15AN12NJ80D"
+		(property "Manufacturer Part Number" "LQW15AN12NJ80D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13984,7 +13984,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GCM1555C2A4R7BE02D?qs=ZcfC38r4PosznFwfuEub%252Bw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GCM1555C2A4R7BE02D?qs=ZcfC38r4PosznFwfuEub%252Bw%3D%3D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13997,7 +13997,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14010,7 +14010,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GCM1555C2A4R7BE02D"
+		(property "Manufacturer Part Number" "GCM1555C2A4R7BE02D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14249,7 +14249,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT1615ES5-1TRMPBF?qs=ytflclh7QUUp0a%252Bd7RWj%2FQ%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT1615ES5-1TRMPBF?qs=ytflclh7QUUp0a%252Bd7RWj%2FQ%3D%3D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14262,7 +14262,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Analog Devices"
+		(property "Manufacturer" "Analog Devices"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14275,7 +14275,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "LT1615ES5-1#TRMPBF"
+		(property "Manufacturer Part Number" "LT1615ES5-1#TRMPBF"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14669,7 +14669,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D10KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOH1F3ozffN%252Bh1q4oB3r5hQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D10KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOH1F3ozffN%252Bh1q4oB3r5hQ%3D%3D"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14682,7 +14682,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Panasonic"
+		(property "Manufacturer" "Panasonic"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14695,7 +14695,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "AC0402JR-7D10KL"
+		(property "Manufacturer Part Number" "AC0402JR-7D10KL"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14922,7 +14922,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14935,7 +14935,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14948,7 +14948,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15187,7 +15187,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Kingbright/WP710A10LVBC-D?qs=6oMev5NRZMF7xED66hMqMg%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Kingbright/WP710A10LVBC-D?qs=6oMev5NRZMF7xED66hMqMg%3D%3D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15200,7 +15200,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Kingbright"
+		(property "Manufacturer" "Kingbright"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15213,7 +15213,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "WP710A10LVBC/D"
+		(property "Manufacturer Part Number" "WP710A10LVBC/D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15497,7 +15497,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D10KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOH1F3ozffN%252Bh1q4oB3r5hQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D10KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOH1F3ozffN%252Bh1q4oB3r5hQ%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15510,7 +15510,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Panasonic"
+		(property "Manufacturer" "Panasonic"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15523,7 +15523,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "AC0402JR-7D10KL"
+		(property "Manufacturer Part Number" "AC0402JR-7D10KL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15751,7 +15751,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15764,7 +15764,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15777,7 +15777,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16004,7 +16004,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D1KL?qs=sGAEpiMZZMvdGkrng054t%252BT3WHYFVvJgmss%252BDRYp36bZlKBftiz5dg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D1KL?qs=sGAEpiMZZMvdGkrng054t%252BT3WHYFVvJgmss%252BDRYp36bZlKBftiz5dg%3D%3D"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16017,7 +16017,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16030,7 +16030,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RC0402JR-7D1KL"
+		(property "Manufacturer Part Number" "RC0402JR-7D1KL"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16257,7 +16257,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GGM31CD70J226KE02L?qs=sGAEpiMZZMt7gvpyg0xT8jBHDtGZvLzXbIFnZ8CFMEeTkIVGCJ8NdQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GGM31CD70J226KE02L?qs=sGAEpiMZZMt7gvpyg0xT8jBHDtGZvLzXbIFnZ8CFMEeTkIVGCJ8NdQ%3D%3D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16270,7 +16270,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16283,7 +16283,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GGM31CD70J226KE02L"
+		(property "Manufacturer Part Number" "GGM31CD70J226KE02L"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16510,7 +16510,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16523,7 +16523,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16536,7 +16536,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "LQW15AN12NJ80D"
+		(property "Manufacturer Part Number" "LQW15AN12NJ80D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16745,7 +16745,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D1ML?qs=sGAEpiMZZMvdGkrng054t%252BT3WHYFVvJgwwPSFtsadAuv8VwIG4USFA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D1ML?qs=sGAEpiMZZMvdGkrng054t%252BT3WHYFVvJgwwPSFtsadAuv8VwIG4USFA%3D%3D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16758,7 +16758,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16771,7 +16771,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RC0402JR-7D1ML"
+		(property "Manufacturer Part Number" "RC0402JR-7D1ML"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17010,7 +17010,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHR4400-AS12Z?qs=nQ9vpdMXC6AwxmxsGskxgg%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHR4400-AS12Z?qs=nQ9vpdMXC6AwxmxsGskxgg%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17023,7 +17023,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17036,7 +17036,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "TLHR4400-AS12Z"
+		(property "Manufacturer Part Number" "TLHR4400-AS12Z"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17290,7 +17290,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17303,7 +17303,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17316,7 +17316,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17543,7 +17543,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/MCAST21GBC7475KTCA01?qs=sGAEpiMZZMt7gvpyg0xT8jBHDtGZvLzXb941vLF5SVj2yozhZB9mcA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/MCAST21GBC7475KTCA01?qs=sGAEpiMZZMt7gvpyg0xT8jBHDtGZvLzXb941vLF5SVj2yozhZB9mcA%3D%3D"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17556,7 +17556,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Taiyo Yuden"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17569,7 +17569,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MCAST21GBC7475KTCA01"
+		(property "Manufacturer Part Number" "MCAST21GBC7475KTCA01"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17796,7 +17796,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQG15HH18NJ02D?qs=%2F%252BYoplLUB5jGNEzMsrpOaQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQG15HH18NJ02D?qs=%2F%252BYoplLUB5jGNEzMsrpOaQ%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17809,7 +17809,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17822,7 +17822,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "LQG15HH18NJ02D"
+		(property "Manufacturer Part Number" "LQG15HH18NJ02D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18043,7 +18043,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CC1101RGPR?qs=OHhYoCux73lreNWI41kZ9Q%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CC1101RGPR?qs=OHhYoCux73lreNWI41kZ9Q%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18056,7 +18056,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Texas Instruments"
+		(property "Manufacturer" "Texas Instruments"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18069,7 +18069,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CC1101RGPR"
+		(property "Manufacturer Part Number" "CC1101RGPR"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18467,7 +18467,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18480,7 +18480,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18493,7 +18493,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18720,7 +18720,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-0750RL?qs=sGAEpiMZZMvdGkrng054twVr7TWeaA0sucIozKrfIlI%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-0750RL?qs=sGAEpiMZZMvdGkrng054twVr7TWeaA0sucIozKrfIlI%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18733,7 +18733,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18746,7 +18746,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "AC0402JR-0750RL"
+		(property "Manufacturer Part Number" "AC0402JR-0750RL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18985,7 +18985,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18998,7 +18998,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Harwin"
+		(property "Manufacturer" "Harwin"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19011,7 +19011,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "M20-9770342"
+		(property "Manufacturer Part Number" "M20-9770342"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19272,7 +19272,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/JMK325B7476MM-PR?qs=Zy5V7Kj3rCX4DwGK2%252BK4QQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/JMK325B7476MM-PR?qs=Zy5V7Kj3rCX4DwGK2%252BK4QQ%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19285,7 +19285,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "TAYO YUDEN"
+		(property "Manufacturer" "TAYO YUDEN"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19298,7 +19298,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "JMK325B7476MM-PR"
+		(property "Manufacturer Part Number" "JMK325B7476MM-PR"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19537,7 +19537,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/MBR0520LT3G?qs=3JMERSakebrHITezQJBmeQ%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/onsemi/MBR0520LT3G?qs=3JMERSakebrHITezQJBmeQ%3D%3D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19550,7 +19550,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "onsemi"
+		(property "Manufacturer" "onsemi"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19563,7 +19563,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MBR0520LT3G"
+		(property "Manufacturer Part Number" "MBR0520LT3G"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19811,7 +19811,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHY4400-AS12Z?qs=nQ9vpdMXC6D7BUjVD5tUJw%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHY4400-AS12Z?qs=nQ9vpdMXC6D7BUjVD5tUJw%3D%3D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19824,7 +19824,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19837,7 +19837,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "TLHY4400-AS12Z"
+		(property "Manufacturer Part Number" "TLHY4400-AS12Z"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20091,7 +20091,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQG15HH18NJ02D?qs=%2F%252BYoplLUB5jGNEzMsrpOaQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQG15HH18NJ02D?qs=%2F%252BYoplLUB5jGNEzMsrpOaQ%3D%3D"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20104,7 +20104,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20117,7 +20117,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "LQG15HH18NJ02D"
+		(property "Manufacturer Part Number" "LQG15HH18NJ02D"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20439,7 +20439,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/E-Switch/TL6120DF160QG?qs=QtyuwXswaQhSGW5Q0e27eA%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/E-Switch/TL6120DF160QG?qs=QtyuwXswaQhSGW5Q0e27eA%3D%3D"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20452,7 +20452,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" "E-Switch"
+		(property "Manufacturer" "E-Switch"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20465,7 +20465,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "TL6120DF160QG"
+		(property "Manufacturer Part Number" "TL6120DF160QG"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20829,7 +20829,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/2462?qs=3CbvriavsLChvFNADwDLZA%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/2462?qs=3CbvriavsLChvFNADwDLZA%3D%3D"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -20843,7 +20843,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer_Name" "Keystone Electronics"
+		(property "Manufacturer" "Keystone Electronics"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -20857,7 +20857,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer_Part_Number" "2462"
+		(property "Manufacturer Part Number" "2462"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")

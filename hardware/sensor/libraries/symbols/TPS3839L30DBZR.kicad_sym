@@ -72,7 +72,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS3839L30DBZR?qs=4whTb%2F0XQMhk4SkTOVaKEw%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS3839L30DBZR?qs=4whTb%2F0XQMhk4SkTOVaKEw%3D%3D"
 			(at 26.67 -594.92 0)
 			(effects
 				(font
@@ -82,7 +82,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Texas Instruments"
+		(property "Manufacturer" "Texas Instruments"
 			(at 26.67 -694.92 0)
 			(effects
 				(font
@@ -92,7 +92,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "TPS3839L30DBZR"
+		(property "Manufacturer Part Number" "TPS3839L30DBZR"
 			(at 26.67 -794.92 0)
 			(effects
 				(font

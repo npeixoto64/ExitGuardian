@@ -73,7 +73,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM8L151K4T6?qs=H8t2elxe2QfV%252BTwO2SHNjg%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM8L151K4T6?qs=H8t2elxe2QfV%252BTwO2SHNjg%3D%3D"
 			(at 29.21 -587.3 0)
 			(effects
 				(font
@@ -83,7 +83,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 29.21 -687.3 0)
 			(effects
 				(font
@@ -93,7 +93,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "STM8L151K4T6"
+		(property "Manufacturer Part Number" "STM8L151K4T6"
 			(at 29.21 -787.3 0)
 			(effects
 				(font

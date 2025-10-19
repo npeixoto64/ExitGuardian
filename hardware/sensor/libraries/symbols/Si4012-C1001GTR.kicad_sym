@@ -72,7 +72,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Silicon-Labs/SI4012-C1001GTR?qs=p9T7GgSe1IG9YBSygWUqHw%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Silicon-Labs/SI4012-C1001GTR?qs=p9T7GgSe1IG9YBSygWUqHw%3D%3D"
 			(at 24.13 -594.92 0)
 			(effects
 				(font
@@ -82,7 +82,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Silicon Labs"
+		(property "Manufacturer" "Silicon Labs"
 			(at 24.13 -694.92 0)
 			(effects
 				(font
@@ -92,7 +92,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "Si4012-C1001GTR"
+		(property "Manufacturer Part Number" "Si4012-C1001GTR"
 			(at 24.13 -794.92 0)
 			(effects
 				(font

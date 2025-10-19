@@ -72,7 +72,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-006-SMT?qs=TuK3vfAjtkUyTQHMSqIP6A%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-006-SMT?qs=TuK3vfAjtkUyTQHMSqIP6A%3D%3D"
 			(at 19.05 -594.92 0)
 			(effects
 				(font
@@ -82,7 +82,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "TE Connectivity"
+		(property "Manufacturer" "TE Connectivity"
 			(at 19.05 -694.92 0)
 			(effects
 				(font
@@ -92,7 +92,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "BAT-HLD-006-SMT"
+		(property "Manufacturer Part Number" "BAT-HLD-006-SMT"
 			(at 19.05 -794.92 0)
 			(effects
 				(font
