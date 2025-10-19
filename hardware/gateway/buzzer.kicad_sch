@@ -4745,7 +4745,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-RC0402JR-7D1ML"
+		(property "Mouser Part Number" "667-ERJ-2RKD1004X"
 			(at 123.19 97.79 0)
 			(effects
 				(font
@@ -4754,7 +4754,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D1ML?qs=sGAEpiMZZMvdGkrng054t%252BT3WHYFVvJgwwPSFtsadAuv8VwIG4USFA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-2RKD1004X?qs=Ywefl8B65e6r4yb6mm%252BtoQ%3D%3D"
 			(at 123.19 97.79 0)
 			(effects
 				(font
@@ -4763,7 +4763,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Panasonic"
 			(at 123.19 97.79 0)
 			(effects
 				(font
@@ -4772,7 +4772,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402JR-7D1ML"
+		(property "Manufacturer Part Number" "ERJ-2RKD1004X"
 			(at 123.19 97.79 0)
 			(effects
 				(font

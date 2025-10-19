@@ -4770,7 +4770,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "80-C0402C120F5GAUTO"
+		(property "Mouser Part Number" "81-GRM1555C1H120FA1D"
 			(at 133.35 140.97 0)
 			(effects
 				(font
@@ -4779,7 +4779,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/KEMET/C0402C120F5GACAUTO?qs=rrS6PyfT74fKM3c0c1DHjw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H120FA01D?qs=ouTquLLW2S4GiX6b03cbUg%3D%3D"
 			(at 133.35 140.97 0)
 			(effects
 				(font
@@ -4788,7 +4788,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Kemet"
+		(property "Manufacturer" "Murata Electronics"
 			(at 133.35 140.97 0)
 			(effects
 				(font
@@ -4797,7 +4797,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "C0402C120F5GACAUTO"
+		(property "Manufacturer Part Number" "GRM1555C1H120FA1D"
 			(at 133.35 140.97 0)
 			(effects
 				(font
@@ -6080,7 +6080,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "80-C0402C120F5GAUTO"
+		(property "Mouser Part Number" "81-GRM1555C1H120FA1D"
 			(at 69.85 140.97 0)
 			(effects
 				(font
@@ -6089,7 +6089,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/KEMET/C0402C120F5GACAUTO?qs=rrS6PyfT74fKM3c0c1DHjw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H120FA01D?qs=ouTquLLW2S4GiX6b03cbUg%3D%3D"
 			(at 69.85 140.97 0)
 			(effects
 				(font
@@ -6098,7 +6098,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Kemet"
+		(property "Manufacturer" "Murata Electronics"
 			(at 69.85 140.97 0)
 			(effects
 				(font
@@ -6107,7 +6107,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "C0402C120F5GACAUTO"
+		(property "Manufacturer Part Number" "GRM1555C1H120FA1D"
 			(at 69.85 140.97 0)
 			(effects
 				(font

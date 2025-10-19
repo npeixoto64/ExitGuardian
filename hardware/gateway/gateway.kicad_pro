@@ -593,7 +593,7 @@
       "fields_ordered": [
         {
           "group_by": false,
-          "label": "Reference",
+          "label": "Designator",
           "name": "Reference",
           "show": true
         },
@@ -629,7 +629,7 @@
         },
         {
           "group_by": true,
-          "label": "Footprint",
+          "label": "Package",
           "name": "Footprint",
           "show": true
         },

@@ -1,4 +1,4 @@
-"Reference","Qty","Value","Footprint","Manufacturer","Manufacturer Part Number","Mouser Part Number","Supplier Link"
+"Designator","Qty","Value","Package","Manufacturer","Manufacturer Part Number","Mouser Part Number","Supplier Link"
 "ANT1","1","ANT-868-HESM","MyParts:ANT-868-HESM","TE Connectivity","ANT-868-HETH","712-ANT-868-HESM","https://eu.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-868-HESM?qs=hWgE7mdIu5TTyqPbNERfhg%3D%3D"
 "C1,C2,C5,C8,C10,C11,C12,C14,C15,C16,C17,C24","12","100nF","Capacitor_SMD:C_0402_1005Metric","Yageo","CC0402KRX7R7BB104","603-CC402KRX7R7BB104","https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 "C3","1","10nF","Capacitor_SMD:C_0402_1005Metric","Murata","GXT155R71C103KE01D","81-GXT155R71C103KE1D","https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R71C103KE01D?qs=sGAEpiMZZMt7gvpyg0xT8jBHDtGZvLzXRBbEpz5mViCnwrtFZT9VWg%3D%3D"
