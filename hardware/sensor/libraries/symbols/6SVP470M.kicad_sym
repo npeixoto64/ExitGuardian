@@ -76,7 +76,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/6SVP470M?qs=OE1iw1LrrPEb%2FIteKV92pg%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Panasonic/6SVP470M?qs=OE1iw1LrrPEb%2FIteKV92pg%3D%3D"
 			(at 8.89 -596.19 0)
 			(effects
 				(font
@@ -86,7 +86,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Panasonic"
+		(property "Manufacturer" "Panasonic"
 			(at 8.89 -696.19 0)
 			(effects
 				(font
@@ -96,7 +96,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "6SVP470M"
+		(property "Manufacturer Part Number" "6SVP470M"
 			(at 8.89 -796.19 0)
 			(effects
 				(font

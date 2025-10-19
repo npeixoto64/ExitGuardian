@@ -73,7 +73,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/PKMCS1818E20A0-R1?qs=2m8Gdae5Lr0i0Y6WwcK3JA%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/PKMCS1818E20A0-R1?qs=2m8Gdae5Lr0i0Y6WwcK3JA%3D%3D"
 			(at 21.59 -594.92 0)
 			(effects
 				(font
@@ -83,7 +83,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 21.59 -694.92 0)
 			(effects
 				(font
@@ -93,7 +93,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "PKMCS1818E20A0-R1"
+		(property "Manufacturer Part Number" "PKMCS1818E20A0-R1"
 			(at 21.59 -794.92 0)
 			(effects
 				(font

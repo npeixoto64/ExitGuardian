@@ -76,7 +76,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/MBR0520LT3G?qs=3JMERSakebrHITezQJBmeQ%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/onsemi/MBR0520LT3G?qs=3JMERSakebrHITezQJBmeQ%3D%3D"
 			(at 11.43 -597.46 0)
 			(effects
 				(font
@@ -86,7 +86,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "onsemi"
+		(property "Manufacturer" "onsemi"
 			(at 11.43 -697.46 0)
 			(effects
 				(font
@@ -96,7 +96,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MBR0520LT3G"
+		(property "Manufacturer Part Number" "MBR0520LT3G"
 			(at 11.43 -797.46 0)
 			(effects
 				(font

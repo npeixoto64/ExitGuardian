@@ -73,7 +73,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/2462?qs=3CbvriavsLChvFNADwDLZA%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/2462?qs=3CbvriavsLChvFNADwDLZA%3D%3D"
 			(at 16.51 -594.92 0)
 			(effects
 				(font
@@ -83,7 +83,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Keystone Electronics"
+		(property "Manufacturer" "Keystone Electronics"
 			(at 16.51 -694.92 0)
 			(effects
 				(font
@@ -93,7 +93,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "2462"
+		(property "Manufacturer Part Number" "2462"
 			(at 16.51 -794.92 0)
 			(effects
 				(font

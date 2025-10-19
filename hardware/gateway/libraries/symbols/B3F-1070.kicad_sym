@@ -73,7 +73,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1070?qs=CX134%252BdLMDEbZOltqAbCng%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-1070?qs=CX134%252BdLMDEbZOltqAbCng%3D%3D"
 			(at 26.67 -594.92 0)
 			(effects
 				(font
@@ -83,7 +83,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Omron Electronics"
+		(property "Manufacturer" "Omron Electronics"
 			(at 26.67 -694.92 0)
 			(effects
 				(font
@@ -93,7 +93,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "B3F-1070"
+		(property "Manufacturer Part Number" "B3F-1070"
 			(at 26.67 -794.92 0)
 			(effects
 				(font

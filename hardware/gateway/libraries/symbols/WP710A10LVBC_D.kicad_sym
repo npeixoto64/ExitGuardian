@@ -76,7 +76,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Kingbright/WP710A10LVBC-D?qs=6oMev5NRZMF7xED66hMqMg%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Kingbright/WP710A10LVBC-D?qs=6oMev5NRZMF7xED66hMqMg%3D%3D"
 			(at 12.7 -593.65 0)
 			(effects
 				(font
@@ -86,7 +86,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Kingbright"
+		(property "Manufacturer" "Kingbright"
 			(at 12.7 -693.65 0)
 			(effects
 				(font
@@ -96,7 +96,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "WP710A10LVBC/D"
+		(property "Manufacturer Part Number" "WP710A10LVBC/D"
 			(at 12.7 -793.65 0)
 			(effects
 				(font

@@ -73,7 +73,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D"
 			(at 39.37 -594.92 0)
 			(effects
 				(font
@@ -83,7 +83,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "NDK"
+		(property "Manufacturer" "NDK"
 			(at 39.37 -694.92 0)
 			(effects
 				(font
@@ -93,7 +93,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "NX3225GA-26.000M-STD-CRG-2"
+		(property "Manufacturer Part Number" "NX3225GA-26.000M-STD-CRG-2"
 			(at 39.37 -794.92 0)
 			(effects
 				(font

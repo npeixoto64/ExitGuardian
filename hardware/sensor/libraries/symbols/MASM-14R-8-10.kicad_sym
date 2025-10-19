@@ -72,7 +72,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Littelfuse/MASM-14R-8-10?qs=5ptrxOxu%252BRY84YYgQdk4WQ%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Littelfuse/MASM-14R-8-10?qs=5ptrxOxu%252BRY84YYgQdk4WQ%3D%3D"
 			(at 16.51 -594.92 0)
 			(effects
 				(font
@@ -82,7 +82,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "LITTELFUSE"
+		(property "Manufacturer" "LITTELFUSE"
 			(at 16.51 -694.92 0)
 			(effects
 				(font
@@ -92,7 +92,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MASM-14R-8-10"
+		(property "Manufacturer Part Number" "MASM-14R-8-10"
 			(at 16.51 -794.92 0)
 			(effects
 				(font

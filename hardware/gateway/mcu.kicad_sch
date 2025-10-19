@@ -82,7 +82,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/2462?qs=3CbvriavsLChvFNADwDLZA%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/2462?qs=3CbvriavsLChvFNADwDLZA%3D%3D"
 				(at 16.51 -594.92 0)
 				(effects
 					(font
@@ -92,7 +92,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "Keystone Electronics"
+			(property "Manufacturer" "Keystone Electronics"
 				(at 16.51 -694.92 0)
 				(effects
 					(font
@@ -102,7 +102,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "2462"
+			(property "Manufacturer Part Number" "2462"
 				(at 16.51 -794.92 0)
 				(effects
 					(font
@@ -582,7 +582,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Commercial-Products/G8250041000YEU?qs=f9yNj16SXrKPzZ0fvYmqsg%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Amphenol-Commercial-Products/G8250041000YEU?qs=f9yNj16SXrKPzZ0fvYmqsg%3D%3D"
 				(at 16.51 -594.92 0)
 				(effects
 					(font
@@ -592,7 +592,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "Amphenol"
+			(property "Manufacturer" "Amphenol"
 				(at 16.51 -694.92 0)
 				(effects
 					(font
@@ -602,7 +602,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "G8250041000YEU"
+			(property "Manufacturer Part Number" "G8250041000YEU"
 				(at 16.51 -794.92 0)
 				(effects
 					(font
@@ -770,7 +770,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLML6402TRPBF?qs=9%252BKlkBgLFf0HuZuONx2Ewg%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLML6402TRPBF?qs=9%252BKlkBgLFf0HuZuONx2Ewg%3D%3D"
 				(at 16.51 -594.92 0)
 				(effects
 					(font
@@ -780,7 +780,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "Infineon"
+			(property "Manufacturer" "Infineon"
 				(at 16.51 -694.92 0)
 				(effects
 					(font
@@ -790,7 +790,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "IRLML6402TRPBF"
+			(property "Manufacturer Part Number" "IRLML6402TRPBF"
 				(at 16.51 -794.92 0)
 				(effects
 					(font
@@ -940,7 +940,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
 				(at 16.51 -594.92 0)
 				(effects
 					(font
@@ -950,7 +950,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "Harwin"
+			(property "Manufacturer" "Harwin"
 				(at 16.51 -694.92 0)
 				(effects
 					(font
@@ -960,7 +960,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "M20-9770342"
+			(property "Manufacturer Part Number" "M20-9770342"
 				(at 16.51 -794.92 0)
 				(effects
 					(font
@@ -1110,7 +1110,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Littelfuse/MASM-14R-8-10?qs=5ptrxOxu%252BRY84YYgQdk4WQ%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Littelfuse/MASM-14R-8-10?qs=5ptrxOxu%252BRY84YYgQdk4WQ%3D%3D"
 				(at 16.51 -594.92 0)
 				(effects
 					(font
@@ -1120,7 +1120,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "LITTELFUSE"
+			(property "Manufacturer" "LITTELFUSE"
 				(at 16.51 -694.92 0)
 				(effects
 					(font
@@ -1130,7 +1130,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "MASM-14R-8-10"
+			(property "Manufacturer Part Number" "MASM-14R-8-10"
 				(at 16.51 -794.92 0)
 				(effects
 					(font
@@ -1262,7 +1262,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Fujitsu-Semiconductor/MB85RC64TAPNF-G-BDERE1?qs=HBWAp0VN4RjAfCGOi84Ipw%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Fujitsu-Semiconductor/MB85RC64TAPNF-G-BDERE1?qs=HBWAp0VN4RjAfCGOi84Ipw%3D%3D"
 				(at 21.59 -594.92 0)
 				(effects
 					(font
@@ -1272,7 +1272,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "Ramxeed"
+			(property "Manufacturer" "Ramxeed"
 				(at 21.59 -694.92 0)
 				(effects
 					(font
@@ -1282,7 +1282,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "MB85RC64TAPNF-G-BDERE1"
+			(property "Manufacturer Part Number" "MB85RC64TAPNF-G-BDERE1"
 				(at 21.59 -794.92 0)
 				(effects
 					(font
@@ -1522,7 +1522,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM8L151K4T6?qs=H8t2elxe2QfV%252BTwO2SHNjg%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM8L151K4T6?qs=H8t2elxe2QfV%252BTwO2SHNjg%3D%3D"
 				(at 29.21 -587.3 0)
 				(effects
 					(font
@@ -1532,7 +1532,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "STMicroelectronics"
+			(property "Manufacturer" "STMicroelectronics"
 				(at 29.21 -687.3 0)
 				(effects
 					(font
@@ -1542,7 +1542,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "STM8L151K4T6"
+			(property "Manufacturer Part Number" "STM8L151K4T6"
 				(at 29.21 -787.3 0)
 				(effects
 					(font
@@ -2214,7 +2214,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/E-Switch/TL6120DF160QG?qs=QtyuwXswaQhSGW5Q0e27eA%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/E-Switch/TL6120DF160QG?qs=QtyuwXswaQhSGW5Q0e27eA%3D%3D"
 				(at 16.51 -594.92 0)
 				(effects
 					(font
@@ -2224,7 +2224,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "E-Switch"
+			(property "Manufacturer" "E-Switch"
 				(at 16.51 -694.92 0)
 				(effects
 					(font
@@ -2234,7 +2234,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "TL6120DF160QG"
+			(property "Manufacturer Part Number" "TL6120DF160QG"
 				(at 16.51 -794.92 0)
 				(effects
 					(font
@@ -2405,7 +2405,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHR4400-AS12Z?qs=nQ9vpdMXC6AwxmxsGskxgg%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHR4400-AS12Z?qs=nQ9vpdMXC6AwxmxsGskxgg%3D%3D"
 				(at 12.7 -593.65 0)
 				(effects
 					(font
@@ -2415,7 +2415,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "Vishay"
+			(property "Manufacturer" "Vishay"
 				(at 12.7 -693.65 0)
 				(effects
 					(font
@@ -2425,7 +2425,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "TLHR4400-AS12Z"
+			(property "Manufacturer Part Number" "TLHR4400-AS12Z"
 				(at 12.7 -793.65 0)
 				(effects
 					(font
@@ -2645,7 +2645,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHY4400-AS12Z?qs=nQ9vpdMXC6D7BUjVD5tUJw%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHY4400-AS12Z?qs=nQ9vpdMXC6D7BUjVD5tUJw%3D%3D"
 				(at 12.7 -593.65 0)
 				(effects
 					(font
@@ -2655,7 +2655,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "Vishay"
+			(property "Manufacturer" "Vishay"
 				(at 12.7 -693.65 0)
 				(effects
 					(font
@@ -2665,7 +2665,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "TLHY4400-AS12Z"
+			(property "Manufacturer Part Number" "TLHY4400-AS12Z"
 				(at 12.7 -793.65 0)
 				(effects
 					(font
@@ -2885,7 +2885,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Kingbright/WP710A10LVBC-D?qs=6oMev5NRZMF7xED66hMqMg%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Kingbright/WP710A10LVBC-D?qs=6oMev5NRZMF7xED66hMqMg%3D%3D"
 				(at 12.7 -593.65 0)
 				(effects
 					(font
@@ -2895,7 +2895,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "Kingbright"
+			(property "Manufacturer" "Kingbright"
 				(at 12.7 -693.65 0)
 				(effects
 					(font
@@ -2905,7 +2905,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "WP710A10LVBC/D"
+			(property "Manufacturer Part Number" "WP710A10LVBC/D"
 				(at 12.7 -793.65 0)
 				(effects
 					(font
@@ -5724,7 +5724,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Kingbright/WP710A10LVBC-D?qs=6oMev5NRZMF7xED66hMqMg%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Kingbright/WP710A10LVBC-D?qs=6oMev5NRZMF7xED66hMqMg%3D%3D"
 			(at 224.79 652.07 0)
 			(effects
 				(font
@@ -5734,7 +5734,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Kingbright"
+		(property "Manufacturer" "Kingbright"
 			(at 224.79 752.07 0)
 			(effects
 				(font
@@ -5744,7 +5744,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "WP710A10LVBC/D"
+		(property "Manufacturer Part Number" "WP710A10LVBC/D"
 			(at 224.79 852.07 0)
 			(effects
 				(font
@@ -5897,7 +5897,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D100KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNDqn1Y%252B6zGYVTl0poVAV1uA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D100KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNDqn1Y%252B6zGYVTl0poVAV1uA%3D%3D"
 			(at 59.69 73.66 0)
 			(effects
 				(font
@@ -5906,7 +5906,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 59.69 73.66 0)
 			(effects
 				(font
@@ -5915,7 +5915,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RC0402JR-7D100KL"
+		(property "Manufacturer Part Number" "RC0402JR-7D100KL"
 			(at 59.69 73.66 0)
 			(effects
 				(font
@@ -6002,7 +6002,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D10KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOH1F3ozffN%252Bh1q4oB3r5hQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D10KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOH1F3ozffN%252Bh1q4oB3r5hQ%3D%3D"
 			(at 201.93 120.65 0)
 			(effects
 				(font
@@ -6011,7 +6011,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Panasonic"
+		(property "Manufacturer" "Panasonic"
 			(at 201.93 120.65 0)
 			(effects
 				(font
@@ -6020,7 +6020,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "AC0402JR-7D10KL"
+		(property "Manufacturer Part Number" "AC0402JR-7D10KL"
 			(at 201.93 120.65 0)
 			(effects
 				(font
@@ -6121,7 +6121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Commercial-Products/G8250041000YEU?qs=f9yNj16SXrKPzZ0fvYmqsg%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Amphenol-Commercial-Products/G8250041000YEU?qs=f9yNj16SXrKPzZ0fvYmqsg%3D%3D"
 			(at 148.59 617.78 0)
 			(effects
 				(font
@@ -6131,7 +6131,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Amphenol"
+		(property "Manufacturer" "Amphenol"
 			(at 148.59 717.78 0)
 			(effects
 				(font
@@ -6141,7 +6141,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "G8250041000YEU"
+		(property "Manufacturer Part Number" "G8250041000YEU"
 			(at 148.59 817.78 0)
 			(effects
 				(font
@@ -6234,7 +6234,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D1KL?qs=sGAEpiMZZMvdGkrng054t%252BT3WHYFVvJgmss%252BDRYp36bZlKBftiz5dg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D1KL?qs=sGAEpiMZZMvdGkrng054t%252BT3WHYFVvJgmss%252BDRYp36bZlKBftiz5dg%3D%3D"
 			(at 158.75 72.39 0)
 			(effects
 				(font
@@ -6243,7 +6243,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 158.75 72.39 0)
 			(effects
 				(font
@@ -6252,7 +6252,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RC0402JR-7D1KL"
+		(property "Manufacturer Part Number" "RC0402JR-7D1KL"
 			(at 158.75 72.39 0)
 			(effects
 				(font
@@ -6351,7 +6351,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Fujitsu-Semiconductor/MB85RC64TAPNF-G-BDERE1?qs=HBWAp0VN4RjAfCGOi84Ipw%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Fujitsu-Semiconductor/MB85RC64TAPNF-G-BDERE1?qs=HBWAp0VN4RjAfCGOi84Ipw%3D%3D"
 			(at 182.88 723.19 0)
 			(effects
 				(font
@@ -6361,7 +6361,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Ramxeed"
+		(property "Manufacturer" "Ramxeed"
 			(at 182.88 823.19 0)
 			(effects
 				(font
@@ -6371,7 +6371,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MB85RC64TAPNF-G-BDERE1"
+		(property "Manufacturer Part Number" "MB85RC64TAPNF-G-BDERE1"
 			(at 182.88 923.19 0)
 			(effects
 				(font
@@ -6555,7 +6555,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHR4400-AS12Z?qs=nQ9vpdMXC6AwxmxsGskxgg%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHR4400-AS12Z?qs=nQ9vpdMXC6AwxmxsGskxgg%3D%3D"
 			(at 224.79 680.01 0)
 			(effects
 				(font
@@ -6565,7 +6565,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 224.79 780.01 0)
 			(effects
 				(font
@@ -6575,7 +6575,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "TLHR4400-AS12Z"
+		(property "Manufacturer Part Number" "TLHR4400-AS12Z"
 			(at 224.79 880.01 0)
 			(effects
 				(font
@@ -6677,7 +6677,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
 			(at 201.93 617.78 0)
 			(effects
 				(font
@@ -6687,7 +6687,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Harwin"
+		(property "Manufacturer" "Harwin"
 			(at 201.93 717.78 0)
 			(effects
 				(font
@@ -6697,7 +6697,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "M20-9770342"
+		(property "Manufacturer Part Number" "M20-9770342"
 			(at 201.93 817.78 0)
 			(effects
 				(font
@@ -7053,7 +7053,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R60J105KE01D?qs=d0WKAl%252BL4Kb4JfV7cPss8A%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R60J105KE01D?qs=d0WKAl%252BL4Kb4JfV7cPss8A%3D%3D"
 			(at 29.21 154.94 0)
 			(effects
 				(font
@@ -7062,7 +7062,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 29.21 154.94 0)
 			(effects
 				(font
@@ -7071,7 +7071,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GXT155R60J105KE01D "
+		(property "Manufacturer Part Number" "GXT155R60J105KE01D "
 			(at 29.21 154.94 0)
 			(effects
 				(font
@@ -7158,7 +7158,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-2RKD5103X?qs=sGAEpiMZZMvdGkrng054t1eOZL8aqEcIL%252BpAv8RhwTE3NX8BgYoG6A%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-2RKD5103X?qs=sGAEpiMZZMvdGkrng054t1eOZL8aqEcIL%252BpAv8RhwTE3NX8BgYoG6A%3D%3D"
 			(at 151.13 78.74 0)
 			(effects
 				(font
@@ -7167,7 +7167,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Panasonic"
+		(property "Manufacturer" "Panasonic"
 			(at 151.13 78.74 0)
 			(effects
 				(font
@@ -7176,7 +7176,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ERJ-2RKD5103X"
+		(property "Manufacturer Part Number" "ERJ-2RKD5103X"
 			(at 151.13 78.74 0)
 			(effects
 				(font
@@ -7540,7 +7540,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM8L151K4T6?qs=H8t2elxe2QfV%252BTwO2SHNjg%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM8L151K4T6?qs=H8t2elxe2QfV%252BTwO2SHNjg%3D%3D"
 			(at 107.95 716.84 0)
 			(effects
 				(font
@@ -7550,7 +7550,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 107.95 816.84 0)
 			(effects
 				(font
@@ -7560,7 +7560,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "STM8L151K4T6"
+		(property "Manufacturer Part Number" "STM8L151K4T6"
 			(at 107.95 916.84 0)
 			(effects
 				(font
@@ -7750,7 +7750,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLML6402TRPBF?qs=9%252BKlkBgLFf0HuZuONx2Ewg%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLML6402TRPBF?qs=9%252BKlkBgLFf0HuZuONx2Ewg%3D%3D"
 			(at 69.85 -569.52 0)
 			(effects
 				(font
@@ -7760,7 +7760,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Infineon"
+		(property "Manufacturer" "Infineon"
 			(at 69.85 -669.52 0)
 			(effects
 				(font
@@ -7770,7 +7770,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "IRLML6402TRPBF"
+		(property "Manufacturer Part Number" "IRLML6402TRPBF"
 			(at 69.85 -769.52 0)
 			(effects
 				(font
@@ -7928,7 +7928,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D100KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNDqn1Y%252B6zGYVTl0poVAV1uA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D100KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNDqn1Y%252B6zGYVTl0poVAV1uA%3D%3D"
 			(at 91.44 31.75 0)
 			(effects
 				(font
@@ -7937,7 +7937,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 91.44 31.75 0)
 			(effects
 				(font
@@ -7946,7 +7946,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RC0402JR-7D100KL"
+		(property "Manufacturer Part Number" "RC0402JR-7D100KL"
 			(at 91.44 31.75 0)
 			(effects
 				(font
@@ -8494,7 +8494,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D100RL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOjcefxgwQ1rBhn17Ol%252BS3w%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D100RL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOjcefxgwQ1rBhn17Ol%252BS3w%3D%3D"
 			(at 212.09 58.42 0)
 			(effects
 				(font
@@ -8503,7 +8503,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 212.09 58.42 0)
 			(effects
 				(font
@@ -8512,7 +8512,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "AC0402JR-7D100RL"
+		(property "Manufacturer Part Number" "AC0402JR-7D100RL"
 			(at 212.09 58.42 0)
 			(effects
 				(font
@@ -8677,7 +8677,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/E-Switch/TL6120DF160QG?qs=QtyuwXswaQhSGW5Q0e27eA%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/E-Switch/TL6120DF160QG?qs=QtyuwXswaQhSGW5Q0e27eA%3D%3D"
 			(at 118.11 673.66 0)
 			(effects
 				(font
@@ -8687,7 +8687,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "E-Switch"
+		(property "Manufacturer" "E-Switch"
 			(at 118.11 773.66 0)
 			(effects
 				(font
@@ -8697,7 +8697,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "TL6120DF160QG"
+		(property "Manufacturer Part Number" "TL6120DF160QG"
 			(at 118.11 873.66 0)
 			(effects
 				(font
@@ -9054,7 +9054,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-0750RL?qs=sGAEpiMZZMvdGkrng054twVr7TWeaA0sucIozKrfIlI%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-0750RL?qs=sGAEpiMZZMvdGkrng054twVr7TWeaA0sucIozKrfIlI%3D"
 			(at 212.09 86.36 0)
 			(effects
 				(font
@@ -9063,7 +9063,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 212.09 86.36 0)
 			(effects
 				(font
@@ -9072,7 +9072,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "AC0402JR-0750RL"
+		(property "Manufacturer Part Number" "AC0402JR-0750RL"
 			(at 212.09 86.36 0)
 			(effects
 				(font
@@ -9226,7 +9226,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/JMK325B7476MM-PR?qs=Zy5V7Kj3rCX4DwGK2%252BK4QQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/JMK325B7476MM-PR?qs=Zy5V7Kj3rCX4DwGK2%252BK4QQ%3D%3D"
 			(at 55.88 154.94 0)
 			(effects
 				(font
@@ -9235,7 +9235,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "TAYO YUDEN"
+		(property "Manufacturer" "TAYO YUDEN"
 			(at 55.88 154.94 0)
 			(effects
 				(font
@@ -9244,7 +9244,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "JMK325B7476MM-PR"
+		(property "Manufacturer Part Number" "JMK325B7476MM-PR"
 			(at 55.88 154.94 0)
 			(effects
 				(font
@@ -9343,7 +9343,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Littelfuse/MASM-14R-8-10?qs=5ptrxOxu%252BRY84YYgQdk4WQ%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Littelfuse/MASM-14R-8-10?qs=5ptrxOxu%252BRY84YYgQdk4WQ%3D%3D"
 			(at 26.67 -518.72 0)
 			(effects
 				(font
@@ -9353,7 +9353,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "LITTELFUSE"
+		(property "Manufacturer" "LITTELFUSE"
 			(at 26.67 -618.72 0)
 			(effects
 				(font
@@ -9363,7 +9363,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MASM-14R-8-10"
+		(property "Manufacturer Part Number" "MASM-14R-8-10"
 			(at 26.67 -718.72 0)
 			(effects
 				(font
@@ -9452,7 +9452,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R71C103KE01D?qs=sGAEpiMZZMt7gvpyg0xT8jBHDtGZvLzXRBbEpz5mViCnwrtFZT9VWg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R71C103KE01D?qs=sGAEpiMZZMt7gvpyg0xT8jBHDtGZvLzXRBbEpz5mViCnwrtFZT9VWg%3D%3D"
 			(at 52.07 132.08 0)
 			(effects
 				(font
@@ -9461,7 +9461,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 52.07 132.08 0)
 			(effects
 				(font
@@ -9470,7 +9470,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GXT155R71C103KE01D"
+		(property "Manufacturer Part Number" "GXT155R71C103KE01D"
 			(at 52.07 132.08 0)
 			(effects
 				(font
@@ -9756,7 +9756,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R60J105KE01D?qs=d0WKAl%252BL4Kb4JfV7cPss8A%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R60J105KE01D?qs=d0WKAl%252BL4Kb4JfV7cPss8A%3D%3D"
 			(at 231.14 135.89 0)
 			(effects
 				(font
@@ -9765,7 +9765,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Murata"
+		(property "Manufacturer" "Murata"
 			(at 231.14 135.89 0)
 			(effects
 				(font
@@ -9774,7 +9774,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GXT155R60J105KE01D "
+		(property "Manufacturer Part Number" "GXT155R60J105KE01D "
 			(at 231.14 135.89 0)
 			(effects
 				(font
@@ -9853,7 +9853,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-RC0402JR-7D1ML"
+		(property "Mouser Part Number" "667-ERJ-2RKD1004X"
 			(at 49.53 64.77 0)
 			(effects
 				(font
@@ -9862,7 +9862,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D1ML?qs=sGAEpiMZZMvdGkrng054t%252BT3WHYFVvJgwwPSFtsadAuv8VwIG4USFA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-2RKD1004X?qs=Ywefl8B65e6r4yb6mm%252BtoQ%3D%3D"
 			(at 49.53 64.77 0)
 			(effects
 				(font
@@ -9871,7 +9871,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Panasonic"
 			(at 49.53 64.77 0)
 			(effects
 				(font
@@ -9880,7 +9880,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RC0402JR-7D1ML"
+		(property "Manufacturer Part Number" "ERJ-2RKD1004X"
 			(at 49.53 64.77 0)
 			(effects
 				(font
@@ -9967,7 +9967,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D10KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOH1F3ozffN%252Bh1q4oB3r5hQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D10KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOH1F3ozffN%252Bh1q4oB3r5hQ%3D%3D"
 			(at 210.82 120.65 0)
 			(effects
 				(font
@@ -9976,7 +9976,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Panasonic"
+		(property "Manufacturer" "Panasonic"
 			(at 210.82 120.65 0)
 			(effects
 				(font
@@ -9985,7 +9985,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "AC0402JR-7D10KL"
+		(property "Manufacturer Part Number" "AC0402JR-7D10KL"
 			(at 210.82 120.65 0)
 			(effects
 				(font
@@ -10138,7 +10138,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D10KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOH1F3ozffN%252Bh1q4oB3r5hQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D10KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOH1F3ozffN%252Bh1q4oB3r5hQ%3D%3D"
 			(at 99.06 68.58 0)
 			(effects
 				(font
@@ -10147,7 +10147,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Panasonic"
+		(property "Manufacturer" "Panasonic"
 			(at 99.06 68.58 0)
 			(effects
 				(font
@@ -10156,7 +10156,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "AC0402JR-7D10KL"
+		(property "Manufacturer Part Number" "AC0402JR-7D10KL"
 			(at 99.06 68.58 0)
 			(effects
 				(font
@@ -10242,7 +10242,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-0750RL?qs=sGAEpiMZZMvdGkrng054twVr7TWeaA0sucIozKrfIlI%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-0750RL?qs=sGAEpiMZZMvdGkrng054twVr7TWeaA0sucIozKrfIlI%3D"
 			(at 212.09 71.12 0)
 			(effects
 				(font
@@ -10251,7 +10251,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 212.09 71.12 0)
 			(effects
 				(font
@@ -10260,7 +10260,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "AC0402JR-0750RL"
+		(property "Manufacturer Part Number" "AC0402JR-0750RL"
 			(at 212.09 71.12 0)
 			(effects
 				(font
@@ -10347,7 +10347,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-2RKD1004X?qs=sGAEpiMZZMvdGkrng054t3RItZpbp26uiFcI252hzZk%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-2RKD1004X?qs=sGAEpiMZZMvdGkrng054t3RItZpbp26uiFcI252hzZk%3D"
 			(at 151.13 66.04 0)
 			(effects
 				(font
@@ -10356,7 +10356,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Panasonic"
+		(property "Manufacturer" "Panasonic"
 			(at 151.13 66.04 0)
 			(effects
 				(font
@@ -10365,7 +10365,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "ERJ-2RKD1004X"
+		(property "Manufacturer Part Number" "ERJ-2RKD1004X"
 			(at 151.13 66.04 0)
 			(effects
 				(font
@@ -10453,7 +10453,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 69.85 81.28 0)
 			(effects
 				(font
@@ -10462,7 +10462,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 69.85 81.28 0)
 			(effects
 				(font
@@ -10471,7 +10471,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
 			(at 69.85 81.28 0)
 			(effects
 				(font
@@ -10559,7 +10559,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 41.91 154.94 0)
 			(effects
 				(font
@@ -10568,7 +10568,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 41.91 154.94 0)
 			(effects
 				(font
@@ -10577,7 +10577,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
 			(at 41.91 154.94 0)
 			(effects
 				(font
@@ -10742,7 +10742,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/2462?qs=3CbvriavsLChvFNADwDLZA%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/2462?qs=3CbvriavsLChvFNADwDLZA%3D%3D"
 			(at 40.64 -566.98 0)
 			(effects
 				(font
@@ -10752,7 +10752,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Keystone Electronics"
+		(property "Manufacturer" "Keystone Electronics"
 			(at 40.64 -666.98 0)
 			(effects
 				(font
@@ -10762,7 +10762,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "2462"
+		(property "Manufacturer Part Number" "2462"
 			(at 40.64 -766.98 0)
 			(effects
 				(font
@@ -10868,7 +10868,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHY4400-AS12Z?qs=nQ9vpdMXC6D7BUjVD5tUJw%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHY4400-AS12Z?qs=nQ9vpdMXC6D7BUjVD5tUJw%3D%3D"
 			(at 224.79 664.77 0)
 			(effects
 				(font
@@ -10878,7 +10878,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 224.79 764.77 0)
 			(effects
 				(font
@@ -10888,7 +10888,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "TLHY4400-AS12Z"
+		(property "Manufacturer Part Number" "TLHY4400-AS12Z"
 			(at 224.79 864.77 0)
 			(effects
 				(font
@@ -10977,7 +10977,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 243.84 135.89 0)
 			(effects
 				(font
@@ -10986,7 +10986,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 243.84 135.89 0)
 			(effects
 				(font
@@ -10995,7 +10995,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
 			(at 243.84 135.89 0)
 			(effects
 				(font
@@ -11149,7 +11149,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 166.37 78.74 0)
 			(effects
 				(font
@@ -11158,7 +11158,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Yageo"
+		(property "Manufacturer" "Yageo"
 			(at 166.37 78.74 0)
 			(effects
 				(font
@@ -11167,7 +11167,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
 			(at 166.37 78.74 0)
 			(effects
 				(font

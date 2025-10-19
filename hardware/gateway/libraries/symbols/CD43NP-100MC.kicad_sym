@@ -76,7 +76,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Sumida/CD43NP-100MC?qs=ttApTud31Jaza%252BoSAZtv6w%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Sumida/CD43NP-100MC?qs=ttApTud31Jaza%252BoSAZtv6w%3D%3D"
 			(at 16.51 -596.19 0)
 			(effects
 				(font
@@ -86,7 +86,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Sumida"
+		(property "Manufacturer" "Sumida"
 			(at 16.51 -696.19 0)
 			(effects
 				(font
@@ -96,7 +96,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CD43NP-100MC"
+		(property "Manufacturer Part Number" "CD43NP-100MC"
 			(at 16.51 -796.19 0)
 			(effects
 				(font
