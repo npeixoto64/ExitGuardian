@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "9.0.0-9.0.0-2~ubuntu24.04.1"
     },
-    "CreationDate": "2025-10-20T10:03:29+01:00"
+    "CreationDate": "2025-10-20T17:39:46+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "gateway_rev1",
       "GUID": "67617465-7761-4795-9f72-6576312e6b69",
-      "Revision": "REV0.0"
+      "Revision": "REV1.0"
     },
     "Size": {
       "X": 100.05,

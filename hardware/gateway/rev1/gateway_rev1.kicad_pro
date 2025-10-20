@@ -568,7 +568,7 @@
       "plot": "output/PCB/",
       "pos_files": "output/PCBA/",
       "specctra_dsn": "",
-      "step": "gateway.step",
+      "step": "output/PCBA/gateway.step",
       "svg": "",
       "vrml": ""
     },
