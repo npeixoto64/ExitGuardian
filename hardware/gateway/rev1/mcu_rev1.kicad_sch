@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "MCU")
-		(date "2025-10-02")
-		(rev "REV0.0")
+		(date "2025-10-20")
+		(rev "REV1.0")
 		(company "NPX4U")
 	)
 	(lib_symbols

@@ -9,8 +9,8 @@
 	(paper "A4")
 	(title_block
 		(title "Gateway")
-		(date "2025-10-07")
-		(rev "REV0.0")
+		(date "2025-10-20")
+		(rev "REV1.0")
 		(company "NPX4U")
 	)
 	(layers
@@ -21075,7 +21075,7 @@
 		(layer "Edge.Cuts")
 		(uuid "321dbe65-44fa-4a7f-9dab-b0b0fa1d7853")
 	)
-	(gr_text "Exit Guardian - Gateway REV0.0\nNPX4U 2025"
+	(gr_text "Exit Guardian - Gateway REV1.0\nNPX4U 2025"
 		(at 180.9 124.7 270)
 		(layer "F.SilkS")
 		(uuid "e6163c4e-d122-41a3-ae29-b469a9b9fe0e")
