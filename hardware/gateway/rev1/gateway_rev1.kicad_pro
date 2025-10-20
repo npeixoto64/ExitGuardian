@@ -474,7 +474,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "gateway.kicad_pro",
+    "filename": "gateway_rev1.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -568,7 +568,7 @@
       "plot": "output/PCB/",
       "pos_files": "output/PCBA/",
       "specctra_dsn": "",
-      "step": "gateway.step",
+      "step": "output/PCBA/gateway.step",
       "svg": "",
       "vrml": ""
     },
@@ -679,6 +679,24 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
           "show": false
         }
       ],
