@@ -1,4 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "MyParts")(type "KiCad")(uri "${KIPRJMOD}/libraries/footprints/MyParts.pretty")(options "")(descr ""))
-)
