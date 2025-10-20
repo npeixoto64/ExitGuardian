@@ -23,4 +23,5 @@
   (lib (name "G8250041000YEU")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/G8250041000YEU.kicad_sym")(options "")(descr ""))
   (lib (name "TL6120DF160QG")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/TL6120DF160QG.kicad_sym")(options "")(descr ""))
   (lib (name "NX3225GA-26_000M-STD-CRG-2")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/NX3225GA-26_000M-STD-CRG-2.kicad_sym")(options "")(descr ""))
+  (lib (name "ANT-433-HESM")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/ANT-433-HESM.kicad_sym")(options "")(descr ""))
 )
