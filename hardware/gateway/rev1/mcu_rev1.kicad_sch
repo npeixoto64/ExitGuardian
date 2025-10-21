@@ -5861,7 +5861,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 59.944 72.644 90)
 			(effects
 				(font
@@ -5888,7 +5888,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-RC0402JR-7D100KL"
+		(property "Mouser Part Number" "594-MCT06030C1003FP5"
 			(at 59.69 73.66 0)
 			(effects
 				(font
@@ -5897,7 +5897,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D100KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNDqn1Y%252B6zGYVTl0poVAV1uA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1003FP500?qs=sGAEpiMZZMvdGkrng054typNwhVi1mc8Rk09XKJvPxA%3D"
 			(at 59.69 73.66 0)
 			(effects
 				(font
@@ -5906,7 +5906,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Vishay"
 			(at 59.69 73.66 0)
 			(effects
 				(font
@@ -5915,7 +5915,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402JR-7D100KL"
+		(property "Manufacturer Part Number" "MCT06030C1003FP5"
 			(at 59.69 73.66 0)
 			(effects
 				(font
@@ -5966,7 +5966,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 200.914 120.396 90)
 			(effects
 				(font
@@ -5993,7 +5993,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-AC0402JR-7D10KL"
+		(property "Mouser Part Number" "71-RCA060310K0JNEA"
 			(at 201.93 120.65 0)
 			(effects
 				(font
@@ -6002,7 +6002,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D10KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOH1F3ozffN%252Bh1q4oB3r5hQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Vishay-Draloric/RCA060310K0JNEA?qs=c3C3yipULq2B1qdFMZ0cLA%3D%3D"
 			(at 201.93 120.65 0)
 			(effects
 				(font
@@ -6011,7 +6011,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Panasonic"
+		(property "Manufacturer" "Vishay"
 			(at 201.93 120.65 0)
 			(effects
 				(font
@@ -6020,7 +6020,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "AC0402JR-7D10KL"
+		(property "Manufacturer Part Number" "RCA060310K0JNEA"
 			(at 201.93 120.65 0)
 			(effects
 				(font
@@ -6198,7 +6198,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 159.004 71.374 90)
 			(effects
 				(font
@@ -6225,7 +6225,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-RC0402JR-7D1KL"
+		(property "Mouser Part Number" "603-SR0603JR-071KL"
 			(at 158.75 72.39 0)
 			(effects
 				(font
@@ -6234,7 +6234,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D1KL?qs=sGAEpiMZZMvdGkrng054t%252BT3WHYFVvJgmss%252BDRYp36bZlKBftiz5dg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/SR0603JR-071KL?qs=TyBUSTk9pD97MoKjQ9xH4g%3D%3D"
 			(at 158.75 72.39 0)
 			(effects
 				(font
@@ -6252,7 +6252,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402JR-7D1KL"
+		(property "Manufacturer Part Number" "SR0603JR-071KL"
 			(at 158.75 72.39 0)
 			(effects
 				(font
@@ -7017,7 +7017,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 30.1752 158.75 0)
 			(effects
 				(font
@@ -7044,7 +7044,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "81-GXT155R60J105KE1D"
+		(property "Mouser Part Number" "603-CC603KRX5R6BB105 "
 			(at 29.21 154.94 0)
 			(effects
 				(font
@@ -7053,7 +7053,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R60J105KE01D?qs=d0WKAl%252BL4Kb4JfV7cPss8A%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0603KRX5R6BB105?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzviUWmAEAQAqw%3D"
 			(at 29.21 154.94 0)
 			(effects
 				(font
@@ -7062,7 +7062,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "Yageo"
 			(at 29.21 154.94 0)
 			(effects
 				(font
@@ -7071,7 +7071,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "GXT155R60J105KE01D "
+		(property "Manufacturer Part Number" "CC603KRX5R6BB105 "
 			(at 29.21 154.94 0)
 			(effects
 				(font
@@ -7122,7 +7122,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 150.114 78.486 90)
 			(effects
 				(font
@@ -7149,7 +7149,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "667-ERJ-2RKD5103X"
+		(property "Mouser Part Number" "71-CRCW0603-510K"
 			(at 151.13 78.74 0)
 			(effects
 				(font
@@ -7158,7 +7158,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-2RKD5103X?qs=sGAEpiMZZMvdGkrng054t1eOZL8aqEcIL%252BpAv8RhwTE3NX8BgYoG6A%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Vishay/CRCW0603510KFKTA?qs=Iwt5MFXFRTDvOmNaiGKFIA%3D%3D"
 			(at 151.13 78.74 0)
 			(effects
 				(font
@@ -7167,7 +7167,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Panasonic"
+		(property "Manufacturer" "Vishay"
 			(at 151.13 78.74 0)
 			(effects
 				(font
@@ -7176,7 +7176,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "ERJ-2RKD5103X"
+		(property "Manufacturer Part Number" "CRCW0603-510K"
 			(at 151.13 78.74 0)
 			(effects
 				(font
@@ -7892,7 +7892,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 92.456 32.004 90)
 			(effects
 				(font
@@ -7919,7 +7919,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-RC0402JR-7D100KL"
+		(property "Mouser Part Number" "594-MCT06030C1003FP5"
 			(at 91.44 31.75 0)
 			(effects
 				(font
@@ -7928,7 +7928,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/RC0402JR-7D100KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNDqn1Y%252B6zGYVTl0poVAV1uA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1003FP500?qs=sGAEpiMZZMvdGkrng054typNwhVi1mc8Rk09XKJvPxA%3D"
 			(at 91.44 31.75 0)
 			(effects
 				(font
@@ -7937,7 +7937,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Vishay"
 			(at 91.44 31.75 0)
 			(effects
 				(font
@@ -7946,7 +7946,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402JR-7D100KL"
+		(property "Manufacturer Part Number" "MCT06030C1003FP5"
 			(at 91.44 31.75 0)
 			(effects
 				(font
@@ -8458,7 +8458,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 212.344 57.404 90)
 			(effects
 				(font
@@ -8485,7 +8485,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-AC0402JR-7D100RL"
+		(property "Mouser Part Number" "71-CRCW0603100RJNEBC"
 			(at 212.09 58.42 0)
 			(effects
 				(font
@@ -8494,7 +8494,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D100RL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOjcefxgwQ1rBhn17Ol%252BS3w%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Vishay/CRCW0603100RJNEBC?qs=wd5RIQLrsJii9cJ3l5q4HQ%3D%3D"
 			(at 212.09 58.42 0)
 			(effects
 				(font
@@ -8503,7 +8503,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Vishay"
 			(at 212.09 58.42 0)
 			(effects
 				(font
@@ -8512,7 +8512,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "AC0402JR-7D100RL"
+		(property "Manufacturer Part Number" "CRCW0603100RJNEBC"
 			(at 212.09 58.42 0)
 			(effects
 				(font
@@ -9010,7 +9010,7 @@
 				)
 			)
 		)
-		(property "Value" "50"
+		(property "Value" "47"
 			(at 212.09 82.55 90)
 			(effects
 				(font
@@ -9018,7 +9018,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 212.344 85.344 90)
 			(effects
 				(font
@@ -9045,7 +9045,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-AC0402JR-0750RL"
+		(property "Mouser Part Number" "667-ERJ-S03J470V"
 			(at 212.09 86.36 0)
 			(effects
 				(font
@@ -9054,7 +9054,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-0750RL?qs=sGAEpiMZZMvdGkrng054twVr7TWeaA0sucIozKrfIlI%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-S03J470V?qs=Zyl8A9hlmJpXNqNzv%252BG9Dw%3D%3D"
 			(at 212.09 86.36 0)
 			(effects
 				(font
@@ -9063,7 +9063,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Panasonic"
 			(at 212.09 86.36 0)
 			(effects
 				(font
@@ -9072,7 +9072,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "AC0402JR-0750RL"
+		(property "Manufacturer Part Number" "ERJ-S03J470V"
 			(at 212.09 86.36 0)
 			(effects
 				(font
@@ -9826,7 +9826,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 48.514 64.516 90)
 			(effects
 				(font
@@ -9853,7 +9853,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "667-ERJ-2RKD1004X"
+		(property "Mouser Part Number" "603-AR0603FR-071ML"
 			(at 49.53 64.77 0)
 			(effects
 				(font
@@ -9862,7 +9862,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-2RKD1004X?qs=Ywefl8B65e6r4yb6mm%252BtoQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AR0603FR-071ML?qs=tggtontpCXN3Ykm7Gt7Sqw%3D%3D"
 			(at 49.53 64.77 0)
 			(effects
 				(font
@@ -9871,7 +9871,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Panasonic"
+		(property "Manufacturer" "Yageo"
 			(at 49.53 64.77 0)
 			(effects
 				(font
@@ -9880,7 +9880,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "ERJ-2RKD1004X"
+		(property "Manufacturer Part Number" "AR0603FR-071ML"
 			(at 49.53 64.77 0)
 			(effects
 				(font
@@ -9931,7 +9931,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 209.804 120.396 90)
 			(effects
 				(font
@@ -9958,7 +9958,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-AC0402JR-7D10KL"
+		(property "Mouser Part Number" "71-RCA060310K0JNEA"
 			(at 210.82 120.65 0)
 			(effects
 				(font
@@ -9967,7 +9967,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D10KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOH1F3ozffN%252Bh1q4oB3r5hQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Vishay-Draloric/RCA060310K0JNEA?qs=c3C3yipULq2B1qdFMZ0cLA%3D%3D"
 			(at 210.82 120.65 0)
 			(effects
 				(font
@@ -9976,7 +9976,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Panasonic"
+		(property "Manufacturer" "Vishay"
 			(at 210.82 120.65 0)
 			(effects
 				(font
@@ -9985,7 +9985,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "AC0402JR-7D10KL"
+		(property "Manufacturer Part Number" "RCA060310K0JNEA"
 			(at 210.82 120.65 0)
 			(effects
 				(font
@@ -10102,7 +10102,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 98.044 68.326 90)
 			(effects
 				(font
@@ -10129,7 +10129,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-AC0402JR-7D10KL"
+		(property "Mouser Part Number" "71-RCA060310K0JNEA"
 			(at 99.06 68.58 0)
 			(effects
 				(font
@@ -10138,7 +10138,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D10KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOH1F3ozffN%252Bh1q4oB3r5hQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Vishay-Draloric/RCA060310K0JNEA?qs=c3C3yipULq2B1qdFMZ0cLA%3D%3D"
 			(at 99.06 68.58 0)
 			(effects
 				(font
@@ -10147,7 +10147,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Panasonic"
+		(property "Manufacturer" "Vishay"
 			(at 99.06 68.58 0)
 			(effects
 				(font
@@ -10156,7 +10156,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "AC0402JR-7D10KL"
+		(property "Manufacturer Part Number" "RCA060310K0JNEA"
 			(at 99.06 68.58 0)
 			(effects
 				(font
@@ -10198,7 +10198,7 @@
 				)
 			)
 		)
-		(property "Value" "50"
+		(property "Value" "47"
 			(at 212.09 67.31 90)
 			(effects
 				(font
@@ -10206,7 +10206,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 212.344 70.104 90)
 			(effects
 				(font
@@ -10233,7 +10233,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-AC0402JR-0750RL"
+		(property "Mouser Part Number" "667-ERJ-S03J470V"
 			(at 212.09 71.12 0)
 			(effects
 				(font
@@ -10242,7 +10242,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-0750RL?qs=sGAEpiMZZMvdGkrng054twVr7TWeaA0sucIozKrfIlI%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-S03J470V?qs=Zyl8A9hlmJpXNqNzv%252BG9Dw%3D%3D"
 			(at 212.09 71.12 0)
 			(effects
 				(font
@@ -10251,7 +10251,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Panasonic"
 			(at 212.09 71.12 0)
 			(effects
 				(font
@@ -10260,7 +10260,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "AC0402JR-0750RL"
+		(property "Manufacturer Part Number" "ERJ-S03J470V"
 			(at 212.09 71.12 0)
 			(effects
 				(font
@@ -10311,7 +10311,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 150.114 65.786 90)
 			(effects
 				(font
@@ -10338,7 +10338,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "667-ERJ-2RKD1004X"
+		(property "Mouser Part Number" "603-AR0603FR-071ML"
 			(at 151.13 66.04 0)
 			(effects
 				(font
@@ -10347,7 +10347,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-2RKD1004X?qs=sGAEpiMZZMvdGkrng054t3RItZpbp26uiFcI252hzZk%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AR0603FR-071ML?qs=tggtontpCXN3Ykm7Gt7Sqw%3D%3D"
 			(at 151.13 66.04 0)
 			(effects
 				(font
@@ -10356,7 +10356,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Panasonic"
+		(property "Manufacturer" "Yageo"
 			(at 151.13 66.04 0)
 			(effects
 				(font
@@ -10365,7 +10365,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "ERJ-2RKD1004X"
+		(property "Manufacturer Part Number" "AR0603FR-071ML"
 			(at 151.13 66.04 0)
 			(effects
 				(font
@@ -10417,7 +10417,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 70.8152 85.09 0)
 			(effects
 				(font
@@ -10444,7 +10444,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-CC402KRX7R7BB104"
+		(property "Mouser Part Number" "963-MAJCH168BB7104KT"
 			(at 69.85 81.28 0)
 			(effects
 				(font
@@ -10453,7 +10453,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/MAJCH168BB7104KTEA01?qs=sGAEpiMZZMvsSlwiRhF8qrQG6leidpLjl9Bd57PckJLKQu82PBxkeQ%3D%3D"
 			(at 69.85 81.28 0)
 			(effects
 				(font
@@ -10462,7 +10462,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 69.85 81.28 0)
 			(effects
 				(font
@@ -10471,7 +10471,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "MAJCH168BB7104KT"
 			(at 69.85 81.28 0)
 			(effects
 				(font
@@ -10523,7 +10523,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 42.8752 158.75 0)
 			(effects
 				(font
@@ -10550,7 +10550,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-CC402KRX7R7BB104"
+		(property "Mouser Part Number" "963-MAJCH168BB7104KT"
 			(at 41.91 154.94 0)
 			(effects
 				(font
@@ -10559,7 +10559,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/MAJCH168BB7104KTEA01?qs=sGAEpiMZZMvsSlwiRhF8qrQG6leidpLjl9Bd57PckJLKQu82PBxkeQ%3D%3D"
 			(at 41.91 154.94 0)
 			(effects
 				(font
@@ -10568,7 +10568,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 41.91 154.94 0)
 			(effects
 				(font
@@ -10577,7 +10577,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "MAJCH168BB7104KT"
 			(at 41.91 154.94 0)
 			(effects
 				(font
@@ -11113,7 +11113,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 167.3352 82.55 0)
 			(effects
 				(font
@@ -11140,7 +11140,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-CC402KRX7R7BB104"
+		(property "Mouser Part Number" "963-MAJCH168BB7104KT"
 			(at 166.37 78.74 0)
 			(effects
 				(font
@@ -11149,7 +11149,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/MAJCH168BB7104KTEA01?qs=sGAEpiMZZMvsSlwiRhF8qrQG6leidpLjl9Bd57PckJLKQu82PBxkeQ%3D%3D"
 			(at 166.37 78.74 0)
 			(effects
 				(font
@@ -11158,7 +11158,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 166.37 78.74 0)
 			(effects
 				(font
@@ -11167,7 +11167,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer Part Number" "MAJCH168BB7104KT"
 			(at 166.37 78.74 0)
 			(effects
 				(font
