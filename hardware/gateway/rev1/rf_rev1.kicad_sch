@@ -3180,7 +3180,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01d18ebd-42f0-45e5-bd31-7ba66bf16c60")
-		(property "Reference" "L131"
+		(property "Reference" "L1"
 			(at 165.1 71.12 90)
 			(effects
 				(font
@@ -3268,7 +3268,7 @@
 		(instances
 			(project "gateway_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "L131")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -3415,7 +3415,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0eb5ddca-760a-4ad7-9a8a-847ef4d4f138")
-		(property "Reference" "C121"
+		(property "Reference" "C22"
 			(at 163.068 80.01 90)
 			(effects
 				(font
@@ -3505,7 +3505,7 @@
 		(instances
 			(project "gateway_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C121")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -3520,7 +3520,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "11232682-bbe2-4fdf-b3ff-a28fb1c1c463")
-		(property "Reference" "C125"
+		(property "Reference" "C25"
 			(at 210.566 75.184 90)
 			(effects
 				(font
@@ -3610,7 +3610,7 @@
 		(instances
 			(project "gateway_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C125")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -3730,7 +3730,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1e75fbd1-529f-44a7-af3f-ef69a9766787")
-		(property "Reference" "C131"
+		(property "Reference" "C20"
 			(at 164.592 62.484 0)
 			(effects
 				(font
@@ -3820,7 +3820,7 @@
 		(instances
 			(project "gateway_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C131")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -3836,7 +3836,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30d0c715-d8f1-4fc1-8b41-873ba12f068c")
-		(property "Reference" "L121"
+		(property "Reference" "L2"
 			(at 157.48 91.4399 0)
 			(effects
 				(font
@@ -3926,7 +3926,7 @@
 		(instances
 			(project "gateway_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "L121")
+					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -4250,7 +4250,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "434b7a97-9ef2-4901-9568-7e279c7b1668")
-		(property "Reference" "C124"
+		(property "Reference" "C21"
 			(at 164.592 101.854 0)
 			(effects
 				(font
@@ -4340,7 +4340,7 @@
 		(instances
 			(project "gateway_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C124")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -4462,7 +4462,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48080ad4-4dfe-4e99-9568-7d5e14673aa9")
-		(property "Reference" "L123"
+		(property "Reference" "L4"
 			(at 190.5 76.2 90)
 			(effects
 				(font
@@ -4550,7 +4550,7 @@
 		(instances
 			(project "gateway_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "L123")
+					(reference "L4")
 					(unit 1)
 				)
 			)
@@ -6103,7 +6103,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c590b003-3c11-478b-877a-258adc518e1f")
-		(property "Reference" "L122"
+		(property "Reference" "L3"
 			(at 176.53 76.2 90)
 			(effects
 				(font
@@ -6191,7 +6191,7 @@
 		(instances
 			(project "gateway_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "L122")
+					(reference "L3")
 					(unit 1)
 				)
 			)
@@ -6378,7 +6378,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c9469be9-c285-41d8-b973-de7d4d808f4b")
-		(property "Reference" "C123"
+		(property "Reference" "C24"
 			(at 207.772 87.884 0)
 			(effects
 				(font
@@ -6468,7 +6468,7 @@
 		(instances
 			(project "gateway_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C123")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -7349,7 +7349,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fd1391ec-1dbf-44e4-a43e-6f0b18094faa")
-		(property "Reference" "C122"
+		(property "Reference" "C23"
 			(at 192.278 87.884 0)
 			(effects
 				(font
@@ -7439,7 +7439,7 @@
 		(instances
 			(project "gateway_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C122")
+					(reference "C23")
 					(unit 1)
 				)
 			)
