@@ -529,4 +529,10 @@ Supplier Link
 Manufacturer
 Manufacturer Part Number
 
-### Eurocircuits DRC
+# Chinese ASK/OOK Transmitter
+https://pt.aliexpress.com/item/4000959701272.html?src=google&albch=search&acnt=479-062-3723&isdl=y&aff_short_key=UneMJZVf&albcp=22578521270&albag=185025180612&slnk=&trgt=dsa-42862830006&plac=&crea=753295393188&albad=753295393188&netw=g&device=c&mtctp=&memo1=&albbt=Google_7_search&aff_platform=google&albagn=888888&isSmbActive=false&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gad_campaignid=22578521270&gclid=CjwKCAiAwqHIBhAEEiwAx9cTeUQvMFzxrswCYGVs5KYNUbMy054uADXXqkSNH_cMYWJKxBbyjBSnVxoC5RoQAvD_BwE&gatewayAdapt=glo2bra
+
+Crystal: 13.560 MHz x 32 (PLL) = 433.92 MHz
+Encoder: EV1527
+Transmitter: SYN113/SYN115
+Datasheet => https://www.rhydolabz.com/documents/33/SYN113-SYN115-datasheet-version-1-1-.0.pdf?srsltid=AfmBOooK-Zk0erRmwbCzXrWI8hMejW0hlSovlqv_ElvcFyqy8zpTJCN-
