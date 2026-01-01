@@ -11,6 +11,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     usbutils udev \
     clang-format \
     pkg-config libusb-1.0-0-dev \
+    bsdutils \
+    vim-common \
     && rm -rf /var/lib/apt/lists/*
 
 # Build stm8flash from source (not available in Ubuntu 24.04 repos)

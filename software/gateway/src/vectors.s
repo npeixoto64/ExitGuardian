@@ -19,7 +19,7 @@ _default_isr:
 
         .macro VEC handler
         .db 0x82
-        .db >handler
+        .db 0x00
         .dw handler
         .endm
 
