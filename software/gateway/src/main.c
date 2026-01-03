@@ -1,4 +1,5 @@
 #include <stdint.h>
+#include "stm8l15x_clk.h"
 
 #define PA_ODR (*(volatile uint8_t*)0x5000)
 #define PA_DDR (*(volatile uint8_t*)0x5002)
@@ -19,6 +20,12 @@ static void delay(void)
 
 int main(void)
 {
+  //Configure clock to 16 MHz (HSI with divider 1)
+  CLK_HSICmd(ENABLE);
+  while (CLK_GetFlagStatus(CLK_FLAG_HSIRDY) == RESET);
+  CLK_SYSCLKSourceConfig(CLK_SYSCLKSource_HSI);
+  CLK_SYSCLKDivConfig(CLK_SYSCLKDiv_1);
+
   counter = 5;
   zero = 0;
 

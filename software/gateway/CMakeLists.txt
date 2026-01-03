@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
 project(stm8_fw C)
 
+add_subdirectory(hal)
+
 find_program(SDCC sdcc REQUIRED)
 
 # Default build type (useful for single-config generators like Makefiles)
@@ -14,6 +16,10 @@ set(OUT fw)
 set(CFLAGS_COMMON
   -mstm8
   --std-c11
+  -DSTM8L15X_LD
+  -D__SDCC__
+  -I${CMAKE_SOURCE_DIR}/hal/inc
+  -I${CMAKE_SOURCE_DIR}/hal/cfg
 )
 
 set(LDFLAGS_COMMON
@@ -57,18 +63,40 @@ else()
   set(LDFLAGS ${LDFLAGS_COMMON})
 endif()
 
-# ---- Sources (C only, SDCC provides startup/vectors)
+# ---- Sources
 set(SRC_C
   ${CMAKE_SOURCE_DIR}/src/main.c
+  ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_clk.c
 )
+
+#set(SRC_S
+#  ${CMAKE_SOURCE_DIR}/src/startup.s
+#  ${CMAKE_SOURCE_DIR}/src/vectors.s
+#)
+
+set(SRC_ALL ${SRC_C} ${SRC_S})
+
+# Compile each source to .rel
+set(REL_FILES)
+foreach(src ${SRC_ALL})
+  get_filename_component(name ${src} NAME_WE)
+  set(rel ${CMAKE_BINARY_DIR}/${name}.rel)
+  list(APPEND REL_FILES ${rel})
+  add_custom_command(
+    OUTPUT ${rel}
+    COMMAND ${SDCC} -c ${CFLAGS} ${src} -o ${rel}
+    DEPENDS ${src}
+    VERBATIM
+  )
+endforeach()
 
 set(IHX ${CMAKE_BINARY_DIR}/${OUT}.ihx)
 
-# Link directly from sources (most reliable with SDCC)
+# Link .rel files to .ihx
 add_custom_command(
   OUTPUT ${IHX}
-  COMMAND ${SDCC} ${CFLAGS} ${LDFLAGS} ${SRC_C} -o ${IHX}
-  DEPENDS ${SRC_C}
+  COMMAND ${SDCC} ${LDFLAGS} ${REL_FILES} -o ${IHX}
+  DEPENDS ${REL_FILES}
   VERBATIM
 )
 
