@@ -1,30 +1,47 @@
-// Minimal main.c for STM8L151K4T6 + SDCC
+#include <stdint.h>
+
+#define PA_ODR (*(volatile uint8_t*)0x5000)
+#define PA_DDR (*(volatile uint8_t*)0x5002)
+#define PA_CR1 (*(volatile uint8_t*)0x5003)
+#define PA_CR2 (*(volatile uint8_t*)0x5004)
+#define PA2 (1u << 2)
+#define PA3 (1u << 3)
+#define PA4 (1u << 4)
+
+volatile uint32_t counter = 5;
+volatile uint32_t zero = 0;
 
 static void delay(void)
 {
-    // crude delay; adjust as needed
-    volatile unsigned long i = 0;
-		for (i = 0; i < 2000UL; i++) {
-    }
+    volatile uint32_t i;
+    for (i = 0; i < 20000UL; i++) {}
 }
 
 int main(void)
 {
-    // PA_DDR (0x5002): output
-    *(volatile unsigned char*)0x5002 |= (1u << 2);
+  counter = 5;
+  zero = 0;
 
-    // PA_CR1 (0x5003): push-pull
-    *(volatile unsigned char*)0x5003 |= (1u << 2);
+    PA_DDR |= PA2;
+    PA_CR1 |= PA2;
+    PA_CR2 &= (uint8_t)~PA2;
 
-    // PA_CR2 (0x5004): slow mode (clear bit)
-    *(volatile unsigned char*)0x5004 &= (unsigned char)~(1u << 2);
+    PA_DDR |= PA3;
+    PA_CR1 |= PA3;
+    PA_CR2 &= (uint8_t)~PA3;
 
-    // Start from a known state: drive low first (covers active-low LED case)
-    *(volatile unsigned char*)0x5000 &= (unsigned char)~(1u << 2);
-		
-		while(1)
-		{
-        *(volatile unsigned char*)0x5000 ^= (1u << 2); // toggle PA2 (ODR)
+    PA_DDR |= PA4;
+    PA_CR1 |= PA4;
+    PA_CR2 &= (uint8_t)~PA4;
+
+    if (counter == 5)
+      PA_ODR |= PA3;
+
+    if (zero == 0)
+      PA_ODR |= PA4;
+
+    while (1) {
+        PA_ODR ^= PA2;
         delay();
     }
 }

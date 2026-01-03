@@ -1,24 +1,35 @@
-; Minimal startup for STM8 + SDCC
-; - set stack pointer
-; - call main
-; - loop forever on return
-
         .module startup
-        .area CODE
+        .area   CODE
 
-        .globl _main
-        .globl _reset_entry
+        .globl  _main
+        .globl  _reset_entry
 
-; Reset entry point called from vector table
+        .globl  s_INITIALIZER
+        .globl  s_INITIALIZED
+        .globl  l_INITIALIZED
+
 _reset_entry:
-        ; STM8L151K4T6 RAM is 0x0000..0x07FF (2 KB) -> top is 0x07FF
-        ldw     x, #0x07FF
-        ldw     sp, x
+        ; Set SP (adjust if needed)
+        ldw     x,#0x07FF
+        ldw     sp,x
 
-        ; If you later use global initialized variables,
-        ; add .data copy and .bss clear here.
+        ; ---- Copy INITIALIZED bytes from INITIALIZER -> INITIALIZED
+        ldw     x,#s_INITIALIZED      ; dst
+        ldw     y,#s_INITIALIZER      ; src
 
+        ; l_INITIALIZED is 16-bit; for your case it's 0x0008, so we use low byte as count
+        ld      a,l_INITIALIZED+1     ; low byte (asxxxx symbol+1 for LSB)
+        jreq    data_done
+
+data_loop:
+        ld      a,(y)
+        ld      (x),a
+        incw    y
+        incw    x
+        dec     a
+        jrne    data_loop
+
+data_done:
         call    _main
-
-1$:
-        jra     1$
+hang:
+        jra     hang
