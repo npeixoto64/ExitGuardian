@@ -1,0 +1,4 @@
+/workspace/build-debug/CMakeFiles/fw.dir
+/workspace/build-debug/CMakeFiles/size.dir
+/workspace/build-debug/CMakeFiles/edit_cache.dir
+/workspace/build-debug/CMakeFiles/rebuild_cache.dir
