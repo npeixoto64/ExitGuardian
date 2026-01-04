@@ -85,6 +85,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm8l15x_adc.h"
+#include "stm8l15x_conf.h"
 
 /** @addtogroup STM8L15x_StdPeriph_Driver
   * @{
@@ -795,7 +796,7 @@ void ADC_DMACmd(ADC_TypeDef* ADCx, FunctionalState NewState)
   ---------- 
      1. ADC_FLAG_OVR : Overrun detection when ADC channel converted data is lost
 
-     2. ADC_FLAG_EOC : End of conversion - to indicate the end of a regular 
+     2. ADC_FLAG_EOC : End of conversionï¿½- to indicate the end of a regular 
                   CHANNEL conversion or a GROUP conversions, depending of the 
                   ADC Continuous Conversion Mode (Continuous or Single 
                   conversion) and of the DMA usage.
@@ -943,7 +944,7 @@ ITStatus ADC_GetITStatus(ADC_TypeDef* ADCx,
 }
 
 /**
-  * @brief  Clears the ADC’s interrupt pending bits.
+  * @brief  Clears the ADCï¿½s interrupt pending bits.
   * @param  ADCx where x can be 1 to select the specified ADC peripheral.
   * @param  ADC_IT: specifies the ADC interrupt pending bit to clear.
   *          This parameter can be one of the following values:

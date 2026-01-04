@@ -2935,7 +2935,6 @@ AES_TypeDef;
  #define wfe() __asm__("wfe") /*!<Wait for event */
  #define halt() __asm__("halt") /*!<Halt */
 #else /*_IAR*/
- #include <intrinsics.h>
  #define enableInterrupts()    __enable_interrupt()   /* enable interrupts */
  #define disableInterrupts()   __disable_interrupt()  /* disable interrupts */
  #define rim()                 __enable_interrupt()   /* enable interrupts */

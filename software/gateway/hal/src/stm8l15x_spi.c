@@ -78,6 +78,7 @@
 	
 /* Includes ------------------------------------------------------------------*/
 #include "stm8l15x_spi.h"
+#include "stm8l15x_conf.h"
 
 /** @addtogroup STM8L15x_StdPeriph_Driver
   * @{

@@ -16,8 +16,9 @@ set(OUT fw)
 set(CFLAGS_COMMON
   -mstm8
   --std-c11
-  -DSTM8L15X_LD
+  -DSTM8L15X_MD
   -D__SDCC__
+  -DUSE_FULL_ASSERT=0
   -I${CMAKE_SOURCE_DIR}/hal/inc
   -I${CMAKE_SOURCE_DIR}/hal/cfg
 )
@@ -67,6 +68,12 @@ endif()
 set(SRC_C
   ${CMAKE_SOURCE_DIR}/src/main.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_clk.c
+  ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_gpio.c
+  ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_adc.c
+  ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_i2c.c
+  ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_spi.c
+  ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_usart.c
+  ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_tim1.c
 )
 
 #set(SRC_S

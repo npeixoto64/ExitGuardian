@@ -105,6 +105,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm8l15x_tim1.h"
+#include "stm8l15x_conf.h"
 
 /** @addtogroup STM8L15x_StdPeriph_Driver
   * @{
@@ -440,7 +441,7 @@ void TIM1_ARRPreloadConfig(FunctionalState NewState)
 }
 
 /**
-  * @brief  Selects the TIM1’s One Pulse Mode.
+  * @brief  Selects the TIM1ï¿½s One Pulse Mode.
   * @param  TIM1_OPMode specifies the OPM Mode to be used.
   *          This parameter can be one of the following values
   *            @arg TIM1_OPMode_Single
@@ -2069,7 +2070,7 @@ FlagStatus TIM1_GetFlagStatus(TIM1_FLAG_TypeDef TIM1_FLAG)
 }
 
 /**
-  * @brief  Clears the TIM1’s pending flags.
+  * @brief  Clears the TIM1ï¿½s pending flags.
   * @param  TIM1_FLAG specifies the flag to clear.
   *          This parameter can be one of the following values:
   *            @arg TIM1_FLAG_Update: TIM1 update Flag
@@ -2091,7 +2092,7 @@ void TIM1_ClearFlag(TIM1_FLAG_TypeDef TIM1_FLAG)
   /* Check the parameters */
   assert_param(IS_TIM1_CLEAR_FLAG(TIM1_FLAG));
 
-  /* Clear the flags (rc_w0) clear this bit by writing 0. Writing ‘1’ has no effect*/
+  /* Clear the flags (rc_w0) clear this bit by writing 0. Writing ï¿½1ï¿½ has no effect*/
   TIM1->SR1 = (uint8_t)(~(uint8_t)(TIM1_FLAG));
   TIM1->SR2 = (uint8_t)((uint8_t)(~((uint8_t)((uint16_t)TIM1_FLAG >> 8))) & (uint8_t)0x1E);
 }
@@ -2159,7 +2160,7 @@ void TIM1_ClearITPendingBit(TIM1_IT_TypeDef TIM1_IT)
 }
 
 /**
-  * @brief  Configures the TIM1’s DMA interface.
+  * @brief  Configures the TIM1ï¿½s DMA interface.
   * @param  TIM1_DMABase: DMA Base address.
   * @param  TIM1_DMABurstLength: DMA Burst length.
   * @retval None.
@@ -2177,7 +2178,7 @@ void TIM1_DMAConfig(TIM1_DMABase_TypeDef TIM1_DMABase,
 }
 
 /**
-  * @brief  Enables or disables the TIM’s DMA Requests.
+  * @brief  Enables or disables the TIMï¿½s DMA Requests.
   * @param  TIM1_DMASources: specifies the DMA Request sources.
   *          This parameter can be any combination of the following values:
   *            @arg TIM1_DMA_Update: TIM1 update Interrupt source
@@ -2581,7 +2582,7 @@ void TIM1_EncoderInterfaceConfig(TIM1_EncoderMode_TypeDef TIM1_EncoderMode,
 }
 
 /**
-  * @brief  Enables or Disables the TIM’s Hall sensor interface.
+  * @brief  Enables or Disables the TIMï¿½s Hall sensor interface.
   * @param  NewState : The new state of the TIM1 Hall sensor interface.
   *          This parameter can be ENABLE or DISABLE
   * @retval None
