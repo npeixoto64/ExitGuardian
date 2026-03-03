@@ -21,6 +21,7 @@ set(CFLAGS_COMMON
   -DUSE_FULL_ASSERT=0
   -I${CMAKE_SOURCE_DIR}/hal/inc
   -I${CMAKE_SOURCE_DIR}/hal/cfg
+  -I${CMAKE_SOURCE_DIR}/inc
 )
 
 set(LDFLAGS_COMMON
@@ -67,6 +68,8 @@ endif()
 # ---- Sources
 set(SRC_C
   ${CMAKE_SOURCE_DIR}/src/main.c
+  ${CMAKE_SOURCE_DIR}/src/cc1101.c
+  ${CMAKE_SOURCE_DIR}/src/log.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_clk.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_gpio.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_adc.c
@@ -74,6 +77,7 @@ set(SRC_C
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_spi.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_usart.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_tim1.c
+  ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_exti.c
 )
 
 #set(SRC_S
