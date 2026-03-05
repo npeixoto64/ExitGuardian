@@ -80,25 +80,30 @@ set(SRC_C
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_exti.c
 )
 
-#set(SRC_S
-#  ${CMAKE_SOURCE_DIR}/src/startup.s
-#  ${CMAKE_SOURCE_DIR}/src/vectors.s
-#)
-
 set(SRC_ALL ${SRC_C} ${SRC_S})
 
 # Compile each source to .rel
 set(REL_FILES)
 foreach(src ${SRC_ALL})
   get_filename_component(name ${src} NAME_WE)
+  get_filename_component(ext ${src} EXT)
   set(rel ${CMAKE_BINARY_DIR}/${name}.rel)
   list(APPEND REL_FILES ${rel})
-  add_custom_command(
-    OUTPUT ${rel}
-    COMMAND ${SDCC} -c ${CFLAGS} ${src} -o ${rel}
-    DEPENDS ${src}
-    VERBATIM
-  )
+  if(ext STREQUAL ".s" OR ext STREQUAL ".asm")
+    add_custom_command(
+      OUTPUT ${rel}
+      COMMAND ${SDASSTM8} -plosgff -o ${rel} ${src}
+      DEPENDS ${src}
+      VERBATIM
+    )
+  else()
+    add_custom_command(
+      OUTPUT ${rel}
+      COMMAND ${SDCC} -c ${CFLAGS} ${src} -o ${rel}
+      DEPENDS ${src}
+      VERBATIM
+    )
+  endif()
 endforeach()
 
 set(IHX ${CMAKE_BINARY_DIR}/${OUT}.ihx)

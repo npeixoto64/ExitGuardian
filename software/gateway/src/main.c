@@ -11,12 +11,15 @@
 #include "cc1101.h"
 #include "log.h"
 
-static volatile uint8_t g_pd2_went_low_flag = 0;
+static volatile uint8_t g_pd0_went_low_flag = 0;
 
-// INTERRUPT_HANDLER(EXTI_PORTD_IRQHandler, 6)
-// {
-//    g_pd2_went_low_flag = 1;
-// }
+INTERRUPT_HANDLER(EXTI0_IRQHandler, 8)
+{
+  if (GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_0) == RESET) {
+    g_pd0_went_low_flag = 1;
+  }
+  EXTI_ClearITPendingBit(EXTI_IT_Pin0);
+}
 
 int main(void)
 {
@@ -27,21 +30,21 @@ int main(void)
     CLK_SYSCLKDivConfig(CLK_SYSCLKDiv_1);
 
     // Configure not used pins as input pins with pull-up
-    // GPIO_Init(GPIOA, GPIO_Pin_5, GPIO_Mode_In_PU_No_IT);
-    // GPIO_Init(GPIOB, GPIO_Pin_0, GPIO_Mode_In_PU_No_IT);
-    // GPIO_Init(GPIOB, GPIO_Pin_1, GPIO_Mode_In_PU_No_IT);
-    // GPIO_Init(GPIOB, GPIO_Pin_2, GPIO_Mode_In_PU_No_IT);
-    // GPIO_Init(GPIOB, GPIO_Pin_3, GPIO_Mode_In_PU_No_IT);
-    // GPIO_Init(GPIOC, GPIO_Pin_5, GPIO_Mode_In_PU_No_IT);
-    // GPIO_Init(GPIOC, GPIO_Pin_6, GPIO_Mode_In_PU_No_IT);
-    // GPIO_Init(GPIOD, GPIO_Pin_6, GPIO_Mode_In_PU_No_IT);
+    GPIO_Init(GPIOA, GPIO_Pin_5, GPIO_Mode_In_PU_No_IT);
+    GPIO_Init(GPIOB, GPIO_Pin_0, GPIO_Mode_In_PU_No_IT);
+    GPIO_Init(GPIOB, GPIO_Pin_1, GPIO_Mode_In_PU_No_IT);
+    GPIO_Init(GPIOB, GPIO_Pin_2, GPIO_Mode_In_PU_No_IT);
+    GPIO_Init(GPIOB, GPIO_Pin_3, GPIO_Mode_In_PU_No_IT);
+    GPIO_Init(GPIOC, GPIO_Pin_5, GPIO_Mode_In_PU_No_IT);
+    GPIO_Init(GPIOC, GPIO_Pin_6, GPIO_Mode_In_PU_No_IT);
+    GPIO_Init(GPIOD, GPIO_Pin_6, GPIO_Mode_In_PU_No_IT);
 
     // Configure PA6 as ADC input (floating input)
-    // GPIO_Init(GPIOA, GPIO_Pin_6, GPIO_Mode_In_FL_No_IT);
+    GPIO_Init(GPIOA, GPIO_Pin_6, GPIO_Mode_In_FL_No_IT);
 
     // // Configure PC0 as SDA and PC1 as SCL for I2C (open-drain)
-    // GPIO_Init(GPIOC, GPIO_Pin_0, GPIO_Mode_Out_OD_HiZ_Fast);
-    // GPIO_Init(GPIOC, GPIO_Pin_1, GPIO_Mode_Out_OD_HiZ_Fast);
+    GPIO_Init(GPIOC, GPIO_Pin_0, GPIO_Mode_Out_OD_HiZ_Fast);
+    GPIO_Init(GPIOC, GPIO_Pin_1, GPIO_Mode_Out_OD_HiZ_Fast);
 
     // Configure PB4-PB7 as SPI (PB4 NSS, PB5 SCK, PB6 MISO, PB7 MOSI)
     GPIO_Init(GPIOB, GPIO_Pin_4, GPIO_Mode_Out_PP_High_Fast);   // NSS
@@ -63,7 +66,7 @@ int main(void)
     //GPIO_Init(GPIOD, GPIO_Pin_4, GPIO_Mode_In_FL_IT);
 
     // Configure EXTI for PD0 (falling edge trigger)
-    //EXTI_SetPinSensitivity(EXTI_Pin_0, EXTI_Trigger_Falling);
+    EXTI_SetPinSensitivity(EXTI_Pin_0, EXTI_Trigger_Falling);
 
     // Configure PA2, PA3, PA4, PC4 as push-pull outputs
     GPIO_Init(GPIOA, GPIO_Pin_2, GPIO_Mode_Out_PP_Low_Fast);
@@ -73,22 +76,22 @@ int main(void)
 
     GPIO_ResetBits(GPIOA, GPIO_Pin_2);
     GPIO_ResetBits(GPIOA, GPIO_Pin_3);
-    GPIO_ResetBits(GPIOA, GPIO_Pin_4);
+    GPIO_SetBits(GPIOA, GPIO_Pin_4);
     // GPIO_ResetBits(GPIOC, GPIO_Pin_4);
 
     // Configure ADC for PA6 (Channel 6)
-    // CLK_PeripheralClockConfig(CLK_Peripheral_ADC1, ENABLE);
-    // ADC_DeInit(ADC1);
-    // ADC_Init(ADC1, ADC_ConversionMode_Single, ADC_Resolution_12Bit, ADC_Prescaler_2);
-    // ADC_SamplingTimeConfig(ADC1, ADC_Group_SlowChannels, ADC_SamplingTime_384Cycles);
-    // ADC_Cmd(ADC1, ENABLE);
-    // ADC_ChannelCmd(ADC1, ADC_Channel_6, ENABLE);
+    CLK_PeripheralClockConfig(CLK_Peripheral_ADC1, ENABLE);
+    ADC_DeInit(ADC1);
+    ADC_Init(ADC1, ADC_ConversionMode_Single, ADC_Resolution_12Bit, ADC_Prescaler_2);
+    ADC_SamplingTimeConfig(ADC1, ADC_Group_SlowChannels, ADC_SamplingTime_384Cycles);
+    ADC_Cmd(ADC1, ENABLE);
+    ADC_ChannelCmd(ADC1, ADC_Channel_6, ENABLE);
 
     // Configure I2C for PC0 (SDA) and PC1 (SCL)
-    // CLK_PeripheralClockConfig(CLK_Peripheral_I2C1, ENABLE);
-    // I2C_DeInit(I2C1);
-    // I2C_Init(I2C1, 100000, 0x00, I2C_Mode_I2C, I2C_DutyCycle_2, I2C_Ack_Enable, I2C_AcknowledgedAddress_7bit);
-    // I2C_Cmd(I2C1, ENABLE);
+    CLK_PeripheralClockConfig(CLK_Peripheral_I2C1, ENABLE);
+    I2C_DeInit(I2C1);
+    I2C_Init(I2C1, 100000, 0x00, I2C_Mode_I2C, I2C_DutyCycle_2, I2C_Ack_Enable, I2C_AcknowledgedAddress_7bit);
+    I2C_Cmd(I2C1, ENABLE);
 
     // Configure SPI for PB4-PB7
     CLK_PeripheralClockConfig(CLK_Peripheral_SPI1, ENABLE);
@@ -136,39 +139,32 @@ int main(void)
   // TIM1_Cmd(ENABLE);
   // TIM1_CtrlPWMOutputs(ENABLE);
 
+    // Enable global interrupts
+    enableInterrupts();
+
     // Configure CC1101 radio for RX mode
     cc1101_config_gfsk_433_rx_fixed();
 
-    // Enable global interrupts
-    //enableInterrupts();
-
     static uint32_t counter = 0;
-    // char buffer[20];
+    char buffer[20];
 
-    // sprintf(buffer, "Initial Counter: %lu\r", counter);
-    // send_string(buffer);
-
-    GPIO_SetBits(GPIOA, GPIO_Pin_3);
-    GPIO_SetBits(GPIOA, GPIO_Pin_4);
+    sprintf(buffer, "Initial Counter: %lu\r", counter);
+    send_string(buffer);
 
     while (1) {
-        GPIO_ToggleBits(GPIOA, GPIO_Pin_2);
-        // GPIO_ToggleBits(GPIOA, GPIO_Pin_3);
-        // GPIO_ToggleBits(GPIOA, GPIO_Pin_4);
+        if (g_pd0_went_low_flag)
+        {
+            // Reception concluded
+            g_pd0_went_low_flag = 0;
 
-        // if (g_pd2_went_low_flag)
-        // {
-        //     // Reception concluded
-        //     g_pd2_went_low_flag = 0;
+            cc1101_recv_u32(&counter);
 
-             cc1101_recv_u32(&counter);
+            GPIO_ToggleBits(GPIOA, GPIO_Pin_2);
 
-        //     //GPIO_ToggleBits(GPIOA, GPIO_Pin_2);
-
-        //     // Send UART message with counter
-        //     //sprintf(buffer, "Counter: %lu\r", counter++);
-        //     // sprintf(buffer, "\r\nCounter: %lu", counter++);
-        //     // send_string(buffer);
-        // }
+            // Send UART message with counter
+            sprintf(buffer, "Counter: %lu\r", counter++);
+            sprintf(buffer, "\r\nCounter: %lu", counter++);
+            send_string(buffer);
+        }
     }
 }

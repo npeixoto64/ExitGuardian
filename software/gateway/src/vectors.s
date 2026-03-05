@@ -4,7 +4,7 @@
 
         .globl _reset_entry
         .globl _default_isr
-        .globl _TIM2_UPD_OVF_BRK_IRQHandler
+        .globl _EXTI_PORTD_IRQHandler
 
         .area CODE
 _default_isr:
@@ -28,14 +28,14 @@ _default_isr:
         VEC _default_isr  ; IRQ3
         VEC _default_isr  ; IRQ4
         VEC _default_isr  ; IRQ5
-        VEC _default_isr  ; IRQ6
+        VEC _EXTI_PORTD_IRQHandler  ; IRQ6 (EXTI PORTD)
         VEC _default_isr  ; IRQ7
         VEC _default_isr  ; IRQ8
         VEC _default_isr  ; IRQ9
         VEC _default_isr  ; IRQ10
         VEC _default_isr  ; IRQ11
         VEC _default_isr  ; IRQ12
-        VEC _TIM2_UPD_OVF_BRK_IRQHandler  ; IRQ13 (TIM2 update)
+        VEC _default_isr  ; IRQ13
         VEC _default_isr  ; IRQ14
         VEC _default_isr  ; IRQ15
         VEC _default_isr  ; IRQ16
