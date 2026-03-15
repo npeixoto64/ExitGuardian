@@ -7,6 +7,8 @@
 static inline void csn_hi(void) { GPIO_SetBits(CC1101_CSN_PORT, CC1101_CSN_PIN); }
 static inline void csn_lo(void) { GPIO_ResetBits(CC1101_CSN_PORT, CC1101_CSN_PIN); }
 
+static volatile uint8_t cc1101_pktlen_shadow;
+
 static uint8_t spi1_xfer(uint8_t b)
 {
     while (SPI_GetFlagStatus(SPI1, SPI_FLAG_TXE) == RESET) {}
@@ -43,9 +45,6 @@ static uint8_t cc1101_strobe(uint8_t strobe)
 {
     uint8_t v;
     cc1101_select();
-    // optional: wait for SO low (chip ready)
-    // while (CC1101_SO_READ()) {}
-
     spi1_xfer(addr | 0xC0);   // read + "status space"
     v = spi1_xfer(0x00);
     cc1101_deselect();
@@ -120,8 +119,10 @@ static void cc1101_write_burst(uint8_t addr, const uint8_t *data, uint8_t len)
     cc1101_deselect();
 }
 
-void cc1101_config_gfsk_433_tx_fixed(void)
+void cc1101_config_gfsk_433_tx_fixed(uint8_t pkt_size)
 {
+    cc1101_pktlen_shadow = pkt_size;
+
     // Force IDLE before changing freq / packet handler fields :contentReference[oaicite:10]{index=10} :contentReference[oaicite:11]{index=11}
     cc1101_strobe(CC1101_SIDLE);
     cc1101_strobe(CC1101_SFTX);
@@ -134,10 +135,10 @@ void cc1101_config_gfsk_433_tx_fixed(void)
     cc1101_write_reg(CC1101_SYNC1, 0xD3); // Confirmed
     cc1101_write_reg(CC1101_SYNC0, 0x91); // Confirmed
 
-    // ---- Packet config: fixed length 4, whitening ON, CRC ON, normal FIFO mode :contentReference[oaicite:13]{index=13}
-    cc1101_write_reg(CC1101_PKTLEN,    4);
+    // ---- Packet config: fixed length pkt_size, whitening ON, CRC ON, normal FIFO mode :contentReference[oaicite:13]{index=13}
+    cc1101_write_reg(CC1101_PKTLEN, cc1101_pktlen_shadow);
     cc1101_write_reg(CC1101_PKTCTRL1,  0x00);   // no addr check, no append status
-    cc1101_write_reg(CC1101_PKTCTRL0,  0x40);   // WHITE_DATA=1, CRC_EN=0, LENGTH_CONFIG=0
+    cc1101_write_reg(CC1101_PKTCTRL0,  0x44);   // WHITE_DATA=1, CRC_EN=1, LENGTH_CONFIG=0 (fixed lenght configured in PACKETLEN)
 
     // ---- Frequency: 433.92 MHz with 26 MHz XOSC
     // f_carrier = FREQ * fXOSC / 2^16  => FREQ = 0x10B071 :contentReference[oaicite:14]{index=14}
@@ -170,22 +171,23 @@ void cc1101_config_gfsk_433_tx_fixed(void)
     cc1101_strobe(CC1101_SCAL);
 }
 
-void cc1101_send_u32(uint32_t value)
+void cc1101_send_msg(const uint8_t status, const uint32_t chip_id)
 {
-    uint8_t payload[4];
+    uint8_t payload[5];
 
-    // Choose endianness explicitly (here: big-endian over the air)
-    payload[0] = (uint8_t)(value >> 24);
-    payload[1] = (uint8_t)(value >> 16);
-    payload[2] = (uint8_t)(value >>  8);
-    payload[3] = (uint8_t)(value >>  0);
+    payload[0] = status;
+    payload[1] = (uint8_t)(chip_id >> 24);
+    payload[2] = (uint8_t)(chip_id >> 16);
+    payload[3] = (uint8_t)(chip_id >> 8);
+    payload[4] = (uint8_t)(chip_id);
 
     // Make sure we're in a sane state and TX FIFO is empty
     cc1101_strobe(CC1101_SIDLE);
     cc1101_strobe(CC1101_SFTX);
 
-    // Load payload (fixed length mode => NO length byte) :contentReference[oaicite:24]{index=24}
-    cc1101_write_burst(CC1101_TXFIFO, payload, sizeof(payload));
+    // Load payload (fixed length mode => NO length byte)
+    cc1101_write_burst(CC1101_TXFIFO, payload, 5);
+    //cc1101_write_burst(CC1101_TXFIFO, buffer, len);
 
     // Start TX (radio will send preamble+sync automatically, then payload, then CRC if enabled) :contentReference[oaicite:25]{index=25}
     cc1101_strobe(CC1101_STX);
@@ -208,8 +210,10 @@ void cc1101_send_u32(uint32_t value)
     cc1101_deselect();
 }
 
-void cc1101_config_gfsk_433_rx_fixed(void)
+void cc1101_config_gfsk_433_rx_fixed(uint8_t pkt_size)
 {
+    cc1101_pktlen_shadow = pkt_size;
+
     cc1101_strobe(CC1101_SRES);
     cc1101_strobe(CC1101_SIDLE);
     cc1101_strobe(CC1101_SFRX);
@@ -222,8 +226,8 @@ void cc1101_config_gfsk_433_rx_fixed(void)
     cc1101_write_reg(CC1101_SYNC1, 0xD3);
     cc1101_write_reg(CC1101_SYNC0, 0x91);
 
-    // Fixed length payload = 4
-    cc1101_write_reg(CC1101_PKTLEN, 4);
+    // Fixed length payload = pkt_size
+    cc1101_write_reg(CC1101_PKTLEN, cc1101_pktlen_shadow);
 
     // PKTCTRL1:
     // - CRC_AUTOFLUSH = 1 (recommended when no GDO; CRC fails won't leave garbage)
@@ -233,8 +237,8 @@ void cc1101_config_gfsk_433_rx_fixed(void)
     // Common bit mapping: CRC_AUTOFLUSH bit3, APPEND_STATUS bit2 => 0x0C
     cc1101_write_reg(CC1101_PKTCTRL1, 0x0C);
 
-    // PKTCTRL0: WHITE_DATA=1, CRC_EN=0, LENGTH_CONFIG=0 (fixed)
-    cc1101_write_reg(CC1101_PKTCTRL0, 0x40);
+    // PKTCTRL0: WHITE_DATA=1, CRC_EN=1, LENGTH_CONFIG=0 (fixed length configured in PACKETLEN)
+    cc1101_write_reg(CC1101_PKTCTRL0, 0x44);
 
     // Frequency 433.92 MHz @ 26 MHz XOSC => 0x10B071 (as discussed)
     cc1101_write_reg(CC1101_FREQ2, 0x10);
@@ -268,38 +272,20 @@ static void cc1101_restart_rx(void)
     cc1101_strobe(CC1101_SRX);
 }
 
-void cc1101_recv_u32(uint32_t *out)
+void cc1101_recv_msg(uint32_t *chip_id, uint8_t *status)
 {
-    uint8_t payload[64];
+    uint8_t payload[5];
     uint8_t rx_bytes = cc1101_read_status(CC1101_RXBYTES);
     
     if (rx_bytes > 0)
     {
         cc1101_read_rxfifo(CC1101_RXFIFO, payload, rx_bytes);
 
-        if (rx_bytes >= 4)
-        {
-            *out =  ((uint32_t)payload[0] << 24) |
-                    ((uint32_t)payload[1] << 16) |
-                    ((uint32_t)payload[2] <<  8) |
-                    ((uint32_t)payload[3] <<  0);
-        }
+        *status = payload[0];
+        *chip_id = ((uint32_t)payload[1] << 24) |
+                    ((uint32_t)payload[2] << 16) |
+                    ((uint32_t)payload[3] <<  8) |
+                    ((uint32_t)payload[4] <<  0);
     }
     return;
-}
-
-// Call this when rx_pending=1 (after GDO0 interrupt)
-int cc1101_read_fixed4(uint8_t *out)
-{
-    uint8_t rxbytes = cc1101_read_status(CC1101_RXBYTES);
-    if (rxbytes & 0x80) {               // overflow
-        cc1101_strobe(CC1101_SIDLE);
-        cc1101_strobe(CC1101_SFRX);
-        return -2;
-    }
-    rxbytes &= 0x7F;
-
-    if (rxbytes < 4) return rxbytes;          // nothing (or packet was discarded)
-    cc1101_read_rxfifo(CC1101_RXFIFO, out, 4);         // read exactly 4 bytes
-    return 1;
 }

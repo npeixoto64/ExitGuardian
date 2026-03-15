@@ -143,13 +143,11 @@ int main(void)
     enableInterrupts();
 
     // Configure CC1101 radio for RX mode
-    cc1101_config_gfsk_433_rx_fixed();
+    cc1101_config_gfsk_433_rx_fixed(5);
 
-    static uint32_t counter = 0;
-    char buffer[20];
-
-    sprintf(buffer, "Initial Counter: %lu\r", counter);
-    send_string(buffer);
+    uint8_t status = 0;
+    uint32_t chip_id = 0;
+    char buffer[64];
 
     while (1) {
         if (g_pd0_went_low_flag)
@@ -157,14 +155,15 @@ int main(void)
             // Reception concluded
             g_pd0_went_low_flag = 0;
 
-            cc1101_recv_u32(&counter);
+            cc1101_recv_msg(&chip_id, &status);
 
             GPIO_ToggleBits(GPIOA, GPIO_Pin_2);
 
-            // Send UART message with counter
-            sprintf(buffer, "Counter: %lu\r", counter++);
-            sprintf(buffer, "\r\nCounter: %lu", counter++);
-            send_string(buffer);
+          // Send UART message with chip id and status
+          sprintf(buffer, "\r\nTransmitter Chip ID: %lx", chip_id);
+          send_string(buffer);
+          sprintf(buffer, "; status: %lu", (uint32_t)status);
+          send_string(buffer);
         }
     }
 }

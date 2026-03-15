@@ -64,12 +64,9 @@
 #define CC1101_MISO_PORT  GPIOB
 #define CC1101_MISO_PIN   GPIO_Pin_7
 
-void cc1101_config_gfsk_433_tx_fixed(void);
-void cc1101_config_gfsk_433_rx_fixed(void);
-void cc1101_send_u32(uint32_t counter);
-void cc1101_recv_u32(uint32_t *out);
-int cc1101_read_fixed4(uint8_t *out);
-uint8_t cc1101_read_status(uint8_t addr);
-void cc1101_read_rxfifo(uint8_t addr, uint8_t *data, uint8_t len);
+void cc1101_config_gfsk_433_tx_fixed(uint8_t pkt_size);
+void cc1101_config_gfsk_433_rx_fixed(uint8_t pkt_size);
+void cc1101_send_msg(const uint8_t status, const uint32_t chip_id);
+void cc1101_recv_msg(uint32_t *chip_id, uint8_t *status);
 
 #endif
