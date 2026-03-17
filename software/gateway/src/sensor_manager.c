@@ -28,9 +28,10 @@ static uint16_t sensor_manager_crc16_ccitt(const uint8_t* data, uint8_t len)
     return crc;
 }
 
-static uint16_t sensor_manager_record_addr(uint16_t base_addr, uint8_t index)
+static inline uint16_t sensor_manager_record_addr(uint8_t index)
 {
-    return (uint16_t)(base_addr + ((uint16_t)index * SENSOR_MANAGER_RECORD_SIZE));
+    /* FeRAM base address is fixed at 0x0000, so address is index * 8. */
+    return (uint16_t)((uint16_t)index << 3);
 }
 
 void SensorManager_PackRecord(const SensorManagerEntry* entry, uint8_t out_record[SENSOR_MANAGER_RECORD_SIZE])
@@ -49,21 +50,21 @@ void SensorManager_PackRecord(const SensorManagerEntry* entry, uint8_t out_recor
     out_record[7] = (uint8_t)crc;
 }
 
-void SensorManager_WriteRecord(uint16_t base_addr, uint8_t index, const SensorManagerEntry* entry)
+void SensorManager_WriteRecord(uint8_t index, const SensorManagerEntry* entry)
 {
     uint8_t record[SENSOR_MANAGER_RECORD_SIZE];
 
     SensorManager_PackRecord(entry, record);
-    FeRAM_WriteBytes(sensor_manager_record_addr(base_addr, index), record, SENSOR_MANAGER_RECORD_SIZE);
+    FeRAM_WriteBytes(sensor_manager_record_addr(index), record, SENSOR_MANAGER_RECORD_SIZE);
 }
 
-uint8_t SensorManager_ReadRecord(uint16_t base_addr, uint8_t index, SensorManagerEntry* entry)
+uint8_t SensorManager_ReadRecord(uint8_t index, SensorManagerEntry* entry)
 {
     uint8_t record[SENSOR_MANAGER_RECORD_SIZE];
     uint16_t stored_crc = 0;
     uint16_t computed_crc = 0;
 
-    FeRAM_ReadBytes(sensor_manager_record_addr(base_addr, index), record, SENSOR_MANAGER_RECORD_SIZE);
+    FeRAM_ReadBytes(sensor_manager_record_addr(index), record, SENSOR_MANAGER_RECORD_SIZE);
 
     entry->id = ((uint32_t)record[0] << 24)
         | ((uint32_t)record[1] << 16)
@@ -77,23 +78,23 @@ uint8_t SensorManager_ReadRecord(uint16_t base_addr, uint8_t index, SensorManage
     return (stored_crc == computed_crc) ? 1U : 0U;
 }
 
-void SensorManager_WriteList(uint16_t base_addr, const SensorManagerEntry* entries, uint8_t count)
+void SensorManager_WriteList(const SensorManagerEntry* entries, uint8_t count)
 {
     uint8_t i = 0;
 
     while (i < count) {
-        SensorManager_WriteRecord(base_addr, i, &entries[i]);
+        SensorManager_WriteRecord(i, &entries[i]);
         i++;
     }
 }
 
-uint8_t SensorManager_ReadList(uint16_t base_addr, SensorManagerEntry* entries, uint8_t count)
+uint8_t SensorManager_ReadList(SensorManagerEntry* entries, uint8_t count)
 {
     uint8_t i = 0;
     uint8_t valid_count = 0;
 
     while (i < count) {
-        if (SensorManager_ReadRecord(base_addr, i, &entries[i])) {
+        if (SensorManager_ReadRecord(i, &entries[i])) {
             valid_count++;
         }
         i++;
