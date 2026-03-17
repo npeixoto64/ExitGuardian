@@ -9,11 +9,8 @@
 #include "stm8l15x_tim1.h"
 #include "stm8l15x_exti.h"
 #include "cc1101.h"
+#include "feram.h"
 #include "log.h"
-
-#define FERAM_ADDR      0xA0  // 8-bit Write Address (7-bit 0x50 << 1)
-#define MEM_ADDR_START  0x0000 // Starting memory address
-#define MEM_SIZE        0x2000 // Memory size: 8192 bytes (64 Kbits)
 
 static volatile uint8_t g_pd0_went_low_flag = 0;
 
@@ -24,72 +21,6 @@ INTERRUPT_HANDLER(EXTI0_IRQHandler, 8)
     g_pd0_went_low_flag = 1;
   }
   EXTI_ClearITPendingBit(EXTI_IT_Pin0);
-}
-
-void FeRAM_Write4Bytes(uint16_t mem_addr, uint8_t* pBuffer)
-{
-    /* 1. Send START condition */
-    I2C_GenerateSTART(I2C1, ENABLE);
-    while(!I2C_CheckEvent(I2C1, I2C_EVENT_MASTER_MODE_SELECT));
-
-    /* 2. Send Slave Address (Write) */
-    I2C_Send7bitAddress(I2C1, FERAM_ADDR, I2C_Direction_Transmitter);
-    while(!I2C_CheckEvent(I2C1, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED));
-
-    /* 3. Send Memory Address (High Byte then Low Byte) */
-    // Note: Upper 3 bits of High Byte must be 000 
-    I2C_SendData(I2C1, (uint8_t)(mem_addr >> 8)); 
-    while(!I2C_CheckEvent(I2C1, I2C_EVENT_MASTER_BYTE_TRANSMITTED));
-    
-    I2C_SendData(I2C1, (uint8_t)(mem_addr & 0xFF));
-    while(!I2C_CheckEvent(I2C1, I2C_EVENT_MASTER_BYTE_TRANSMITTED));
-
-    /* 4. Send 4 Bytes of Data */
-    for(int i = 0; i < 4; i++) {
-        I2C_SendData(I2C1, pBuffer[i]);
-        while(!I2C_CheckEvent(I2C1, I2C_EVENT_MASTER_BYTE_TRANSMITTED));
-    }
-
-    /* 5. Send STOP condition */
-    I2C_GenerateSTOP(I2C1, ENABLE);
-}
-
-void FeRAM_Read4Bytes(uint16_t mem_addr, uint8_t* pBuffer)
-{
-    /* 1. Dummy Write to set address pointer */
-    I2C_GenerateSTART(I2C1, ENABLE);
-    while(!I2C_CheckEvent(I2C1, I2C_EVENT_MASTER_MODE_SELECT));
-
-    I2C_Send7bitAddress(I2C1, FERAM_ADDR, I2C_Direction_Transmitter);
-    while(!I2C_CheckEvent(I2C1, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED));
-
-    I2C_SendData(I2C1, (uint8_t)(mem_addr >> 8));
-    while(!I2C_CheckEvent(I2C1, I2C_EVENT_MASTER_BYTE_TRANSMITTED));
-    
-    I2C_SendData(I2C1, (uint8_t)(mem_addr & 0xFF));
-    while(!I2C_CheckEvent(I2C1, I2C_EVENT_MASTER_BYTE_TRANSMITTED));
-
-    /* 2. Re-START for Reading */
-    I2C_GenerateSTART(I2C1, ENABLE);
-    while(!I2C_CheckEvent(I2C1, I2C_EVENT_MASTER_MODE_SELECT));
-
-    I2C_Send7bitAddress(I2C1, FERAM_ADDR, I2C_Direction_Receiver);
-    while(!I2C_CheckEvent(I2C1, I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED));
-
-    /* 3. Read 4 Bytes */
-    for(int i = 0; i < 4; i++) {
-        if(i == 3) {
-            // Disable ACK before the last byte to signal the end 
-            I2C_AcknowledgeConfig(I2C1, DISABLE);
-            I2C_GenerateSTOP(I2C1, ENABLE);
-        }
-        
-        while(!I2C_CheckEvent(I2C1, I2C_EVENT_MASTER_BYTE_RECEIVED));
-        pBuffer[i] = I2C_ReceiveData(I2C1);
-    }
-
-    // Re-enable ACK for future operations
-    I2C_AcknowledgeConfig(I2C1, ENABLE);
 }
 
 int main(void)
@@ -223,11 +154,11 @@ int main(void)
     uint32_t chip_id = 0;
     char buffer[64];
 
-    FeRAM_Read4Bytes(0x0000, buffer);
-    send_register_hex("\r\nFeRAM 0: ", buffer[0]);
-    send_register_hex("\r\nFeRAM 1: ", buffer[1]);
-    send_register_hex("\r\nFeRAM 2: ", buffer[2]);
-    send_register_hex("\r\nFeRAM 3: ", buffer[3]);
+    // FeRAM_Read4Bytes(0x0000, buffer);
+    // send_register_hex("\r\nFeRAM 0: ", buffer[0]);
+    // send_register_hex("\r\nFeRAM 1: ", buffer[1]);
+    // send_register_hex("\r\nFeRAM 2: ", buffer[2]);
+    // send_register_hex("\r\nFeRAM 3: ", buffer[3]);
 
     while (1) {
         if (g_pd0_went_low_flag)
