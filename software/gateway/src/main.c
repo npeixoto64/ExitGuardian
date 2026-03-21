@@ -14,6 +14,31 @@
 
 static volatile uint8_t g_pd0_went_low_flag = 0;
 
+static void enter_deep_sleep(void)
+{
+  /* Reduce current draw before HALT; wake source is EXTI on PD0. */
+  ADC_Cmd(ADC1, DISABLE);
+  I2C_Cmd(I2C1, DISABLE);
+//  TIM1_Cmd(DISABLE);
+  SPI_Cmd(SPI1, DISABLE);
+  USART_Cmd(USART1, DISABLE);
+
+  enableInterrupts();
+  halt();
+
+  /* Restore peripherals needed by active path after wake-up. */
+  CLK_PeripheralClockConfig(CLK_Peripheral_ADC1, ENABLE);
+  CLK_PeripheralClockConfig(CLK_Peripheral_I2C1, ENABLE);
+  CLK_PeripheralClockConfig(CLK_Peripheral_SPI1, ENABLE);
+  CLK_PeripheralClockConfig(CLK_Peripheral_USART1, ENABLE);
+  CLK_PeripheralClockConfig(CLK_Peripheral_TIM1, ENABLE);
+
+  ADC_Cmd(ADC1, ENABLE);
+  I2C_Cmd(I2C1, ENABLE);
+  SPI_Cmd(SPI1, ENABLE);
+  USART_Cmd(USART1, ENABLE);
+}
+
 INTERRUPT_HANDLER(EXTI0_IRQHandler, 8)
 {
   if (GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_0) == RESET)
@@ -164,6 +189,8 @@ int main(void)
             send_string(buffer);
             sprintf(buffer, "; status: %lu", (uint32_t)status);
             send_string(buffer);
+          } else {
+            enter_deep_sleep();
         }
     }
 }
