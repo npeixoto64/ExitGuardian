@@ -59,8 +59,8 @@ int main(void)
     GPIO_Init(GPIOC, GPIO_Pin_3, GPIO_Mode_In_FL_No_IT);      // RX
 
     // Configure PD7 and PD2 as differential PWM (TIM1 CH1 and CH1N)
-    // GPIO_Init(GPIOD, GPIO_Pin_7, GPIO_Mode_Out_PP_High_Fast); // TIM1_CH1
-    // GPIO_Init(GPIOD, GPIO_Pin_2, GPIO_Mode_Out_PP_High_Fast); // TIM1_CH1N
+    GPIO_Init(GPIOD, GPIO_Pin_7, GPIO_Mode_Out_PP_High_Fast); // TIM1_CH1
+    GPIO_Init(GPIOD, GPIO_Pin_2, GPIO_Mode_Out_PP_High_Fast); // TIM1_CH1N
 
     // Configure PD0, PD4 and PD5 as inputs floating with interrupt
     GPIO_Init(GPIOD, GPIO_Pin_0, GPIO_Mode_In_FL_IT);
@@ -74,12 +74,12 @@ int main(void)
     GPIO_Init(GPIOA, GPIO_Pin_2, GPIO_Mode_Out_PP_Low_Fast);
     GPIO_Init(GPIOA, GPIO_Pin_3, GPIO_Mode_Out_PP_Low_Fast);
     GPIO_Init(GPIOA, GPIO_Pin_4, GPIO_Mode_Out_PP_Low_Fast);
-    // GPIO_Init(GPIOC, GPIO_Pin_4, GPIO_Mode_Out_PP_Low_Fast);
+    GPIO_Init(GPIOC, GPIO_Pin_4, GPIO_Mode_Out_PP_Low_Fast);
 
     GPIO_ResetBits(GPIOA, GPIO_Pin_2);
     GPIO_ResetBits(GPIOA, GPIO_Pin_3);
     GPIO_SetBits(GPIOA, GPIO_Pin_4);
-    // GPIO_ResetBits(GPIOC, GPIO_Pin_4);
+    GPIO_ResetBits(GPIOC, GPIO_Pin_4);
 
     // Configure ADC for PA6 (Channel 6)
     CLK_PeripheralClockConfig(CLK_Peripheral_ADC1, ENABLE);
@@ -110,42 +110,29 @@ int main(void)
                 USART_Parity_No, (USART_Mode_TypeDef)(USART_Mode_Tx | USART_Mode_Rx));
     USART_Cmd(USART1, ENABLE);
 
-    // // Configure TIM1 for differential PWM on PD7 (CH4) and PD2 (CH3N)
-    // CLK_PeripheralClockConfig(CLK_Peripheral_TIM1, ENABLE);
-    // TIM1_DeInit();
-    // TIM1->PSCRH = 0x00;
-    // TIM1->PSCRL = 0x07;
-    // TIM1->ARRH = 0x03;
-    // TIM1->ARRL = 0xE8;
-    // TIM1->CCMR1 =
-    // (6 << 4) |   // OC1M = 110 → PWM mode 1
-    // (1 << 3);    // OC1PE = preload enable
-    // TIM1->CCR1H = 0x01;
-    // TIM1->CCR1L = 0xF4;   // 500 / 1000 = 50%
-
-    // TIM1->CCER1 |=  (1<<0) | (1<<2);   // CH1 + CH1N
-    // TIM1->CCER1 &= ~((1<<1) | (1<<3)); // active high
-
-    // TIM1->DTR = 0x10;  // example value; tune as needed
-
-  //TIM1->BKR |= (1 << 7);   // MOE = 1
-  //TIM1->CR1 |= (1 << 0);   // CEN = 1
-
-  // TIM1_TimeBaseInit(159, TIM1_CounterMode_Up, 49, 0); // 16MHz / 160 = 100kHz, period 50 -> 2kHz
-  // TIM1_OC3Init(TIM1_OCMode_PWM1, TIM1_OutputState_Enable, TIM1_OutputNState_Enable,
-  //              25, TIM1_OCPolarity_High, TIM1_OCNPolarity_High,
-  //              TIM1_OCIdleState_Set, TIM1_OCNIdleState_Set);
-  // TIM1_SelectOCxM(TIM1_Channel_4, TIM1_OCMode_PWM1);
-  // TIM1_SetCompare4(25);
-  // TIM1_CCxCmd(TIM1_Channel_4, ENABLE);
-  // TIM1_Cmd(ENABLE);
-  // TIM1_CtrlPWMOutputs(ENABLE);
+    // Configure TIM1 for differential PWM on PD7 (CH1) and PD2 (CH1N)
+    CLK_PeripheralClockConfig(CLK_Peripheral_TIM1, ENABLE);
+    TIM1_DeInit();
+    TIM1_TimeBaseInit(7U, TIM1_CounterMode_Up, 1000U, 0U);
+    TIM1_OC1Init(TIM1_OCMode_PWM1,
+           TIM1_OutputState_Enable,
+           TIM1_OutputNState_Enable,
+           500U,
+           TIM1_OCPolarity_High,
+           TIM1_OCNPolarity_High,
+           TIM1_OCIdleState_Reset,
+           TIM1_OCNIdleState_Reset);
+    TIM1_OC1PreloadConfig(ENABLE);
+    TIM1_BDTRConfig(TIM1_OSSIState_Disable,
+            TIM1_LockLevel_Off,
+            0x10U,
+            TIM1_BreakState_Disable,
+            TIM1_BreakPolarity_Low,
+            TIM1_AutomaticOutput_Disable);
+    TIM1_CtrlPWMOutputs(ENABLE);
 
     // Enable global interrupts
     enableInterrupts();
-
-    //uint8_t data[4] = {0xDE, 0xAD, 0xBE, 0xEF};
-    //FeRAM_Write4Bytes(0x0000, data);
 
     // Configure CC1101 radio for RX mode
     cc1101_config_gfsk_433_rx_fixed(5);
@@ -153,12 +140,7 @@ int main(void)
     uint8_t status = 0;
     uint32_t chip_id = 0;
     char buffer[64];
-
-    // FeRAM_Read4Bytes(0x0000, buffer);
-    // send_register_hex("\r\nFeRAM 0: ", buffer[0]);
-    // send_register_hex("\r\nFeRAM 1: ", buffer[1]);
-    // send_register_hex("\r\nFeRAM 2: ", buffer[2]);
-    // send_register_hex("\r\nFeRAM 3: ", buffer[3]);
+    uint8_t buzzer_toggle_flag = 0;
 
     while (1) {
         if (g_pd0_went_low_flag)
@@ -170,11 +152,18 @@ int main(void)
 
             GPIO_ToggleBits(GPIOA, GPIO_Pin_2);
 
-          // Send UART message with chip id and status
-          sprintf(buffer, "\r\nTransmitter Chip ID: %lx", chip_id);
-          send_string(buffer);
-          sprintf(buffer, "; status: %lu", (uint32_t)status);
-          send_string(buffer);
+            buzzer_toggle_flag ^= 1U;
+            // if (buzzer_toggle_flag != 0U) {
+            //   TIM1_Cmd(ENABLE);
+            // } else {
+            //   TIM1_Cmd(DISABLE);
+            // }
+
+            // Send UART message with chip id and status
+            sprintf(buffer, "\r\nTransmitter Chip ID: %lx", chip_id);
+            send_string(buffer);
+            sprintf(buffer, "; status: %lu", (uint32_t)status);
+            send_string(buffer);
         }
     }
 }
