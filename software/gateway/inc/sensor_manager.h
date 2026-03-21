@@ -66,4 +66,7 @@ void SensorManager_ResetFeramHeaderAndMirror(void);
  */
 uint8_t SensorManager_UpdateSensorStatus(uint32_t id, uint8_t status);
 
+/* Returns 1 if any valid sensor has reed switch state set, otherwise 0. */
+uint8_t SensorManager_AnyValidReedSwitchSet(void);
+
 #endif

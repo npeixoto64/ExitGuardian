@@ -300,3 +300,20 @@ uint8_t SensorManager_UpdateSensorStatus(uint32_t id, uint8_t status)
 
     return 1U;
 }
+
+uint8_t SensorManager_AnyValidReedSwitchSet(void)
+{
+    uint8_t i = 0U;
+
+    sensor_manager_ensure_mirror_loaded();
+
+    while (i < g_sensor_count) {
+        if ((g_sensor_mirror[i].valid != 0U)
+            && (SENSOR_STATUS_IS_REED_SWITCH(g_sensor_mirror[i].status) != 0U)) {
+            return 1U;
+        }
+        i++;
+    }
+
+    return 0U;
+}
