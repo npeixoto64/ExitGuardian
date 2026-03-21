@@ -21,6 +21,7 @@ set(CFLAGS_COMMON
   -DUSE_FULL_ASSERT=0
   -I${CMAKE_SOURCE_DIR}/hal/inc
   -I${CMAKE_SOURCE_DIR}/hal/cfg
+  -I${CMAKE_SOURCE_DIR}/inc
 )
 
 set(LDFLAGS_COMMON
@@ -67,6 +68,10 @@ endif()
 # ---- Sources
 set(SRC_C
   ${CMAKE_SOURCE_DIR}/src/main.c
+  ${CMAKE_SOURCE_DIR}/src/cc1101.c
+  ${CMAKE_SOURCE_DIR}/src/feram.c
+  ${CMAKE_SOURCE_DIR}/src/sensor_manager.c
+  ${CMAKE_SOURCE_DIR}/src/log.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_clk.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_gpio.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_adc.c
@@ -74,12 +79,8 @@ set(SRC_C
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_spi.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_usart.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_tim1.c
+  ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_exti.c
 )
-
-#set(SRC_S
-#  ${CMAKE_SOURCE_DIR}/src/startup.s
-#  ${CMAKE_SOURCE_DIR}/src/vectors.s
-#)
 
 set(SRC_ALL ${SRC_C} ${SRC_S})
 
@@ -87,14 +88,24 @@ set(SRC_ALL ${SRC_C} ${SRC_S})
 set(REL_FILES)
 foreach(src ${SRC_ALL})
   get_filename_component(name ${src} NAME_WE)
+  get_filename_component(ext ${src} EXT)
   set(rel ${CMAKE_BINARY_DIR}/${name}.rel)
   list(APPEND REL_FILES ${rel})
-  add_custom_command(
-    OUTPUT ${rel}
-    COMMAND ${SDCC} -c ${CFLAGS} ${src} -o ${rel}
-    DEPENDS ${src}
-    VERBATIM
-  )
+  if(ext STREQUAL ".s" OR ext STREQUAL ".asm")
+    add_custom_command(
+      OUTPUT ${rel}
+      COMMAND ${SDASSTM8} -plosgff -o ${rel} ${src}
+      DEPENDS ${src}
+      VERBATIM
+    )
+  else()
+    add_custom_command(
+      OUTPUT ${rel}
+      COMMAND ${SDCC} -c ${CFLAGS} ${src} -o ${rel}
+      DEPENDS ${src}
+      VERBATIM
+    )
+  endif()
 endforeach()
 
 set(IHX ${CMAKE_BINARY_DIR}/${OUT}.ihx)
