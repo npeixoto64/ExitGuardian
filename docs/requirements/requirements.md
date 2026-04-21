@@ -213,7 +213,7 @@ In case the gateway is in pairing/unpairing mode of operation and the push butto
 ```
 
 ```{req} Known sensor ID pairing request handling
-:id: FR_017
+:id: FR_018
 :status: approved
 :component: gateway
 
@@ -221,7 +221,7 @@ In case a pairing request from an existing sensor ID is received in pairing/unpa
 ```
 
 ```{req} Remove a sensor confirmation
-:id: FR_018
+:id: FR_019
 :status: approved
 :component: gateway
 
@@ -229,7 +229,7 @@ In case an unpairing request from a konwn sensor ID is received in pairing/unpai
 ```
 
 ```{req} Unknown sensor ID unpairing request handling
-:id: FR_017
+:id: FR_020
 :status: approved
 :component: gateway
 
@@ -237,7 +237,7 @@ In case an unpairing request from a new sensor ID is received in pairing/unpairi
 ```
 
 ```{req} Indicate sensor low battery via yellow + blue sync
-:id: FR_020
+:id: FR_021
 :status: approved
 :component: gateway
 
@@ -288,7 +288,7 @@ The sensor battery life shall be at least 3 years.
 ```
 
 ```{req} Buzzer level 85–95 dB at 1 m
-:id: NFR_005
+:id: NFR_004
 :status: approved
 :component: gateway
 
@@ -296,7 +296,7 @@ The buzzer acoustic level shall be ~85–95 dB at 1 m to ensure usability.
 ```
 
 ```{req} Watchdog for hard reset
-:id: NFR_008
+:id: NFR_005
 :status: approved
 :component: gateway
 
@@ -304,7 +304,7 @@ The gateway shall have a watchdog to perform a hard RESET in case of issues dete
 ```
 
 ```{req} Pairing and unpairing supported
-:id: NFR_009
+:id: NFR_006
 :status: approved
 :component: gateway
 
@@ -312,7 +312,7 @@ The gateway shall allow pairing and unpairing of sensors.
 ```
 
 ```{req} User config via button + LEDs
-:id: NFR_012
+:id: NFR_007
 :status: approved
 :component: gateway
 
@@ -320,7 +320,7 @@ End-user configuration shall be performed via a push button and three LEDs.
 ```
 
 ```{req} Stable sensor list in NVM
-:id: NFR_013
+:id: NFR_008
 :status: approved
 :component: gateway
 
@@ -330,7 +330,7 @@ The gateway shall maintain a stable list of paired sensors and their status in n
 ```
 
 ```{req} Persist sensor status in NVM
-:id: NFR_014
+:id: NFR_009
 :status: approved
 :component: gateway
 
