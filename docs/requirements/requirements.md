@@ -18,12 +18,12 @@
 The system shall be composed of one or more wireless sensors and a gateway.
 ```
 
-```{req} Sensor reports window status
+```{req} Sensor reports window/outside-door status
 :id: SR_002
 :status: approved
 :component: sensor
 
-The wireless sensors shall send the status of the window to the gateway upon an open or close event.
+The wireless sensors shall send the status of the monitored opening (window or outside door) to the gateway upon an open or close event.
 ```
 
 ```{req} Sensor powered by replaceable battery
@@ -71,7 +71,18 @@ The gateway shall have three LEDs (blue, yellow, and red) to indicate its status
 :status: approved
 :component: gateway
 
-The gateway shall use LEDs to indicate: heartbeat (blue), sensors low-battery status (yellow), waiting-for-configuration and alert (red).
+The gateway shall use LEDs to indicate:
+  - heartbeat — blue;
+  - sensors low-battery condition — yellow (in monitoring mode);
+  - waiting-for-configuration and active alert — red.
+```
+
+```{req} Gateway main-door sensor
+:id: SR_009
+:status: approved
+:component: gateway
+
+The gateway shall include an integrated sensor capable of detecting open and close events of the main exit door on which it is installed.
 ```
 
 ## 3. System Functional Requirements
@@ -140,12 +151,12 @@ In waiting-for-configuration mode, the red LED shall remain ON continuously.
 After a factory RESET event, the gateway shall enter waiting-for-configuration mode of operation.
 ```
 
-```{req} Normal mode when a sensor is added
+```{req} Monitoring mode when a sensor is added
 :id: FR_009
 :status: approved
 :component: gateway
 
-When at least one sensor is added to the gateway, it shall switch to normal operation mode, and the red LED shall turn OFF.
+When at least one sensor is paired to the gateway, the gateway shall switch to monitoring mode and the red LED shall turn OFF.
 ```
 
 ```{req} Monitor main door open/close
@@ -161,12 +172,10 @@ In monitoring mode, the gateway shall detect open and close events of the main d
 :status: approved
 :component: system
 
-In monitoring mode of operation, the gateway shall evaluate window states whenever the main door changes state:
-  - If the main door is **opened**:
-    - If one or more windows are **OPEN** → the gateway shall trigger an alert while the door remains open.
-    - If **all windows are CLOSED** → the gateway shall not trigger any kind of alert.
-  - If the main door is **closed**:
-    - The gateway shall immediately suspend any active alert, regardless of the window states.
+In monitoring mode of operation, the gateway shall re-evaluate the alert condition whenever the main door changes state **or** any paired sensor reports a state change:
+  - If the main door is **OPEN** and one or more paired sensors report **OPEN** → the gateway shall maintain an active alert.
+  - If the main door is **OPEN** and all paired sensors report **CLOSED** → the gateway shall not trigger an alert (and shall suspend any active alert).
+  - If the main door is **CLOSED** → the gateway shall immediately suspend any active alert, regardless of the sensor states.
 ```
 
 ```{req} Alert signal pattern
@@ -174,19 +183,23 @@ In monitoring mode of operation, the gateway shall evaluate window states whenev
 :status: approved
 :component: gateway
 
-The alert signal shall consist of single buzzer beep, for 1 second, and the red LED flashing every 200 ms with a 50% duty cycle.
+While the alert condition (FR_011) is active, the gateway shall produce a continuous alert signal consisting of:
+  - a buzzer beep of 2 s ON followed by OFF; and
+  - the red LED flashing every 200 ms with a 50% duty cycle.
+
+When the alert condition is no longer active, the buzzer shall be silenced and the red LED shall return to the indication corresponding to the current operating mode.
 ```
 
-```{req} Push button press enters pairing/unpairing mode
-:id: FR_014
+```{req} Push button short press enters pairing/unpairing mode
+:id: FR_013
 :status: approved
 :component: gateway
 
-If the gateway is in monitoring or waiting-for-configuration mode of operation and its push button is pressed once, the gateway shall enter in pairing/unpairing mode of operation.
+If the gateway is in monitoring or waiting-for-configuration mode of operation and its push button is pressed and released within less than 5 seconds (short press), the gateway shall enter pairing/unpairing mode of operation. The discriminator between this short press and the long press defined in FR_021 is the press duration at the moment of release.
 ```
 
 ```{req} Pairing/unpairing mode indicators and timeout
-:id: FR_015
+:id: FR_014
 :status: approved
 :component: gateway
 
@@ -194,15 +207,15 @@ In pairing/unpairing mode of operation, the gateway shall wait up to 20 seconds 
 ```
 
 ```{req} Button press exits pairing/unpairing mode
-:id: FR_016
+:id: FR_015
 :status: approved
 :component: gateway
 
-In case the gateway is in pairing/unpairing mode of operation and the push button is pressed once the gateway exits the pairing/unpairing mode.
+If the gateway is in pairing/unpairing mode of operation and the push button is short-pressed once, the gateway shall exit pairing/unpairing mode and return to its previous mode of operation (waiting-for-configuration if no sensors are paired, otherwise monitoring).
 ```
 
 ```{req} Pair sensor confirmation
-:id: FR_017
+:id: FR_016
 :status: approved
 :component: gateway
 
@@ -210,7 +223,7 @@ In case a pairing request from a new sensor ID is received in pairing/unpairing 
 ```
 
 ```{req} Known sensor ID pairing request handling
-:id: FR_018
+:id: FR_017
 :status: approved
 :component: gateway
 
@@ -218,7 +231,7 @@ In case a pairing request from an existing sensor ID is received in pairing/unpa
 ```
 
 ```{req} Unpair sensor confirmation
-:id: FR_019
+:id: FR_018
 :status: approved
 :component: gateway
 
@@ -226,15 +239,15 @@ In case an unpairing request from a known sensor ID is received in pairing/unpai
 ```
 
 ```{req} Unknown sensor ID unpairing request handling
-:id: FR_020
+:id: FR_019
 :status: approved
 :component: gateway
 
-In case an unpairing request from a new sensor ID is received in pairing/unpairing mode of operation, the gateway shall ignore it and exit pairing/unpairing mode of operation.
+In case an unpairing request from an unknown (non-paired) sensor ID is received in pairing/unpairing mode of operation, the gateway shall ignore it and exit pairing/unpairing mode of operation.
 ```
 
 ```{req} Indicate sensor low battery via yellow + blue sync
-:id: FR_021
+:id: FR_020
 :status: approved
 :component: gateway
 
@@ -243,7 +256,7 @@ If any sensor reports a low battery, the gateway shall indicate this condition b
 ```
 
 ```{req} Long-press triggers factory reset
-:id: FR_022
+:id: FR_021
 :status: approved
 :component: gateway
 
@@ -251,7 +264,7 @@ If the gateway push button is pressed for more than 5 seconds, all LEDs shall st
 ```
 
 ```{req} Post-reset has no paired sensors
-:id: FR_023
+:id: FR_022
 :status: approved
 :component: gateway
 
@@ -321,9 +334,7 @@ End-user configuration shall be performed via a push button and three LEDs.
 :status: approved
 :component: gateway
 
-The gateway shall maintain a stable list of paired sensors and their status in non-volatile memory (NVM) to ensure consistent operation after power loss.
-  - The system shall not require the user to track individual sensor numbers for maintenance.
-  - When a low-battery condition is reported by a sensor, the user is instructed to check each sensor through its push button.
+The gateway shall maintain the list of paired sensors in non-volatile memory (NVM) so that pairings are preserved across power loss and resets (other than factory RESET, see FR_022).
 ```
 
 ```{req} Persist sensor status in NVM
@@ -331,7 +342,7 @@ The gateway shall maintain a stable list of paired sensors and their status in n
 :status: approved
 :component: gateway
 
-The gateway shall save the status of each sensor in NVM (Non-volatile Memory).
+The gateway shall persist, in NVM, for each paired sensor, at least: unique identifier, last reported open/close state, and last reported battery status, so that operation resumes consistently after power loss.
 ```
 
 ## 5. System Assumptions & Constraints
@@ -376,7 +387,7 @@ Product must comply with EU Battery Directive for labeling and recycling.
 
 ## 7. Open Issues
 
-- None.
+- Behaviour upon loss of communication with a paired sensor (e.g., RF link timeout, sensor failure) is not yet specified. To be defined in a future revision.
 
 ## 8. Traceability
 
