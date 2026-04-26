@@ -39,7 +39,7 @@ The wireless sensors shall be powered by a replaceable battery.
 :status: approved
 :component: gateway
 
-The gateway shall be powered by a AC-DC powwer supply, 230 V AC to 5 V DC.
+The gateway shall be powered by an AC-DC power supply, 230 V AC to 5 V DC.
 ```
 
 ```{req} Gateway buzzer
@@ -55,7 +55,7 @@ The gateway shall have a buzzer.
 :status: approved
 :component: gateway
 
-The gateway shall have a button to allow a hard factory reset and to pair/unpair wireless sensors.
+The gateway shall have a push button to allow a hard factory reset and to pair/unpair the sensors.
 ```
 
 ```{req} Gateway LEDs
@@ -71,7 +71,7 @@ The gateway shall have three LEDs (blue, yellow, and red) to indicate its status
 :status: approved
 :component: gateway
 
-The gateway shall use LEDs to indicate: heartbeat (blue), sensors low-battery status (yellow), waiting-for-configuration (red). Detailed behavior is defined in the FR section.
+The gateway shall use LEDs to indicate: heartbeat (blue), sensors low-battery status (yellow), waiting-for-configuration and alert (red).
 ```
 
 ## 3. System Functional Requirements
@@ -81,7 +81,7 @@ The gateway shall use LEDs to indicate: heartbeat (blue), sensors low-battery st
 :status: approved
 :component: sensor
 
-When a window is opened or closed, the sensor shall send a data packet to the gateway via RF.
+When a window is opened or closed, the sensor shall send a data packet to the gateway, through RF.
 ```
 
 ```{req} Sensor packet includes battery and event
@@ -89,7 +89,7 @@ When a window is opened or closed, the sensor shall send a data packet to the ga
 :status: approved
 :component: sensor
 
-The sensor data packet shall include the battery status and the event type (open or close).
+The sensor data packet shall include the identifier, battery status and the event type (open, close, pair or unpair request).
 ```
 
 ```{req} Unique sensor ID
@@ -100,7 +100,7 @@ The sensor data packet shall include the battery status and the event type (open
 Each sensor shall have a unique identifier (ID).
 ```
 
-```{req} blue LED heartbeat
+```{req} Blue LED heartbeat
 :id: FR_004
 :status: approved
 :component: gateway
@@ -132,7 +132,7 @@ The gateway shall enter waiting-for-configuration mode when there are no paired 
 In waiting-for-configuration mode, the red LED shall remain ON continuously.
 ```
 
-```{req} Reset factory settings leads to waiting-for-configuration mode
+```{req} Factory reset enters waiting-for-configuration mode
 :id: FR_008
 :status: approved
 :component: gateway
@@ -177,7 +177,7 @@ In monitoring mode of operation, the gateway shall evaluate window states whenev
 The alert signal shall consist of single buzzer beep, for 1 second, and the red LED flashing every 200 ms with a 50% duty cycle.
 ```
 
-```{req} Button press enters pairing/unpairing mode
+```{req} Push button press enters pairing/unpairing mode
 :id: FR_014
 :status: approved
 :component: gateway
@@ -193,7 +193,7 @@ If the gateway is in monitoring or waiting-for-configuration mode of operation a
 In pairing/unpairing mode of operation, the gateway shall wait up to 20 seconds for a sensor add or remove packet. During this period, the yellow LED shall flash every 500 ms with a 50% duty cycle, and the buzzer shall beep every second.
 ```
 
-```{req} Pairing/unpairing mode
+```{req} Button press exits pairing/unpairing mode
 :id: FR_016
 :status: approved
 :component: gateway
@@ -201,15 +201,12 @@ In pairing/unpairing mode of operation, the gateway shall wait up to 20 seconds 
 In case the gateway is in pairing/unpairing mode of operation and the push button is pressed once the gateway exits the pairing/unpairing mode.
 ```
 
-```{req} Add new sensor confirmation
+```{req} Pair sensor confirmation
 :id: FR_017
 :status: approved
 :component: gateway
 
 In case a pairing request from a new sensor ID is received in pairing/unpairing mode of operation, the gateway shall add it to the monitored sensors list, turn the yellow LED OFF, sound the buzzer continuously for 2 seconds and exit pairing/unpairing mode of operation.
-```
-
-In case the gateway is in pairing/unpairing mode of operation and the push button is pressed once the gateway exits the pairing/unpairing mode.
 ```
 
 ```{req} Known sensor ID pairing request handling
@@ -220,12 +217,12 @@ In case the gateway is in pairing/unpairing mode of operation and the push butto
 In case a pairing request from an existing sensor ID is received in pairing/unpairing mode of operation, the gateway shall ignore it and exit pairing/unpairing mode of operation.
 ```
 
-```{req} Remove a sensor confirmation
+```{req} Unpair sensor confirmation
 :id: FR_019
 :status: approved
 :component: gateway
 
-In case an unpairing request from a konwn sensor ID is received in pairing/unpairing mode of operation, the gateway shall remove it from the monitored sensors list, turn the yellow LED OFF, sound the buzzer continuously for 2 seconds and exit pairing/unpairing mode of operation.
+In case an unpairing request from a known sensor ID is received in pairing/unpairing mode of operation, the gateway shall remove it from the monitored sensors list, turn the yellow LED OFF, sound the buzzer continuously for 2 seconds and exit pairing/unpairing mode of operation.
 ```
 
 ```{req} Unknown sensor ID unpairing request handling
@@ -250,7 +247,7 @@ If any sensor reports a low battery, the gateway shall indicate this condition b
 :status: approved
 :component: gateway
 
-If the gateway push button is pressed for more than 5 seconds, all LEDs shall start flashing; when the push button is released, a factory RESET shall occurs.
+If the gateway push button is pressed for more than 5 seconds, all LEDs shall start flashing every 200 ms, 50% duty-cycle; when the push button is released, a factory RESET shall occur.
 ```
 
 ```{req} Post-reset has no paired sensors
@@ -326,7 +323,7 @@ End-user configuration shall be performed via a push button and three LEDs.
 
 The gateway shall maintain a stable list of paired sensors and their status in non-volatile memory (NVM) to ensure consistent operation after power loss.
   - The system shall not require the user to track individual sensor numbers for maintenance.
-  - When a low-battery condition is reported by a sensor, the user is instructed to check each sensor through sesnor push button.
+  - When a low-battery condition is reported by a sensor, the user is instructed to check each sensor through its push button.
 ```
 
 ```{req} Persist sensor status in NVM
@@ -334,7 +331,7 @@ The gateway shall maintain a stable list of paired sensors and their status in n
 :status: approved
 :component: gateway
 
-The gateway shall save the status of each sensor in NvM (Non-volatile Memory).
+The gateway shall save the status of each sensor in NVM (Non-volatile Memory).
 ```
 
 ## 5. System Assumptions & Constraints
