@@ -68,6 +68,7 @@ endif()
 # ---- Sources
 set(SRC_C
   ${CMAKE_SOURCE_DIR}/src/main.c
+  ${CMAKE_SOURCE_DIR}/src/board.c
   ${CMAKE_SOURCE_DIR}/src/cc1101.c
   ${CMAKE_SOURCE_DIR}/src/feram.c
   ${CMAKE_SOURCE_DIR}/src/sensor_manager.c
@@ -79,6 +80,7 @@ set(SRC_C
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_spi.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_usart.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_tim1.c
+  ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_tim4.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_exti.c
 )
 

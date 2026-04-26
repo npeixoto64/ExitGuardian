@@ -1,206 +1,91 @@
 #include <stdint.h>
 #include <stdio.h>
-#include "stm8l15x_clk.h"
 #include "stm8l15x_gpio.h"
-#include "stm8l15x_adc.h"
-#include "stm8l15x_i2c.h"
-#include "stm8l15x_spi.h"
-#include "stm8l15x_usart.h"
-#include "stm8l15x_tim1.h"
 #include "stm8l15x_exti.h"
+#include "board.h"
 #include "cc1101.h"
 #include "feram.h"
 #include "log.h"
 
-/* LED aliases */
-#define LED_R_PORT   GPIOA
-#define LED_R_PIN    GPIO_Pin_4
-#define LED_Y_PORT   GPIOA
-#define LED_Y_PIN    GPIO_Pin_3
-#define LED_B_PORT   GPIOA
-#define LED_B_PIN    GPIO_Pin_2
+static volatile uint8_t  g_irq_cc1101_flag = 0;
+static volatile uint8_t  g_reed_door_flag  = 0;
 
-/* Input aliases */
-#define IRQ_CC1101_PORT   GPIOD
-#define IRQ_CC1101_PIN    GPIO_Pin_0
-#define IRQ_CC1101_EXTI   EXTI_Pin_0
-#define PUSH_BTN_PORT     GPIOD
-#define PUSH_BTN_PIN      GPIO_Pin_4
-#define PUSH_BTN_EXTI     EXTI_Pin_4
-#define REED_DOOR_PORT    GPIOD
-#define REED_DOOR_PIN     GPIO_Pin_5
-#define REED_DOOR_EXTI    EXTI_Pin_5
+/* Push button state: edges captured in EXTI ISR, processed in main loop. */
+#define BTN_SHORT_PRESS_MAX_MS  2000U   /* release < 2 s -> short press */
+#define BTN_LONG_PRESS_MIN_MS   5000U   /* release >= 5 s -> long press */
 
-static volatile uint8_t g_pd0_went_low_flag = 0;
-static volatile uint8_t g_pd4_went_low_flag = 0;
-static volatile uint8_t g_pd5_went_low_flag = 0;
-
-static void enter_deep_sleep(void)
-{
-  /* Reduce current draw before HALT; wake source is EXTI on PD0. */
-  ADC_Cmd(ADC1, DISABLE);
-  I2C_Cmd(I2C1, DISABLE);
-//  TIM1_Cmd(DISABLE);
-  SPI_Cmd(SPI1, DISABLE);
-  USART_Cmd(USART1, DISABLE);
-
-  enableInterrupts();
-  halt();
-
-  /* Restore peripherals needed by active path after wake-up. */
-  CLK_PeripheralClockConfig(CLK_Peripheral_ADC1, ENABLE);
-  CLK_PeripheralClockConfig(CLK_Peripheral_I2C1, ENABLE);
-  CLK_PeripheralClockConfig(CLK_Peripheral_SPI1, ENABLE);
-  CLK_PeripheralClockConfig(CLK_Peripheral_USART1, ENABLE);
-  CLK_PeripheralClockConfig(CLK_Peripheral_TIM1, ENABLE);
-
-  ADC_Cmd(ADC1, ENABLE);
-  I2C_Cmd(I2C1, ENABLE);
-  SPI_Cmd(SPI1, ENABLE);
-  USART_Cmd(USART1, ENABLE);
-}
+static volatile uint8_t  g_btn_pressed     = 0; /* 1 while button is held */
+static volatile uint8_t  g_btn_release_evt = 0; /* set on release edge   */
+static volatile uint16_t g_btn_press_ms    = 0; /* tick at press edge    */
+static volatile uint16_t g_btn_release_ms  = 0; /* tick at release edge  */
 
 INTERRUPT_HANDLER(EXTI0_IRQHandler, 8)
 {
   if (GPIO_ReadInputDataBit(IRQ_CC1101_PORT, IRQ_CC1101_PIN) == RESET)
   {
-    g_pd0_went_low_flag = 1;
+    g_irq_cc1101_flag = 1;
   }
   EXTI_ClearITPendingBit(EXTI_IT_Pin0);
 }
 
 INTERRUPT_HANDLER(EXTI4_IRQHandler, 12)
 {
+  uint16_t now = board_get_tick_ms();
   if (GPIO_ReadInputDataBit(PUSH_BTN_PORT, PUSH_BTN_PIN) == RESET)
   {
-    g_pd4_went_low_flag = 1;
+    /* Falling edge: press start. */
+    g_btn_pressed  = 1;
+    g_btn_press_ms = now;
+  }
+  else
+  {
+    /* Rising edge: release. */
+    if (g_btn_pressed)
+    {
+      g_btn_pressed     = 0;
+      g_btn_release_ms  = now;
+      g_btn_release_evt = 1;
+    }
   }
   EXTI_ClearITPendingBit(EXTI_IT_Pin4);
+}
+
+INTERRUPT_HANDLER(TIM4_UPD_OVF_TRG_IRQHandler, 25)
+{
+  board_systick_irq();
 }
 
 INTERRUPT_HANDLER(EXTI5_IRQHandler, 13)
 {
   if (GPIO_ReadInputDataBit(REED_DOOR_PORT, REED_DOOR_PIN) == RESET)
   {
-    g_pd5_went_low_flag = 1;
+    g_reed_door_flag = 1;
   }
   EXTI_ClearITPendingBit(EXTI_IT_Pin5);
 }
 
+// Function to handle periodic LED_B ON every 2s for 100ms
+void periodic_ledb_tick(uint16_t now)
+{
+  static uint16_t last_tick = 0;
+  static uint8_t  state = 0;
+  if (!state && (uint16_t)(now - last_tick) >= 2000) {
+    GPIO_SetBits(LED_B_PORT, LED_B_PIN); // Turn ON
+    state = 1;
+    last_tick = now;
+  }
+  if (state && (uint16_t)(now - last_tick) >= 100) {
+    GPIO_ResetBits(LED_B_PORT, LED_B_PIN); // Turn OFF
+    state = 0;
+    // Do not update last_tick here
+  }
+}
+
 int main(void)
 {
-    //Configure clock to 16 MHz (HSI with divider 1)
-    CLK_HSICmd(ENABLE);
-    while (CLK_GetFlagStatus(CLK_FLAG_HSIRDY) == RESET);
-    CLK_SYSCLKSourceConfig(CLK_SYSCLKSource_HSI);
-    CLK_SYSCLKDivConfig(CLK_SYSCLKDiv_1);
-
-    // Configure not used pins as input pins with pull-up
-    GPIO_Init(GPIOA, GPIO_Pin_5, GPIO_Mode_In_PU_No_IT);
-    GPIO_Init(GPIOB, GPIO_Pin_0, GPIO_Mode_In_PU_No_IT);
-    GPIO_Init(GPIOB, GPIO_Pin_1, GPIO_Mode_In_PU_No_IT);
-    GPIO_Init(GPIOB, GPIO_Pin_2, GPIO_Mode_In_PU_No_IT);
-    GPIO_Init(GPIOB, GPIO_Pin_3, GPIO_Mode_In_PU_No_IT);
-    GPIO_Init(GPIOC, GPIO_Pin_5, GPIO_Mode_In_PU_No_IT);
-    GPIO_Init(GPIOC, GPIO_Pin_6, GPIO_Mode_In_PU_No_IT);
-    GPIO_Init(GPIOD, GPIO_Pin_6, GPIO_Mode_In_PU_No_IT);
-
-    // Configure PA6 as ADC input (floating input)
-    GPIO_Init(GPIOA, GPIO_Pin_6, GPIO_Mode_In_FL_No_IT);
-
-    // // Configure PC0 as SDA and PC1 as SCL for I2C (open-drain)
-    GPIO_Init(GPIOC, GPIO_Pin_0, GPIO_Mode_Out_OD_HiZ_Fast);
-    GPIO_Init(GPIOC, GPIO_Pin_1, GPIO_Mode_Out_OD_HiZ_Fast);
-
-    // Configure PB4-PB7 as SPI (PB4 NSS, PB5 SCK, PB6 MISO, PB7 MOSI)
-    GPIO_Init(GPIOB, GPIO_Pin_4, GPIO_Mode_Out_PP_High_Fast);   // NSS
-    GPIO_Init(GPIOB, GPIO_Pin_5, GPIO_Mode_Out_PP_High_Fast);   // SCK
-    GPIO_Init(GPIOB, GPIO_Pin_6, GPIO_Mode_Out_PP_High_Fast);   // MOSI
-    GPIO_Init(GPIOB, GPIO_Pin_7, GPIO_Mode_In_FL_No_IT);        // MISO
-
-    // Configure PC2 and PC3 as UART (PC2 TX, PC3 RX)
-    GPIO_Init(GPIOC, GPIO_Pin_2, GPIO_Mode_Out_PP_High_Fast); // TX
-    GPIO_Init(GPIOC, GPIO_Pin_3, GPIO_Mode_In_FL_No_IT);      // RX
-
-    // Configure PD7 and PD2 as differential PWM (TIM1 CH1 and CH1N)
-    GPIO_Init(GPIOD, GPIO_Pin_7, GPIO_Mode_Out_PP_High_Fast); // TIM1_CH1
-    GPIO_Init(GPIOD, GPIO_Pin_2, GPIO_Mode_Out_PP_High_Fast); // TIM1_CH1N
-
-    // Configure PD0, PD4 and PD5 as inputs floating with interrupt
-    GPIO_Init(IRQ_CC1101_PORT, IRQ_CC1101_PIN, GPIO_Mode_In_FL_IT);
-    GPIO_Init(PUSH_BTN_PORT, PUSH_BTN_PIN, GPIO_Mode_In_FL_IT);
-    GPIO_Init(REED_DOOR_PORT, REED_DOOR_PIN, GPIO_Mode_In_FL_IT);
-
-    // Configure EXTI for PD0, PD4, PD5 (falling edge trigger)
-    EXTI_SetPinSensitivity(IRQ_CC1101_EXTI, EXTI_Trigger_Falling);
-    EXTI_SetPinSensitivity(PUSH_BTN_EXTI, EXTI_Trigger_Falling);
-    EXTI_SetPinSensitivity(REED_DOOR_EXTI, EXTI_Trigger_Falling);
-
-    // Configure PA2, PA3, PA4, PC4 as push-pull outputs
-    GPIO_Init(LED_B_PORT, LED_B_PIN, GPIO_Mode_Out_PP_Low_Fast);
-    GPIO_Init(LED_Y_PORT, LED_Y_PIN, GPIO_Mode_Out_PP_Low_Fast);
-    GPIO_Init(LED_R_PORT, LED_R_PIN, GPIO_Mode_Out_PP_Low_Fast);
-    GPIO_Init(GPIOC, GPIO_Pin_4, GPIO_Mode_Out_PP_Low_Fast);
-
-    GPIO_ResetBits(LED_B_PORT, LED_B_PIN);
-    GPIO_ResetBits(LED_Y_PORT, LED_Y_PIN);
-    GPIO_SetBits(LED_R_PORT, LED_R_PIN);
-    GPIO_ResetBits(GPIOC, GPIO_Pin_4);
-
-    // Configure ADC for PA6 (Channel 6)
-    CLK_PeripheralClockConfig(CLK_Peripheral_ADC1, ENABLE);
-    ADC_DeInit(ADC1);
-    ADC_Init(ADC1, ADC_ConversionMode_Single, ADC_Resolution_12Bit, ADC_Prescaler_2);
-    ADC_SamplingTimeConfig(ADC1, ADC_Group_SlowChannels, ADC_SamplingTime_384Cycles);
-    ADC_Cmd(ADC1, ENABLE);
-    ADC_ChannelCmd(ADC1, ADC_Channel_6, ENABLE);
-
-    // Configure I2C for PC0 (SDA) and PC1 (SCL)
-    CLK_PeripheralClockConfig(CLK_Peripheral_I2C1, ENABLE);
-    I2C_DeInit(I2C1);
-    I2C_Init(I2C1, 400000, 0x00, I2C_Mode_I2C, I2C_DutyCycle_2, I2C_Ack_Enable, I2C_AcknowledgedAddress_7bit);
-    I2C_Cmd(I2C1, ENABLE);
-
-    // Configure SPI for PB4-PB7
-    CLK_PeripheralClockConfig(CLK_Peripheral_SPI1, ENABLE);
-    SPI_DeInit(SPI1);
-    SPI_Init(SPI1, SPI_FirstBit_MSB, SPI_BaudRatePrescaler_16, SPI_Mode_Master,
-            SPI_CPOL_Low, SPI_CPHA_1Edge, SPI_Direction_2Lines_FullDuplex,
-            SPI_NSS_Soft, 7);
-    SPI_Cmd(SPI1, ENABLE);
-
-    // Configure USART for PC2 (TX) and PC3 (RX)
-    CLK_PeripheralClockConfig(CLK_Peripheral_USART1, ENABLE);
-    USART_DeInit(USART1);
-    USART_Init(USART1, (uint32_t)9600, USART_WordLength_8b, USART_StopBits_1,
-                USART_Parity_No, (USART_Mode_TypeDef)(USART_Mode_Tx | USART_Mode_Rx));
-    USART_Cmd(USART1, ENABLE);
-
-    // Configure TIM1 for differential PWM on PD7 (CH1) and PD2 (CH1N)
-    CLK_PeripheralClockConfig(CLK_Peripheral_TIM1, ENABLE);
-    TIM1_DeInit();
-    TIM1_TimeBaseInit(7U, TIM1_CounterMode_Up, 1000U, 0U);
-    TIM1_OC1Init(TIM1_OCMode_PWM1,
-           TIM1_OutputState_Enable,
-           TIM1_OutputNState_Enable,
-           500U,
-           TIM1_OCPolarity_High,
-           TIM1_OCNPolarity_High,
-           TIM1_OCIdleState_Reset,
-           TIM1_OCNIdleState_Reset);
-    TIM1_OC1PreloadConfig(ENABLE);
-    TIM1_BDTRConfig(TIM1_OSSIState_Disable,
-            TIM1_LockLevel_Off,
-            0x10U,
-            TIM1_BreakState_Disable,
-            TIM1_BreakPolarity_Low,
-            TIM1_AutomaticOutput_Disable);
-    TIM1_CtrlPWMOutputs(ENABLE);
-
-    // Enable global interrupts
+    board_init();
     enableInterrupts();
 
-    // Configure CC1101 radio for RX mode
     cc1101_config_gfsk_433_rx_fixed(5);
 
     uint8_t status = 0;
@@ -208,32 +93,57 @@ int main(void)
     char buffer[64];
     uint8_t buzzer_toggle_flag = 0;
 
+
+    // State for periodic LED_B
+    uint16_t ledb_tick = 0;
+    uint8_t  ledb_on = 0;
+
     while (1) {
-        if (g_pd0_went_low_flag)
-        {
-            // Reception concluded
-            g_pd0_went_low_flag = 0;
+      uint16_t now = board_get_tick_ms();
 
-            cc1101_recv_msg(&chip_id, &status);
+      periodic_ledb_tick(now);
 
-            GPIO_ToggleBits(LED_B_PORT, LED_B_PIN);
+      if (g_irq_cc1101_flag)
+      {
+        g_irq_cc1101_flag = 0;
 
-            buzzer_toggle_flag ^= 1U;
-            if (buzzer_toggle_flag != 0U) {
-              TIM1_Cmd(ENABLE);
-            } else {
-              TIM1_Cmd(DISABLE);
-            }
+        cc1101_recv_msg(&chip_id, &status);
 
-            // Send UART message with chip id and status
-            sprintf(buffer, "\r\nTransmitter Chip ID: %lx", chip_id);
-            send_string(buffer);
-            sprintf(buffer, "; status: %lu", (uint32_t)status);
-            send_string(buffer);
-        }
-        // else
-        // {
-        //     //enter_deep_sleep();
-        // }
+        buzzer_toggle_flag ^= 1U;
+        board_buzzer(buzzer_toggle_flag);
+
+        sprintf(buffer, "\r\nTransmitter Chip ID: %lx", chip_id);
+        send_string(buffer);
+        sprintf(buffer, "; status: %lu", (uint32_t)status);
+        send_string(buffer);
+      }
+
+    //   if (g_btn_release_evt)
+    //   {
+    //     uint16_t press_ms;
+    //     uint16_t release_ms;
+
+    //     __asm__("push cc\n\tsim");
+    //     press_ms          = g_btn_press_ms;
+    //     release_ms        = g_btn_release_ms;
+    //     g_btn_release_evt = 0;
+    //     __asm__("pop cc");
+
+    //     uint16_t held_ms = (uint16_t)(release_ms - press_ms);
+
+    //     if (held_ms < BTN_SHORT_PRESS_MAX_MS)
+    //     {
+    //        /* Short press: release in < 2 s. */
+    //        GPIO_ToggleBits(LED_Y_PORT, LED_Y_PIN);
+    //        send_string("\r\nBTN: short press");
+    //      }
+    //      else if (held_ms >= BTN_LONG_PRESS_MIN_MS)
+    //      {
+    //        /* Long press: release after >= 5 s. */
+    //        GPIO_ToggleBits(LED_R_PORT, LED_R_PIN);
+    //        send_string("\r\nBTN: long press");
+    //      }
+    //     /* 2 s..5 s window is intentionally ignored. */
+    //   }
     }
 }
