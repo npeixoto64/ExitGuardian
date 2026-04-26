@@ -12,7 +12,28 @@
 #include "feram.h"
 #include "log.h"
 
+/* LED aliases */
+#define LED_R_PORT   GPIOA
+#define LED_R_PIN    GPIO_Pin_4
+#define LED_Y_PORT   GPIOA
+#define LED_Y_PIN    GPIO_Pin_3
+#define LED_B_PORT   GPIOA
+#define LED_B_PIN    GPIO_Pin_2
+
+/* Input aliases */
+#define IRQ_CC1101_PORT   GPIOD
+#define IRQ_CC1101_PIN    GPIO_Pin_0
+#define IRQ_CC1101_EXTI   EXTI_Pin_0
+#define PUSH_BTN_PORT     GPIOD
+#define PUSH_BTN_PIN      GPIO_Pin_4
+#define PUSH_BTN_EXTI     EXTI_Pin_4
+#define REED_DOOR_PORT    GPIOD
+#define REED_DOOR_PIN     GPIO_Pin_5
+#define REED_DOOR_EXTI    EXTI_Pin_5
+
 static volatile uint8_t g_pd0_went_low_flag = 0;
+static volatile uint8_t g_pd4_went_low_flag = 0;
+static volatile uint8_t g_pd5_went_low_flag = 0;
 
 static void enter_deep_sleep(void)
 {
@@ -41,11 +62,29 @@ static void enter_deep_sleep(void)
 
 INTERRUPT_HANDLER(EXTI0_IRQHandler, 8)
 {
-  if (GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_0) == RESET)
+  if (GPIO_ReadInputDataBit(IRQ_CC1101_PORT, IRQ_CC1101_PIN) == RESET)
   {
     g_pd0_went_low_flag = 1;
   }
   EXTI_ClearITPendingBit(EXTI_IT_Pin0);
+}
+
+INTERRUPT_HANDLER(EXTI4_IRQHandler, 12)
+{
+  if (GPIO_ReadInputDataBit(PUSH_BTN_PORT, PUSH_BTN_PIN) == RESET)
+  {
+    g_pd4_went_low_flag = 1;
+  }
+  EXTI_ClearITPendingBit(EXTI_IT_Pin4);
+}
+
+INTERRUPT_HANDLER(EXTI5_IRQHandler, 13)
+{
+  if (GPIO_ReadInputDataBit(REED_DOOR_PORT, REED_DOOR_PIN) == RESET)
+  {
+    g_pd5_went_low_flag = 1;
+  }
+  EXTI_ClearITPendingBit(EXTI_IT_Pin5);
 }
 
 int main(void)
@@ -88,22 +127,24 @@ int main(void)
     GPIO_Init(GPIOD, GPIO_Pin_2, GPIO_Mode_Out_PP_High_Fast); // TIM1_CH1N
 
     // Configure PD0, PD4 and PD5 as inputs floating with interrupt
-    GPIO_Init(GPIOD, GPIO_Pin_0, GPIO_Mode_In_FL_IT);
-    //GPIO_Init(GPIOD, GPIO_Pin_5, GPIO_Mode_In_FL_IT);
-    //GPIO_Init(GPIOD, GPIO_Pin_4, GPIO_Mode_In_FL_IT);
+    GPIO_Init(IRQ_CC1101_PORT, IRQ_CC1101_PIN, GPIO_Mode_In_FL_IT);
+    GPIO_Init(PUSH_BTN_PORT, PUSH_BTN_PIN, GPIO_Mode_In_FL_IT);
+    GPIO_Init(REED_DOOR_PORT, REED_DOOR_PIN, GPIO_Mode_In_FL_IT);
 
-    // Configure EXTI for PD0 (falling edge trigger)
-    EXTI_SetPinSensitivity(EXTI_Pin_0, EXTI_Trigger_Falling);
+    // Configure EXTI for PD0, PD4, PD5 (falling edge trigger)
+    EXTI_SetPinSensitivity(IRQ_CC1101_EXTI, EXTI_Trigger_Falling);
+    EXTI_SetPinSensitivity(PUSH_BTN_EXTI, EXTI_Trigger_Falling);
+    EXTI_SetPinSensitivity(REED_DOOR_EXTI, EXTI_Trigger_Falling);
 
     // Configure PA2, PA3, PA4, PC4 as push-pull outputs
-    GPIO_Init(GPIOA, GPIO_Pin_2, GPIO_Mode_Out_PP_Low_Fast);
-    GPIO_Init(GPIOA, GPIO_Pin_3, GPIO_Mode_Out_PP_Low_Fast);
-    GPIO_Init(GPIOA, GPIO_Pin_4, GPIO_Mode_Out_PP_Low_Fast);
+    GPIO_Init(LED_B_PORT, LED_B_PIN, GPIO_Mode_Out_PP_Low_Fast);
+    GPIO_Init(LED_Y_PORT, LED_Y_PIN, GPIO_Mode_Out_PP_Low_Fast);
+    GPIO_Init(LED_R_PORT, LED_R_PIN, GPIO_Mode_Out_PP_Low_Fast);
     GPIO_Init(GPIOC, GPIO_Pin_4, GPIO_Mode_Out_PP_Low_Fast);
 
-    GPIO_ResetBits(GPIOA, GPIO_Pin_2);
-    GPIO_ResetBits(GPIOA, GPIO_Pin_3);
-    GPIO_SetBits(GPIOA, GPIO_Pin_4);
+    GPIO_ResetBits(LED_B_PORT, LED_B_PIN);
+    GPIO_ResetBits(LED_Y_PORT, LED_Y_PIN);
+    GPIO_SetBits(LED_R_PORT, LED_R_PIN);
     GPIO_ResetBits(GPIOC, GPIO_Pin_4);
 
     // Configure ADC for PA6 (Channel 6)
@@ -175,22 +216,24 @@ int main(void)
 
             cc1101_recv_msg(&chip_id, &status);
 
-            GPIO_ToggleBits(GPIOA, GPIO_Pin_2);
+            GPIO_ToggleBits(LED_B_PORT, LED_B_PIN);
 
             buzzer_toggle_flag ^= 1U;
-            // if (buzzer_toggle_flag != 0U) {
-            //   TIM1_Cmd(ENABLE);
-            // } else {
-            //   TIM1_Cmd(DISABLE);
-            // }
+            if (buzzer_toggle_flag != 0U) {
+              TIM1_Cmd(ENABLE);
+            } else {
+              TIM1_Cmd(DISABLE);
+            }
 
             // Send UART message with chip id and status
             sprintf(buffer, "\r\nTransmitter Chip ID: %lx", chip_id);
             send_string(buffer);
             sprintf(buffer, "; status: %lu", (uint32_t)status);
             send_string(buffer);
-          } else {
-            enter_deep_sleep();
         }
+        // else
+        // {
+        //     //enter_deep_sleep();
+        // }
     }
 }
