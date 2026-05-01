@@ -12,7 +12,7 @@ static volatile uint8_t  g_irq_cc1101_flag = 0;
 /* Push button state: edges captured in EXTI ISR, processed in main loop. */
 #define BTN_DEBOUNCE_MS         50U     /* ignore edges shorter than this */
 #define REED_DEBOUNCE_MS        20U     /* ignore edges shorter than this */
-#define BTN_SHORT_PRESS_MAX_MS  2000U   /* release < 2 s -> short press  */
+#define BTN_SHORT_PRESS_MAX_MS  1000U   /* release < 1 s -> short press  */
 #define BTN_LONG_PRESS_MIN_MS   5000U   /* release >= 5 s -> long press  */
 
 #define LEDB_PERIOD_MS   2000U  /* LED_B blink period */
@@ -22,6 +22,8 @@ static volatile uint8_t  g_btn_down_evt         = 0;
 static volatile uint8_t  g_btn_up_evt           = 0;
 static volatile uint16_t g_btn_debounce_ms      = 0;
 static volatile uint8_t  btn_handle_debounce    = 0;
+static volatile uint16_t g_btn_down_ms          = 0;
+static volatile uint8_t  g_btn_long_press_evt   = 0;
 
 static volatile uint8_t  g_reed_close_evt       = 0;
 static volatile uint8_t  g_reed_open_evt        = 0;
@@ -183,13 +185,48 @@ int main(void)
           if (GPIO_ReadInputDataBit(PUSH_BTN_PORT, PUSH_BTN_PIN) == RESET)
           {
             g_btn_down_evt = 1;
-            send_string("\r\ng_btn_down_evt set");
+            g_btn_down_ms = board_get_tick_ms();
+            //send_string("\r\ng_btn_down_evt set");
           }
           else
           {
             g_btn_up_evt = 1;
-            send_string("\r\ng_btn_up_evt set");
+            //send_string("\r\ng_btn_up_evt set");
           }
+        }
+      }
+
+
+      if (g_btn_down_evt)
+      {
+        if ((uint16_t)(board_get_tick_ms() - g_btn_down_ms) > BTN_LONG_PRESS_MIN_MS)
+        {
+          g_btn_long_press_evt = 1;
+          g_btn_down_evt = 0;
+          g_btn_up_evt = 0;
+          send_string("\r\nLong press event");
+        }
+      }
+
+      if (g_btn_up_evt)
+      {
+        if ((uint16_t)(board_get_tick_ms() - g_btn_down_ms) < BTN_SHORT_PRESS_MAX_MS)
+        {
+          g_btn_down_evt = 0;
+          g_btn_up_evt = 0;
+          send_string("\r\nShort press");
+        }
+        else if ((uint16_t)(board_get_tick_ms() - g_btn_down_ms) <= BTN_LONG_PRESS_MIN_MS)
+        {
+          g_btn_down_evt = 0;
+          g_btn_up_evt = 0;
+        }
+
+        if (g_btn_long_press_evt)
+        {
+          g_btn_long_press_evt = 0;
+          g_btn_up_evt = 0;
+          send_string("\r\nLong press released");
         }
       }
     }
