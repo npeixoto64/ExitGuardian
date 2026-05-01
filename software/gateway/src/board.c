@@ -61,19 +61,19 @@ static void gpio_init(void)
   GPIO_Init(LED_B_PORT, LED_B_PIN, GPIO_Mode_Out_PP_Low_Fast);
   GPIO_Init(LED_Y_PORT, LED_Y_PIN, GPIO_Mode_Out_PP_Low_Fast);
   GPIO_Init(LED_R_PORT, LED_R_PIN, GPIO_Mode_Out_PP_Low_Fast);
-  GPIO_Init(GPIOC, GPIO_Pin_4, GPIO_Mode_Out_PP_Low_Fast);
+  GPIO_Init(BUZZER_EN_PORT, BUZZER_EN_PIN, GPIO_Mode_Out_PP_Low_Fast);
 
   GPIO_ResetBits(LED_B_PORT, LED_B_PIN);
   GPIO_ResetBits(LED_Y_PORT, LED_Y_PIN);
   GPIO_SetBits(LED_R_PORT, LED_R_PIN);
-  GPIO_ResetBits(GPIOC, GPIO_Pin_4);
+  GPIO_ResetBits(BUZZER_EN_PORT, BUZZER_EN_PIN);
 }
 
 static void exti_init(void)
 {
   EXTI_SetPinSensitivity(IRQ_CC1101_EXTI, EXTI_Trigger_Falling);
   EXTI_SetPinSensitivity(PUSH_BTN_EXTI,   EXTI_Trigger_Rising_Falling);
-  EXTI_SetPinSensitivity(REED_DOOR_EXTI,  EXTI_Trigger_Falling);
+  EXTI_SetPinSensitivity(REED_DOOR_EXTI,  EXTI_Trigger_Rising_Falling);
 }
 
 static volatile uint16_t s_tick_ms = 0;
@@ -177,7 +177,7 @@ void board_init(void)
   i2c_init();
   spi_init();
   uart_init();
-  pwm_init();
+//  pwm_init();
   systick_init();
 }
 

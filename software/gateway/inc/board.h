@@ -13,6 +13,11 @@
 #define LED_B_PORT        GPIOA
 #define LED_B_PIN         GPIO_Pin_2
 
+/* ---------- Output aliases ---------- */
+#define BUZZER_EN_PORT    GPIOC
+#define BUZZER_EN_PIN     GPIO_Pin_4
+
+
 /* ---------- Input aliases ---------- */
 #define IRQ_CC1101_PORT   GPIOD
 #define IRQ_CC1101_PIN    GPIO_Pin_0
