@@ -8,10 +8,10 @@
 #include "log.h"
 
 static volatile uint8_t  g_irq_cc1101_flag = 0;
-static volatile uint8_t  g_reed_door_flag  = 0;
 
 /* Push button state: edges captured in EXTI ISR, processed in main loop. */
-#define BTN_DEBOUNCE_MS         20U     /* ignore edges shorter than this */
+#define BTN_DEBOUNCE_MS         50U     /* ignore edges shorter than this */
+#define REED_DEBOUNCE_MS        20U     /* ignore edges shorter than this */
 #define BTN_SHORT_PRESS_MAX_MS  2000U   /* release < 2 s -> short press  */
 #define BTN_LONG_PRESS_MIN_MS   5000U   /* release >= 5 s -> long press  */
 
@@ -22,6 +22,11 @@ static volatile uint8_t  g_btn_down_evt         = 0;
 static volatile uint8_t  g_btn_up_evt           = 0;
 static volatile uint16_t g_btn_debounce_ms      = 0;
 static volatile uint8_t  btn_handle_debounce    = 0;
+
+static volatile uint8_t  g_reed_close_evt       = 0;
+static volatile uint8_t  g_reed_open_evt        = 0;
+static volatile uint16_t g_reed_debounce_ms     = 0;
+static volatile uint8_t  reed_handle_debounce   = 0;
 
 /* CC1101 GDO0 falling-edge interrupt (IRQ vector 8, PD0).
  * Set when the CC1101 asserts its interrupt line (active-low),
@@ -77,8 +82,21 @@ INTERRUPT_HANDLER(EXTI5_IRQHandler, 13)
 {
   if (GPIO_ReadInputDataBit(REED_DOOR_PORT, REED_DOOR_PIN) == RESET)
   {
-    g_reed_door_flag = 1;
+    if (reed_handle_debounce == 0)
+    {
+      reed_handle_debounce = 1;
+      g_reed_debounce_ms = board_get_tick_ms();
+    }
   }
+  else
+  {
+    if (reed_handle_debounce == 0)
+    {
+      reed_handle_debounce = 1;
+      g_reed_debounce_ms = board_get_tick_ms();
+    }
+  }
+
   EXTI_ClearITPendingBit(EXTI_IT_Pin5);
 }
 
@@ -134,6 +152,26 @@ int main(void)
         send_string(buffer);
         sprintf(buffer, "; status: %lu", (uint32_t)status);
         send_string(buffer);
+      }
+
+
+
+      if (reed_handle_debounce)
+      {
+        if ((uint16_t)(board_get_tick_ms() - g_reed_debounce_ms) > REED_DEBOUNCE_MS)
+        {
+          reed_handle_debounce = 0;
+          if (GPIO_ReadInputDataBit(REED_DOOR_PORT, REED_DOOR_PIN) == RESET)
+          {
+            g_reed_close_evt = 1;
+            send_string("\r\ng_reed_close_evt set");
+          }
+          else
+          {
+            g_reed_open_evt = 1;
+            send_string("\r\ng_reed_open_evt set");
+          }
+        }
       }
 
 
