@@ -73,6 +73,7 @@ set(SRC_C
   ${CMAKE_SOURCE_DIR}/src/feram.c
   ${CMAKE_SOURCE_DIR}/src/sensor_manager.c
   ${CMAKE_SOURCE_DIR}/src/log.c
+  ${CMAKE_SOURCE_DIR}/src/reed.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_clk.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_gpio.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_adc.c
