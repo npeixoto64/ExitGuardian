@@ -7,23 +7,12 @@
 #include "feram.h"
 #include "log.h"
 #include "reed.h"
+#include "button.h"
 
 static volatile uint8_t  g_irq_cc1101_flag = 0;
 
-/* Push button state: edges captured in EXTI ISR, processed in main loop. */
-#define BTN_DEBOUNCE_MS         20U     /* ignore edges shorter than this */
-#define BTN_SHORT_PRESS_MAX_MS  1000U   /* release < 1 s -> short press  */
-#define BTN_LONG_PRESS_MIN_MS   5000U   /* release >= 5 s -> long press  */
-
 #define LEDB_PERIOD_MS   2000U  /* LED_B blink period */
 #define LEDB_ON_MS        100U  /* LED_B on duration  */
-
-static volatile uint8_t  g_btn_down_evt         = 0;
-static volatile uint8_t  g_btn_up_evt           = 0;
-static volatile uint16_t g_btn_debounce_ms      = 0;
-static volatile uint8_t  btn_handle_debounce    = 0;
-static volatile uint16_t g_btn_down_ms          = 0;
-static volatile uint8_t  g_btn_long_press_evt   = 0;
 
 /* CC1101 GDO0 falling-edge interrupt (IRQ vector 8, PD0).
  * Set when the CC1101 asserts its interrupt line (active-low),
@@ -38,29 +27,10 @@ INTERRUPT_HANDLER(EXTI0_IRQHandler, 8)
 }
 
 /* Push-button both-edges interrupt (IRQ vector 12, PD4).
- * Debounce is performed in the ISR: any edge closer than BTN_DEBOUNCE_MS to
- * the previous accepted edge is discarded.  Accepted edges update press/release
- * state and timestamps immediately, so events are never lost due to main-loop
- * latency (e.g. while cc1101_recv_msg or send_string is running). */
+ * ISR kept in main.c so the linker always includes button.rel via button_isr(). */
 INTERRUPT_HANDLER(EXTI4_IRQHandler, 12)
 {
-  if (GPIO_ReadInputDataBit(PUSH_BTN_PORT, PUSH_BTN_PIN) == RESET)
-  {
-    if (btn_handle_debounce == 0)
-    {
-      btn_handle_debounce = 1;
-      g_btn_debounce_ms = board_get_tick_ms();
-    }
-  }
-  else
-  {
-    if (btn_handle_debounce == 0)
-    {
-      btn_handle_debounce = 1;
-      g_btn_debounce_ms = board_get_tick_ms();
-    }
-  }
-  
+  button_isr();
   EXTI_ClearITPendingBit(EXTI_IT_Pin4);
 }
 
@@ -79,8 +49,6 @@ INTERRUPT_HANDLER(TIM4_UPD_OVF_TRG_IRQHandler, 25)
 {
   board_systick_irq();
 }
-
-
 
 // Function to handle periodic LED_B ON every 2s for 100ms
 void periodic_ledb_tick(uint16_t now)
@@ -136,62 +104,7 @@ int main(void)
         send_string(buffer);
       }
 
-
       reed_handle();
-      
-
-
-      if (btn_handle_debounce)
-      {
-        if ((uint16_t)(board_get_tick_ms() - g_btn_debounce_ms) > BTN_DEBOUNCE_MS)
-        {
-          btn_handle_debounce = 0;
-          if (GPIO_ReadInputDataBit(PUSH_BTN_PORT, PUSH_BTN_PIN) == RESET)
-          {
-            g_btn_down_evt = 1;
-            g_btn_down_ms = board_get_tick_ms();
-            //send_string("\r\ng_btn_down_evt set");
-          }
-          else
-          {
-            g_btn_up_evt = 1;
-            //send_string("\r\ng_btn_up_evt set");
-          }
-        }
-      }
-
-
-      if (g_btn_down_evt)
-      {
-        if ((uint16_t)(board_get_tick_ms() - g_btn_down_ms) > BTN_LONG_PRESS_MIN_MS)
-        {
-          g_btn_long_press_evt = 1;
-          g_btn_down_evt = 0;
-          g_btn_up_evt = 0;
-          send_string("\r\nLong press event");
-        }
-      }
-
-      if (g_btn_up_evt)
-      {
-        if ((uint16_t)(board_get_tick_ms() - g_btn_down_ms) < BTN_SHORT_PRESS_MAX_MS)
-        {
-          g_btn_down_evt = 0;
-          g_btn_up_evt = 0;
-          send_string("\r\nShort press");
-        }
-        else if ((uint16_t)(board_get_tick_ms() - g_btn_down_ms) <= BTN_LONG_PRESS_MIN_MS)
-        {
-          g_btn_down_evt = 0;
-          g_btn_up_evt = 0;
-        }
-
-        if (g_btn_long_press_evt)
-        {
-          g_btn_long_press_evt = 0;
-          g_btn_up_evt = 0;
-          send_string("\r\nLong press released");
-        }
-      }
+      button_handle();
     }
 }
