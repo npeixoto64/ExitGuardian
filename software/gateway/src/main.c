@@ -8,11 +8,9 @@
 #include "log.h"
 #include "reed.h"
 #include "button.h"
+#include "led.h"
 
 static volatile uint8_t  g_irq_cc1101_flag = 0;
-
-#define LEDB_PERIOD_MS   2000U  /* LED_B blink period */
-#define LEDB_ON_MS        100U  /* LED_B on duration  */
 
 /* CC1101 GDO0 falling-edge interrupt (IRQ vector 8, PD0).
  * Set when the CC1101 asserts its interrupt line (active-low),
@@ -48,23 +46,6 @@ INTERRUPT_HANDLER(EXTI5_IRQHandler, 13)
 INTERRUPT_HANDLER(TIM4_UPD_OVF_TRG_IRQHandler, 25)
 {
   board_systick_irq();
-}
-
-// Function to handle periodic LED_B ON every 2s for 100ms
-void periodic_ledb_tick(uint16_t now)
-{
-  static uint16_t last_tick = 0;
-  static uint8_t  state = 0;
-  if (!state && (uint16_t)(now - last_tick) >= LEDB_PERIOD_MS) {
-    GPIO_SetBits(LED_B_PORT, LED_B_PIN); // Turn ON
-    state = 1;
-    last_tick = now;
-  }
-  if (state && (uint16_t)(now - last_tick) >= LEDB_ON_MS) {
-    GPIO_ResetBits(LED_B_PORT, LED_B_PIN); // Turn OFF
-    state = 0;
-    // Do not update last_tick here
-  }
 }
 
 int main(void)
