@@ -3,6 +3,14 @@
 
 #include <stdint.h>
 
-void periodic_ledb_tick(uint16_t now);
+typedef enum {
+  LED_MODE_OFF = 0,
+  LED_MODE_ON,
+  LED_MODE_FLASH
+} led_mode_t;
+
+void led_b_handle(uint16_t now);
+void led_r_handle(uint16_t now, led_mode_t mode);
+void led_y_handle(uint16_t now, led_mode_t mode);
 
 #endif /* LED_H */

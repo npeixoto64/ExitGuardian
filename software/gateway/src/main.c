@@ -68,7 +68,9 @@ int main(void)
     while (1) {
       uint16_t now = board_get_tick_ms();
 
-      periodic_ledb_tick(now);
+      led_b_handle(now);
+      led_r_handle(now, LED_MODE_FLASH);
+      led_y_handle(now, LED_MODE_FLASH);
 
       if (g_irq_cc1101_flag)
       {
