@@ -76,6 +76,7 @@ set(SRC_C
   ${CMAKE_SOURCE_DIR}/src/reed.c
   ${CMAKE_SOURCE_DIR}/src/button.c
   ${CMAKE_SOURCE_DIR}/src/led.c
+  ${CMAKE_SOURCE_DIR}/src/buzzer.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_clk.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_gpio.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_adc.c

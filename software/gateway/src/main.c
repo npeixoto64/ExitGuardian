@@ -9,6 +9,7 @@
 #include "reed.h"
 #include "button.h"
 #include "led.h"
+#include "buzzer.h"
 
 static volatile uint8_t  g_irq_cc1101_flag = 0;
 
@@ -71,6 +72,7 @@ int main(void)
       led_b_handle(now);
       led_r_handle(now, LED_MODE_FLASH);
       led_y_handle(now, LED_MODE_FLASH);
+      buzzer_handle(now, BUZZER_MODE_BEEP);
 
       if (g_irq_cc1101_flag)
       {
