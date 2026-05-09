@@ -1,165 +1,59 @@
 #include <stdint.h>
 #include <stdio.h>
-#include "stm8l15x_clk.h"
 #include "stm8l15x_gpio.h"
-#include "stm8l15x_adc.h"
-#include "stm8l15x_i2c.h"
-#include "stm8l15x_spi.h"
-#include "stm8l15x_usart.h"
-#include "stm8l15x_tim1.h"
 #include "stm8l15x_exti.h"
+#include "board.h"
 #include "cc1101.h"
 #include "feram.h"
 #include "log.h"
+#include "reed.h"
+#include "button.h"
+#include "led.h"
+#include "buzzer.h"
 
-static volatile uint8_t g_pd0_went_low_flag = 0;
+static volatile uint8_t  g_irq_cc1101_flag = 0;
 
-static void enter_deep_sleep(void)
-{
-  /* Reduce current draw before HALT; wake source is EXTI on PD0. */
-  ADC_Cmd(ADC1, DISABLE);
-  I2C_Cmd(I2C1, DISABLE);
-//  TIM1_Cmd(DISABLE);
-  SPI_Cmd(SPI1, DISABLE);
-  USART_Cmd(USART1, DISABLE);
-
-  enableInterrupts();
-  halt();
-
-  /* Restore peripherals needed by active path after wake-up. */
-  CLK_PeripheralClockConfig(CLK_Peripheral_ADC1, ENABLE);
-  CLK_PeripheralClockConfig(CLK_Peripheral_I2C1, ENABLE);
-  CLK_PeripheralClockConfig(CLK_Peripheral_SPI1, ENABLE);
-  CLK_PeripheralClockConfig(CLK_Peripheral_USART1, ENABLE);
-  CLK_PeripheralClockConfig(CLK_Peripheral_TIM1, ENABLE);
-
-  ADC_Cmd(ADC1, ENABLE);
-  I2C_Cmd(I2C1, ENABLE);
-  SPI_Cmd(SPI1, ENABLE);
-  USART_Cmd(USART1, ENABLE);
-}
-
+/* CC1101 GDO0 falling-edge interrupt (IRQ vector 8, PD0).
+ * Set when the CC1101 asserts its interrupt line (active-low),
+ * signalling that a packet has been received. Processed in main loop. */
 INTERRUPT_HANDLER(EXTI0_IRQHandler, 8)
 {
-  if (GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_0) == RESET)
+  if (GPIO_ReadInputDataBit(IRQ_CC1101_PORT, IRQ_CC1101_PIN) == RESET)
   {
-    g_pd0_went_low_flag = 1;
+    g_irq_cc1101_flag = 1;
   }
   EXTI_ClearITPendingBit(EXTI_IT_Pin0);
 }
 
+/* Push-button both-edges interrupt (IRQ vector 12, PD4).
+ * ISR kept in main.c so the linker always includes button.rel via button_isr(). */
+INTERRUPT_HANDLER(EXTI4_IRQHandler, 12)
+{
+  button_isr();
+  EXTI_ClearITPendingBit(EXTI_IT_Pin4);
+}
+
+/* Reed switch (door sensor) both-edges interrupt (IRQ vector 13, PD5).
+ * ISR kept in main.c so the linker always includes reed.rel via reed_isr(). */
+INTERRUPT_HANDLER(EXTI5_IRQHandler, 13)
+{
+  reed_isr();
+  EXTI_ClearITPendingBit(EXTI_IT_Pin5);
+}
+
+/* TIM4 update/overflow interrupt (IRQ vector 25).
+ * Fires at 1 kHz; delegates tick increment and flag clear to board driver.
+ * 1 ms tick */
+INTERRUPT_HANDLER(TIM4_UPD_OVF_TRG_IRQHandler, 25)
+{
+  board_systick_irq();
+}
+
 int main(void)
 {
-    //Configure clock to 16 MHz (HSI with divider 1)
-    CLK_HSICmd(ENABLE);
-    while (CLK_GetFlagStatus(CLK_FLAG_HSIRDY) == RESET);
-    CLK_SYSCLKSourceConfig(CLK_SYSCLKSource_HSI);
-    CLK_SYSCLKDivConfig(CLK_SYSCLKDiv_1);
-
-    // Configure not used pins as input pins with pull-up
-    GPIO_Init(GPIOA, GPIO_Pin_5, GPIO_Mode_In_PU_No_IT);
-    GPIO_Init(GPIOB, GPIO_Pin_0, GPIO_Mode_In_PU_No_IT);
-    GPIO_Init(GPIOB, GPIO_Pin_1, GPIO_Mode_In_PU_No_IT);
-    GPIO_Init(GPIOB, GPIO_Pin_2, GPIO_Mode_In_PU_No_IT);
-    GPIO_Init(GPIOB, GPIO_Pin_3, GPIO_Mode_In_PU_No_IT);
-    GPIO_Init(GPIOC, GPIO_Pin_5, GPIO_Mode_In_PU_No_IT);
-    GPIO_Init(GPIOC, GPIO_Pin_6, GPIO_Mode_In_PU_No_IT);
-    GPIO_Init(GPIOD, GPIO_Pin_6, GPIO_Mode_In_PU_No_IT);
-
-    // Configure PA6 as ADC input (floating input)
-    GPIO_Init(GPIOA, GPIO_Pin_6, GPIO_Mode_In_FL_No_IT);
-
-    // // Configure PC0 as SDA and PC1 as SCL for I2C (open-drain)
-    GPIO_Init(GPIOC, GPIO_Pin_0, GPIO_Mode_Out_OD_HiZ_Fast);
-    GPIO_Init(GPIOC, GPIO_Pin_1, GPIO_Mode_Out_OD_HiZ_Fast);
-
-    // Configure PB4-PB7 as SPI (PB4 NSS, PB5 SCK, PB6 MISO, PB7 MOSI)
-    GPIO_Init(GPIOB, GPIO_Pin_4, GPIO_Mode_Out_PP_High_Fast);   // NSS
-    GPIO_Init(GPIOB, GPIO_Pin_5, GPIO_Mode_Out_PP_High_Fast);   // SCK
-    GPIO_Init(GPIOB, GPIO_Pin_6, GPIO_Mode_Out_PP_High_Fast);   // MOSI
-    GPIO_Init(GPIOB, GPIO_Pin_7, GPIO_Mode_In_FL_No_IT);        // MISO
-
-    // Configure PC2 and PC3 as UART (PC2 TX, PC3 RX)
-    GPIO_Init(GPIOC, GPIO_Pin_2, GPIO_Mode_Out_PP_High_Fast); // TX
-    GPIO_Init(GPIOC, GPIO_Pin_3, GPIO_Mode_In_FL_No_IT);      // RX
-
-    // Configure PD7 and PD2 as differential PWM (TIM1 CH1 and CH1N)
-    GPIO_Init(GPIOD, GPIO_Pin_7, GPIO_Mode_Out_PP_High_Fast); // TIM1_CH1
-    GPIO_Init(GPIOD, GPIO_Pin_2, GPIO_Mode_Out_PP_High_Fast); // TIM1_CH1N
-
-    // Configure PD0, PD4 and PD5 as inputs floating with interrupt
-    GPIO_Init(GPIOD, GPIO_Pin_0, GPIO_Mode_In_FL_IT);
-    //GPIO_Init(GPIOD, GPIO_Pin_5, GPIO_Mode_In_FL_IT);
-    //GPIO_Init(GPIOD, GPIO_Pin_4, GPIO_Mode_In_FL_IT);
-
-    // Configure EXTI for PD0 (falling edge trigger)
-    EXTI_SetPinSensitivity(EXTI_Pin_0, EXTI_Trigger_Falling);
-
-    // Configure PA2, PA3, PA4, PC4 as push-pull outputs
-    GPIO_Init(GPIOA, GPIO_Pin_2, GPIO_Mode_Out_PP_Low_Fast);
-    GPIO_Init(GPIOA, GPIO_Pin_3, GPIO_Mode_Out_PP_Low_Fast);
-    GPIO_Init(GPIOA, GPIO_Pin_4, GPIO_Mode_Out_PP_Low_Fast);
-    GPIO_Init(GPIOC, GPIO_Pin_4, GPIO_Mode_Out_PP_Low_Fast);
-
-    GPIO_ResetBits(GPIOA, GPIO_Pin_2);
-    GPIO_ResetBits(GPIOA, GPIO_Pin_3);
-    GPIO_SetBits(GPIOA, GPIO_Pin_4);
-    GPIO_ResetBits(GPIOC, GPIO_Pin_4);
-
-    // Configure ADC for PA6 (Channel 6)
-    CLK_PeripheralClockConfig(CLK_Peripheral_ADC1, ENABLE);
-    ADC_DeInit(ADC1);
-    ADC_Init(ADC1, ADC_ConversionMode_Single, ADC_Resolution_12Bit, ADC_Prescaler_2);
-    ADC_SamplingTimeConfig(ADC1, ADC_Group_SlowChannels, ADC_SamplingTime_384Cycles);
-    ADC_Cmd(ADC1, ENABLE);
-    ADC_ChannelCmd(ADC1, ADC_Channel_6, ENABLE);
-
-    // Configure I2C for PC0 (SDA) and PC1 (SCL)
-    CLK_PeripheralClockConfig(CLK_Peripheral_I2C1, ENABLE);
-    I2C_DeInit(I2C1);
-    I2C_Init(I2C1, 400000, 0x00, I2C_Mode_I2C, I2C_DutyCycle_2, I2C_Ack_Enable, I2C_AcknowledgedAddress_7bit);
-    I2C_Cmd(I2C1, ENABLE);
-
-    // Configure SPI for PB4-PB7
-    CLK_PeripheralClockConfig(CLK_Peripheral_SPI1, ENABLE);
-    SPI_DeInit(SPI1);
-    SPI_Init(SPI1, SPI_FirstBit_MSB, SPI_BaudRatePrescaler_16, SPI_Mode_Master,
-            SPI_CPOL_Low, SPI_CPHA_1Edge, SPI_Direction_2Lines_FullDuplex,
-            SPI_NSS_Soft, 7);
-    SPI_Cmd(SPI1, ENABLE);
-
-    // Configure USART for PC2 (TX) and PC3 (RX)
-    CLK_PeripheralClockConfig(CLK_Peripheral_USART1, ENABLE);
-    USART_DeInit(USART1);
-    USART_Init(USART1, (uint32_t)9600, USART_WordLength_8b, USART_StopBits_1,
-                USART_Parity_No, (USART_Mode_TypeDef)(USART_Mode_Tx | USART_Mode_Rx));
-    USART_Cmd(USART1, ENABLE);
-
-    // Configure TIM1 for differential PWM on PD7 (CH1) and PD2 (CH1N)
-    CLK_PeripheralClockConfig(CLK_Peripheral_TIM1, ENABLE);
-    TIM1_DeInit();
-    TIM1_TimeBaseInit(7U, TIM1_CounterMode_Up, 1000U, 0U);
-    TIM1_OC1Init(TIM1_OCMode_PWM1,
-           TIM1_OutputState_Enable,
-           TIM1_OutputNState_Enable,
-           500U,
-           TIM1_OCPolarity_High,
-           TIM1_OCNPolarity_High,
-           TIM1_OCIdleState_Reset,
-           TIM1_OCNIdleState_Reset);
-    TIM1_OC1PreloadConfig(ENABLE);
-    TIM1_BDTRConfig(TIM1_OSSIState_Disable,
-            TIM1_LockLevel_Off,
-            0x10U,
-            TIM1_BreakState_Disable,
-            TIM1_BreakPolarity_Low,
-            TIM1_AutomaticOutput_Disable);
-    TIM1_CtrlPWMOutputs(ENABLE);
-
-    // Enable global interrupts
+    board_init();
     enableInterrupts();
 
-    // Configure CC1101 radio for RX mode
     cc1101_config_gfsk_433_rx_fixed(5);
 
     uint8_t status = 0;
@@ -167,30 +61,35 @@ int main(void)
     char buffer[64];
     uint8_t buzzer_toggle_flag = 0;
 
+
+    // State for periodic LED_B
+    uint16_t ledb_tick = 0;
+    uint8_t  ledb_on = 0;
+
     while (1) {
-        if (g_pd0_went_low_flag)
-        {
-            // Reception concluded
-            g_pd0_went_low_flag = 0;
+      uint16_t now = board_get_tick_ms();
 
-            cc1101_recv_msg(&chip_id, &status);
+      led_b_handle(now);
+      led_r_handle(now, LED_MODE_FLASH);
+      led_y_handle(now, LED_MODE_FLASH);
+      buzzer_handle(now, BUZZER_MODE_BEEP);
 
-            GPIO_ToggleBits(GPIOA, GPIO_Pin_2);
+      if (g_irq_cc1101_flag)
+      {
+        g_irq_cc1101_flag = 0;
 
-            buzzer_toggle_flag ^= 1U;
-            // if (buzzer_toggle_flag != 0U) {
-            //   TIM1_Cmd(ENABLE);
-            // } else {
-            //   TIM1_Cmd(DISABLE);
-            // }
+        cc1101_recv_msg(&chip_id, &status);
 
-            // Send UART message with chip id and status
-            sprintf(buffer, "\r\nTransmitter Chip ID: %lx", chip_id);
-            send_string(buffer);
-            sprintf(buffer, "; status: %lu", (uint32_t)status);
-            send_string(buffer);
-          } else {
-            enter_deep_sleep();
-        }
+        // buzzer_toggle_flag ^= 1U;
+        // board_buzzer(buzzer_toggle_flag);
+
+        sprintf(buffer, "\r\nTransmitter Chip ID: %lx", chip_id);
+        send_string(buffer);
+        sprintf(buffer, "; status: %lu", (uint32_t)status);
+        send_string(buffer);
+      }
+
+      reed_handle();
+      button_handle();
     }
 }

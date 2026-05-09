@@ -23,3 +23,14 @@ TL;DR:
     BUILD: cmake --build build
     FLASH: stm8flash -c stlinkv2 -p stm8l151k4 -w build/fw.ihx
     RESET: stm8flash -c stlinkv2 -p stm8l151k4 -R
+
+Gateway <-> programmer:
+1. VDD -> violet
+2. DATA -> grey
+3. GND -> white
+4. RESET -> black
+
+Gateway <-> PC:
+1. RXD (PC - green)
+2. TXD (PC - blue) - not needed
+3. GND (black)
