@@ -177,7 +177,7 @@ void board_init(void)
   i2c_init();
   spi_init();
   uart_init();
-  // pwm_init();
+  pwm_init();
   systick_init();
 }
 
