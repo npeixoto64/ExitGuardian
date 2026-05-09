@@ -1,0 +1,66 @@
+@startuml
+skinparam componentStyle rectangle
+skinparam packageStyle frame
+
+title Gateway SW Architecture
+
+package "Application Layer" #LightBlue {
+    [Main / State Machine] as App
+    [Sensor Manager] as SensorMgr
+    [Logger] as Logger
+}
+
+package "Device Drivers" #LightYellow {
+    [CC1101 RF Transceiver] as CC1101
+    [FeRAM (FM24xx)] as FeRAM
+}
+
+package "Hardware Abstraction Layer (HAL)" #Pink {
+    component "Communication" {
+        [SPI] as SPI
+        [I2C] as I2C
+        [USART] as USART
+    }
+    component "Core / IO / Timing" {
+        [CLK] as CLK
+        [GPIO] as GPIO
+        [EXTI] as EXTI
+        [TIM1] as TIM1
+        [ADC] as ADC
+    }
+}
+
+package "MCU (STM8L151)" #LightGray {
+    [Peripherals & Registers] as MCU
+}
+
+' Application -> Drivers / HAL
+App --> SensorMgr
+App --> Logger
+App --> GPIO  : LEDs / Button / Buzzer
+App --> EXTI  : Reed / Button IRQ
+App --> TIM1  : Timing / PWM
+App --> CLK   : Clock config
+App --> ADC   : Battery sensing
+
+SensorMgr --> CC1101 : RF TX/RX
+SensorMgr --> FeRAM  : Persist paired list / state
+Logger    --> USART  : Debug UART
+
+' Drivers -> HAL
+CC1101 --> SPI
+CC1101 --> GPIO  : CS / GDOx
+CC1101 --> EXTI  : GDO0 IRQ
+FeRAM  --> I2C
+
+' HAL -> MCU
+SPI   --> MCU
+I2C   --> MCU
+USART --> MCU
+CLK   --> MCU
+GPIO  --> MCU
+EXTI  --> MCU
+TIM1  --> MCU
+ADC   --> MCU
+
+@enduml
