@@ -2,5 +2,5 @@
 
 ```{uml}
 @startuml
-!include diagrams/sensor_arch.puml
+!include diagrams/sensor_hw_arch.puml
 @enduml

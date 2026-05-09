@@ -5,17 +5,22 @@ skinparam packageStyle frame
 title Gateway SW Architecture
 
 package "Application Layer" #LightBlue {
-    [Main / State Machine] as App
+    [Main / Super-loop] as App
     [Sensor Manager] as SensorMgr
-    [Logger] as Logger
+    [Log] as Log
 }
 
-package "Device Drivers" #LightYellow {
+package "Mid-level Drivers" #LightGreen {
+    [Board (init / systick)] as Board
     [CC1101 RF Transceiver] as CC1101
     [FeRAM (FM24xx)] as FeRAM
+    [Reed Switch] as Reed
+    [Push Button] as Button
+    [LED] as Led
+    [Buzzer] as Buzzer
 }
 
-package "Hardware Abstraction Layer (HAL)" #Pink {
+package "Hardware Abstraction Layer (STM8L15x SPL)" #Pink {
     component "Communication" {
         [SPI] as SPI
         [I2C] as I2C
@@ -25,42 +30,44 @@ package "Hardware Abstraction Layer (HAL)" #Pink {
         [CLK] as CLK
         [GPIO] as GPIO
         [EXTI] as EXTI
-        [TIM1] as TIM1
+        [TIM1 (PWM)] as TIM1
+        [TIM4 (1 ms tick)] as TIM4
         [ADC] as ADC
     }
 }
 
-package "MCU (STM8L151)" #LightGray {
-    [Peripherals & Registers] as MCU
-}
-
-' Application -> Drivers / HAL
+' Application -> Mid-level
+App --> Board     : init / systick / ISR dispatch
 App --> SensorMgr
-App --> Logger
-App --> GPIO  : LEDs / Button / Buzzer
-App --> EXTI  : Reed / Button IRQ
-App --> TIM1  : Timing / PWM
-App --> CLK   : Clock config
-App --> ADC   : Battery sensing
+App --> CC1101    : RX poll (GDO0 IRQ flag)
+App --> Reed      : handle / ISR
+App --> Button    : handle / ISR
+App --> Led       : LED_B / LED_R / LED_Y handle
+App --> Buzzer    : buzzer_handle
+App --> Log       : send_string
 
-SensorMgr --> CC1101 : RF TX/RX
-SensorMgr --> FeRAM  : Persist paired list / state
-Logger    --> USART  : Debug UART
+SensorMgr --> FeRAM : persist paired list (CRC16-CCITT)
 
-' Drivers -> HAL
+' Mid-level -> HAL
+Board  --> CLK
+Board  --> GPIO
+Board  --> EXTI
+Board  --> TIM4   : 1 kHz systick
+Board  --> ADC    : battery sensing
+Board  --> SPI
+Board  --> I2C
+Board  --> USART
+
 CC1101 --> SPI
-CC1101 --> GPIO  : CS / GDOx
-CC1101 --> EXTI  : GDO0 IRQ
+CC1101 --> GPIO   : CS / GDOx
+CC1101 --> EXTI   : GDO0 IRQ
 FeRAM  --> I2C
-
-' HAL -> MCU
-SPI   --> MCU
-I2C   --> MCU
-USART --> MCU
-CLK   --> MCU
-GPIO  --> MCU
-EXTI  --> MCU
-TIM1  --> MCU
-ADC   --> MCU
+Reed   --> GPIO
+Reed   --> EXTI
+Button --> GPIO
+Button --> EXTI
+Led    --> GPIO
+Buzzer --> TIM1   : differential PWM
+Log    --> USART
 
 @enduml

@@ -2,5 +2,5 @@
 
 ```{uml}
 @startuml
-!include diagrams/gateway_arch.puml
+!include diagrams/gateway_hw_arch.puml
 @enduml
