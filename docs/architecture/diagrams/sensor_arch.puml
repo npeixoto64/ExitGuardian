@@ -1,32 +1,51 @@
-@startuml Wireless Sensor
+@startuml
+title Hardware Block Diagram: Window Sensor
+
+' --- Style ---
 skinparam componentStyle rectangle
-skinparam defaultFontName Monospace
-skinparam linetype ortho
-skinparam nodesep 150
-skinparam ranksep 50
+skinparam monochrome true
 
-
-node "Sensor" {
-[BAT] as BAT
-[Reed Switch] as REED
-[MCU] as MCU
-[Voltage Supervisor] as VS
-[OOK TX 868 MHz] as TX
-[Balun] as BALUN
-[Pi-Matching] as PI
-[Antenna] as ANT
+' --- Components ---
+node "Power Supply" {
+    [Coin Cell] as BATT << CR2032 >>
+    [Bulk Capacitor] as CAP << 470uF+ >>
+    
+    ' Connect Battery and Cap in parallel visually
+    BATT -right- CAP
 }
 
+node "Processing" {
+    [MCU] as CTRL << STM8S003F3P6 >>
+}
 
-BAT -down- MCU: Vdd
-BAT -down- VS: Vdd
-BAT -down- TX: Vdd
+node "RF Front-End, 433 MHz" {
+    [RF Transceiver] as RF_CHIP << CC1101 >>
+    [Balun] as BAL
+    [Pi-Match] as PI_NET
+    [Antenna] as ANT << 50 ohm >>
+}
 
-REED -right---> MCU : open/close edge
-VS -right-> MCU: batt_low flag
+node "Peripherals" {
+    [Reed Switch] as REED
+    [Push Button] as BTN
+    [LED] as STATUS_LED
+}
 
-MCU -right-> TX : encoded bursts ×3
-TX -right-> BALUN: differential OOK RF
-BALUN -right-> PI: 50ohms
-PI -right-> ANT: RF radiation
+' --- Connections ---
+
+' Power Distribution (Parallel connection from Power node)
+CAP -[bold]-> CTRL : VCC
+CAP -[bold]-> RF_CHIP : VCC
+
+' Logic/Signals
+CTRL <-> RF_CHIP : SPI / GDO
+REED -up-> CTRL : GPIO
+BTN -up-> CTRL : GPIO
+STATUS_LED <-up- CTRL : GPIO
+
+' RF Path
+RF_CHIP -right-> BAL
+BAL -right-> PI_NET
+PI_NET -right-> ANT
+
 @enduml

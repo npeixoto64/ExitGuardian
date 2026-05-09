@@ -14,14 +14,13 @@ Have a deep sleep mode (uA), waking up from external interrupt from input pin.
 
 ### Sensor Power budgets
 
-MCU: ATtiny 20x/22x (we’ll call it ATtiny220 here)
-TX: Silicon Labs Si4012 @ 868.3 MHz (OOK)
-Supervisor: TPS3839-L30 (≈2.63 V threshold)
+MCU: STM8L (we’ll call it ATtiny220 here)
+TX: CC1101 @ 433 MHz (GSFK)
 I’ll give you clear assumptions, equations, and a few “what-if” scenarios.
 1) Assumptions (conservative but realistic)
 Sleep currents (typical):
-ATtiny (power-down, BOD on low setting): 0.3 µA
-Si4012 (SDN = shutdown): 0.03 µA
+STM8 (power-down, BOD on low setting): 0.3 µA
+CC1101 (SDN = shutdown): 0.03 µA
 TPS3839-L30: 0.15 µA
 Subtotal, electronics sleep:
 I_sleep,elec ≈ 0.48 µA
@@ -34,7 +33,7 @@ I_reed,avg ≈ 0.16 µA
 Total sleep average:
 I_sleep,total ≈ 0.48 + 0.16 = 0.64 µA
 TX event (per transmission):
-Si4012 TX current at modest PA: ~15 mA (set PA to keep ERP ≤ 25 mW)
+CC1101 TX current at modest PA: ~15 mA (set PA to keep ERP ≤ 25 mW)
 On-air per event: ~6 repeats × 40 ms ≈ 0.24 s, plus tiny gaps → round to 0.30 s/event
 Charge per event:
 Qevent = I×t
@@ -136,7 +135,7 @@ Re-tune the π-match after final battery/enclosure placement.
 Keep the TPS3839-L30 (2.63 V) + BOD ~2.4–2.6 V; thresholds still appropriate.
 Bottom line: If the enclosure can handle it, CR2450 buys you real robustness (longer life, fewer cold-sag issues). For a commercial product aimed at “install and forget,” I’d choose CR2450 and design the mechanics around it.
 
-### Sensor Bulk capacitor of 47 uF near the Si4012
+### Sensor Bulk capacitor of 47 uF near the CC1101
 
 https://pt.mouser.com/ProductDetail/KEMET/C0805C476M9PAC7800?qs=xL%2FyUNPmvLY2BGnZa3AdBg%3D%3D
 
@@ -182,19 +181,18 @@ EMI-friendly: The series 100 kΩ limits surge into the MCU pin; the 100 nF to GN
 ### Sensor Matching Balun (antenna interface)
 
 Inductors (high-Q (SRF>2GHz)) - Coilcraft 0402HP series:
-- [B] LM1: 120nH => https://eu.mouser.com/ProductDetail/Coilcraft/0603HP-R12XGLU?qs=zCSbvcPd3pbJT9Wmlao8cg%3D%3D
-- [T] LM2: 3.6nH => https://eu.mouser.com/ProductDetail/Coilcraft/0402HP-3N6XGRW?qs=QNEnbhJQKvZDgcR8AxBsbw%3D%3D
-- [T] LM3: 30nH => https://eu.mouser.com/ProductDetail/Coilcraft/0402HP-30NXJRW?qs=QNEnbhJQKvYt2krW1zXeEQ%3D%3D
-- [T] LM4: 3.6nH => https://eu.mouser.com/ProductDetail/Coilcraft/0402HP-3N6XGRW?qs=QNEnbhJQKvZDgcR8AxBsbw%3D%3D
-- [T] LM5: 6.8nH => https://eu.mouser.com/ProductDetail/Coilcraft/0402HP-6N8XGRW?qs=QNEnbhJQKvb1RBRny2c9yA%3D%3D
+- L131 [27 nH ± 5%, 0402]: Murata LQG15HS series (315/433 MHz)
+- L121 [27 nH ± 5%, 0402]: Murata LQG15HS series (315/433 MHz)
+- L122 [22 nH ± 5%, 0402]: Murata LQG15HS series (315/433 MHz)
+- L123 [27 nH ± 5%, 0402]: Murata LQG15HS series (315/433 MHz)
 
 Capacitors (NP0/C0G) - Murata GRM155 series:
-- [T] CM1: 2.4pF => https://eu.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H2R4WA01D?qs=ouTquLLW2S5u9sxTRF7zdQ%3D%3D
-- [T] CM2: 1.2pF => https://eu.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H1R2WA01D?qs=ouTquLLW2S4ZARlph37hBQ%3D%3D
-- [B] CM3: 2.4pF => https://eu.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H2R4WA01D?qs=ouTquLLW2S5u9sxTRF7zdQ%3D%3D
-- [T] CM5: 5.1pF => https://eu.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H5R1WA01D?qs=ouTquLLW2S6Ac9DkjU6j%2Fw%3D%3D
-- [T] CM6: 5.1pF => https://eu.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H5R1WA01D?qs=ouTquLLW2S6Ac9DkjU6j%2Fw%3D%3D
-- [T] CC1: 68pF => https://eu.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H680FA01J?qs=e%252BE4OD6MgMf0uVE7NpHJPw%3D%3D
+- C131 [3.9 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
+- C124 [220 pF ± 5%, 0402 NP0]: Murata GRM1555C series
+- C121 [3.9 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
+- C122 [8.2 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
+- C123 [5.6 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
+- C125 [220 pF ± 5%, 0402 NP0]: Murata GRM1555C series
 
 ### Sensor PI-match:
 
@@ -205,7 +203,7 @@ Capacitors (NP0/C0G) - Murata GRM155 series:
 ### Sensor Antenna
 
 50 ohms monopole:
-ANT-868-HESM => https://eu.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-868-HESM?qs=hWgE7mdIu5TTyqPbNERfhg%3D%3D
+ANT-433-HESM => https://eu.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-433-HESM?qs=hWgE7mdIu5TTyqPbNERfhg%3D%3D
 
 ### Sensor Enclosure/Box/Case: PCB size and format
 
@@ -296,7 +294,7 @@ Fast boot → status bitmap gives instant “which windows are open,” then you
 If you must start without FRAM
 Internal EEPROM is OK for a small fleet (say ≤16–20 sensors) if you batch writes (e.g., every 10–30 minutes) and implement a simple ring/wear-level per record. Still, FRAM is strongly preferred for per-event updates.
 
-### Gateway OOK RF Receiver
+### Gateway GSFK RF Receiver
 
 CC1101
 
@@ -305,97 +303,26 @@ Crystal: [NX3225GA-26.000M-STD-CRG-2, 26MHz], https://pt.mouser.com/ProductDetai
 ### Gateway Balun
 
 From CC1101 Datasheet:
-- L131 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
-- L132 [18 nH, ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
-- L121 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
-- L122 [18 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
-- L123 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
-- L124 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
-- L125 [3.3 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
 
-- C131 [1.5 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
-- C121 [1.0 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
-- C122 [1.5 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
-- C124 [100 pF ± 5%, 0402 NP0]: Murata GRM1555C series
-- C123 [3.3 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
-- C125 [12 pF ± 5%, 0402 NP0]: Murata GRM1555C series
-- C126 [47 pF ± 5%, 0402 NP0]: Murata GRM1555C series
+- L131 [27 nH ± 5%, 0402]: Murata LQG15HS series (315/433 MHz)
+- L121 [27 nH ± 5%, 0402]: Murata LQG15HS series (315/433 MHz)
+- L122 [22 nH ± 5%, 0402]: Murata LQG15HS series (315/433 MHz)
+- L123 [27 nH ± 5%, 0402]: Murata LQG15HS series (315/433 MHz)
+
+- C131 [3.9 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
+- C124 [220 pF ± 5%, 0402 NP0]: Murata GRM1555C series
+- C121 [3.9 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
+- C122 [8.2 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
+- C123 [5.6 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
+- C125 [220 pF ± 5%, 0402 NP0]: Murata GRM1555C series
 
 ### Gateway Antenna
 
-50 ohms monopole:
-ANT-868-HESM => https://eu.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-868-HESM?qs=hWgE7mdIu5TTyqPbNERfhg%3D%3D
+t.b.d.
 
 ### Gateway Power Supply
 
-Let's see if it will be directly. I need to discuss that.
-Directly from battery: MCU and CC1101.
-
-Recommended architecture (simple, longest life)
-Run everything straight from the battery rail (VBAT) and avoid a always-on regulator.
-VBAT range (2 cells):
-• Alkaline: ~3.2 V fresh → ~1.8 V at end
-• Ni-MH (LSD types like Eneloop): ~2.8–3.0 V fresh → ~2.0 V at end
-Device limits:
-• ATtiny406: 1.8–5.5 V → OK across VBAT range
-• CC1101: 1.8–3.6 V → OK across VBAT range
-Implication: you can skip the LDO/buck-boost (saves quiescent current) and just size Brown-Out Detect (BOD) around ~2.0–2.2 V so the MCU never runs too low.
-
-Parts notes
-Reverse polarity: P-MOSFET SOT-23 (e.g., –20…–30 V, RDS(on) ≤ 50 mΩ). Source→VBAT, Drain→SYS_3V, Gate→VBAT via 100 k, plus 100 Ω series from gate to VBAT node (optional) to tame hot-plug.
-ESD/TVS: if user-replaceable cells in harsh env, add a small 5–6 V TVS at the battery input.
-Sense battery: use the bandgap-vs-VCC ADC trick (zero extra parts) or a gated high-value divider to an ADC pin for better accuracy.
-
-Why not regulate?
-LDO: even the best low-Iq LDOs burn some headroom and drop out below ~VOUT+dropout → you throw away tail capacity under 2.2–2.4 V.
-Buck-boost: gives constant 3.0–3.3 V, but typical Iq = 10–30 µA (or more), which eats into a ~270 µA average budget for 1-year life. If you ever need it, choose one with ≤1–2 µA Iq and gate it off during deep sleep.
-Alkaline vs Ni-MH: what changes?
-Alkaline: higher initial voltage and energy at low current; more internal resistance at high pulse loads and cold. Great for your duty-cycled design.
-Ni-MH (LSD): more flat discharge and better pulse current; slightly lower starting voltage. They self-discharge (LSD fixes most), so shelf life is shorter than alkaline if device sits unused for many months.
-Firmware: keep two threshold tables (WARN/CRITICAL) since the curves differ. Example starting points (tune after measuring):
-Alkaline: WARN ~2.5 V, CRIT ~2.2 V
-Ni-MH: WARN ~2.3–2.4 V, CRIT ~2.0–2.1 V
-Interactions with your buzzer boost
-Your 12 V boost for the piezo is on its own EN pin → off = ~0 µA.
-During beeps, VBAT droops a bit; keep beep bursts short (e.g., 200 ms) and add 22–47 µF on the boost output to keep tone amplitude stable.
-
-### Gateway Polarity Inversion Potection
-
-https://www.onsemi.com/download/application-notes/pdf/and90146-d.pdf
-https://www.powerelectronicsnews.com/comparing-n-channel-and-p-channel-mosfets-which-is-best-for-your-application/
-
-Best fit:
-https://pt.mouser.com/ProductDetail/Infineon-Technologies/IRLML6402TRPBF?qs=9%252BKlkBgLFf0HuZuONx2Ewg%3D%3D
-
-### Gateway Low Battery Detection
-
-Use the MCU
-1) Divider-less (zero extra parts) — measure VCC via the internal bandgap
-Configure the ADC to use VCC as the ADC reference and select the internal bandgap channel as the input.
-
-Read the ADC value adc_bg; since ADC = 1024 * VBG / VCC, compute:
-VCC(mV) ≈ VBG(mV)×1024 / adc_bg
-
-Use the nominal bandgap (e.g., ~1100 mV) or store a calibrated value during production for better accuracy.
-Pros: no resistors, zero bleed current.
-Cons: accuracy limited by bandgap/ADC tolerance (often ±5–10% uncalibrated). Calibrate once and you’re golden.
-
-2) Higher accuracy — tiny resistor divider to an ADC pin
-Use the ADC with internal fixed reference (e.g., ~1.1 V) and feed VBAT through a high-value divider (e.g., 1.0 MΩ : 330 kΩ → ~0.33×).
-Add a 100 nF cap from ADC pin to GND for a steady reading.
-To eliminate divider bleed in sleep, switch the high leg with a GPIO (set high only while measuring) or a small P-MOSFET.
-Pros: better absolute accuracy and temperature stability.
-Cons: two resistors (+ optional FET).
-Practical thresholds for 2×AA (alkaline or NiMH)
-Pick two levels with hysteresis so you don’t flap around the boundary:
-WARN: ~2.4–2.5 V (alkaline getting low / NiMH near nominal under load)
-CRITICAL: ~2.1–2.2 V (below this many radios/MCUs get flaky)
-Also set BOD (Brown-Out Detect) near your minimum safe VCC (e.g., ~2.0–2.2 V) so you never run code at an unsafe voltage. Use BOD-in-sleep off if you need ultra-low standby current and your risk analysis allows it.
-Make the reading robust
-Measure under (light) load occasionally (e.g., keep CC1101 on for a few ms or blink a small LED) so you see real droop, not just open-circuit voltage.
-Average 4–8 samples, discard obvious spikes, and apply hysteresis between WARN↔OK.
-Do it rarely to save power (e.g., once every 10–30 minutes, or after wake events).
-Temperature matters—if you don’t calibrate, keep a little margin on thresholds.
+From 5V DC power supply. With a 230 V AC - 5 V DC converter.
 
 ### Gateway Type of Buzzer
 
@@ -506,7 +433,7 @@ VCC (≈3.0 V)
  Red: [TLHR4400-AS12Z] https://pt.mouser.com/ProductDetail/Vishay-Semiconductors/TLHR4400-AS12Z?qs=sGAEpiMZZMvVL5Kk7ZYykSSdL1QvRuGrmGBvu1dktLk%3D
 
 ### Gateway 4 Pin Programming Header:
-https://pt.mouser.com/ProductDetail/Amphenol-Commercial-Products/G8250041000YEU?qs=f9yNj16SXrKPzZ0fvYmqsg%3D%3D
+t.b.d.
 
 ### Gateway Enclosure/Box/Case: PCB size and format
 
@@ -528,11 +455,3 @@ Mouser Part Number
 Supplier Link
 Manufacturer
 Manufacturer Part Number
-
-# Chinese ASK/OOK Transmitter
-https://pt.aliexpress.com/item/4000959701272.html?src=google&albch=search&acnt=479-062-3723&isdl=y&aff_short_key=UneMJZVf&albcp=22578521270&albag=185025180612&slnk=&trgt=dsa-42862830006&plac=&crea=753295393188&albad=753295393188&netw=g&device=c&mtctp=&memo1=&albbt=Google_7_search&aff_platform=google&albagn=888888&isSmbActive=false&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gad_campaignid=22578521270&gclid=CjwKCAiAwqHIBhAEEiwAx9cTeUQvMFzxrswCYGVs5KYNUbMy054uADXXqkSNH_cMYWJKxBbyjBSnVxoC5RoQAvD_BwE&gatewayAdapt=glo2bra
-
-Crystal: 13.560 MHz x 32 (PLL) = 433.92 MHz
-Encoder: EV1527
-Transmitter: SYN113/SYN115
-Datasheet => https://www.rhydolabz.com/documents/33/SYN113-SYN115-datasheet-version-1-1-.0.pdf?srsltid=AfmBOooK-Zk0erRmwbCzXrWI8hMejW0hlSovlqv_ElvcFyqy8zpTJCN-

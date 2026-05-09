@@ -9,5 +9,4 @@ context
 container
 sensor
 gateway
-state_machine
 design_decisions

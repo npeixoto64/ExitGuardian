@@ -35,7 +35,7 @@ This repository contains the architecture diagrams for the Exit Guardian system,
      ```
 
 ## Assumptions Reflected
-- RF at 868 MHz EU ISM, short event-driven packets.
+- RF at 433 MHz EU ISM, short event-driven packets.
 - Gateway has wired reed for main door, RF for windows/outside doors.
 - UI: Button with patterns (double ≤1s, triple ≤2s, long >5s), LEDs (G/Y/R), and buzzer.
 - Power: DC/DC 5 to 3.3 V + 2×AA with seamless switchover.

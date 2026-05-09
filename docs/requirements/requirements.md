@@ -361,6 +361,14 @@ The gateway shall maintain the list of paired sensors in non-volatile memory (NV
 The gateway shall persist, in NVM, for each paired sensor, at least: unique identifier, last reported open/close state, and last reported battery status, so that operation resumes consistently after power loss.
 ```
 
+```{req} GFSK modulation for RF link
+:id: NFR_009
+:status: approved
+:component: system
+
+The RF link between sensors and gateway shall use Gaussian Frequency Shift Keying (GFSK) modulation.
+```
+
 ## 5. System Assumptions & Constraints
 
 - Security is not a critical factor.  
@@ -377,12 +385,12 @@ The gateway shall persist, in NVM, for each paired sensor, at least: unique iden
 Device shall comply with CE marking requirements (Low Voltage Directive, EMC Directive).
 ```
 
-```{req} EU RF compliance (868 MHz ISM)
+```{req} EU RF compliance (433 MHz ISM)
 :id: LR_002
 :status: approved
 :component: system
 
-RF module shall operate only on frequencies allowed in the EU (e.g., 868 MHz ISM band, duty cycle limits).
+RF module shall operate only on frequencies allowed in the EU (e.g., 433 MHz ISM band, duty cycle limits).
 ```
 
 ```{req} RoHS / REACH compliance
@@ -416,6 +424,7 @@ Product must comply with EU Battery Directive for labeling and recycling.
 **Duty Cycle:** % of a period when a signal is active.  
 **Factory RESET:** Restores device to original settings.  
 **Gateway:** Central device that receives data and manages alerts.  
+**GFSK:** Gaussian Frequency Shift Keying. Digital modulation scheme that applies a Gaussian filter to the data signal before frequency-shift keying to reduce spectral bandwidth.  
 **LED:** Light Emitting Diode. Indicator for system status.  
 **Low Voltage Directive:** EU directive for electrical safety.  
 **MCU:** Microcontroller Unit.  
