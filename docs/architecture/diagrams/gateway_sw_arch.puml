@@ -3,26 +3,28 @@ skinparam componentStyle rectangle
 skinparam packageStyle frame
 
 ' Hide all connections (keep layout influence, hide visuals)
-skinparam arrow {
-    Color transparent
-    FontColor transparent
-}
+'skinparam arrow {
+'    Color transparent
+'    FontColor transparent
+'}
 
 title Gateway SW Architecture
 
 package "Application Layer" #LightBlue {
     [Main / Super-loop] as App
-    [Sensor Manager] as SensorMgr
+    [Mode Manager\n(waiting-for-config / pairing-unpairing / monitoring)] as ModeMgr
+    [Alert Manager\n(main-door & sensors state, buzzer + red LED pattern)] as AlertMgr
+    [Sensor Manager\n(paired list, last state, last battery)] as SensorMgr
     [Log] as Log
 }
 
 package "Mid-level Drivers" #LightGreen {
-    [Board (init / systick)] as Board
-    [CC1101 RF Transceiver] as CC1101
-    [FeRAM (FM24xx)] as FeRAM
-    [Reed Switch] as Reed
-    [Push Button] as Button
-    [LED] as Led
+    [Board (init / systick / watchdog kick)] as Board
+    [CC1101 RF Transceiver\n(GFSK 433 MHz)] as CC1101
+    [FeRAM (FM24xx)\n(NVM, CRC16-CCITT)] as FeRAM
+    [Reed Switch\n(main door)] as Reed
+    [Push Button\n(short/long press)] as Button
+    [LED (B / Y / R)] as Led
     [Buzzer] as Buzzer
 }
 
@@ -38,21 +40,36 @@ package "Hardware Abstraction Layer (STM8L15x SPL)" #Pink {
         [EXTI] as EXTI
         [TIM1 (PWM)] as TIM1
         [TIM4 (1 ms tick)] as TIM4
-        [ADC] as ADC
+        [ADC (Vbat)] as ADC
+        [IWDG (watchdog)] as IWDG
     }
 }
 
-' Application -> Mid-level
-App --> Board     : init / systick / ISR dispatch
-App --> SensorMgr
-App --> CC1101    : RX poll (GDO0 IRQ flag)
-App --> Reed      : handle / ISR
-App --> Button    : handle / ISR
-App --> Led       : LED_B / LED_R / LED_Y handle
-App --> Buzzer    : buzzer_handle
+' Application internal
+App --> ModeMgr   : dispatch events / tick
+App --> AlertMgr  : tick
+App --> SensorMgr : RX packet / persist
 App --> Log       : send_string
 
-SensorMgr --> FeRAM : persist paired list (CRC16-CCITT)
+ModeMgr  --> AlertMgr   : enable / suspend (pairing mode)
+ModeMgr  --> SensorMgr  : pair / unpair / list query
+ModeMgr  --> Led        : red / yellow patterns per mode
+ModeMgr  --> Buzzer     : pairing beep / confirmation
+
+AlertMgr --> SensorMgr  : query last-known states
+AlertMgr --> Led        : red flashing on alert
+AlertMgr --> Buzzer     : 2 s alert pulse
+
+' Application -> Mid-level
+App --> Board     : init / systick / ISR dispatch / WDG kick
+App --> CC1101    : RX poll (GDO0 IRQ flag)
+App --> Reed      : main-door state / ISR
+App --> Button    : short/long press / ISR
+App --> Led       : LED_B heartbeat handle
+App --> Buzzer    : buzzer_handle
+
+SensorMgr --> FeRAM  : persist paired list + state + battery
+SensorMgr --> CC1101 : decode RX packet (ID, type, batt)
 
 ' Mid-level -> HAL
 Board  --> CLK
@@ -63,6 +80,7 @@ Board  --> ADC    : battery sensing
 Board  --> SPI
 Board  --> I2C
 Board  --> USART
+Board  --> IWDG   : refresh
 
 CC1101 --> SPI
 CC1101 --> GPIO   : CS / GDOx
