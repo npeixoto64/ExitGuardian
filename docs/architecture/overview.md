@@ -8,6 +8,7 @@ This section contains the architecture documentation and diagrams.
 context
 container
 sensor
-gateway
+gateway_hw
+gateway_sw
 state_machine
 design_decisions

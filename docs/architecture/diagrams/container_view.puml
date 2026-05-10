@@ -5,21 +5,29 @@
 
 Person(user, "User")
 System_Boundary(gw, "Gateway") {
-Container(app, "Firmware", "C / Embedded", "Mode manager, Door logic, RF decode, State table, UI, Power mgr, Watchdog")
-Container(rf, "RF Frontend", "868 MHz OOK", "RX (Continuous or WOR)")
+Container(mcu, "MCU + FW", "C / Embedded", "Mode manager, Door logic, RF decode, State table, UI, Power mgr, Watchdog")
+Container(rf, "RF Frontend", "433 MHz GFSK", "TX")
 Container(io, "I/O", "HW", "Door reed, Buzzer, LEDs, Button")
 ContainerDb(nvm, "NVM", "Flash/EEPROM", "Sensor table + config")
-Container(power, "Power", "HW", "5V DC + LDO (Variant A) or 2xAA + regulator (Variant B)")
+Container(power, "Power", "HW", "5V DC + LDO")
 }
-System_Ext(sensors, "Sensors", "Event-only TX")
 
+System_Boundary(sns, "Window Sensor") {
+Container(fw, "MCU + FW", "C / Embedded", "Power Management, TX (Pair/Unpair; Sensor events)")
+Container(radio, "RF Frontend", "433 MHz GFSK", "RX")
+Container(input, "I/O", "HW", "Window reed, LED, Button")
+Container(supply, "Power", "HW", "3V DC (coin cell)")
+}
 
-Rel(sensors, rf, "OOK frames")
-Rel(rf, app, "Decoded frames / interrupts")
-Rel(app, io, "Control: buzzer/LEDs")
-Rel(io, app, "Door / Button events")
-Rel(app, nvm, "Persist/restore state")
-Rel(power, app, "Brownout flags / supply state")
+Rel(radio, rf, "GFSK frames")
+Rel(radio, fw, "Decoded frames / interrupts")
+Rel(input, fw, "Window reed events; Button events; LED")
+Rel(supply, fw, "Battery voltage")
+Rel(rf, mcu, "Decoded frames / interrupts")
+Rel(mcu, io, "Control: buzzer/LEDs")
+Rel(io, mcu, "Door / Button events")
+Rel(mcu, nvm, "Persist/restore state")
+Rel(power, mcu, "Brownout flags / supply state")
 Rel(user, io, "Press button; sees LEDs; hears buzzer")
 
 

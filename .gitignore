@@ -84,7 +84,6 @@ dist/
 # -------------------------------------------------------------------
 # Ignore built documentation
 docs/_build/
-docs/_autosummary/
 
 # Editor backup files
 *~

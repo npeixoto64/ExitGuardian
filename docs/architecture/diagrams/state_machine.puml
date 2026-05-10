@@ -1,51 +1,93 @@
-@startuml State Machine
-[*] --> WAIT_CFG : No sensors paired
-WAIT_CFG : GREEN heartbeat 2s 100ms
-WAIT_CFG : YELLOW=ON;
-WAIT_CFG : RF/ignored;
-WAIT_CFG --> PAIR_LISTEN : Button double-press (<=1s)
-WAIT_CFG --> MONITOR : ≥1 sensor paired
-WAIT_CFG --> RESET_PENDING : Button press >5s
+@startuml
+title Gateway State Machine
 
-MONITOR : GREEN heartbeat 2s 100ms
-MONITOR : YELLOW=OFF
-MONITOR : RED=OFF
-MONITOR --> REMOVE_LISTEN : Button triple-press (<=2s)
-MONITOR --> PAIR_LISTEN : Button double-press (<=1s)
-MONITOR --> RESET_PENDING : Button press >5s
-MONITOR --> ALERT : door open & windows open > 0 (from NvM)
+[*] --> Boot
 
-ALERT : GREEN heartbeat 2s 100ms
-ALERT : RED=ON
-ALERT --> MONITOR : door closed || all windows closed (from NvM)
-ALERT --> RESET_PENDING : Button press >5s
-
-state PAIR_LISTEN {
-  [*] --> Listening_add
-  Listening_add : GREEN heartbeat 2s 100ms
-  Listening_add : YELLOW blink 500ms
-  Listening_add : BUZZER beep 1Hz
-  Listening_add --> RF_new_ID : new sensor ID
-  RF_new_ID : set BUZZER 2s
-  RF_new_ID : YELLOW=OFF
-  Listening_add --> MONITOR : after 20s
-  RF_new_ID --> MONITOR
+state Boot {
+  Boot : entry / board_init, restore paired list AND per-sensor\n         state/battery from NVM (FR_006, NFR_007, NFR_008)
+  Boot : entry / IWDG enabled (NFR_004, 1 s)
 }
 
-state REMOVE_LISTEN {
-  [*] --> Listening_remove
-  Listening_remove : GREEN heartbeat 2s 100ms
-  Listening_remove : YELLOW fast blink 200ms
-  Listening_remove : BUZZER beep 1Hz
-  Listening_remove --> RF_remove_ID : remove sensor ID
-  RF_remove_ID : set BUZZER 2s
-  RF_remove_ID : YELLOW=OFF
-  Listening_remove --> MONITOR : after 20s
-  RF_remove_ID --> MONITOR
-  RF_remove_ID --> WAIT_CFG : no sensors paired
+Boot --> WaitingForConfig : [paired list empty]    /* FR_006 */
+Boot --> Monitoring       : [paired list non-empty] /* FR_006 */
+
+' ---------------- Waiting-for-Configuration ----------------
+state WaitingForConfig {
+  WaitingForConfig : entry / Red LED ON (FR_007)
+  WaitingForConfig : do    / Blue heartbeat 100 ms / 2 s (FR_004)
+  WaitingForConfig : do    / Yellow LED OFF (FR_010)
+  WaitingForConfig : do    / Refresh watchdog (NFR_004)
+  WaitingForConfig : exit  / Red LED OFF
 }
 
-RESET_PENDING : ALL LEDs flash
-RESET_PENDING : Clear NVM
-RESET_PENDING --> WAIT_CFG : on button release
+' ---------------- Monitoring ----------------
+state Monitoring {
+  [*] --> Idle
+
+  state Idle {
+    Idle : entry / Red LED OFF (FR_008)
+    Idle : do    / evaluate ALERT on main-door (debounced 20 ms, FR_011)\n         or sensor packet (FR_012)
+  }
+
+  state Alerting {
+    Alerting : entry / within 500 ms: Buzzer single 2 s ON pulse,\n           start Red LED blink 200 ms / 50% (FR_013)
+    Alerting : do    / Red LED blinking while ALERT (FR_013)
+    Alerting : exit  / truncate buzzer pulse if active,\n           Red LED returns to mode indication (FR_013)
+  }
+
+  Idle     --> Alerting : ALERT becomes true\n(main door OPEN ∧ ∃ paired sensor with last-known state OPEN) /* FR_012 */
+  Alerting --> Idle     : ALERT becomes false /* FR_012, FR_013 */
+
+  Monitoring : do / Blue heartbeat (FR_004)
+  Monitoring : do / Yellow low-battery flash 100 ms / 2 s,\n        in phase with blue (FR_022)
+  Monitoring : do / Update last-known sensor state & battery in NVM (NFR_008)
+}
+
+' ---------------- Pairing/Unpairing ----------------
+state PairingUnpairing {
+  PairingUnpairing : entry / start 20 s timeout (FR_015)
+  PairingUnpairing : do    / Yellow LED 500 ms / 1 s, Buzzer beep 500 ms / 1 s (FR_015, FR_023)
+  PairingUnpairing : do    / Blue heartbeat (FR_004)
+  PairingUnpairing : do    / alerts SUSPENDED (FR_016)
+  PairingUnpairing : do    / no ACK back to sensor (FR_027)
+  PairingUnpairing : exit  / stop pairing-mode yellow blink and pairing beep;\n         yellow returns to FR_022 (monitoring) or FR_010 (wait-for-config)
+}
+
+' ---------------- Mode transitions ----------------
+WaitingForConfig --> PairingUnpairing : button short press ≤ 2 s /* FR_014 */
+Monitoring       --> PairingUnpairing : button short press ≤ 2 s /* FR_014 */
+
+' Successful pair (FR_018): always returns to Monitoring (a sensor is now paired)
+PairingUnpairing --> Monitoring : PAIR_REQ from new sensor ID /\n  add to list, persist in NVM,\n  buzzer ON 2 s (FR_018, NFR_007)
+
+' Successful unpair (FR_020): destination depends on remaining paired count
+PairingUnpairing --> Monitoring : UNPAIR_REQ from known ID /\n  remove from list, persist (NFR_007),\n  buzzer ON 2 s (FR_020) [≥ 1 sensor remains]
+PairingUnpairing --> WaitingForConfig : UNPAIR_REQ from known ID /\n  remove from list, persist (NFR_007),\n  buzzer ON 2 s (FR_020) [no sensors remain]
+
+' Ignored requests (FR_019, FR_021) and timeout/button exit (FR_015, FR_017)
+PairingUnpairing --> WaitingForConfig : (timeout 20 s (FR_015) ∨\n  button short press (FR_017) ∨\n  PAIR_REQ existing ID (FR_019) ∨\n  UNPAIR_REQ unknown ID (FR_021))\n  [no sensors paired]
+PairingUnpairing --> Monitoring       : (timeout 20 s (FR_015) ∨\n  button short press (FR_017) ∨\n  PAIR_REQ existing ID (FR_019) ∨\n  UNPAIR_REQ unknown ID (FR_021))\n  [≥ 1 sensor paired]
+
+note right of PairingUnpairing
+  Pairing/unpairing exits the mode immediately on
+  the first valid pair/unpair packet (FR_018–FR_021)
+  or on button short press (FR_017) or 20 s timeout (FR_015).
+  Press released in (2 s, 5 s) is ignored (FR_025).
+  No ACK is sent back to the sensor (FR_027).
+end note
+
+' ---------------- Factory RESET ----------------
+state FactoryReset <<choice>>
+WaitingForConfig --> FactoryReset : button held ≥ 5 s, then released /* FR_024 */
+Monitoring       --> FactoryReset : button held ≥ 5 s, then released /* FR_024 */
+PairingUnpairing --> FactoryReset : button held ≥ 5 s, then released /* FR_024 */
+FactoryReset --> WaitingForConfig : clear paired list & state in NVM\n  (FR_009, FR_026)
+
+note right of FactoryReset
+  While holding ≥ 5 s: all LEDs blink 200 ms / 50% (FR_024).
+  A press released in (2 s, 5 s) is ignored (FR_025).
+  Watchdog hard RESET on SW fault (NFR_004, 1 s)
+  re-enters Boot.
+end note
+
 @enduml

@@ -1,0 +1,59 @@
+@startuml
+skinparam componentStyle rectangle
+skinparam packageStyle frame
+
+title Gateway SW Architecture
+
+package "Application Layer" #LightBlue {
+    [Main / Super-loop] as App
+    [Mode Manager\n(waiting-for-config / pairing-unpairing / monitoring)] as ModeMgr
+    [Alert Manager\n(main-door & sensors state, buzzer + red LED pattern)] as AlertMgr
+    [Sensor Manager\n(paired list, last state, last battery)] as SensorMgr
+    [Log] as Log
+}
+
+package "Mid-level Drivers" #LightGreen {
+    [Board (init / systick / watchdog kick)] as Board
+    [CC1101 RF Transceiver\n(GFSK 433 MHz)] as CC1101
+    [FeRAM (FM24xx)\n(NVM, CRC16-CCITT)] as FeRAM
+    [Reed Switch\n(main door)] as Reed
+    [Push Button\n(short/long press)] as Button
+    [LED (B / Y / R)] as Led
+    [Buzzer] as Buzzer
+}
+
+package "Hardware Abstraction Layer (STM8L15x SPL)" #Pink {
+    component "Communication" {
+        [SPI] as SPI
+        [I2C] as I2C
+        [USART] as USART
+    }
+    component "Core / IO / Timing" {
+        [CLK] as CLK
+        [GPIO] as GPIO
+        [EXTI] as EXTI
+        [TIM1 (PWM)] as TIM1
+        [TIM4 (1 ms tick)] as TIM4
+        [ADC (Vbat)] as ADC
+        [IWDG (watchdog)] as IWDG
+    }
+}
+
+' Force the three packages to stack vertically (App on top, HAL on bottom).
+' Hidden edges from every Application component down to a Mid-level driver,
+' and from every Mid-level driver down to a HAL component, lock the ranks.
+App       -[hidden]down-> Board
+ModeMgr   -[hidden]down-> Button
+AlertMgr  -[hidden]down-> Led
+SensorMgr -[hidden]down-> CC1101
+Log       -[hidden]down-> FeRAM
+
+Board   -[hidden]down-> CLK
+CC1101  -[hidden]down-> SPI
+FeRAM   -[hidden]down-> I2C
+Reed    -[hidden]down-> EXTI
+Button  -[hidden]down-> GPIO
+Led     -[hidden]down-> TIM4
+Buzzer  -[hidden]down-> TIM1
+
+@enduml

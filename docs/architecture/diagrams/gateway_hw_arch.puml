@@ -1,0 +1,55 @@
+@startuml
+title Hardware Block Diagram: Gateway
+
+' --- Style ---
+skinparam componentStyle rectangle
+skinparam monochrome true
+
+' --- Components ---
+node "Power Supply" {
+    [DC-DC] as PWR << 5V to 3.3V Regulator >>
+}
+
+node "Processing" {
+    [MCU] as CTRL << STM8L151 >>
+    [FeRAM] as FERM << 8 KB >>
+}
+
+node "RF Front-End, 433 MHz" {
+    [RF Transceiver] as RF_CHIP << CC1101 >>
+    [Balun] as BAL
+    [Pi-Match] as PI_NET
+    [Antenna] as ANT << 50 ohm >>
+}
+
+node "Peripherals" {
+    [Reed Switch] as REED
+    [Push Button] as BTN
+    [LED] as STATUS_LED
+    [BUZZER DRIVER] as BZR_DRV
+    [BUZZER] as BZR
+}
+
+' --- Connections ---
+
+' Power Distribution (Parallel connection from Power node)
+PWR -[bold]-> CTRL : VCC
+PWR -[bold]-> RF_CHIP : VCC
+PWR -[bold]-> FERM : VCC
+PWR -left[bold]-> BZR_DRV : VCC
+
+' Logic/Signals
+CTRL <-left-> FERM : I2C
+CTRL <-> RF_CHIP : SPI / GDO
+REED -up-> CTRL : GPIO
+BTN -up-> CTRL : GPIO
+STATUS_LED <-up- CTRL : GPIO
+BZR_DRV <-up- CTRL : GPIO
+BZR <-up- BZR_DRV : GPIO
+
+' RF Path
+RF_CHIP -right-> BAL
+BAL -right-> PI_NET
+PI_NET -right-> ANT
+
+@enduml

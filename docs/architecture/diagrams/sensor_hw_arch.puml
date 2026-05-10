@@ -1,0 +1,51 @@
+@startuml
+title Hardware Block Diagram: Window Sensor
+
+' --- Style ---
+skinparam componentStyle rectangle
+skinparam monochrome true
+
+' --- Components ---
+node "Power Supply" {
+    [Coin Cell] as BATT << CR2032 >>
+    [Bulk Capacitor] as CAP << 470uF+ >>
+    
+    ' Connect Battery and Cap in parallel visually
+    BATT -right- CAP
+}
+
+node "Processing" {
+    [MCU] as CTRL << STM8S003F3P6 >>
+}
+
+node "RF Front-End, 433 MHz" {
+    [RF Transceiver] as RF_CHIP << CC1101 >>
+    [Balun] as BAL
+    [Pi-Match] as PI_NET
+    [Antenna] as ANT << 50 ohm >>
+}
+
+node "Peripherals" {
+    [Reed Switch] as REED
+    [Push Button] as BTN
+    [LED] as STATUS_LED
+}
+
+' --- Connections ---
+
+' Power Distribution (Parallel connection from Power node)
+CAP -[bold]-> CTRL : VCC
+CAP -[bold]-> RF_CHIP : VCC
+
+' Logic/Signals
+CTRL <-> RF_CHIP : SPI / GDO
+REED -up-> CTRL : GPIO
+BTN -up-> CTRL : GPIO
+STATUS_LED <-up- CTRL : GPIO
+
+' RF Path
+RF_CHIP -right-> BAL
+BAL -right-> PI_NET
+PI_NET -right-> ANT
+
+@enduml

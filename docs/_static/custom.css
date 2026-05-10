@@ -1,0 +1,27 @@
+/* PlantUML diagrams: Sphinx renders them as
+     <p class="plantuml"><object ... style="width:NNNpx;height:NNNpx">
+   Furo's default image styling shrinks them to fit the column. We instead
+   want the diagram to keep its natural pixel size and the wrapper to
+   provide a horizontal scrollbar when needed. */
+
+p.plantuml,
+div.plantuml,
+figure.plantuml {
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Don't let the theme cap the diagram — keep its intrinsic width so the
+   wrapper actually has something to scroll. */
+p.plantuml > object,
+p.plantuml > img,
+p.plantuml > svg,
+div.plantuml > object,
+div.plantuml > img,
+div.plantuml > svg {
+    max-width: none !important;
+    height: auto;
+    display: block;
+}

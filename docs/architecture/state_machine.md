@@ -1,6 +1,6 @@
-# Top Level State Machine
+# State Machine
 
 ```{uml}
 @startuml
-!include diagrams/top_level_state_machine.puml
+!include diagrams/state_machine.puml
 @enduml

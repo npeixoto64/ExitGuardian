@@ -4,12 +4,16 @@
 
 
 Person(user, "User")
-System(exitg, "Exit Guardian", "Alerts when leaving with windows open")
-System_Ext(sensors, "Window Sensors", "UID + OPEN/CLOSED + LOWBAT")
+System(exitg, "Gateway", "Alerts when leaving with windows open")
+System(sensor1, "Window Sensor 1", "UID + OPEN/CLOSED + PAIR/UNPAIR + BAT STATUS")
+System(sensor2, "Window Sensor 2", "UID + OPEN/CLOSED + PAIR/UNPAIR + BAT STATUS")
+System(sensorN, "Window Sensor N", "UID + OPEN/CLOSED + PAIR/UNPAIR + BAT STATUS")
 
 
 Rel(user, exitg, "Door opens/closes, button presses; hears buzzer/LEDs")
-Rel(sensors, exitg, "RF events (868 MHz OOK)")
+Rel(sensor1, exitg, "RF events (433 MHz GFSK)")
+Rel(sensor2, exitg, "RF events (433 MHz GFSK)")
+Rel(sensorN, exitg, "RF events (433 MHz GFSK)")
 
 
 SHOW_LEGEND()
