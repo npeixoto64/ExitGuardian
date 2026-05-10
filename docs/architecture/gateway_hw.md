@@ -1,4 +1,4 @@
-# Gateway Block Diagram
+# Gateway HW Block Diagram
 
 ```{uml}
 @startuml

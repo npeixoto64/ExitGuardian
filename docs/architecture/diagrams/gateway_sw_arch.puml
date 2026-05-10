@@ -2,12 +2,6 @@
 skinparam componentStyle rectangle
 skinparam packageStyle frame
 
-' Hide all connections (keep layout influence, hide visuals)
-'skinparam arrow {
-'    Color transparent
-'    FontColor transparent
-'}
-
 title Gateway SW Architecture
 
 package "Application Layer" #LightBlue {
@@ -45,53 +39,21 @@ package "Hardware Abstraction Layer (STM8L15x SPL)" #Pink {
     }
 }
 
-' Application internal
-App --> ModeMgr   : dispatch events / tick
-App --> AlertMgr  : tick
-App --> SensorMgr : RX packet / persist
-App --> Log       : send_string
+' Force the three packages to stack vertically (App on top, HAL on bottom).
+' Hidden edges from every Application component down to a Mid-level driver,
+' and from every Mid-level driver down to a HAL component, lock the ranks.
+App       -[hidden]down-> Board
+ModeMgr   -[hidden]down-> Button
+AlertMgr  -[hidden]down-> Led
+SensorMgr -[hidden]down-> CC1101
+Log       -[hidden]down-> FeRAM
 
-ModeMgr  --> AlertMgr   : enable / suspend (pairing mode)
-ModeMgr  --> SensorMgr  : pair / unpair / list query
-ModeMgr  --> Led        : red / yellow patterns per mode
-ModeMgr  --> Buzzer     : pairing beep / confirmation
-
-AlertMgr --> SensorMgr  : query last-known states
-AlertMgr --> Led        : red flashing on alert
-AlertMgr --> Buzzer     : 2 s alert pulse
-
-' Application -> Mid-level
-App --> Board     : init / systick / ISR dispatch / WDG kick
-App --> CC1101    : RX poll (GDO0 IRQ flag)
-App --> Reed      : main-door state / ISR
-App --> Button    : short/long press / ISR
-App --> Led       : LED_B heartbeat handle
-App --> Buzzer    : buzzer_handle
-
-SensorMgr --> FeRAM  : persist paired list + state + battery
-SensorMgr --> CC1101 : decode RX packet (ID, type, batt)
-
-' Mid-level -> HAL
-Board  --> CLK
-Board  --> GPIO
-Board  --> EXTI
-Board  --> TIM4   : 1 kHz systick
-Board  --> ADC    : battery sensing
-Board  --> SPI
-Board  --> I2C
-Board  --> USART
-Board  --> IWDG   : refresh
-
-CC1101 --> SPI
-CC1101 --> GPIO   : CS / GDOx
-CC1101 --> EXTI   : GDO0 IRQ
-FeRAM  --> I2C
-Reed   --> GPIO
-Reed   --> EXTI
-Button --> GPIO
-Button --> EXTI
-Led    --> GPIO
-Buzzer --> TIM1   : differential PWM
-Log    --> USART
+Board   -[hidden]down-> CLK
+CC1101  -[hidden]down-> SPI
+FeRAM   -[hidden]down-> I2C
+Reed    -[hidden]down-> EXTI
+Button  -[hidden]down-> GPIO
+Led     -[hidden]down-> TIM4
+Buzzer  -[hidden]down-> TIM1
 
 @enduml

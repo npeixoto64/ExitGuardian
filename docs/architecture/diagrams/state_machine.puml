@@ -1,0 +1,84 @@
+@startuml
+title Gateway State Machine
+
+[*] --> Boot
+
+state Boot {
+  Boot : entry / board_init, restore paired list from NVM (FR_006, NFR_007/008)
+}
+
+Boot --> WaitingForConfig : [paired list empty]   /* FR_006 */
+Boot --> Monitoring       : [paired list non-empty] /* FR_006 */
+
+' ---------------- Waiting-for-Configuration ----------------
+state WaitingForConfig {
+  WaitingForConfig : entry / Red LED ON (FR_007)
+  WaitingForConfig : do    / Blue heartbeat 100 ms / 2 s (FR_004)
+  WaitingForConfig : do    / Yellow per FR_022
+  WaitingForConfig : exit  / Red LED OFF
+}
+
+' ---------------- Monitoring ----------------
+state Monitoring {
+  [*] --> Idle
+
+  state Idle {
+    Idle : entry / Red LED OFF (FR_008)
+    Idle : do    / evaluate ALERT on main-door or sensor event (FR_011, FR_012)
+  }
+
+  state Alerting {
+    Alerting : entry / Buzzer 2 s pulse, Red LED flash 200 ms 50% (FR_013)
+    Alerting : do    / Red LED flashing while ALERT
+    Alerting : exit  / silence buzzer, Red LED follows mode (FR_013)
+  }
+
+  Idle     --> Alerting : ALERT becomes true\n(main door OPEN ∧ ∃ sensor OPEN) /* FR_012 */
+  Alerting --> Idle     : ALERT becomes false /* FR_012/FR_013 */
+
+  Monitoring : do / Blue heartbeat (FR_004)
+  Monitoring : do / Yellow low-battery flash in phase w/ blue (FR_022)
+  Monitoring : do / Update last-known sensor state & battery in NVM (NFR_008)
+}
+
+' ---------------- Pairing/Unpairing ----------------
+state PairingUnpairing {
+  PairingUnpairing : entry / start 20 s timeout (FR_015)
+  PairingUnpairing : do    / Yellow flash 500 ms / 1 s, Buzzer beep 500 ms / 1 s (FR_015, FR_023)
+  PairingUnpairing : do    / alerts SUSPENDED (FR_016)
+  PairingUnpairing : do    / Blue heartbeat (FR_004)
+  PairingUnpairing : exit  / stop yellow pairing flash; yellow returns to FR_022
+}
+
+' ---------------- Mode transitions ----------------
+WaitingForConfig --> PairingUnpairing : button short press ≤ 2 s /* FR_014 */
+Monitoring       --> PairingUnpairing : button short press ≤ 2 s /* FR_014 */
+
+PairingUnpairing --> WaitingForConfig : (timeout 20 s ∨ button short press ∨\n  PAIR_REQ existing-ID (FR_019) ∨\n  UNPAIR_REQ unknown-ID (FR_021) ∨\n  UNPAIR_REQ known-ID (FR_020))\n  [no sensors paired]
+PairingUnpairing --> Monitoring       : (timeout 20 s ∨ button short press ∨\n  PAIR_REQ existing-ID (FR_019) ∨\n  UNPAIR_REQ unknown-ID (FR_021) ∨\n  PAIR_REQ new-ID (FR_018) ∨\n  UNPAIR_REQ known-ID (FR_020))\n  [≥ 1 sensor paired]
+
+note right of PairingUnpairing
+  On successful PAIR_REQ (FR_018) or UNPAIR_REQ (FR_020):
+    update paired list in NVM (NFR_007),
+    sound buzzer continuously 2 s,
+    then exit per [paired count].
+  Press released in (2 s, 5 s) is ignored (FR_025).
+end note
+
+' Sensor pair/unpair effect on mode while in waiting-for-config / monitoring
+WaitingForConfig --> Monitoring : sensor paired (FR_010)
+Monitoring       --> WaitingForConfig : last sensor unpaired (FR_010)
+
+' ---------------- Factory RESET ----------------
+state FactoryReset <<choice>>
+WaitingForConfig --> FactoryReset : button held ≥ 5 s, then released /* FR_024 */
+Monitoring       --> FactoryReset : button held ≥ 5 s, then released /* FR_024 */
+PairingUnpairing --> FactoryReset : button held ≥ 5 s, then released /* FR_024 */
+FactoryReset --> WaitingForConfig : clear paired list in NVM (FR_009, FR_026)
+
+note right of FactoryReset
+  While holding ≥ 5 s: all LEDs flash 200 ms 50% (FR_024).
+  Watchdog hard RESET on SW fault (NFR_004) re-enters Boot.
+end note
+
+@enduml
