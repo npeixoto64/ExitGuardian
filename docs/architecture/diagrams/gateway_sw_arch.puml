@@ -2,6 +2,12 @@
 skinparam componentStyle rectangle
 skinparam packageStyle frame
 
+' Hide all connections (keep layout influence, hide visuals)
+skinparam arrow {
+    Color transparent
+    FontColor transparent
+}
+
 title Gateway SW Architecture
 
 package "Application Layer" #LightBlue {
