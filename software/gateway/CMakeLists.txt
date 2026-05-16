@@ -72,6 +72,8 @@ set(SRC_C
   ${CMAKE_SOURCE_DIR}/src/cc1101.c
   ${CMAKE_SOURCE_DIR}/src/feram.c
   ${CMAKE_SOURCE_DIR}/src/sensor_manager.c
+  ${CMAKE_SOURCE_DIR}/src/mode_manager.c
+  ${CMAKE_SOURCE_DIR}/src/alert_manager.c
   ${CMAKE_SOURCE_DIR}/src/log.c
   ${CMAKE_SOURCE_DIR}/src/reed.c
   ${CMAKE_SOURCE_DIR}/src/button.c

@@ -39,7 +39,7 @@ void buzzer_handle(uint16_t now, buzzer_mode_t mode)
       return;
     case BUZZER_MODE_BEEP:
     default:
-      buzzer_drive(0);
+      buzzer_drive(1);
       break;
     }
   }

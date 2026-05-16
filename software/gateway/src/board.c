@@ -9,6 +9,7 @@
 #include "stm8l15x_tim1.h"
 #include "stm8l15x_tim4.h"
 #include "stm8l15x_exti.h"
+#include "cc1101.h"
 
 static void clock_init(void)
 {
@@ -65,7 +66,7 @@ static void gpio_init(void)
 
   GPIO_ResetBits(LED_B_PORT, LED_B_PIN);
   GPIO_ResetBits(LED_Y_PORT, LED_Y_PIN);
-  GPIO_SetBits(LED_R_PORT, LED_R_PIN);
+  GPIO_ResetBits(LED_R_PORT, LED_R_PIN);
   GPIO_ResetBits(BUZZER_EN_PORT, BUZZER_EN_PIN);
 }
 
@@ -179,6 +180,10 @@ void board_init(void)
   uart_init();
   pwm_init();
   systick_init();
+
+  enableInterrupts();
+  
+  cc1101_config_gfsk_433_rx_fixed(5);
 }
 
 void board_buzzer(uint8_t on)

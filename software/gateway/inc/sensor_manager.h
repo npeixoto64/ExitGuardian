@@ -69,4 +69,7 @@ uint8_t SensorManager_UpdateSensorStatus(uint32_t id, uint8_t status);
 /* Returns 1 if any valid sensor has reed switch state set, otherwise 0. */
 uint8_t SensorManager_AnyValidReedSwitchSet(void);
 
+/* Returns the number of currently paired (valid) sensors. */
+uint8_t SensorManager_PairedCount(void);
+
 #endif

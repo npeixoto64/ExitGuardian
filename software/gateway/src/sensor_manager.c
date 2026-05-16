@@ -317,3 +317,20 @@ uint8_t SensorManager_AnyValidReedSwitchSet(void)
 
     return 0U;
 }
+
+uint8_t SensorManager_PairedCount(void)
+{
+    uint8_t i = 0U;
+    uint8_t count = 0U;
+
+    sensor_manager_ensure_mirror_loaded();
+
+    while (i < g_sensor_count) {
+        if (g_sensor_mirror[i].valid != 0U) {
+            count++;
+        }
+        i++;
+    }
+
+    return count;
+}

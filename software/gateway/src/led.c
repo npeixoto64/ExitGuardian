@@ -36,9 +36,9 @@ static void led_mode_handle(GPIO_TypeDef *port, uint8_t pin,
       return;
     case LED_MODE_FLASH:
     default:
-      /* Entering FLASH: start a fresh period in the OFF phase. */
-      GPIO_ResetBits(port, pin);
-      st->on = 0;
+      /* Entering FLASH: start a fresh period in the ON phase. */
+      GPIO_SetBits(port, pin);
+      st->on = 1;
       st->last_tick = now;
       break;
     }
@@ -81,7 +81,7 @@ void led_b_handle(uint16_t now)
 // Function to handle LED_R: off, on, or flashing every 1s for 500ms
 void led_r_handle(uint16_t now, led_mode_t mode)
 {
-  static led_state_t st = {0, 0};
+  static led_state_t st = {0, 0, 0};
   led_mode_handle(LED_R_PORT, LED_R_PIN, now, mode,
                   LEDR_PERIOD_MS, LEDR_ON_MS, &st);
 }
@@ -89,7 +89,7 @@ void led_r_handle(uint16_t now, led_mode_t mode)
 // Function to handle LED_Y: off, on, or flashing every 1s for 500ms
 void led_y_handle(uint16_t now, led_mode_t mode)
 {
-  static led_state_t st = {0, 0};
+  static led_state_t st = {0, 0, 0};
   led_mode_handle(LED_Y_PORT, LED_Y_PIN, now, mode,
                   LEDY_PERIOD_MS, LEDY_ON_MS, &st);
 }
