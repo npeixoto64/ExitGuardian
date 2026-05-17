@@ -22,19 +22,23 @@
 #define SENSOR_STATUS_PAIRING_SHIFT        1U
 #define SENSOR_STATUS_BAT_SOC_SHIFT        4U
 
-#define SENSOR_STATUS_PAIRING_IGNORE       0U
-#define SENSOR_STATUS_PAIRING_REQUEST      1U
-#define SENSOR_STATUS_UNPAIRING_REQUEST    2U
+#define SENSOR_STATUS_PAIRING_REQUEST      2U
+#define SENSOR_STATUS_UNPAIRING_REQUEST    3U
 
 #define SENSOR_STATUS_REED_SWITCH_MASK     (1U << SENSOR_STATUS_REED_SWITCH_BIT)
 #define SENSOR_STATUS_PAIRING_MASK         (0x03U << SENSOR_STATUS_PAIRING_SHIFT)
 #define SENSOR_STATUS_BAT_SOC_MASK         (0x0FU << SENSOR_STATUS_BAT_SOC_SHIFT)
 
-#define SENSOR_STATUS_PACK(bat_soc, pairing, reed_switch) \
-    (uint8_t)((((uint8_t)(bat_soc) & 0x0FU) << SENSOR_STATUS_BAT_SOC_SHIFT) \
-        | (((uint8_t)(pairing) & 0x03U) << SENSOR_STATUS_PAIRING_SHIFT) \
-        | (((reed_switch) ? 1U : 0U) << SENSOR_STATUS_REED_SWITCH_BIT))
+#define SENSOR_NOT_UPDATED                 0U
+#define SENSOR_UPDATED                     1U
+#define SENSOR_PAIRED                      2U
+#define SENSOR_UNPAIRED                    3U
 
+/* Status byte format:
+*   Bits 7-4: Battery capacity (high nibble)
+*   Bits 2-1: Button action (0(none) = reed update, 1(single press) = force update, 2(double press) = pair, 3(long press) = unpair)
+*   Bit 0:    Reed switch state
+*/
 #define SENSOR_STATUS_GET_BAT_SOC(status) \
     (uint8_t)(((uint8_t)(status) & SENSOR_STATUS_BAT_SOC_MASK) >> SENSOR_STATUS_BAT_SOC_SHIFT)
 #define SENSOR_STATUS_GET_PAIRING(status) \
@@ -60,13 +64,17 @@ void SensorManager_ResetFeramHeaderAndMirror(void);
 
 /*
  * Updates the status of an existing sensor ID in RAM mirror and FeRAM if the
- * status differs, or adds a new entry when the ID is not present and
- * SENSOR_STATUS_PAIRING_BIT is set in status.
- * Returns 1 if the entry was updated or added, 0 otherwise.
+ * ID matches and the it's valid and the status differs.
+ * OR
+ * Adds a new entry if the ID is not found and SENSOR_STATUS_PAIRING_REQUEST is set
+ * OR
+ * If the ID matches an existing entry, but SENSOR_STATUS_UNPAIRING_REQUEST is set, invalidates the entry. 
+ *
+ * If updated successefully returns 1, otherwise (e.g. invalid pairing/unpairing request, mirror full) returns 0.
  */
 uint8_t SensorManager_UpdateSensorStatus(uint32_t id, uint8_t status);
 
-/* Returns 1 if any valid sensor has reed switch state set, otherwise 0. */
+/* Returns 1 if any valid sensor has reed switch state set/open, otherwise 0. */
 uint8_t SensorManager_AnyValidReedSwitchSet(void);
 
 /* Returns the number of currently paired (valid) sensors. */

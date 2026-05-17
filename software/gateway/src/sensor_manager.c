@@ -1,6 +1,7 @@
 #include "sensor_manager.h"
 
 #include "feram.h"
+#include "log.h"
 
 #define SENSOR_MANAGER_CRC_POLY 0x1021U
 #define SENSOR_MANAGER_CRC_INIT 0xFFFFU
@@ -46,6 +47,24 @@ static inline uint16_t sensor_manager_record_addr(uint8_t index)
     return (uint16_t)(((uint16_t)index + 1U) << 3);
 }
 
+/**
+ * @brief Serialize the sensor manager metadata header into an 8-byte record.
+ *
+ * Lays out the header record as:
+ *  - Byte 0: magic byte 0 (`SENSOR_MANAGER_HEADER_MAGIC0`, 'S')
+ *  - Byte 1: magic byte 1 (`SENSOR_MANAGER_HEADER_MAGIC1`, 'M')
+ *  - Byte 2: header version (`SENSOR_MANAGER_HEADER_VERSION`)
+ *  - Byte 3: number of stored sensor entries
+ *  - Bytes 4-5: reserved (set to 0)
+ *  - Bytes 6-7: CRC-16/CCITT over bytes 0-5 (big-endian)
+ *
+ * The packed record is ready to be written to FeRAM at
+ * `SENSOR_MANAGER_HEADER_ADDR`.
+ *
+ * @param[in]  count       Number of valid sensor entries currently stored.
+ * @param[out] out_record  Destination buffer of size `SENSOR_MANAGER_RECORD_SIZE`
+ *                         that receives the packed header bytes.
+ */
 static void sensor_manager_pack_header(uint8_t count, uint8_t out_record[SENSOR_MANAGER_RECORD_SIZE])
 {
     uint16_t crc = 0;
@@ -62,6 +81,25 @@ static void sensor_manager_pack_header(uint8_t count, uint8_t out_record[SENSOR_
     out_record[7] = (uint8_t)crc;
 }
 
+/**
+ * @brief Read and validate the sensor manager metadata header from FeRAM.
+ *
+ * Reads the 8-byte header record at `SENSOR_MANAGER_HEADER_ADDR` and verifies
+ * its integrity by:
+ *  - Recomputing the CRC-16/CCITT over bytes 0-5 and comparing against the
+ *    big-endian CRC stored in bytes 6-7.
+ *  - Checking the magic bytes (`SENSOR_MANAGER_HEADER_MAGIC0`,
+ *    `SENSOR_MANAGER_HEADER_MAGIC1`) and version
+ *    (`SENSOR_MANAGER_HEADER_VERSION`).
+ *  - Ensuring the stored entry count does not exceed
+ *    `SENSOR_MANAGER_MAX_SENSORS`.
+ *
+ * @param[out] count  On success, receives the number of valid sensor entries
+ *                    reported by the header. Not modified on failure.
+ *
+ * @return 1U if the header is valid and @p count was written; 0U otherwise
+ *         (CRC mismatch, bad magic/version, or out-of-range count).
+ */
 static uint8_t sensor_manager_read_header(uint8_t* count)
 {
     uint8_t record[SENSOR_MANAGER_RECORD_SIZE];
@@ -88,6 +126,19 @@ static uint8_t sensor_manager_read_header(uint8_t* count)
     return 1U;
 }
 
+/**
+ * @brief Validate the FeRAM metadata header, reinitializing it if corrupt.
+ *
+ * Attempts to read and verify the persisted header via
+ * `sensor_manager_read_header()`. If the header is valid, the in-RAM entry
+ * counter `g_sensor_count` is updated to reflect the persisted count. If the
+ * header is invalid (CRC mismatch, bad magic/version, or out-of-range count),
+ * `g_sensor_count` is reset to 0 and a fresh, empty header is written back to
+ * FeRAM so subsequent operations start from a known-good state.
+ *
+ * @return 1U if the existing header was valid; 0U if it was invalid and a new
+ *         empty header was written.
+ */
 static uint8_t sensor_manager_validate_header_and_reset_if_invalid(void)
 {
     uint8_t count = 0U;
@@ -256,49 +307,66 @@ uint8_t SensorManager_UpdateSensorStatus(uint32_t id, uint8_t status)
 
     while (i < g_sensor_count) {
         if (g_sensor_mirror[i].id == id) {
+            // ID found in mirror
             if (g_sensor_mirror[i].valid == 0U) {
+                // Entry is currently invalid
                 if (is_pairing_request == 0U) {
-                    return 0U;
+                    // No pairing request, return without update
+                    send_string("\r\nID found, it's invalid, no pairing request -> entry remains invalid");
+                    return SENSOR_NOT_UPDATED;
+                }
+                else {
+                    // Pairing request for an already invalid entry, update and validate it
+                    g_sensor_mirror[i].status = normalized_status;
+                    g_sensor_mirror[i].valid = 1U;
+                    sensor_manager_persist_record(i);
+                    send_string("\r\nID found, it's invalid, pairing request -> entry validated");
+                    return SENSOR_PAIRED;
+                }
+            }
+            else {
+                // Entry is currently valid
+                if (is_unpairing_request != 0U) {
+                    // Unpairing request for an already valid entry, invalidate it
+                    g_sensor_mirror[i].status = normalized_status;
+                    g_sensor_mirror[i].valid = 0U;
+                    sensor_manager_persist_record(i);
+                    send_string("\r\nID found, it's valid, unpairing request -> entry invalidated");
+                    return SENSOR_UNPAIRED;
                 }
 
-                g_sensor_mirror[i].status = normalized_status;
-                g_sensor_mirror[i].valid = 1U;
-                sensor_manager_persist_record(i);
-                return 1U;
-            }
+                // No pairing/unpairing request, just update if status differs
+                if (g_sensor_mirror[i].status != normalized_status) {
+                    g_sensor_mirror[i].status = normalized_status;
+                    sensor_manager_persist_record(i);
+                    send_string("\r\nID found, it's valid, status updated");
+                    return SENSOR_UPDATED;
+                }
 
-            if (is_unpairing_request != 0U) {
-                g_sensor_mirror[i].status = normalized_status;
-                g_sensor_mirror[i].valid = 0U;
-                sensor_manager_persist_record(i);
-                return 1U;
+                send_string("\r\nID found, it's valid, no update needed");
+                return SENSOR_UPDATED; // ID found but no update needed, still considered successful
             }
-
-            if (g_sensor_mirror[i].status != normalized_status) {
-                g_sensor_mirror[i].status = normalized_status;
-                sensor_manager_persist_record(i);
-                return 1U;
-            }
-
-            return 1U;
         }
 
         i++;
     }
 
-    if ((is_pairing_request == 0U)
-        || (g_sensor_count >= SENSOR_MANAGER_MAX_SENSORS)) {
-        return 0U;
+    // ID not found in mirror, add new entry if pairing request and space available
+    if ((is_pairing_request == 0U) || (g_sensor_count >= SENSOR_MANAGER_MAX_SENSORS)) {
+        send_string("\r\nID not found, no pairing request or memory full, cannot add");
+        return SENSOR_NOT_UPDATED;
+    } else {
+        g_sensor_mirror[g_sensor_count].id = id;
+        g_sensor_mirror[g_sensor_count].status = normalized_status;
+        g_sensor_mirror[g_sensor_count].valid = 1U;
+        sensor_manager_persist_record(g_sensor_count);
+        g_sensor_count++;
+        sensor_manager_write_header(g_sensor_count);
+
+        send_string("\r\nNew sensor paired");
+
+        return SENSOR_PAIRED;
     }
-
-    g_sensor_mirror[g_sensor_count].id = id;
-    g_sensor_mirror[g_sensor_count].status = normalized_status;
-    g_sensor_mirror[g_sensor_count].valid = 1U;
-    sensor_manager_persist_record(g_sensor_count);
-    g_sensor_count++;
-    sensor_manager_write_header(g_sensor_count);
-
-    return 1U;
 }
 
 uint8_t SensorManager_AnyValidReedSwitchSet(void)

@@ -107,28 +107,36 @@ void mode_manager_on_long_press_released(void)
 
 void mode_manager_on_sensor_packet(uint32_t sensor_id, uint8_t status)
 {
+  /* Status byte format:
+  *   Bits 7-4: Battery capacity (high nibble)
+  *   Bits 2-1: Button action (0 = none, 1(single press) = force update, 2(double press) = pair, 3(long press) = unpair)
+  *   Bit 0:    Reed switch state
+  */
+  uint8_t battery     = (status >> 4) & 0x0F;
+  uint8_t button_act  = (status >> 1) & 0x03;
+  uint8_t reed_state  = status & 0x01;
+
   uint8_t updated;
 
-  if (g_mode == MODE_PAIRING_UNPAIRING)
-  {
+  if (g_mode == MODE_PAIRING_UNPAIRING) {
     updated = SensorManager_UpdateSensorStatus(sensor_id, status);
-
-    /* FR_018/FR_020: a successful add/remove triggers the 2 s confirmation
-     * buzzer and exits the mode. FR_019/FR_021: ignored requests still exit
-     * the mode but without the confirmation pulse. FR_027: no ACK is sent. */
-    if (updated != 0U)
-    {
+    if (updated == SENSOR_PAIRED || updated == SENSOR_UNPAIRED) {
       g_confirm_active     = 1U;
       g_confirm_started_ms = board_get_tick_ms();
+      send_string("\r\nSensor paired or unpaired");
+    } else {
+      send_string("\r\nSensor not paired or unpaired");
     }
-    exit_pairing_to_previous();
-    return;
   }
-
-  // /* MODE_MONITORING: just update last-known state/battery (NFR_008) and
-  //  * re-evaluate the alert (FR_012). */
-  // (void)SensorManager_UpdateSensorStatus(sensor_id, status);
-  // alert_manager_evaluate();
+  else {
+    updated = SensorManager_UpdateSensorStatus(sensor_id, status);
+    if (updated == SENSOR_UPDATED) {
+      send_string("\r\nSensor status updated");
+    } else {
+      send_string("\r\nSensor not updated");
+    }
+  }
+  exit_pairing_to_previous();
 }
 
 void mode_manager_factory_reset(void)

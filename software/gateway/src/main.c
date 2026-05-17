@@ -90,6 +90,7 @@ int main(void)
         send_string(buffer);
         sprintf(buffer, "; reed: %u", reed_state);
         send_string(buffer);
+        send_register_hex("status: ", status);
 
         mode_manager_on_sensor_packet(chip_id, status);
       }
