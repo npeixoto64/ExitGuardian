@@ -29,7 +29,7 @@
 #define SENSOR_STATUS_PAIRING_MASK         (0x03U << SENSOR_STATUS_PAIRING_SHIFT)
 #define SENSOR_STATUS_BAT_SOC_MASK         (0x0FU << SENSOR_STATUS_BAT_SOC_SHIFT)
 
-#define SENSOR_NOT_UPDATED                 0U
+#define SENSOR_IGNORED                     0U
 #define SENSOR_UPDATED                     1U
 #define SENSOR_PAIRED                      2U
 #define SENSOR_UNPAIRED                    3U
@@ -73,6 +73,8 @@ void SensorManager_ResetFeramHeaderAndMirror(void);
  * If updated successefully returns 1, otherwise (e.g. invalid pairing/unpairing request, mirror full) returns 0.
  */
 uint8_t SensorManager_UpdateSensorStatus(uint32_t id, uint8_t status);
+
+uint8_t SensorManager_PairUnpairSensor(uint32_t id, uint8_t status);
 
 /* Returns 1 if any valid sensor has reed switch state set/open, otherwise 0. */
 uint8_t SensorManager_AnyValidReedSwitchSet(void);

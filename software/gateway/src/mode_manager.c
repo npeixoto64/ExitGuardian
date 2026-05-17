@@ -20,6 +20,7 @@ static mode_t   g_mode;
 static uint16_t g_pairing_started_ms;
 static uint16_t g_confirm_started_ms;
 static uint8_t  g_confirm_active;
+static uint8_t  g_low_battery_flag;
 
 static mode_t mode_from_paired_count(void)
 {
@@ -64,6 +65,7 @@ static void exit_pairing_to_previous(void)
 void mode_manager_init(void)
 {
   g_confirm_active     = 0U;
+  g_low_battery_flag   = 0U;
   g_confirm_started_ms = 0U;
   g_pairing_started_ms = 0U;
   enter_mode(mode_from_paired_count());
@@ -88,7 +90,7 @@ void mode_manager_on_short_press(void)
     case MODE_PAIRING_UNPAIRING:
       /* FR_017: exit pairing/unpairing on short press. */
       exit_pairing_to_previous();
-      send_string("\r\nEXIT MODE: PAIRING_UNPAIRINGv -> Button short press");
+      send_string("\r\nEXIT MODE: PAIRING_UNPAIRING -> Button short press");
       break;
   }
 }
@@ -119,7 +121,7 @@ void mode_manager_on_sensor_packet(uint32_t sensor_id, uint8_t status)
   uint8_t updated;
 
   if (g_mode == MODE_PAIRING_UNPAIRING) {
-    updated = SensorManager_UpdateSensorStatus(sensor_id, status);
+    updated = SensorManager_PairUnpairSensor(sensor_id, status);
     if (updated == SENSOR_PAIRED || updated == SENSOR_UNPAIRED) {
       g_confirm_active     = 1U;
       g_confirm_started_ms = board_get_tick_ms();
@@ -163,9 +165,14 @@ void mode_manager_handle(uint16_t now)
       break;
 
     case MODE_MONITORING:
-      led_y_handle(now, LED_MODE_FLASH);  /* FR_022 (driven by sensor_manager battery flag) */
+      if(g_low_battery_flag == 0U) {
+        led_y_handle(now, LED_MODE_OFF);  /* FR_022 (driven by sensor_manager battery flag) */
+      }
+      else {
+        led_y_handle(now, LED_MODE_FLASH);
+      }
       buzzer_handle(now, g_confirm_active ? BUZZER_MODE_LONG : BUZZER_MODE_OFF);
-      alert_manager_handle(now);          /* FR_008/FR_013 own the red LED */
+      //alert_manager_handle(now);          /* FR_008/FR_013 own the red LED */
       break;
 
     case MODE_PAIRING_UNPAIRING:

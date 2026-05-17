@@ -296,9 +296,9 @@ static uint8_t sensor_manager_read_record(uint8_t index, SensorManagerEntry* ent
     return g_sensor_mirror[index].valid;
 }
 
-uint8_t SensorManager_UpdateSensorStatus(uint32_t id, uint8_t status)
+uint8_t SensorManager_PairUnpairSensor(uint32_t id, uint8_t status)
 {
-    uint8_t i = 0;
+    uint8_t i = 0U;
     uint8_t is_pairing_request = SENSOR_STATUS_IS_PAIRING(status);
     uint8_t is_unpairing_request = SENSOR_STATUS_IS_UNPAIRING(status);
     uint8_t normalized_status = (uint8_t)(status & (uint8_t)~SENSOR_STATUS_PAIRING_MASK);
@@ -313,7 +313,7 @@ uint8_t SensorManager_UpdateSensorStatus(uint32_t id, uint8_t status)
                 if (is_pairing_request == 0U) {
                     // No pairing request, return without update
                     send_string("\r\nID found, it's invalid, no pairing request -> entry remains invalid");
-                    return SENSOR_NOT_UPDATED;
+                    return SENSOR_IGNORED;
                 }
                 else {
                     // Pairing request for an already invalid entry, update and validate it
@@ -334,17 +334,11 @@ uint8_t SensorManager_UpdateSensorStatus(uint32_t id, uint8_t status)
                     send_string("\r\nID found, it's valid, unpairing request -> entry invalidated");
                     return SENSOR_UNPAIRED;
                 }
-
-                // No pairing/unpairing request, just update if status differs
-                if (g_sensor_mirror[i].status != normalized_status) {
-                    g_sensor_mirror[i].status = normalized_status;
-                    sensor_manager_persist_record(i);
-                    send_string("\r\nID found, it's valid, status updated");
-                    return SENSOR_UPDATED;
+                else {
+                    // No unpairing request, ignore pairing requests for an already valid entry
+                    send_string("\r\nID found, it's valid, pairing request ignored");
+                    return SENSOR_IGNORED;
                 }
-
-                send_string("\r\nID found, it's valid, no update needed");
-                return SENSOR_UPDATED; // ID found but no update needed, still considered successful
             }
         }
 
@@ -354,19 +348,56 @@ uint8_t SensorManager_UpdateSensorStatus(uint32_t id, uint8_t status)
     // ID not found in mirror, add new entry if pairing request and space available
     if ((is_pairing_request == 0U) || (g_sensor_count >= SENSOR_MANAGER_MAX_SENSORS)) {
         send_string("\r\nID not found, no pairing request or memory full, cannot add");
-        return SENSOR_NOT_UPDATED;
+        return SENSOR_IGNORED;
     } else {
         g_sensor_mirror[g_sensor_count].id = id;
         g_sensor_mirror[g_sensor_count].status = normalized_status;
         g_sensor_mirror[g_sensor_count].valid = 1U;
         sensor_manager_persist_record(g_sensor_count);
         g_sensor_count++;
-        sensor_manager_write_header(g_sensor_count);
-
-        send_string("\r\nNew sensor paired");
-
+        send_string("\r\nID not found, pairing request -> entry added");
         return SENSOR_PAIRED;
     }
+}
+
+uint8_t SensorManager_UpdateSensorStatus(uint32_t id, uint8_t status)
+{
+    uint8_t i = 0;
+    uint8_t normalized_status = (uint8_t)(status & (uint8_t)~SENSOR_STATUS_PAIRING_MASK);
+
+    sensor_manager_ensure_mirror_loaded();
+
+    while (i < g_sensor_count) {
+        if (g_sensor_mirror[i].id == id) {
+            // ID found in mirror
+            if (g_sensor_mirror[i].valid != 0U) {
+                // ID found and valid, update status
+                if (g_sensor_mirror[i].status == normalized_status) {
+                    // Status is the same, no update needed
+                    send_string("\r\nID found and valid, status is the same, no update needed");
+                    return SENSOR_IGNORED;
+                }
+                else {
+                    g_sensor_mirror[i].status = normalized_status;
+                    sensor_manager_persist_record(i);
+                    send_string("\r\nID found and valid, status updated");
+                    return SENSOR_UPDATED;
+                    send_string("\r\nID found and valid, status differs, updating status");
+                }
+            }
+            else {
+                // ID found but invalid, ignore updates for invalid entries
+                send_string("\r\nID found but invalid, update ignored");
+                return SENSOR_IGNORED;
+            }   
+        }
+
+        i++;
+    }
+
+    send_string("\r\nSensor not found in mirror, update ignored");
+
+    return SENSOR_IGNORED;
 }
 
 uint8_t SensorManager_AnyValidReedSwitchSet(void)
