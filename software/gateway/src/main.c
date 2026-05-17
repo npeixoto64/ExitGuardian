@@ -55,9 +55,9 @@ int main(void)
     board_init();
     mode_manager_init();
 
-    //uint8_t status = 0;
-    //uint32_t chip_id = 0;
-    //char buffer[64];
+    uint8_t status = 0;
+    uint32_t chip_id = 0;
+    char buffer[64];
 
     while (1) {
       uint16_t now = board_get_tick_ms();
@@ -66,32 +66,33 @@ int main(void)
       reed_handle();
       button_handle();
 
-      // if (g_irq_cc1101_flag)
-      // {
-      //   g_irq_cc1101_flag = 0;
+      // Get CC1101 packets and pass to mode manager for handling.
+      if (g_irq_cc1101_flag)
+      {
+        g_irq_cc1101_flag = 0;
 
-      //   cc1101_recv_msg(&chip_id, &status);
+        cc1101_recv_msg(&chip_id, &status);
 
-      //   /* Status byte format:
-      //    *   Bits 7-4: Battery capacity (high nibble)
-      //    *   Bits 2-1: Button action (0=none, 1=force update, 2=pair, 3=unpair)
-      //    *   Bit 0:    Reed switch state
-      //    */
-      //   uint8_t battery     = (status >> 4) & 0x0F;
-      //   uint8_t button_act  = (status >> 1) & 0x03;
-      //   uint8_t reed_state  = status & 0x01;
+        /* Status byte format:
+         *   Bits 7-4: Battery capacity (high nibble)
+         *   Bits 2-1: Button action (0 = none, 1(single press) = force update, 2(double press) = pair, 3(long press) = unpair)
+         *   Bit 0:    Reed switch state
+         */
+        uint8_t battery     = (status >> 4) & 0x0F;
+        uint8_t button_act  = (status >> 1) & 0x03;
+        uint8_t reed_state  = status & 0x01;
 
-      //   sprintf(buffer, "\r\nTransmitter Chip ID: %lx", chip_id);
-      //   send_string(buffer);
-      //   sprintf(buffer, "; battery: %u", battery);
-      //   send_string(buffer);
-      //   sprintf(buffer, "; button: %u", button_act);
-      //   send_string(buffer);
-      //   sprintf(buffer, "; reed: %u", reed_state);
-      //   send_string(buffer);
+        sprintf(buffer, "\r\nTransmitter Chip ID: %lx", chip_id);
+        send_string(buffer);
+        sprintf(buffer, "; battery: %u", battery);
+        send_string(buffer);
+        sprintf(buffer, "; button: %u", button_act);
+        send_string(buffer);
+        sprintf(buffer, "; reed: %u", reed_state);
+        send_string(buffer);
 
-      //   mode_manager_on_sensor_packet(chip_id, status);
-      // }
+        mode_manager_on_sensor_packet(chip_id, status);
+      }
 
       // Get button events and pass to mode manager for handling.
       button_event_t button_evt = button_take_event();

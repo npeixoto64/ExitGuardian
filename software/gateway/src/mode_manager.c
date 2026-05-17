@@ -63,7 +63,6 @@ static void exit_pairing_to_previous(void)
 
 void mode_manager_init(void)
 {
-  char buffer[20];
   g_confirm_active     = 0U;
   g_confirm_started_ms = 0U;
   g_pairing_started_ms = 0U;
@@ -126,10 +125,10 @@ void mode_manager_on_sensor_packet(uint32_t sensor_id, uint8_t status)
     return;
   }
 
-  /* MODE_MONITORING: just update last-known state/battery (NFR_008) and
-   * re-evaluate the alert (FR_012). */
-  (void)SensorManager_UpdateSensorStatus(sensor_id, status);
-  alert_manager_evaluate();
+  // /* MODE_MONITORING: just update last-known state/battery (NFR_008) and
+  //  * re-evaluate the alert (FR_012). */
+  // (void)SensorManager_UpdateSensorStatus(sensor_id, status);
+  // alert_manager_evaluate();
 }
 
 void mode_manager_factory_reset(void)
