@@ -14,6 +14,7 @@
 static SensorManagerEntry g_sensor_mirror[SENSOR_MANAGER_MAX_SENSORS];
 static uint8_t g_sensor_mirror_loaded = 0U;
 static uint8_t g_sensor_count = 0U;
+static uint8_t g_sensor_window_open = 0U;
 
 static void sensor_manager_write_header(uint8_t count);
 static void sensor_manager_clear_mirror(void);
@@ -320,6 +321,7 @@ uint8_t SensorManager_PairUnpairSensor(uint32_t id, uint8_t status)
                     g_sensor_mirror[i].status = normalized_status;
                     g_sensor_mirror[i].valid = 1U;
                     sensor_manager_persist_record(i);
+                    SensorManager_AnyValidReedSwitchSet();
                     send_string("\r\nID found, it's invalid, pairing request -> entry validated");
                     return SENSOR_PAIRED;
                 }
@@ -356,6 +358,7 @@ uint8_t SensorManager_PairUnpairSensor(uint32_t id, uint8_t status)
         sensor_manager_persist_record(g_sensor_count);
         g_sensor_count++;
         send_string("\r\nID not found, pairing request -> entry added");
+        SensorManager_AnyValidReedSwitchSet();
         return SENSOR_PAIRED;
     }
 }
@@ -381,8 +384,9 @@ uint8_t SensorManager_UpdateSensorStatus(uint32_t id, uint8_t status)
                     g_sensor_mirror[i].status = normalized_status;
                     sensor_manager_persist_record(i);
                     send_string("\r\nID found and valid, status updated");
-                    return SENSOR_UPDATED;
+                    SensorManager_AnyValidReedSwitchSet();
                     send_string("\r\nID found and valid, status differs, updating status");
+                    return SENSOR_UPDATED;
                 }
             }
             else {
@@ -400,7 +404,7 @@ uint8_t SensorManager_UpdateSensorStatus(uint32_t id, uint8_t status)
     return SENSOR_IGNORED;
 }
 
-uint8_t SensorManager_AnyValidReedSwitchSet(void)
+static void SensorManager_AnyValidReedSwitchSet(void)
 {
     uint8_t i = 0U;
 
@@ -409,12 +413,19 @@ uint8_t SensorManager_AnyValidReedSwitchSet(void)
     while (i < g_sensor_count) {
         if ((g_sensor_mirror[i].valid != 0U)
             && (SENSOR_STATUS_IS_REED_SWITCH(g_sensor_mirror[i].status) != 0U)) {
-            return 1U;
+            g_sensor_window_open = 1U;
+            return;
         }
         i++;
     }
 
-    return 0U;
+    g_sensor_window_open = 0U;
+    return;
+}
+
+uint8_t SensorManager_IsAnyWindowOpen(void)
+{
+    return g_sensor_window_open;
 }
 
 uint8_t SensorManager_PairedCount(void)

@@ -53,6 +53,7 @@ INTERRUPT_HANDLER(TIM4_UPD_OVF_TRG_IRQHandler, 25)
 int main(void)
 {
     board_init();
+    alert_manager_init();
     mode_manager_init();
 
     uint8_t status = 0;
@@ -113,13 +114,18 @@ int main(void)
         mode_manager_on_long_press_released();
       }
 
-      // reed_event_t reed_evt = reed_take_event();
-      // if (reed_evt != REED_EVT_NONE)
-      // {
-      //   sprintf(buffer, "\r\nReed event: %d", reed_evt);
-      //   send_string(buffer);
-      //   //mode_manager_on_reed_event(reed_evt);
-      // }
+      reed_event_t reed_evt = reed_take_event();
+      if (reed_evt != REED_EVT_NONE)
+      {
+        if (reed_evt == REED_EVT_OPENED) {
+          send_string("\r\nREED_OPENED");
+          alert_manager_set_door_open(1U);
+        }
+        else if (reed_evt == REED_EVT_CLOSED) {
+          send_string("\r\nREED_CLOSED");
+          alert_manager_set_door_open(0U);
+        }
+      }
 
       mode_manager_handle(board_get_tick_ms());
     }
