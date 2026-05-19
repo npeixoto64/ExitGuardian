@@ -34,13 +34,11 @@ void reed_handle(void)
           {
               g_reed_close_evt = 1;
               g_reed_pending_evt = REED_EVT_CLOSED;
-              // send_string("\r\ng_reed_close_evt set");
           }
           else
           {
               g_reed_open_evt = 1;
               g_reed_pending_evt = REED_EVT_OPENED;
-              // send_string("\r\ng_reed_open_evt set");
           }
       }
     }

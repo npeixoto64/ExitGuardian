@@ -55,7 +55,6 @@ void button_handle(void)
       g_btn_down_evt       = 0;
       g_btn_up_evt         = 0;
       g_btn_pending_evt = BUTTON_EVT_LONG_PRESS_DETECTED;
-      // send_string("\r\nLong press event");
     }
   }
 
@@ -66,7 +65,6 @@ void button_handle(void)
       g_btn_down_evt = 0;
       g_btn_up_evt   = 0;
       g_btn_pending_evt = BUTTON_EVT_SHORT_PRESS;
-      // send_string("\r\nShort press");
     }
     else if ((uint16_t)(board_get_tick_ms() - g_btn_down_ms) <= BTN_LONG_PRESS_MIN_MS)
     {
@@ -80,7 +78,6 @@ void button_handle(void)
       g_btn_long_press_evt = 0;
       g_btn_up_evt         = 0;
       g_btn_pending_evt = BUTTON_EVT_LONG_PRESS_RELEASED;
-      // send_string("\r\nLong press released");
     }
   }
 }

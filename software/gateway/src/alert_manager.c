@@ -51,7 +51,7 @@ void alert_manager_evaluate(void)
 
   /* FR_012: ALERT <=> (main door OPEN) AND
    *                   (>= 1 paired sensor with last-known state OPEN). */
-  cond = (g_door_open != 0U) && (SensorManager_AnyValidReedSwitchSet() != 0U);
+  cond = (g_door_open != 0U) && (SensorManager_IsAnyWindowOpen() != 0U);
   g_alert_active = cond ? 1U : 0U;
 
   /* FR_013: on rising edge start the buzzer pulse. */

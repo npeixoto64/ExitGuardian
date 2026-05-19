@@ -173,6 +173,7 @@ void mode_manager_handle(uint16_t now)
       }
       buzzer_handle(now, g_confirm_active ? BUZZER_MODE_LONG : BUZZER_MODE_OFF);
       //alert_manager_handle(now);          /* FR_008/FR_013 own the red LED */
+      //alert_manager_evaluate();
       break;
 
     case MODE_PAIRING_UNPAIRING:

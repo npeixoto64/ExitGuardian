@@ -11,6 +11,7 @@
 #include "led.h"
 #include "buzzer.h"
 #include "mode_manager.h"
+#include "alert_manager.h"
 
 static volatile uint8_t  g_irq_cc1101_flag = 0;
 
@@ -53,7 +54,7 @@ INTERRUPT_HANDLER(TIM4_UPD_OVF_TRG_IRQHandler, 25)
 int main(void)
 {
     board_init();
-    alert_manager_init();
+    // alert_manager_init();
     mode_manager_init();
 
     uint8_t status = 0;
@@ -91,7 +92,7 @@ int main(void)
         send_string(buffer);
         sprintf(buffer, "; reed: %u", reed_state);
         send_string(buffer);
-        send_register_hex("status: ", status);
+        send_register_hex(", status: ", status);
 
         mode_manager_on_sensor_packet(chip_id, status);
       }
@@ -119,14 +120,15 @@ int main(void)
       {
         if (reed_evt == REED_EVT_OPENED) {
           send_string("\r\nREED_OPENED");
-          alert_manager_set_door_open(1U);
+          // alert_manager_set_door_open(1U);
         }
         else if (reed_evt == REED_EVT_CLOSED) {
           send_string("\r\nREED_CLOSED");
-          alert_manager_set_door_open(0U);
+          // alert_manager_set_door_open(0U);
         }
       }
 
       mode_manager_handle(board_get_tick_ms());
+      // alert_manager_handle(board_get_tick_ms());
     }
 }

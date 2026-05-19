@@ -18,6 +18,7 @@ static uint8_t g_sensor_window_open = 0U;
 
 static void sensor_manager_write_header(uint8_t count);
 static void sensor_manager_clear_mirror(void);
+static void SensorManager_AnyValidReedSwitchSet(void);
 
 static uint16_t sensor_manager_crc16_ccitt(const uint8_t* data, uint8_t len)
 {
