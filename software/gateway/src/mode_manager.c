@@ -21,6 +21,7 @@ static uint16_t g_pairing_started_ms;
 static uint16_t g_confirm_started_ms;
 static uint8_t  g_confirm_active;
 static uint8_t  g_low_battery_flag;
+static uint8_t  g_door_open;
 
 static mode_t mode_from_paired_count(void)
 {
@@ -68,6 +69,7 @@ void mode_manager_init(void)
   g_low_battery_flag   = 0U;
   g_confirm_started_ms = 0U;
   g_pairing_started_ms = 0U;
+  g_door_open          = 0U;
   enter_mode(mode_from_paired_count());
 }
 
@@ -171,9 +173,16 @@ void mode_manager_handle(uint16_t now)
       else {
         led_y_handle(now, LED_MODE_FLASH);
       }
+
+      if (g_door_open == 1U && SensorManager_IsAnyWindowOpen() != 0U) {
+        led_r_handle(now, LED_MODE_FLASH); /* FR_012 door open alert */
+        g_confirm_active = 1U;
+      }
+      else {
+        led_r_handle(now, LED_MODE_OFF);
+      }
+
       buzzer_handle(now, g_confirm_active ? BUZZER_MODE_LONG : BUZZER_MODE_OFF);
-      //alert_manager_handle(now);          /* FR_008/FR_013 own the red LED */
-      //alert_manager_evaluate();
       break;
 
     case MODE_PAIRING_UNPAIRING:
@@ -190,10 +199,9 @@ void mode_manager_handle(uint16_t now)
 
     case MODE_WAITING_FOR_FACTORY_RESET:
       // All LEDs flashing and buzzer off (FR_024/FR_025). No timeout (FR_026).
-       led_r_handle(now, LED_MODE_FLASH);
-       led_y_handle(now, LED_MODE_FLASH);
-       buzzer_handle(now, BUZZER_MODE_OFF);
-       //alert_manager_handle(now);          /* FR_024/FR_025 own the red LED */
+      led_r_handle(now, LED_MODE_FLASH);
+      led_y_handle(now, LED_MODE_FLASH);
+      buzzer_handle(now, BUZZER_MODE_OFF);
       break;
   }
 
@@ -203,4 +211,15 @@ void mode_manager_handle(uint16_t now)
   {
     g_confirm_active = 0U;
   }
+}
+
+uint8_t mode_manager_on_door_opened(void)
+{
+  g_door_open = 1U;
+  return g_door_open;
+}
+uint8_t mode_manager_on_door_closed(void)
+{
+  g_door_open = 0U;
+  return g_door_open;
 }

@@ -36,4 +36,7 @@ void mode_manager_on_sensor_packet(uint32_t sensor_id, uint8_t status);
  * MODE_WAITING_FOR_CONFIG. */
 void mode_manager_factory_reset(void);
 
+uint8_t mode_manager_on_door_opened(void);
+uint8_t mode_manager_on_door_closed(void);
+
 #endif /* MODE_MANAGER_H */

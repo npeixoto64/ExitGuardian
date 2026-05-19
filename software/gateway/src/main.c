@@ -119,16 +119,15 @@ int main(void)
       if (reed_evt != REED_EVT_NONE)
       {
         if (reed_evt == REED_EVT_OPENED) {
-          send_string("\r\nREED_OPENED");
-          // alert_manager_set_door_open(1U);
+          send_string("\r\n_DOOR_OPENED");
+          mode_manager_on_door_opened();
         }
         else if (reed_evt == REED_EVT_CLOSED) {
-          send_string("\r\nREED_CLOSED");
-          // alert_manager_set_door_open(0U);
+          send_string("\r\n_DOOR_CLOSED");
+          mode_manager_on_door_closed();
         }
       }
 
       mode_manager_handle(board_get_tick_ms());
-      // alert_manager_handle(board_get_tick_ms());
     }
 }
