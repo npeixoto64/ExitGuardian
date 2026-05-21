@@ -55,7 +55,7 @@ int main(void)
 {
     board_init();
     mode_manager_init();
-
+    
     uint8_t status = 0;
     uint32_t chip_id = 0;
     char buffer[64];

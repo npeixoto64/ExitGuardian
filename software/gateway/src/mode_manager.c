@@ -39,19 +39,22 @@ static void enter_mode(mode_t next)
   {
     case MODE_WAITING_FOR_CONFIG:
       /* FR_007 red ON, FR_010 yellow OFF, alerts disabled. */
-      alert_manager_set_enabled(0U);
+      //alert_manager_set_enabled(0U);
+      send_string("\r\nMODE: WAITING_FOR_CONFIG");
       break;
 
     case MODE_MONITORING:
       /* FR_008 red OFF (driven by alert_manager when not alerting),
        * FR_022 yellow follows low-battery state. */
-      alert_manager_set_enabled(1U);
+      //alert_manager_set_enabled(1U);
+      send_string("\r\nMODE: MONITORING dfgsdf");
       break;
 
     case MODE_PAIRING_UNPAIRING:
       /* FR_015 start 20 s window. FR_016 alerts suspended. */
       g_pairing_started_ms = board_get_tick_ms();
-      alert_manager_set_enabled(0U);
+      //alert_manager_set_enabled(0U);
+      send_string("\r\nMODE: PAIRING_UNPAIRING");
       break;
   }
 }
@@ -71,6 +74,7 @@ void mode_manager_init(void)
   g_pairing_started_ms = 0U;
   g_door_open          = 0U;
   enter_mode(mode_from_paired_count());
+  SensorManager_AnyValidReedSwitchSet();
 }
 
 mode_t mode_manager_get(void)
@@ -148,7 +152,7 @@ void mode_manager_factory_reset(void)
   /* FR_009 / FR_026: clear NVM, no sensors attached, return to
    * waiting-for-configuration. */
   SensorManager_ResetFeramHeaderAndMirror();
-  alert_manager_set_enabled(0U);
+  //alert_manager_set_enabled(0U);
   enter_mode(MODE_WAITING_FOR_CONFIG);
   send_string("\r\nMODE: WAITING_FOR_CONFIG");
 }

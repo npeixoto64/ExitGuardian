@@ -82,4 +82,6 @@ uint8_t SensorManager_IsAnyWindowOpen(void);
 /* Returns the number of currently paired (valid) sensors. */
 uint8_t SensorManager_PairedCount(void);
 
+void SensorManager_AnyValidReedSwitchSet(void);
+
 #endif
