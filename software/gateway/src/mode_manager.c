@@ -1,6 +1,5 @@
 #include "mode_manager.h"
 
-#include "alert_manager.h"
 #include "board.h"
 #include "buzzer.h"
 #include "cc1101.h"

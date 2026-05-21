@@ -11,7 +11,6 @@
 #include "led.h"
 #include "buzzer.h"
 #include "mode_manager.h"
-#include "alert_manager.h"
 
 static volatile uint8_t  g_irq_cc1101_flag = 0;
 
