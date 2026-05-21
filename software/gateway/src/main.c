@@ -54,7 +54,6 @@ INTERRUPT_HANDLER(TIM4_UPD_OVF_TRG_IRQHandler, 25)
 int main(void)
 {
     board_init();
-    // alert_manager_init();
     mode_manager_init();
 
     uint8_t status = 0;

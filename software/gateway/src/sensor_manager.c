@@ -215,7 +215,7 @@ void SensorManager_LoadMirror(void)
         i = 0;
         while (i < g_sensor_count) {
             SensorManagerEntry entry;
-
+            
             if (sensor_manager_read_record_from_feram(i, &entry)) {
                 g_sensor_mirror[i] = entry;
             }
@@ -249,7 +249,7 @@ static void sensor_manager_pack_record(const SensorManagerEntry* entry, uint8_t 
     out_record[2] = (uint8_t)(entry->id >> 8);
     out_record[3] = (uint8_t)(entry->id);
     out_record[4] = entry->status;
-    out_record[5] = entry->valid ? 1U : 0U;
+    out_record[5] = entry->valid;
 
     crc = sensor_manager_crc16_ccitt(out_record, 6);
     out_record[6] = (uint8_t)(crc >> 8);
@@ -352,12 +352,14 @@ uint8_t SensorManager_PairUnpairSensor(uint32_t id, uint8_t status)
     if ((is_pairing_request == 0U) || (g_sensor_count >= SENSOR_MANAGER_MAX_SENSORS)) {
         send_string("\r\nID not found, no pairing request or memory full, cannot add");
         return SENSOR_IGNORED;
-    } else {
+    }
+    else {
         g_sensor_mirror[g_sensor_count].id = id;
         g_sensor_mirror[g_sensor_count].status = normalized_status;
         g_sensor_mirror[g_sensor_count].valid = 1U;
         sensor_manager_persist_record(g_sensor_count);
         g_sensor_count++;
+        sensor_manager_write_header(g_sensor_count);
         send_string("\r\nID not found, pairing request -> entry added");
         SensorManager_AnyValidReedSwitchSet();
         return SENSOR_PAIRED;
