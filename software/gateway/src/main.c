@@ -92,6 +92,10 @@ int main(void)
         send_string(buffer);
         send_register_hex(", status: ", status);
 
+        // To force low battery for testing, set battery to 0 and reconstruct status byte:
+        //battery = 0;
+        //status = (battery << 4) | (button_act << 1) | reed_state; // Reconstruct status byte for mode manager
+
         mode_manager_on_sensor_packet(chip_id, status);
       }
 

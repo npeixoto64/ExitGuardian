@@ -19,7 +19,6 @@ static mode_t   g_mode;
 static uint16_t g_pairing_started_ms;
 static uint16_t g_confirm_started_ms;
 static uint8_t  g_confirm_active;
-static uint8_t  g_low_battery_flag;
 static uint8_t  g_door_open;
 
 static mode_t mode_from_paired_count(void)
@@ -68,7 +67,6 @@ static void exit_pairing_to_previous(void)
 void mode_manager_init(void)
 {
   g_confirm_active     = 0U;
-  g_low_battery_flag   = 0U;
   g_confirm_started_ms = 0U;
   g_pairing_started_ms = 0U;
   g_door_open          = 0U;
@@ -170,11 +168,11 @@ void mode_manager_handle(uint16_t now)
       break;
 
     case MODE_MONITORING:
-      if(g_low_battery_flag == 0U) {
+      if(SensorManager_IsAnySensorWithLowBattery() == 0U) {
         led_y_handle(now, LED_MODE_OFF);  /* FR_022 (driven by sensor_manager battery flag) */
       }
       else {
-        led_y_handle(now, LED_MODE_FLASH);
+        led_y_handle(now, LED_MODE_HEARTBEAT);
       }
 
       if (g_door_open == 1U && SensorManager_IsAnyWindowOpen() != 0U) {

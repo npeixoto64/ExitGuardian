@@ -35,8 +35,8 @@ static void led_mode_handle(GPIO_TypeDef *port, uint8_t pin,
       st->on = 1;
       return;
     case LED_MODE_FLASH:
-    default:
-      /* Entering FLASH: start a fresh period in the ON phase. */
+    case LED_MODE_HEARTBEAT:
+      /* Entering FLASH or HEARTBEAT: start a fresh period in the ON phase. */
       GPIO_SetBits(port, pin);
       st->on = 1;
       st->last_tick = now;
@@ -45,8 +45,14 @@ static void led_mode_handle(GPIO_TypeDef *port, uint8_t pin,
   }
 
   /* Steady OFF/ON: nothing to do per tick. */
-  if (mode != LED_MODE_FLASH) {
+  if (mode != LED_MODE_FLASH && mode != LED_MODE_HEARTBEAT) {
     return;
+  }
+
+  if (mode == LED_MODE_HEARTBEAT) {
+    /* HEARTBEAT overrides to a fixed 100 ms on-time every 2 s. */
+    period_ms = LEDB_PERIOD_MS;
+    on_ms = LEDB_ON_MS;
   }
 
   if (!st->on && (uint16_t)(now - st->last_tick) >= period_ms) {

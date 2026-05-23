@@ -6,7 +6,8 @@
 typedef enum {
   LED_MODE_OFF = 0,
   LED_MODE_ON,
-  LED_MODE_FLASH
+  LED_MODE_FLASH,
+  LED_MODE_HEARTBEAT,
 } led_mode_t;
 
 void led_b_handle(uint16_t now);

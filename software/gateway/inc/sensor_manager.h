@@ -49,6 +49,8 @@
     (uint8_t)((SENSOR_STATUS_GET_PAIRING(status) == SENSOR_STATUS_UNPAIRING_REQUEST) ? 1U : 0U)
 #define SENSOR_STATUS_IS_REED_SWITCH(status) \
     (uint8_t)((((uint8_t)(status) & SENSOR_STATUS_REED_SWITCH_MASK) != 0U) ? 1U : 0U)
+#define SENSOR_STATUS_IS_LOW_BATTERY(status) \
+    (uint8_t)((SENSOR_STATUS_GET_BAT_SOC(status) <= 5U) ? 1U : 0U)
 
 typedef struct {
     uint32_t id;
@@ -79,9 +81,13 @@ uint8_t SensorManager_PairUnpairSensor(uint32_t id, uint8_t status);
 /* Returns 1 if any valid sensor has reed switch state set/open, otherwise 0. */
 uint8_t SensorManager_IsAnyWindowOpen(void);
 
+uint8_t SensorManager_IsAnySensorWithLowBattery(void);
+
 /* Returns the number of currently paired (valid) sensors. */
 uint8_t SensorManager_PairedCount(void);
 
 void SensorManager_AnyValidReedSwitchSet(void);
+
+void SensorManager_AnyLowBatterySet(void);
 
 #endif
