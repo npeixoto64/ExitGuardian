@@ -1,3 +1,7 @@
+/**
+ * @file main.c
+ * @brief Application entry point and top-level interrupt handlers.
+ */
 #include <stdint.h>
 #include <stdio.h>
 #include "stm8l15x_gpio.h"
@@ -50,6 +54,15 @@ INTERRUPT_HANDLER(TIM4_UPD_OVF_TRG_IRQHandler, 25)
   board_systick_irq();
 }
 
+/**
+ * @brief Application entry point.
+ *
+ * Brings up the board and the mode manager, then runs the main super-loop:
+ * watchdog refresh, reed/button handling, CC1101 packet dispatch, event
+ * forwarding to the mode manager and LED/buzzer tick.
+ *
+ * @return Never returns.
+ */
 int main(void)
 {
     board_init();

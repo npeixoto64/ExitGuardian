@@ -1,3 +1,7 @@
+/**
+ * @file led.c
+ * @brief Status LED state machines for the red, yellow and blue LEDs.
+ */
 #include "led.h"
 #include "board.h"
 #include "stm8l15x_gpio.h"
@@ -11,12 +15,26 @@
 #define LEDY_PERIOD_MS   1000U  /* LED_Y blink period (ms) */
 #define LEDY_ON_MS        500U  /* LED_Y on duration (ms) */
 
+/**
+ * @brief Per-LED runtime state used by @ref led_mode_handle.
+ */
 typedef struct {
-  uint16_t last_tick;
-  uint8_t  on;
-  uint8_t  prev_mode;
+  uint16_t last_tick;  /**< Last tick at which the LED entered the ON phase. */
+  uint8_t  on;         /**< Current physical state of the LED (1 = on). */
+  uint8_t  prev_mode;  /**< Last @ref led_mode_t handled, used to detect transitions. */
 } led_state_t;
 
+/**
+ * @brief Generic LED display handler used by the red and yellow channels.
+ *
+ * @param port      GPIO port driving the LED.
+ * @param pin       GPIO pin driving the LED.
+ * @param now       Current millisecond tick.
+ * @param mode      Desired LED display mode.
+ * @param period_ms Flash period in milliseconds (used in FLASH mode).
+ * @param on_ms     On-time in milliseconds (used in FLASH mode).
+ * @param st        Per-LED state object.
+ */
 static void led_mode_handle(GPIO_TypeDef *port, uint8_t pin,
                             uint16_t now, led_mode_t mode,
                             uint16_t period_ms, uint16_t on_ms,
@@ -67,6 +85,11 @@ static void led_mode_handle(GPIO_TypeDef *port, uint8_t pin,
   }
 }
 
+/**
+ * @brief Drive the blue heartbeat LED (100 ms pulse every 2 s).
+ *
+ * @param now Current millisecond tick.
+ */
 // Function to handle periodic LED_B ON every 2s for 100ms
 void led_b_handle(uint16_t now)
 {
@@ -84,6 +107,12 @@ void led_b_handle(uint16_t now)
   }
 }
 
+/**
+ * @brief Drive the red LED in the requested mode.
+ *
+ * @param now  Current millisecond tick.
+ * @param mode Desired LED display mode.
+ */
 // Function to handle LED_R: off, on, or flashing every 1s for 500ms
 void led_r_handle(uint16_t now, led_mode_t mode)
 {
@@ -92,6 +121,12 @@ void led_r_handle(uint16_t now, led_mode_t mode)
                   LEDR_PERIOD_MS, LEDR_ON_MS, &st);
 }
 
+/**
+ * @brief Drive the yellow LED in the requested mode.
+ *
+ * @param now  Current millisecond tick.
+ * @param mode Desired LED display mode.
+ */
 // Function to handle LED_Y: off, on, or flashing every 1s for 500ms
 void led_y_handle(uint16_t now, led_mode_t mode)
 {

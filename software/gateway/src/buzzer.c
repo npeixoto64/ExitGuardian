@@ -1,3 +1,7 @@
+/**
+ * @file buzzer.c
+ * @brief Non-blocking buzzer playback state machine.
+ */
 #include "buzzer.h"
 #include "board.h"
 
@@ -14,6 +18,11 @@ typedef struct {
 
 static buzzer_state_t s_st = {0, 0, 0, BUZZER_MODE_OFF};
 
+/**
+ * @brief Drive the physical buzzer only when the desired state changes.
+ *
+ * @param on Non-zero to turn the tone on, zero to turn it off.
+ */
 static void buzzer_drive(uint8_t on)
 {
   if (s_st.on != on) {
@@ -22,6 +31,12 @@ static void buzzer_drive(uint8_t on)
   }
 }
 
+/**
+ * @brief Run the buzzer state machine for the requested mode.
+ *
+ * @param now  Current millisecond tick.
+ * @param mode Desired playback mode.
+ */
 void buzzer_handle(uint16_t now, buzzer_mode_t mode)
 {
   /* Mode transition: reset per-mode bookkeeping. */

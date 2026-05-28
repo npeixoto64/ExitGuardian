@@ -1,3 +1,7 @@
+/**
+ * @file reed.c
+ * @brief Reed switch (door sensor) debounce implementation.
+ */
 #include "board.h"
 #include "reed.h"
 #include "log.h"
@@ -11,9 +15,13 @@ static volatile uint8_t  reed_handle_debounce   = 0;
 
 static volatile reed_event_t g_reed_pending_evt = REED_EVT_NONE;
 
-/* Reed switch (door sensor) both-edges ISR body (IRQ vector 13, PD5).
- * Called from EXTI5_IRQHandler in main.c, which the linker always pulls in.
- * Arms the debounce timer on the first edge; subsequent bounces are ignored. */
+/**
+ * @brief Reed switch (door sensor) both-edges ISR body (IRQ vector 13, PD5).
+ *
+ * Called from `EXTI5_IRQHandler` in `main.c`, which the linker always pulls
+ * in. Arms the debounce timer on the first edge; subsequent bounces are
+ * ignored.
+ */
 void reed_isr(void)
 {
   if (reed_handle_debounce == 0)
@@ -23,6 +31,12 @@ void reed_isr(void)
   }
 }
 
+/**
+ * @brief Process pending debounced reed edges.
+ *
+ * Should be called once per main-loop iteration. Reads the stable level
+ * after the debounce window has elapsed and queues a @ref reed_event_t.
+ */
 void reed_handle(void)
 {
     if (reed_handle_debounce)
@@ -44,6 +58,11 @@ void reed_handle(void)
     }
 }
 
+/**
+ * @brief Take and clear the latest pending reed event.
+ *
+ * @return The pending event, or @ref REED_EVT_NONE if none is queued.
+ */
 reed_event_t reed_take_event(void)
 {
   reed_event_t evt = g_reed_pending_evt;

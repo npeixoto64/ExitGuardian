@@ -1,6 +1,15 @@
+/**
+ * @file log.c
+ * @brief Blocking UART log helpers used for debug output.
+ */
 #include "log.h"
 #include "stm8l15x_usart.h"
 
+/**
+ * @brief Send a NUL-terminated string over USART1 (blocking).
+ *
+ * @param str Pointer to the C string to transmit.
+ */
 void send_string(const char* str)
 {
     while (*str) {
@@ -9,6 +18,12 @@ void send_string(const char* str)
     }
 }
 
+/**
+ * @brief Send `"<reg_name> = 0xHH"` over USART1 (blocking).
+ *
+ * @param reg_name Label printed before the value.
+ * @param value    8-bit value printed as two upper-case hex digits.
+ */
 void send_register_hex(const char* reg_name, uint8_t value)
 {
     const char hex_chars[] = "0123456789ABCDEF";

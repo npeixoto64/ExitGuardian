@@ -1,3 +1,7 @@
+/**
+ * @file mode_manager.c
+ * @brief Implementation of the gateway operating-mode state machine.
+ */
 #include "mode_manager.h"
 
 #include "board.h"
@@ -21,6 +25,12 @@ static uint16_t g_confirm_started_ms;
 static uint8_t  g_confirm_active;
 static uint8_t  g_door_open;
 
+/**
+ * @brief Map the current paired-sensor count to the appropriate idle mode.
+ *
+ * @return @ref MODE_MONITORING if any sensor is paired, otherwise
+ *         @ref MODE_WAITING_FOR_CONFIG.
+ */
 static mode_t mode_from_paired_count(void)
 {
   /* FR_006/FR_020: pick mode based on number of paired sensors. */
@@ -29,6 +39,11 @@ static mode_t mode_from_paired_count(void)
        : MODE_WAITING_FOR_CONFIG;
 }
 
+/**
+ * @brief Transition the state machine into @p next and run on-entry actions.
+ *
+ * @param next New operating mode to enter.
+ */
 static void enter_mode(mode_t next)
 {
   g_mode = next;
@@ -57,6 +72,12 @@ static void enter_mode(mode_t next)
   }
 }
 
+/**
+ * @brief Leave @ref MODE_PAIRING_UNPAIRING back to the appropriate idle mode.
+ *
+ * FR_015 / FR_017 / FR_019 / FR_021: return to monitoring if any sensor
+ * remains paired, otherwise waiting-for-configuration.
+ */
 static void exit_pairing_to_previous(void)
 {
   /* FR_015 / FR_017 / FR_019 / FR_021: return to monitoring if any sensor

@@ -1,3 +1,7 @@
+/**
+ * @file button.c
+ * @brief Push-button debounce and short/long-press timing implementation.
+ */
 #include "board.h"
 #include "button.h"
 #include "log.h"
@@ -16,8 +20,12 @@ static volatile uint8_t  g_btn_long_press_evt = 0;
 
 static volatile button_event_t g_btn_pending_evt = BUTTON_EVT_NONE;
 
-/* Called from EXTI4_IRQHandler in main.c on any button edge.
- * Arms the debounce timer on the first edge; subsequent bounces are ignored. */
+/**
+ * @brief Push-button EXTI ISR body.
+ *
+ * Called from `EXTI4_IRQHandler` in `main.c` on any button edge. Arms the
+ * debounce timer on the first edge; subsequent bounces are ignored.
+ */
 void button_isr(void)
 {
   if (btn_handle_debounce == 0)
@@ -27,7 +35,13 @@ void button_isr(void)
   }
 }
 
-/* Call once per main-loop iteration to process debounced button events. */
+/**
+ * @brief Process debounced button events.
+ *
+ * Resolves the stable level after the debounce window, then classifies the
+ * subsequent release as short, ignored or long press according to the
+ * configured timing thresholds.
+ */
 void button_handle(void)
 {
   if (btn_handle_debounce)
@@ -82,6 +96,11 @@ void button_handle(void)
   }
 }
 
+/**
+ * @brief Take and clear the latest pending button event.
+ *
+ * @return The pending event, or @ref BUTTON_EVT_NONE if none is queued.
+ */
 button_event_t button_take_event(void)
 {
   button_event_t evt = g_btn_pending_evt;

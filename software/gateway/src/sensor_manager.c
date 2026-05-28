@@ -1,3 +1,7 @@
+/**
+ * @file sensor_manager.c
+ * @brief Persistent sensor list backed by a RAM mirror and FRAM.
+ */
 #include "sensor_manager.h"
 
 #include "feram.h"
@@ -20,6 +24,15 @@ static uint8_t g_sensor_low_battery = 0U;
 static void sensor_manager_write_header(uint8_t count);
 static void sensor_manager_clear_mirror(void);
 
+/**
+ * @brief Compute CRC-16/CCITT over @p data.
+ *
+ * Uses polynomial @c 0x1021 and initial value @c 0xFFFF.
+ *
+ * @param data Pointer to the input buffer.
+ * @param len  Number of bytes to include in the CRC.
+ * @return 16-bit CRC value.
+ */
 static uint16_t sensor_manager_crc16_ccitt(const uint8_t* data, uint8_t len)
 {
     uint16_t crc = SENSOR_MANAGER_CRC_INIT;
@@ -43,6 +56,14 @@ static uint16_t sensor_manager_crc16_ccitt(const uint8_t* data, uint8_t len)
     return crc;
 }
 
+/**
+ * @brief Compute the FRAM byte address for sensor record @p index.
+ *
+ * Record 0 holds the metadata header, sensor entries start at record 1.
+ *
+ * @param index Sensor entry index (0 .. SENSOR_MANAGER_MAX_SENSORS - 1).
+ * @return Byte address inside the FRAM.
+ */
 static inline uint16_t sensor_manager_record_addr(uint8_t index)
 {
     /* Record 0 is metadata header, sensor entries start at record 1. */
@@ -155,6 +176,11 @@ static uint8_t sensor_manager_validate_header_and_reset_if_invalid(void)
     return 0U;
 }
 
+/**
+ * @brief Persist the current header (with @p count entries) to FRAM.
+ *
+ * @param count Number of valid sensor entries to record in the header.
+ */
 static void sensor_manager_write_header(uint8_t count)
 {
     uint8_t record[SENSOR_MANAGER_RECORD_SIZE];
@@ -167,6 +193,7 @@ static void sensor_manager_write_header(uint8_t count)
     FeRAM_WriteBytes(SENSOR_MANAGER_HEADER_ADDR, record, SENSOR_MANAGER_RECORD_SIZE);
 }
 
+/** @brief Zero out the entire RAM mirror and reset the sensor counter. */
 static void sensor_manager_clear_mirror(void)
 {
     uint8_t i = 0;
@@ -181,6 +208,13 @@ static void sensor_manager_clear_mirror(void)
     g_sensor_count = 0U;
 }
 
+/**
+ * @brief Read and CRC-validate one sensor record from FRAM into @p entry.
+ *
+ * @param index    Sensor entry index in the on-FRAM array.
+ * @param entry    Destination decoded entry.
+ * @return 1 if the CRC matched, 0 otherwise.
+ */
 static uint8_t sensor_manager_read_record_from_feram(uint8_t index, SensorManagerEntry* entry)
 {
     uint8_t record[SENSOR_MANAGER_RECORD_SIZE];
@@ -202,6 +236,7 @@ static uint8_t sensor_manager_read_record_from_feram(uint8_t index, SensorManage
     return (stored_crc == computed_crc) ? 1U : 0U;
 }
 
+/** @brief Load the FRAM-backed sensor list into the RAM mirror. */
 void SensorManager_LoadMirror(void)
 {
     uint8_t i = 0;
@@ -226,6 +261,7 @@ void SensorManager_LoadMirror(void)
     g_sensor_mirror_loaded = 1U;
 }
 
+/** @brief Reset both the FRAM header and the RAM mirror to an empty state. */
 void SensorManager_ResetFeramHeaderAndMirror(void)
 {
     sensor_manager_clear_mirror();
@@ -233,6 +269,7 @@ void SensorManager_ResetFeramHeaderAndMirror(void)
     g_sensor_mirror_loaded = 1U;
 }
 
+/** @brief Lazily load the RAM mirror from FRAM on first use. */
 static void sensor_manager_ensure_mirror_loaded(void)
 {
     if (g_sensor_mirror_loaded == 0U) {
@@ -240,6 +277,12 @@ static void sensor_manager_ensure_mirror_loaded(void)
     }
 }
 
+/**
+ * @brief Serialize a sensor entry into an 8-byte FRAM record (with CRC).
+ *
+ * @param entry      Source entry.
+ * @param out_record Destination 8-byte buffer.
+ */
 static void sensor_manager_pack_record(const SensorManagerEntry* entry, uint8_t out_record[SENSOR_MANAGER_RECORD_SIZE])
 {
     uint16_t crc = 0;
@@ -256,6 +299,11 @@ static void sensor_manager_pack_record(const SensorManagerEntry* entry, uint8_t 
     out_record[7] = (uint8_t)crc;
 }
 
+/**
+ * @brief Persist the RAM-mirror entry at @p index to its FRAM slot.
+ *
+ * @param index Sensor entry index in the RAM mirror.
+ */
 static void sensor_manager_persist_record(uint8_t index)
 {
     uint8_t record[SENSOR_MANAGER_RECORD_SIZE];
@@ -264,6 +312,14 @@ static void sensor_manager_persist_record(uint8_t index)
     FeRAM_WriteBytes(sensor_manager_record_addr(index), record, SENSOR_MANAGER_RECORD_SIZE);
 }
 
+/**
+ * @brief Write a sensor entry both to the RAM mirror and to FRAM.
+ *
+ * Extends the stored sensor count if @p index is beyond the current end.
+ *
+ * @param index Sensor entry index.
+ * @param entry Source entry; ignored when NULL or @p index out of range.
+ */
 static void sensor_manager_write_record(uint8_t index, const SensorManagerEntry* entry)
 {
     uint8_t record[SENSOR_MANAGER_RECORD_SIZE];
@@ -285,6 +341,13 @@ static void sensor_manager_write_record(uint8_t index, const SensorManagerEntry*
     sensor_manager_write_header(g_sensor_count);
 }
 
+/**
+ * @brief Read a sensor entry from the RAM mirror.
+ *
+ * @param index Sensor entry index.
+ * @param entry Destination entry; ignored when NULL.
+ * @return The @c valid field of the entry, or 0 on bad inputs.
+ */
 static uint8_t sensor_manager_read_record(uint8_t index, SensorManagerEntry* entry)
 {
     if ((index >= SENSOR_MANAGER_MAX_SENSORS) || (entry == 0)) {
@@ -298,6 +361,9 @@ static uint8_t sensor_manager_read_record(uint8_t index, SensorManagerEntry* ent
     return g_sensor_mirror[index].valid;
 }
 
+/**
+ * @copydoc SensorManager_PairUnpairSensor
+ */
 uint8_t SensorManager_PairUnpairSensor(uint32_t id, uint8_t status)
 {
     uint8_t i = 0U;
@@ -367,6 +433,9 @@ uint8_t SensorManager_PairUnpairSensor(uint32_t id, uint8_t status)
     }
 }
 
+/**
+ * @copydoc SensorManager_UpdateSensorStatus
+ */
 uint8_t SensorManager_UpdateSensorStatus(uint32_t id, uint8_t status)
 {
     uint8_t i = 0;
@@ -409,6 +478,7 @@ uint8_t SensorManager_UpdateSensorStatus(uint32_t id, uint8_t status)
     return SENSOR_IGNORED;
 }
 
+/** @copydoc SensorManager_AnyValidReedSwitchSet */
 void SensorManager_AnyValidReedSwitchSet(void)
 {
     uint8_t i = 0U;
@@ -428,6 +498,7 @@ void SensorManager_AnyValidReedSwitchSet(void)
     return;
 }
 
+/** @copydoc SensorManager_AnyLowBatterySet */
 void SensorManager_AnyLowBatterySet(void)
 {
     uint8_t i = 0U;
@@ -447,16 +518,19 @@ void SensorManager_AnyLowBatterySet(void)
     return;
 }
 
+/** @copydoc SensorManager_IsAnyWindowOpen */
 uint8_t SensorManager_IsAnyWindowOpen(void)
 {
     return g_sensor_window_open;
 }
 
+/** @copydoc SensorManager_IsAnySensorWithLowBattery */
 uint8_t SensorManager_IsAnySensorWithLowBattery(void)
 {
     return g_sensor_low_battery;
 }
 
+/** @copydoc SensorManager_PairedCount */
 uint8_t SensorManager_PairedCount(void)
 {
     uint8_t i = 0U;
