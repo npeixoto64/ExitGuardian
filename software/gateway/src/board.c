@@ -9,6 +9,7 @@
 #include "stm8l15x_tim1.h"
 #include "stm8l15x_tim4.h"
 #include "stm8l15x_exti.h"
+#include "stm8l15x_iwdg.h"
 #include "cc1101.h"
 
 static void clock_init(void)
@@ -169,6 +170,22 @@ static void pwm_init(void)
   TIM1_CtrlPWMOutputs(ENABLE);
 }
 
+static void iwdg_init(void)
+{
+  /* LSI is ~38 kHz. With prescaler 256 the IWDG tick is ~6.74 ms.
+   * Reload 0xFF gives a watchdog timeout of ~1.72 s. */
+  IWDG_Enable();
+  IWDG_WriteAccessCmd(IWDG_WriteAccess_Enable);
+  IWDG_SetPrescaler(IWDG_Prescaler_256);
+  IWDG_SetReload(0xFF);
+  IWDG_ReloadCounter();
+}
+
+void board_iwdg_refresh(void)
+{
+  IWDG_ReloadCounter();
+}
+
 void board_init(void)
 {
   clock_init();
@@ -180,6 +197,7 @@ void board_init(void)
   uart_init();
   pwm_init();
   systick_init();
+  iwdg_init();
 
   enableInterrupts();
   

@@ -45,6 +45,9 @@ uint16_t board_get_tick_ms(void);
 /* TIM4 update ISR hook: clear flag and bump tick. Call from main.c ISR. */
 void board_systick_irq(void);
 
+/* Refresh (kick) the independent watchdog. Call periodically from main loop. */
+void board_iwdg_refresh(void);
+
 /* Low-power: HALT until EXTI wakes the MCU; restores active peripherals. */
 void board_enter_deep_sleep(void);
 

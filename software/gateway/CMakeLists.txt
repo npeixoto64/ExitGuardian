@@ -87,6 +87,7 @@ set(SRC_C
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_tim1.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_tim4.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_exti.c
+  ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_iwdg.c
 )
 
 set(SRC_ALL ${SRC_C} ${SRC_S})

@@ -59,8 +59,12 @@ int main(void)
     uint32_t chip_id = 0;
     char buffer[64];
 
+    send_string("\r\n\r\n**** Startup... ****\r\n");
+
     while (1) {
       uint16_t now = board_get_tick_ms();
+
+      board_iwdg_refresh();
 
       // Check buttons and reed switch, and handle their events.
       reed_handle();

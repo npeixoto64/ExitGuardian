@@ -45,7 +45,7 @@ static void enter_mode(mode_t next)
       /* FR_008 red OFF (driven by alert_manager when not alerting),
        * FR_022 yellow follows low-battery state. */
       //alert_manager_set_enabled(1U);
-      send_string("\r\nMODE: MONITORING dfgsdf");
+      send_string("\r\nMODE: MONITORING");
       break;
 
     case MODE_PAIRING_UNPAIRING:
