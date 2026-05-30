@@ -1,14 +1,27 @@
+/**
+ * @file cc1101.c
+ * @brief CC1101 sub-GHz transceiver driver implementation.
+ */
 #include "cc1101.h"
 #include "stm8l15x_gpio.h"
 #include "stm8l15x_spi.h"
 #include "log.h"
 #include <stdint.h>
 
+/** @brief Drive CSn high (deselect the CC1101). */
 static inline void csn_hi(void) { GPIO_SetBits(CC1101_CSN_PORT, CC1101_CSN_PIN); }
+/** @brief Drive CSn low (select the CC1101). */
 static inline void csn_lo(void) { GPIO_ResetBits(CC1101_CSN_PORT, CC1101_CSN_PIN); }
 
+/** @brief Shadow of the last @c PKTLEN value written to the chip. */
 static volatile uint8_t cc1101_pktlen_shadow;
 
+/**
+ * @brief Send/receive one byte over SPI1 (blocking).
+ *
+ * @param b Byte to transmit.
+ * @return Byte simultaneously shifted in from MISO.
+ */
 static uint8_t spi1_xfer(uint8_t b)
 {
     while (SPI_GetFlagStatus(SPI1, SPI_FLAG_TXE) == RESET) {}
@@ -17,7 +30,11 @@ static uint8_t spi1_xfer(uint8_t b)
     return SPI_ReceiveData(SPI1);
 }
 
-// Pull CSn low and wait for SO/MISO low (CHIP_RDYn). Returns 1 on ready, 0 on timeout.
+/**
+ * @brief Assert CSn and wait for CHIP_RDYn (MISO low).
+ *
+ * @return 1 if the chip became ready, 0 on timeout (CSn restored high).
+ */
 static uint8_t cc1101_select(void)
 {
     csn_lo();
@@ -28,9 +45,15 @@ static uint8_t cc1101_select(void)
     return 1;
 }
 
+/** @brief Deselect the CC1101 by raising CSn. */
 static inline void cc1101_deselect(void) { csn_hi(); }
 
-// Send a command strobe (B=0). Returns the status byte.
+/**
+ * @brief Send a command strobe (header byte with B=0).
+ *
+ * @param strobe Strobe address (`CC1101_S*`).
+ * @return Status byte shifted out on MISO during the strobe.
+ */
 static uint8_t cc1101_strobe(uint8_t strobe)
 {
     if (!cc1101_select()) return 0xFF;
@@ -39,8 +62,12 @@ static uint8_t cc1101_strobe(uint8_t strobe)
     return status;
 }
 
-// Read a CC1101 status register (single byte)
-// Status regs are at 0x30-0x3D; read = addr | 0xC0 (R + burst select for status space)
+/**
+ * @brief Read a single byte from CC1101 status-register space (0x30-0x3D).
+ *
+ * @param addr Status register address.
+ * @return Value of the addressed status register.
+ */
 /*static*/ uint8_t cc1101_read_status(uint8_t addr)
 {
     uint8_t v;
@@ -51,6 +78,12 @@ static uint8_t cc1101_strobe(uint8_t strobe)
     return v;
 }
 
+/**
+ * @brief Single-byte write to a CC1101 configuration register.
+ *
+ * @param addr  Register address.
+ * @param value Value to write.
+ */
 void cc1101_write_reg(uint8_t addr, uint8_t value)
 {
     // Assert CSn and wait for CHIP_RDYn (SO/MISO low)
@@ -66,6 +99,12 @@ void cc1101_write_reg(uint8_t addr, uint8_t value)
     cc1101_deselect();
 }
 
+/**
+ * @brief Single-byte read from a CC1101 configuration register.
+ *
+ * @param addr Register address.
+ * @return Register value.
+ */
 uint8_t cc1101_read_reg(uint8_t addr)
 {
     cc1101_select();
@@ -104,7 +143,13 @@ uint8_t cc1101_read_reg(uint8_t addr)
 //     return 1;
 // }
 
-// --- Burst write (for FIFO or multi-reg writes) ---
+/**
+ * @brief Burst write to a CC1101 register range or to the TX FIFO.
+ *
+ * @param addr Starting register address (R=0, B=1 header).
+ * @param data Source buffer.
+ * @param len  Number of bytes to write.
+ */
 static void cc1101_write_burst(uint8_t addr, const uint8_t *data, uint8_t len)
 {
     if (!cc1101_select()) return;
@@ -195,7 +240,13 @@ void cc1101_send_msg(const uint8_t status, const uint32_t chip_id)
     // Depending on MCSM1.TXOFF_MODE (default is usually IDLE), you may already be back in IDLE. :contentReference[oaicite:27]{index=27}
 }
 
-// ---- Burst read (for RX FIFO) ----
+/**
+ * @brief Burst read from a CC1101 register range or from the RX FIFO.
+ *
+ * @param addr Starting register address (R=1, B=1 header).
+ * @param data Destination buffer.
+ * @param len  Number of bytes to read.
+ */
 /*static*/ void cc1101_read_rxfifo(uint8_t addr, uint8_t *data, uint8_t len)
 {
     if (!cc1101_select()) return;
@@ -265,6 +316,7 @@ void cc1101_config_gfsk_433_rx_fixed(uint8_t pkt_size)
     cc1101_strobe(CC1101_SRX);
 }
 
+/** @brief Force IDLE, flush RX FIFO and re-enter RX. */
 static void cc1101_restart_rx(void)
 {
     cc1101_strobe(CC1101_SIDLE);

@@ -1,11 +1,23 @@
+/**
+ * @file cc1101.h
+ * @brief Minimal driver for the TI CC1101 sub-GHz transceiver.
+ *
+ * Provides SPI register access helpers, GFSK 433.92 MHz configurations for
+ * fixed-length TX/RX, and a small message protocol carrying a 32-bit chip ID
+ * together with a status byte.
+ */
 #ifndef CC1101_H
 #define CC1101_H
 
 #include "stm8l15x.h"
 
-// CC1101 header bits: R=0x80, B=0x40. For status regs (0x30-0x3D): use B=1 to read status reg.
-#define CC1101_READ       0x80
-#define CC1101_BURST      0x40
+/** @name SPI header bits
+ *  CC1101 header bits: R=0x80, B=0x40. For status regs (0x30-0x3D), set B=1
+ *  to read status space.
+ *  @{ */
+#define CC1101_READ       0x80   /**< Read bit in the SPI header byte. */
+#define CC1101_BURST      0x40   /**< Burst/status-space bit in the SPI header. */
+/** @} */
 
 // Command strobes (0x30-0x3D) when B=0
 #define CC1101_SRES       0x30
@@ -64,9 +76,43 @@
 #define CC1101_MISO_PORT  GPIOB
 #define CC1101_MISO_PIN   GPIO_Pin_7
 
+/**
+ * @brief Configure CC1101 for fixed-length GFSK TX on 433.92 MHz.
+ *
+ * @param pkt_size Fixed payload length in bytes (loaded into @c PKTLEN).
+ */
 void cc1101_config_gfsk_433_tx_fixed(uint8_t pkt_size);
+
+/**
+ * @brief Configure CC1101 for fixed-length GFSK RX on 433.92 MHz.
+ *
+ * After configuration the chip is strobed into RX and stays in RX after a
+ * packet is received (RXOFF_MODE = stay in RX).
+ *
+ * @param pkt_size Fixed payload length in bytes (loaded into @c PKTLEN).
+ */
 void cc1101_config_gfsk_433_rx_fixed(uint8_t pkt_size);
+
+/**
+ * @brief Transmit a 5-byte status/chip-id packet.
+ *
+ * Payload layout: `[status, chip_id[31:24], chip_id[23:16], chip_id[15:8],
+ * chip_id[7:0]]`.
+ *
+ * @param status  Sensor status byte (battery / button / reed bits).
+ * @param chip_id 32-bit sender chip ID.
+ */
 void cc1101_send_msg(const uint8_t status, const uint32_t chip_id);
+
+/**
+ * @brief Read a 5-byte status/chip-id packet from the RX FIFO.
+ *
+ * Reads as many bytes as currently reported by @c RXBYTES and decodes the
+ * first 5 into @p status and @p chip_id when present.
+ *
+ * @param[out] chip_id 32-bit sender chip ID (unchanged if FIFO is empty).
+ * @param[out] status  Sensor status byte (unchanged if FIFO is empty).
+ */
 void cc1101_recv_msg(uint32_t *chip_id, uint8_t *status);
 
 #endif

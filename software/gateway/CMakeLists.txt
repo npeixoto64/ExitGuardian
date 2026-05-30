@@ -72,6 +72,7 @@ set(SRC_C
   ${CMAKE_SOURCE_DIR}/src/cc1101.c
   ${CMAKE_SOURCE_DIR}/src/feram.c
   ${CMAKE_SOURCE_DIR}/src/sensor_manager.c
+  ${CMAKE_SOURCE_DIR}/src/mode_manager.c
   ${CMAKE_SOURCE_DIR}/src/log.c
   ${CMAKE_SOURCE_DIR}/src/reed.c
   ${CMAKE_SOURCE_DIR}/src/button.c
@@ -86,6 +87,7 @@ set(SRC_C
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_tim1.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_tim4.c
   ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_exti.c
+  ${CMAKE_SOURCE_DIR}/hal/src/stm8l15x_iwdg.c
 )
 
 set(SRC_ALL ${SRC_C} ${SRC_S})

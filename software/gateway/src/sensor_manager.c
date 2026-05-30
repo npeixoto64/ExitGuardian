@@ -1,6 +1,11 @@
+/**
+ * @file sensor_manager.c
+ * @brief Persistent sensor list backed by a RAM mirror and FRAM.
+ */
 #include "sensor_manager.h"
 
 #include "feram.h"
+#include "log.h"
 
 #define SENSOR_MANAGER_CRC_POLY 0x1021U
 #define SENSOR_MANAGER_CRC_INIT 0xFFFFU
@@ -13,10 +18,21 @@
 static SensorManagerEntry g_sensor_mirror[SENSOR_MANAGER_MAX_SENSORS];
 static uint8_t g_sensor_mirror_loaded = 0U;
 static uint8_t g_sensor_count = 0U;
+static uint8_t g_sensor_window_open = 0U;
+static uint8_t g_sensor_low_battery = 0U;
 
 static void sensor_manager_write_header(uint8_t count);
 static void sensor_manager_clear_mirror(void);
 
+/**
+ * @brief Compute CRC-16/CCITT over @p data.
+ *
+ * Uses polynomial @c 0x1021 and initial value @c 0xFFFF.
+ *
+ * @param data Pointer to the input buffer.
+ * @param len  Number of bytes to include in the CRC.
+ * @return 16-bit CRC value.
+ */
 static uint16_t sensor_manager_crc16_ccitt(const uint8_t* data, uint8_t len)
 {
     uint16_t crc = SENSOR_MANAGER_CRC_INIT;
@@ -40,12 +56,38 @@ static uint16_t sensor_manager_crc16_ccitt(const uint8_t* data, uint8_t len)
     return crc;
 }
 
+/**
+ * @brief Compute the FRAM byte address for sensor record @p index.
+ *
+ * Record 0 holds the metadata header, sensor entries start at record 1.
+ *
+ * @param index Sensor entry index (0 .. SENSOR_MANAGER_MAX_SENSORS - 1).
+ * @return Byte address inside the FRAM.
+ */
 static inline uint16_t sensor_manager_record_addr(uint8_t index)
 {
     /* Record 0 is metadata header, sensor entries start at record 1. */
     return (uint16_t)(((uint16_t)index + 1U) << 3);
 }
 
+/**
+ * @brief Serialize the sensor manager metadata header into an 8-byte record.
+ *
+ * Lays out the header record as:
+ *  - Byte 0: magic byte 0 (`SENSOR_MANAGER_HEADER_MAGIC0`, 'S')
+ *  - Byte 1: magic byte 1 (`SENSOR_MANAGER_HEADER_MAGIC1`, 'M')
+ *  - Byte 2: header version (`SENSOR_MANAGER_HEADER_VERSION`)
+ *  - Byte 3: number of stored sensor entries
+ *  - Bytes 4-5: reserved (set to 0)
+ *  - Bytes 6-7: CRC-16/CCITT over bytes 0-5 (big-endian)
+ *
+ * The packed record is ready to be written to FeRAM at
+ * `SENSOR_MANAGER_HEADER_ADDR`.
+ *
+ * @param[in]  count       Number of valid sensor entries currently stored.
+ * @param[out] out_record  Destination buffer of size `SENSOR_MANAGER_RECORD_SIZE`
+ *                         that receives the packed header bytes.
+ */
 static void sensor_manager_pack_header(uint8_t count, uint8_t out_record[SENSOR_MANAGER_RECORD_SIZE])
 {
     uint16_t crc = 0;
@@ -62,6 +104,25 @@ static void sensor_manager_pack_header(uint8_t count, uint8_t out_record[SENSOR_
     out_record[7] = (uint8_t)crc;
 }
 
+/**
+ * @brief Read and validate the sensor manager metadata header from FeRAM.
+ *
+ * Reads the 8-byte header record at `SENSOR_MANAGER_HEADER_ADDR` and verifies
+ * its integrity by:
+ *  - Recomputing the CRC-16/CCITT over bytes 0-5 and comparing against the
+ *    big-endian CRC stored in bytes 6-7.
+ *  - Checking the magic bytes (`SENSOR_MANAGER_HEADER_MAGIC0`,
+ *    `SENSOR_MANAGER_HEADER_MAGIC1`) and version
+ *    (`SENSOR_MANAGER_HEADER_VERSION`).
+ *  - Ensuring the stored entry count does not exceed
+ *    `SENSOR_MANAGER_MAX_SENSORS`.
+ *
+ * @param[out] count  On success, receives the number of valid sensor entries
+ *                    reported by the header. Not modified on failure.
+ *
+ * @return 1U if the header is valid and @p count was written; 0U otherwise
+ *         (CRC mismatch, bad magic/version, or out-of-range count).
+ */
 static uint8_t sensor_manager_read_header(uint8_t* count)
 {
     uint8_t record[SENSOR_MANAGER_RECORD_SIZE];
@@ -88,6 +149,19 @@ static uint8_t sensor_manager_read_header(uint8_t* count)
     return 1U;
 }
 
+/**
+ * @brief Validate the FeRAM metadata header, reinitializing it if corrupt.
+ *
+ * Attempts to read and verify the persisted header via
+ * `sensor_manager_read_header()`. If the header is valid, the in-RAM entry
+ * counter `g_sensor_count` is updated to reflect the persisted count. If the
+ * header is invalid (CRC mismatch, bad magic/version, or out-of-range count),
+ * `g_sensor_count` is reset to 0 and a fresh, empty header is written back to
+ * FeRAM so subsequent operations start from a known-good state.
+ *
+ * @return 1U if the existing header was valid; 0U if it was invalid and a new
+ *         empty header was written.
+ */
 static uint8_t sensor_manager_validate_header_and_reset_if_invalid(void)
 {
     uint8_t count = 0U;
@@ -102,6 +176,11 @@ static uint8_t sensor_manager_validate_header_and_reset_if_invalid(void)
     return 0U;
 }
 
+/**
+ * @brief Persist the current header (with @p count entries) to FRAM.
+ *
+ * @param count Number of valid sensor entries to record in the header.
+ */
 static void sensor_manager_write_header(uint8_t count)
 {
     uint8_t record[SENSOR_MANAGER_RECORD_SIZE];
@@ -114,6 +193,7 @@ static void sensor_manager_write_header(uint8_t count)
     FeRAM_WriteBytes(SENSOR_MANAGER_HEADER_ADDR, record, SENSOR_MANAGER_RECORD_SIZE);
 }
 
+/** @brief Zero out the entire RAM mirror and reset the sensor counter. */
 static void sensor_manager_clear_mirror(void)
 {
     uint8_t i = 0;
@@ -128,6 +208,13 @@ static void sensor_manager_clear_mirror(void)
     g_sensor_count = 0U;
 }
 
+/**
+ * @brief Read and CRC-validate one sensor record from FRAM into @p entry.
+ *
+ * @param index    Sensor entry index in the on-FRAM array.
+ * @param entry    Destination decoded entry.
+ * @return 1 if the CRC matched, 0 otherwise.
+ */
 static uint8_t sensor_manager_read_record_from_feram(uint8_t index, SensorManagerEntry* entry)
 {
     uint8_t record[SENSOR_MANAGER_RECORD_SIZE];
@@ -149,6 +236,7 @@ static uint8_t sensor_manager_read_record_from_feram(uint8_t index, SensorManage
     return (stored_crc == computed_crc) ? 1U : 0U;
 }
 
+/** @brief Load the FRAM-backed sensor list into the RAM mirror. */
 void SensorManager_LoadMirror(void)
 {
     uint8_t i = 0;
@@ -162,7 +250,7 @@ void SensorManager_LoadMirror(void)
         i = 0;
         while (i < g_sensor_count) {
             SensorManagerEntry entry;
-
+            
             if (sensor_manager_read_record_from_feram(i, &entry)) {
                 g_sensor_mirror[i] = entry;
             }
@@ -173,6 +261,7 @@ void SensorManager_LoadMirror(void)
     g_sensor_mirror_loaded = 1U;
 }
 
+/** @brief Reset both the FRAM header and the RAM mirror to an empty state. */
 void SensorManager_ResetFeramHeaderAndMirror(void)
 {
     sensor_manager_clear_mirror();
@@ -180,6 +269,7 @@ void SensorManager_ResetFeramHeaderAndMirror(void)
     g_sensor_mirror_loaded = 1U;
 }
 
+/** @brief Lazily load the RAM mirror from FRAM on first use. */
 static void sensor_manager_ensure_mirror_loaded(void)
 {
     if (g_sensor_mirror_loaded == 0U) {
@@ -187,6 +277,12 @@ static void sensor_manager_ensure_mirror_loaded(void)
     }
 }
 
+/**
+ * @brief Serialize a sensor entry into an 8-byte FRAM record (with CRC).
+ *
+ * @param entry      Source entry.
+ * @param out_record Destination 8-byte buffer.
+ */
 static void sensor_manager_pack_record(const SensorManagerEntry* entry, uint8_t out_record[SENSOR_MANAGER_RECORD_SIZE])
 {
     uint16_t crc = 0;
@@ -196,13 +292,18 @@ static void sensor_manager_pack_record(const SensorManagerEntry* entry, uint8_t 
     out_record[2] = (uint8_t)(entry->id >> 8);
     out_record[3] = (uint8_t)(entry->id);
     out_record[4] = entry->status;
-    out_record[5] = entry->valid ? 1U : 0U;
+    out_record[5] = entry->valid;
 
     crc = sensor_manager_crc16_ccitt(out_record, 6);
     out_record[6] = (uint8_t)(crc >> 8);
     out_record[7] = (uint8_t)crc;
 }
 
+/**
+ * @brief Persist the RAM-mirror entry at @p index to its FRAM slot.
+ *
+ * @param index Sensor entry index in the RAM mirror.
+ */
 static void sensor_manager_persist_record(uint8_t index)
 {
     uint8_t record[SENSOR_MANAGER_RECORD_SIZE];
@@ -211,6 +312,14 @@ static void sensor_manager_persist_record(uint8_t index)
     FeRAM_WriteBytes(sensor_manager_record_addr(index), record, SENSOR_MANAGER_RECORD_SIZE);
 }
 
+/**
+ * @brief Write a sensor entry both to the RAM mirror and to FRAM.
+ *
+ * Extends the stored sensor count if @p index is beyond the current end.
+ *
+ * @param index Sensor entry index.
+ * @param entry Source entry; ignored when NULL or @p index out of range.
+ */
 static void sensor_manager_write_record(uint8_t index, const SensorManagerEntry* entry)
 {
     uint8_t record[SENSOR_MANAGER_RECORD_SIZE];
@@ -232,6 +341,13 @@ static void sensor_manager_write_record(uint8_t index, const SensorManagerEntry*
     sensor_manager_write_header(g_sensor_count);
 }
 
+/**
+ * @brief Read a sensor entry from the RAM mirror.
+ *
+ * @param index Sensor entry index.
+ * @param entry Destination entry; ignored when NULL.
+ * @return The @c valid field of the entry, or 0 on bad inputs.
+ */
 static uint8_t sensor_manager_read_record(uint8_t index, SensorManagerEntry* entry)
 {
     if ((index >= SENSOR_MANAGER_MAX_SENSORS) || (entry == 0)) {
@@ -245,9 +361,12 @@ static uint8_t sensor_manager_read_record(uint8_t index, SensorManagerEntry* ent
     return g_sensor_mirror[index].valid;
 }
 
-uint8_t SensorManager_UpdateSensorStatus(uint32_t id, uint8_t status)
+/**
+ * @copydoc SensorManager_PairUnpairSensor
+ */
+uint8_t SensorManager_PairUnpairSensor(uint32_t id, uint8_t status)
 {
-    uint8_t i = 0;
+    uint8_t i = 0U;
     uint8_t is_pairing_request = SENSOR_STATUS_IS_PAIRING(status);
     uint8_t is_unpairing_request = SENSOR_STATUS_IS_UNPAIRING(status);
     uint8_t normalized_status = (uint8_t)(status & (uint8_t)~SENSOR_STATUS_PAIRING_MASK);
@@ -256,52 +375,111 @@ uint8_t SensorManager_UpdateSensorStatus(uint32_t id, uint8_t status)
 
     while (i < g_sensor_count) {
         if (g_sensor_mirror[i].id == id) {
+            // ID found in mirror
             if (g_sensor_mirror[i].valid == 0U) {
+                // Entry is currently invalid
                 if (is_pairing_request == 0U) {
-                    return 0U;
+                    // No pairing request, return without update
+                    send_string("\r\nID found, it's invalid, no pairing request -> entry remains invalid");
+                    return SENSOR_IGNORED;
                 }
-
-                g_sensor_mirror[i].status = normalized_status;
-                g_sensor_mirror[i].valid = 1U;
-                sensor_manager_persist_record(i);
-                return 1U;
+                else {
+                    // Pairing request for an already invalid entry, update and validate it
+                    g_sensor_mirror[i].status = normalized_status;
+                    g_sensor_mirror[i].valid = 1U;
+                    sensor_manager_persist_record(i);
+                    SensorManager_AnyValidReedSwitchSet();
+                    SensorManager_AnyLowBatterySet();
+                    send_string("\r\nID found, it's invalid, pairing request -> entry validated");
+                    return SENSOR_PAIRED;
+                }
             }
-
-            if (is_unpairing_request != 0U) {
-                g_sensor_mirror[i].status = normalized_status;
-                g_sensor_mirror[i].valid = 0U;
-                sensor_manager_persist_record(i);
-                return 1U;
+            else {
+                // Entry is currently valid
+                if (is_unpairing_request != 0U) {
+                    // Unpairing request for an already valid entry, invalidate it
+                    g_sensor_mirror[i].status = normalized_status;
+                    g_sensor_mirror[i].valid = 0U;
+                    sensor_manager_persist_record(i);
+                    send_string("\r\nID found, it's valid, unpairing request -> entry invalidated");
+                    return SENSOR_UNPAIRED;
+                }
+                else {
+                    // No unpairing request, ignore pairing requests for an already valid entry
+                    send_string("\r\nID found, it's valid, pairing request ignored");
+                    return SENSOR_IGNORED;
+                }
             }
-
-            if (g_sensor_mirror[i].status != normalized_status) {
-                g_sensor_mirror[i].status = normalized_status;
-                sensor_manager_persist_record(i);
-                return 1U;
-            }
-
-            return 1U;
         }
 
         i++;
     }
 
-    if ((is_pairing_request == 0U)
-        || (g_sensor_count >= SENSOR_MANAGER_MAX_SENSORS)) {
-        return 0U;
+    // ID not found in mirror, add new entry if pairing request and space available
+    if ((is_pairing_request == 0U) || (g_sensor_count >= SENSOR_MANAGER_MAX_SENSORS)) {
+        send_string("\r\nID not found, no pairing request or memory full, cannot add");
+        return SENSOR_IGNORED;
     }
-
-    g_sensor_mirror[g_sensor_count].id = id;
-    g_sensor_mirror[g_sensor_count].status = normalized_status;
-    g_sensor_mirror[g_sensor_count].valid = 1U;
-    sensor_manager_persist_record(g_sensor_count);
-    g_sensor_count++;
-    sensor_manager_write_header(g_sensor_count);
-
-    return 1U;
+    else {
+        g_sensor_mirror[g_sensor_count].id = id;
+        g_sensor_mirror[g_sensor_count].status = normalized_status;
+        g_sensor_mirror[g_sensor_count].valid = 1U;
+        sensor_manager_persist_record(g_sensor_count);
+        g_sensor_count++;
+        sensor_manager_write_header(g_sensor_count);
+        send_string("\r\nID not found, pairing request -> entry added");
+        SensorManager_AnyValidReedSwitchSet();
+        return SENSOR_PAIRED;
+    }
 }
 
-uint8_t SensorManager_AnyValidReedSwitchSet(void)
+/**
+ * @copydoc SensorManager_UpdateSensorStatus
+ */
+uint8_t SensorManager_UpdateSensorStatus(uint32_t id, uint8_t status)
+{
+    uint8_t i = 0;
+    uint8_t normalized_status = (uint8_t)(status & (uint8_t)~SENSOR_STATUS_PAIRING_MASK);
+
+    sensor_manager_ensure_mirror_loaded();
+
+    while (i < g_sensor_count) {
+        if (g_sensor_mirror[i].id == id) {
+            // ID found in mirror
+            if (g_sensor_mirror[i].valid != 0U) {
+                // ID found and valid, update status
+                if (g_sensor_mirror[i].status == normalized_status) {
+                    // Status is the same, no update needed
+                    send_string("\r\nID found and valid, status is the same, no update needed");
+                    return SENSOR_IGNORED;
+                }
+                else {
+                    g_sensor_mirror[i].status = normalized_status;
+                    sensor_manager_persist_record(i);
+                    send_string("\r\nID found and valid, status updated");
+                    SensorManager_AnyValidReedSwitchSet();
+                    SensorManager_AnyLowBatterySet();
+                    send_string("\r\nID found and valid, status differs, updating status");
+                    return SENSOR_UPDATED;
+                }
+            }
+            else {
+                // ID found but invalid, ignore updates for invalid entries
+                send_string("\r\nID found but invalid, update ignored");
+                return SENSOR_IGNORED;
+            }   
+        }
+
+        i++;
+    }
+
+    send_string("\r\nSensor not found in mirror, update ignored");
+
+    return SENSOR_IGNORED;
+}
+
+/** @copydoc SensorManager_AnyValidReedSwitchSet */
+void SensorManager_AnyValidReedSwitchSet(void)
 {
     uint8_t i = 0U;
 
@@ -310,10 +488,62 @@ uint8_t SensorManager_AnyValidReedSwitchSet(void)
     while (i < g_sensor_count) {
         if ((g_sensor_mirror[i].valid != 0U)
             && (SENSOR_STATUS_IS_REED_SWITCH(g_sensor_mirror[i].status) != 0U)) {
-            return 1U;
+            g_sensor_window_open = 1U;
+            return;
         }
         i++;
     }
 
-    return 0U;
+    g_sensor_window_open = 0U;
+    return;
+}
+
+/** @copydoc SensorManager_AnyLowBatterySet */
+void SensorManager_AnyLowBatterySet(void)
+{
+    uint8_t i = 0U;
+
+    sensor_manager_ensure_mirror_loaded();
+
+    while (i < g_sensor_count) {
+        if ((g_sensor_mirror[i].valid != 0U)
+            && (SENSOR_STATUS_IS_LOW_BATTERY(g_sensor_mirror[i].status) != 0U)) {
+            g_sensor_low_battery = 1U;
+            return;
+        }
+        i++;
+    }
+
+    g_sensor_low_battery = 0U;
+    return;
+}
+
+/** @copydoc SensorManager_IsAnyWindowOpen */
+uint8_t SensorManager_IsAnyWindowOpen(void)
+{
+    return g_sensor_window_open;
+}
+
+/** @copydoc SensorManager_IsAnySensorWithLowBattery */
+uint8_t SensorManager_IsAnySensorWithLowBattery(void)
+{
+    return g_sensor_low_battery;
+}
+
+/** @copydoc SensorManager_PairedCount */
+uint8_t SensorManager_PairedCount(void)
+{
+    uint8_t i = 0U;
+    uint8_t count = 0U;
+
+    sensor_manager_ensure_mirror_loaded();
+
+    while (i < g_sensor_count) {
+        if (g_sensor_mirror[i].valid != 0U) {
+            count++;
+        }
+        i++;
+    }
+
+    return count;
 }

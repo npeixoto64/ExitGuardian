@@ -1,3 +1,7 @@
+/**
+ * @file main.c
+ * @brief Application entry point and top-level interrupt handlers.
+ */
 #include <stdint.h>
 #include <stdio.h>
 #include "stm8l15x_gpio.h"
@@ -10,6 +14,7 @@
 #include "button.h"
 #include "led.h"
 #include "buzzer.h"
+#include "mode_manager.h"
 
 static volatile uint8_t  g_irq_cc1101_flag = 0;
 
@@ -49,47 +54,99 @@ INTERRUPT_HANDLER(TIM4_UPD_OVF_TRG_IRQHandler, 25)
   board_systick_irq();
 }
 
+/**
+ * @brief Application entry point.
+ *
+ * Brings up the board and the mode manager, then runs the main super-loop:
+ * watchdog refresh, reed/button handling, CC1101 packet dispatch, event
+ * forwarding to the mode manager and LED/buzzer tick.
+ *
+ * @return Never returns.
+ */
 int main(void)
 {
     board_init();
-    enableInterrupts();
-
-    cc1101_config_gfsk_433_rx_fixed(5);
-
+    mode_manager_init();
+    
     uint8_t status = 0;
     uint32_t chip_id = 0;
     char buffer[64];
-    uint8_t buzzer_toggle_flag = 0;
 
-
-    // State for periodic LED_B
-    uint16_t ledb_tick = 0;
-    uint8_t  ledb_on = 0;
+    send_string("\r\n\r\n**** Startup... ****\r\n");
 
     while (1) {
       uint16_t now = board_get_tick_ms();
 
-      led_b_handle(now);
-      led_r_handle(now, LED_MODE_FLASH);
-      led_y_handle(now, LED_MODE_FLASH);
-      buzzer_handle(now, BUZZER_MODE_BEEP);
+      board_iwdg_refresh();
 
+      // Check buttons and reed switch, and handle their events.
+      reed_handle();
+      button_handle();
+
+      // Get CC1101 packets and pass to mode manager for handling.
       if (g_irq_cc1101_flag)
       {
         g_irq_cc1101_flag = 0;
 
         cc1101_recv_msg(&chip_id, &status);
 
-        // buzzer_toggle_flag ^= 1U;
-        // board_buzzer(buzzer_toggle_flag);
+        /* Status byte format:
+         *   Bits 7-4: Battery capacity (high nibble)
+         *   Bits 2-1: Button action (0 = none, 1(single press) = force update, 2(double press) = pair, 3(long press) = unpair)
+         *   Bit 0:    Reed switch state
+         */
+        uint8_t battery     = (status >> 4) & 0x0F;
+        uint8_t button_act  = (status >> 1) & 0x03;
+        uint8_t reed_state  = status & 0x01;
 
         sprintf(buffer, "\r\nTransmitter Chip ID: %lx", chip_id);
         send_string(buffer);
-        sprintf(buffer, "; status: %lu", (uint32_t)status);
+        sprintf(buffer, "; battery: %u", battery);
         send_string(buffer);
+        sprintf(buffer, "; button: %u", button_act);
+        send_string(buffer);
+        sprintf(buffer, "; reed: %u", reed_state);
+        send_string(buffer);
+        send_register_hex(", status: ", status);
+
+        // To force low battery for testing, set battery to 0 and reconstruct status byte:
+        //battery = 0;
+        //status = (battery << 4) | (button_act << 1) | reed_state; // Reconstruct status byte for mode manager
+
+        mode_manager_on_sensor_packet(chip_id, status);
       }
 
-      reed_handle();
-      button_handle();
+      // Get button events and pass to mode manager for handling.
+      button_event_t button_evt = button_take_event();
+      if (button_evt == BUTTON_EVT_SHORT_PRESS)
+      {
+        send_string("\r\nSHORT_PRESS");
+        mode_manager_on_short_press();
+      }
+      else if (button_evt == BUTTON_EVT_LONG_PRESS_DETECTED)
+      {
+        send_string("\r\nLONG_PRESS_DETECTED");
+        mode_manager_on_long_press_detected();
+      }
+      else if (button_evt == BUTTON_EVT_LONG_PRESS_RELEASED)
+      {
+        send_string("\r\nLONG_PRESS_RELEASED");
+        mode_manager_on_long_press_released();
+      }
+
+      reed_event_t reed_evt = reed_take_event();
+      if (reed_evt != REED_EVT_NONE)
+      {
+        if (reed_evt == REED_EVT_OPENED) {
+          send_string("\r\n_DOOR_OPENED");
+          mode_manager_on_door_opened();
+        }
+        else if (reed_evt == REED_EVT_CLOSED) {
+          send_string("\r\n_DOOR_CLOSED");
+          mode_manager_on_door_closed();
+        }
+      }
+
+      mode_manager_handle(board_get_tick_ms());
     }
 }

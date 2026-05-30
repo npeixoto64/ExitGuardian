@@ -1,9 +1,20 @@
+/**
+ * @file feram.c
+ * @brief Blocking I2C driver for the on-board FRAM device.
+ */
 #include "feram.h"
 
 #include "stm8l15x_i2c.h"
 
-#define FERAM_ADDR 0xA0
+#define FERAM_ADDR 0xA0  /**< 7-bit I2C slave address (shifted) of the FRAM. */
 
+/**
+ * @brief Write @p num_bytes from @p pBuffer to FRAM starting at @p mem_addr.
+ *
+ * @param mem_addr  16-bit FRAM byte address.
+ * @param pBuffer   Source buffer.
+ * @param num_bytes Number of bytes to transmit.
+ */
 void FeRAM_WriteBytes(uint16_t mem_addr, uint8_t* pBuffer, uint8_t num_bytes)
 {
 	uint8_t i = 0;
@@ -28,6 +39,13 @@ void FeRAM_WriteBytes(uint16_t mem_addr, uint8_t* pBuffer, uint8_t num_bytes)
 	I2C_GenerateSTOP(I2C1, ENABLE);
 }
 
+/**
+ * @brief Read @p num_bytes from FRAM starting at @p mem_addr into @p pBuffer.
+ *
+ * @param mem_addr  16-bit FRAM byte address.
+ * @param pBuffer   Destination buffer.
+ * @param num_bytes Number of bytes to read.
+ */
 void FeRAM_ReadBytes(uint16_t mem_addr, uint8_t* pBuffer, uint8_t num_bytes)
 {
 	uint8_t i = 0;

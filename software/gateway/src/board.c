@@ -1,3 +1,7 @@
+/**
+ * @file board.c
+ * @brief Board support package implementation: clocks, peripherals and power.
+ */
 #include "board.h"
 
 #include "stm8l15x_clk.h"
@@ -9,7 +13,10 @@
 #include "stm8l15x_tim1.h"
 #include "stm8l15x_tim4.h"
 #include "stm8l15x_exti.h"
+#include "stm8l15x_iwdg.h"
+#include "cc1101.h"
 
+/** @brief Configure the system clock to 16 MHz from the internal HSI. */
 static void clock_init(void)
 {
   /* 16 MHz (HSI with divider 1) */
@@ -19,6 +26,12 @@ static void clock_init(void)
   CLK_SYSCLKDivConfig(CLK_SYSCLKDiv_1);
 }
 
+/**
+ * @brief Configure all GPIOs used on the board.
+ *
+ * Unused pins are pulled up to minimise leakage; peripheral pins are set to
+ * the modes required by I2C, SPI, USART, TIM1 PWM and the EXTI inputs.
+ */
 static void gpio_init(void)
 {
   /* Unused pins as input pull-up to minimise leakage. */
@@ -65,10 +78,11 @@ static void gpio_init(void)
 
   GPIO_ResetBits(LED_B_PORT, LED_B_PIN);
   GPIO_ResetBits(LED_Y_PORT, LED_Y_PIN);
-  GPIO_SetBits(LED_R_PORT, LED_R_PIN);
+  GPIO_ResetBits(LED_R_PORT, LED_R_PIN);
   GPIO_ResetBits(BUZZER_EN_PORT, BUZZER_EN_PIN);
 }
 
+/** @brief Configure EXTI edge sensitivity for CC1101, button and reed inputs. */
 static void exti_init(void)
 {
   EXTI_SetPinSensitivity(IRQ_CC1101_EXTI, EXTI_Trigger_Falling);
@@ -76,8 +90,10 @@ static void exti_init(void)
   EXTI_SetPinSensitivity(REED_DOOR_EXTI,  EXTI_Trigger_Rising_Falling);
 }
 
+/** @brief Millisecond tick counter, incremented by @ref board_systick_irq. */
 static volatile uint16_t s_tick_ms = 0;
 
+/** @brief Configure TIM4 to generate a 1 kHz periodic update interrupt. */
 static void systick_init(void)
 {
   /* 16 MHz / 128 = 125 kHz; period 125 -> 1 ms tick. */
@@ -106,6 +122,7 @@ void board_systick_irq(void)
   s_tick_ms++;
 }
 
+/** @brief Configure ADC1 single-conversion mode on channel 6 (PA6). */
 static void adc_init(void)
 {
   CLK_PeripheralClockConfig(CLK_Peripheral_ADC1, ENABLE);
@@ -116,6 +133,7 @@ static void adc_init(void)
   ADC_ChannelCmd(ADC1, ADC_Channel_6, ENABLE);
 }
 
+/** @brief Configure I2C1 as master at 400 kHz for the FRAM device. */
 static void i2c_init(void)
 {
   CLK_PeripheralClockConfig(CLK_Peripheral_I2C1, ENABLE);
@@ -125,6 +143,7 @@ static void i2c_init(void)
   I2C_Cmd(I2C1, ENABLE);
 }
 
+/** @brief Configure SPI1 as 8-bit master, mode 0, for the CC1101. */
 static void spi_init(void)
 {
   CLK_PeripheralClockConfig(CLK_Peripheral_SPI1, ENABLE);
@@ -135,6 +154,7 @@ static void spi_init(void)
   SPI_Cmd(SPI1, ENABLE);
 }
 
+/** @brief Configure USART1 for 9600 8N1 debug logging. */
 static void uart_init(void)
 {
   CLK_PeripheralClockConfig(CLK_Peripheral_USART1, ENABLE);
@@ -145,6 +165,7 @@ static void uart_init(void)
   USART_Cmd(USART1, ENABLE);
 }
 
+/** @brief Configure TIM1 channel 1 / 1N differential PWM for the buzzer. */
 static void pwm_init(void)
 {
   CLK_PeripheralClockConfig(CLK_Peripheral_TIM1, ENABLE);
@@ -168,6 +189,23 @@ static void pwm_init(void)
   TIM1_CtrlPWMOutputs(ENABLE);
 }
 
+/** @brief Start the independent watchdog with ~1.72 s timeout. */
+static void iwdg_init(void)
+{
+  /* LSI is ~38 kHz. With prescaler 256 the IWDG tick is ~6.74 ms.
+   * Reload 0xFF gives a watchdog timeout of ~1.72 s. */
+  IWDG_Enable();
+  IWDG_WriteAccessCmd(IWDG_WriteAccess_Enable);
+  IWDG_SetPrescaler(IWDG_Prescaler_256);
+  IWDG_SetReload(0xFF);
+  IWDG_ReloadCounter();
+}
+
+void board_iwdg_refresh(void)
+{
+  IWDG_ReloadCounter();
+}
+
 void board_init(void)
 {
   clock_init();
@@ -179,6 +217,11 @@ void board_init(void)
   uart_init();
   pwm_init();
   systick_init();
+  iwdg_init();
+
+  enableInterrupts();
+  
+  cc1101_config_gfsk_433_rx_fixed(5);
 }
 
 void board_buzzer(uint8_t on)
