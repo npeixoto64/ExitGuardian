@@ -216,21 +216,24 @@ Decision:
  - https://pt.mouser.com/ProductDetail/MEDER-electronic/MK33-66-D?qs=olJun0bQHM8sthm3NhvY2g%3D%3D
 
 ### Sensor Matching Balun (antenna interface)
-<==================== Still to t.b.d. ======================>
 
 Inductors (high-Q (SRF>2GHz)) - Coilcraft 0402HP series:
-- L131 [27 nH ± 5%, 0402]: Murata LQG15HS series (315/433 MHz)
-- L121 [27 nH ± 5%, 0402]: Murata LQG15HS series (315/433 MHz)
-- L122 [22 nH ± 5%, 0402]: Murata LQG15HS series (315/433 MHz)
-- L123 [27 nH ± 5%, 0402]: Murata LQG15HS series (315/433 MHz)
+- L121 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
+- L122 [18 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
+- L123 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
+- L124 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
+- L125 [3.3 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz) 
+- L131 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
+- L132 [18 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
 
-Capacitors (NP0/C0G) - Murata GRM155 series:
-- C131 [3.9 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
-- C124 [220 pF ± 5%, 0402 NP0]: Murata GRM1555C series
-- C121 [3.9 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
-- C122 [8.2 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
-- C123 [5.6 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
-- C125 [220 pF ± 5%, 0402 NP0]: Murata GRM1555C series
+Capacitors (NP0/C0G) - Murata GRM1555C series:
+- C121 [1.0 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
+- C122 [1.5 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
+- C123 [3.3 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
+- C124 [100 pF ± 5%, 0402 NP0]: Murata GRM1555C series
+- C125 [12 pF ± 5%, 0402 NP0]: Murata GRM1555C series
+- C126 [47 pF ± 5%, 0402 NP0]: Murata GRM1555C series
+- C131 [1.5 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
 
 ### Sensor PI-match:
 
