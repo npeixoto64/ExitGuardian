@@ -99,6 +99,12 @@ PB7 => SPI1_MISO
 PC5 => USART_TX
 PC6 => USART_RX
 
+### Sensor 4 Pin Programming Header:
+2.54 mm pin headers
+
+### Sensor 3 Pin Debug Serial Port:
+2.54 mm pin headers
+
 ### Sensor Battery
 
 #### Comparison: CR2032 and CR2054
@@ -216,7 +222,11 @@ EMI-friendly: The series 100 kΩ limits surge into the MCU pin; the 100 nF to GN
 Decision:
  - https://pt.mouser.com/ProductDetail/MEDER-electronic/MK33-66-D?qs=olJun0bQHM8sthm3NhvY2g%3D%3D
 
-### Sensor Matching Balun (antenna interface)
+### Sensor GSFK RF Emitter
+
+CC1101 Crystal: [NX3225GA-26.000M-STD-CRG-2, 26MHz], https://pt.mouser.com/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D
+
+### Sensor Balun (antenna interface)
 
 Inductors (high-Q (SRF>2GHz)) - Coilcraft 0402HP series:
 - L121 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
@@ -276,7 +286,7 @@ Polycase
 - External: 54 x 25 x 18 mm
 - Internal: 42.6 x 20.1 x 11.1 mm
 
-##### Hammond Manufacturing (comes with technical datasheets, 3D model)
+##### Supertronic (comes with technical datasheets, 3D model)
 1. PP85B (4 screws): https://supertronic.com/en/universal-plastic-enclosure-for-electronic-devices-pp85b.html#/8-color-white_ral_9010
 - External: 39 x 27 x 18 mm
 - Internal: 31 x 20 x 10 mm
@@ -343,37 +353,44 @@ Fast boot → status bitmap gives instant “which windows are open,” then you
 If you must start without FRAM
 Internal EEPROM is OK for a small fleet (say ≤16–20 sensors) if you batch writes (e.g., every 10–30 minutes) and implement a simple ring/wear-level per record. Still, FRAM is strongly preferred for per-event updates.
 
-### Gateway GSFK RF Receiver
+### Gateway GSFK RF Emitter
 
-CC1101
+CC1101 Crystal: [NX3225GA-26.000M-STD-CRG-2, 26MHz], https://pt.mouser.com/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D
 
-Crystal: [NX3225GA-26.000M-STD-CRG-2, 26MHz], https://pt.mouser.com/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D
+### Gateway Balun (antenna interface)
 
-### Gateway Balun
+Inductors (high-Q (SRF>2GHz)) - Coilcraft 0402HP series:
+- L121 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
+- L122 [18 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
+- L123 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
+- L124 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
+- L125 [3.3 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz) 
+- L131 [12 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
+- L132 [18 nH ± 5%, 0402]: Murata LQW15xx series (868/915 MHz)
 
-From CC1101 Datasheet:
-
-- L131 [27 nH ± 5%, 0402]: Murata LQG15HS series (315/433 MHz)
-- L121 [27 nH ± 5%, 0402]: Murata LQG15HS series (315/433 MHz)
-- L122 [22 nH ± 5%, 0402]: Murata LQG15HS series (315/433 MHz)
-- L123 [27 nH ± 5%, 0402]: Murata LQG15HS series (315/433 MHz)
-
-- C131 [3.9 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
-- C124 [220 pF ± 5%, 0402 NP0]: Murata GRM1555C series
-- C121 [3.9 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
-- C122 [8.2 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
-- C123 [5.6 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
-- C125 [220 pF ± 5%, 0402 NP0]: Murata GRM1555C series
+Capacitors (NP0/C0G) - Murata GRM1555C series:
+- C121 [1.0 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
+- C122 [1.5 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
+- C123 [3.3 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
+- C124 [100 pF ± 5%, 0402 NP0]: Murata GRM1555C series
+- C125 [12 pF ± 5%, 0402 NP0]: Murata GRM1555C series
+- C126 [47 pF ± 5%, 0402 NP0]: Murata GRM1555C series
+- C131 [1.5 pF ± 0.25 pF, 0402 NP0]: Murata GRM1555C series
 
 ### Gateway Antenna
 
-t.b.d.
+1. Biggest size, more expensive and less issues probability: whip antenna.
+2. Medium size, less expensive than 1 and low issues probability: helical antenna.
+
+Decision:
+    1 or 2 to be decided, based on performance of 868 MHz modules from Amazon.
 
 ### Gateway Power Supply
 
 From 5V DC power supply. With a 230 V AC - 5 V DC converter.
+Reverse polarity protection: Add a P-FET ideal diode or a low-Vf Schottky between DC-jack and 5 V rail.
 
-### Gateway Type of Buzzer
+### Gateway Buzzer
 
 Piezo or magnetic buzzer?
 Piezo: low current, but not so loud.
@@ -383,81 +400,9 @@ However, I found a louder one, and it's piezo, but needs driver circuit and boot
 https://pt.mouser.com/ProductDetail/Murata-Electronics/PKMCS1818E20A0-R1?qs=2m8Gdae5Lr0i0Y6WwcK3JA%3D%3D
 We need 4 KHz PWM, which is easy with the MCU. A driver is needed.
 
-Topology (overview)
-Boost to 12 V (only during beep)
-Use a tiny inductor boost with EN pin → 12 V.
-Good fit: LT1615 (up to 34 V out, shutdown ≈0.5 µA). 
-Analog Devices
-+1
-Dual CMOS driver @ 12 V
-Use a dual MOSFET gate driver (built to drive capacitive loads) powered from the 12 V rail. Feed it a PWM + its inverse. Connect the two outputs straight to the piezo’s two pins → bridge drive = ~24 Vpp from a 12 V rail.
-Good fit: TC4427A (12 V supply ok, TTL-compatible inputs). 
-Mouser Electronics
-+1
-Transducer
-Murata PKMCS1818E20A0-R1 (rated 100 dB typ @ 12 V_o-p, 2 kHz, 10 cm). 
-Mouser Electronics
-+1
-Schematic sketch (blocks)
-2×AA → ATtiny406 (3 V domain)
-Boost (LT1615) VIN=3 V → VOUT=12 V
-L = 10 µH (e.g., 2–3 A sat SMD inductor),
-D = Schottky 30–40 V (SOD-123),
-COUT = 2.2–4.7 µF (25 V X5R/X7R),
-EN pin from Tiny406 GPIO (active only during beep).
-TC4427A VDD=12 V, GND=0 V
-IN-A = PWM from Tiny406 (3 V logic)
-IN-B = inverted PWM (from Tiny or via XOR/not in code)
-OUT-A → Piezo pin 1
-OUT-B → Piezo pin 2
-Optional 33–68 Ω series resistors at each OUT for EMI softening
-1 MΩ across piezo pins (bleeder to discharge after beep)
-Murata PKMCS1818E20A0-R1 mounted with a front sound port/vent.
-This gives ~+/-12 V on the piezo (swapping ends each half-cycle), i.e., ~24 Vpp, which matches Murata’s SPL test condition and is noticeably louder than any 3 V drive. 
-Mouser Electronics
-Control sequence (Tiny406)
-Set PWM frequency near the buzzer’s loud spot (start at ~2.0–2.5 kHz; Murata’s sheet uses 2 kHz; you can sweep 1.8–3.5 kHz to peak in your enclosure). 
-Enable boost (EN=1); wait ~2–5 ms for 12 V to rise.
-Enable TC4427A drive (start PWM + inverted PWM).
-Beep pattern (e.g., 200 ms on / 200 ms off × N).
-Stop PWM, EN=0 on boost. (The 1 MΩ bleeds the piezo.)
-The LT1615’s shutdown current is sub-µA, so idle battery impact is negligible; all power is spent only during beep.
-
-Boost: LT1615ES5-1#TRMPBF: https://pt.mouser.com/ProductDetail/Analog-Devices/LT1615ES5-1TRMPBF?qs=ytflclh7QUUp0a%252Bd7RWj%2FQ%3D%3D
-Dual MOSFET: MIC4427YM: https://pt.mouser.com/ProductDetail/Microchip-Technology/MIC4427YM?qs=kh6iOki%2FeLEkjJUQ4zBy0A%3D%3D
-
-Boost:
-Cin: [0805, 10uF, 6.3V, X7R] [CGA4J1X7R0J106K125AC] https://pt.mouser.com/ProductDetail/TDK/CGA4J1X7R0J106K125AC?qs=NRhsANhppD%2FK4ZRLurir6Q%3D%3D
-Cout: [1210, 4.7uF, 25V, X7S] [MCJCT32MAB7475KPPA01] https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/MCJCT32MAB7475KPPA01?qs=tlsG%2FOw5FFjfKFWRiQhUjA%3D%3D
-Schottky Diode: [0.5A, 20V] [MBR0520LT3G] https://pt.mouser.com/ProductDetail/onsemi/MBR0520LT3G?qs=3JMERSakebrHITezQJBmeQ%3D%3D
-
-Feedback Resistors:
-[0402]
-R1 = 1.15M
-R2 = 130K
-Vout = 12.11 V
-
-L = 10uH (calculated => 11.2uH) [CD43NP-100MC] https://pt.mouser.com/ProductDetail/Sumida/CD43NP-100MC?qs=ttApTud31Jaza%252BoSAZtv6w%3D%3D
-
 ### Gateway Reed Switch
 
-Same as Wireless Sensor reed switch.
-
-### Gateway Battery Holder
-
-https://pt.mouser.com/ProductDetail/Keystone-Electronics/2462?qs=sGAEpiMZZMvxqoKe%252BDjhrte%252BlrLaYtz%2F4XqS9Isgiuc%3D
-
-Electrical notes:
-Reverse polarity protection: Add a P-FET ideal diode or a low-Vf Schottky between the holder and 3 V rail.
-Fuse: Optional resettable PTC (~250–500 mA hold) for abuse tolerance.
-VBAT sensing: If you want to measure battery level, place a divider (or use ATtiny band-gap trick) on the holder’s positive before the protection diode.
-
-PCB & Layout tips
-Footprint: Use the manufacturer drawing — Keystone publishes CAD/STEP and PCB land pattern. (KiCad libraries also have it under Battery_Holder:BatteryHolder_Keystone_2462_2xAA).
-Keep-out: Leave at least 5 mm clearance between battery edge and any RF keep-out zone/antenna region. Batteries are large conductive bodies → can detune your 868 MHz antenna.
-Silkscreen: Mark “+ / –” clearly at both ends; helps avoid reversed insertion during assembly/testing.
-Support: If the device is handheld or shaken, add side walls or bosses in enclosure to prevent lateral stress on solder joints.
-Access: Place the holder so cells can be dropped in/out without colliding with tall components or enclosure lips.
+Same as Wireless Sensor reed switch, but use 2, one from each side of the board, to allow proper mounting on left or right side of the door.
 
 ### Gateway Type of Push Button
 
@@ -482,19 +427,26 @@ VCC (≈3.0 V)
  Red: [TLHR4400-AS12Z] https://pt.mouser.com/ProductDetail/Vishay-Semiconductors/TLHR4400-AS12Z?qs=sGAEpiMZZMvVL5Kk7ZYykSSdL1QvRuGrmGBvu1dktLk%3D
 
 ### Gateway 4 Pin Programming Header:
-t.b.d.
+2.54 mm pin headers
 
-### Gateway Enclosure/Box/Case: PCB size and format
+### Gateway 3 Pin Debug Serial Port:
+2.54 mm pin headers
 
-2 layers PCB.
-Electronic internal minimum enclosure: ?(D) x ?(W) x ?(H) mm
+### Gateway Enclosure
 
-#### Takachi
+#### Takachi Enclosure
+1. SIC3-5-2W (no screws): https://www.takachi-enclosure.com/products/SIC
+- External: 54 x 25 x 18 mm
+- Internal: 42.6 x 20.1 x 11.1 mm
 
-SIC products catalog: https://www.takachi-enclosure.com/products/SIC
+##### Supertronic Enclosure
+1. PP85B (4 screws): https://supertronic.com/en/universal-plastic-enclosure-for-electronic-devices-pp85b.html#/8-color-white_ral_9010
+- External: 39 x 27 x 18 mm
+- Internal: 31 x 20 x 10 mm
 
-Option 1 (without battery holder):
-SIC6-12-4W: 120 (D) x 60 (W) x 38 (H)
+2. PP85C (4 screws): https://supertronic.com/en/universal-plastic-enclosure-for-electronic-devices-pp85c.html#/8-color-white_ral_9010
+- External: 45 x 31 x 20 mm
+- Internal: 40 x 26 x 12 mm
 
 ## Support
 
@@ -505,15 +457,13 @@ Supplier Link
 Manufacturer
 Manufacturer Part Number
 
-
-
 # Design Decision Document: Low-Power Wireless Window Sensor Node (WSN-01)
 
-**Document ID:** DDD-2026-001  
+**Document ID:** DDD-2026-002 
 **Status:** PROPOSED  
-**Author:** Embedded Systems Engineering Team  
-**Date:** May 30, 2026  
-**Target Project:** Proprietary Low-Power Home Security System  
+**Author:** Nuno Peixoto
+**Date:** Jun 20, 2026  
+**Target Project:** Exit Guardian 
 
 ---
 
@@ -556,90 +506,6 @@ The chosen platform isolates computational tasks to an ultra-low-cost MCU and of
 * **RF Transceiver:** Texas Instruments **CC1101** (Sub-1GHz flexible transceiver).
   * *Justification:* Exceptional power management (WOR - Wake-on-Radio), programmable data rates, and robust performance in the **868 MHz** European ISM band.
 * **Sensor Mechanism:** Normally-Open (NO) Reed Switch pulled up via a high-value resistor ($1\ \text{M}\Omega$) to mitigate leakage during closed states, routed to a hardware debouncing low-pass filter ($R=10\ \text{k}\Omega, C=100\ \text{nF}$) feeding into an MCU External Interrupt (AWU/EXTI) pin.
-
-### 4.2 Firmware Architecture & Power Management Strategy
-The firmware operates on a strict **Event-Driven Asynchronous Topology**. The system remains in **Active-Halt mode** indefinitely until awakened by one of two specific hardware events:
-
-1. **External GPIO Interrupt (EXTI):** Triggered by the reed switch changing state.
-2. **Auto-Wakeup Unit (AWU) Timer:** Triggered every 60 minutes for the supervisory heartbeat.
-
-```
-+--------------------------------------------------------+
-|                                                        |
-|                      ACTIVE-HALT                       |
-|          (MCU Deep Sleep, CC1101 SLEEP Mode)           |
-|                Standby Current: ~6.5 uA                |
-|                                                        |
-+---------------------------+----------------------------+
-                            |
-            +---------------+---------------+
-            |                               |
-    [ Reed Switch EXTI ]             [ AWU Timer ISR ]
-            |                               |
-            +---------------+---------------+
-                            |
-                            v
-+--------------------------------------------------------+
-|                      WAKEUP & MCU                      |
-|                     INITIALIZATION                     |
-+---------------------------+----------------------------+
-                            |
-                            v
-+--------------------------------------------------------+
-|                  SPI COMM & TX POWER                   |
-|           Configure CC1101 -> Burst Transmit           |
-|                 Peak Current: ~30 mA                   |
-+---------------------------+----------------------------+
-                            |
-                            v
-+--------------------------------------------------------+
-|                   CC1101 STROBE SLEEP                  |
-|          Return MCU to Active-Halt Immediately         |
-+--------------------------------------------------------+
-```
-
-#### Power Optimization Code Strategy (STM8S Pseudocode)
-```c
-void main(void) {
-    // Disable peripheral clocks not in use to shave off microamps
-    CLK_PeripheralClockConfig(CLK_PERIPHERAL_TIMER1, DISABLE);
-    CLK_PeripheralClockConfig(CLK_PERIPHERAL_ADC, DISABLE);
-    
-    // Initialize GPIO for Reed Switch with External Interrupt
-    GPIO_Init(GPIOC, GPIO_PIN_3, GPIO_MODE_IN_FL_IT); 
-    EXTI_SetRegisterPinSensitivity(EXTI_PORT_GPIOC, EXTI_SENSITIVITY_RISE_FALL);
-    
-    // Initialize CC1101 into Power Down / SLEEP state
-    CC1101_PowerDown();
-    
-    enableInterrupts();
-    
-    while(1) {
-        // Drop into deep low-power mode
-        halt(); 
-    }
-}
-
-// Reed Switch Interrupt Service Routine
-INTERRUPT_HANDLER(EXTI_PORTC_IRQHandler, 5) {
-    // 1. Quick software debounce verification
-    // 2. Wake up CC1101 via SPI
-    // 3. Transmit state packet (Open/Closed + Battery Voltage)
-    // 4. Force CC1101 back to SPWD (Sleep)
-}
-```
-
----
-
-## 5. Alternative Options Evaluated
-
-| Attribute | Chosen Vector: STM8S + CC1101 (868MHz) | Option B: ESP32-C3 (2.4GHz Wi-Fi/BLE) | Option C: Attiny85 + RFM69HCW (433MHz) |
-| :--- | :--- | :--- | :--- |
-| **BOM Cost** | **Ultra-Low (~$1.10 combined)** | Moderate (~$1.80) | High (~$3.10 due to legacy IC pricing) |
-| **Deep Sleep Current**| **~6.5 $\mu$A** | ~130 $\mu$A (Too high for CR2032) | ~7.0 $\mu$A |
-| **RF Penetration** | **Excellent (868 MHz sub-1GHz)** | Poor (2.4 GHz attenuation) | Excellent (433 MHz) |
-| **Assembly Footprint**| **Compact (TSSOP20 + QFN20)** | Medium (Module format) | Large (DIP/SOIC legacy sizes) |
-| **Verdict** | **SELECTED** | **REJECTED:** Power profile completely unviable for coin-cell longevity. | **REJECTED:** Total component cost unviable for commercial scale. |
 
 ---
 
