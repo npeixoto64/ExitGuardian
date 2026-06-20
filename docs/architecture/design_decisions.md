@@ -124,7 +124,6 @@ The sensor circuit must ensure almost 0 quiescient current.
 Decision:
 - CR2032
 
-
 ### Sensor Power budgets
 I_MCU_halt = 0.350 uA
 I_CC1101_sleep = 0.2 uA
@@ -143,18 +142,20 @@ Total Bits (B)=17 bytes×8 bits/byte=136 bits
 
 R = 1.2 kbps (worst case scenario)
 T_tx = 136 bits / 1200 bps = 113.33 ms
-Let's consider 200 ms per event.
+Let's consider 300 ms per event.
 
-T_min_active_per_day = 4 x 200 ms = 800 ms = 0.8 s
-T_max_active_per_day = 32 x 200 ms = 6400 ms = 6.4 s
+LED of 2 mA ON during 300 ms
 
-I_min_avg = (0.55 uA x (86400-0.8) + (18 mA x 0.8) ) / 86400 s = 0.71 uA / day
-I_max_avg = (0.55 uA x (86400-6.4) + (18 mA x 6.4) ) / 86400 s = 1.88 uA / day
+T_min_active_per_day = 4 x 300 ms = 1200 ms = 1.2 s
+T_max_active_per_day = 32 x 300 ms = 9600 ms = 9.6 s
 
-Capacity: 200 - 220 mAh
+I_min_avg = (0.55 uA x (86400-1.2) + ((18 mA + 2 mA) x 1.2) ) / 86400 s = 0.83 uA / day
+I_max_avg = (0.55 uA x (86400-9.6) + ((18 mA + 2 mA) x 9.6) ) / 86400 s = 2.77 uA / day
+
+Capacity: 200 ~ 220 mAh
 
 Lets consider 200 mAh.
-Hours = 200 mAh / 1.88 uA = 106382 hours = 4432 days = 12 years, much more than the battery self discharge.
+Hours = 200 mAh / 2.77 uA = 72202 hours = 3008 days = 8.2 years, much more than the battery self discharge.
 
 
 ### Sensor Bulk capacitor near the CC1101
@@ -242,39 +243,47 @@ Decision:
 
 ### Sensor Antenna
 
-https://pt.mouser.com/new/johanson/johanson-0900at43a0070/?srsltid=AfmBOoobHdIGgGZuSxxAr1JtTYSkDjUd4MoxHm1Rq9-d-15OsjQQ_TCT
+1. Biggest size, more expensive and less issues probability: whip antenna.
+2. Medium size, less expensive than 1 and low issues probability: helical antenna.
+3. Small size, less expensive than 1 medium issues probability: chip antenna.
+4. Small size, the least expensive, high probability of issues: PCB antenna.
+    https://pt.mouser.com/new/johanson/johanson-0900at43a0070/?srsltid=AfmBOoobHdIGgGZuSxxAr1JtTYSkDjUd4MoxHm1Rq9-d-15OsjQQ_TCT
+
+Decision:
+    3 and 4 are too risky.
+    1 or 2 to be decided, based on performance of 868 MHz modules from Amazon.
 
 ### Sensor battery holder
 https://pt.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-003-SMT?qs=TuK3vfAjtkVRZQIT6eTqjQ%3D%3D
 https://pt.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-013-SMT-TR?qs=4ASt3YYao0UKhYWrBts7tw%3D%3D
 
+Decision: because it impacts the box, and the box is also impacted by antenna, 1 or 2, to be decided with the box.
+
 ### Sensor Enclosure/Box/Case: PCB size and format
 
-2 layers PCB.
-Electronic internal minimum enclosure: 68 (D) x 32(W) x 10(H) mm
+#### Companies
+Takachi
+OKW
+Bud Industries
+Polycase
 
-#### Takachi
+##### Takachi (comes with technical datasheets, 3D model)
+1. CS90-W 90 (with battery holder): https://www.takachi-enclosure.com/products/CS
+- External: 75 x 35 x 12 mm
+- Internal: 25.4 x 26.6 x 5.3 mm (space for PCB only)
 
-SIC products catalog: https://www.takachi-enclosure.com/products/SIC
+2. SIC3-5-2W (without battery holder, no screws): https://www.takachi-enclosure.com/products/SIC
+- External: 54 x 25 x 18 mm
+- Internal: 42.6 x 20.1 x 11.1 mm
 
-Option 1 (without battery holder):
-SIC5-9-2W: 90 (D) x 45 (W) x 20 (H) => PCB changes needed (holes and dimensions).
+##### Hammond Manufacturing (comes with technical datasheets, 3D model)
+1. PP85B (4 screws): https://supertronic.com/en/universal-plastic-enclosure-for-electronic-devices-pp85b.html#/8-color-white_ral_9010
+- External: 39 x 27 x 18 mm
+- Internal: 31 x 20 x 10 mm
 
-CS products catalog: https://www.takachi-enclosure.com/products/CS
-
-Option 2 (with CR2032 battery holder):
-CS90-W 90 (D) x 45 (W) x 12 (H) => PCB changes needed
-
-#### OKW
-
-https://www.okw.co.uk/
-
-Option 1 (without battery holder):
-A9050107 Soft-case S: 82 (D) x 43 (W) x 14 (H) => PCB changes needed (holes and dimensions).
-
-https://www.okw.co.uk/en/category/735e0180-6957-11e5-a071-bc764e08a0ea/products?vs=af314fc0-c2e5-11e2-8e2c-0050568225d7$$cd762270-d51f-11e2-a4df-0050568225d7
-
-https://www.okw.co.uk/en/Soft-Case/A9050107.htm?var=af314fc0-c2e5-11e2-8e2c-0050568225d7
+2. PP85C (4 screws): https://supertronic.com/en/universal-plastic-enclosure-for-electronic-devices-pp85c.html#/8-color-white_ral_9010
+- External: 45 x 31 x 20 mm
+- Internal: 40 x 26 x 12 mm
 
 ## Gateway
 
