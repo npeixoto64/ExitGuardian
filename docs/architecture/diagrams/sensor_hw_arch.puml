@@ -15,10 +15,10 @@ node "Power Supply" {
 }
 
 node "Processing" {
-    [MCU] as CTRL << STM8S003F3P6 >>
+    [MCU] as CTRL << STM8L051F3P6 >>
 }
 
-node "RF Front-End, 433 MHz" {
+node "RF Front-End, 868 MHz" {
     [RF Transceiver] as RF_CHIP << CC1101 >>
     [Balun] as BAL
     [Pi-Match] as PI_NET

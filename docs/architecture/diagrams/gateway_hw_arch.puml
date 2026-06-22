@@ -23,10 +23,12 @@ node "RF Front-End, 433 MHz" {
 }
 
 node "Peripherals" {
-    [Reed Switch] as REED
+    [L Reed Switch] as REEDL
+    [R Reed Switch] as REEDR
     [Push Button] as BTN
-    [LED] as STATUS_LED
-    [BUZZER DRIVER] as BZR_DRV
+    [LED B] as LED_B
+    [LED R] as LED_R
+    [LED Y] as LED_Y
     [BUZZER] as BZR
 }
 
@@ -36,16 +38,17 @@ node "Peripherals" {
 PWR -[bold]-> CTRL : VCC
 PWR -[bold]-> RF_CHIP : VCC
 PWR -[bold]-> FERM : VCC
-PWR -left[bold]-> BZR_DRV : VCC
 
 ' Logic/Signals
 CTRL <-left-> FERM : I2C
 CTRL <-> RF_CHIP : SPI / GDO
-REED -up-> CTRL : GPIO
+REEDR -up- REEDL
+REEDL -up-> CTRL : GPIO
 BTN -up-> CTRL : GPIO
-STATUS_LED <-up- CTRL : GPIO
-BZR_DRV <-up- CTRL : GPIO
-BZR <-up- BZR_DRV : GPIO
+LED_B <-up- CTRL : GPIO
+LED_R <-up- CTRL : GPIO
+LED_Y <-up- CTRL : GPIO
+BZR <-up- CTRL : GPIO
 
 ' RF Path
 RF_CHIP -right-> BAL
