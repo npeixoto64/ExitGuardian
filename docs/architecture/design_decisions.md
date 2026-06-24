@@ -278,9 +278,9 @@ Bud Industries
 Polycase
 
 ##### Takachi (comes with technical datasheets, 3D model)
-1. CS90-W 90 (with battery holder): https://www.takachi-enclosure.com/products/CS
+1. CS75-W (with battery holder): https://www.takachi-enclosure.com/products/CS
 - External: 75 x 35 x 12 mm
-- Internal: 25.4 x 26.6 x 5.3 mm (space for PCB only)
+- Internal: 25.4 x 26.6 x 5.3 mm (space for useful part of PCB only)
 
 2. SIC3-5-2W (without battery holder, no screws): https://www.takachi-enclosure.com/products/SIC
 - External: 54 x 25 x 18 mm
