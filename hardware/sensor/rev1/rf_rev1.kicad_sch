@@ -1131,6 +1131,198 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "GRM31CR61A107MEA8L:GRM31CR61A107MEA8L"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 8.89 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "GRM31CR61A107MEA8L"
+				(at 8.89 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "GRM31x"
+				(at 8.89 -96.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61A107MEA8-01A.pdf"
+				(at 8.89 -196.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "MLCC, 1206"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "1.25"
+				(at 8.89 -396.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "81-GRM31CR61A107MA8L"
+				(at 8.89 -496.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GRM31CR61A107MEA8L?qs=hd1VzrDQEGidurXiDTJOCg%3D%3D"
+				(at 8.89 -596.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Murata Electronics"
+				(at 8.89 -696.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "GRM31CR61A107MEA8L"
+				(at 8.89 -796.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "GRM31CR61A107MEA8L_1_1"
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 5.588 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.588 2.54) (xy 5.588 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.112 2.54) (xy 7.112 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.112 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "NX3225GA-26_000M-STD-CRG-2:NX3225GA-26.000M-STD-CRG-2"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1690,6 +1882,12 @@
 		(uuid "414bde89-c4f2-4bc8-ab5a-e56fca43bd41")
 	)
 	(junction
+		(at 48.26 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60232be6-de5e-436c-8c56-5b88cbe9fb0d")
+	)
+	(junction
 		(at 165.1 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1706,12 +1904,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "930d89a4-cd45-4ae8-af84-6396e55642db")
-	)
-	(junction
-		(at 48.26 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9ac6f09e-824e-40b9-8897-6f1485e34120")
 	)
 	(junction
 		(at 161.29 76.2)
@@ -2535,6 +2727,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 54.61) (xy 48.26 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4dd87be-ec59-4bb7-ab71-5b7226d38e19")
+	)
+	(wire
+		(pts
 			(xy 92.71 111.76) (xy 92.71 110.49)
 		)
 		(stroke
@@ -2582,6 +2784,16 @@
 			(type default)
 		)
 		(uuid "afbd46d9-0a75-4b71-b5d4-6e6bdecb23f7")
+	)
+	(wire
+		(pts
+			(xy 48.26 36.83) (xy 48.26 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b28397a6-b8ce-4bea-a046-a6002b7ba792")
 	)
 	(wire
 		(pts
@@ -2755,16 +2967,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 50.8) (xy 48.26 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3663a5e-eef8-44b1-b2be-48b8e8153a20")
-	)
-	(wire
-		(pts
 			(xy 125.73 95.25) (xy 125.73 100.33)
 		)
 		(stroke
@@ -2772,16 +2974,6 @@
 			(type default)
 		)
 		(uuid "d39da7a4-ba0a-40d6-b88c-a7fefc50008f")
-	)
-	(wire
-		(pts
-			(xy 48.26 36.83) (xy 48.26 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3fc8064-58f8-4d13-a195-96f249a23dd2")
 	)
 	(wire
 		(pts
@@ -3018,7 +3210,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01d18ebd-42f0-45e5-bd31-7ba66bf16c60")
-		(property "Reference" "L?"
+		(property "Reference" "L131"
 			(at 154.94 71.12 90)
 			(effects
 				(font
@@ -3128,7 +3320,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04483ba4-14fc-40a5-8812-11f630e800ca")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR016"
 			(at 48.26 29.21 0)
 			(effects
 				(font
@@ -3200,7 +3392,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "079cac7c-0314-4e9d-8e88-dacaf4c1482c")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR037"
 			(at 193.04 100.33 0)
 			(effects
 				(font
@@ -3271,7 +3463,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0eb5ddca-760a-4ad7-9a8a-847ef4d4f138")
-		(property "Reference" "C?"
+		(property "Reference" "C121"
 			(at 169.672 80.264 0)
 			(effects
 				(font
@@ -3382,7 +3574,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "11232682-bbe2-4fdf-b3ff-a28fb1c1c463")
-		(property "Reference" "C?"
+		(property "Reference" "C125"
 			(at 215.646 75.184 90)
 			(effects
 				(font
@@ -3493,7 +3685,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1aaacee3-1ada-4a0f-be72-4de56fcb0f40")
-		(property "Reference" "R?"
+		(property "Reference" "R13"
 			(at 97.536 35.56 0)
 			(effects
 				(font
@@ -3604,7 +3796,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1e75fbd1-529f-44a7-af3f-ef69a9766787")
-		(property "Reference" "C?"
+		(property "Reference" "C131"
 			(at 173.482 66.294 0)
 			(effects
 				(font
@@ -3716,7 +3908,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30d0c715-d8f1-4fc1-8b41-873ba12f068c")
-		(property "Reference" "L?"
+		(property "Reference" "L121"
 			(at 154.94 81.28 90)
 			(effects
 				(font
@@ -3826,7 +4018,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "332ec6f0-a803-41c3-9aad-c6bda8726578")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR051"
 			(at 54.61 106.68 0)
 			(effects
 				(font
@@ -3898,7 +4090,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "347ef52c-bbd3-437c-ae8f-26fb00312522")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR049"
 			(at 130.81 55.88 0)
 			(effects
 				(font
@@ -3970,7 +4162,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c35d594-a28a-4a61-b194-8fbcdd04361f")
-		(property "Reference" "IC?"
+		(property "Reference" "IC2"
 			(at 120.65 68.5098 0)
 			(effects
 				(font
@@ -4152,7 +4344,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "434b7a97-9ef2-4901-9568-7e279c7b1668")
-		(property "Reference" "C?"
+		(property "Reference" "C124"
 			(at 172.212 101.854 0)
 			(effects
 				(font
@@ -4264,7 +4456,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "458dbc75-3245-41e0-8740-fa313a4549ae")
-		(property "Reference" "C?"
+		(property "Reference" "C17"
 			(at 152.4 119.3799 0)
 			(effects
 				(font
@@ -4376,7 +4568,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48080ad4-4dfe-4e99-9568-7d5e14673aa9")
-		(property "Reference" "L?"
+		(property "Reference" "L123"
 			(at 186.69 76.2 90)
 			(effects
 				(font
@@ -4485,7 +4677,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4968db07-1e78-40fb-9e40-dd36dc8478d3")
-		(property "Reference" "C?"
+		(property "Reference" "C19"
 			(at 137.16 139.6999 0)
 			(effects
 				(font
@@ -4597,7 +4789,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5efa16e5-308e-41e1-83d5-9ace7c2eaeb0")
-		(property "Reference" "FB?"
+		(property "Reference" "FB1"
 			(at 33.02 46.99 0)
 			(effects
 				(font
@@ -4723,7 +4915,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b50ebd8-b2d7-4fdc-be9e-225c5ea0777d")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR035"
 			(at 158.75 68.58 0)
 			(effects
 				(font
@@ -4795,7 +4987,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6bab84b8-50e4-4d02-a0fb-5f24c8d8022c")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR039"
 			(at 121.92 31.75 0)
 			(effects
 				(font
@@ -4867,7 +5059,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7ab0b0c7-d4f6-479b-a322-1ef2670ea9e2")
-		(property "Reference" "C?"
+		(property "Reference" "C14"
 			(at 143.51 62.2299 0)
 			(effects
 				(font
@@ -4979,7 +5171,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "80159e71-408b-426a-ba93-ade94b1e20c2")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR046"
 			(at 125.73 154.94 0)
 			(effects
 				(font
@@ -5051,7 +5243,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84445158-e316-48cd-8022-a34614f66c9f")
-		(property "Reference" "C?"
+		(property "Reference" "C11"
 			(at 72.39 91.4399 0)
 			(effects
 				(font
@@ -5163,7 +5355,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9255c95f-6d90-4e60-a327-c4aabd51935c")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR038"
 			(at 68.58 106.68 0)
 			(effects
 				(font
@@ -5227,7 +5419,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 48.26 55.88 0)
+		(at 48.26 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5235,8 +5427,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "95e6d43b-7444-493f-b58a-536407a3a9eb")
-		(property "Reference" "#PWR?"
-			(at 48.26 62.23 0)
+		(property "Reference" "#PWR048"
+			(at 48.26 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5245,7 +5437,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 48.26 60.96 0)
+			(at 48.26 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5253,7 +5445,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 55.88 0)
+			(at 48.26 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5262,7 +5454,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 55.88 0)
+			(at 48.26 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5271,7 +5463,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 48.26 55.88 0)
+			(at 48.26 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5307,7 +5499,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "976bd201-7755-4201-bfde-da4a92baaca0")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR017"
 			(at 81.28 53.34 0)
 			(effects
 				(font
@@ -5379,7 +5571,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ee58048-47b7-4fee-84d0-e2bf0a045b2d")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR050"
 			(at 125.73 106.68 0)
 			(effects
 				(font
@@ -5451,7 +5643,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a37dbdcd-25a8-4204-ab5b-a37396f48dac")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR036"
 			(at 163.83 116.84 0)
 			(effects
 				(font
@@ -5523,7 +5715,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "abff309a-d73d-4f9c-a09f-a23ce6297275")
-		(property "Reference" "C?"
+		(property "Reference" "C15"
 			(at 129.54 90.1699 0)
 			(effects
 				(font
@@ -5626,118 +5818,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 48.26 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ae425d37-0cbe-4253-9a41-516f12d07f5a")
-		(property "Reference" "C?"
-			(at 52.07 45.7199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47uF, 6.3V"
-			(at 52.07 48.2599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 49.2252 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 48.26 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 48.26 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "963-JMK325B7476MM-PR"
-			(at 48.26 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/JMK325B7476MM-PR?qs=Zy5V7Kj3rCX4DwGK2%252BK4QQ%3D%3D"
-			(at 48.26 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "TAYO YUDEN"
-			(at 48.26 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "JMK325B7476MM-PR"
-			(at 48.26 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "183a0ffa-c674-4d4e-ba4e-2a3af0e6a03a")
-		)
-		(pin "1"
-			(uuid "560d3f1a-0813-4724-8d2c-cc6d7357a401")
-		)
-		(instances
-			(project "rf_rev1"
-				(path "/50a12035-955f-49d8-a6b8-24fcd6d450af"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 69.85 148.59 0)
 		(unit 1)
@@ -5747,7 +5827,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b16684f2-e5ed-47f4-a80e-6602942d751b")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR042"
 			(at 69.85 154.94 0)
 			(effects
 				(font
@@ -5819,7 +5899,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c1949d86-7949-44a1-82ec-9ba9390aae82")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR053"
 			(at 139.7 76.2 0)
 			(effects
 				(font
@@ -5891,7 +5971,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c1d8d825-ac9e-46b4-a45f-79ed6b18f326")
-		(property "Reference" "C?"
+		(property "Reference" "C18"
 			(at 66.04 139.6999 0)
 			(effects
 				(font
@@ -6003,7 +6083,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c590b003-3c11-478b-877a-258adc518e1f")
-		(property "Reference" "L?"
+		(property "Reference" "L122"
 			(at 165.1 92.7099 0)
 			(effects
 				(font
@@ -6115,7 +6195,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8b8fa21-69aa-4544-bbe8-a2fd395f81fa")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR058"
 			(at 111.76 53.34 0)
 			(effects
 				(font
@@ -6187,7 +6267,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c9199088-a7cb-423f-9b24-7071f74a4781")
-		(property "Reference" "C?"
+		(property "Reference" "C13"
 			(at 134.62 39.3699 0)
 			(effects
 				(font
@@ -6298,7 +6378,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c9469be9-c285-41d8-b973-de7d4d808f4b")
-		(property "Reference" "C?"
+		(property "Reference" "C123"
 			(at 201.422 86.614 0)
 			(effects
 				(font
@@ -6410,7 +6490,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0fe3689-bd54-4892-9917-2d0ec27d489a")
-		(property "Reference" "L?"
+		(property "Reference" "L132"
 			(at 175.26 71.12 90)
 			(effects
 				(font
@@ -6520,7 +6600,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d23ff78e-40ff-451c-9004-68b6d9cb5cbe")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR041"
 			(at 81.28 39.37 0)
 			(effects
 				(font
@@ -6592,7 +6672,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d361dc8a-576f-4e7d-a8f5-1de755c895f9")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR052"
 			(at 139.7 106.68 0)
 			(effects
 				(font
@@ -6664,7 +6744,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d48a6497-1603-4d91-819a-e6dce50af009")
-		(property "Reference" "L?"
+		(property "Reference" "L124"
 			(at 199.39 76.2 90)
 			(effects
 				(font
@@ -6774,7 +6854,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db6d3d33-db8b-4830-a1a8-dd0552c98214")
-		(property "Reference" "C?"
+		(property "Reference" "C16"
 			(at 143.51 90.1699 0)
 			(effects
 				(font
@@ -6886,7 +6966,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ddf64fb9-5efa-4799-acef-cf32b471a7ca")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR059"
 			(at 148.59 133.35 0)
 			(effects
 				(font
@@ -6958,7 +7038,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e80680cd-5852-4f9d-b2cb-3607751315ff")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR018"
 			(at 55.88 29.21 0)
 			(effects
 				(font
@@ -7030,7 +7110,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e921677c-af16-455e-94e6-4be1a0a9c8cb")
-		(property "Reference" "#FLG?"
+		(property "Reference" "#FLG04"
 			(at 66.04 23.495 0)
 			(effects
 				(font
@@ -7093,6 +7173,134 @@
 		)
 	)
 	(symbol
+		(lib_id "GRM31CR61A107MEA8L:GRM31CR61A107MEA8L")
+		(at 48.26 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9aa702d-e03a-49db-a1a8-199171f6fe14")
+		(property "Reference" "C7"
+			(at 52.07 46.9899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "GRM31CR61A107MEA8L"
+			(at 52.07 49.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "GRM31x"
+			(at 144.45 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61A107MEA8-01A.pdf"
+			(at 244.45 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "MLCC, 1206"
+			(at 48.26 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.25"
+			(at 444.45 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-GRM31CR61A107MA8L"
+			(at 544.45 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GRM31CR61A107MEA8L?qs=hd1VzrDQEGidurXiDTJOCg%3D%3D"
+			(at 644.45 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 744.45 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM31CR61A107MEA8L"
+			(at 844.45 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b4274420-20f9-4bd2-a963-16130d6541c3")
+		)
+		(pin "1"
+			(uuid "f46725df-92f1-4b19-8a08-b3aafeb2423a")
+		)
+		(instances
+			(project ""
+				(path "/50a12035-955f-49d8-a6b8-24fcd6d450af"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+			(project "sensor_rev1"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "NX3225GA-26_000M-STD-CRG-2:NX3225GA-26.000M-STD-CRG-2")
 		(at 78.74 128.27 0)
 		(unit 1)
@@ -7102,7 +7310,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eb5db7d6-ea65-402e-8a3a-912b48c13d74")
-		(property "Reference" "Y?"
+		(property "Reference" "Y1"
 			(at 100.33 120.65 0)
 			(effects
 				(font
@@ -7234,7 +7442,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eeec1f07-4af5-45b8-a540-d3d8d9557c29")
-		(property "Reference" "C?"
+		(property "Reference" "C12"
 			(at 115.57 36.8299 0)
 			(effects
 				(font
@@ -7346,7 +7554,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ef4d1306-3281-4431-9ef7-4e8ce591de3d")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR047"
 			(at 74.93 154.94 0)
 			(effects
 				(font
@@ -7418,7 +7626,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f608b65e-511f-477e-b859-202b152e534e")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR043"
 			(at 133.35 154.94 0)
 			(effects
 				(font
@@ -7489,7 +7697,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fd1391ec-1dbf-44e4-a43e-6f0b18094faa")
-		(property "Reference" "C?"
+		(property "Reference" "C122"
 			(at 177.546 90.424 90)
 			(effects
 				(font
@@ -7601,7 +7809,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe945822-9e37-45d7-be4d-19d6562aad7b")
-		(property "Reference" "C?"
+		(property "Reference" "C10"
 			(at 58.42 91.4399 0)
 			(effects
 				(font

@@ -24,4 +24,8 @@
   (lib (name "TL6120DF160QG")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/TL6120DF160QG.kicad_sym")(options "")(descr ""))
   (lib (name "NX3225GA-26_000M-STD-CRG-2")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/NX3225GA-26_000M-STD-CRG-2.kicad_sym")(options "")(descr ""))
   (lib (name "STM8L051F3P6")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/STM8L051F3P6.kicad_sym")(options "")(descr ""))
+  (lib (name "BAT-HLD-013-SMT-TR")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/BAT-HLD-013-SMT-TR.kicad_sym")(options "")(descr ""))
+  (lib (name "SSK01-MPH-254-A4")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/SSK01-MPH-254-A4.kicad_sym")(options "")(descr ""))
+  (lib (name "22-28-4044")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/22-28-4044.kicad_sym")(options "")(descr ""))
+  (lib (name "GRM31CR61A107MEA8L")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/GRM31CR61A107MEA8L.kicad_sym")(options "")(descr ""))
 )
