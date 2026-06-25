@@ -2,7 +2,7 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
-	(symbol "MASM-14R-8-10"
+	(symbol "TL6120DF160QG"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -15,7 +15,7 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "MASM-14R-8-10"
+		(property "Value" "TL6120DF160QG"
 			(at 16.51 5.08 0)
 			(effects
 				(font
@@ -24,7 +24,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "MyParts:MASM14R810"
+		(property "Footprint" "MyParts:TL6120DF160QG"
 			(at 16.51 -94.92 0)
 			(effects
 				(font
@@ -34,7 +34,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://configured-product-images.s3.amazonaws.com/2D/specs/TL6120DF160QG.pdf"
 			(at 16.51 -194.92 0)
 			(effects
 				(font
@@ -44,7 +44,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Magnetic / Reed Switches 8-10 AT 200Vdc @ 10W"
+		(property "Description" "TACT, 50mA, 12VDC SPST-NO, Off-(On) Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -53,7 +53,7 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "2.84"
+		(property "Height" "10.1"
 			(at 16.51 -394.92 0)
 			(effects
 				(font
@@ -63,7 +63,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "934-MASM-14R-8-10"
+		(property "Mouser Part Number" "612-TL6120DF160QG"
 			(at 16.51 -494.92 0)
 			(effects
 				(font
@@ -73,7 +73,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Littelfuse/MASM-14R-8-10?qs=5ptrxOxu%252BRY84YYgQdk4WQ%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/E-Switch/TL6120DF160QG?qs=QtyuwXswaQhSGW5Q0e27eA%3D%3D"
 			(at 16.51 -594.92 0)
 			(effects
 				(font
@@ -83,7 +83,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "LITTELFUSE"
+		(property "Manufacturer" "E-Switch"
 			(at 16.51 -694.92 0)
 			(effects
 				(font
@@ -93,7 +93,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "MASM-14R-8-10"
+		(property "Manufacturer Part Number" "TL6120DF160QG"
 			(at 16.51 -794.92 0)
 			(effects
 				(font
@@ -103,7 +103,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "MASM-14R-8-10_1_1"
+		(symbol "TL6120DF160QG_1_1"
 			(rectangle
 				(start 5.08 2.54)
 				(end 15.24 -5.08)
@@ -117,6 +117,24 @@
 			)
 			(pin passive line
 				(at 0 0 0)
+				(length 5.08)
+				(name "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -2.54 0)
 				(length 5.08)
 				(name "1"
 					(effects
@@ -134,7 +152,25 @@
 				)
 			)
 			(pin passive line
-				(at 0 -2.54 0)
+				(at 20.32 0 180)
+				(length 5.08)
+				(name "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 20.32 -2.54 180)
 				(length 5.08)
 				(name "2"
 					(effects
