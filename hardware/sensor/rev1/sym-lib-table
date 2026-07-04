@@ -28,4 +28,7 @@
   (lib (name "SSK01-MPH-254-A4")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/SSK01-MPH-254-A4.kicad_sym")(options "")(descr ""))
   (lib (name "22-28-4044")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/22-28-4044.kicad_sym")(options "")(descr ""))
   (lib (name "GRM31CR61A107MEA8L")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/GRM31CR61A107MEA8L.kicad_sym")(options "")(descr ""))
+  (lib (name "GP560_20-25")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/GP560_20-25.kicad_sym")(options "")(descr ""))
+  (lib (name "APTD1608LSURCK")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/APTD1608LSURCK.kicad_sym")(options "")(descr ""))
+  (lib (name "PTS636SMG25JSMTR_LFS")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/PTS636SMG25JSMTR_LFS.kicad_sym")(options "")(descr ""))
 )

@@ -199,6 +199,246 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "APTD1608LSURCK:APTD1608LSURCK"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "LED"
+				(at 12.7 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "APTD1608LSURCK"
+				(at 12.7 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "LEDM168X95N"
+				(at 12.7 -93.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.kingbrightusa.com/images/catalog/SPEC/APTD1608LSURCK.pdf"
+				(at 12.7 -193.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Description" "Standard LEDs - SMD 0603 Dome Lens LED Red- 630nm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "0.95"
+				(at 12.7 -393.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "604-APTD1608LSURCK"
+				(at 12.7 -493.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Kingbright/APTD1608LSURCK?qs=AQlKX63v8Rs2fs08MVpUog%3D%3D"
+				(at 12.7 -593.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Kingbright"
+				(at 12.7 -693.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "APTD1608LSURCK"
+				(at 12.7 -793.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(symbol "APTD1608LSURCK_1_1"
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 10.16 2.54) (xy 10.16 -2.54) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.334 4.318) (xy 4.572 3.556) (xy 3.81 5.08) (xy 5.334 4.318)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 2.54) (xy 3.81 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.874 4.318) (xy 7.112 3.556) (xy 6.35 5.08) (xy 7.874 4.318)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.89 2.54) (xy 6.35 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 12.7 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "BAT-HLD-013-SMT-TR:BAT-HLD-013-SMT-TR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -663,6 +903,158 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "GP560_20-25:GP560_20-25"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "S"
+				(at 16.51 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "GP560_20-25"
+				(at 16.51 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "GP5602025"
+				(at 16.51 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.mouser.ph/ProductDetail/MEDER-electronic/GP560-20-25?qs=%252B6g0mu59x7KbpBqh6ze2hg%3D%3D&srsltid=AfmBOoovVTOKBmotzsVxL9AMe_M0tCXi2LyBakT40j8xCqS0YTGAD13f"
+				(at 16.51 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Glass Body Reed Switch SPST-NO 10 ~ 50AT Operate Range 10VA 1A (AC/DC) 125 V Through Hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "2.3"
+				(at 16.51 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" ""
+				(at 16.51 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" ""
+				(at 16.51 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "STANDEXMEDER"
+				(at 16.51 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "GP560/20-25"
+				(at 16.51 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "GP560_20-25_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 15.24 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "GRM31CR61A107MEA8L:GRM31CR61A107MEA8L"
 			(pin_names
 				(hide yes)
@@ -1025,12 +1417,12 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "MASM-14R-8-10:MASM-14R-8-10"
+		(symbol "PTS636SMG25JSMTR_LFS:PTS636SMG25JSMTR_LFS"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "S"
-				(at 16.51 7.62 0)
+				(at 21.59 17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1038,8 +1430,8 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "MASM-14R-8-10"
-				(at 16.51 5.08 0)
+			(property "Value" "PTS636SMG25JSMTR_LFS"
+				(at 21.59 15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1047,18 +1439,8 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "MyParts:MASM14R810"
-				(at 16.51 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 16.51 -194.92 0)
+			(property "Footprint" "PTS636SMG25JSMTRLFS"
+				(at 21.59 -84.76 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1067,7 +1449,17 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Magnetic / Reed Switches 8-10 AT 200Vdc @ 10W"
+			(property "Datasheet" "https://www.ckswitches.com/media/2779/pts636.pdf"
+				(at 21.59 -184.76 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Tactile Switches Tact 50mA 12VDC, 6.0x3.5, 2.5mm H, 180gf, J leads, Ground pin, White Actuator"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1076,8 +1468,8 @@
 					(hide yes)
 				)
 			)
-			(property "Height" "2.84"
-				(at 16.51 -394.92 0)
+			(property "Height" "2.7"
+				(at 21.59 -384.76 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1086,8 +1478,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Part Number" "934-MASM-14R-8-10"
-				(at 16.51 -494.92 0)
+			(property "Mouser Part Number" "611-PTS636SMG25JSMTR"
+				(at 21.59 -484.76 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1096,8 +1488,8 @@
 					(hide yes)
 				)
 			)
-			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Littelfuse/MASM-14R-8-10?qs=5ptrxOxu%252BRY84YYgQdk4WQ%3D%3D"
-				(at 16.51 -594.92 0)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CK/PTS636SMG25JSMTR-LFS?qs=jcD%2FCkGBYePRY%252BgAQy5esQ%3D%3D"
+				(at 21.59 -584.76 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1106,8 +1498,8 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer" "LITTELFUSE"
-				(at 16.51 -694.92 0)
+			(property "Manufacturer_Name" "LITTELFUSE"
+				(at 21.59 -684.76 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1116,8 +1508,8 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer Part Number" "MASM-14R-8-10"
-				(at 16.51 -794.92 0)
+			(property "Manufacturer_Part_Number" "PTS636SMG25JSMTR LFS"
+				(at 21.59 -784.76 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1126,10 +1518,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "MASM-14R-8-10_1_1"
+			(symbol "PTS636SMG25JSMTR_LFS_1_1"
 				(rectangle
-					(start 5.08 2.54)
-					(end 15.24 -5.08)
+					(start 5.08 12.7)
+					(end 20.32 -12.7)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1141,7 +1533,7 @@
 				(pin passive line
 					(at 0 0 0)
 					(length 5.08)
-					(name "1"
+					(name "COM"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1157,9 +1549,45 @@
 					)
 				)
 				(pin passive line
-					(at 0 -2.54 0)
+					(at 12.7 17.78 270)
 					(length 5.08)
-					(name "2"
+					(name "GND_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -17.78 90)
+					(length 5.08)
+					(name "GND_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 0 180)
+					(length 5.08)
+					(name "NO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1653,434 +2081,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "TL6120DF160QG:TL6120DF160QG"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "S"
-				(at 16.51 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "TL6120DF160QG"
-				(at 16.51 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "MyParts:TL6120DF160QG"
-				(at 16.51 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://configured-product-images.s3.amazonaws.com/2D/specs/TL6120DF160QG.pdf"
-				(at 16.51 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "TACT, 50mA, 12VDC SPST-NO, Off-(On) Surface Mount"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "10.1"
-				(at 16.51 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "612-TL6120DF160QG"
-				(at 16.51 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/E-Switch/TL6120DF160QG?qs=QtyuwXswaQhSGW5Q0e27eA%3D%3D"
-				(at 16.51 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "E-Switch"
-				(at 16.51 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer Part Number" "TL6120DF160QG"
-				(at 16.51 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "TL6120DF160QG_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 15.24 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 0 180)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 -2.54 180)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "TLHR4400-AS12Z:TLHR4400-AS12Z"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "LED"
-				(at 12.7 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "TLHR4400-AS12Z"
-				(at 12.7 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "MyParts:TLHR4400AS12Z"
-				(at 12.7 -93.65 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://componentsearchengine.com/Datasheets/2/TLHR4400-AS12Z.pdf"
-				(at 12.7 -193.65 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Description" "Standard LEDs - Through Hole Red 13mcd; 3mm 612-625nm; 2V Typ"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "6.1"
-				(at 12.7 -393.65 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "78-TLHR4400-AS12Z"
-				(at 12.7 -493.65 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHR4400-AS12Z?qs=nQ9vpdMXC6AwxmxsGskxgg%3D%3D"
-				(at 12.7 -593.65 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "Vishay"
-				(at 12.7 -693.65 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer Part Number" "TLHR4400-AS12Z"
-				(at 12.7 -793.65 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(symbol "TLHR4400-AS12Z_1_1"
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 0) (xy 10.16 2.54) (xy 10.16 -2.54) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.334 4.318) (xy 4.572 3.556) (xy 3.81 5.08) (xy 5.334 4.318)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 2.54) (xy 3.81 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.874 4.318) (xy 7.112 3.556) (xy 6.35 5.08) (xy 7.874 4.318)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.89 2.54) (xy 6.35 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 0) (xy 12.7 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -2410,10 +2410,10 @@
 		)
 	)
 	(junction
-		(at 78.74 157.48)
+		(at 85.09 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "096a8566-281d-4023-81a7-26ff81784c82")
+		(uuid "213331ed-aa79-4876-b134-a78947d07b78")
 	)
 	(junction
 		(at 26.67 26.67)
@@ -2470,12 +2470,6 @@
 		(uuid "8f1eaec9-30b2-4168-8c76-e53e24738276")
 	)
 	(junction
-		(at 106.68 161.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "90abf69a-c041-4287-9be8-ea95723d4e56")
-	)
-	(junction
 		(at 147.32 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2486,12 +2480,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a75e4733-3eeb-40b9-ab6d-4da8904aab8d")
-	)
-	(junction
-		(at 106.68 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a805e2da-5139-4173-8ecc-37eea69edfc5")
 	)
 	(junction
 		(at 31.75 157.48)
@@ -2516,6 +2504,14 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fdf59ea5-f891-4e40-9e14-b20f62bac9aa")
+	)
+	(no_connect
+		(at 67.31 168.91)
+		(uuid "70fdbc4b-6309-4f17-99c4-9e547ccdb9e5")
+	)
+	(no_connect
+		(at 102.87 168.91)
+		(uuid "f1c5abce-8175-4365-b36b-73858a8313f2")
 	)
 	(wire
 		(pts
@@ -2549,16 +2545,6 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 157.48) (xy 78.74 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03d60912-0eac-4bd7-86eb-ebc1b2154b6d")
-	)
-	(wire
-		(pts
 			(xy 147.32 163.83) (xy 147.32 172.72)
 		)
 		(stroke
@@ -2566,16 +2552,6 @@
 			(type default)
 		)
 		(uuid "03faee0a-c1f0-4a44-a9f8-4b4831dc4967")
-	)
-	(wire
-		(pts
-			(xy 78.74 157.48) (xy 78.74 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07c127e9-436c-4589-a281-b87e35be5713")
 	)
 	(wire
 		(pts
@@ -2619,6 +2595,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 74.93) (xy 243.84 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b7a9fa0-f74d-479c-86ee-919f2fbb64c4")
+	)
+	(wire
+		(pts
 			(xy 125.73 104.14) (xy 143.51 104.14)
 		)
 		(stroke
@@ -2646,16 +2632,6 @@
 			(type default)
 		)
 		(uuid "1d5fac2d-946d-4209-ac3e-d9847220c65d")
-	)
-	(wire
-		(pts
-			(xy 78.74 161.29) (xy 78.74 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22e944f1-e837-4905-b36b-942ac385423e")
 	)
 	(wire
 		(pts
@@ -2729,6 +2705,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 181.61) (xy 85.09 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3201f6df-a22f-4998-96b1-eefec2938a79")
+	)
+	(wire
+		(pts
 			(xy 17.78 26.67) (xy 17.78 36.83)
 		)
 		(stroke
@@ -2766,16 +2752,6 @@
 			(type default)
 		)
 		(uuid "39b11e06-a63b-4baf-a045-1a97da580863")
-	)
-	(wire
-		(pts
-			(xy 106.68 163.83) (xy 101.6 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44c14557-e005-4579-a8a2-4fb190fdbec1")
 	)
 	(wire
 		(pts
@@ -2839,13 +2815,13 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 161.29) (xy 109.22 161.29)
+			(xy 85.09 152.4) (xy 85.09 154.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "53cedcc0-60b2-47dc-9c72-e58c2e8d70c4")
+		(uuid "5268df4e-e0fc-4117-b95e-c47ac943e504")
 	)
 	(wire
 		(pts
@@ -2916,16 +2892,6 @@
 			(type default)
 		)
 		(uuid "6684507d-2908-457e-bef6-4e47b3118b72")
-	)
-	(wire
-		(pts
-			(xy 237.49 74.93) (xy 243.84 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "668d939c-5b2e-41d6-a45f-091db1d2517b")
 	)
 	(wire
 		(pts
@@ -3049,16 +3015,6 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 167.64) (xy 106.68 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "800be06f-e4f9-4880-aab9-baecb14f7805")
-	)
-	(wire
-		(pts
 			(xy 64.77 99.06) (xy 85.09 99.06)
 		)
 		(stroke
@@ -3066,16 +3022,6 @@
 			(type default)
 		)
 		(uuid "80ae0e2d-77a5-4e8e-8308-a80db3f2f26a")
-	)
-	(wire
-		(pts
-			(xy 78.74 167.64) (xy 106.68 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "80fa7ad5-1993-4252-8346-23bc625f4c35")
 	)
 	(wire
 		(pts
@@ -3109,26 +3055,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 161.29) (xy 106.68 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "948faae2-40cb-4b99-be43-5951ae6d36b4")
-	)
-	(wire
-		(pts
-			(xy 81.28 163.83) (xy 78.74 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c4a8dde-7950-4ddf-b6df-fc0e08c0e153")
-	)
-	(wire
-		(pts
 			(xy 125.73 91.44) (xy 143.51 91.44)
 		)
 		(stroke
@@ -3136,16 +3062,6 @@
 			(type default)
 		)
 		(uuid "9ce0314e-c167-409c-9706-b4e89267d6e4")
-	)
-	(wire
-		(pts
-			(xy 106.68 171.45) (xy 106.68 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d95f88f-1edb-4ccc-aa7a-09fb1d1a858b")
 	)
 	(wire
 		(pts
@@ -3169,7 +3085,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 139.7) (xy 78.74 147.32)
+			(xy 85.09 137.16) (xy 85.09 144.78)
 		)
 		(stroke
 			(width 0)
@@ -3249,16 +3165,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 163.83) (xy 78.74 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b963d00f-3cb1-424b-a48c-b183bdf556ac")
-	)
-	(wire
-		(pts
 			(xy 93.98 27.94) (xy 100.33 27.94)
 		)
 		(stroke
@@ -3289,13 +3195,13 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 161.29) (xy 106.68 157.48)
+			(xy 85.09 154.94) (xy 85.09 156.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bdad674f-fe29-490d-9de9-e081b183eff0")
+		(uuid "be2b9fa4-4d10-45c9-8034-615787030e94")
 	)
 	(wire
 		(pts
@@ -3336,6 +3242,16 @@
 			(type default)
 		)
 		(uuid "c369cd5d-26a6-40f0-894d-6ad24f55a541")
+	)
+	(wire
+		(pts
+			(xy 85.09 154.94) (xy 96.52 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c68c32a7-f69d-4615-b326-b39ab91513d5")
 	)
 	(wire
 		(pts
@@ -3456,16 +3372,6 @@
 			(type default)
 		)
 		(uuid "efbdb569-b5f0-46a3-989d-32bcf305f178")
-	)
-	(wire
-		(pts
-			(xy 81.28 161.29) (xy 78.74 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f28b3a5e-6c54-44ba-abb2-01a9c6da12e9")
 	)
 	(wire
 		(pts
@@ -3815,7 +3721,7 @@
 	)
 	(global_label "BTN"
 		(shape input)
-		(at 109.22 161.29 0)
+		(at 96.52 154.94 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3825,7 +3731,7 @@
 		)
 		(uuid "e09ba37e-19a2-4069-bfb1-6b80ab454710")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 115.7733 161.29 0)
+			(at 103.0733 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4173,6 +4079,132 @@
 		)
 	)
 	(symbol
+		(lib_id "APTD1608LSURCK:APTD1608LSURCK")
+		(at 237.49 74.93 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "15a47cbf-4335-4714-ad8c-26951158bbb0")
+		(property "Reference" "LED1"
+			(at 229.87 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "APTD1608LSURCK"
+			(at 229.87 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:LEDM168X95N"
+			(at 224.79 168.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.kingbrightusa.com/images/catalog/SPEC/APTD1608LSURCK.pdf"
+			(at 224.79 268.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Standard LEDs - SMD 0603 Dome Lens LED Red- 630nm"
+			(at 237.49 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.95"
+			(at 224.79 468.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "604-APTD1608LSURCK"
+			(at 224.79 568.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Kingbright/APTD1608LSURCK?qs=AQlKX63v8Rs2fs08MVpUog%3D%3D"
+			(at 224.79 668.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Kingbright"
+			(at 224.79 768.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "APTD1608LSURCK"
+			(at 224.79 868.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "deb167e8-e8c9-4af3-beba-1956ee38f1f7")
+		)
+		(pin "2"
+			(uuid "37723b12-c0b8-4be2-aef0-8db069d80b22")
+		)
+		(instances
+			(project ""
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "LED1")
+					(unit 1)
+				)
+			)
+			(project "sensor_rev1"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
+					(reference "LED1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 39.37 157.48 90)
 		(unit 1)
@@ -4277,132 +4309,6 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "TLHR4400-AS12Z:TLHR4400-AS12Z")
-		(at 237.49 74.93 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2cc53ef8-68c2-404b-ba2c-36ccf1c875f2")
-		(property "Reference" "LED3"
-			(at 229.87 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TLHR4400-AS12Z"
-			(at 229.87 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MyParts:TLHR4400AS12Z"
-			(at 224.79 168.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/2/TLHR4400-AS12Z.pdf"
-			(at 224.79 268.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Description" "Standard LEDs - Through Hole Red 13mcd; 3mm 612-625nm; 2V Typ"
-			(at 237.49 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "6.1"
-			(at 224.79 468.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "78-TLHR4400-AS12Z"
-			(at 224.79 568.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHR4400-AS12Z?qs=nQ9vpdMXC6AwxmxsGskxgg%3D%3D"
-			(at 224.79 668.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay"
-			(at 224.79 768.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "TLHR4400-AS12Z"
-			(at 224.79 868.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c9c6bf4b-8c77-4495-b166-2bb1c1b4bbc6")
-		)
-		(pin "2"
-			(uuid "e06b5207-7e90-451b-bc18-60d4984a9518")
-		)
-		(instances
-			(project "mcu_rev1"
-				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
-					(reference "LED?")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "LED3")
 					(unit 1)
 				)
 			)
@@ -5807,8 +5713,134 @@
 		)
 	)
 	(symbol
+		(lib_id "GP560_20-25:GP560_20-25")
+		(at 140.97 163.83 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7bdaa1d0-3b21-4d8f-9cd5-98be58e75aee")
+		(property "Reference" "S3"
+			(at 130.81 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GP560_20-25"
+			(at 130.81 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:GP5602025"
+			(at 124.46 68.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.ph/ProductDetail/MEDER-electronic/GP560-20-25?qs=%252B6g0mu59x7KbpBqh6ze2hg%3D%3D&srsltid=AfmBOoovVTOKBmotzsVxL9AMe_M0tCXi2LyBakT40j8xCqS0YTGAD13f"
+			(at 124.46 -31.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Glass Body Reed Switch SPST-NO 10 ~ 50AT Operate Range 10VA 1A (AC/DC) 125 V Through Hole"
+			(at 140.97 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "2.3"
+			(at 124.46 -231.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 124.46 -331.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 124.46 -431.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "STANDEXMEDER"
+			(at 124.46 -531.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GP560/20-25"
+			(at 124.46 -631.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4b604cb9-aaee-44b2-bd03-8705ac1a857b")
+		)
+		(pin "2"
+			(uuid "8a91c954-e206-435a-be7d-471b613cc856")
+		)
+		(instances
+			(project ""
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "S2")
+					(unit 1)
+				)
+			)
+			(project "sensor_rev1"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
+					(reference "S3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
-		(at 78.74 139.7 0)
+		(at 85.09 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5817,7 +5849,7 @@
 		(fields_autoplaced yes)
 		(uuid "829309c8-b41a-449b-8bd9-a1649b06bb27")
 		(property "Reference" "#PWR023"
-			(at 78.74 143.51 0)
+			(at 85.09 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5826,7 +5858,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 78.74 134.62 0)
+			(at 85.09 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5834,7 +5866,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 139.7 0)
+			(at 85.09 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5843,7 +5875,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 139.7 0)
+			(at 85.09 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5852,7 +5884,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 78.74 139.7 0)
+			(at 85.09 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5880,7 +5912,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 106.68 171.45 0)
+		(at 85.09 186.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5889,7 +5921,7 @@
 		(fields_autoplaced yes)
 		(uuid "86316ca6-a2ef-4c32-8a28-148512bd90a0")
 		(property "Reference" "#PWR022"
-			(at 106.68 177.8 0)
+			(at 85.09 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5898,7 +5930,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 106.68 176.53 0)
+			(at 85.09 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5906,7 +5938,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 106.68 171.45 0)
+			(at 85.09 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5915,7 +5947,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 171.45 0)
+			(at 85.09 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5924,7 +5956,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 106.68 171.45 0)
+			(at 85.09 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6151,6 +6183,138 @@
 		)
 	)
 	(symbol
+		(lib_id "PTS636SMG25JSMTR_LFS:PTS636SMG25JSMTR_LFS")
+		(at 85.09 156.21 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "947d8170-037b-4548-be32-96101e67f6d5")
+		(property "Reference" "S2"
+			(at 110.49 162.4898 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PTS636SMG25JSMTR_LFS"
+			(at 110.49 165.0298 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:PTS636SMG25JSMTRLFS"
+			(at 0.33 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/2779/pts636.pdf"
+			(at -99.67 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches Tact 50mA 12VDC, 6.0x3.5, 2.5mm H, 180gf, J leads, Ground pin, White Actuator"
+			(at 85.09 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "2.7"
+			(at -299.67 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "611-PTS636SMG25JSMTR"
+			(at -399.67 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CK/PTS636SMG25JSMTR-LFS?qs=jcD%2FCkGBYePRY%252BgAQy5esQ%3D%3D"
+			(at -499.67 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "LITTELFUSE"
+			(at -599.67 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "PTS636SMG25JSMTR LFS"
+			(at -699.67 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "0d54c5a9-cfd3-4e1d-8770-90e0e6b44468")
+		)
+		(pin "1"
+			(uuid "4becc747-1276-4032-bc24-9f0893633095")
+		)
+		(pin "3"
+			(uuid "c628f6da-2f5f-404d-9fdc-26865e1d87c8")
+		)
+		(pin "2"
+			(uuid "36b63839-7bb8-4719-954c-3c9e11c5c787")
+		)
+		(instances
+			(project ""
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "S3")
+					(unit 1)
+				)
+			)
+			(project "sensor_rev1"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
+					(reference "S2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "22-28-4044:22-28-4044")
 		(at 100.33 25.4 0)
 		(unit 1)
@@ -6279,138 +6443,6 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "TL6120DF160QG:TL6120DF160QG")
-		(at 81.28 161.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a98f5f66-7cf4-42e0-938f-2a56aa9e5414")
-		(property "Reference" "S2"
-			(at 91.44 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TL6120DF160QG"
-			(at 91.44 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MyParts:TL6120DF160QG"
-			(at 97.79 256.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://configured-product-images.s3.amazonaws.com/2D/specs/TL6120DF160QG.pdf"
-			(at 97.79 356.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "TACT, 50mA, 12VDC SPST-NO, Off-(On) Surface Mount"
-			(at 81.28 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "10.1"
-			(at 97.79 556.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "612-TL6120DF160QG"
-			(at 97.79 656.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/E-Switch/TL6120DF160QG?qs=QtyuwXswaQhSGW5Q0e27eA%3D%3D"
-			(at 97.79 756.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "E-Switch"
-			(at 97.79 856.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "TL6120DF160QG"
-			(at 97.79 956.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4c603bed-2032-4ded-9546-82782149227b")
-		)
-		(pin "4"
-			(uuid "bbfe6b0e-5f3b-4927-87cc-59c14d130a91")
-		)
-		(pin "1"
-			(uuid "a5bcd548-d8a7-4051-bb6d-c8ab48426c55")
-		)
-		(pin "3"
-			(uuid "8085e441-42f2-4065-a6b9-6073847536b9")
-		)
-		(instances
-			(project "mcu_rev1"
-				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
-					(reference "S?")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "S2")
 					(unit 1)
 				)
 			)
@@ -6809,132 +6841,6 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MASM-14R-8-10:MASM-14R-8-10")
-		(at 140.97 149.86 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b9bb6451-0bcf-4212-8e50-365ee36ddbd7")
-		(property "Reference" "S1"
-			(at 130.81 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MASM-14R-8-10"
-			(at 130.81 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MyParts:MASM14R810"
-			(at 124.46 54.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 124.46 -45.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Magnetic / Reed Switches 8-10 AT 200Vdc @ 10W"
-			(at 140.97 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "2.84"
-			(at 124.46 -245.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "934-MASM-14R-8-10"
-			(at 124.46 -345.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Littelfuse/MASM-14R-8-10?qs=5ptrxOxu%252BRY84YYgQdk4WQ%3D%3D"
-			(at 124.46 -445.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "LITTELFUSE"
-			(at 124.46 -545.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "MASM-14R-8-10"
-			(at 124.46 -645.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1a6fef89-caf6-4462-95ed-d83b77ef053f")
-		)
-		(pin "2"
-			(uuid "bfd388da-e253-469f-ab74-5dd1edf5a39c")
-		)
-		(instances
-			(project "mcu_rev1"
-				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
-					(reference "S?")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "S1")
 					(unit 1)
 				)
 			)
@@ -7454,7 +7360,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 78.74 151.13 180)
+		(at 85.09 148.59 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7462,7 +7368,7 @@
 		(dnp no)
 		(uuid "d40dca28-368f-4f99-ac15-c44625af86ca")
 		(property "Reference" "R4"
-			(at 73.406 149.86 0)
+			(at 79.756 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7471,7 +7377,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 73.406 152.4 0)
+			(at 79.756 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7480,7 +7386,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 77.724 150.876 90)
+			(at 84.074 148.336 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7489,7 +7395,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 78.74 151.13 0)
+			(at 85.09 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7498,7 +7404,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 78.74 151.13 0)
+			(at 85.09 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7507,7 +7413,7 @@
 			)
 		)
 		(property "Mouser Part Number" "603-AC0402JR-7D10KL"
-			(at 78.74 151.13 0)
+			(at 85.09 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7516,7 +7422,7 @@
 			)
 		)
 		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AC0402JR-7D10KL?qs=sGAEpiMZZMvdGkrng054tz1y1XEHv7sNOH1F3ozffN%252Bh1q4oB3r5hQ%3D%3D"
-			(at 78.74 151.13 0)
+			(at 85.09 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7525,7 +7431,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 78.74 151.13 0)
+			(at 85.09 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7534,7 +7440,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "AC0402JR-7D10KL"
-			(at 78.74 151.13 0)
+			(at 85.09 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7971,43 +7877,33 @@
 		)
 	)
 	(symbol
-		(lib_id "MASM-14R-8-10:MASM-14R-8-10")
-		(at 140.97 163.83 180)
+		(lib_id "GP560_20-25:GP560_20-25")
+		(at 140.97 149.86 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ecc28580-0a8e-4a9f-91f5-4a819391ee48")
-		(property "Reference" "S3"
-			(at 130.81 153.67 0)
+		(uuid "ec95634f-50f2-4804-bba6-c46127906240")
+		(property "Reference" "S1"
+			(at 130.81 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "MASM-14R-8-10"
-			(at 130.81 156.21 0)
+		(property "Value" "GP560_20-25"
+			(at 130.81 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "MyParts:MASM14R810"
-			(at 124.46 68.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 124.46 -31.09 0)
+		(property "Footprint" "MyParts:GP5602025"
+			(at 124.46 54.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8016,17 +7912,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Magnetic / Reed Switches 8-10 AT 200Vdc @ 10W"
-			(at 140.97 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "2.84"
-			(at 124.46 -231.09 0)
+		(property "Datasheet" "https://www.mouser.ph/ProductDetail/MEDER-electronic/GP560-20-25?qs=%252B6g0mu59x7KbpBqh6ze2hg%3D%3D&srsltid=AfmBOoovVTOKBmotzsVxL9AMe_M0tCXi2LyBakT40j8xCqS0YTGAD13f"
+			(at 124.46 -45.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8035,8 +7922,17 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "934-MASM-14R-8-10"
-			(at 124.46 -331.09 0)
+		(property "Description" "Glass Body Reed Switch SPST-NO 10 ~ 50AT Operate Range 10VA 1A (AC/DC) 125 V Through Hole"
+			(at 140.97 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "2.3"
+			(at 124.46 -245.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8045,8 +7941,8 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Littelfuse/MASM-14R-8-10?qs=5ptrxOxu%252BRY84YYgQdk4WQ%3D%3D"
-			(at 124.46 -431.09 0)
+		(property "Mouser Part Number" ""
+			(at 124.46 -345.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8055,8 +7951,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "LITTELFUSE"
-			(at 124.46 -531.09 0)
+		(property "Mouser Price/Stock" ""
+			(at 124.46 -445.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8065,8 +7961,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "MASM-14R-8-10"
-			(at 124.46 -631.09 0)
+		(property "Manufacturer_Name" "STANDEXMEDER"
+			(at 124.46 -545.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8075,22 +7971,32 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "fb48e28a-18e2-4b94-ab98-5ec2f08645b4")
+		(property "Manufacturer_Part_Number" "GP560/20-25"
+			(at 124.46 -645.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "ac41ef33-589c-48fe-b826-81fc1bb51bf2")
+			(uuid "b21f0532-ba2e-40b4-ba0c-9608a6337af7")
+		)
+		(pin "1"
+			(uuid "73524c18-a31a-42bb-af21-f139131b5fee")
 		)
 		(instances
-			(project "mcu_rev1"
+			(project ""
 				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
-					(reference "S?")
+					(reference "S1")
 					(unit 1)
 				)
 			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "S3")
+					(reference "S1")
 					(unit 1)
 				)
 			)
