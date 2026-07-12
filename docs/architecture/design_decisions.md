@@ -260,14 +260,14 @@ Decision:
     https://pt.mouser.com/new/johanson/johanson-0900at43a0070/?srsltid=AfmBOoobHdIGgGZuSxxAr1JtTYSkDjUd4MoxHm1Rq9-d-15OsjQQ_TCT
 
 Decision:
-    3 and 4 are too risky.
-    1 or 2 to be decided, based on performance of 868 MHz modules from Amazon.
+    Based on performance of 868 MHz modules from Amazon, and also adaptions on FW PoC (baudrate reduction and forward error correction enable).
+    2. Helical antenna.
 
 ### Sensor battery holder
 https://pt.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-003-SMT?qs=TuK3vfAjtkVRZQIT6eTqjQ%3D%3D
 https://pt.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-013-SMT-TR?qs=4ASt3YYao0UKhYWrBts7tw%3D%3D
 
-Decision: because it impacts the box, and the box is also impacted by antenna, 1 or 2, to be decided with the box.
+Decision: it will be used the one from the Takachi case.
 
 ### Sensor Enclosure/Box/Case: PCB size and format
 
