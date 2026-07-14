@@ -31,4 +31,5 @@
   (lib (name "GP560_20-25")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/GP560_20-25.kicad_sym")(options "")(descr ""))
   (lib (name "APTD1608LSURCK")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/APTD1608LSURCK.kicad_sym")(options "")(descr ""))
   (lib (name "PTS636SMG25JSMTR_LFS")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/PTS636SMG25JSMTR_LFS.kicad_sym")(options "")(descr ""))
+  (lib (name "CST2032")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/CST2032.kicad_sym")(options "")(descr ""))
 )
