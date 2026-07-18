@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyParts:CST2032"
 			(at 0 0 0)
 			(effects
 				(font
@@ -70,10 +70,46 @@
 					(type none)
 				)
 			)
+			(pin input line
+				(at -5.08 1.27 0)
+				(length 2.54)
+				(name "+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -5.08 -1.27 0)
+				(length 2.54)
+				(name "+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin passive line
 				(at 5.08 1.27 180)
 				(length 2.54)
-				(name "+"
+				(name "-"
 					(effects
 						(font
 							(size 1.27 1.27)

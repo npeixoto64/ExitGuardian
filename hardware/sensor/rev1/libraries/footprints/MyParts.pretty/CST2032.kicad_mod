@@ -4,7 +4,7 @@
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -0.5 0)
+		(at 0 -7.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "20606523-0fcf-4665-b2d9-64474549f3c5")
@@ -16,7 +16,7 @@
 		)
 	)
 	(property "Value" "CST2032"
-		(at 0 1 0)
+		(at 0 -6 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "bdcd580f-fe40-483c-ad0b-f97d52a1efb7")
@@ -55,8 +55,8 @@
 	)
 	(attr through_hole)
 	(fp_line
-		(start -15 5.9)
-		(end -4 -7.6)
+		(start -15 -1.1)
+		(end -4 -14.6)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -65,8 +65,8 @@
 		(uuid "f523edfb-9832-4095-9eaf-3acd84b7f654")
 	)
 	(fp_line
-		(start -15 8.1)
-		(end -15 5.9)
+		(start -15 1.1)
+		(end -15 -1.1)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -75,8 +75,8 @@
 		(uuid "5fe6ab95-35d2-497d-a3a7-18fbbad5cae8")
 	)
 	(fp_line
-		(start -5.7 0.1)
-		(end -1.6 -3.4)
+		(start -5.7 -6.9)
+		(end -1.6 -10.4)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -85,8 +85,8 @@
 		(uuid "d3686b25-b5f0-470e-9f74-295d3a553e08")
 	)
 	(fp_line
-		(start -4 -7.6)
-		(end 4 -7.6)
+		(start -4 -14.6)
+		(end 4 -14.6)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -95,8 +95,8 @@
 		(uuid "5ee1aff4-29e7-4c1c-9dcb-347829b03296")
 	)
 	(fp_line
-		(start -4 18)
-		(end -15 8.1)
+		(start -4 11)
+		(end -15 1.1)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -105,8 +105,8 @@
 		(uuid "6d043f61-9f4a-482c-8258-5269ed9669d7")
 	)
 	(fp_line
-		(start -1.6 -7.4)
-		(end -1.6 -7.1)
+		(start -1.6 -14.4)
+		(end -1.6 -14.1)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -115,8 +115,8 @@
 		(uuid "3948c588-8c85-4adf-a1a9-20c30fd64423")
 	)
 	(fp_line
-		(start -1.6 -7.4)
-		(end 1.6 -7.4)
+		(start -1.6 -14.4)
+		(end 1.6 -14.4)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -125,8 +125,8 @@
 		(uuid "be26f07b-f0b3-48af-8426-296f414cefaa")
 	)
 	(fp_line
-		(start -1.6 -3.4)
-		(end -1.6 -4.9)
+		(start -1.6 -10.4)
+		(end -1.6 -11.9)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -135,8 +135,8 @@
 		(uuid "749ca6de-9efb-459b-9e18-2030715f8636")
 	)
 	(fp_line
-		(start 1.6 -7.4)
-		(end 1.6 -7.1)
+		(start 1.6 -14.4)
+		(end 1.6 -14.1)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -145,8 +145,8 @@
 		(uuid "a87c4b12-5904-4685-b525-5c552e1377e4")
 	)
 	(fp_line
-		(start 1.6 -4.9)
-		(end 1.6 -3.4)
+		(start 1.6 -11.9)
+		(end 1.6 -10.4)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -155,8 +155,8 @@
 		(uuid "04aeea91-bf0c-45ac-b358-274d0da184b7")
 	)
 	(fp_line
-		(start 1.6 -3.4)
-		(end -1.6 -3.4)
+		(start 1.6 -10.4)
+		(end -1.6 -10.4)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -165,8 +165,8 @@
 		(uuid "50675a40-66f3-40dd-875b-45902757b12a")
 	)
 	(fp_line
-		(start 4 -7.6)
-		(end 15 5.9)
+		(start 4 -14.6)
+		(end 15 -1.1)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -175,8 +175,8 @@
 		(uuid "982e7eba-ee6c-456b-875a-fc713a63bfa9")
 	)
 	(fp_line
-		(start 4 18)
-		(end -4 18)
+		(start 4 11)
+		(end -4 11)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -185,8 +185,8 @@
 		(uuid "a2aec616-f6e4-4624-aaca-5bb2c280e9f4")
 	)
 	(fp_line
-		(start 5.8 0.1)
-		(end 1.6 -3.4)
+		(start 5.8 -6.9)
+		(end 1.6 -10.4)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -195,8 +195,8 @@
 		(uuid "dfcd7181-721c-42b9-9cf3-3b729ed4b70d")
 	)
 	(fp_line
-		(start 15 5.9)
-		(end 15 8.1)
+		(start 15 -1.1)
+		(end 15 1.1)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -205,8 +205,8 @@
 		(uuid "ea6ebb9b-f625-43a3-91cf-160d65d23848")
 	)
 	(fp_line
-		(start 15 8.1)
-		(end 4 18)
+		(start 15 1.1)
+		(end 4 11)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -215,8 +215,8 @@
 		(uuid "407db892-daa0-418c-a613-9b0cc33a3b53")
 	)
 	(fp_circle
-		(center 0 7)
-		(end 10 7)
+		(center 0 0)
+		(end 10 0)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -226,8 +226,8 @@
 		(uuid "f104a0e7-00e0-423f-8ead-e5a44aa65399")
 	)
 	(fp_line
-		(start -15.1 5.8)
-		(end -15.1 8.2)
+		(start -15.1 -1.2)
+		(end -15.1 1.2)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -236,8 +236,8 @@
 		(uuid "f8e1f4d6-0e23-478d-9c6e-4bf14cf83234")
 	)
 	(fp_line
-		(start -15.1 8.2)
-		(end -4 18.2)
+		(start -15.1 1.2)
+		(end -4 11.2)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -246,8 +246,8 @@
 		(uuid "901b1044-5b3d-4522-b6e8-9f1a81300938")
 	)
 	(fp_line
-		(start -4.1 -7.7)
-		(end -15.1 5.8)
+		(start -4.1 -14.7)
+		(end -15.1 -1.2)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -256,8 +256,8 @@
 		(uuid "604b06e1-258b-4cf7-83c3-5589c77afb5e")
 	)
 	(fp_line
-		(start -4.1 -7.7)
-		(end 4.1 -7.7)
+		(start -4.1 -14.7)
+		(end 4.1 -14.7)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -266,8 +266,8 @@
 		(uuid "7d62ce2f-c07f-4e37-8e3c-f4220b836245")
 	)
 	(fp_line
-		(start -4 18.2)
-		(end 4 18.2)
+		(start -4 11.2)
+		(end 4 11.2)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -276,8 +276,8 @@
 		(uuid "7b92d497-a396-4462-80be-6abaada4c226")
 	)
 	(fp_line
-		(start 4 18.2)
-		(end 15.2 8.1)
+		(start 4 11.2)
+		(end 15.2 1.1)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -286,8 +286,8 @@
 		(uuid "e81e770d-e65b-497f-b937-300fedcb29de")
 	)
 	(fp_line
-		(start 15.2 5.8)
-		(end 4.1 -7.7)
+		(start 15.2 -1.2)
+		(end 4.1 -14.7)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -296,8 +296,8 @@
 		(uuid "94de2852-b144-4475-b097-262b8a8cd4cf")
 	)
 	(fp_line
-		(start 15.2 8.1)
-		(end 15.2 5.8)
+		(start 15.2 1.1)
+		(end 15.2 -1.2)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -306,8 +306,8 @@
 		(uuid "aad18747-1792-4f25-b040-4f5b3b1c24cc")
 	)
 	(fp_line
-		(start -15 5.9)
-		(end -15 8.1)
+		(start -15 -1.1)
+		(end -15 1.1)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -316,8 +316,8 @@
 		(uuid "a0f4c557-cbf6-4d4a-ae26-a5985a6f674b")
 	)
 	(fp_line
-		(start -15 8.1)
-		(end -4 18)
+		(start -15 1.1)
+		(end -4 11)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -326,8 +326,8 @@
 		(uuid "673456a3-ff4b-4daf-a37a-ff5550e38393")
 	)
 	(fp_line
-		(start -4 -7.6)
-		(end -15 5.9)
+		(start -4 -14.6)
+		(end -15 -1.1)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -336,8 +336,8 @@
 		(uuid "cc1d3763-c509-491b-bcdc-5d84664f7822")
 	)
 	(fp_line
-		(start -4 -7.6)
-		(end 4 -7.6)
+		(start -4 -14.6)
+		(end 4 -14.6)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -346,8 +346,8 @@
 		(uuid "0db36801-d394-4801-9f94-ad4f7e0588fb")
 	)
 	(fp_line
-		(start -4 18)
-		(end 4 18)
+		(start -4 11)
+		(end 4 11)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -356,8 +356,8 @@
 		(uuid "15377d4f-4231-4fb9-9b92-faa1ed1da3b8")
 	)
 	(fp_line
-		(start 4 -7.6)
-		(end 15 5.9)
+		(start 4 -14.6)
+		(end 15 -1.1)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -366,8 +366,8 @@
 		(uuid "f1dbb6c9-7083-449b-9a77-80848fa91dfd")
 	)
 	(fp_line
-		(start 4 18)
-		(end 15 8.1)
+		(start 4 11)
+		(end 15 1.1)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -376,8 +376,8 @@
 		(uuid "66bf367c-efc4-45ed-9405-03637ea668a2")
 	)
 	(fp_line
-		(start 15 5.9)
-		(end 15 8.1)
+		(start 15 -1.1)
+		(end 15 1.1)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -386,7 +386,7 @@
 		(uuid "8e01c778-3233-4740-8fad-1404a7084c32")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 2.5 0)
+		(at 0 -4.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "200d91f5-fa76-4401-95a1-4c79d5cf6d4c")
@@ -398,7 +398,7 @@
 		)
 	)
 	(pad "1" thru_hole circle
-		(at -13.2 7)
+		(at -13.2 0)
 		(size 2.2 2.2)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -407,7 +407,7 @@
 		(uuid "bfc3d1d6-60b5-4f70-8cd5-2d2ff0c13e98")
 	)
 	(pad "2" thru_hole circle
-		(at 13.2 7)
+		(at 13.2 0)
 		(size 2.2 2.2)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -416,7 +416,7 @@
 		(uuid "c5fff964-11cc-4fac-bf15-3ebcfc6fdc92")
 	)
 	(pad "3" thru_hole circle
-		(at -1.6 -6)
+		(at -1.6 -13)
 		(size 2.2 2.2)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -425,7 +425,7 @@
 		(uuid "005f3eb9-7a85-444a-b4c1-9b1bcdbb94a5")
 	)
 	(pad "4" thru_hole circle
-		(at 1.6 -6)
+		(at 1.6 -13)
 		(size 2.2 2.2)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -434,4 +434,26 @@
 		(uuid "915d55c3-7d5e-454f-907c-73dbffe1212c")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/libraries/3dmodels/MyParts/CST2032M.stp"
+		(offset
+			(xyz 0 0 0.2)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+	(model "${KIPRJMOD}/libraries/3dmodels/MyParts/CST2032P.stp"
+		(offset
+			(xyz -5 12.8 0.2)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -180)
+		)
+	)
 )

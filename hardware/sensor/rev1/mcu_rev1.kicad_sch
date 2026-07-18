@@ -439,49 +439,27 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "BAT-HLD-013-SMT-TR:BAT-HLD-013-SMT-TR"
+		(symbol "CST2032:CST2032"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "BT"
-				(at 16.51 7.62 0)
+				(at 0 3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
-			(property "Value" "BAT-HLD-013-SMT-TR"
-				(at 16.51 5.08 0)
+			(property "Value" "CST2032"
+				(at 0 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
-			(property "Footprint" "BATHLD013SMTTR"
-				(at 16.51 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.te.com/en/product-BAT-HLD-013-SMT-TR.html"
-				(at 16.51 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "CR2032 Battery Holder, 1 Position, Horizontal, Nickel (Ni)"
+			(property "Footprint" "MyParts:CST2032"
 				(at 0 0 0)
 				(effects
 					(font
@@ -490,72 +468,85 @@
 					(hide yes)
 				)
 			)
-			(property "Height" "6.5"
-				(at 16.51 -394.92 0)
+			(property "Datasheet" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Mouser Part Number" "712-BAT-HLD-013SMTTR"
-				(at 16.51 -494.92 0)
+			(property "Description" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-013-SMT-TR?qs=4ASt3YYao0UKhYWrBts7tw%3D%3D"
-				(at 16.51 -594.92 0)
+			(property "ki_keywords" "Takachi CS75 CR2032 battery holder"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "TE Connectivity"
-				(at 16.51 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "BAT-HLD-013-SMT-TR"
-				(at 16.51 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "BAT-HLD-013-SMT-TR_1_1"
+			(symbol "CST2032_1_1"
 				(rectangle
-					(start 5.08 2.54)
-					(end 15.24 -5.08)
+					(start -2.54 2.54)
+					(end 2.54 -2.54)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
+					)
+				)
+				(pin input line
+					(at -5.08 1.27 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -1.27 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "+"
+					(at 5.08 1.27 180)
+					(length 2.54)
+					(name "-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -571,8 +562,8 @@
 					)
 				)
 				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
+					(at 5.08 -1.27 180)
+					(length 2.54)
 					(name "-"
 						(effects
 							(font
@@ -2416,7 +2407,7 @@
 		(uuid "213331ed-aa79-4876-b134-a78947d07b78")
 	)
 	(junction
-		(at 26.67 26.67)
+		(at 26.67 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "323209de-27e8-44dd-aea6-f62c311f0ab1")
@@ -2476,6 +2467,18 @@
 		(uuid "90f5c6c0-5f00-4f39-9af0-bfe592b93ac3")
 	)
 	(junction
+		(at 36.83 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9337210f-3d2e-4cdf-a5c6-43f6dc0d72b4")
+	)
+	(junction
+		(at 36.83 24.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "992c1acf-5f29-4fe6-8621-8334cc9088a6")
+	)
+	(junction
 		(at 134.62 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2525,7 +2528,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 36.83) (xy 26.67 26.67)
+			(xy 26.67 46.99) (xy 26.67 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2635,6 +2638,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 36.83) (xy 39.37 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21d9848f-66fa-4156-97d5-999ce329ffd6")
+	)
+	(wire
+		(pts
 			(xy 46.99 167.64) (xy 46.99 171.45)
 		)
 		(stroke
@@ -2675,7 +2688,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 26.67) (xy 31.75 26.67)
+			(xy 26.67 36.83) (xy 36.83 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2715,7 +2728,7 @@
 	)
 	(wire
 		(pts
-			(xy 17.78 26.67) (xy 17.78 36.83)
+			(xy 17.78 36.83) (xy 17.78 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2875,6 +2888,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 36.83) (xy 36.83 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64c9c63e-2a83-4dd9-a59f-d66409cb39e2")
+	)
+	(wire
+		(pts
 			(xy 100.33 33.02) (xy 96.52 33.02)
 		)
 		(stroke
@@ -2965,6 +2988,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 24.13) (xy 39.37 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7300e077-b6f2-4313-a76d-b870c09f98d7")
+	)
+	(wire
+		(pts
 			(xy 46.99 157.48) (xy 46.99 160.02)
 		)
 		(stroke
@@ -3045,6 +3078,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 24.13) (xy 36.83 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bdf424e-9443-4072-bd6a-9932e2359b70")
+	)
+	(wire
+		(pts
 			(xy 125.73 96.52) (xy 143.51 96.52)
 		)
 		(stroke
@@ -3092,6 +3135,16 @@
 			(type default)
 		)
 		(uuid "a706eac6-eedb-49f0-bf68-2d529b66e128")
+	)
+	(wire
+		(pts
+			(xy 36.83 36.83) (xy 39.37 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8161e64-d277-4133-89c9-d466869e1340")
 	)
 	(wire
 		(pts
@@ -3172,6 +3225,16 @@
 			(type default)
 		)
 		(uuid "ba91ebb9-5288-497f-a873-508c68b3c1cd")
+	)
+	(wire
+		(pts
+			(xy 39.37 24.13) (xy 39.37 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb3245dd-ee5f-41d5-83c4-ed306957377d")
 	)
 	(wire
 		(pts
@@ -3305,7 +3368,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 26.67) (xy 17.78 26.67)
+			(xy 26.67 36.83) (xy 17.78 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3315,7 +3378,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 24.13) (xy 31.75 24.13)
+			(xy 26.67 24.13) (xy 36.83 24.13)
 		)
 		(stroke
 			(width 0)
@@ -3841,134 +3904,6 @@
 		(uuid "fc377ecf-3261-4d91-94fd-087ba6569f7d")
 	)
 	(symbol
-		(lib_id "BAT-HLD-013-SMT-TR:BAT-HLD-013-SMT-TR")
-		(at 31.75 24.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "07265937-e15e-4a60-a32f-9122e88721c3")
-		(property "Reference" "BT1"
-			(at 48.26 24.1299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BAT-HLD-013-SMT-TR"
-			(at 48.26 26.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MyParts:BATHLD013SMTTR"
-			(at 48.26 119.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.te.com/en/product-BAT-HLD-013-SMT-TR.html"
-			(at 48.26 219.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "CR2032 Battery Holder, 1 Position, Horizontal, Nickel (Ni)"
-			(at 31.75 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "6.5"
-			(at 48.26 419.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "712-BAT-HLD-013SMTTR"
-			(at 48.26 519.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-013-SMT-TR?qs=4ASt3YYao0UKhYWrBts7tw%3D%3D"
-			(at 48.26 619.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "TE Connectivity"
-			(at 48.26 719.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "BAT-HLD-013-SMT-TR"
-			(at 48.26 819.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f479ef1d-7a1d-440f-855c-5e944035df23")
-		)
-		(pin "1"
-			(uuid "40837bee-b8e6-4682-a6a0-f153a2cb2ec9")
-		)
-		(instances
-			(project ""
-				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
-					(reference "BT1")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "BT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 157.48 147.32 90)
 		(unit 1)
@@ -4199,6 +4134,82 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "LED1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CST2032:CST2032")
+		(at 38.1 30.48 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1b1f0fdc-c330-47d1-9155-5924aa436713")
+		(property "Reference" "BT1"
+			(at 41.91 29.2099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CST2032"
+			(at 41.91 31.7499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MyParts:CST2032"
+			(at 38.1 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 38.1 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bf651582-3a20-4124-ae9c-9c6b062af3ac")
+		)
+		(pin "3"
+			(uuid "b144fce8-180c-43e0-a155-33786324cd34")
+		)
+		(pin "1"
+			(uuid "fa0aaead-b86d-498a-82b0-20a5962f6444")
+		)
+		(pin "4"
+			(uuid "ccb7fca0-5f04-4929-b1b2-48aa071017c6")
+		)
+		(instances
+			(project ""
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
+					(reference "BT1")
 					(unit 1)
 				)
 			)
@@ -5101,7 +5112,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 26.67 36.83 180)
+		(at 26.67 46.99 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5110,7 +5121,7 @@
 		(fields_autoplaced yes)
 		(uuid "4ca5cef7-1108-43e4-8311-3f77588990e8")
 		(property "Reference" "#FLG02"
-			(at 26.67 38.735 0)
+			(at 26.67 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5119,7 +5130,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 29.21 38.0999 0)
+			(at 29.21 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5128,7 +5139,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 26.67 36.83 0)
+			(at 26.67 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5137,7 +5148,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 26.67 36.83 0)
+			(at 26.67 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5146,7 +5157,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 26.67 36.83 0)
+			(at 26.67 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7104,7 +7115,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 17.78 36.83 0)
+		(at 17.78 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7113,7 +7124,7 @@
 		(fields_autoplaced yes)
 		(uuid "c6692b89-7f7f-4f6d-9312-a29dadc5ce7f")
 		(property "Reference" "#PWR019"
-			(at 17.78 43.18 0)
+			(at 17.78 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7122,7 +7133,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 17.78 41.91 0)
+			(at 17.78 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7130,7 +7141,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 17.78 36.83 0)
+			(at 17.78 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7139,7 +7150,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 17.78 36.83 0)
+			(at 17.78 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7148,7 +7159,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 17.78 36.83 0)
+			(at 17.78 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
