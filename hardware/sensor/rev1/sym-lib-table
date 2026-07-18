@@ -32,4 +32,5 @@
   (lib (name "APTD1608LSURCK")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/APTD1608LSURCK.kicad_sym")(options "")(descr ""))
   (lib (name "PTS636SMG25JSMTR_LFS")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/PTS636SMG25JSMTR_LFS.kicad_sym")(options "")(descr ""))
   (lib (name "CST2032")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/CST2032.kicad_sym")(options "")(descr ""))
+  (lib (name "MountingHole_1.7mm")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/MountingHole_1.7mm.kicad_sym")(options "")(descr ""))
 )

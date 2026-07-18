@@ -4140,82 +4140,6 @@
 		)
 	)
 	(symbol
-		(lib_id "CST2032:CST2032")
-		(at 38.1 30.48 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1b1f0fdc-c330-47d1-9155-5924aa436713")
-		(property "Reference" "BT1"
-			(at 41.91 29.2099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "CST2032"
-			(at 41.91 31.7499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MyParts:CST2032"
-			(at 38.1 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 38.1 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "bf651582-3a20-4124-ae9c-9c6b062af3ac")
-		)
-		(pin "3"
-			(uuid "b144fce8-180c-43e0-a155-33786324cd34")
-		)
-		(pin "1"
-			(uuid "fa0aaead-b86d-498a-82b0-20a5962f6444")
-		)
-		(pin "4"
-			(uuid "ccb7fca0-5f04-4929-b1b2-48aa071017c6")
-		)
-		(instances
-			(project ""
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "BT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 39.37 157.48 90)
 		(unit 1)
@@ -7475,6 +7399,82 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CST2032:CST2032")
+		(at 38.1 30.48 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d63142b9-8047-4391-b262-3175b05667df")
+		(property "Reference" "BT1"
+			(at 41.91 29.2099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CST2032"
+			(at 41.91 31.7499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MyParts:CST2032"
+			(at 38.1 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 38.1 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "470a6952-efd2-4a76-8e42-81afa622d508")
+		)
+		(pin "4"
+			(uuid "bb14a266-081a-4526-ba9f-cae08f121fcb")
+		)
+		(pin "1"
+			(uuid "cd2c95e3-3c92-404b-9287-4fc78e7e9397")
+		)
+		(pin "3"
+			(uuid "f6c9ca24-1ad7-41e6-9b51-e64371d2ced6")
+		)
+		(instances
+			(project ""
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
+					(reference "BT1")
 					(unit 1)
 				)
 			)

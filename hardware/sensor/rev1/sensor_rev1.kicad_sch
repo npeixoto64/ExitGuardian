@@ -11,23 +11,20 @@
 		(company "NPX4U")
 	)
 	(lib_symbols
-		(symbol "Mechanical:MountingHole"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim yes)
-			(in_bom no)
+		(symbol "MountingHole_1.7mm:MountingHole_1.7mm"
+			(exclude_from_sim no)
+			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "H"
-				(at 0 5.08 0)
+			(property "Reference" "M"
+				(at -1.778 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
+			(property "Value" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -43,7 +40,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -52,7 +49,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Mounting Hole without connection"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -61,30 +58,12 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "mounting hole"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "MountingHole*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MountingHole_0_1"
+			(symbol "MountingHole_1.7mm_0_1"
 				(circle
 					(center 0 0)
-					(radius 1.27)
+					(radius 1.7961)
 					(stroke
-						(width 1.27)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -146,17 +125,17 @@
 		(uuid "bf58182e-5e2c-481e-afbf-cb41cc662f13")
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 25.4 54.61 0)
+		(lib_id "MountingHole_1.7mm:MountingHole_1.7mm")
+		(at 33.02 44.45 0)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "015bcf54-f2bc-46e5-ae6a-9456b877f5b4")
-		(property "Reference" "H3"
-			(at 27.94 53.3399 0)
+		(uuid "002a1cf8-6018-4624-928b-12494458e186")
+		(property "Reference" "M2"
+			(at 35.56 43.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -164,8 +143,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 27.94 55.8799 0)
+		(property "Value" "~"
+			(at 35.56 45.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -173,8 +152,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm"
-			(at 25.4 54.61 0)
+		(property "Footprint" "MyParts:MountingHole_1.7mm"
+			(at 33.02 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -182,8 +161,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 25.4 54.61 0)
+		(property "Datasheet" ""
+			(at 33.02 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -191,72 +170,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 25.4 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "gateway"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 25.4 45.72 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "691bba68-3857-4db2-bc85-0f5523faa193")
-		(property "Reference" "H1"
-			(at 27.94 44.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 27.94 46.9899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm"
-			(at 25.4 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 25.4 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 25.4 45.72 0)
+		(property "Description" ""
+			(at 33.02 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -267,24 +182,24 @@
 		(instances
 			(project ""
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f"
-					(reference "H1")
+					(reference "M2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 46.99 45.72 0)
+		(lib_id "MountingHole_1.7mm:MountingHole_1.7mm")
+		(at 59.69 44.45 0)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7fe3501b-4ef0-424f-8968-fc50f4a0ba21")
-		(property "Reference" "H2"
-			(at 49.53 44.4499 0)
+		(uuid "cc607f93-b42e-43bf-b95b-2b85a8e67134")
+		(property "Reference" "M5"
+			(at 62.23 43.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -292,8 +207,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 49.53 46.9899 0)
+		(property "Value" "~"
+			(at 62.23 45.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -301,8 +216,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm"
-			(at 46.99 45.72 0)
+		(property "Footprint" "MyParts:MountingHole_1.7mm"
+			(at 59.69 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -310,8 +225,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 46.99 45.72 0)
+		(property "Datasheet" ""
+			(at 59.69 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -319,8 +234,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 46.99 45.72 0)
+		(property "Description" ""
+			(at 59.69 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -329,26 +244,26 @@
 			)
 		)
 		(instances
-			(project "gateway"
+			(project ""
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f"
-					(reference "H2")
+					(reference "M5")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 46.99 54.61 0)
+		(lib_id "MountingHole_1.7mm:MountingHole_1.7mm")
+		(at 68.58 44.45 0)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a08e8828-d639-4335-b056-ec687ccda680")
-		(property "Reference" "H4"
-			(at 49.53 53.3399 0)
+		(uuid "de8a0710-bba5-4bbd-afd6-5c0394e87c99")
+		(property "Reference" "M6"
+			(at 71.12 43.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -356,8 +271,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 49.53 55.8799 0)
+		(property "Value" "~"
+			(at 71.12 45.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -365,8 +280,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm"
-			(at 46.99 54.61 0)
+		(property "Footprint" "MyParts:MountingHole_1.7mm"
+			(at 68.58 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -374,8 +289,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 46.99 54.61 0)
+		(property "Datasheet" ""
+			(at 68.58 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -383,8 +298,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 46.99 54.61 0)
+		(property "Description" ""
+			(at 68.58 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -393,9 +308,73 @@
 			)
 		)
 		(instances
-			(project "gateway"
+			(project ""
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f"
-					(reference "H4")
+					(reference "M6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MountingHole_1.7mm:MountingHole_1.7mm")
+		(at 24.13 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eaeb7edc-3b66-4b0b-8056-1fc03d8e5c06")
+		(property "Reference" "M1"
+			(at 26.67 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 26.67 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MyParts:MountingHole_1.7mm"
+			(at 24.13 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 24.13 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f"
+					(reference "M1")
 					(unit 1)
 				)
 			)
