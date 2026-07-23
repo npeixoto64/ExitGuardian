@@ -1858,12 +1858,6 @@
 		(uuid "2f04fe04-3c2f-41a9-a9b7-18d10d454bf9")
 	)
 	(junction
-		(at 121.92 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "301ada74-71f7-45e0-baf7-f14740606c23")
-	)
-	(junction
 		(at 163.83 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2327,16 +2321,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 33.02) (xy 121.92 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48e23a39-b9b7-4501-a7b5-c470b1cc6028")
-	)
-	(wire
-		(pts
 			(xy 92.71 45.72) (xy 97.79 45.72)
 		)
 		(stroke
@@ -2514,16 +2498,6 @@
 			(type default)
 		)
 		(uuid "75eea3b9-6795-4a4f-9b56-aae502e267ec")
-	)
-	(wire
-		(pts
-			(xy 130.81 44.45) (xy 130.81 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76af3afd-42a5-449f-b4fb-220f44b86cc6")
 	)
 	(wire
 		(pts
@@ -2827,7 +2801,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 27.94) (xy 121.92 33.02)
+			(xy 121.92 27.94) (xy 121.92 54.61)
 		)
 		(stroke
 			(width 0)
@@ -2884,16 +2858,6 @@
 			(type default)
 		)
 		(uuid "c11e520e-7de9-425c-b793-8fa022c0f128")
-	)
-	(wire
-		(pts
-			(xy 121.92 33.02) (xy 121.92 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c30d48c0-3b7b-4e32-9e76-8c92ca2e3c34")
 	)
 	(wire
 		(pts
@@ -3114,16 +3078,6 @@
 			(type default)
 		)
 		(uuid "ece8939b-a17e-4422-b3bc-063dd3cdbdee")
-	)
-	(wire
-		(pts
-			(xy 130.81 36.83) (xy 130.81 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eef124b8-06f7-47a6-9d51-5a1a5e52d067")
 	)
 	(wire
 		(pts
@@ -4075,78 +4029,6 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
 					(reference "#PWR051")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 130.81 49.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "347ef52c-bbd3-437c-ae8f-26fb00312522")
-		(property "Reference" "#PWR049"
-			(at 130.81 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 130.81 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "85210f5b-d14e-4d1d-afa3-0c155b076924")
-		)
-		(instances
-			(project "rf_rev1"
-				(path "/50a12035-955f-49d8-a6b8-24fcd6d450af"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -6252,118 +6134,6 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
 					(reference "#PWR058")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 130.81 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c9199088-a7cb-423f-9b24-7071f74a4781")
-		(property "Reference" "C13"
-			(at 134.62 39.3699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 134.62 41.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 131.7752 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 130.81 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 130.81 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "81-GXT155R60J105KE1D"
-			(at 130.81 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R60J105KE01D?qs=d0WKAl%252BL4Kb4JfV7cPss8A%3D%3D"
-			(at 130.81 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Murata"
-			(at 130.81 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "GXT155R60J105KE01D "
-			(at 130.81 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ba119e06-9003-488a-80c2-d2cf05b73dd9")
-		)
-		(pin "1"
-			(uuid "892dbff8-07f2-4bf2-80fd-c2f96e381d18")
-		)
-		(instances
-			(project "rf_rev1"
-				(path "/50a12035-955f-49d8-a6b8-24fcd6d450af"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C13")
 					(unit 1)
 				)
 			)
