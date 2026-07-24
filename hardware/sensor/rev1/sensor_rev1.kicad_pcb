@@ -1874,280 +1874,6 @@
 			)
 		)
 	)
-	(footprint "MyParts:LEDM168X95N"
-		(layer "F.Cu")
-		(uuid "24487ba3-99cc-4e37-82d9-832c626f721b")
-		(at 241.96 77.0025 90)
-		(descr "APTD1608LSURCK")
-		(tags "LED")
-		(property "Reference" "LED1"
-			(at -0.0065 1.8 90)
-			(layer "F.SilkS")
-			(uuid "13ec94fb-72ac-4512-a99b-0a4401482aaf")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
-				)
-			)
-		)
-		(property "Value" "APTD1608LSURCK"
-			(at 0 0 90)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "1abf7368-8231-403a-840d-19c69a72ab04")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.kingbrightusa.com/images/catalog/SPEC/APTD1608LSURCK.pdf"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "83f6c65a-2f24-4602-9db9-4e10249ba502")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "Standard LEDs - SMD 0603 Dome Lens LED Red- 630nm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6fa49fe6-4ec0-47a2-922b-9d2e9825bbde")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Height" "0.95"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d1693876-564a-489f-b36b-50e0e41b5449")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Mouser Part Number" "604-APTD1608LSURCK"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3b2e5fa1-579f-49a2-9e6c-36ace5c3d663")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Kingbright/APTD1608LSURCK?qs=AQlKX63v8Rs2fs08MVpUog%3D%3D"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2675c11e-ca22-4a1a-b07b-b9bb0b6275d1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer_Name" "Kingbright"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "339594ed-ebb3-410a-a629-fb058d851ee2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" "APTD1608LSURCK"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "81674520-19c2-4f47-acdb-ff7ef3d72a1f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/15a47cbf-4335-4714-ad8c-26951158bbb0")
-		(sheetname "/MCU/")
-		(sheetfile "mcu_rev1.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start 0.8 -0.4)
-			(end -1.175 -0.4)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "59eaa037-1557-4321-be14-ed55e7800395")
-		)
-		(fp_line
-			(start -0.8 0.4)
-			(end 0.8 0.4)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "4af0d972-6e60-4cc9-bf44-238b82522967")
-		)
-		(fp_line
-			(start 1.65 -0.65)
-			(end 1.65 0.65)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "bc186a56-9166-4398-b1f5-ee3db38e1469")
-		)
-		(fp_line
-			(start -1.65 -0.65)
-			(end 1.65 -0.65)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "f316d09e-848a-4889-af0b-474c42cb2365")
-		)
-		(fp_line
-			(start 1.65 0.65)
-			(end -1.65 0.65)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "9e7a02e5-958b-4c2f-8e8c-cfe0bb0c49f2")
-		)
-		(fp_line
-			(start -1.65 0.65)
-			(end -1.65 -0.65)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "6360e928-a108-4c2f-93bb-2dc27908bb04")
-		)
-		(fp_line
-			(start 0.8 -0.4)
-			(end 0.8 0.4)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "59daeea4-4301-42c5-a718-1f173d1f2d36")
-		)
-		(fp_line
-			(start -0.8 -0.4)
-			(end 0.8 -0.4)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "65bddf67-d6c8-4d70-85d4-3dd979fb6ff2")
-		)
-		(fp_line
-			(start -0.8 -0.075)
-			(end -0.475 -0.4)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "baa9773f-28a6-4d83-9f00-426812442c49")
-		)
-		(fp_line
-			(start 0.8 0.4)
-			(end -0.8 0.4)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "3aa527d5-3d11-47d9-804b-aa41f587e050")
-		)
-		(fp_line
-			(start -0.8 0.4)
-			(end -0.8 -0.4)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "6874df3c-9d87-48af-b500-ae2d9ce5f374")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 1.8 90)
-			(layer "F.Fab")
-			(uuid "06f3e526-b825-4c19-98ad-8031c1bc5f46")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
-				)
-			)
-		)
-		(pad "1" smd rect
-			(at -0.85 0 180)
-			(size 0.65 1.1)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
-			(pinfunction "K")
-			(pintype "passive")
-			(uuid "92df7bfb-1a29-46f1-91cf-89c4895eff40")
-		)
-		(pad "2" smd rect
-			(at 0.85 0 180)
-			(size 0.65 1.1)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 30 "Net-(LED1-A)")
-			(pinfunction "A")
-			(pintype "passive")
-			(uuid "51b24251-8555-4971-a2bc-872735f7d3aa")
-		)
-		(embedded_fonts no)
-		(model "${KIPRJMOD}/libraries/3dmodels/MyParts/APTD1608LSURCK.stp"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -90 -0 -0)
-			)
-		)
-	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "355d8d6c-d57a-4cc4-b57f-b553f5725030")
@@ -11441,7 +11167,7 @@
 				)
 			)
 		)
-		(property "Value" "50"
+		(property "Value" "100"
 			(at -0.84 1.899 0)
 			(layer "F.Fab")
 			(uuid "39118820-4862-4ced-9803-9e91fc4f7efe")
@@ -12134,6 +11860,292 @@
 		)
 		(embedded_fonts no)
 	)
+	(footprint "MyParts:VLMS3000GS08"
+		(layer "F.Cu")
+		(uuid "ef133529-8d26-4544-8eba-967fbdf2c0c9")
+		(at 245.32 80.56)
+		(descr "VLMS3000-GS08-1")
+		(tags "LED")
+		(property "Reference" "LED1"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "be762f45-01ec-4cae-b163-65bc6744f7e2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "VLMS3000-GS08"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6655a766-5853-4a13-b1d5-2bfc2c2df253")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/81322/vlms30vlmo30vlmy30.pdf"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2ad858ba-0b61-4230-8cc0-8447c958c748")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Standard LEDs - SMD Red 2.8mcd 624-636nm 1.8V 60deg PLCC-2"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e39b2e02-7728-46ae-9a63-f16d15aeab8b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "1.85"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1a1c9568-9817-47c9-b289-d5e6a2af0223")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "78-VLMS3000-GS08"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "db4b8598-f951-4653-a1ab-37d190f239d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/VLMS3000-GS08?qs=nQ9vpdMXC6CgDkoB8OSxUw%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b508489c-3fea-4b40-98a1-f53085539612")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d7447a79-02d9-4f06-bd4a-e8ec51c21a61")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "VLMS3000-GS08"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3fc801ba-5ecc-46d9-a1d1-298603bcc347")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/3901349f-05e2-467b-87d5-59787e1ab229")
+		(sheetname "/MCU/")
+		(sheetfile "mcu_rev1.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -2.8 0)
+			(end -2.8 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5c2f9cd7-4a06-47a2-9cb4-23a0cd9d0b13")
+		)
+		(fp_line
+			(start -2.7 0)
+			(end -2.7 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3108ae82-5d29-489e-b19c-0cbe563d8773")
+		)
+		(fp_arc
+			(start -2.8 0)
+			(mid -2.75 -0.05)
+			(end -2.7 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "93b5d5a5-1d68-473a-bf60-8cb2d6f84954")
+		)
+		(fp_arc
+			(start -2.7 0)
+			(mid -2.75 0.05)
+			(end -2.8 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a7676df9-6b5c-4265-9884-078b2920d126")
+		)
+		(fp_line
+			(start -3.275 -2.4)
+			(end 3.275 -2.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "325d8205-811d-4fba-9b9b-97f24d5d8abe")
+		)
+		(fp_line
+			(start -3.275 2.4)
+			(end -3.275 -2.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e7877a15-0d62-4bd4-a45b-079ef92ecccc")
+		)
+		(fp_line
+			(start 3.275 -2.4)
+			(end 3.275 2.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d47827ad-7d18-4f97-9030-046eb2646dc4")
+		)
+		(fp_line
+			(start 3.275 2.4)
+			(end -3.275 2.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "9a3ac261-42e3-483b-b42f-3e19a2a4ab80")
+		)
+		(fp_line
+			(start -1.5 -1.4)
+			(end 1.5 -1.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8c6cc89c-9207-4855-8964-8a362fa574c9")
+		)
+		(fp_line
+			(start -1.5 1.4)
+			(end -1.5 -1.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "987f06a2-f691-4feb-a577-071277a1c7e9")
+		)
+		(fp_line
+			(start 1.5 -1.4)
+			(end 1.5 1.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3cc293d2-f98b-4f10-91ad-7e6e44397ce5")
+		)
+		(fp_line
+			(start 1.5 1.4)
+			(end -1.5 1.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "67d9f91d-babc-4fa4-b413-cc3fd8d05539")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "51c7c530-e055-4f68-8543-e416619b72b4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -1.4 0)
+			(size 1.75 2.7)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 1 "GND")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "af0ea6b9-d868-4cc5-8d9b-8ad88a2e186a")
+		)
+		(pad "2" smd rect
+			(at 1.4 0)
+			(size 1.75 2.7)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 30 "Net-(LED1-A)")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "4152a43b-449c-4363-be96-b7201c08c954")
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/libraries/3dmodels/MyParts/VLMS3000-GS08.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Inductor_SMD:L_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "f19b911c-1749-4aaf-8db1-13f056d7836b")
@@ -12427,7 +12439,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d17d02d8-71d6-48c6-b660-4d5d531e08cb")
+			(uuid "4a983cfd-f8fe-4a1f-a8aa-10ce5da73790")
 			(effects
 				(font
 					(size 1 1)
@@ -12440,7 +12452,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e5c657a2-a5d2-4349-8720-83d45965002d")
+			(uuid "edd359cf-f1bb-43f3-b40e-875d4e0fa7c6")
 			(effects
 				(font
 					(size 1 1)
@@ -12453,7 +12465,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fbee024a-31a0-4be8-bc7e-78829c0baba5")
+			(uuid "577573d9-0d98-4551-8702-30f3c4ef14aa")
 			(effects
 				(font
 					(size 1 1)
@@ -12466,7 +12478,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f8aba3ce-001c-4db2-b540-eb9beadd1388")
+			(uuid "3f9dad49-9f6f-4937-8dc0-dd242050f598")
 			(effects
 				(font
 					(size 1 1)
@@ -12479,7 +12491,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4fa337e5-6fa0-4b9f-989d-f7af6649b2d1")
+			(uuid "9eab0dcc-f14d-4eac-9182-ab47f0d508f2")
 			(effects
 				(font
 					(size 1 1)
@@ -12499,7 +12511,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "2f2d3a02-a6b2-4b3b-b3de-f27e41993d61")
+			(uuid "983e5dcc-dec7-4dab-8fd6-de7a48a173a2")
 		)
 		(fp_line
 			(start -2.4 0.1)
@@ -12509,7 +12521,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "6369b72e-6c1d-4b32-a8f3-15d280a40ee5")
+			(uuid "e4411ab2-ef75-4a20-b407-34112a284b59")
 		)
 		(fp_line
 			(start -0.7 -0.8)
@@ -12519,7 +12531,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "39a2e55e-5238-4af5-b9a7-14e08bbd380a")
+			(uuid "cd4839f2-1e3b-4f75-b022-c85bf9ebf0a4")
 		)
 		(fp_line
 			(start -0.7 0.8)
@@ -12529,7 +12541,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "20c0742d-9d71-4f2c-95d2-805d2fcf7f24")
+			(uuid "ef446117-03d2-4c57-bc7a-3b1e809f40c3")
 		)
 		(fp_arc
 			(start -2.4 -0.1)
@@ -12540,7 +12552,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "24716705-6dde-444d-9a25-da1cfd00ee01")
+			(uuid "f898e3eb-c244-4491-9dd1-1235bfc9c30f")
 		)
 		(fp_arc
 			(start -2.4 0.1)
@@ -12551,7 +12563,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "7a411fe3-e080-4797-8d77-da0ddf16d04d")
+			(uuid "878b32dc-b648-4b3c-aacd-fe0cf8c50a20")
 		)
 		(fp_line
 			(start -2.854 -1.902)
@@ -12561,7 +12573,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "bf3342e7-3441-4783-acb7-5ec91e2e9fca")
+			(uuid "5873bb33-1698-4749-8075-772fb4be8390")
 		)
 		(fp_line
 			(start -2.854 1.902)
@@ -12571,7 +12583,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "b0b647d3-e85b-44f3-af08-e566d88dfd76")
+			(uuid "b18094ff-6ec1-497e-bc92-ddeeb5904c65")
 		)
 		(fp_line
 			(start 2.854 -1.902)
@@ -12581,7 +12593,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "3b8c0c15-0d1f-48e4-9d26-f9fd053045fe")
+			(uuid "036d7483-bff3-43b2-8209-fd6b58be205d")
 		)
 		(fp_line
 			(start 2.854 1.902)
@@ -12591,7 +12603,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "255ad0af-52b5-4545-bffb-d4c1555efa1e")
+			(uuid "4a61c752-f648-4ef4-8250-a8001abc4247")
 		)
 		(fp_line
 			(start -1.6 -0.8)
@@ -12601,7 +12613,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "19515f47-b89c-42cf-abe5-eb3d2265292c")
+			(uuid "8cfd88a2-cad2-45ba-9056-6535df9885c0")
 		)
 		(fp_line
 			(start -1.6 0.8)
@@ -12611,7 +12623,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "cccc54e2-013c-4f0d-b8de-6ec6f6238b92")
+			(uuid "dadf064f-4d8c-4222-86bb-c36b6a532c8b")
 		)
 		(fp_line
 			(start 1.6 -0.8)
@@ -12621,7 +12633,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "3d27d53c-5533-4148-bb51-fd580b0f9e76")
+			(uuid "433ba32a-cb7f-4651-b2d9-acb71943e346")
 		)
 		(fp_line
 			(start 1.6 0.8)
@@ -12631,7 +12643,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "bfd842d7-d552-43a9-b522-189a8252b7e0")
+			(uuid "56268a51-2fce-418f-a365-7cbb763c8cd6")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 0)
@@ -13546,8 +13558,8 @@
 		)
 	)
 	(gr_rect
-		(start 161.39 57.79)
-		(end 166.39 69.79)
+		(start 209.37 62.75)
+		(end 214.37 74.75)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -13687,7 +13699,7 @@
 		(uuid "f10c3770-a774-4c1f-95ef-33e5dbcf44fd")
 	)
 	(gr_text "Exit Guardian\nSensor REV1.0\nNPX4U 2026"
-		(at 166.26 43.45 0)
+		(at 223.67 72.89 0)
 		(layer "F.SilkS")
 		(uuid "e6163c4e-d122-41a3-ae29-b469a9b9fe0e")
 		(effects
