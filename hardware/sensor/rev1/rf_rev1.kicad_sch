@@ -1131,198 +1131,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GRM31CR61A107MEA8L:GRM31CR61A107MEA8L"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 8.89 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "GRM31CR61A107MEA8L"
-				(at 8.89 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "GRM31x"
-				(at 8.89 -96.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61A107MEA8-01A.pdf"
-				(at 8.89 -196.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "MLCC, 1206"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "1.25"
-				(at 8.89 -396.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "81-GRM31CR61A107MA8L"
-				(at 8.89 -496.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GRM31CR61A107MEA8L?qs=hd1VzrDQEGidurXiDTJOCg%3D%3D"
-				(at 8.89 -596.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Murata Electronics"
-				(at 8.89 -696.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "GRM31CR61A107MEA8L"
-				(at 8.89 -796.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "GRM31CR61A107MEA8L_1_1"
-				(polyline
-					(pts
-						(xy 5.08 0) (xy 5.588 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.588 2.54) (xy 5.588 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.112 2.54) (xy 7.112 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.112 0) (xy 7.62 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 0 180)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "NX3225GA-26_000M-STD-CRG-2:NX3225GA-26.000M-STD-CRG-2"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1874,12 +1682,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "414bde89-c4f2-4bc8-ab5a-e56fca43bd41")
-	)
-	(junction
-		(at 48.26 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "60232be6-de5e-436c-8c56-5b88cbe9fb0d")
 	)
 	(junction
 		(at 165.1 76.2)
@@ -2701,16 +2503,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 54.61) (xy 48.26 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4dd87be-ec59-4bb7-ab71-5b7226d38e19")
-	)
-	(wire
-		(pts
 			(xy 92.71 111.76) (xy 92.71 110.49)
 		)
 		(stroke
@@ -2758,16 +2550,6 @@
 			(type default)
 		)
 		(uuid "afbd46d9-0a75-4b71-b5d4-6e6bdecb23f7")
-	)
-	(wire
-		(pts
-			(xy 48.26 36.83) (xy 48.26 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b28397a6-b8ce-4bea-a046-a6002b7ba792")
 	)
 	(wire
 		(pts
@@ -3639,8 +3421,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1aaacee3-1ada-4a0f-be72-4de56fcb0f40")
-		(property "Reference" "R13"
-			(at 97.536 35.56 0)
+		(property "Reference" "R171"
+			(at 96.266 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3735,7 +3517,7 @@
 			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "R13")
+					(reference "R171")
 					(unit 1)
 				)
 			)
@@ -4042,10 +3824,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3c35d594-a28a-4a61-b194-8fbcdd04361f")
 		(property "Reference" "IC2"
-			(at 120.65 68.5098 0)
+			(at 114.046 57.404 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4053,7 +3834,7 @@
 			)
 		)
 		(property "Value" "CC1101RGPR"
-			(at 120.65 71.0498 0)
+			(at 114.046 59.944 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4338,7 +4119,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "458dbc75-3245-41e0-8740-fa313a4549ae")
-		(property "Reference" "C17"
+		(property "Reference" "C11"
 			(at 152.4 119.3799 0)
 			(effects
 				(font
@@ -4434,7 +4215,7 @@
 			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C17")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -4559,7 +4340,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4968db07-1e78-40fb-9e40-dd36dc8478d3")
-		(property "Reference" "C19"
+		(property "Reference" "C101"
 			(at 137.16 139.6999 0)
 			(effects
 				(font
@@ -4655,7 +4436,7 @@
 			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C19")
+					(reference "C101")
 					(unit 1)
 				)
 			)
@@ -4941,7 +4722,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7ab0b0c7-d4f6-479b-a322-1ef2670ea9e2")
-		(property "Reference" "C14"
+		(property "Reference" "C6"
 			(at 143.51 62.2299 0)
 			(effects
 				(font
@@ -5037,7 +4818,7 @@
 			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C14")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -5125,7 +4906,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84445158-e316-48cd-8022-a34614f66c9f")
-		(property "Reference" "C11"
+		(property "Reference" "C51"
 			(at 72.39 91.4399 0)
 			(effects
 				(font
@@ -5221,7 +5002,7 @@
 			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C11")
+					(reference "C51")
 					(unit 1)
 				)
 			)
@@ -5294,78 +5075,6 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
 					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 48.26 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "95e6d43b-7444-493f-b58a-536407a3a9eb")
-		(property "Reference" "#PWR048"
-			(at 48.26 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 48.26 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 48.26 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 48.26 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 48.26 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "816f2900-dd9f-4444-a015-efd000b81c8b")
-		)
-		(instances
-			(project "rf_rev1"
-				(path "/50a12035-955f-49d8-a6b8-24fcd6d450af"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -5597,7 +5306,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "abff309a-d73d-4f9c-a09f-a23ce6297275")
-		(property "Reference" "C15"
+		(property "Reference" "C9"
 			(at 129.54 90.1699 0)
 			(effects
 				(font
@@ -5693,7 +5402,7 @@
 			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C15")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -5853,7 +5562,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c1d8d825-ac9e-46b4-a45f-79ed6b18f326")
-		(property "Reference" "C18"
+		(property "Reference" "C81"
 			(at 66.04 139.6999 0)
 			(effects
 				(font
@@ -5949,7 +5658,7 @@
 			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C18")
+					(reference "C81")
 					(unit 1)
 				)
 			)
@@ -6624,7 +6333,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db6d3d33-db8b-4830-a1a8-dd0552c98214")
-		(property "Reference" "C16"
+		(property "Reference" "C10"
 			(at 143.51 90.1699 0)
 			(effects
 				(font
@@ -6720,7 +6429,7 @@
 			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C16")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -6943,134 +6652,6 @@
 		)
 	)
 	(symbol
-		(lib_id "GRM31CR61A107MEA8L:GRM31CR61A107MEA8L")
-		(at 48.26 54.61 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e9aa702d-e03a-49db-a1a8-199171f6fe14")
-		(property "Reference" "C7"
-			(at 52.07 46.9899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "GRM31CR61A107MEA8L"
-			(at 52.07 49.5299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "GRM31x"
-			(at 144.45 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61A107MEA8-01A.pdf"
-			(at 244.45 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "MLCC, 1206"
-			(at 48.26 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.25"
-			(at 444.45 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "81-GRM31CR61A107MA8L"
-			(at 544.45 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GRM31CR61A107MEA8L?qs=hd1VzrDQEGidurXiDTJOCg%3D%3D"
-			(at 644.45 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Murata Electronics"
-			(at 744.45 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "GRM31CR61A107MEA8L"
-			(at 844.45 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b4274420-20f9-4bd2-a963-16130d6541c3")
-		)
-		(pin "1"
-			(uuid "f46725df-92f1-4b19-8a08-b3aafeb2423a")
-		)
-		(instances
-			(project ""
-				(path "/50a12035-955f-49d8-a6b8-24fcd6d450af"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "NX3225GA-26_000M-STD-CRG-2:NX3225GA-26.000M-STD-CRG-2")
 		(at 78.74 128.27 0)
 		(unit 1)
@@ -7145,7 +6726,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D"
+		(property "Supplier Link" "https://www.mouser.co.uk/en/ProductDetail/NDK/STDCRG2-26M?qs=Tc%252BHE9vUsnu9%252BZcoUal0nA%3D%3D"
 			(at 118.11 723.19 0)
 			(effects
 				(font
@@ -7212,7 +6793,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eeec1f07-4af5-45b8-a540-d3d8d9557c29")
-		(property "Reference" "C12"
+		(property "Reference" "C5"
 			(at 115.57 36.8299 0)
 			(effects
 				(font
@@ -7308,7 +6889,7 @@
 			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C12")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -7579,7 +7160,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe945822-9e37-45d7-be4d-19d6562aad7b")
-		(property "Reference" "C10"
+		(property "Reference" "C7"
 			(at 58.42 91.4399 0)
 			(effects
 				(font
@@ -7675,7 +7256,7 @@
 			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C10")
+					(reference "C7")
 					(unit 1)
 				)
 			)
