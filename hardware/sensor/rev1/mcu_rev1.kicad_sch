@@ -2410,7 +2410,7 @@
 		)
 		(uuid "470cef1a-71b9-478f-9eba-14391684d5b5")
 	)
-	(text "- Ensure you have test points.\n- Choose the antenna.\n- Add the antenna via.\n- Generate the boom and check that all components can be purchased and also the final price."
+	(text "- Ensure you have test points.\n- Check all MCU pins once again.\n- Check the pull-ups enabled by SW in STM8 HAL library.\n- Generate the boom and check that all components can be purchased and also the final price.\n- Ensure ERC errros and warnings are 0."
 		(exclude_from_sim no)
 		(at 128.524 126.746 0)
 		(effects
