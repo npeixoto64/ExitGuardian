@@ -78,6 +78,7 @@ GPIOs and RAM are preserved in halt mode.
 #### Sensor Unused pins (current consumption)
 Set them as digital outputs and set the value to low state.
 PC0 and PC1 (I2C), connect them to GND because they are pure open drain.
+PB2 => output low
 PB3 => output low
 PC0 => output low
 PC1 => output low
@@ -91,13 +92,17 @@ PA2 => reed
 PA3 => btn
 PB0 => LED
 PB1 => GDO
-PB2 => ADC1_IN16
 PB4 => SPI1_NSS
 PB5 => SPI1_SCK
 PB6 => SPI1_MOSI
 PB7 => SPI1_MISO
 PC5 => USART_TX
 PC6 => USART_RX
+
+#### Measure battery voltage
+Read the internal output reference voltage with the ADC. That voltage is Vrefint = 1.224 V
+The full scale (1023) will be the MCU supply voltage. 1.224 V will be less or equal full scale.
+So: Vdd = (Vrefint x 1023)/ADCvrefint => (1.224 x 1023)/ADCvrefint
 
 ### Sensor 4 Pin Programming Header:
 2.54 mm pin headers
