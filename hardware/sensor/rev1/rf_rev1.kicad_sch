@@ -82,7 +82,7 @@
 					(hide yes)
 				)
 			)
-			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
 				(at 16.51 -594.92 0)
 				(effects
 					(font
@@ -92,7 +92,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer" "Murata Electronics"
+			(property "Manufacturer_Name" "Murata Electronics"
 				(at 16.51 -694.92 0)
 				(effects
 					(font
@@ -102,7 +102,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer Part Number" "BLM18KG601SN1D"
+			(property "Manufacturer_Part_Number" "BLM18KG601SN1D"
 				(at 16.51 -794.92 0)
 				(effects
 					(font
@@ -234,7 +234,7 @@
 					(hide yes)
 				)
 			)
-			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CC1101RGPR?qs=OHhYoCux73lreNWI41kZ9Q%3D%3D"
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CC1101RGPR?qs=OHhYoCux73lreNWI41kZ9Q%3D%3D"
 				(at 34.29 -584.76 0)
 				(effects
 					(font
@@ -244,7 +244,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer" "Texas Instruments"
+			(property "Manufacturer_Name" "Texas Instruments"
 				(at 34.29 -684.76 0)
 				(effects
 					(font
@@ -254,7 +254,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer Part Number" "CC1101RGPR"
+			(property "Manufacturer_Part_Number" "CC1101RGPR"
 				(at 34.29 -784.76 0)
 				(effects
 					(font
@@ -1202,7 +1202,7 @@
 					(hide yes)
 				)
 			)
-			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D"
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D"
 				(at 39.37 -594.92 0)
 				(effects
 					(font
@@ -1212,7 +1212,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer" "NDK"
+			(property "Manufacturer_Name" "NDK"
 				(at 39.37 -694.92 0)
 				(effects
 					(font
@@ -1222,7 +1222,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer Part Number" "NX3225GA-26.000M-STD-CRG-2"
+			(property "Manufacturer_Part_Number" "NX3225GA-26.000M-STD-CRG-2"
 				(at 39.37 -794.92 0)
 				(effects
 					(font
@@ -2998,7 +2998,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
 			(at 154.94 76.2 90)
 			(effects
 				(font
@@ -3007,7 +3007,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer_Name" "Murata"
 			(at 154.94 76.2 90)
 			(effects
 				(font
@@ -3016,7 +3016,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "LQW15AN12NJ80D"
+		(property "Manufacturer_Part_Number" "LQW15AN12NJ80D"
 			(at 154.94 76.2 90)
 			(effects
 				(font
@@ -3253,7 +3253,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H1R0BA01J?qs=ouTquLLW2S5DcHZ7kLUjdg%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H1R0BA01J?qs=ouTquLLW2S5DcHZ7kLUjdg%3D%3D"
 			(at 161.29 81.28 0)
 			(effects
 				(font
@@ -3262,7 +3262,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer_Name" "Murata"
 			(at 161.29 81.28 0)
 			(effects
 				(font
@@ -3271,7 +3271,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "GRM1555C1H1R0BA01J"
+		(property "Manufacturer_Part_Number" "GRM1555C1H1R0BA01J"
 			(at 161.29 81.28 0)
 			(effects
 				(font
@@ -3364,7 +3364,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H120FA01D?qs=ouTquLLW2S4GiX6b03cbUg%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H120FA01D?qs=ouTquLLW2S4GiX6b03cbUg%3D%3D"
 			(at 213.36 81.28 0)
 			(effects
 				(font
@@ -3373,7 +3373,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer_Name" "Murata"
 			(at 213.36 81.28 0)
 			(effects
 				(font
@@ -3382,7 +3382,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "GRM1555C1H120FA01D"
+		(property "Manufacturer_Part_Number" "GRM1555C1H120FA01D"
 			(at 213.36 81.28 0)
 			(effects
 				(font
@@ -3475,7 +3475,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-PA2F5602X?qs=sGAEpiMZZMvdGkrng054t39FRO7iDkA6z1H%252BqyfqNLr9YdfcpMbawA%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-PA2F5602X?qs=sGAEpiMZZMvdGkrng054t39FRO7iDkA6z1H%252BqyfqNLr9YdfcpMbawA%3D%3D"
 			(at 102.87 36.83 0)
 			(effects
 				(font
@@ -3484,7 +3484,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Panasonic"
+		(property "Manufacturer_Name" "Panasonic"
 			(at 102.87 36.83 0)
 			(effects
 				(font
@@ -3493,7 +3493,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "ERJ-PA2F5602X"
+		(property "Manufacturer_Part_Number" "ERJ-PA2F5602X"
 			(at 102.87 36.83 0)
 			(effects
 				(font
@@ -3586,7 +3586,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1E1R5BA01D?qs=ouTquLLW2S6xHAnxxZWZ1w%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1E1R5BA01D?qs=ouTquLLW2S6xHAnxxZWZ1w%3D%3D"
 			(at 165.1 67.31 0)
 			(effects
 				(font
@@ -3595,7 +3595,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer_Name" "Murata"
 			(at 165.1 67.31 0)
 			(effects
 				(font
@@ -3604,7 +3604,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "GRM1555C1E1R5BA01D"
+		(property "Manufacturer_Part_Number" "GRM1555C1E1R5BA01D"
 			(at 165.1 67.31 0)
 			(effects
 				(font
@@ -3696,7 +3696,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
 			(at 154.94 86.36 90)
 			(effects
 				(font
@@ -3705,7 +3705,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer_Name" "Murata"
 			(at 154.94 86.36 90)
 			(effects
 				(font
@@ -3714,7 +3714,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "LQW15AN12NJ80D"
+		(property "Manufacturer_Part_Number" "LQW15AN12NJ80D"
 			(at 154.94 86.36 90)
 			(effects
 				(font
@@ -3890,7 +3890,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CC1101RGPR?qs=OHhYoCux73lreNWI41kZ9Q%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CC1101RGPR?qs=OHhYoCux73lreNWI41kZ9Q%3D%3D"
 			(at 114.3 659.69 0)
 			(effects
 				(font
@@ -3900,7 +3900,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Texas Instruments"
+		(property "Manufacturer_Name" "Texas Instruments"
 			(at 114.3 759.69 0)
 			(effects
 				(font
@@ -3910,7 +3910,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CC1101RGPR"
+		(property "Manufacturer_Part_Number" "CC1101RGPR"
 			(at 114.3 859.69 0)
 			(effects
 				(font
@@ -4061,7 +4061,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H101FA01J?qs=ouTquLLW2S5iwhfDVY6IbQ%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H101FA01J?qs=ouTquLLW2S5iwhfDVY6IbQ%3D%3D"
 			(at 163.83 102.87 0)
 			(effects
 				(font
@@ -4070,7 +4070,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer_Name" "Murata"
 			(at 163.83 102.87 0)
 			(effects
 				(font
@@ -4079,7 +4079,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "GRM1555C1H101FA01J"
+		(property "Manufacturer_Part_Number" "GRM1555C1H101FA01J"
 			(at 163.83 102.87 0)
 			(effects
 				(font
@@ -4173,7 +4173,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 148.59 120.65 0)
 			(effects
 				(font
@@ -4182,7 +4182,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer_Name" "Yageo"
 			(at 148.59 120.65 0)
 			(effects
 				(font
@@ -4191,7 +4191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
 			(at 148.59 120.65 0)
 			(effects
 				(font
@@ -4283,7 +4283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
 			(at 186.69 81.28 90)
 			(effects
 				(font
@@ -4292,7 +4292,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer_Name" "Murata"
 			(at 186.69 81.28 90)
 			(effects
 				(font
@@ -4301,7 +4301,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "LQW15AN12NJ80D"
+		(property "Manufacturer_Part_Number" "LQW15AN12NJ80D"
 			(at 186.69 81.28 90)
 			(effects
 				(font
@@ -4394,7 +4394,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H120FA01D?qs=ouTquLLW2S4GiX6b03cbUg%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H120FA01D?qs=ouTquLLW2S4GiX6b03cbUg%3D%3D"
 			(at 133.35 140.97 0)
 			(effects
 				(font
@@ -4403,7 +4403,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics"
+		(property "Manufacturer_Name" "Murata Electronics"
 			(at 133.35 140.97 0)
 			(effects
 				(font
@@ -4412,7 +4412,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "GRM1555C1H120FA1D"
+		(property "Manufacturer_Part_Number" "GRM1555C1H120FA1D"
 			(at 133.35 140.97 0)
 			(effects
 				(font
@@ -4517,7 +4517,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
 			(at 26.67 631.75 0)
 			(effects
 				(font
@@ -4527,7 +4527,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics"
+		(property "Manufacturer_Name" "Murata Electronics"
 			(at 26.67 731.75 0)
 			(effects
 				(font
@@ -4537,7 +4537,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "BLM18KG601SN1D"
+		(property "Manufacturer_Part_Number" "BLM18KG601SN1D"
 			(at 26.67 831.75 0)
 			(effects
 				(font
@@ -4776,7 +4776,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 139.7 63.5 0)
 			(effects
 				(font
@@ -4785,7 +4785,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer_Name" "Yageo"
 			(at 139.7 63.5 0)
 			(effects
 				(font
@@ -4794,7 +4794,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
 			(at 139.7 63.5 0)
 			(effects
 				(font
@@ -4960,7 +4960,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 68.58 92.71 0)
 			(effects
 				(font
@@ -4969,7 +4969,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer_Name" "Yageo"
 			(at 68.58 92.71 0)
 			(effects
 				(font
@@ -4978,7 +4978,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
 			(at 68.58 92.71 0)
 			(effects
 				(font
@@ -5360,7 +5360,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 125.73 91.44 0)
 			(effects
 				(font
@@ -5369,7 +5369,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer_Name" "Yageo"
 			(at 125.73 91.44 0)
 			(effects
 				(font
@@ -5378,7 +5378,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
 			(at 125.73 91.44 0)
 			(effects
 				(font
@@ -5616,7 +5616,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H120FA01D?qs=ouTquLLW2S4GiX6b03cbUg%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H120FA01D?qs=ouTquLLW2S4GiX6b03cbUg%3D%3D"
 			(at 69.85 140.97 0)
 			(effects
 				(font
@@ -5625,7 +5625,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics"
+		(property "Manufacturer_Name" "Murata Electronics"
 			(at 69.85 140.97 0)
 			(effects
 				(font
@@ -5634,7 +5634,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "GRM1555C1H120FA1D"
+		(property "Manufacturer_Part_Number" "GRM1555C1H120FA1D"
 			(at 69.85 140.97 0)
 			(effects
 				(font
@@ -5728,7 +5728,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQG15HH18NJ02D?qs=%2F%252BYoplLUB5jGNEzMsrpOaQ%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQG15HH18NJ02D?qs=%2F%252BYoplLUB5jGNEzMsrpOaQ%3D%3D"
 			(at 163.83 93.98 90)
 			(effects
 				(font
@@ -5737,7 +5737,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer_Name" "Murata"
 			(at 163.83 93.98 90)
 			(effects
 				(font
@@ -5746,7 +5746,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "LQG15HH18NJ02D"
+		(property "Manufacturer_Part_Number" "LQG15HH18NJ02D"
 			(at 163.83 93.98 90)
 			(effects
 				(font
@@ -5911,7 +5911,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H3R3WA01D?qs=ouTquLLW2S75fzkTIuiuIg%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H3R3WA01D?qs=ouTquLLW2S75fzkTIuiuIg%3D%3D"
 			(at 193.04 87.63 0)
 			(effects
 				(font
@@ -5920,7 +5920,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer_Name" "Murata"
 			(at 193.04 87.63 0)
 			(effects
 				(font
@@ -5929,7 +5929,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "GRM1555C1H3R3WA01D"
+		(property "Manufacturer_Part_Number" "GRM1555C1H3R3WA01D"
 			(at 193.04 87.63 0)
 			(effects
 				(font
@@ -6021,7 +6021,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQG15HH18NJ02D?qs=%2F%252BYoplLUB5jGNEzMsrpOaQ%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQG15HH18NJ02D?qs=%2F%252BYoplLUB5jGNEzMsrpOaQ%3D%3D"
 			(at 175.26 76.2 90)
 			(effects
 				(font
@@ -6030,7 +6030,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer_Name" "Murata"
 			(at 175.26 76.2 90)
 			(effects
 				(font
@@ -6039,7 +6039,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "LQG15HH18NJ02D"
+		(property "Manufacturer_Part_Number" "LQG15HH18NJ02D"
 			(at 175.26 76.2 90)
 			(effects
 				(font
@@ -6275,7 +6275,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
 			(at 199.39 81.28 90)
 			(effects
 				(font
@@ -6284,7 +6284,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer_Name" "Murata"
 			(at 199.39 81.28 90)
 			(effects
 				(font
@@ -6293,7 +6293,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "LQW15AN12NJ80D"
+		(property "Manufacturer_Part_Number" "LQW15AN12NJ80D"
 			(at 199.39 81.28 90)
 			(effects
 				(font
@@ -6387,7 +6387,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 139.7 91.44 0)
 			(effects
 				(font
@@ -6396,7 +6396,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer_Name" "Yageo"
 			(at 139.7 91.44 0)
 			(effects
 				(font
@@ -6405,7 +6405,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
 			(at 139.7 91.44 0)
 			(effects
 				(font
@@ -6726,7 +6726,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://www.mouser.co.uk/en/ProductDetail/NDK/STDCRG2-26M?qs=Tc%252BHE9vUsnu9%252BZcoUal0nA%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/en/ProductDetail/NDK/STDCRG2-26M?qs=Tc%252BHE9vUsnu9%252BZcoUal0nA%3D%3D"
 			(at 118.11 723.19 0)
 			(effects
 				(font
@@ -6736,7 +6736,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "NDK"
+		(property "Manufacturer_Name" "NDK"
 			(at 118.11 823.19 0)
 			(effects
 				(font
@@ -6746,7 +6746,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "NX3225GA-26.000M-STD-CRG-2"
+		(property "Manufacturer_Part_Number" "NX3225GA-26.000M-STD-CRG-2"
 			(at 118.11 923.19 0)
 			(effects
 				(font
@@ -6847,7 +6847,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 111.76 38.1 0)
 			(effects
 				(font
@@ -6856,7 +6856,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer_Name" "Yageo"
 			(at 111.76 38.1 0)
 			(effects
 				(font
@@ -6865,7 +6865,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
 			(at 111.76 38.1 0)
 			(effects
 				(font
@@ -7102,7 +7102,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1E1R5BA01D?qs=ouTquLLW2S6xHAnxxZWZ1w%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1E1R5BA01D?qs=ouTquLLW2S6xHAnxxZWZ1w%3D%3D"
 			(at 175.26 86.36 0)
 			(effects
 				(font
@@ -7111,7 +7111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer_Name" "Murata"
 			(at 175.26 86.36 0)
 			(effects
 				(font
@@ -7120,7 +7120,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "GRM1555C1E1R5BA01D"
+		(property "Manufacturer_Part_Number" "GRM1555C1E1R5BA01D"
 			(at 175.26 86.36 0)
 			(effects
 				(font
@@ -7214,7 +7214,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 54.61 92.71 0)
 			(effects
 				(font
@@ -7223,7 +7223,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer_Name" "Yageo"
 			(at 54.61 92.71 0)
 			(effects
 				(font
@@ -7232,7 +7232,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
 			(at 54.61 92.71 0)
 			(effects
 				(font

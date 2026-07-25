@@ -1069,7 +1069,7 @@
 					(hide yes)
 				)
 			)
-			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
 				(at 16.51 -594.92 0)
 				(effects
 					(font
@@ -1079,7 +1079,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer" "Harwin"
+			(property "Manufacturer_Name" "Harwin"
 				(at 16.51 -694.92 0)
 				(effects
 					(font
@@ -1089,7 +1089,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer Part Number" "M20-9770342"
+			(property "Manufacturer_Part_Number" "M20-9770342"
 				(at 16.51 -794.92 0)
 				(effects
 					(font
@@ -3777,7 +3777,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
 			(at 176.53 620.32 0)
 			(effects
 				(font
@@ -3787,7 +3787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Harwin"
+		(property "Manufacturer_Name" "Harwin"
 			(at 176.53 720.32 0)
 			(effects
 				(font
@@ -3797,7 +3797,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "M20-9770342"
+		(property "Manufacturer_Part_Number" "M20-9770342"
 			(at 176.53 820.32 0)
 			(effects
 				(font
@@ -5727,7 +5727,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/YAGEO/RC0603JR-13100RL?qs=sGAEpiMZZMvdGkrng054t8AJgcdMkx7xkQkRKZbeqEI%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/YAGEO/RC0603JR-13100RL?qs=sGAEpiMZZMvdGkrng054t8AJgcdMkx7xkQkRKZbeqEI%3D"
 			(at 35.56 78.74 0)
 			(effects
 				(font
@@ -5736,7 +5736,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer_Name" "Yageo"
 			(at 35.56 78.74 0)
 			(effects
 				(font
@@ -5745,7 +5745,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0603JR-13100RL "
+		(property "Manufacturer_Part_Number" "RC0603JR-13100RL "
 			(at 35.56 78.74 0)
 			(effects
 				(font
@@ -5911,7 +5911,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/YAGEO/CC0603KRX7R6BB103?qs=sGAEpiMZZMvsSlwiRhF8qtVFUj6yLw9vFdzWWJmGTI0%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/YAGEO/CC0603KRX7R6BB103?qs=sGAEpiMZZMvsSlwiRhF8qtVFUj6yLw9vFdzWWJmGTI0%3D"
 			(at 39.37 163.83 0)
 			(effects
 				(font
@@ -5920,7 +5920,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer_Name" "YAGEO"
 			(at 39.37 163.83 0)
 			(effects
 				(font
@@ -5929,7 +5929,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0603KRX7R6BB103"
+		(property "Manufacturer_Part_Number" "CC0603KRX7R6BB103"
 			(at 39.37 163.83 0)
 			(effects
 				(font
@@ -6167,7 +6167,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/YAGEO/AA0603FR-072M2L?qs=sGAEpiMZZMvdGkrng054txzUp8gpcBx9hhxvQIhjhzKzivkvqefGPg%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/YAGEO/AA0603FR-072M2L?qs=sGAEpiMZZMvdGkrng054txzUp8gpcBx9hhxvQIhjhzKzivkvqefGPg%3D%3D"
 			(at 172.72 62.23 0)
 			(effects
 				(font
@@ -6176,7 +6176,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer_Name" "Yageo"
 			(at 172.72 62.23 0)
 			(effects
 				(font
@@ -6185,7 +6185,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "AA0603FR-072M2L"
+		(property "Manufacturer_Part_Number" "AA0603FR-072M2L"
 			(at 172.72 62.23 0)
 			(effects
 				(font
@@ -6433,7 +6433,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://www.mouser.co.uk/en/ProductDetail/KEMET/C0603C102K8RACTU?qs=sGAEpiMZZMvsSlwiRhF8quIsB1QHp5lfG10MayaV%252Bl0%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/en/ProductDetail/KEMET/C0603C102K8RACTU?qs=sGAEpiMZZMvsSlwiRhF8quIsB1QHp5lfG10MayaV%252Bl0%3D"
 			(at 187.96 78.74 0)
 			(effects
 				(font
@@ -6442,7 +6442,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "KEMET"
+		(property "Manufacturer_Name" "KEMET"
 			(at 187.96 78.74 0)
 			(effects
 				(font
@@ -6451,7 +6451,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "C0603C102K8RACTU "
+		(property "Manufacturer_Part_Number" "C0603C102K8RACTU "
 			(at 187.96 78.74 0)
 			(effects
 				(font
@@ -6545,7 +6545,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/Wurth-Elektronik/885012206020?qs=sGAEpiMZZMvsSlwiRhF8qunkWFWGyo%252Bv87eLmDBMvaFF4rJhETyCbg%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/Wurth-Elektronik/885012206020?qs=sGAEpiMZZMvsSlwiRhF8qunkWFWGyo%252Bv87eLmDBMvaFF4rJhETyCbg%3D%3D"
 			(at 62.23 127 0)
 			(effects
 				(font
@@ -6554,7 +6554,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Wurth Elektronik"
+		(property "Manufacturer_Name" "Wurth Elektronik"
 			(at 62.23 127 0)
 			(effects
 				(font
@@ -6563,7 +6563,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "885012206020"
+		(property "Manufacturer_Part_Number" "885012206020"
 			(at 62.23 127 0)
 			(effects
 				(font
