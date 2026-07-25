@@ -268,6 +268,11 @@ Decision:
     Based on performance of 868 MHz modules from Amazon, and also adaptions on FW PoC (baudrate reduction and forward error correction enable).
     2. Helical antenna.
 
+    Supplier: Dinobell Antenna Solutions
+    Name: 868MHz Antenna Loading Coil
+    Part number: DB-A0402-868M-R
+    https://www.dinobell.com/antenna-loading-coil.html
+
 ### Sensor battery holder
 https://pt.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-003-SMT?qs=TuK3vfAjtkVRZQIT6eTqjQ%3D%3D
 https://pt.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-013-SMT-TR?qs=4ASt3YYao0UKhYWrBts7tw%3D%3D
