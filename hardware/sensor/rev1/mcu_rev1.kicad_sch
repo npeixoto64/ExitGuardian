@@ -2410,7 +2410,7 @@
 		)
 		(uuid "470cef1a-71b9-478f-9eba-14391684d5b5")
 	)
-	(text "- Review the schematic, all connections and components values.\n- For each component ensure it has the link to mouser.\n- For each component ensure it has the footprint and 3D model.\n- Choose the antenna.\n- Add the antenna via.\n- Generate the boom and check that all components can be purchased and also the final price."
+	(text "- Ensure you have test points.\n- Choose the antenna.\n- Add the antenna via.\n- Generate the boom and check that all components can be purchased and also the final price."
 		(exclude_from_sim no)
 		(at 128.524 126.746 0)
 		(effects

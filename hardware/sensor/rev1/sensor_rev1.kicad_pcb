@@ -125,7 +125,7 @@
 	)
 	(net 0 "")
 	(net 1 "GND")
-	(net 2 "unconnected-(C125-Pad2)")
+	(net 2 "Net-(ANT1-ANT)")
 	(net 3 "DOOR")
 	(net 4 "unconnected-(IC1-PB2-Pad12)")
 	(net 5 "NRST")
@@ -256,6 +256,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d8550170-5a33-45dd-b8d4-fabd2c017a83")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-PA2F5602X?qs=sGAEpiMZZMvdGkrng054t39FRO7iDkA6z1H%252BqyfqNLr9YdfcpMbawA%3D%3D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "771fa61f-d98e-4609-8998-7e0c961196f6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Panasonic"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ccc6a1ea-c7c3-4ec2-8c6e-91a0cfbabddd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ERJ-PA2F5602X"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "44cdc2b4-8c08-48ff-afe4-7163b2771340")
 			(effects
 				(font
 					(size 1 1)
@@ -887,6 +926,45 @@
 				)
 			)
 		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1E1R5BA01D?qs=ouTquLLW2S6xHAnxxZWZ1w%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "579bc4c6-c3cf-4b8e-abf1-be57155100fd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "50af1a06-d821-4409-90f9-1b1ee9eabd89")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM1555C1E1R5BA01D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1320838c-4626-4023-b191-53871ff1ad5a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/fd1391ec-1dbf-44e4-a43e-6f0b18094faa")
 		(sheetname "/RF/")
@@ -1133,6 +1211,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fa7ed3da-5443-4823-b43a-a65b4858ec94")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4a6097ca-5e66-4f29-b1d4-076af13770e8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d9ad2a61-89b3-4888-b160-7fbfabf30ca0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "209c8ea5-e12e-49c1-93a5-2d6d11415da2")
 			(effects
 				(font
 					(size 1 1)
@@ -1472,6 +1589,45 @@
 				)
 			)
 		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H101FA01J?qs=ouTquLLW2S5iwhfDVY6IbQ%3D%3D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a5d5e0a-a897-4c89-9e91-b8c8182bbc91")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "47fe7e90-13e5-4a68-b710-df070a829e3f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM1555C1H101FA01J"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0aa0629e-4fb7-4d64-8633-e23f1020f60a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/434b7a97-9ef2-4901-9568-7e279c7b1668")
 		(sheetname "/RF/")
@@ -1718,6 +1874,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e006ac1d-566f-4536-b81c-100fcaafe713")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65c738ba-6e63-4bbb-a297-5ddc8cf18bd1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aedee3a6-61e9-495a-8269-ca60678681c5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "de199d0d-2204-48d6-b3ee-749a6413abbc")
 			(effects
 				(font
 					(size 1 1)
@@ -1978,6 +2173,45 @@
 				)
 			)
 		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H120FA01D?qs=ouTquLLW2S4GiX6b03cbUg%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb81966d-d9c9-4315-be61-9d1740adc67a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "162b678a-f4ff-4020-8262-172509a3d473")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM1555C1H120FA01D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a418bb0-81ff-42a2-bac6-80f500d026d6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/11232682-bbe2-4fdf-b3ff-a28fb1c1c463")
 		(sheetname "/RF/")
@@ -2108,7 +2342,7 @@
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 2 "unconnected-(C125-Pad2)")
+			(net 2 "Net-(ANT1-ANT)")
 			(pintype "passive")
 			(uuid "26813149-6027-4bf7-8940-8830d300cb18")
 		)
@@ -2224,6 +2458,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bd0eba29-ed55-48ee-baa3-e07381c71812")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H120FA01D?qs=ouTquLLW2S4GiX6b03cbUg%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9886fcf0-ed34-489d-8a2d-4db5cd3e93b3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8854b148-266a-4145-8f42-42c343ca94ad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM1555C1H120FA1D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6967a0e5-a2d7-4365-a707-a85bf721a4a3")
 			(effects
 				(font
 					(size 1 1)
@@ -2484,6 +2757,45 @@
 				)
 			)
 		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "83e04764-e581-49f0-aa9d-13ccb1f6f619")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a4d8c63-d448-4ced-b3c1-b6e98c5e1073")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "031b8501-56cb-443e-af22-52f377acba55")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/db6d3d33-db8b-4830-a1a8-dd0552c98214")
 		(sheetname "/RF/")
@@ -2735,6 +3047,45 @@
 				)
 			)
 		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/en/ProductDetail/KEMET/C0603C102K8RACTU?qs=sGAEpiMZZMvsSlwiRhF8quIsB1QHp5lfG10MayaV%252Bl0%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "693e4eea-8fa7-46d0-9aa8-c92740a67e67")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "KEMET"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "68c38b1b-f72f-4ee5-baa7-935c726ab46d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C0603C102K8RACTU "
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc2ba815-992d-4f65-a55c-2a4b48435ae4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/e119bcbf-5338-45fe-ac68-b6d91fac84fb")
 		(sheetname "/MCU/")
@@ -2923,6 +3274,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1624eb2f-dccf-4921-be75-163b3b342c80")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5e1fc874-cb63-4e88-b5da-39386629b3e5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "256143b9-b790-4dc3-b44a-5754715df5f7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "36a9efd4-b689-4920-85a8-75cb7259602c")
 			(effects
 				(font
 					(size 1 1)
@@ -3195,6 +3585,45 @@
 				)
 			)
 		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f13d59fe-baed-4ca0-913e-f3b22da1168c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6219b099-6b13-43f8-8041-1ea844ab060c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "BLM18KG601SN1D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1ad1ccd8-3c21-4ac3-8862-f4a2dc8e340b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/5efa16e5-308e-41e1-83d5-9ace7c2eaeb0")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
@@ -3428,6 +3857,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3d9ef618-7a80-44e0-95a3-a8aec6761978")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/YAGEO/CC0603KRX7R6BB103?qs=sGAEpiMZZMvsSlwiRhF8qtVFUj6yLw9vFdzWWJmGTI0%3D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7594fb10-d836-4d47-acf2-db9551c2cf2d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d3a80fb2-0b98-4c9e-ad06-fa7dc61a4b3a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC0603KRX7R6BB103"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6210b1f-0362-4756-8723-d05e082e4159")
 			(effects
 				(font
 					(size 1 1)
@@ -3929,6 +4397,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fb3dff4c-0657-4595-a731-15e15e5aff97")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H1R0BA01J?qs=ouTquLLW2S5DcHZ7kLUjdg%3D%3D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ef260e8-35a4-496a-bcef-3313ac8fa6c2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "17fef122-a3a3-42aa-a669-30aee01d2bb6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM1555C1H1R0BA01J"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7cfa5a68-adae-4a7e-86f6-645fb4ad935b")
 			(effects
 				(font
 					(size 1 1)
@@ -4559,6 +5066,45 @@
 				)
 			)
 		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65919ac9-fcb8-438a-a4ed-a087304be7fd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f18b1312-eecd-45af-b752-66efdfabe1db")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LQW15AN12NJ80D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4c3456d2-35bc-47e6-80d3-c762e930196f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/48080ad4-4dfe-4e99-9568-7d5e14673aa9")
 		(sheetname "/RF/")
@@ -4799,6 +5345,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "19a321c0-8319-4fb1-a3d6-f27520c772c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/en/ProductDetail/NDK/STDCRG2-26M?qs=Tc%252BHE9vUsnu9%252BZcoUal0nA%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a730af25-53de-4f02-ab63-267688e34d2a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "NDK"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a125cb8-867f-4cdc-95bc-9ab543e6b24a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "NX3225GA-26.000M-STD-CRG-2"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "47f7b908-e880-4319-ad46-2a310e277b37")
 			(effects
 				(font
 					(size 1 1)
@@ -5487,6 +6072,45 @@
 				)
 			)
 		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1981e48e-2cdc-48f0-ad0b-bad8c937c99b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c1c0625-79c1-414e-9085-a78d528675b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LQW15AN12NJ80D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f92ba7bf-4cae-45d9-8e34-797e843f64a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/30d0c715-d8f1-4fc1-8b41-873ba12f068c")
 		(sheetname "/RF/")
@@ -5715,6 +6339,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6f93a48c-3a79-42b8-ba47-b62cf4f439ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H120FA01D?qs=ouTquLLW2S4GiX6b03cbUg%3D%3D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7d228e10-3b6f-421b-8a5a-d193fa3b1ac2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3759f1a2-054d-4f19-8289-1d9db12702c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM1555C1H120FA1D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "72502c73-ea19-42a0-83d3-0dde348372c1")
 			(effects
 				(font
 					(size 1 1)
@@ -5975,6 +6638,45 @@
 				)
 			)
 		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1E1R5BA01D?qs=ouTquLLW2S6xHAnxxZWZ1w%3D%3D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69e53f11-04c0-4ef6-a175-ec1d8716e66c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "508388f1-2ead-49fb-9017-e3e3db82c11b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM1555C1E1R5BA01D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c740b1f-0e4c-4e4f-a8a7-593837bed3f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/1e75fbd1-529f-44a7-af3f-ef69a9766787")
 		(sheetname "/RF/")
@@ -6222,6 +6924,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a887b1aa-f593-4bcd-8d78-ba4ed40eb29e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H3R3WA01D?qs=ouTquLLW2S75fzkTIuiuIg%3D%3D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "09c68ee9-2ca2-4469-beb6-692b57b72ea5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4a5d29e4-3136-40ae-a8aa-888eb97cbe5f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM1555C1H3R3WA01D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4c9f1638-db9e-45b4-ab4a-6da07343c63d")
 			(effects
 				(font
 					(size 1 1)
@@ -6955,6 +7696,45 @@
 				)
 			)
 		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d79ed3a2-5f85-4633-9ca4-e4db51680112")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "18e0c501-2875-461a-8995-b87b75c3a705")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LQW15AN12NJ80D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "76f12426-73d6-4432-a7d2-d8e7f08451f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/d48a6497-1603-4d91-819a-e6dce50af009")
 		(sheetname "/RF/")
@@ -7084,6 +7864,89 @@
 			)
 		)
 	)
+	(footprint "MyParts:Antenna_hole"
+		(layer "F.Cu")
+		(uuid "aeed553d-171b-4868-a2a9-10ac845c388b")
+		(at 232.11 90.08)
+		(property "Reference" "ANT1"
+			(at 0 -0.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "e0f87459-1048-45ef-afbb-9914fa8ab662")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "24b33cfc-d68e-4023-b5de-0b6d215a3c77")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19dc1a12-0f80-4f93-adb1-cb8391b06c2a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c4daea2d-ffb4-4f3c-b8e7-b85ee70eb40a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/af07603d-259f-481d-be2c-d925e27835a3/b8c8b39e-4c69-4b7f-b761-653035a4e57a")
+		(sheetname "/RF/")
+		(sheetfile "rf_rev1.kicad_sch")
+		(attr through_hole)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "91deda8c-f38f-4673-94ee-623a326a2b91")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0.1 -1.8)
+			(size 2 2)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 2 "Net-(ANT1-ANT)")
+			(pinfunction "ANT")
+			(pintype "passive")
+			(uuid "94204629-622f-4e33-a597-2e96f50eae77")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "bd3e2212-459c-45a8-8e83-262e68d27367")
@@ -7183,6 +8046,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bff924d6-7df3-4d1c-88b0-bbaabfbeecee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "04a9847f-31f0-414e-a21d-9bae9434b3f4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2ca45509-c074-4e30-a80c-94c5dbc3caf2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "873dec12-7959-4212-b061-b6b9cf0332b7")
 			(effects
 				(font
 					(size 1 1)
@@ -7441,6 +8343,45 @@
 				)
 			)
 		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/Wurth-Elektronik/885012206020?qs=sGAEpiMZZMvsSlwiRhF8qunkWFWGyo%252Bv87eLmDBMvaFF4rJhETyCbg%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "48f08655-b626-4322-a17f-59ea2b9c2350")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Wurth Elektronik"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0bc58aaa-59c7-4966-abdd-0a0b4eff3ab8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "885012206020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2f7f913c-ff33-4b81-9f6d-52789f47a35e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/e386951e-b9fc-46dd-8b85-f0cbb9482cad")
 		(sheetname "/MCU/")
@@ -7629,6 +8570,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "738c1ddc-d705-4c59-bf4f-0c1280130fc0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "44f81734-0eeb-43b9-b230-ef827314f8bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "818de4e0-aaaa-42da-91aa-dc687b7f6496")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LQW15AN12NJ80D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "af51219b-6413-4e67-badf-2bb43ee21314")
 			(effects
 				(font
 					(size 1 1)
@@ -7869,6 +8849,45 @@
 				)
 			)
 		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/YAGEO/AA0603FR-072M2L?qs=sGAEpiMZZMvdGkrng054txzUp8gpcBx9hhxvQIhjhzKzivkvqefGPg%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "64316295-8dba-46f1-add9-690d0212c467")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8ff6e0c5-45ed-4a2a-9650-64f3ec6f9c99")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "AA0603FR-072M2L"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "36561a1b-e389-4624-bb44-2101bcd6256e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/ce9bedb0-9f33-44f0-acf4-7456141986e5")
 		(sheetname "/MCU/")
@@ -8057,6 +9076,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "caebb7a3-64a3-41ef-90a2-7a3723da9173")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cfe791b6-e007-4ffa-b73d-7227c87c6dd5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "01869328-a503-4aa4-bea4-f801cfbb918b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c72fea05-0afa-454d-a273-fde7e770a500")
 			(effects
 				(font
 					(size 1 1)
@@ -8317,6 +9375,45 @@
 				)
 			)
 		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQG15HH18NJ02D?qs=%2F%252BYoplLUB5jGNEzMsrpOaQ%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df98820d-2ed9-4b9a-9bfe-fefa6aafceeb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b1db2635-897c-46a1-b2c3-d2af6765a212")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LQG15HH18NJ02D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b55171a5-f566-48ac-8265-e76eea1c38e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/d0fe3689-bd54-4892-9917-2d0ec27d489a")
 		(sheetname "/RF/")
@@ -8557,6 +9654,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "19b1bd89-3994-41bd-aca2-c42a35837018")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CC1101RGPR?qs=OHhYoCux73lreNWI41kZ9Q%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df4719ba-af60-4563-b0b6-21890ab3f081")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Texas Instruments"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8b4ff423-cd32-4923-9795-fd8d392868eb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC1101RGPR"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2e7322ad-c92c-4176-b173-9096355e41ae")
 			(effects
 				(font
 					(size 1 1)
@@ -8988,6 +10124,45 @@
 				)
 			)
 		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "505a52c0-510b-4ae4-af43-59b5526994a5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6620c666-c95e-4421-88d1-21b0cd68004a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "04d4f134-d336-4689-ba6d-379f001a10d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/fe945822-9e37-45d7-be4d-19d6562aad7b")
 		(sheetname "/RF/")
@@ -9232,6 +10407,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "35b5e2a7-9c06-4018-b9a9-3c55bcedbb97")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/YAGEO/RC0603JR-13100RL?qs=sGAEpiMZZMvdGkrng054t8AJgcdMkx7xkQkRKZbeqEI%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df6e1267-bb14-414d-ab21-a42d441e6c4f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be3bc576-1e05-46fc-aed1-8689e06fbbca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603JR-13100RL "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "956296d4-1c7b-4b93-aa20-e0757be121b4")
 			(effects
 				(font
 					(size 1 1)
@@ -9525,6 +10739,45 @@
 				)
 			)
 		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "552ffb69-35de-412a-b42e-2b85d2f95f35")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Harwin"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a1d575af-e22b-463f-918c-166ca903263e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "M20-9770342"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7b78cd16-4bf9-49a4-ac16-2ef47167769f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/32690542-737f-445c-8eec-9245f3605987")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
@@ -9788,7 +11041,7 @@
 	(footprint "MyParts:VLMS3000GS08"
 		(layer "F.Cu")
 		(uuid "ef133529-8d26-4544-8eba-967fbdf2c0c9")
-		(at 233.7 91.62)
+		(at 261.63 87.1)
 		(descr "VLMS3000-GS08-1")
 		(tags "LED")
 		(property "Reference" "LED1"
@@ -10170,6 +11423,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3d93a330-bb85-4332-bf8c-1837efc5391d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/LQG15HH18NJ02D?qs=%2F%252BYoplLUB5jGNEzMsrpOaQ%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e534422d-8445-47aa-8a0f-9d1f60275cf3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8dc6d9aa-628d-44d3-861b-44af5b19fdcd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LQG15HH18NJ02D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1a2a0d43-38da-4333-8836-f57926bdc1df")
 			(effects
 				(font
 					(size 1 1)

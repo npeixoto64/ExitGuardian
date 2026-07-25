@@ -34,4 +34,5 @@
   (lib (name "CST2032")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/CST2032.kicad_sym")(options "")(descr ""))
   (lib (name "MountingHole_1.7mm")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/MountingHole_1.7mm.kicad_sym")(options "")(descr ""))
   (lib (name "VLMS3000-GS08")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/VLMS3000-GS08.kicad_sym")(options "")(descr ""))
+  (lib (name "antenna_hole")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/antenna_hole.kicad_sym")(options "")(descr ""))
 )
