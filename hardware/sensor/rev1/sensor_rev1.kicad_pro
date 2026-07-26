@@ -438,7 +438,7 @@
       "extra_units": "error",
       "footprint_filter": "warning",
       "footprint_link_issues": "warning",
-      "four_way_junction": "ignore",
+      "four_way_junction": "error",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
@@ -498,40 +498,6 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "RF",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 1.07,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.17,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "VDD",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
-        "wire_width": 6
       }
     ],
     "meta": {
@@ -541,23 +507,23 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "RF",
+        "netclass": "Default",
         "pattern": "RF_LINE"
       },
       {
-        "netclass": "VDD",
+        "netclass": "Default",
         "pattern": "VDD"
       },
       {
-        "netclass": "VDD",
+        "netclass": "Default",
         "pattern": "RF_VDD"
       },
       {
-        "netclass": "VDD",
+        "netclass": "Default",
         "pattern": "BAT_IN"
       },
       {
-        "netclass": "VDD",
+        "netclass": "Default",
         "pattern": "+12V"
       }
     ]

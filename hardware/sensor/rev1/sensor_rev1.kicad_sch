@@ -5,9 +5,9 @@
 	(uuid "d3cb7130-decc-418b-958e-e5d84a8d867f")
 	(paper "A4")
 	(title_block
-		(title "Gateway")
-		(date "2025-09-30")
-		(rev "RAV0.0")
+		(title "Window Sensor")
+		(date "2026-07-26")
+		(rev "REV1.0")
 		(company "NPX4U")
 	)
 	(lib_symbols
