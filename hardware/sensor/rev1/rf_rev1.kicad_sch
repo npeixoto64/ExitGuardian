@@ -4177,6 +4177,36 @@
 				(hide yes)
 			)
 		)
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CC1101RGPR?qs=OHhYoCux73lreNWI41kZ9Q%3D%3D"
+			(at 114.3 659.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 114.3 759.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CC1101RGPR"
+			(at 114.3 859.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
 		(pin "10"
 			(uuid "6985a3b3-3330-4467-8b0b-debc562a4fd6")
 		)
@@ -4795,6 +4825,36 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "BLM18KG601SN1D"
+			(at 26.67 831.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
+			(at 26.67 631.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 26.67 731.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "BLM18KG601SN1D"
 			(at 26.67 831.75 0)
 			(effects
 				(font
@@ -7138,6 +7198,36 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "NX3225GA-26.000M-STD-CRG-2"
+			(at 118.11 923.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D"
+			(at 118.11 723.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "NDK"
+			(at 118.11 823.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "NX3225GA-26.000M-STD-CRG-2"
 			(at 118.11 923.19 0)
 			(effects
 				(font

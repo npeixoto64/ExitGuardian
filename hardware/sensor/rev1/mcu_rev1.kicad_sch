@@ -2517,17 +2517,6 @@
 		)
 		(uuid "470cef1a-71b9-478f-9eba-14391684d5b5")
 	)
-	(text "- Generate the boom and check that all components can be purchased and also the final price.\n- Ensure ERC errors and warnings are 0."
-		(exclude_from_sim no)
-		(at 128.524 126.746 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "56c13559-29c1-4842-b7a3-51c09476d4ca")
-	)
 	(junction
 		(at 78.74 115.57)
 		(diameter 0)
@@ -4434,6 +4423,36 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "M20-9770342"
+			(at 190.5 820.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
+			(at 190.5 620.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Harwin"
+			(at 190.5 720.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "M20-9770342"
 			(at 190.5 820.32 0)
 			(effects
 				(font
