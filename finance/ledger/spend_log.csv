@@ -10,3 +10,5 @@ date,category,subproject,item,amount_eur,link,notes
 2025-12-23,prototype,HW,PCBA,73.80,http://www.place-it.pt/,N/A
 2026-01-05,licenses,ChatGPT,Plus,23.00,https://pay.openai.com/p/session/live_YWNjdF8xUGozNzdLc2xIUmRiYVBnLF9UMXUwcTZNMnhJUEFkaUpBbkhtOXhQbFR4aWFZRHY501003UPW8cSc,N/A
 2026-01-17,equipment,Lab,FTDI USB to Serial Adapter,18.23,https://www.amazon.es/dp/B07WX2DSVB?ref=ppx_yo2ov_dt_b_fed_asin_title,For serial communication with microcontrollers
+2026-06-23,prototype,HW,868 MHz CC1101 module,12.13,https://www.amazon.es/-/en/CC1101-Wireless-Transceiver-Transmission-Antenna/dp/B0FB3K3CQP?pd_rd_w=xT3Ua&content-id=amzn1.sym.781049ef-f24d-46fa-bbd4-ea1cba02091d&pf_rd_p=781049ef-f24d-46fa-bbd4-ea1cba02091d&pf_rd_r=7R6C9NFBPF9YM1TWTSME&pd_rd_wg=0JOLU&pd_rd_r=25b98e6c-b725-4c7e-a813-ec3a88c4ce89&pd_rd_i=B0FB3K3CQP&psc=1&ref_=pd_bap_d_grid_rp_0_1_ec_i
+2026-06-23,prototype,Consumables,tape,6.89.

@@ -78,6 +78,7 @@ GPIOs and RAM are preserved in halt mode.
 #### Sensor Unused pins (current consumption)
 Set them as digital outputs and set the value to low state.
 PC0 and PC1 (I2C), connect them to GND because they are pure open drain.
+PB2 => output low
 PB3 => output low
 PC0 => output low
 PC1 => output low
@@ -91,13 +92,17 @@ PA2 => reed
 PA3 => btn
 PB0 => LED
 PB1 => GDO
-PB2 => ADC1_IN16
 PB4 => SPI1_NSS
 PB5 => SPI1_SCK
 PB6 => SPI1_MOSI
 PB7 => SPI1_MISO
 PC5 => USART_TX
 PC6 => USART_RX
+
+#### Measure battery voltage
+Read the internal output reference voltage with the ADC. That voltage is Vrefint = 1.224 V
+The full scale (1023) will be the MCU supply voltage. 1.224 V will be less or equal full scale.
+So: Vdd = (Vrefint x 1023)/ADCvrefint => (1.224 x 1023)/ADCvrefint
 
 ### Sensor 4 Pin Programming Header:
 2.54 mm pin headers
@@ -260,40 +265,33 @@ Decision:
     https://pt.mouser.com/new/johanson/johanson-0900at43a0070/?srsltid=AfmBOoobHdIGgGZuSxxAr1JtTYSkDjUd4MoxHm1Rq9-d-15OsjQQ_TCT
 
 Decision:
-    3 and 4 are too risky.
-    1 or 2 to be decided, based on performance of 868 MHz modules from Amazon.
+    Based on performance of 868 MHz modules from Amazon, and also adaptions on FW PoC (baudrate reduction and forward error correction enable).
+    2. Helical antenna.
+
+    Supplier: Dinobell Antenna Solutions
+    Name: 868MHz Antenna Loading Coil
+    Part number: DB-A0402-868M-R
+    https://www.dinobell.com/antenna-loading-coil.html
 
 ### Sensor battery holder
 https://pt.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-003-SMT?qs=TuK3vfAjtkVRZQIT6eTqjQ%3D%3D
 https://pt.mouser.com/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-013-SMT-TR?qs=4ASt3YYao0UKhYWrBts7tw%3D%3D
 
-Decision: because it impacts the box, and the box is also impacted by antenna, 1 or 2, to be decided with the box.
+Decision: it will be used the one from the Takachi case.
 
 ### Sensor Enclosure/Box/Case: PCB size and format
 
 #### Companies
 Takachi
 OKW
+Supertronic
 Bud Industries
 Polycase
 
 ##### Takachi (comes with technical datasheets, 3D model)
-1. CS90-W 90 (with battery holder): https://www.takachi-enclosure.com/products/CS
+1. CS75-W (with battery holder): https://www.takachi-enclosure.com/products/CS
 - External: 75 x 35 x 12 mm
-- Internal: 25.4 x 26.6 x 5.3 mm (space for PCB only)
-
-2. SIC3-5-2W (without battery holder, no screws): https://www.takachi-enclosure.com/products/SIC
-- External: 54 x 25 x 18 mm
-- Internal: 42.6 x 20.1 x 11.1 mm
-
-##### Supertronic (comes with technical datasheets, 3D model)
-1. PP85B (4 screws): https://supertronic.com/en/universal-plastic-enclosure-for-electronic-devices-pp85b.html#/8-color-white_ral_9010
-- External: 39 x 27 x 18 mm
-- Internal: 31 x 20 x 10 mm
-
-2. PP85C (4 screws): https://supertronic.com/en/universal-plastic-enclosure-for-electronic-devices-pp85c.html#/8-color-white_ral_9010
-- External: 45 x 31 x 20 mm
-- Internal: 40 x 26 x 12 mm
+- Internal: 25.4 x 26.6 x 5.3 mm (space for useful part of PCB only)
 
 ## Gateway
 
