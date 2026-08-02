@@ -1975,8 +1975,16 @@
 		(uuid "fd46ecd1-04f5-46ac-a16f-ee7da39b3a9c")
 	)
 	(no_connect
+		(at 78.74 128.27)
+		(uuid "18a013d6-e432-4827-bba9-fc30c6c11f98")
+	)
+	(no_connect
 		(at 80.01 80.01)
 		(uuid "9a12130e-f379-4c75-8580-ea9baf7ccafd")
+	)
+	(no_connect
+		(at 121.92 130.81)
+		(uuid "e284c0f8-c799-4188-91de-010ba664a761")
 	)
 	(wire
 		(pts
@@ -2087,16 +2095,6 @@
 			(type default)
 		)
 		(uuid "0ca4b43d-b2f6-460f-b9b7-4316aaf8e0a6")
-	)
-	(wire
-		(pts
-			(xy 125.73 130.81) (xy 125.73 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d905261-4b9c-4501-8af0-cb670386cc84")
 	)
 	(wire
 		(pts
@@ -2230,16 +2228,6 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 130.81) (xy 125.73 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26376165-3b2d-4f0f-9637-efb3c582171e")
-	)
-	(wire
-		(pts
 			(xy 139.7 72.39) (xy 121.92 72.39)
 		)
 		(stroke
@@ -2287,16 +2275,6 @@
 			(type default)
 		)
 		(uuid "33292e76-9f77-4a9b-89ba-ceee24c452dc")
-	)
-	(wire
-		(pts
-			(xy 74.93 128.27) (xy 78.74 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "338b60ad-5cff-4bb6-8f62-2123aeacd12f")
 	)
 	(wire
 		(pts
@@ -2477,16 +2455,6 @@
 			(type default)
 		)
 		(uuid "69d405a5-a858-49fa-875d-8ce9c6f44521")
-	)
-	(wire
-		(pts
-			(xy 74.93 148.59) (xy 74.93 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f039f06-ffac-4f60-b82c-8d366dc688ba")
 	)
 	(wire
 		(pts
@@ -5209,78 +5177,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 125.73 148.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "80159e71-408b-426a-ba93-ade94b1e20c2")
-		(property "Reference" "#PWR046"
-			(at 125.73 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 125.73 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.73 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.73 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "25b6b671-00dd-4240-9fc1-8936a4df31d7")
-		)
-		(instances
-			(project "rf_rev1"
-				(path "/50a12035-955f-49d8-a6b8-24fcd6d450af"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 68.58 92.71 0)
 		(unit 1)
@@ -7371,78 +7267,6 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 74.93 148.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ef4d1306-3281-4431-9ef7-4e8ce591de3d")
-		(property "Reference" "#PWR047"
-			(at 74.93 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 74.93 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.93 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cce81b98-3d07-4b85-bf46-8774f3696873")
-		)
-		(instances
-			(project "rf_rev1"
-				(path "/50a12035-955f-49d8-a6b8-24fcd6d450af"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "#PWR047")
 					(unit 1)
 				)
 			)

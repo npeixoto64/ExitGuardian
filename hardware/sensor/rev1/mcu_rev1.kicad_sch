@@ -2584,6 +2584,12 @@
 		(uuid "71279e62-78e3-4166-891a-f927855c36cf")
 	)
 	(junction
+		(at 166.37 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7222724d-3919-43e3-ae7a-9e591969420c")
+	)
+	(junction
 		(at 187.96 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2638,12 +2644,6 @@
 		(uuid "a75e4733-3eeb-40b9-ab6d-4da8904aab8d")
 	)
 	(junction
-		(at 151.13 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "afe6539c-12ed-482e-8c8c-e54fcf85ff5e")
-	)
-	(junction
 		(at 78.74 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2656,6 +2656,12 @@
 		(uuid "d03f6997-8592-44d7-9d84-7c8e96f664dd")
 	)
 	(junction
+		(at 151.13 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dc887715-e54e-4cad-87b3-dac33d4f3987")
+	)
+	(junction
 		(at 146.05 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2666,12 +2672,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e3060bc5-5f33-4dc0-9172-fbf32c807a01")
-	)
-	(junction
-		(at 166.37 27.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f91a14ad-3f71-4a3d-a716-49b4ed203e81")
 	)
 	(junction
 		(at 140.97 156.21)
@@ -2825,16 +2825,6 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 31.75) (xy 106.68 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ce40bf1-5081-48f3-aab0-be24ddfe7727")
-	)
-	(wire
-		(pts
 			(xy 124.46 161.29) (xy 156.21 161.29)
 		)
 		(stroke
@@ -2902,6 +2892,16 @@
 			(type default)
 		)
 		(uuid "3b573f1d-eb45-4f33-9956-979c6dfc01ee")
+	)
+	(wire
+		(pts
+			(xy 166.37 27.94) (xy 173.99 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40acc9c3-82ce-4235-88f6-c6ad0d3e38ba")
 	)
 	(wire
 		(pts
@@ -3025,6 +3025,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 30.48) (xy 151.13 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "596bc34e-ec9b-4e9c-a729-08e0f7adcf3f")
+	)
+	(wire
+		(pts
 			(xy 142.24 163.83) (xy 142.24 171.45)
 		)
 		(stroke
@@ -3045,13 +3055,13 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 34.29) (xy 102.87 38.1)
+			(xy 151.13 24.13) (xy 151.13 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "627d5266-ba23-4adb-b394-83772e0fc7f1")
+		(uuid "608a6b5b-ea83-40b7-ad88-d0d45f78f738")
 	)
 	(wire
 		(pts
@@ -3072,16 +3082,6 @@
 			(type default)
 		)
 		(uuid "64c9c63e-2a83-4dd9-a59f-d66409cb39e2")
-	)
-	(wire
-		(pts
-			(xy 106.68 34.29) (xy 102.87 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65120e65-6587-4be6-9f38-ee4b5962e8df")
 	)
 	(wire
 		(pts
@@ -3115,16 +3115,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 27.94) (xy 173.99 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6cc2266d-fb50-408f-92ba-6ebb254dd8f6")
-	)
-	(wire
-		(pts
 			(xy 62.23 161.29) (xy 83.82 161.29)
 		)
 		(stroke
@@ -3135,7 +3125,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 30.48) (xy 171.45 34.29)
+			(xy 171.45 25.4) (xy 171.45 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3165,16 +3155,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 27.94) (xy 166.37 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72debaac-e644-4456-9f6a-f183fe779f85")
-	)
-	(wire
-		(pts
 			(xy 36.83 24.13) (xy 39.37 24.13)
 		)
 		(stroke
@@ -3182,16 +3162,6 @@
 			(type default)
 		)
 		(uuid "7300e077-b6f2-4313-a76d-b870c09f98d7")
-	)
-	(wire
-		(pts
-			(xy 151.13 25.4) (xy 173.99 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79d6f980-cbb2-4fc7-848d-17ab6efbbaa1")
 	)
 	(wire
 		(pts
@@ -3255,6 +3225,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 38.1) (xy 102.87 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8425cf94-766b-4698-a470-6dc236d8e7ff")
+	)
+	(wire
+		(pts
 			(xy 170.18 71.12) (xy 172.72 71.12)
 		)
 		(stroke
@@ -3272,16 +3252,6 @@
 			(type default)
 		)
 		(uuid "8bdf424e-9443-4072-bd6a-9932e2359b70")
-	)
-	(wire
-		(pts
-			(xy 166.37 21.59) (xy 166.37 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c55d67e-f8eb-4b5e-870b-697fa4c84ee3")
 	)
 	(wire
 		(pts
@@ -3325,6 +3295,26 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 24.13) (xy 166.37 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "973b4917-5311-4cd6-8cd0-e4f480f58327")
+	)
+	(wire
+		(pts
+			(xy 102.87 31.75) (xy 106.68 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9be17e4b-2fa4-4d29-965c-fd69f70ef1c2")
+	)
+	(wire
+		(pts
 			(xy 100.33 91.44) (xy 100.33 96.52)
 		)
 		(stroke
@@ -3342,6 +3332,16 @@
 			(type default)
 		)
 		(uuid "a1912754-7140-4cf8-abfd-5b6821990fad")
+	)
+	(wire
+		(pts
+			(xy 151.13 30.48) (xy 173.99 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6bd5ddd-13ce-476b-91a4-afa65d115f3d")
 	)
 	(wire
 		(pts
@@ -3392,6 +3392,16 @@
 			(type default)
 		)
 		(uuid "b2832fd5-e1fd-43b9-9dda-038b0f71996c")
+	)
+	(wire
+		(pts
+			(xy 171.45 25.4) (xy 173.99 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8326b65-2f88-4ed3-99b9-3f4a0b58c83a")
 	)
 	(wire
 		(pts
@@ -3465,6 +3475,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 27.94) (xy 166.37 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdef20df-c701-4265-afa0-1e534de65b78")
+	)
+	(wire
+		(pts
 			(xy 100.33 59.69) (xy 100.33 66.04)
 		)
 		(stroke
@@ -3505,13 +3525,13 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 25.4) (xy 151.13 25.4)
+			(xy 100.33 34.29) (xy 106.68 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c369cd5d-26a6-40f0-894d-6ad24f55a541")
+		(uuid "c5b169e9-4560-49fe-854d-cf0410f2d30f")
 	)
 	(wire
 		(pts
@@ -3682,26 +3702,6 @@
 			(type default)
 		)
 		(uuid "f0a9ddce-4adf-471c-8817-0258c31e9a8b")
-	)
-	(wire
-		(pts
-			(xy 151.13 21.59) (xy 151.13 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f29b5349-f2fc-454d-8f16-e2762ef52752")
-	)
-	(wire
-		(pts
-			(xy 173.99 30.48) (xy 171.45 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3e0ed5f-a273-4568-8e16-e9a843612da8")
 	)
 	(wire
 		(pts
@@ -3985,7 +3985,7 @@
 	)
 	(global_label "NRST"
 		(shape input)
-		(at 100.33 31.75 180)
+		(at 100.33 34.29 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3995,7 +3995,7 @@
 		)
 		(uuid "ddeed5da-7558-4509-8a32-2b52d715aee9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.5672 31.75 0)
+			(at 92.5672 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4029,7 +4029,7 @@
 	)
 	(global_label "TX"
 		(shape input)
-		(at 147.32 25.4 180)
+		(at 147.32 30.48 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4039,7 +4039,7 @@
 		)
 		(uuid "f60ccc9a-579b-4a49-8334-d27f468f63a6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 142.1577 25.4 0)
+			(at 142.1577 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4183,6 +4183,12 @@
 			(uuid "2a4b9627-99df-4f05-9275-fb36f45614a2")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "TP9")
@@ -4250,6 +4256,12 @@
 			(uuid "2edba03f-7e55-47a8-9e37-df2da412d997")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "TP8")
@@ -4260,7 +4272,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 166.37 21.59 0)
+		(at 166.37 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4269,15 +4281,6 @@
 		(fields_autoplaced yes)
 		(uuid "290ef260-011e-4b04-a816-7b676ce5b1f2")
 		(property "Reference" "TP11"
-			(at 168.91 17.0179 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "UART_RX"
 			(at 168.91 19.5579 0)
 			(effects
 				(font
@@ -4286,8 +4289,17 @@
 				(justify left)
 			)
 		)
+		(property "Value" "UART_RX"
+			(at 168.91 22.0979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 171.45 21.59 0)
+			(at 171.45 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4296,7 +4308,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 171.45 21.59 0)
+			(at 171.45 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4305,7 +4317,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 166.37 21.59 0)
+			(at 166.37 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4317,6 +4329,12 @@
 			(uuid "79541a5c-4920-4f8f-b527-96256a20b8a5")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "TP11")
@@ -5032,6 +5050,12 @@
 			(uuid "bda93fbb-8145-4fe1-a084-ebd63272e6e7")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "TP5")
@@ -5099,6 +5123,12 @@
 			(uuid "c5cde277-6121-4e65-a0e9-ccfe41f5f656")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "TP12")
@@ -5562,6 +5592,12 @@
 			(uuid "410cf4a6-386d-45ce-b6ff-6bc788b0e57b")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "TP2")
@@ -5635,7 +5671,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" ""
+		(property "Mouser Part Number" "876-GP560/20-25"
 			(at 149.86 -407.29 0)
 			(effects
 				(font
@@ -5645,7 +5681,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/MEDER-electronic/GP560-20-25?qs=%252B6g0mu59x7KbpBqh6ze2hg%3D%3D&srsltid=AfmBOoovVTOKBmotzsVxL9AMe_M0tCXi2LyBakT40j8xCqS0YTGAD13f"
 			(at 149.86 -507.29 0)
 			(effects
 				(font
@@ -5969,7 +6005,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 151.13 21.59 0)
+		(at 151.13 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5978,15 +6014,6 @@
 		(fields_autoplaced yes)
 		(uuid "8f5c5935-2bea-4426-a9f9-1a48ae056c48")
 		(property "Reference" "TP10"
-			(at 153.67 17.0179 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "UART_TX"
 			(at 153.67 19.5579 0)
 			(effects
 				(font
@@ -5995,8 +6022,17 @@
 				(justify left)
 			)
 		)
+		(property "Value" "UART_TX"
+			(at 153.67 22.0979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 156.21 21.59 0)
+			(at 156.21 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6005,7 +6041,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 156.21 21.59 0)
+			(at 156.21 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6014,7 +6050,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 151.13 21.59 0)
+			(at 151.13 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6026,6 +6062,12 @@
 			(uuid "01ee22f8-1752-4c0f-9526-c575a3033b38")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "TP10")
@@ -6093,6 +6135,12 @@
 			(uuid "fcc431eb-8a74-491e-810d-fcbe049ad50f")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "TP4")
@@ -6642,6 +6690,12 @@
 			(uuid "7aca881d-4956-45b9-adb3-296a406e14b3")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "TP6")
@@ -6891,6 +6945,12 @@
 			(uuid "64581d82-bc78-4f0c-b644-82d3ba421e22")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "TP1")
@@ -7140,6 +7200,12 @@
 			(uuid "1853f2db-3619-4547-b96b-311694f996cb")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "TP13")
@@ -7279,6 +7345,12 @@
 			(uuid "ab23fdb6-b235-436b-bd64-e23fc3380a10")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "TP7")
@@ -7458,6 +7530,12 @@
 			(uuid "f42a2782-e32e-4025-b841-584d34315c4a")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "TP3")
@@ -7981,7 +8059,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" ""
+		(property "Mouser Part Number" "876-GP560/20-25"
 			(at 149.86 -421.26 0)
 			(effects
 				(font
@@ -7991,7 +8069,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/MEDER-electronic/GP560-20-25?qs=%252B6g0mu59x7KbpBqh6ze2hg%3D%3D&srsltid=AfmBOoovVTOKBmotzsVxL9AMe_M0tCXi2LyBakT40j8xCqS0YTGAD13f"
 			(at 149.86 -521.26 0)
 			(effects
 				(font
