@@ -2524,34 +2524,16 @@
 		(uuid "2a2565c0-fd38-44e6-93f8-50caa113ddd7")
 	)
 	(junction
-		(at 58.42 24.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "312f060e-77b2-4303-9737-ae8fdaca390c")
-	)
-	(junction
 		(at 26.67 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "323209de-27e8-44dd-aea6-f62c311f0ab1")
 	)
 	(junction
-		(at 58.42 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3f6e053b-6ac8-4cd1-9419-dc597df9e3a7")
-	)
-	(junction
 		(at 142.24 163.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "49ff1534-1b13-4c96-a18d-cf7b0576ac7d")
-	)
-	(junction
-		(at 100.33 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4cf52329-7231-4eb2-aecb-1d0caad9738a")
 	)
 	(junction
 		(at 156.21 161.29)
@@ -2584,22 +2566,10 @@
 		(uuid "71279e62-78e3-4166-891a-f927855c36cf")
 	)
 	(junction
-		(at 166.37 27.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7222724d-3919-43e3-ae7a-9e591969420c")
-	)
-	(junction
 		(at 187.96 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "75963ccc-61c0-4c6b-98f3-46db46075b23")
-	)
-	(junction
-		(at 193.04 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7cf2a05e-1846-48df-b4de-d8fd4ae71728")
 	)
 	(junction
 		(at 133.35 168.91)
@@ -2654,12 +2624,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d03f6997-8592-44d7-9d84-7c8e96f664dd")
-	)
-	(junction
-		(at 151.13 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dc887715-e54e-4cad-87b3-dac33d4f3987")
 	)
 	(junction
 		(at 146.05 158.75)
@@ -2795,16 +2759,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 59.69) (xy 100.33 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2512a086-59f5-47cc-b349-d3d0486c7eed")
-	)
-	(wire
-		(pts
 			(xy 146.05 154.94) (xy 146.05 158.75)
 		)
 		(stroke
@@ -2885,7 +2839,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 39.37) (xy 58.42 44.45)
+			(xy 58.42 39.37) (xy 58.42 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2895,7 +2849,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 27.94) (xy 173.99 27.94)
+			(xy 147.32 27.94) (xy 173.99 27.94)
 		)
 		(stroke
 			(width 0)
@@ -2942,16 +2896,6 @@
 			(type default)
 		)
 		(uuid "49c0fb11-2408-4180-b26e-a98592641b23")
-	)
-	(wire
-		(pts
-			(xy 58.42 24.13) (xy 66.04 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b680574-d01b-4198-b1f7-ecd900d38f02")
 	)
 	(wire
 		(pts
@@ -3025,16 +2969,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 30.48) (xy 151.13 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "596bc34e-ec9b-4e9c-a729-08e0f7adcf3f")
-	)
-	(wire
-		(pts
 			(xy 142.24 163.83) (xy 142.24 171.45)
 		)
 		(stroke
@@ -3052,16 +2986,6 @@
 			(type default)
 		)
 		(uuid "5b252d58-29eb-4a55-9a1b-564731efd780")
-	)
-	(wire
-		(pts
-			(xy 151.13 24.13) (xy 151.13 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "608a6b5b-ea83-40b7-ad88-d0d45f78f738")
 	)
 	(wire
 		(pts
@@ -3175,16 +3099,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 44.45) (xy 58.42 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a4469ce-ac30-458b-a538-1a7ebb4eecae")
-	)
-	(wire
-		(pts
 			(xy 39.37 156.21) (xy 83.82 156.21)
 		)
 		(stroke
@@ -3295,16 +3209,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 24.13) (xy 166.37 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "973b4917-5311-4cd6-8cd0-e4f480f58327")
-	)
-	(wire
-		(pts
 			(xy 102.87 31.75) (xy 106.68 31.75)
 		)
 		(stroke
@@ -3335,7 +3239,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 30.48) (xy 173.99 30.48)
+			(xy 147.32 30.48) (xy 173.99 30.48)
 		)
 		(stroke
 			(width 0)
@@ -3445,16 +3349,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 71.12) (xy 199.39 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc72c90c-6268-4a3e-ba5f-9f3f16ed8c71")
-	)
-	(wire
-		(pts
 			(xy 166.37 87.63) (xy 170.18 87.63)
 		)
 		(stroke
@@ -3462,26 +3356,6 @@
 			(type default)
 		)
 		(uuid "bcca70c2-b0b1-4cec-81dd-49648b3e9f4c")
-	)
-	(wire
-		(pts
-			(xy 193.04 64.77) (xy 193.04 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdddbc46-8599-4c17-9507-393ad939b2c9")
-	)
-	(wire
-		(pts
-			(xy 147.32 27.94) (xy 166.37 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdef20df-c701-4265-afa0-1e534de65b78")
 	)
 	(wire
 		(pts
@@ -3695,16 +3569,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 44.45) (xy 66.04 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0a9ddce-4adf-471c-8817-0258c31e9a8b")
-	)
-	(wire
-		(pts
 			(xy 60.96 151.13) (xy 83.82 151.13)
 		)
 		(stroke
@@ -3745,7 +3609,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 71.12) (xy 193.04 71.12)
+			(xy 187.96 71.12) (xy 199.39 71.12)
 		)
 		(stroke
 			(width 0)
@@ -4128,77 +3992,6 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 95.25 59.69 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0c571975-5dcb-4cee-b08e-2fc86ca24f3b")
-		(property "Reference" "TP9"
-			(at 91.948 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BTN"
-			(at 91.948 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 95.25 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 95.25 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 95.25 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2a4b9627-99df-4f05-9275-fb36f45614a2")
-		)
-		(instances
-			(project "mcu_rev1"
-				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
-					(reference "TP?")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
 		(at 29.21 86.36 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4265,79 +4058,6 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "TP8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 166.37 24.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "290ef260-011e-4b04-a816-7b676ce5b1f2")
-		(property "Reference" "TP11"
-			(at 168.91 19.5579 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "UART_RX"
-			(at 168.91 22.0979 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 171.45 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 171.45 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 166.37 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "79541a5c-4920-4f8f-b527-96256a20b8a5")
-		)
-		(instances
-			(project "mcu_rev1"
-				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
-					(reference "TP?")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP11")
 					(unit 1)
 				)
 			)
@@ -5059,79 +4779,6 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "TP5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 193.04 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "59d4f44b-20bc-423e-b0fa-830ad63279e5")
-		(property "Reference" "TP12"
-			(at 195.58 60.1979 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "REED"
-			(at 195.58 62.7379 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 198.12 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 198.12 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 193.04 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c5cde277-6121-4e65-a0e9-ccfe41f5f656")
-		)
-		(instances
-			(project "mcu_rev1"
-				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
-					(reference "TP?")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP12")
 					(unit 1)
 				)
 			)
@@ -6005,79 +5652,6 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 151.13 24.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8f5c5935-2bea-4426-a9f9-1a48ae056c48")
-		(property "Reference" "TP10"
-			(at 153.67 19.5579 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "UART_TX"
-			(at 153.67 22.0979 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 156.21 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 156.21 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 151.13 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "01ee22f8-1752-4c0f-9526-c575a3033b38")
-		)
-		(instances
-			(project "mcu_rev1"
-				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
-					(reference "TP?")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
 		(at 156.21 171.45 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6626,79 +6200,6 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 66.04 24.13 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b085c40c-005a-4c79-8808-ec52d2ec300b")
-		(property "Reference" "TP6"
-			(at 71.12 22.8599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BAT+"
-			(at 71.12 25.3999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 66.04 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 66.04 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 66.04 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7aca881d-4956-45b9-adb3-296a406e14b3")
-		)
-		(instances
-			(project "mcu_rev1"
-				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
-					(reference "TP?")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -7281,79 +6782,6 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 66.04 44.45 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c9d7fe41-c81a-47f3-9ebc-ed8b9ac1060e")
-		(property "Reference" "TP7"
-			(at 71.12 43.1799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BAT-"
-			(at 71.12 45.7199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 66.04 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 66.04 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 66.04 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ab23fdb6-b235-436b-bd64-e23fc3380a10")
-		)
-		(instances
-			(project "mcu_rev1"
-				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
-					(reference "TP?")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP7")
 					(unit 1)
 				)
 			)
