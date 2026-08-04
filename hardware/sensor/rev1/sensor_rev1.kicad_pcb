@@ -17194,5 +17194,27 @@
 		(net 33)
 		(uuid "04ff5a7b-19e0-4305-bb8f-9c605c6b26f2")
 	)
+	(zone
+		(net 1)
+		(net_name "GND")
+		(layer "F.Cu")
+		(uuid "cc97a28f-4c71-450b-b81e-68861c3d4a19")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0.2)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 248.89 90) (xy 244.62 90) (xy 244.61 102.57) (xy 224.29 102.57) (xy 224.28 90) (xy 220 90.01)
+				(xy 220.01 149.99) (xy 224.3 150) (xy 224.31 154.44) (xy 244.61 154.44) (xy 244.61 150) (xy 248.9 150)
+			)
+		)
+	)
 	(embedded_fonts no)
 )
