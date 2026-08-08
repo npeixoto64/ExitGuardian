@@ -11,7 +11,7 @@
 		(company "NPX4U")
 	)
 	(lib_symbols
-		(symbol "BLM18KG601SN1:BLM18KG601SN1D"
+		(symbol "BLM18KG601SN1D_1"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -82,7 +82,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
 				(at 16.51 -594.92 0)
 				(effects
 					(font
@@ -92,7 +92,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "Murata Electronics"
+			(property "Manufacturer" "Murata Electronics"
 				(at 16.51 -694.92 0)
 				(effects
 					(font
@@ -102,7 +102,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "BLM18KG601SN1D"
+			(property "Manufacturer Part Number" "BLM18KG601SN1D"
 				(at 16.51 -794.92 0)
 				(effects
 					(font
@@ -112,7 +112,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "BLM18KG601SN1D_1_1"
+			(symbol "BLM18KG601SN1D_1_1_1"
 				(rectangle
 					(start 5.08 2.54)
 					(end 15.24 -5.08)
@@ -163,7 +163,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "CC1101RGPR:CC1101RGPR"
+		(symbol "CC1101RGPR_1"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -234,7 +234,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CC1101RGPR?qs=OHhYoCux73lreNWI41kZ9Q%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CC1101RGPR?qs=OHhYoCux73lreNWI41kZ9Q%3D%3D"
 				(at 34.29 -584.76 0)
 				(effects
 					(font
@@ -244,7 +244,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "Texas Instruments"
+			(property "Manufacturer" "Texas Instruments"
 				(at 34.29 -684.76 0)
 				(effects
 					(font
@@ -254,7 +254,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "CC1101RGPR"
+			(property "Manufacturer Part Number" "CC1101RGPR"
 				(at 34.29 -784.76 0)
 				(effects
 					(font
@@ -264,7 +264,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "CC1101RGPR_1_1"
+			(symbol "CC1101RGPR_1_1_1"
 				(rectangle
 					(start 5.08 12.7)
 					(end 33.02 -30.48)
@@ -1238,7 +1238,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "NX3225GA-26_000M-STD-CRG-2:NX3225GA-26.000M-STD-CRG-2"
+		(symbol "NX3225GA-26.000M-STD-CRG-2_1"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1309,7 +1309,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D"
 				(at 39.37 -594.92 0)
 				(effects
 					(font
@@ -1319,7 +1319,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "NDK"
+			(property "Manufacturer" "NDK"
 				(at 39.37 -694.92 0)
 				(effects
 					(font
@@ -1329,7 +1329,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "NX3225GA-26.000M-STD-CRG-2"
+			(property "Manufacturer Part Number" "NX3225GA-26.000M-STD-CRG-2"
 				(at 39.37 -794.92 0)
 				(effects
 					(font
@@ -1339,7 +1339,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "NX3225GA-26.000M-STD-CRG-2_1_1"
+			(symbol "NX3225GA-26.000M-STD-CRG-2_1_1_1"
 				(rectangle
 					(start 5.08 2.54)
 					(end 38.1 -5.08)
@@ -4042,218 +4042,6 @@
 		)
 	)
 	(symbol
-		(lib_id "CC1101RGPR:CC1101RGPR")
-		(at 80.01 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3c35d594-a28a-4a61-b194-8fbcdd04361f")
-		(property "Reference" "IC2"
-			(at 114.046 57.404 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CC1101RGPR"
-			(at 114.046 59.944 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MyParts:QFN50P400X400X100-21N-D"
-			(at 114.3 159.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/cc1101"
-			(at 114.3 259.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low-Power Sub-1GHz RF Transceiver"
-			(at 80.01 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1"
-			(at 114.3 459.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "595-CC1101RGPR"
-			(at 114.3 559.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CC1101RGPR?qs=OHhYoCux73lreNWI41kZ9Q%3D%3D"
-			(at 114.3 659.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Texas Instruments"
-			(at 114.3 759.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "CC1101RGPR"
-			(at 114.3 859.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CC1101RGPR?qs=OHhYoCux73lreNWI41kZ9Q%3D%3D"
-			(at 114.3 659.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 114.3 759.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CC1101RGPR"
-			(at 114.3 859.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "10"
-			(uuid "6985a3b3-3330-4467-8b0b-debc562a4fd6")
-		)
-		(pin "17"
-			(uuid "2779eff2-dde0-425d-abdc-90ccf91bdd8a")
-		)
-		(pin "8"
-			(uuid "51a47188-61fa-4c97-b789-4ed6a4072eb5")
-		)
-		(pin "7"
-			(uuid "091d21f2-90ed-435d-a5d1-42e10999c8e3")
-		)
-		(pin "15"
-			(uuid "24ce9184-8b96-42a8-b96d-56d11e441fb3")
-		)
-		(pin "5"
-			(uuid "a0f7a1eb-7902-4eb6-bec2-29a022db48c9")
-		)
-		(pin "4"
-			(uuid "316e55ce-191b-4be9-869c-0727658ca368")
-		)
-		(pin "16"
-			(uuid "3af06029-6d4d-45aa-a3e8-3afa4203408d")
-		)
-		(pin "1"
-			(uuid "dbc50308-a8c6-4cec-94f6-8dd7f4e09ba4")
-		)
-		(pin "11"
-			(uuid "1c8d2658-1277-40b0-a2e9-012c21ffe767")
-		)
-		(pin "3"
-			(uuid "7b916ca1-fef4-4fff-b361-b4427ba640f4")
-		)
-		(pin "21"
-			(uuid "0cd9e064-bfa0-4a1b-88bb-5750fd72ffee")
-		)
-		(pin "6"
-			(uuid "55772bb5-36aa-4b55-8b38-64d51f648c34")
-		)
-		(pin "13"
-			(uuid "70ae1898-0736-4ec1-ad5f-298c91a66436")
-		)
-		(pin "19"
-			(uuid "2b747aa5-2c54-4877-ac89-0a50b9cd3b0a")
-		)
-		(pin "9"
-			(uuid "1bc85c64-38f5-45b3-9a91-2371b5174099")
-		)
-		(pin "14"
-			(uuid "1ea38747-948e-445a-98fa-b32e655bbc6c")
-		)
-		(pin "20"
-			(uuid "ac7e92b0-600d-42c3-8afa-25a75edbaa4a")
-		)
-		(pin "2"
-			(uuid "d55a733a-a7b9-48f3-acd9-2cfb6be2e662")
-		)
-		(pin "18"
-			(uuid "aae4509c-c425-406d-b2ef-fee3a3638ec5")
-		)
-		(pin "12"
-			(uuid "8ae40ad7-499e-4cb9-b54f-cc6f061c4d06")
-		)
-		(instances
-			(project "rf_rev1"
-				(path "/50a12035-955f-49d8-a6b8-24fcd6d450af"
-					(reference "IC?")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "IC2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 163.83 102.87 180)
 		(unit 1)
@@ -4698,162 +4486,6 @@
 		)
 	)
 	(symbol
-		(lib_id "BLM18KG601SN1:BLM18KG601SN1D")
-		(at 43.18 36.83 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5efa16e5-308e-41e1-83d5-9ace7c2eaeb0")
-		(property "Reference" "FB1"
-			(at 33.02 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BLM18KG601SN1D"
-			(at 33.02 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MyParts:BLM18SP221SN1B"
-			(at 26.67 131.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb"
-			(at 26.67 231.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "BLM18_N1D Series EMI Suppression Filter 600+/-25% at 100MHz 1.3A @85"
-			(at 43.18 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.95"
-			(at 26.67 431.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "81-BLM18KG601SN1D"
-			(at 26.67 531.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
-			(at 26.67 631.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Murata Electronics"
-			(at 26.67 731.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "BLM18KG601SN1D"
-			(at 26.67 831.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
-			(at 26.67 631.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Murata Electronics"
-			(at 26.67 731.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "BLM18KG601SN1D"
-			(at 26.67 831.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b5e9bbff-6bc3-43c9-a992-2c275d639fa9")
-		)
-		(pin "1"
-			(uuid "ebdeb5d7-0003-41da-bd61-2f0efb9b82bd")
-		)
-		(instances
-			(project "rf_rev1"
-				(path "/50a12035-955f-49d8-a6b8-24fcd6d450af"
-					(reference "FB?")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "FB1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 52.07 45.72 180)
 		(unit 1)
@@ -4915,6 +4547,133 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
 					(reference "TP14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "NX3225GA-26.000M-STD-CRG-2_1")
+		(lib_id "NX3225GA-26_000M-STD-CRG-2:NX3225GA-26.000M-STD-CRG-2")
+		(at 78.74 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b26bba6-6629-44c2-be7d-892d5bd73fa9")
+		(property "Reference" "Y1"
+			(at 100.33 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NX3225GA-26.000M-STD-CRG-2"
+			(at 100.33 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:NX3225GA26000MSTDCRG2"
+			(at 118.11 223.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ndk.com/images/products/catalog/c_NX3225GA-2_e.pdf"
+			(at 118.11 323.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "26MHz 8pF +/-20ppm +/-30ppm SMD3225-4P Crystals ROHS  Operating Temperature -40~+85"
+			(at 78.74 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.9"
+			(at 118.11 523.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "344-NX3225GA26MSTRG2"
+			(at 118.11 623.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D"
+			(at 118.11 723.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "NDK"
+			(at 118.11 823.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "NX3225GA-26.000M-STD-CRG-2"
+			(at 118.11 923.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "75d76be6-4914-44d6-8e9c-5424d3b24281")
+		)
+		(pin "4"
+			(uuid "06ec3631-3ba2-4347-9bba-697941d10692")
+		)
+		(pin "2"
+			(uuid "24a17e80-5aac-4119-8424-eda1c847949f")
+		)
+		(pin "1"
+			(uuid "14cdbbd6-121e-4f85-9741-05f6222e2ef0")
+		)
+		(instances
+			(project ""
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
+					(reference "Y1")
 					(unit 1)
 				)
 			)
@@ -5177,6 +4936,127 @@
 		)
 	)
 	(symbol
+		(lib_name "BLM18KG601SN1D_1")
+		(lib_id "BLM18KG601SN1:BLM18KG601SN1D")
+		(at 43.18 39.37 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "82d13efa-8159-4a0e-8768-20f82df8e3d0")
+		(property "Reference" "FB1"
+			(at 33.02 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BLM18KG601SN1D"
+			(at 33.02 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:BLM18SP221SN1B"
+			(at 26.67 -55.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb"
+			(at 26.67 -155.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "BLM18_N1D Series EMI Suppression Filter 600+/-25% at 100MHz 1.3A @85"
+			(at 43.18 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.95"
+			(at 26.67 -355.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-BLM18KG601SN1D"
+			(at 26.67 -455.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
+			(at 26.67 -555.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 26.67 -655.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "BLM18KG601SN1D"
+			(at 26.67 -755.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6844e4e7-e0c3-4a18-8bf9-6e2803543ba6")
+		)
+		(pin "2"
+			(uuid "85915a63-2467-4c28-abe4-e4ba3cea6f9f")
+		)
+		(instances
+			(project ""
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
+					(reference "FB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 68.58 92.71 0)
 		(unit 1)
@@ -5355,6 +5235,184 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
 					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "CC1101RGPR_1")
+		(lib_id "CC1101RGPR:CC1101RGPR")
+		(at 80.01 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9766ec3a-1362-43a3-9d13-36fb4b91f023")
+		(property "Reference" "IC2"
+			(at 120.65 68.5098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CC1101RGPR"
+			(at 120.65 71.0498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:QFN50P400X400X100-21N-D"
+			(at 114.3 159.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/cc1101"
+			(at 114.3 259.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power Sub-1GHz RF Transceiver"
+			(at 80.01 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1"
+			(at 114.3 459.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "595-CC1101RGPR"
+			(at 114.3 559.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CC1101RGPR?qs=OHhYoCux73lreNWI41kZ9Q%3D%3D"
+			(at 114.3 659.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 114.3 759.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CC1101RGPR"
+			(at 114.3 859.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9306de9f-15d2-48b3-a6a0-323c2755f496")
+		)
+		(pin "15"
+			(uuid "4fc4d32c-6c36-4296-a84f-aff40ab6082a")
+		)
+		(pin "12"
+			(uuid "ad84c9cc-e52a-4ff2-8111-2d086788fd65")
+		)
+		(pin "18"
+			(uuid "165d64be-d64b-4d1e-82fe-c05a056ca5be")
+		)
+		(pin "13"
+			(uuid "b2fd7582-da8c-4176-9f37-1014fe803865")
+		)
+		(pin "17"
+			(uuid "36ce3e6d-2e93-41fe-9a83-9fc2ceeecbf3")
+		)
+		(pin "8"
+			(uuid "62582d55-f99c-4d68-bee0-0def35e16e39")
+		)
+		(pin "16"
+			(uuid "e65950a8-d0d7-4f6f-87c9-014088cb041e")
+		)
+		(pin "10"
+			(uuid "b1b89cef-4c1e-447d-849a-816910dd121e")
+		)
+		(pin "19"
+			(uuid "8f98f1dc-fc51-4fe4-b032-3209c886439a")
+		)
+		(pin "9"
+			(uuid "c3e53e91-dca0-4278-8af4-ee18beb563a7")
+		)
+		(pin "14"
+			(uuid "e4883169-8e60-45a3-af08-b8b1c57f4fd0")
+		)
+		(pin "20"
+			(uuid "0665e699-7381-4c3a-9fee-593efd438d38")
+		)
+		(pin "3"
+			(uuid "9bfa6f39-9c74-4ac9-93dd-c191be04f5f3")
+		)
+		(pin "6"
+			(uuid "f4fa41ce-54b5-41fe-918a-624670560841")
+		)
+		(pin "2"
+			(uuid "54dc5655-014e-4580-93cf-189307e4d295")
+		)
+		(pin "4"
+			(uuid "3c5371fb-c109-436d-8c11-54c7abec8227")
+		)
+		(pin "5"
+			(uuid "588f6640-c936-4371-81e2-d2487c0fc16b")
+		)
+		(pin "11"
+			(uuid "fcdc2ac3-d966-46d1-a63a-0cdb57d9f9bd")
+		)
+		(pin "21"
+			(uuid "83068b7b-059e-4425-acb2-5a3b80c11ff2")
+		)
+		(pin "7"
+			(uuid "2e2979be-f4af-48af-a891-55b9e1d6f038")
+		)
+		(instances
+			(project ""
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
+					(reference "IC2")
 					(unit 1)
 				)
 			)
@@ -6993,168 +7051,6 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
 					(reference "#FLG04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "NX3225GA-26_000M-STD-CRG-2:NX3225GA-26.000M-STD-CRG-2")
-		(at 78.74 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eb5db7d6-ea65-402e-8a3a-912b48c13d74")
-		(property "Reference" "Y1"
-			(at 100.33 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NX3225GA-26.000M-STD-CRG-2"
-			(at 100.33 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MyParts:NX3225GA26000MSTDCRG2"
-			(at 118.11 223.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ndk.com/images/products/catalog/c_NX3225GA-2_e.pdf"
-			(at 118.11 323.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "26MHz 8pF +/-20ppm +/-30ppm SMD3225-4P Crystals ROHS  Operating Temperature -40~+85"
-			(at 78.74 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.9"
-			(at 118.11 523.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "344-NX3225GA26MSTRG2"
-			(at 118.11 623.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/en/ProductDetail/NDK/STDCRG2-26M?qs=Tc%252BHE9vUsnu9%252BZcoUal0nA%3D%3D"
-			(at 118.11 723.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "NDK"
-			(at 118.11 823.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "NX3225GA-26.000M-STD-CRG-2"
-			(at 118.11 923.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D"
-			(at 118.11 723.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "NDK"
-			(at 118.11 823.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "NX3225GA-26.000M-STD-CRG-2"
-			(at 118.11 923.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "210ce175-40cb-462b-8cc8-0a1f256d70bc")
-		)
-		(pin "1"
-			(uuid "03906795-3940-43c9-88b6-c591837eec37")
-		)
-		(pin "4"
-			(uuid "01f73166-e7bc-4f9f-b79b-79acfe9eb908")
-		)
-		(pin "2"
-			(uuid "11f53eb1-671a-4cd9-9ba0-0b9f9df44891")
-		)
-		(instances
-			(project "rf_rev1"
-				(path "/50a12035-955f-49d8-a6b8-24fcd6d450af"
-					(reference "Y?")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "Y1")
 					(unit 1)
 				)
 			)
