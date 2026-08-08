@@ -293,6 +293,18 @@ Polycase
 - External: 75 x 35 x 12 mm
 - Internal: 25.4 x 26.6 x 5.3 mm (space for useful part of PCB only)
 
+### Prices
+
+#### BOM
+Per unit: 9.64 €
+Per 1000 units: 4.42 €
+
+#### PCB
+
+#### PCBA
+
+#### Electronic Enclosure
+
 ## Gateway
 
 ### Gateway MCU
