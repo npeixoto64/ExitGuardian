@@ -3250,6 +3250,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 154.94 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 154.94 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d940f68f-b466-400f-a311-2d0d42e68088")
 		)
@@ -3505,6 +3523,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 161.29 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 161.29 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6bc1e95b-035b-4d9d-af34-48fc81ad263c")
 		)
@@ -3616,6 +3652,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 213.36 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 213.36 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2a5cce31-32e6-4723-bdff-4a34f9ef3662")
 		)
@@ -3719,6 +3773,24 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "ERJ-PA2F5602X"
+			(at 102.87 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 102.87 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
 			(at 102.87 36.83 0)
 			(effects
 				(font
@@ -3838,6 +3910,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 165.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 165.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c2fedffa-53c4-4151-94f3-a8072d054a19")
 		)
@@ -3940,6 +4030,24 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LQW15AN12NJ80D"
+			(at 154.94 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 154.94 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
 			(at 154.94 86.36 90)
 			(effects
 				(font
@@ -4131,6 +4239,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 163.83 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 163.83 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "794e06ee-8b82-4d10-9bff-e3a82d39657f")
 		)
@@ -4243,6 +4369,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 148.59 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 148.59 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "28f09dc2-622d-43c0-ba0e-bbccfa54860a")
 		)
@@ -4345,6 +4489,24 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LQW15AN12NJ80D"
+			(at 186.69 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 186.69 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
 			(at 186.69 81.28 90)
 			(effects
 				(font
@@ -4464,6 +4626,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 133.35 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 133.35 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "190afe96-f341-4aa5-ae5b-b5eed2c03f37")
 		)
@@ -4532,6 +4712,24 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 52.07 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 52.07 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
 			(at 52.07 45.72 0)
 			(effects
 				(font
@@ -4628,7 +4826,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D"
 			(at 118.11 723.19 0)
 			(effects
 				(font
@@ -4638,7 +4836,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "NDK"
+		(property "Manufacturer_Name" "NDK"
 			(at 118.11 823.19 0)
 			(effects
 				(font
@@ -4655,6 +4853,24 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 78.74 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 78.74 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -4914,6 +5130,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 139.7 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 139.7 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d61b01fa-e099-4384-8b26-089733a3dfc9")
 		)
@@ -5011,7 +5245,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D"
 			(at 26.67 -555.55 0)
 			(effects
 				(font
@@ -5021,7 +5255,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics"
+		(property "Manufacturer_Name" "Murata Electronics"
 			(at 26.67 -655.55 0)
 			(effects
 				(font
@@ -5038,6 +5272,24 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 43.18 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 43.18 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -5139,6 +5391,24 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+			(at 68.58 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 68.58 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
 			(at 68.58 92.71 0)
 			(effects
 				(font
@@ -5316,7 +5586,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CC1101RGPR?qs=OHhYoCux73lreNWI41kZ9Q%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CC1101RGPR?qs=OHhYoCux73lreNWI41kZ9Q%3D%3D"
 			(at 114.3 659.69 0)
 			(effects
 				(font
@@ -5326,7 +5596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Texas Instruments"
+		(property "Manufacturer_Name" "Texas Instruments"
 			(at 114.3 759.69 0)
 			(effects
 				(font
@@ -5343,6 +5613,24 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 80.01 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 80.01 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -5725,6 +6013,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 125.73 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 125.73 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "21a4620c-8160-4eaa-8c55-599a4b0d2965")
 		)
@@ -5865,6 +6171,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 226.06 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 226.06 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
 			(at 226.06 81.28 0)
 			(effects
 				(font
@@ -6048,6 +6372,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 69.85 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 69.85 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "fe4eb86b-bb27-4bfe-a8f9-c796a25366cb")
 		)
@@ -6153,6 +6495,24 @@
 		)
 		(property "Manufacturer_Part_Number" "LQG15HH18NJ02D"
 			(at 163.83 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 163.83 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 163.83 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6343,6 +6703,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 193.04 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 193.04 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "892e19fa-8ef2-4ea3-81a9-5190c8fcc50e")
 		)
@@ -6445,6 +6823,24 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LQG15HH18NJ02D"
+			(at 175.26 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 175.26 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
 			(at 175.26 76.2 90)
 			(effects
 				(font
@@ -6707,6 +7103,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 199.39 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 199.39 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "86667ed8-8775-4f55-8451-564ca50622d6")
 		)
@@ -6811,6 +7225,24 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
 			(at 139.7 91.44 0)
 			(effects
 				(font
@@ -7147,6 +7579,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 111.76 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 111.76 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f9fd3508-efc6-4e4e-b26a-d0ff3075731d")
 		)
@@ -7330,6 +7780,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 175.26 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 175.26 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "24a42a4a-6329-483f-a68a-48f80d20fc0b")
 		)
@@ -7434,6 +7902,24 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+			(at 54.61 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 54.61 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
 			(at 54.61 92.71 0)
 			(effects
 				(font
