@@ -106,8 +106,6 @@ docs/_build/
 *.xml
 
 # Gerber / fabrication outputs (often generated)
-*.gbr
-*.drl
 *.zip
 
 # Cache
