@@ -7837,15 +7837,15 @@
 			(uuid "950ca05a-fbc9-4208-8e0f-29a62b044945")
 		)
 		(embedded_fonts no)
-		(model "GP560_20-25.stp"
+		(model "${KIPRJMOD}/libraries/3dmodels/MyParts/GP560_20-25.stp"
 			(offset
-				(xyz 11.72000009 -0.02999999888 3.369999835)
+				(xyz 11.72 -0.03 1.37)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -8099,8 +8099,8 @@
 		(at 228.15 134.84 180)
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
-		(property "Reference" "TP4"
-			(at 2.51 0.01 0)
+		(property "Reference" "MOSI1"
+			(at 1.06 -1.88 0)
 			(layer "B.SilkS")
 			(uuid "4a0057f1-7be8-43de-b6ae-1b75cd4726b2")
 			(effects
@@ -8749,7 +8749,7 @@
 			(uuid "45e3adf6-7c73-40e6-917e-72df132306c6")
 		)
 		(embedded_fonts no)
-		(model "GRM31CR61A107MEA8L.stp"
+		(model "${KIPRJMOD}/libraries/3dmodels/MyParts/GRM31CR61A107MEA8L.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9129,15 +9129,15 @@
 			(uuid "007b258b-cfa7-4407-8d5c-a6b39776f366")
 		)
 		(embedded_fonts no)
-		(model "GP560_20-25.stp"
+		(model "${KIPRJMOD}/libraries/3dmodels/MyParts/GP560_20-25.stp"
 			(offset
-				(xyz 11.72000009 -0.02999999888 3.369999835)
+				(xyz 11.72 -0.03 1.37)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -9467,7 +9467,7 @@
 		(at 243.37 140.19 180)
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
-		(property "Reference" "TP2"
+		(property "Reference" "CS1"
 			(at 0.05 1.78 0)
 			(layer "B.SilkS")
 			(uuid "8561c731-2875-4530-953a-8e5134912396")
@@ -9866,17 +9866,6 @@
 			(uuid "2e70a4ff-fb09-40fc-9a72-779de303f856")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/libraries/3dmodels/MyParts/M20-9770342.stp"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "MyParts:PTS636SMG25JSMTRLFS"
 		(layer "B.Cu")
@@ -10260,7 +10249,7 @@
 			(uuid "bbc927b5-1e7b-4492-acdb-4d0ff0e6a13c")
 		)
 		(embedded_fonts no)
-		(model "PTS636SMG25JSMTR_LFS.stp"
+		(model "${KIPRJMOD}/libraries/3dmodels/MyParts/PTS636SMG25JSMTR_LFS.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10278,8 +10267,8 @@
 		(at 230.21 138.74 180)
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
-		(property "Reference" "TP1"
-			(at 2.38 -0.06 0)
+		(property "Reference" "GD0"
+			(at 2.49 0.01 0)
 			(layer "B.SilkS")
 			(uuid "250610fd-dc84-457a-abc6-946c51006d41")
 			(effects
@@ -10386,7 +10375,7 @@
 		(at 228.17 132.24 180)
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
-		(property "Reference" "TP3"
+		(property "Reference" "MISO1"
 			(at 0.43 1.68 0)
 			(layer "B.SilkS")
 			(uuid "2b335513-42ed-48f9-bdcf-abd889bc4040")
@@ -10494,8 +10483,8 @@
 		(at 240.71 136.27 180)
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
-		(property "Reference" "TP5"
-			(at -0.26 1.71 0)
+		(property "Reference" "CLK1"
+			(at -0.54 1.8 0)
 			(layer "B.SilkS")
 			(uuid "da7b0767-4299-4813-bd85-705d87dd5801")
 			(effects
@@ -10812,7 +10801,7 @@
 		(at 226.91 143.44 180)
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
-		(property "Reference" "TP8"
+		(property "Reference" "LED2"
 			(at 0.35 1.73 0)
 			(layer "B.SilkS")
 			(uuid "645b5bc8-bd9b-4570-9768-a7812c951c20")
@@ -11408,8 +11397,8 @@
 		(at 229.81 125.35 180)
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
-		(property "Reference" "TP14"
-			(at 2.85 0.02 0)
+		(property "Reference" "RFVDD1"
+			(at 4.03 0.65 0)
 			(layer "B.SilkS")
 			(uuid "252a609a-6d0b-4d66-81e8-30e010c59c35")
 			(effects
@@ -11516,8 +11505,8 @@
 		(at 231.06 151.38 180)
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
-		(property "Reference" "TP13"
-			(at 0 -1.81 0)
+		(property "Reference" "MCUVDD1"
+			(at 0.7 -2.05 0)
 			(layer "B.SilkS")
 			(uuid "23df8f3b-3a09-4a00-959b-1a7cf9b4fe74")
 			(effects
@@ -12146,7 +12135,7 @@
 			(uuid "4152a43b-449c-4363-be96-b7201c08c954")
 		)
 		(embedded_fonts no)
-		(model "VLMS3000-GS08.stp"
+		(model "${KIPRJMOD}/libraries/3dmodels/MyParts/VLMS3000-GS08.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12622,7 +12611,7 @@
 			(uuid "279bd4c1-4ac1-4c52-819b-e274615b6498")
 		)
 		(embedded_fonts no)
-		(model "STM8L051F3P6.stp"
+		(model "${KIPRJMOD}/libraries/3dmodels/MyParts/STM8L051F3P6.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12753,19 +12742,6 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "f10c3770-a774-4c1f-95ef-33e5dbcf44fd")
-	)
-	(gr_text "- 1 mm FR4 needed JLBPCB. 2 stencils needed."
-		(at 159.63 111.26 0)
-		(layer "F.Cu")
-		(uuid "ae3d9a68-e2a5-4da4-9e3d-491edec3749a")
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
 	)
 	(gr_text "Exit Guardian - Sensor REV1.0\nNPX4U 2026"
 		(at 246.42 122.22 0)

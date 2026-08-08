@@ -4000,7 +4000,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "280c3cce-8649-4f17-b068-a8c9bcfcb51c")
-		(property "Reference" "TP8"
+		(property "Reference" "LED2"
 			(at 31.75 88.3919 0)
 			(effects
 				(font
@@ -4057,7 +4057,7 @@
 			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP8")
+					(reference "LED2")
 					(unit 1)
 				)
 			)
@@ -4686,7 +4686,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58e36afc-9cc7-4e56-85f6-20d4689795aa")
-		(property "Reference" "TP5"
+		(property "Reference" "CLK1"
 			(at 148.59 150.3679 0)
 			(effects
 				(font
@@ -4743,7 +4743,7 @@
 			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP5")
+					(reference "CLK1")
 					(unit 1)
 				)
 			)
@@ -5155,7 +5155,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b931b02-999a-4b7a-b6d1-476949ef0d04")
-		(property "Reference" "TP2"
+		(property "Reference" "CS1"
 			(at 143.51 142.7479 0)
 			(effects
 				(font
@@ -5212,7 +5212,7 @@
 			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP2")
+					(reference "CS1")
 					(unit 1)
 				)
 			)
@@ -5625,7 +5625,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90a802f2-0510-4523-9e02-a3da11253a27")
-		(property "Reference" "TP4"
+		(property "Reference" "MOSI1"
 			(at 158.75 173.4819 0)
 			(effects
 				(font
@@ -5682,7 +5682,7 @@
 			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP4")
+					(reference "MOSI1")
 					(unit 1)
 				)
 			)
@@ -6362,7 +6362,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7f5302c-a5b1-4549-9250-6bd7d533f4d1")
-		(property "Reference" "TP1"
+		(property "Reference" "GD0"
 			(at 139.7 137.6679 0)
 			(effects
 				(font
@@ -6419,7 +6419,7 @@
 			)
 			(project ""
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP1")
+					(reference "GD0")
 					(unit 1)
 				)
 			)
@@ -6619,7 +6619,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be4f7cab-6f25-4f09-9aff-b1cefcaad8c7")
-		(property "Reference" "TP13"
+		(property "Reference" "MCUVDD1"
 			(at 62.738 110.49 90)
 			(effects
 				(font
@@ -6674,7 +6674,7 @@
 			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP13")
+					(reference "MCUVDD1")
 					(unit 1)
 				)
 			)
@@ -6874,7 +6874,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cfd93685-1827-4030-917d-4e75a1841347")
-		(property "Reference" "TP3"
+		(property "Reference" "MISO1"
 			(at 144.78 173.4819 0)
 			(effects
 				(font
@@ -6931,7 +6931,7 @@
 			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP3")
+					(reference "MISO1")
 					(unit 1)
 				)
 			)
