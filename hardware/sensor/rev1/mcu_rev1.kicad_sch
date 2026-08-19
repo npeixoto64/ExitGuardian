@@ -1105,7 +1105,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "M20-9770342:M20-9770342"
+		(symbol "M20-9770342_1"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1176,7 +1176,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
+			(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
 				(at 16.51 -594.92 0)
 				(effects
 					(font
@@ -1186,7 +1186,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "Harwin"
+			(property "Manufacturer" "Harwin"
 				(at 16.51 -694.92 0)
 				(effects
 					(font
@@ -1196,7 +1196,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "M20-9770342"
+			(property "Manufacturer Part Number" "M20-9770342"
 				(at 16.51 -794.92 0)
 				(effects
 					(font
@@ -1206,7 +1206,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "M20-9770342_1_1"
+			(symbol "M20-9770342_1_1_1"
 				(rectangle
 					(start 5.08 2.54)
 					(end 15.24 -7.62)
@@ -2524,34 +2524,16 @@
 		(uuid "2a2565c0-fd38-44e6-93f8-50caa113ddd7")
 	)
 	(junction
-		(at 58.42 24.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "312f060e-77b2-4303-9737-ae8fdaca390c")
-	)
-	(junction
 		(at 26.67 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "323209de-27e8-44dd-aea6-f62c311f0ab1")
 	)
 	(junction
-		(at 58.42 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3f6e053b-6ac8-4cd1-9419-dc597df9e3a7")
-	)
-	(junction
 		(at 142.24 163.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "49ff1534-1b13-4c96-a18d-cf7b0576ac7d")
-	)
-	(junction
-		(at 100.33 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4cf52329-7231-4eb2-aecb-1d0caad9738a")
 	)
 	(junction
 		(at 156.21 161.29)
@@ -2588,12 +2570,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "75963ccc-61c0-4c6b-98f3-46db46075b23")
-	)
-	(junction
-		(at 193.04 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7cf2a05e-1846-48df-b4de-d8fd4ae71728")
 	)
 	(junction
 		(at 133.35 168.91)
@@ -2638,12 +2614,6 @@
 		(uuid "a75e4733-3eeb-40b9-ab6d-4da8904aab8d")
 	)
 	(junction
-		(at 151.13 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "afe6539c-12ed-482e-8c8c-e54fcf85ff5e")
-	)
-	(junction
 		(at 78.74 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2666,12 +2636,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e3060bc5-5f33-4dc0-9172-fbf32c807a01")
-	)
-	(junction
-		(at 166.37 27.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f91a14ad-3f71-4a3d-a716-49b4ed203e81")
 	)
 	(junction
 		(at 140.97 156.21)
@@ -2795,16 +2759,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 59.69) (xy 100.33 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2512a086-59f5-47cc-b349-d3d0486c7eed")
-	)
-	(wire
-		(pts
 			(xy 146.05 154.94) (xy 146.05 158.75)
 		)
 		(stroke
@@ -2822,16 +2776,6 @@
 			(type default)
 		)
 		(uuid "2a8b314c-8ff1-4e71-ac7c-a94cadf7978e")
-	)
-	(wire
-		(pts
-			(xy 100.33 31.75) (xy 106.68 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ce40bf1-5081-48f3-aab0-be24ddfe7727")
 	)
 	(wire
 		(pts
@@ -2895,13 +2839,23 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 39.37) (xy 58.42 44.45)
+			(xy 58.42 39.37) (xy 58.42 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3b573f1d-eb45-4f33-9956-979c6dfc01ee")
+	)
+	(wire
+		(pts
+			(xy 147.32 27.94) (xy 173.99 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40acc9c3-82ce-4235-88f6-c6ad0d3e38ba")
 	)
 	(wire
 		(pts
@@ -2942,16 +2896,6 @@
 			(type default)
 		)
 		(uuid "49c0fb11-2408-4180-b26e-a98592641b23")
-	)
-	(wire
-		(pts
-			(xy 58.42 24.13) (xy 66.04 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b680574-d01b-4198-b1f7-ecd900d38f02")
 	)
 	(wire
 		(pts
@@ -3045,16 +2989,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 34.29) (xy 102.87 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "627d5266-ba23-4adb-b394-83772e0fc7f1")
-	)
-	(wire
-		(pts
 			(xy 172.72 54.61) (xy 172.72 58.42)
 		)
 		(stroke
@@ -3072,16 +3006,6 @@
 			(type default)
 		)
 		(uuid "64c9c63e-2a83-4dd9-a59f-d66409cb39e2")
-	)
-	(wire
-		(pts
-			(xy 106.68 34.29) (xy 102.87 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65120e65-6587-4be6-9f38-ee4b5962e8df")
 	)
 	(wire
 		(pts
@@ -3115,16 +3039,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 27.94) (xy 173.99 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6cc2266d-fb50-408f-92ba-6ebb254dd8f6")
-	)
-	(wire
-		(pts
 			(xy 62.23 161.29) (xy 83.82 161.29)
 		)
 		(stroke
@@ -3135,7 +3049,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 30.48) (xy 171.45 34.29)
+			(xy 171.45 25.4) (xy 171.45 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3165,16 +3079,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 27.94) (xy 166.37 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72debaac-e644-4456-9f6a-f183fe779f85")
-	)
-	(wire
-		(pts
 			(xy 36.83 24.13) (xy 39.37 24.13)
 		)
 		(stroke
@@ -3185,16 +3089,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 25.4) (xy 173.99 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79d6f980-cbb2-4fc7-848d-17ab6efbbaa1")
-	)
-	(wire
-		(pts
 			(xy 124.46 166.37) (xy 133.35 166.37)
 		)
 		(stroke
@@ -3202,16 +3096,6 @@
 			(type default)
 		)
 		(uuid "79edd74d-d259-4f26-9f9c-26789aaf3668")
-	)
-	(wire
-		(pts
-			(xy 58.42 44.45) (xy 58.42 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a4469ce-ac30-458b-a538-1a7ebb4eecae")
 	)
 	(wire
 		(pts
@@ -3255,6 +3139,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 38.1) (xy 102.87 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8425cf94-766b-4698-a470-6dc236d8e7ff")
+	)
+	(wire
+		(pts
 			(xy 170.18 71.12) (xy 172.72 71.12)
 		)
 		(stroke
@@ -3272,16 +3166,6 @@
 			(type default)
 		)
 		(uuid "8bdf424e-9443-4072-bd6a-9932e2359b70")
-	)
-	(wire
-		(pts
-			(xy 166.37 21.59) (xy 166.37 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c55d67e-f8eb-4b5e-870b-697fa4c84ee3")
 	)
 	(wire
 		(pts
@@ -3325,6 +3209,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 31.75) (xy 106.68 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9be17e4b-2fa4-4d29-965c-fd69f70ef1c2")
+	)
+	(wire
+		(pts
 			(xy 100.33 91.44) (xy 100.33 96.52)
 		)
 		(stroke
@@ -3342,6 +3236,16 @@
 			(type default)
 		)
 		(uuid "a1912754-7140-4cf8-abfd-5b6821990fad")
+	)
+	(wire
+		(pts
+			(xy 147.32 30.48) (xy 173.99 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6bd5ddd-13ce-476b-91a4-afa65d115f3d")
 	)
 	(wire
 		(pts
@@ -3395,6 +3299,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 25.4) (xy 173.99 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8326b65-2f88-4ed3-99b9-3f4a0b58c83a")
+	)
+	(wire
+		(pts
 			(xy 67.31 78.74) (xy 67.31 87.63)
 		)
 		(stroke
@@ -3435,16 +3349,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 71.12) (xy 199.39 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc72c90c-6268-4a3e-ba5f-9f3f16ed8c71")
-	)
-	(wire
-		(pts
 			(xy 166.37 87.63) (xy 170.18 87.63)
 		)
 		(stroke
@@ -3452,16 +3356,6 @@
 			(type default)
 		)
 		(uuid "bcca70c2-b0b1-4cec-81dd-49648b3e9f4c")
-	)
-	(wire
-		(pts
-			(xy 193.04 64.77) (xy 193.04 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdddbc46-8599-4c17-9507-393ad939b2c9")
 	)
 	(wire
 		(pts
@@ -3505,13 +3399,13 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 25.4) (xy 151.13 25.4)
+			(xy 100.33 34.29) (xy 106.68 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c369cd5d-26a6-40f0-894d-6ad24f55a541")
+		(uuid "c5b169e9-4560-49fe-854d-cf0410f2d30f")
 	)
 	(wire
 		(pts
@@ -3675,36 +3569,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 44.45) (xy 66.04 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0a9ddce-4adf-471c-8817-0258c31e9a8b")
-	)
-	(wire
-		(pts
-			(xy 151.13 21.59) (xy 151.13 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f29b5349-f2fc-454d-8f16-e2762ef52752")
-	)
-	(wire
-		(pts
-			(xy 173.99 30.48) (xy 171.45 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3e0ed5f-a273-4568-8e16-e9a843612da8")
-	)
-	(wire
-		(pts
 			(xy 60.96 151.13) (xy 83.82 151.13)
 		)
 		(stroke
@@ -3745,7 +3609,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 71.12) (xy 193.04 71.12)
+			(xy 187.96 71.12) (xy 199.39 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3985,7 +3849,7 @@
 	)
 	(global_label "NRST"
 		(shape input)
-		(at 100.33 31.75 180)
+		(at 100.33 34.29 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3995,7 +3859,7 @@
 		)
 		(uuid "ddeed5da-7558-4509-8a32-2b52d715aee9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.5672 31.75 0)
+			(at 92.5672 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4029,7 +3893,7 @@
 	)
 	(global_label "TX"
 		(shape input)
-		(at 147.32 25.4 180)
+		(at 147.32 30.48 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4039,7 +3903,7 @@
 		)
 		(uuid "f60ccc9a-579b-4a49-8334-d27f468f63a6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 142.1577 25.4 0)
+			(at 142.1577 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4128,71 +3992,6 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 95.25 59.69 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0c571975-5dcb-4cee-b08e-2fc86ca24f3b")
-		(property "Reference" "TP9"
-			(at 91.948 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BTN"
-			(at 91.948 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 95.25 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 95.25 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 95.25 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2a4b9627-99df-4f05-9275-fb36f45614a2")
-		)
-		(instances
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
 		(at 29.21 86.36 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4201,7 +4000,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "280c3cce-8649-4f17-b068-a8c9bcfcb51c")
-		(property "Reference" "TP8"
+		(property "Reference" "LED2"
 			(at 31.75 88.3919 0)
 			(effects
 				(font
@@ -4246,241 +4045,37 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 29.21 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 29.21 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2edba03f-7e55-47a8-9e37-df2da412d997")
 		)
 		(instances
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 166.37 21.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "290ef260-011e-4b04-a816-7b676ce5b1f2")
-		(property "Reference" "TP11"
-			(at 168.91 17.0179 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "UART_RX"
-			(at 168.91 19.5579 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 171.45 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 171.45 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 166.37 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "79541a5c-4920-4f8f-b527-96256a20b8a5")
-		)
-		(instances
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "M20-9770342:M20-9770342")
-		(at 173.99 25.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "32690542-737f-445c-8eec-9245f3605987")
-		(property "Reference" "J2"
-			(at 190.5 26.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M20-9770342"
-			(at 190.5 29.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MyParts:HDRV3W66P0X254_1X3_762X254X855P"
-			(at 190.5 120.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn.harwin.com/pdfs/M20-977.pdf"
-			(at 190.5 220.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "2.54mm (0.1\") Pitch SIL Vertical Throughboard Pin Header, 5.8mm mating pin height, selective gold + tin, 3 contacts"
-			(at 173.99 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "8.55"
-			(at 190.5 420.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "855-M20-9770342"
-			(at 190.5 520.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
-			(at 190.5 620.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Harwin"
-			(at 190.5 720.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "M20-9770342"
-			(at 190.5 820.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
-			(at 190.5 620.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Harwin"
-			(at 190.5 720.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "M20-9770342"
-			(at 190.5 820.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4f97d11b-aa88-405e-b262-9460b87bc0f8")
-		)
-		(pin "3"
-			(uuid "62ea94d8-6a50-4ef9-ae73-e71c69402bf7")
-		)
-		(pin "2"
-			(uuid "45e8a483-aaea-4244-bb95-132a218b6973")
-		)
-		(instances
 			(project "mcu_rev1"
 				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
-					(reference "J2")
+					(reference "TP?")
 					(unit 1)
 				)
 			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "J2")
+					(reference "LED2")
 					(unit 1)
 				)
 			)
@@ -4588,6 +4183,24 @@
 					(size 1.27 1.27)
 				)
 				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 63.5 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 63.5 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -4829,6 +4442,150 @@
 		)
 	)
 	(symbol
+		(lib_name "M20-9770342_1")
+		(lib_id "M20-9770342:M20-9770342")
+		(at 173.99 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49851bfd-14ea-46bd-8fd4-d83a3e9e8f97")
+		(property "Reference" "J2"
+			(at 190.5 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M20-9770342"
+			(at 190.5 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MyParts:HDRV3W66P0X254_1X3_762X254X855P"
+			(at 190.5 120.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.harwin.com/pdfs/M20-977.pdf"
+			(at 190.5 220.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "2.54mm (0.1\") Pitch SIL Vertical Throughboard Pin Header, 5.8mm mating pin height, selective gold + tin, 3 contacts"
+			(at 173.99 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "8.55"
+			(at 190.5 420.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "855-M20-9770342"
+			(at 190.5 520.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D"
+			(at 190.5 620.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Harwin"
+			(at 190.5 720.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "M20-9770342"
+			(at 190.5 820.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 173.99 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 173.99 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6e9f3aae-4381-4c25-9848-73650f25aa23")
+		)
+		(pin "1"
+			(uuid "60899ac1-1003-4195-95c9-b3fecb4c8360")
+		)
+		(pin "3"
+			(uuid "2608fff5-0a69-41f3-bf91-d75e9afe910e")
+		)
+		(instances
+			(project ""
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 26.67 46.99 180)
 		(unit 1)
@@ -4983,7 +4740,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58e36afc-9cc7-4e56-85f6-20d4689795aa")
-		(property "Reference" "TP5"
+		(property "Reference" "CLK1"
 			(at 148.59 150.3679 0)
 			(effects
 				(font
@@ -5028,80 +4785,37 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 146.05 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 146.05 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bda93fbb-8145-4fe1-a084-ebd63272e6e7")
 		)
 		(instances
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP5")
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 193.04 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "59d4f44b-20bc-423e-b0fa-830ad63279e5")
-		(property "Reference" "TP12"
-			(at 195.58 60.1979 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "REED"
-			(at 195.58 62.7379 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 198.12 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 198.12 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 193.04 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c5cde277-6121-4e65-a0e9-ccfe41f5f656")
-		)
-		(instances
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP12")
+					(reference "CLK1")
 					(unit 1)
 				)
 			)
@@ -5281,6 +4995,24 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 83.82 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 83.82 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -5513,7 +5245,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b931b02-999a-4b7a-b6d1-476949ef0d04")
-		(property "Reference" "TP2"
+		(property "Reference" "CS1"
 			(at 143.51 142.7479 0)
 			(effects
 				(font
@@ -5558,13 +5290,37 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 140.97 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 140.97 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "410cf4a6-386d-45ce-b6ff-6bc788b0e57b")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP2")
+					(reference "CS1")
 					(unit 1)
 				)
 			)
@@ -5635,7 +5391,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" ""
+		(property "Mouser Part Number" "876-GP560/20-25"
 			(at 149.86 -407.29 0)
 			(effects
 				(font
@@ -5645,7 +5401,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/MEDER-electronic/GP560-20-25?qs=%252B6g0mu59x7KbpBqh6ze2hg%3D%3D&srsltid=AfmBOoovVTOKBmotzsVxL9AMe_M0tCXi2LyBakT40j8xCqS0YTGAD13f"
 			(at 149.86 -507.29 0)
 			(effects
 				(font
@@ -5672,6 +5428,24 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 166.37 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 166.37 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -5946,6 +5720,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 58.42 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 58.42 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "34636f40-5947-40b1-9c60-cceac189046c")
 		)
@@ -5969,73 +5761,6 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 151.13 21.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8f5c5935-2bea-4426-a9f9-1a48ae056c48")
-		(property "Reference" "TP10"
-			(at 153.67 17.0179 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "UART_TX"
-			(at 153.67 19.5579 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 156.21 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 156.21 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 151.13 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "01ee22f8-1752-4c0f-9526-c575a3033b38")
-		)
-		(instances
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
 		(at 156.21 171.45 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6044,7 +5769,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90a802f2-0510-4523-9e02-a3da11253a27")
-		(property "Reference" "TP4"
+		(property "Reference" "MOSI1"
 			(at 158.75 173.4819 0)
 			(effects
 				(font
@@ -6089,13 +5814,37 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 156.21 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 156.21 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fcc431eb-8a74-491e-810d-fcbe049ad50f")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP4")
+					(reference "MOSI1")
 					(unit 1)
 				)
 			)
@@ -6203,6 +5952,24 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 100.33 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 100.33 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -6337,6 +6104,24 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 106.68 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 106.68 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -6584,73 +6369,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 66.04 24.13 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b085c40c-005a-4c79-8808-ec52d2ec300b")
-		(property "Reference" "TP6"
-			(at 71.12 22.8599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BAT+"
-			(at 71.12 25.3999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 66.04 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 66.04 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 66.04 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7aca881d-4956-45b9-adb3-296a406e14b3")
-		)
-		(instances
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 35.56 78.74 90)
 		(unit 1)
@@ -6732,6 +6450,24 @@
 		)
 		(property "Manufacturer_Part_Number" "RC0603JR-13100RL "
 			(at 35.56 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 35.56 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 35.56 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6842,7 +6578,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7f5302c-a5b1-4549-9250-6bd7d533f4d1")
-		(property "Reference" "TP1"
+		(property "Reference" "GD0"
 			(at 139.7 137.6679 0)
 			(effects
 				(font
@@ -6887,13 +6623,37 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 137.16 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 137.16 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "64581d82-bc78-4f0c-b644-82d3ba421e22")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP1")
+					(reference "GD0")
 					(unit 1)
 				)
 			)
@@ -6982,6 +6742,24 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CC0603KRX7R6BB103"
+			(at 39.37 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 39.37 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
 			(at 39.37 163.83 0)
 			(effects
 				(font
@@ -7093,7 +6871,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be4f7cab-6f25-4f09-9aff-b1cefcaad8c7")
-		(property "Reference" "TP13"
+		(property "Reference" "MCUVDD1"
 			(at 62.738 110.49 90)
 			(effects
 				(font
@@ -7136,13 +6914,37 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 66.04 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 66.04 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1853f2db-3619-4547-b96b-311694f996cb")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP13")
+					(reference "MCUVDD1")
 					(unit 1)
 				)
 			)
@@ -7215,73 +7017,6 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 66.04 44.45 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c9d7fe41-c81a-47f3-9ebc-ed8b9ac1060e")
-		(property "Reference" "TP7"
-			(at 71.12 43.1799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BAT-"
-			(at 71.12 45.7199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 66.04 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 66.04 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 66.04 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ab23fdb6-b235-436b-bd64-e23fc3380a10")
-		)
-		(instances
-			(project "sensor_rev1"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -7378,6 +7113,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 172.72 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 172.72 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5e100d2f-9975-4e09-9cf7-41b6f329d865")
 		)
@@ -7409,7 +7162,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cfd93685-1827-4030-917d-4e75a1841347")
-		(property "Reference" "TP3"
+		(property "Reference" "MISO1"
 			(at 144.78 173.4819 0)
 			(effects
 				(font
@@ -7454,13 +7207,37 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 142.24 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 142.24 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f42a2782-e32e-4025-b841-584d34315c4a")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "TP3")
+					(reference "MISO1")
 					(unit 1)
 				)
 			)
@@ -7593,6 +7370,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 38.1 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 38.1 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "470a6952-efd2-4a76-8e42-81afa622d508")
 		)
@@ -7711,6 +7506,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 187.96 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 187.96 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a104b788-0abd-4387-990d-a2477e5281a6")
 		)
@@ -7815,6 +7628,24 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "885012206020"
+			(at 62.23 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 62.23 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
 			(at 62.23 127 0)
 			(effects
 				(font
@@ -7981,7 +7812,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" ""
+		(property "Mouser Part Number" "876-GP560/20-25"
 			(at 149.86 -421.26 0)
 			(effects
 				(font
@@ -7991,7 +7822,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/MEDER-electronic/GP560-20-25?qs=%252B6g0mu59x7KbpBqh6ze2hg%3D%3D&srsltid=AfmBOoovVTOKBmotzsVxL9AMe_M0tCXi2LyBakT40j8xCqS0YTGAD13f"
 			(at 149.86 -521.26 0)
 			(effects
 				(font
@@ -8018,6 +7849,24 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 166.37 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Link" ""
+			(at 166.37 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)

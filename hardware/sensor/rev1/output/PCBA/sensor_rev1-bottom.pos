@@ -1,0 +1,22 @@
+### Footprint positions - created on 2026-08-08T22:33:13+0100 ###
+### Printed by KiCad version 9.0.7
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val                   Package                                 PosX       PosY       Rot  Side
+C1        GRM31CR61A107MEA8L    GRM31x                                3.3650    25.7200  180.0000  bottom
+C2        1nF                   C_0603_1608Metric                    10.5700     5.8000  180.0000  bottom
+C3        100nF                 C_0603_1608Metric                     7.4350     5.7900  180.0000  bottom
+C4        10nF                  C_0603_1608Metric                    14.9900    11.1200   90.0000  bottom
+FID4      Fiducial              Fiducial_1mm_Mask2mm                 22.6000    57.4500  180.0000  bottom
+FID5      Fiducial              Fiducial_1mm_Mask2mm                 -2.1800    25.8900  180.0000  bottom
+FID6      Fiducial              Fiducial_1mm_Mask2mm                 -2.1800    10.4500  180.0000  bottom
+IC1       STM8L051F3P6          SOP65P640X120-20N                    10.2950    11.0520   90.0000  bottom
+J1        22-28-4044            HDRV4W66P0X254_1X4_1016X249X1067P    22.5000    27.1300   90.0000  bottom
+J2        M20-9770342           HDRV3W66P0X254_1X3_762X254X855P      13.2500     1.7700    0.0000  bottom
+LED1      VLMS3000-GS08         VLMS3000GS08                         10.8000    25.6200    0.0000  bottom
+R1        100                   R_0603_1608Metric                     5.4400     8.9150   90.0000  bottom
+R2        2.2M                  R_0603_1608Metric                     9.4900     4.0400  180.0000  bottom
+S1        GP560_20-25           GP5602025                            22.2800    54.4500  -90.0000  bottom
+S2        PTS636SMG25JSMTR_LFS  PTS636SMG25JSMTRLFS                  10.5900    19.7900    0.0000  bottom
+S3        GP560_20-25           GP5602025                            -1.9800    54.4500  -90.0000  bottom
+## End
