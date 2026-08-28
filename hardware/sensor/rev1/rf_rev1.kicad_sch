@@ -4554,7 +4554,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "12pF"
+		(property "Value" "15pF"
 			(at 137.16 142.2399 0)
 			(effects
 				(font
@@ -4590,7 +4590,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "81-GRM1555C1H120FA1D"
+		(property "Mouser Part Number" "77-VJ0402D150FXCAJ"
 			(at 133.35 140.97 0)
 			(effects
 				(font
@@ -4608,7 +4608,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Murata Electronics"
+		(property "Manufacturer_Name" "Vishay"
 			(at 133.35 140.97 0)
 			(effects
 				(font
@@ -4617,7 +4617,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM1555C1H120FA1D"
+		(property "Manufacturer_Part_Number" "VJ0402D150FXCAJ"
 			(at 133.35 140.97 0)
 			(effects
 				(font
@@ -4769,7 +4769,7 @@
 				)
 			)
 		)
-		(property "Value" "NX3225GA-26.000M-STD-CRG-2"
+		(property "Value" "CG01972-26M"
 			(at 100.33 123.19 0)
 			(effects
 				(font
@@ -4816,7 +4816,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "344-NX3225GA26MSTRG2"
+		(property "Mouser Part Number" "344-NX3225GA26MHZTI"
 			(at 118.11 623.19 0)
 			(effects
 				(font
@@ -4826,7 +4826,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/NDK/CG01972-26M?qs=Tc%252BHE9vUsntpTnxiVVqD7w%3D%3D"
 			(at 118.11 723.19 0)
 			(effects
 				(font
@@ -4846,7 +4846,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "NX3225GA-26.000M-STD-CRG-2"
+		(property "Manufacturer Part Number" "CG01972-26M"
 			(at 118.11 923.19 0)
 			(effects
 				(font
@@ -6300,7 +6300,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "12pF"
+		(property "Value" "15pF"
 			(at 66.04 142.2399 0)
 			(effects
 				(font
@@ -6336,7 +6336,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "81-GRM1555C1H120FA1D"
+		(property "Mouser Part Number" "77-VJ0402D150FXCAJ"
 			(at 69.85 140.97 0)
 			(effects
 				(font
@@ -6345,7 +6345,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H120FA01D?qs=ouTquLLW2S4GiX6b03cbUg%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/Vishay-Vitramon/VJ0402D150FXCAJ?qs=iYZfuFMDqcZeWrff4BZNMQ%3D%3D"
 			(at 69.85 140.97 0)
 			(effects
 				(font
@@ -6354,7 +6354,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Murata Electronics"
+		(property "Manufacturer_Name" "Vishay"
 			(at 69.85 140.97 0)
 			(effects
 				(font
@@ -6363,7 +6363,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM1555C1H120FA1D"
+		(property "Manufacturer_Part_Number" "VJ0402D150FXCAJ"
 			(at 69.85 140.97 0)
 			(effects
 				(font

@@ -3505,7 +3505,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "NX3225GA-26.000M-STD-CRG-2"
+		(property "Value" "CG01972-26M"
 			(at 0 0 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -3558,7 +3558,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Mouser Part Number" "344-NX3225GA26MSTRG2"
+		(property "Mouser Part Number" "344-NX3225GA26MHZTI"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -3600,7 +3600,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer Part Number" "NX3225GA-26.000M-STD-CRG-2"
+		(property "Manufacturer Part Number" "CG01972-26M"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -3614,7 +3614,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/NDK/CG01972-26M?qs=Tc%252BHE9vUsntpTnxiVVqD7w%3D%3D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -4073,7 +4073,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "12pF"
+		(property "Value" "15pF"
 			(at -1.97 -1.45 90)
 			(layer "B.Fab")
 			(uuid "5c6e3d8c-752b-4d26-a4c9-87420489396b")
@@ -4113,7 +4113,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Mouser Part Number" "81-GRM1555C1H120FA1D"
+		(property "Mouser Part Number" "77-VJ0402D150FXCAJ"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -4169,7 +4169,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H120FA01D?qs=ouTquLLW2S4GiX6b03cbUg%3D%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/Vishay-Vitramon/VJ0402D150FXCAJ?qs=iYZfuFMDqcZeWrff4BZNMQ%3D%3D"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -4183,7 +4183,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer_Name" "Murata Electronics"
+		(property "Manufacturer_Name" "Vishay"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -4197,7 +4197,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM1555C1H120FA1D"
+		(property "Manufacturer_Part_Number" "VJ0402D150FXCAJ"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -7137,7 +7137,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer_Part_Number" "597-3008-207F "
+		(property "Manufacturer_Part_Number" "5973008207F "
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -7379,7 +7379,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "12pF"
+		(property "Value" "15pF"
 			(at -2.23 1.25 90)
 			(layer "B.Fab")
 			(uuid "ec40545c-4ccf-48fe-a2d6-359a659831b1")
@@ -7419,7 +7419,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Mouser Part Number" "81-GRM1555C1H120FA1D"
+		(property "Mouser Part Number" "77-VJ0402D150FXCAJ"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -7489,7 +7489,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer_Name" "Murata Electronics"
+		(property "Manufacturer_Name" "Vishay"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -7503,7 +7503,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM1555C1H120FA1D"
+		(property "Manufacturer_Part_Number" "VJ0402D150FXCAJ"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
