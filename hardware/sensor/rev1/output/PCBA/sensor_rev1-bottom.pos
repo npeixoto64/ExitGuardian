@@ -1,4 +1,4 @@
-### Footprint positions - created on 2026-08-29T00:01:36+0100 ###
+### Footprint positions - created on 2026-08-29T00:16:36+0100 ###
 ### Printed by KiCad version 9.0.7
 ## Unit = mm, Angle = deg.
 ## Side : bottom
@@ -42,5 +42,5 @@ R1        120                   R_0603_1608Metric                     5.4400    
 R2        2.2M                  R_0603_1608Metric                     9.4900     4.0400  180.0000  bottom
 R171      56K                   R_0402_1005Metric                    14.2200    33.5650    0.0000  bottom
 S2        PTS810SJK250SMTR_LFS  PTS810SJK250SMTRLFS                  10.1050    20.6850  180.0000  bottom
-Y1        CG01972-26M           NX3225GA26000MSTDCRG2                 2.0500    33.2575   90.0000  bottom
+Y1        NX3225GA-26MHZ-TI     NX3225GA26000MSTDCRG2                 2.0500    33.2575   90.0000  bottom
 ## End
