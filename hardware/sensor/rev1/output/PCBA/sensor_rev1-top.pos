@@ -1,40 +1,13 @@
-### Footprint positions - created on 2026-08-08T22:33:13+0100 ###
+### Footprint positions - created on 2026-08-28T14:20:54+0100 ###
 ### Printed by KiCad version 9.0.7
 ## Unit = mm, Angle = deg.
 ## Side : top
-# Ref     Val                         Package                       PosX       PosY       Rot  Side
-ANT1      ~                           Antenna_hole               10.1600    48.7200    0.0000  top
-BT1       CST2032                     CST2032                    10.1500    14.4500   60.0000  top
-C5        100nF                       C_0402_1005Metric           6.2000    32.5475  180.0000  top
-C6        100nF                       C_0402_1005Metric           7.0500    36.3700  180.0000  top
-C7        100nF                       C_0402_1005Metric          11.5100    29.0400  -90.0000  top
-C9        100nF                       C_0402_1005Metric          12.3200    36.3600    0.0000  top
-C10       100nF                       C_0402_1005Metric           8.6000    36.8475   90.0000  top
-C11       100nF                       C_0402_1005Metric          14.0200    33.3475    0.0000  top
-C51       100nF                       C_0402_1005Metric          12.6600    29.0400  -90.0000  top
-C81       12pF                        C_0402_1005Metric          15.2000    31.4675   90.0000  top
-C101      12pF                        C_0402_1005Metric          15.2000    35.3175  -90.0000  top
-C121      1pF                         C_0402_1005Metric          10.2500    38.6475  180.0000  top
-C122      1.5pF                       C_0402_1005Metric          11.1500    41.2975   90.0000  top
-C123      3.3pF                       C_0402_1005Metric          10.7000    44.8975  180.0000  top
-C124      100pF                       C_0402_1005Metric          12.8500    40.2275  -90.0000  top
-C125      12pF                        C_0402_1005Metric          10.2500    48.4775   90.0000  top
-C131      1.5pF                       C_0402_1005Metric           9.2200    39.7475  180.0000  top
-FB1       BLM18KG601SN1D              BLM18SP221SN1B              4.8950    30.9200  180.0000  top
-FID1      Fiducial                    Fiducial_1mm_Mask2mm       22.6000    10.4500    0.0000  top
-FID2      Fiducial                    Fiducial_1mm_Mask2mm       -2.1800    57.4500    0.0000  top
-FID3      Fiducial                    Fiducial_1mm_Mask2mm       22.6000    39.2000    0.0000  top
-IC2       CC1101RGPR                  QFN50P400X400X100-21N-D    10.0200    32.8300   90.0000  top
-L121      12nH                        L_0402_1005Metric          10.8000    36.8475   90.0000  top
-L122      18nH                        L_0402_1005Metric          11.2500    39.7475    0.0000  top
-L123      12nH                        L_0402_1005Metric          10.2000    43.3475   90.0000  top
-L124      12nH                        L_0402_1005Metric          10.2500    46.4475   90.0000  top
-L131      12nH                        L_0402_1005Metric           9.7000    36.8475   90.0000  top
-L132      18nH                        L_0402_1005Metric           9.2500    41.3625   90.0000  top
-M1        ~                           MountingHole_1.7mm         -2.3000    62.4500    0.0000  top
-M2        ~                           MountingHole_1.7mm         22.6000    62.4500    0.0000  top
-M5        ~                           MountingHole_1.7mm         -2.3000     6.4500    0.0000  top
-M6        ~                           MountingHole_1.7mm         22.6000     6.4500    0.0000  top
-R171      56K                         R_0402_1005Metric           6.2000    33.6975  180.0000  top
-Y1        NX3225GA-26.000M-STD-CRG-2  NX3225GA26000MSTDCRG2      18.3700    33.3900   90.0000  top
+# Ref     Val          Package                  PosX       PosY       Rot  Side
+BT1       CST2032      CST2032               10.1500    14.4500   60.0000  top
+M1        ~            MountingHole_1.7mm    -2.3000    62.4500    0.0000  top
+M2        ~            MountingHole_1.7mm    22.6000    62.4500    0.0000  top
+M5        ~            MountingHole_1.7mm    -2.3000     6.4500    0.0000  top
+M6        ~            MountingHole_1.7mm    22.6000     6.4500    0.0000  top
+S1        GP560_20-25  GP5602025             22.2800    54.4500  -90.0000  top
+S3        GP560_20-25  GP5602025             -1.9800    54.4500  -90.0000  top
 ## End
