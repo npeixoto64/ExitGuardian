@@ -4769,7 +4769,7 @@
 				)
 			)
 		)
-		(property "Value" "CG01972-26M"
+		(property "Value" "NX3225GA-26MHZ-TI"
 			(at 100.33 123.19 0)
 			(effects
 				(font
@@ -4846,7 +4846,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CG01972-26M"
+		(property "Manufacturer Part Number" "NX3225GA-26MHZ-TI"
 			(at 118.11 923.19 0)
 			(effects
 				(font

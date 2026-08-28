@@ -294,7 +294,7 @@ Polycase
 - Internal: 25.4 x 26.6 x 5.3 mm (space for useful part of PCB only)
 
 ### PCB + PCBA service
-- Before all, clean the position and BOM, removing all components from top and FIDx, J1, J2, M1-M4, S1, S3, ANT1, BT1.
+- Before all, clean the position and BOM, removing all components from top, all test points and FIDx, J1, J2, M1-M4, S1, S3, ANT1, BT1.
 - Use JLCONE
 - Load gerbers.
 - Order 5 PCBs

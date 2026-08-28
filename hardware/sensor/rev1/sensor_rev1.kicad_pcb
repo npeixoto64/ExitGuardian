@@ -3505,7 +3505,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "CG01972-26M"
+		(property "Value" "NX3225GA-26MHZ-TI"
 			(at 0 0 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -3600,7 +3600,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer Part Number" "CG01972-26M"
+		(property "Manufacturer Part Number" "NX3225GA-26MHZ-TI"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
