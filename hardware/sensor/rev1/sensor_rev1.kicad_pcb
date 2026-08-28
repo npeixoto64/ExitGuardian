@@ -7040,7 +7040,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "597-3008-207F"
 			(at 0 -1 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -7137,7 +7137,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer_Part_Number" "5973008207F "
+		(property "Manufacturer_Part_Number" "597-3008-207F"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
