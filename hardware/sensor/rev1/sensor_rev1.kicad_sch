@@ -288,89 +288,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 24.13 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1169b238-a2dc-44ab-82ba-19972064c288")
-		(property "Reference" "FID1"
-			(at 26.67 49.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Fiducial"
-			(at 26.67 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 24.13 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 24.13 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fiducial Marker"
-			(at 24.13 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 24.13 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Link" ""
-			(at 24.13 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project ""
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f"
-					(reference "FID1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:Fiducial")
-		(at 24.13 57.15 0)
+		(at 24.13 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -379,7 +297,7 @@
 		(fields_autoplaced yes)
 		(uuid "74e03995-35d2-44be-b60e-a7f11e199836")
 		(property "Reference" "FID4"
-			(at 26.67 55.8799 0)
+			(at 26.67 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -388,7 +306,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 26.67 58.4199 0)
+			(at 26.67 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -397,7 +315,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 24.13 57.15 0)
+			(at 24.13 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -406,7 +324,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 24.13 57.15 0)
+			(at 24.13 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -415,7 +333,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 24.13 57.15 0)
+			(at 24.13 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -424,7 +342,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 24.13 57.15 0)
+			(at 24.13 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -433,7 +351,7 @@
 			)
 		)
 		(property "Supplier Link" ""
-			(at 24.13 57.15 0)
+			(at 24.13 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -445,88 +363,6 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f"
 					(reference "FID4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:Fiducial")
-		(at 52.07 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a787b7e2-9f69-4ec2-bb56-f3bafaa0bc86")
-		(property "Reference" "FID3"
-			(at 54.61 49.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Fiducial"
-			(at 54.61 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 52.07 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 52.07 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fiducial Marker"
-			(at 52.07 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 52.07 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Link" ""
-			(at 52.07 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project ""
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f"
-					(reference "FID3")
 					(unit 1)
 				)
 			)
@@ -616,7 +452,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 52.07 57.15 0)
+		(at 52.07 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -625,7 +461,7 @@
 		(fields_autoplaced yes)
 		(uuid "ce504aec-d020-48ab-9ef5-7f946a3da734")
 		(property "Reference" "FID6"
-			(at 54.61 55.8799 0)
+			(at 54.61 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -634,7 +470,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 54.61 58.4199 0)
+			(at 54.61 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -643,7 +479,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 52.07 57.15 0)
+			(at 52.07 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -652,7 +488,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 52.07 57.15 0)
+			(at 52.07 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -661,7 +497,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 52.07 57.15 0)
+			(at 52.07 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -670,7 +506,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 52.07 57.15 0)
+			(at 52.07 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -679,7 +515,7 @@
 			)
 		)
 		(property "Supplier Link" ""
-			(at 52.07 57.15 0)
+			(at 52.07 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -862,7 +698,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 38.1 57.15 0)
+		(at 38.1 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -871,7 +707,7 @@
 		(fields_autoplaced yes)
 		(uuid "f659088b-fc8e-46f1-ad95-ea193e7a8302")
 		(property "Reference" "FID5"
-			(at 40.64 55.8799 0)
+			(at 40.64 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -880,7 +716,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 40.64 58.4199 0)
+			(at 40.64 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -889,7 +725,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 38.1 57.15 0)
+			(at 38.1 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -898,7 +734,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 38.1 57.15 0)
+			(at 38.1 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -907,7 +743,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 38.1 57.15 0)
+			(at 38.1 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -916,7 +752,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 38.1 57.15 0)
+			(at 38.1 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -925,7 +761,7 @@
 			)
 		)
 		(property "Supplier Link" ""
-			(at 38.1 57.15 0)
+			(at 38.1 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -937,88 +773,6 @@
 			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f"
 					(reference "FID5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:Fiducial")
-		(at 38.1 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fba80fc7-5b4c-4569-9d0d-d044ec61d2af")
-		(property "Reference" "FID2"
-			(at 40.64 49.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Fiducial"
-			(at 40.64 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 38.1 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 38.1 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fiducial Marker"
-			(at 38.1 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 38.1 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Link" ""
-			(at 38.1 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project ""
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f"
-					(reference "FID2")
 					(unit 1)
 				)
 			)
