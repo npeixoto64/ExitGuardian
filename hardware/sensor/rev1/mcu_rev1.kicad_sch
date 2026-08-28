@@ -1458,12 +1458,12 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PTS636SMG25JSMTR_LFS:PTS636SMG25JSMTR_LFS"
+		(symbol "PTS810SJK250SMTR_LFS:PTS810SJK250SMTR_LFS"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "S"
-				(at 21.59 17.78 0)
+				(at 26.67 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1471,8 +1471,8 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "PTS636SMG25JSMTR_LFS"
-				(at 21.59 15.24 0)
+			(property "Value" "PTS810SJK250SMTR_LFS"
+				(at 26.67 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1480,18 +1480,8 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "PTS636SMG25JSMTRLFS"
-				(at 21.59 -84.76 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.ckswitches.com/media/2779/pts636.pdf"
-				(at 21.59 -184.76 0)
+			(property "Footprint" "PTS810SJK250SMTRLFS"
+				(at 26.67 -94.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1500,7 +1490,17 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Tactile Switches Tact 50mA 12VDC, 6.0x3.5, 2.5mm H, 180gf, J leads, Ground pin, White Actuator"
+			(property "Datasheet" "https://www.ckswitches.com/media/1476/pts810.pdf"
+				(at 26.67 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "TACTILE SWITCH, SPST, 0.05A, 16VDC, SMD"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1510,7 +1510,7 @@
 				)
 			)
 			(property "Height" "2.7"
-				(at 21.59 -384.76 0)
+				(at 26.67 -394.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1519,8 +1519,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Part Number" "611-PTS636SMG25JSMTR"
-				(at 21.59 -484.76 0)
+			(property "Mouser Part Number" "611-PTS810SJK250SMTR"
+				(at 26.67 -494.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1529,8 +1529,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CK/PTS636SMG25JSMTR-LFS?qs=jcD%2FCkGBYePRY%252BgAQy5esQ%3D%3D"
-				(at 21.59 -584.76 0)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CK/PTS810SJK250SMTR-LFS?qs=Imq1NPwxi77Ow0tzRIznfA%3D%3D"
+				(at 26.67 -594.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1540,7 +1540,7 @@
 				)
 			)
 			(property "Manufacturer_Name" "LITTELFUSE"
-				(at 21.59 -684.76 0)
+				(at 26.67 -694.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1549,8 +1549,8 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "PTS636SMG25JSMTR LFS"
-				(at 21.59 -784.76 0)
+			(property "Manufacturer_Part_Number" "PTS810SJK250SMTR LFS"
+				(at 26.67 -794.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1559,10 +1559,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "PTS636SMG25JSMTR_LFS_1_1"
+			(symbol "PTS810SJK250SMTR_LFS_1_1"
 				(rectangle
-					(start 5.08 12.7)
-					(end 20.32 -12.7)
+					(start 5.08 2.54)
+					(end 25.4 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1574,7 +1574,7 @@
 				(pin passive line
 					(at 0 0 0)
 					(length 5.08)
-					(name "COM"
+					(name "NO_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1590,9 +1590,9 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 17.78 270)
+					(at 0 -2.54 0)
 					(length 5.08)
-					(name "GND_1"
+					(name "COM_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1608,16 +1608,16 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 -17.78 90)
+					(at 30.48 0 180)
 					(length 5.08)
-					(name "GND_2"
+					(name "NO_2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1626,16 +1626,16 @@
 					)
 				)
 				(pin passive line
-					(at 25.4 0 180)
+					(at 30.48 -2.54 180)
 					(length 5.08)
-					(name "NO"
+					(name "COM_2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2450,9 +2450,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Use internal MCU pull-up. ~45 Kohms"
+	(text "Use internal MCU pull-up.\n~45 Kohms"
 		(exclude_from_sim no)
-		(at 120.65 64.008 0)
+		(at 91.44 69.342 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2593,12 +2593,12 @@
 		(uuid "fb85075a-8e6d-4905-84f2-debcac723553")
 	)
 	(no_connect
-		(at 82.55 78.74)
-		(uuid "70fdbc4b-6309-4f17-99c4-9e547ccdb9e5")
+		(at 102.87 80.01)
+		(uuid "00e45976-04b2-4999-a6d1-f6ef1a2758a5")
 	)
 	(no_connect
-		(at 118.11 78.74)
-		(uuid "f1c5abce-8175-4365-b36b-73858a8313f2")
+		(at 102.87 77.47)
+		(uuid "8a49706d-5909-4006-9d07-2c0afdffb0cc")
 	)
 	(wire
 		(pts
@@ -2629,6 +2629,16 @@
 			(type default)
 		)
 		(uuid "03faee0a-c1f0-4a44-a9f8-4b4831dc4967")
+	)
+	(wire
+		(pts
+			(xy 138.43 80.01) (xy 133.35 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0aee3736-61c2-451f-86e5-24d1b8c9c49d")
 	)
 	(wire
 		(pts
@@ -2752,6 +2762,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 77.47) (xy 138.43 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32b83461-2a69-4289-9b8c-64c7309b5ff9")
+	)
+	(wire
+		(pts
 			(xy 17.78 36.83) (xy 17.78 46.99)
 		)
 		(stroke
@@ -2819,6 +2839,26 @@
 			(type default)
 		)
 		(uuid "41b0b0e2-786f-4fa7-b0d5-444072c6fbcc")
+	)
+	(wire
+		(pts
+			(xy 138.43 77.47) (xy 138.43 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4281a9db-fdde-43c0-a4bb-324501ddb332")
+	)
+	(wire
+		(pts
+			(xy 100.33 85.09) (xy 138.43 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45c37e9c-7847-4fd3-808c-8487b31a8d28")
 	)
 	(wire
 		(pts
@@ -3152,16 +3192,6 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 91.44) (xy 100.33 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ce165cd-293b-404e-9a75-f80de90d39c4")
-	)
-	(wire
-		(pts
 			(xy 60.96 148.59) (xy 83.82 148.59)
 		)
 		(stroke
@@ -3292,13 +3322,13 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 59.69) (xy 100.33 66.04)
+			(xy 138.43 85.09) (xy 138.43 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be2b9fa4-4d10-45c9-8034-615787030e94")
+		(uuid "bd7d56a6-5e60-478a-882f-c89d62682e23")
 	)
 	(wire
 		(pts
@@ -3342,7 +3372,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 59.69) (xy 109.22 59.69)
+			(xy 96.52 73.66) (xy 138.43 73.66)
 		)
 		(stroke
 			(width 0)
@@ -3399,6 +3429,16 @@
 			(type default)
 		)
 		(uuid "d143eac3-6583-4443-8447-7ced9bfb0292")
+	)
+	(wire
+		(pts
+			(xy 100.33 86.36) (xy 100.33 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e22ac3a9-6444-4a6e-b176-106e9f434d93")
 	)
 	(wire
 		(pts
@@ -3814,22 +3854,22 @@
 	)
 	(global_label "BTN"
 		(shape input)
-		(at 109.22 59.69 0)
+		(at 96.52 73.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "e09ba37e-19a2-4069-bfb1-6b80ab454710")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 115.7733 59.69 0)
+			(at 89.9667 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -5277,7 +5317,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 100.33 96.52 0)
+		(at 100.33 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5285,7 +5325,7 @@
 		(dnp no)
 		(uuid "86316ca6-a2ef-4c32-8a28-148512bd90a0")
 		(property "Reference" "#PWR022"
-			(at 100.33 102.87 0)
+			(at 100.33 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5294,7 +5334,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.33 101.6 0)
+			(at 100.33 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5302,7 +5342,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 96.52 0)
+			(at 100.33 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5311,7 +5351,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 96.52 0)
+			(at 100.33 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5320,7 +5360,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 100.33 96.52 0)
+			(at 100.33 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5656,43 +5696,33 @@
 		)
 	)
 	(symbol
-		(lib_id "PTS636SMG25JSMTR_LFS:PTS636SMG25JSMTR_LFS")
-		(at 100.33 66.04 270)
+		(lib_id "PTS810SJK250SMTR_LFS:PTS810SJK250SMTR_LFS")
+		(at 102.87 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "947d8170-037b-4548-be32-96101e67f6d5")
+		(uuid "99b245a5-d66b-480a-9aa7-28626bbb10cf")
 		(property "Reference" "S2"
-			(at 125.73 72.3198 90)
+			(at 118.11 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "PTS636SMG25JSMTR_LFS"
-			(at 125.73 74.8598 90)
+		(property "Value" "PTS810SJK250SMTR_LFS"
+			(at 118.11 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "MyParts:PTS636SMG25JSMTRLFS"
-			(at 15.57 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ckswitches.com/media/2779/pts636.pdf"
-			(at -84.43 87.63 0)
+		(property "Footprint" "MyParts:PTS810SJK250SMTRLFS"
+			(at 129.54 172.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5701,8 +5731,18 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Tactile Switches Tact 50mA 12VDC, 6.0x3.5, 2.5mm H, 180gf, J leads, Ground pin, White Actuator"
-			(at 100.33 66.04 0)
+		(property "Datasheet" "https://www.ckswitches.com/media/1476/pts810.pdf"
+			(at 129.54 272.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "TACTILE SWITCH, SPST, 0.05A, 16VDC, SMD"
+			(at 102.87 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5711,7 +5751,7 @@
 			)
 		)
 		(property "Height" "2.7"
-			(at -284.43 87.63 0)
+			(at 129.54 472.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5720,8 +5760,8 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "611-PTS636SMG25JSMTR"
-			(at -384.43 87.63 0)
+		(property "Mouser Part Number" "611-PTS810SJK250SMTR"
+			(at 129.54 572.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5730,8 +5770,8 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CK/PTS636SMG25JSMTR-LFS?qs=jcD%2FCkGBYePRY%252BgAQy5esQ%3D%3D"
-			(at -484.43 87.63 0)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CK/PTS810SJK250SMTR-LFS?qs=Imq1NPwxi77Ow0tzRIznfA%3D%3D"
+			(at 129.54 672.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5741,7 +5781,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "LITTELFUSE"
-			(at -584.43 87.63 0)
+			(at 129.54 772.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5750,8 +5790,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "PTS636SMG25JSMTR LFS"
-			(at -684.43 87.63 0)
+		(property "Manufacturer_Part_Number" "PTS810SJK250SMTR LFS"
+			(at 129.54 872.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5759,45 +5799,21 @@
 				(justify left top)
 				(hide yes)
 			)
-		)
-		(property "Manufacturer" ""
-			(at 100.33 66.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Link" ""
-			(at 100.33 66.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "0d54c5a9-cfd3-4e1d-8770-90e0e6b44468")
-		)
-		(pin "1"
-			(uuid "4becc747-1276-4032-bc24-9f0893633095")
 		)
 		(pin "3"
-			(uuid "c628f6da-2f5f-404d-9fdc-26865e1d87c8")
+			(uuid "fec394eb-34cc-4129-8f99-8f477960bf20")
 		)
 		(pin "2"
-			(uuid "36b63839-7bb8-4719-954c-3c9e11c5c787")
+			(uuid "c0bbddb9-da91-4d79-b8b1-5d256f88afbb")
+		)
+		(pin "1"
+			(uuid "f2cfe19c-7b88-4f9b-ad07-2beb2c0bc8d0")
+		)
+		(pin "4"
+			(uuid "56552231-2bbb-41f0-bc0c-384d2006370b")
 		)
 		(instances
 			(project ""
-				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
-					(reference "S3")
-					(unit 1)
-				)
-			)
-			(project "sensor_rev1"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "S2")
 					(unit 1)

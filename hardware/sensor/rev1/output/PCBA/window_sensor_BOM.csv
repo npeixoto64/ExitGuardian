@@ -1,23 +1,36 @@
-"Designator","Qty","Value","Package","Mouser Part Number","#","Manufacturer_Name","Mouser Price/Stock","Manufacturer_Part_Number"
-"C1","1","GRM31CR61A107MEA8L","MyParts:GRM31x","81-GRM31CR61A107MA8L","3","Murata Electronics","https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GRM31CR61A107MEA8L?qs=hd1VzrDQEGidurXiDTJOCg%3D%3D","GRM31CR61A107MEA8L"
-"C2","1","1nF","Capacitor_SMD:C_0603_1608Metric","80-C0603C102K8R","4","KEMET","https://www.mouser.co.uk/en/ProductDetail/KEMET/C0603C102K8RACTU?qs=sGAEpiMZZMvsSlwiRhF8quIsB1QHp5lfG10MayaV%252Bl0%3D","C0603C102K8RACTU "
-"C3","1","100nF","Capacitor_SMD:C_0603_1608Metric","710-885012206020","5","Wurth Elektronik","https://pt.mouser.com/en/ProductDetail/Wurth-Elektronik/885012206020?qs=sGAEpiMZZMvsSlwiRhF8qunkWFWGyo%252Bv87eLmDBMvaFF4rJhETyCbg%3D%3D","885012206020"
-"C4","1","10nF","Capacitor_SMD:C_0603_1608Metric","603-CC603KRX7R6BB103","6","YAGEO","https://pt.mouser.com/en/ProductDetail/YAGEO/CC0603KRX7R6BB103?qs=sGAEpiMZZMvsSlwiRhF8qtVFUj6yLw9vFdzWWJmGTI0%3D","CC0603KRX7R6BB103"
-"C5,C6,C7,C9,C10,C11,C51","7","100nF","Capacitor_SMD:C_0402_1005Metric","603-CC402KRX7R7BB104","7","Yageo","https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D","CC0402KRX7R7BB104"
-"C81,C101,C125","3","12pF","Capacitor_SMD:C_0402_1005Metric","81-GRM1555C1H120FA1D","8","Murata,Murata Electronics","https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H120FA01D?qs=ouTquLLW2S4GiX6b03cbUg%3D%3D","GRM1555C1H120FA01D,GRM1555C1H120FA1D"
-"C121","1","1pF","Capacitor_SMD:C_0402_1005Metric","81-GRM1555C1H1R0BA1J","9","Murata","https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H1R0BA01J?qs=ouTquLLW2S5DcHZ7kLUjdg%3D%3D","GRM1555C1H1R0BA01J"
-"C122,C131","2","1.5pF","Capacitor_SMD:C_0402_1005Metric","81-GRM1555C1E1R5BA1D","10","Murata","https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1E1R5BA01D?qs=ouTquLLW2S6xHAnxxZWZ1w%3D%3D","GRM1555C1E1R5BA01D"
-"C123","1","3.3pF","Capacitor_SMD:C_0402_1005Metric","81-GRM1555C1H3R3WA1D","11","Murata","https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H3R3WA01D?qs=ouTquLLW2S75fzkTIuiuIg%3D%3D","GRM1555C1H3R3WA01D"
-"C124","1","100pF","Capacitor_SMD:C_0402_1005Metric","81-GRM1555C1H101FA1J","12","Murata","https://pt.mouser.com/ProductDetail/Murata-Electronics/GRM1555C1H101FA01J?qs=ouTquLLW2S5iwhfDVY6IbQ%3D%3D","GRM1555C1H101FA01J"
-"FB1","1","BLM18KG601SN1D","MyParts:BLM18SP221SN1B","81-BLM18KG601SN1D","15","Murata Electronics","https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG601SN1D?qs=rvfpa0%252BU10NPWIt745bDHg%3D%3D",""
-"IC1","1","STM8L051F3P6","MyParts:SOP65P640X120-20N","511-STM8L051F3P6","18","STMicroelectronics","https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM8L051F3P6?qs=gNDSiZmRJS%252BCAYYxupi9Bg%3D%3D","STM8L051F3P6"
-"IC2","1","CC1101RGPR","MyParts:QFN50P400X400X100-21N-D","595-CC1101RGPR","19","Texas Instruments","https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CC1101RGPR?qs=OHhYoCux73lreNWI41kZ9Q%3D%3D",""
-"L121,L123,L124,L131","4","12nH","Inductor_SMD:L_0402_1005Metric","81-LQW15AN12NJ80D","22","Murata","https://pt.mouser.com/ProductDetail/Murata-Electronics/LQW15AN12NJ80D?qs=p1l%252BOuySasI0Z4MLb3Accg%3D%3D","LQW15AN12NJ80D"
-"L122,L132","2","18nH","Inductor_SMD:L_0402_1005Metric","81-LQG15HH18NJ02D","23","Murata","https://pt.mouser.com/ProductDetail/Murata-Electronics/LQG15HH18NJ02D?qs=%2F%252BYoplLUB5jGNEzMsrpOaQ%3D%3D","LQG15HH18NJ02D"
-"LED1","1","VLMS3000-GS08","MyParts:VLMS3000GS08","78-VLMS3000-GS08","24","Vishay","https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/VLMS3000-GS08?qs=nQ9vpdMXC6CgDkoB8OSxUw%3D%3D","VLMS3000-GS08"
-"R1","1","100","Resistor_SMD:R_0603_1608Metric","603-RC0603JR-13100RL ","30","Yageo","https://pt.mouser.com/en/ProductDetail/YAGEO/RC0603JR-13100RL?qs=sGAEpiMZZMvdGkrng054t8AJgcdMkx7xkQkRKZbeqEI%3D","RC0603JR-13100RL "
-"R2","1","2.2M","Resistor_SMD:R_0603_1608Metric","603-AA0603FR-072M2L","31","Yageo","https://pt.mouser.com/en/ProductDetail/YAGEO/AA0603FR-072M2L?qs=sGAEpiMZZMvdGkrng054txzUp8gpcBx9hhxvQIhjhzKzivkvqefGPg%3D%3D","AA0603FR-072M2L"
-"R171","1","56K","Resistor_SMD:R_0402_1005Metric","667-ERJ-PA2F5602X","32","Panasonic","https://pt.mouser.com/ProductDetail/Panasonic/ERJ-PA2F5602X?qs=sGAEpiMZZMvdGkrng054t39FRO7iDkA6z1H%252BqyfqNLr9YdfcpMbawA%3D%3D","ERJ-PA2F5602X"
-"S1,S3","2","GP560_20-25","MyParts:GP5602025","876-GP560/20-25","34","STANDEXMEDER","https://pt.mouser.com/en/ProductDetail/MEDER-electronic/GP560-20-25?qs=%252B6g0mu59x7KbpBqh6ze2hg%3D%3D&srsltid=AfmBOoovVTOKBmotzsVxL9AMe_M0tCXi2LyBakT40j8xCqS0YTGAD13f","GP560/20-25"
-"S2","1","PTS636SMG25JSMTR_LFS","MyParts:PTS636SMG25JSMTRLFS","611-PTS636SMG25JSMTR","35","LITTELFUSE","https://www.mouser.co.uk/ProductDetail/CK/PTS636SMG25JSMTR-LFS?qs=jcD%2FCkGBYePRY%252BgAQy5esQ%3D%3D","PTS636SMG25JSMTR LFS"
-"Y1","1","NX3225GA-26.000M-STD-CRG-2","MyParts:NX3225GA26000MSTDCRG2","344-NX3225GA26MSTRG2","36","NDK","https://www.mouser.co.uk/ProductDetail/NDK/NX3225GA-26.000M-STD-CRG-2?qs=w%2Fv1CP2dgqrNyFiUoufKQw%3D%3D",""
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"S2";"PTS810SJK250SMTRLFS";1;"PTS810SJK250SMTR_LFS";;;
+2;"S1,S3";"GP5602025";2;"GP560_20-25";;;
+3;"M5,M1,M6,M2";"MountingHole_1.7mm";4;"~";;;
+4;"BT1";"CST2032";1;"CST2032";;;
+5;"R171";"R_0402_1005Metric";1;"56K";;;
+6;"C122,C131";"C_0402_1005Metric";2;"1.5pF";;;
+7;"C5,C11,C10,C6,C9,C51,C7";"C_0402_1005Metric";7;"100nF";;;
+8;"C124";"C_0402_1005Metric";1;"100pF";;;
+9;"Y1";"NX3225GA26000MSTDCRG2";1;"NX3225GA-26.000M-STD-CRG-2";;;
+10;"C125,C81,C101";"C_0402_1005Metric";3;"12pF";;;
+11;"C2";"C_0603_1608Metric";1;"1nF";;;
+12;"MOSI1";"TestPoint_Pad_D1.0mm";1;"SPI_MOSI";;;
+13;"C4";"C_0603_1608Metric";1;"10nF";;;
+14;"C1";"GRM31x";1;"GRM31CR61A107MEA8L";;;
+15;"FB1";"BLM18SP221SN1B";1;"BLM18KG601SN1D";;;
+16;"C121";"C_0402_1005Metric";1;"1pF";;;
+17;"L123,L121,L124,L131";"L_0402_1005Metric";4;"12nH";;;
+18;"J1";"HDRV4W66P0X254_1X4_1016X249X1067P";1;"22-28-4044";;;
+19;"D1";"645-597-3008-207F";1;"LED";;;
+20;"CS1";"TestPoint_Pad_D1.0mm";1;"SPI_CS";;;
+21;"C123";"C_0402_1005Metric";1;"3.3pF";;;
+22;"J2";"HDRV3W66P0X254_1X3_762X254X855P";1;"M20-9770342";;;
+23;"ANT1";"Antenna_hole";1;"~";;;
+24;"GD0";"TestPoint_Pad_D1.0mm";1;"GD0";;;
+25;"IC2";"QFN50P400X400X100-21N-D";1;"CC1101RGPR";;;
+26;"MISO1";"TestPoint_Pad_D1.0mm";1;"SPI_MISO";;;
+27;"CLK1";"TestPoint_Pad_D1.0mm";1;"SPI_CK";;;
+28;"LED2";"TestPoint_Pad_D1.0mm";1;"LED";;;
+29;"C3";"C_0603_1608Metric";1;"100nF";;;
+30;"R2";"R_0603_1608Metric";1;"2.2M";;;
+31;"L132,L122";"L_0402_1005Metric";2;"18nH";;;
+32;"RFVDD1";"TestPoint_Pad_D1.0mm";1;"RF_VDD";;;
+33;"MCUVDD1";"TestPoint_Pad_D1.0mm";1;"MCU_VDD";;;
+34;"R1";"R_0603_1608Metric";1;"120";;;
+35;"IC1";"SOP65P640X120-20N";1;"STM8L051F3P6";;;
