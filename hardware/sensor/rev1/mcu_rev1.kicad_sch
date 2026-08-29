@@ -588,6 +588,189 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
@@ -1275,12 +1458,12 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PTS636SMG25JSMTR_LFS:PTS636SMG25JSMTR_LFS"
+		(symbol "PTS810SJK250SMTR_LFS:PTS810SJK250SMTR_LFS"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "S"
-				(at 21.59 17.78 0)
+				(at 26.67 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1288,8 +1471,8 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "PTS636SMG25JSMTR_LFS"
-				(at 21.59 15.24 0)
+			(property "Value" "PTS810SJK250SMTR_LFS"
+				(at 26.67 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1297,18 +1480,8 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "PTS636SMG25JSMTRLFS"
-				(at 21.59 -84.76 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.ckswitches.com/media/2779/pts636.pdf"
-				(at 21.59 -184.76 0)
+			(property "Footprint" "PTS810SJK250SMTRLFS"
+				(at 26.67 -94.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1317,7 +1490,17 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Tactile Switches Tact 50mA 12VDC, 6.0x3.5, 2.5mm H, 180gf, J leads, Ground pin, White Actuator"
+			(property "Datasheet" "https://www.ckswitches.com/media/1476/pts810.pdf"
+				(at 26.67 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "TACTILE SWITCH, SPST, 0.05A, 16VDC, SMD"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1327,7 +1510,7 @@
 				)
 			)
 			(property "Height" "2.7"
-				(at 21.59 -384.76 0)
+				(at 26.67 -394.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1336,8 +1519,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Part Number" "611-PTS636SMG25JSMTR"
-				(at 21.59 -484.76 0)
+			(property "Mouser Part Number" "611-PTS810SJK250SMTR"
+				(at 26.67 -494.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1346,8 +1529,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CK/PTS636SMG25JSMTR-LFS?qs=jcD%2FCkGBYePRY%252BgAQy5esQ%3D%3D"
-				(at 21.59 -584.76 0)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CK/PTS810SJK250SMTR-LFS?qs=Imq1NPwxi77Ow0tzRIznfA%3D%3D"
+				(at 26.67 -594.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1357,7 +1540,7 @@
 				)
 			)
 			(property "Manufacturer_Name" "LITTELFUSE"
-				(at 21.59 -684.76 0)
+				(at 26.67 -694.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1366,8 +1549,8 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "PTS636SMG25JSMTR LFS"
-				(at 21.59 -784.76 0)
+			(property "Manufacturer_Part_Number" "PTS810SJK250SMTR LFS"
+				(at 26.67 -794.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1376,10 +1559,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "PTS636SMG25JSMTR_LFS_1_1"
+			(symbol "PTS810SJK250SMTR_LFS_1_1"
 				(rectangle
-					(start 5.08 12.7)
-					(end 20.32 -12.7)
+					(start 5.08 2.54)
+					(end 25.4 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1391,7 +1574,7 @@
 				(pin passive line
 					(at 0 0 0)
 					(length 5.08)
-					(name "COM"
+					(name "NO_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1407,9 +1590,9 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 17.78 270)
+					(at 0 -2.54 0)
 					(length 5.08)
-					(name "GND_1"
+					(name "COM_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1425,16 +1608,16 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 -17.78 90)
+					(at 30.48 0 180)
 					(length 5.08)
-					(name "GND_2"
+					(name "NO_2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1443,16 +1626,16 @@
 					)
 				)
 				(pin passive line
-					(at 25.4 0 180)
+					(at 30.48 -2.54 180)
 					(length 5.08)
-					(name "NO"
+					(name "COM_2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1939,246 +2122,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "VLMS3000-GS08:VLMS3000-GS08"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "LED"
-				(at 12.7 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "VLMS3000-GS08"
-				(at 12.7 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "VLMS3000GS08"
-				(at 12.7 -93.65 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.vishay.com/docs/81322/vlms30vlmo30vlmy30.pdf"
-				(at 12.7 -193.65 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Description" "Standard LEDs - SMD Red 2.8mcd 624-636nm 1.8V 60deg PLCC-2"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "1.85"
-				(at 12.7 -393.65 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "78-VLMS3000-GS08"
-				(at 12.7 -493.65 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/VLMS3000-GS08?qs=nQ9vpdMXC6CgDkoB8OSxUw%3D%3D"
-				(at 12.7 -593.65 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Vishay"
-				(at 12.7 -693.65 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "VLMS3000-GS08"
-				(at 12.7 -793.65 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(symbol "VLMS3000-GS08_1_1"
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 0) (xy 10.16 2.54) (xy 10.16 -2.54) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.334 4.318) (xy 4.572 3.556) (xy 3.81 5.08) (xy 5.334 4.318)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 2.54) (xy 3.81 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.874 4.318) (xy 7.112 3.556) (xy 6.35 5.08) (xy 7.874 4.318)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.89 2.54) (xy 6.35 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 0) (xy 12.7 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -2507,9 +2450,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Use internal MCU pull-up. ~45 Kohms"
+	(text "Use internal MCU pull-up.\n~45 Kohms"
 		(exclude_from_sim no)
-		(at 120.65 64.008 0)
+		(at 91.44 69.342 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2650,12 +2593,12 @@
 		(uuid "fb85075a-8e6d-4905-84f2-debcac723553")
 	)
 	(no_connect
-		(at 82.55 78.74)
-		(uuid "70fdbc4b-6309-4f17-99c4-9e547ccdb9e5")
+		(at 102.87 80.01)
+		(uuid "00e45976-04b2-4999-a6d1-f6ef1a2758a5")
 	)
 	(no_connect
-		(at 118.11 78.74)
-		(uuid "f1c5abce-8175-4365-b36b-73858a8313f2")
+		(at 102.87 77.47)
+		(uuid "8a49706d-5909-4006-9d07-2c0afdffb0cc")
 	)
 	(wire
 		(pts
@@ -2686,6 +2629,16 @@
 			(type default)
 		)
 		(uuid "03faee0a-c1f0-4a44-a9f8-4b4831dc4967")
+	)
+	(wire
+		(pts
+			(xy 138.43 80.01) (xy 133.35 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0aee3736-61c2-451f-86e5-24d1b8c9c49d")
 	)
 	(wire
 		(pts
@@ -2809,6 +2762,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 77.47) (xy 138.43 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32b83461-2a69-4289-9b8c-64c7309b5ff9")
+	)
+	(wire
+		(pts
 			(xy 17.78 36.83) (xy 17.78 46.99)
 		)
 		(stroke
@@ -2876,6 +2839,26 @@
 			(type default)
 		)
 		(uuid "41b0b0e2-786f-4fa7-b0d5-444072c6fbcc")
+	)
+	(wire
+		(pts
+			(xy 138.43 77.47) (xy 138.43 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4281a9db-fdde-43c0-a4bb-324501ddb332")
+	)
+	(wire
+		(pts
+			(xy 100.33 85.09) (xy 138.43 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45c37e9c-7847-4fd3-808c-8487b31a8d28")
 	)
 	(wire
 		(pts
@@ -3129,7 +3112,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 78.74) (xy 48.26 78.74)
+			(xy 39.37 78.74) (xy 52.07 78.74)
 		)
 		(stroke
 			(width 0)
@@ -3166,16 +3149,6 @@
 			(type default)
 		)
 		(uuid "8bdf424e-9443-4072-bd6a-9932e2359b70")
-	)
-	(wire
-		(pts
-			(xy 63.5 78.74) (xy 67.31 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d25d521-b1bb-4693-861e-46ca4969d508")
 	)
 	(wire
 		(pts
@@ -3216,16 +3189,6 @@
 			(type default)
 		)
 		(uuid "9be17e4b-2fa4-4d29-965c-fd69f70ef1c2")
-	)
-	(wire
-		(pts
-			(xy 100.33 91.44) (xy 100.33 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ce165cd-293b-404e-9a75-f80de90d39c4")
 	)
 	(wire
 		(pts
@@ -3359,13 +3322,13 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 59.69) (xy 100.33 66.04)
+			(xy 138.43 85.09) (xy 138.43 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be2b9fa4-4d10-45c9-8034-615787030e94")
+		(uuid "bd7d56a6-5e60-478a-882f-c89d62682e23")
 	)
 	(wire
 		(pts
@@ -3409,7 +3372,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 59.69) (xy 109.22 59.69)
+			(xy 96.52 73.66) (xy 138.43 73.66)
 		)
 		(stroke
 			(width 0)
@@ -3466,6 +3429,16 @@
 			(type default)
 		)
 		(uuid "d143eac3-6583-4443-8447-7ced9bfb0292")
+	)
+	(wire
+		(pts
+			(xy 100.33 86.36) (xy 100.33 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e22ac3a9-6444-4a6e-b176-106e9f434d93")
 	)
 	(wire
 		(pts
@@ -3526,6 +3499,16 @@
 			(type default)
 		)
 		(uuid "ebdfb8ad-19bd-4e19-9cd3-05c752106c70")
+	)
+	(wire
+		(pts
+			(xy 59.69 78.74) (xy 67.31 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec5ebd54-73da-4c98-a1f0-bad98cbad3c2")
 	)
 	(wire
 		(pts
@@ -3871,22 +3854,22 @@
 	)
 	(global_label "BTN"
 		(shape input)
-		(at 109.22 59.69 0)
+		(at 96.52 73.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "e09ba37e-19a2-4069-bfb1-6b80ab454710")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 115.7733 59.69 0)
+			(at 89.9667 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -4000,7 +3983,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "280c3cce-8649-4f17-b068-a8c9bcfcb51c")
-		(property "Reference" "LED2"
+		(property "Reference" "TP?"
 			(at 31.75 88.3919 0)
 			(effects
 				(font
@@ -4082,150 +4065,6 @@
 		)
 	)
 	(symbol
-		(lib_id "VLMS3000-GS08:VLMS3000-GS08")
-		(at 63.5 78.74 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3901349f-05e2-467b-87d5-59787e1ab229")
-		(property "Reference" "LED1"
-			(at 55.88 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VLMS3000-GS08"
-			(at 55.88 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MyParts:VLMS3000GS08"
-			(at 50.8 172.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/81322/vlms30vlmo30vlmy30.pdf"
-			(at 50.8 272.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Description" "Standard LEDs - SMD Red 2.8mcd 624-636nm 1.8V 60deg PLCC-2"
-			(at 63.5 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.85"
-			(at 50.8 472.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "78-VLMS3000-GS08"
-			(at 50.8 572.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/VLMS3000-GS08?qs=nQ9vpdMXC6CgDkoB8OSxUw%3D%3D"
-			(at 50.8 672.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Vishay"
-			(at 50.8 772.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "VLMS3000-GS08"
-			(at 50.8 872.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 63.5 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Link" ""
-			(at 63.5 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e13646d9-a56a-4b4d-bc2a-8617caf81215")
-		)
-		(pin "2"
-			(uuid "176d4538-ba89-4ce2-9508-dfb637e839b7")
-		)
-		(instances
-			(project "mcu_rev1"
-				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
-					(reference "LED1")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "LED1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 171.45 34.29 0)
 		(unit 1)
@@ -4235,7 +4074,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "43881fad-5e73-40df-ab41-41bed1a4cea4")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR?"
 			(at 171.45 40.64 0)
 			(effects
 				(font
@@ -4307,7 +4146,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "440acc02-8ef8-41ce-b371-edf57bc8ec02")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR?"
 			(at 17.78 24.13 0)
 			(effects
 				(font
@@ -4379,7 +4218,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45a65241-c175-4064-8d0d-1eea7b38ffe1")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR?"
 			(at 179.07 102.87 0)
 			(effects
 				(font
@@ -4452,7 +4291,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49851bfd-14ea-46bd-8fd4-d83a3e9e8f97")
-		(property "Reference" "J2"
+		(property "Reference" "J?"
 			(at 190.5 26.6699 0)
 			(effects
 				(font
@@ -4577,6 +4416,12 @@
 			(uuid "2608fff5-0a69-41f3-bf91-d75e9afe910e")
 		)
 		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "J?")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "J2")
@@ -4595,7 +4440,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ca5cef7-1108-43e4-8311-3f77588990e8")
-		(property "Reference" "#FLG02"
+		(property "Reference" "#FLG?"
 			(at 26.67 48.895 0)
 			(effects
 				(font
@@ -4668,7 +4513,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e949306-e2a1-409d-ae5f-8c7afd864f27")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR?"
 			(at 74.93 184.15 0)
 			(effects
 				(font
@@ -4740,7 +4585,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58e36afc-9cc7-4e56-85f6-20d4689795aa")
-		(property "Reference" "CLK1"
+		(property "Reference" "TP?"
 			(at 148.59 150.3679 0)
 			(effects
 				(font
@@ -4831,7 +4676,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60d54b84-1986-4cf6-80e9-07936ae65fc8")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR?"
 			(at 170.18 102.87 0)
 			(effects
 				(font
@@ -5101,7 +4946,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6ab8da44-a9f8-45c6-be1c-4562e7c6b7bf")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR?"
 			(at 133.35 184.15 0)
 			(effects
 				(font
@@ -5173,7 +5018,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6e4094b1-af43-4c75-b7d4-987fbb207636")
-		(property "Reference" "#FLG01"
+		(property "Reference" "#FLG?"
 			(at 26.67 18.415 0)
 			(effects
 				(font
@@ -5245,7 +5090,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b931b02-999a-4b7a-b6d1-476949ef0d04")
-		(property "Reference" "CS1"
+		(property "Reference" "TP?"
 			(at 143.51 142.7479 0)
 			(effects
 				(font
@@ -5336,7 +5181,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7bdaa1d0-3b21-4d8f-9cd5-98be58e75aee")
-		(property "Reference" "S3"
+		(property "Reference" "S2"
 			(at 156.21 77.47 0)
 			(effects
 				(font
@@ -5472,15 +5317,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 100.33 96.52 0)
+		(at 100.33 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "86316ca6-a2ef-4c32-8a28-148512bd90a0")
-		(property "Reference" "#PWR022"
-			(at 100.33 102.87 0)
+		(property "Reference" "#PWR?"
+			(at 100.33 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5489,7 +5334,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.33 101.6 0)
+			(at 100.33 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5497,7 +5342,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 96.52 0)
+			(at 100.33 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5506,7 +5351,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 96.52 0)
+			(at 100.33 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5515,7 +5360,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 100.33 96.52 0)
+			(at 100.33 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5551,7 +5396,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "897cd8e5-6d03-4924-94f5-4c45ca5b12e4")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR?"
 			(at 62.23 142.24 0)
 			(effects
 				(font
@@ -5769,7 +5614,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90a802f2-0510-4523-9e02-a3da11253a27")
-		(property "Reference" "MOSI1"
+		(property "Reference" "TP?"
 			(at 158.75 173.4819 0)
 			(effects
 				(font
@@ -5851,43 +5696,33 @@
 		)
 	)
 	(symbol
-		(lib_id "PTS636SMG25JSMTR_LFS:PTS636SMG25JSMTR_LFS")
-		(at 100.33 66.04 270)
+		(lib_id "PTS810SJK250SMTR_LFS:PTS810SJK250SMTR_LFS")
+		(at 102.87 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "947d8170-037b-4548-be32-96101e67f6d5")
-		(property "Reference" "S2"
-			(at 125.73 72.3198 90)
+		(uuid "99b245a5-d66b-480a-9aa7-28626bbb10cf")
+		(property "Reference" "S?"
+			(at 118.11 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "PTS636SMG25JSMTR_LFS"
-			(at 125.73 74.8598 90)
+		(property "Value" "PTS810SJK250SMTR_LFS"
+			(at 118.11 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "MyParts:PTS636SMG25JSMTRLFS"
-			(at 15.57 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ckswitches.com/media/2779/pts636.pdf"
-			(at -84.43 87.63 0)
+		(property "Footprint" "MyParts:PTS810SJK250SMTRLFS"
+			(at 129.54 172.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5896,8 +5731,18 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Tactile Switches Tact 50mA 12VDC, 6.0x3.5, 2.5mm H, 180gf, J leads, Ground pin, White Actuator"
-			(at 100.33 66.04 0)
+		(property "Datasheet" "https://www.ckswitches.com/media/1476/pts810.pdf"
+			(at 129.54 272.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "TACTILE SWITCH, SPST, 0.05A, 16VDC, SMD"
+			(at 102.87 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5906,7 +5751,7 @@
 			)
 		)
 		(property "Height" "2.7"
-			(at -284.43 87.63 0)
+			(at 129.54 472.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5915,8 +5760,8 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "611-PTS636SMG25JSMTR"
-			(at -384.43 87.63 0)
+		(property "Mouser Part Number" "611-PTS810SJK250SMTR"
+			(at 129.54 572.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5925,8 +5770,8 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CK/PTS636SMG25JSMTR-LFS?qs=jcD%2FCkGBYePRY%252BgAQy5esQ%3D%3D"
-			(at -484.43 87.63 0)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CK/PTS810SJK250SMTR-LFS?qs=Imq1NPwxi77Ow0tzRIznfA%3D%3D"
+			(at 129.54 672.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5936,7 +5781,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "LITTELFUSE"
-			(at -584.43 87.63 0)
+			(at 129.54 772.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5945,8 +5790,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "PTS636SMG25JSMTR LFS"
-			(at -684.43 87.63 0)
+		(property "Manufacturer_Part_Number" "PTS810SJK250SMTR LFS"
+			(at 129.54 872.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5954,45 +5799,27 @@
 				(justify left top)
 				(hide yes)
 			)
-		)
-		(property "Manufacturer" ""
-			(at 100.33 66.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Link" ""
-			(at 100.33 66.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "0d54c5a9-cfd3-4e1d-8770-90e0e6b44468")
-		)
-		(pin "1"
-			(uuid "4becc747-1276-4032-bc24-9f0893633095")
 		)
 		(pin "3"
-			(uuid "c628f6da-2f5f-404d-9fdc-26865e1d87c8")
+			(uuid "fec394eb-34cc-4129-8f99-8f477960bf20")
 		)
 		(pin "2"
-			(uuid "36b63839-7bb8-4719-954c-3c9e11c5c787")
+			(uuid "c0bbddb9-da91-4d79-b8b1-5d256f88afbb")
+		)
+		(pin "1"
+			(uuid "f2cfe19c-7b88-4f9b-ad07-2beb2c0bc8d0")
+		)
+		(pin "4"
+			(uuid "56552231-2bbb-41f0-bc0c-384d2006370b")
 		)
 		(instances
-			(project ""
+			(project "mcu_rev1"
 				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
-					(reference "S3")
+					(reference "S?")
 					(unit 1)
 				)
 			)
-			(project "sensor_rev1"
+			(project ""
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "S2")
 					(unit 1)
@@ -6162,7 +5989,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab704d32-14d2-41ba-9403-b6f67efdd64a")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR?"
 			(at 58.42 53.34 0)
 			(effects
 				(font
@@ -6234,7 +6061,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad4187c4-7650-4db8-8ec9-42a07535b9bf")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR?"
 			(at 67.31 93.98 0)
 			(effects
 				(font
@@ -6297,6 +6124,134 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 55.88 78.74 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "adec21cd-7435-4160-8394-95f083a5a64d")
+		(property "Reference" "D1"
+			(at 57.4675 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "597-3008-207F"
+			(at 57.4675 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MyParts:645-597-3008-207F"
+			(at 55.88 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 55.88 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 55.88 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "645-597-3008-207F"
+			(at 55.88 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/Dialight/597-3008-207F?qs=BcvNGmdp0KXT8Lg5exlMpg%3D%3D"
+			(at 55.88 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Dialight "
+			(at 55.88 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "597-3008-207F"
+			(at 55.88 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 55.88 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7b23730c-1b05-4124-917d-6577d2349e1f")
+		)
+		(pin "1"
+			(uuid "b479b953-6bef-466f-aef0-712a683760ca")
+		)
+		(instances
+			(project "mcu_rev1"
+				(path "/c9ab58dc-163d-4c4e-8d12-3a07665777cf"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 78.74 111.76 0)
 		(unit 1)
@@ -6306,7 +6261,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af66c2fb-7efe-4399-9455-668cac9797b6")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR?"
 			(at 78.74 115.57 0)
 			(effects
 				(font
@@ -6386,7 +6341,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "120"
 			(at 35.56 74.93 90)
 			(effects
 				(font
@@ -6421,7 +6376,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-RC0603JR-13100RL "
+		(property "Mouser Part Number" "603-RC0603JR-07120RL"
 			(at 35.56 78.74 0)
 			(effects
 				(font
@@ -6430,7 +6385,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/YAGEO/RC0603JR-13100RL?qs=sGAEpiMZZMvdGkrng054t8AJgcdMkx7xkQkRKZbeqEI%3D"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/YAGEO/RC0603JR-07120RL?qs=2cAdsCoAWRENUElsluO0qw%3D%3D"
 			(at 35.56 78.74 0)
 			(effects
 				(font
@@ -6448,7 +6403,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RC0603JR-13100RL "
+		(property "Manufacturer_Part_Number" "RC0603JR-07120RL"
 			(at 35.56 78.74 0)
 			(effects
 				(font
@@ -6506,7 +6461,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3148739-22ac-4d95-8225-b65805e990bb")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR?"
 			(at 172.72 58.42 0)
 			(effects
 				(font
@@ -6578,7 +6533,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7f5302c-a5b1-4549-9250-6bd7d533f4d1")
-		(property "Reference" "GD0"
+		(property "Reference" "TP?"
 			(at 139.7 137.6679 0)
 			(effects
 				(font
@@ -6669,7 +6624,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b9dd392b-cfbd-45a1-a22a-d82bf46ef73b")
-		(property "Reference" "C4"
+		(property "Reference" "C5"
 			(at 43.18 162.5599 0)
 			(effects
 				(font
@@ -6799,7 +6754,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bbdff8c8-557e-47c3-bb06-20ab8dd4746c")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR?"
 			(at 187.96 91.44 0)
 			(effects
 				(font
@@ -6871,7 +6826,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be4f7cab-6f25-4f09-9aff-b1cefcaad8c7")
-		(property "Reference" "MCUVDD1"
+		(property "Reference" "TP?"
 			(at 62.738 110.49 90)
 			(effects
 				(font
@@ -6960,7 +6915,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6692b89-7f7f-4f6d-9312-a29dadc5ce7f")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR?"
 			(at 17.78 53.34 0)
 			(effects
 				(font
@@ -7032,7 +6987,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce9bedb0-9f33-44f0-acf4-7456141986e5")
-		(property "Reference" "R2"
+		(property "Reference" "R3"
 			(at 175.26 60.9599 0)
 			(effects
 				(font
@@ -7162,7 +7117,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cfd93685-1827-4030-917d-4e75a1841347")
-		(property "Reference" "MISO1"
+		(property "Reference" "TP?"
 			(at 144.78 173.4819 0)
 			(effects
 				(font
@@ -7253,7 +7208,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0affdf6-10ba-44aa-b21f-f8931700ffd2")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR?"
 			(at 102.87 26.67 0)
 			(effects
 				(font
@@ -7555,7 +7510,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e386951e-b9fc-46dd-8b85-f0cbb9482cad")
-		(property "Reference" "C3"
+		(property "Reference" "C4"
 			(at 66.04 125.7299 0)
 			(effects
 				(font
@@ -7685,7 +7640,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e4d835e2-98f5-4c47-9d7a-668c3f990f2f")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR?"
 			(at 102.87 44.45 0)
 			(effects
 				(font
@@ -7901,7 +7856,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fddeb945-d300-4ee2-a814-f03c143d2c77")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR?"
 			(at 39.37 177.8 0)
 			(effects
 				(font

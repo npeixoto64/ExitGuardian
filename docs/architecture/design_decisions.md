@@ -293,6 +293,22 @@ Polycase
 - External: 75 x 35 x 12 mm
 - Internal: 25.4 x 26.6 x 5.3 mm (space for useful part of PCB only)
 
+### PCB + PCBA service from JLCPCB
+- Before all, clean the position and BOM, removing all components from top, all test points and FIDx, J1, J2, M1-M4, S1, S3, ANT1, BT1.
+- Use JLCONE
+- Load gerbers.
+- Order 5 PCBs
+- Select the 1.0 mm FR4
+- PCB Assembly: 5 PCBAs
+- PCB Assembly: bottom side
+- Confirm components replacement (BOM)
+- Confirm components position in the board and fix them.
+
+### BOM order from Mouser
+- Only 2 reed switches, S1 and S3.
+
+### Antenna order from Dinobell
+
 ### Prices
 
 #### BOM
@@ -304,6 +320,9 @@ Per unit (qty = 5): 0.43 €
 Per unit (qty >= 1000): 0.65 €
 
 #### PCBA
+
+#### JLCPCB PCBA with BOM
+5 PCBAs: 64.70 € (12 € / PCBA), excluding antenna and reed switches.
 
 #### Electronic Enclosure
 
