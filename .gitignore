@@ -99,6 +99,7 @@ docs/_build/
 *.kicad_pcb-bak
 *.sch-bak
 *.dcm-bak
+.history/
 
 # Simulation and temp
 *.tmp
