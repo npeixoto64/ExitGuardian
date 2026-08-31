@@ -118,6 +118,7 @@ sym-lib-table-bak
 *.kicad_sch-bak2
 *.kicad_sch.lck
 *.kicad_pcb.lck
+*.kicad_pro.lck
 
 # -------------------------------------------------------------------
 # OS / Editor junk
