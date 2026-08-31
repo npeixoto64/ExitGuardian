@@ -280,6 +280,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/ec95634f-50f2-4804-bba6-c46127906240")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -502,7 +508,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "f6bfdf83-62a5-4795-81ba-063f4a2db122")
 		)
@@ -513,7 +519,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "REED")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "950ca05a-fbc9-4208-8e0f-29a62b044945")
 		)
@@ -613,6 +619,12 @@
 		(path "/cc607f93-b42e-43bf-b95b-2b85a8e67134")
 		(sheetname "/")
 		(sheetfile "sensor_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
@@ -783,6 +795,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/7bdaa1d0-3b21-4d8f-9cd5-98be58e75aee")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1005,7 +1023,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "537828d0-d030-43e3-a98a-0441a9a9ee87")
 		)
@@ -1016,7 +1034,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "REED")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "007b258b-cfa7-4407-8d5c-a6b39776f366")
 		)
@@ -1116,6 +1134,12 @@
 		(path "/eaeb7edc-3b66-4b0b-8056-1fc03d8e5c06")
 		(sheetname "/")
 		(sheetfile "sensor_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
@@ -1222,6 +1246,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/d63142b9-8047-4391-b262-3175b05667df")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "4" "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1554,7 +1584,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "-")
+			(pinfunction "-_1")
 			(pintype "passive")
 			(thermal_bridge_angle 90)
 			(uuid "3df17fd4-84bb-4870-96f0-1fd3124db141")
@@ -1566,7 +1596,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "-")
+			(pinfunction "-_2")
 			(pintype "passive")
 			(thermal_bridge_angle 90)
 			(uuid "0107436f-659c-4f9c-876f-95110c7072f7")
@@ -1578,7 +1608,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "VDD")
-			(pinfunction "+")
+			(pinfunction "+_3")
 			(pintype "input")
 			(thermal_bridge_angle 90)
 			(uuid "ba16f27b-e58c-4c82-8bed-e29935f9b17a")
@@ -1590,7 +1620,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "VDD")
-			(pinfunction "+")
+			(pinfunction "+_4")
 			(pintype "input")
 			(thermal_bridge_angle 90)
 			(uuid "18e2dfcb-5768-4bfc-8385-362082e1511d")
@@ -1702,6 +1732,12 @@
 		(path "/de8a0710-bba5-4bbd-afd6-5c0394e87c99")
 		(sheetname "/")
 		(sheetfile "sensor_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
@@ -1808,6 +1844,12 @@
 		(path "/002a1cf8-6018-4624-928b-12494458e186")
 		(sheetname "/")
 		(sheetfile "sensor_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
@@ -1961,6 +2003,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/99b245a5-d66b-480a-9aa7-28626bbb10cf")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2" "4")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2163,7 +2211,7 @@
 			(size 0.65 1.05)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(S2-NO_1-Pad1)")
-			(pinfunction "NO_1")
+			(pinfunction "NO_1_1")
 			(pintype "passive+no_connect")
 			(uuid "a8124a16-7d87-40bf-983e-c50b72f10efc")
 		)
@@ -2172,7 +2220,7 @@
 			(size 0.65 1.05)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "BTN")
-			(pinfunction "NO_2")
+			(pinfunction "NO_2_2")
 			(pintype "passive")
 			(uuid "882013e4-1756-42da-9f62-a0c104a37cdb")
 		)
@@ -2181,7 +2229,7 @@
 			(size 0.65 1.05)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(S2-COM_1-Pad3)")
-			(pinfunction "COM_1")
+			(pinfunction "COM_1_3")
 			(pintype "passive+no_connect")
 			(uuid "6220bd0c-3293-4e53-97d6-9f67fdc0e3b7")
 		)
@@ -2190,7 +2238,7 @@
 			(size 0.65 1.05)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "COM_2")
+			(pinfunction "COM_2_4")
 			(pintype "passive")
 			(uuid "ad9722a6-8755-4fbc-95b3-fb92efc0307b")
 		)
@@ -2237,7 +2285,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -2367,6 +2415,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/1aaacee3-1ada-4a0f-be72-4de56fcb0f40")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -2464,7 +2518,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -2522,6 +2576,12 @@
 		(path "/74e03995-35d2-44be-b60e-a7f11e199836")
 		(sheetname "/")
 		(sheetfile "sensor_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr smd exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -2598,7 +2658,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -2728,6 +2788,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/fd1391ec-1dbf-44e4-a43e-6f0b18094faa")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -2825,7 +2891,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -2955,6 +3021,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/eeec1f07-4af5-45b8-a540-d3d8d9557c29")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -3052,7 +3124,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -3182,6 +3254,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/434b7a97-9ef2-4901-9568-7e279c7b1668")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -3279,7 +3357,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -3409,6 +3487,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/458dbc75-3245-41e0-8740-fa313a4549ae")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -3634,6 +3718,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/6b26bba6-6629-44c2-be7d-892d5bd73fa9")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "4" "1" "3" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3775,7 +3865,7 @@
 			(size 1.2 1.4)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(IC2-XOSC_Q1)")
-			(pinfunction "CRYSTAL__1")
+			(pinfunction "CRYSTAL__1_1")
 			(pintype "passive")
 			(uuid "cb87e956-c467-4faa-b527-7650f4b258f5")
 		)
@@ -3783,9 +3873,9 @@
 			(at 1.1 -0.8)
 			(size 1.2 1.4)
 			(layers "B.Cu" "B.Mask" "B.Paste")
-			(net "unconnected-(Y1-NC{slash}GND_1-Pad2)")
-			(pinfunction "NC/GND_1")
-			(pintype "passive+no_connect")
+			(net "GND")
+			(pinfunction "NC/GND_1_2")
+			(pintype "passive")
 			(uuid "b96acea5-3ffc-4642-9bf6-550f5b39d559")
 		)
 		(pad "3" smd rect
@@ -3793,7 +3883,7 @@
 			(size 1.2 1.4)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(IC2-XOSC_Q2)")
-			(pinfunction "CRYSTAL__2")
+			(pinfunction "CRYSTAL__2_3")
 			(pintype "passive")
 			(uuid "5844c47c-498b-4b75-a438-7b92d949caa4")
 		)
@@ -3801,9 +3891,9 @@
 			(at -1.1 0.8)
 			(size 1.2 1.4)
 			(layers "B.Cu" "B.Mask" "B.Paste")
-			(net "unconnected-(Y1-NC{slash}GND_2-Pad4)")
-			(pinfunction "NC/GND_2")
-			(pintype "passive+no_connect")
+			(net "GND")
+			(pinfunction "NC/GND_2_4")
+			(pintype "passive")
 			(uuid "41ae2c8d-2aed-48f9-900c-47b12d12eaa7")
 		)
 		(embedded_fonts no)
@@ -3849,7 +3939,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -3979,6 +4069,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/11232682-bbe2-4fdf-b3ff-a28fb1c1c463")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -4076,7 +4172,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -4206,6 +4302,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/c1d8d825-ac9e-46b4-a45f-79ed6b18f326")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -4303,7 +4405,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -4433,6 +4535,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/db6d3d33-db8b-4830-a1a8-dd0552c98214")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -4530,7 +4638,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -4658,6 +4766,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/e119bcbf-5338-45fe-ac68-b6d91fac84fb")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4775,7 +4889,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -4905,6 +5019,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/7ab0b0c7-d4f6-479b-a322-1ef2670ea9e2")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -5002,7 +5122,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -5062,7 +5182,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/90a802f2-0510-4523-9e02-a3da11253a27")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -5103,7 +5228,7 @@
 			(size 1 1)
 			(layers "B.Cu" "B.Mask")
 			(net "/MCU/SDI")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "a93f147e-7984-42ac-a301-14d4c4bf523d")
 		)
@@ -5139,7 +5264,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -5267,6 +5392,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/b9dd392b-cfbd-45a1-a22a-d82bf46ef73b")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5512,6 +5643,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/8c5019dd-bfe6-49f8-a06e-b1e858b84d12")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5673,7 +5810,7 @@
 			(size 1.05 1.6)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "6f46da4d-873b-4c3f-8dec-ab6342466edc")
 		)
@@ -5682,7 +5819,7 @@
 			(size 1.05 1.6)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "VDD")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "45e3adf6-7c73-40e6-917e-72df132306c6")
 		)
@@ -5857,6 +5994,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/82d13efa-8159-4a0e-8768-20f82df8e3d0")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5966,7 +6109,7 @@
 			(size 0.65 0.7)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "RF_VDD")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "9bf8a458-b945-419c-b038-185c0049cc6e")
 		)
@@ -5975,7 +6118,7 @@
 			(size 0.65 0.7)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "VDD")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "66d12f20-4e59-4a45-a744-3ed51d60074d")
 		)
@@ -6022,7 +6165,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -6152,6 +6295,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/0eb5ddca-760a-4ad7-9a8a-847ef4d4f138")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -6249,7 +6398,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -6379,6 +6528,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/48080ad4-4dfe-4e99-9568-7d5e14673aa9")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -6421,7 +6576,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(C122-Pad2)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "6c507b25-a04f-46b1-80b4-3c8cb83a19db")
 		)
@@ -6431,7 +6586,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(C123-Pad2)")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "1594bec0-41d5-4bb6-9a23-1bf4adba0920")
 		)
@@ -6606,6 +6761,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/a8b37f56-2f6a-47a0-89e1-3f75e153d7ad")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6747,7 +6908,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "VDD")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "27e304a0-badd-47ea-9218-bdf8d7e287e4")
 		)
@@ -6758,7 +6919,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "SWIM")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "9047ebb3-55bf-4da8-bca2-ed153098d698")
 		)
@@ -6769,7 +6930,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "3")
+			(pinfunction "3_3")
 			(pintype "passive")
 			(uuid "d0ef5f0d-b3c8-46a3-8bfe-5901c0a36c7d")
 		)
@@ -6780,7 +6941,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "NRST")
-			(pinfunction "4")
+			(pinfunction "4_4")
 			(pintype "passive")
 			(uuid "fbf7b0f8-2f65-4858-bd8b-b6eb58b2e329")
 		)
@@ -6827,7 +6988,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -6957,6 +7118,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/30d0c715-d8f1-4fc1-8b41-873ba12f068c")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -6999,7 +7166,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(IC2-RF_P)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "e785e430-8ff7-4788-84e8-4f128b420f36")
 		)
@@ -7009,7 +7176,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(C121-Pad1)")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "07307e53-86b6-4c6d-95e9-eb94cfa691b8")
 		)
@@ -7056,7 +7223,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -7172,6 +7339,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/adec21cd-7435-4160-8394-95f083a5a64d")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -7203,7 +7376,7 @@
 			(size 2.59 1.48)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "f31519f6-41d2-4bcc-83b9-138f2dc33843")
 		)
@@ -7212,7 +7385,7 @@
 			(size 2.59 1.48)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(D1-A)")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "eacb8866-f29a-4ee0-8301-fe033911003b")
 		)
@@ -7259,7 +7432,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -7319,7 +7492,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/7b931b02-999a-4b7a-b6d1-476949ef0d04")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -7360,7 +7538,7 @@
 			(size 1 1)
 			(layers "B.Cu" "B.Mask")
 			(net "/MCU/CS")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "208a2d61-2945-4323-97b9-d9dadb81a85c")
 		)
@@ -7396,7 +7574,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -7526,6 +7704,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/4968db07-1e78-40fb-9e40-dd36dc8478d3")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -7623,7 +7807,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -7753,6 +7937,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/1e75fbd1-529f-44a7-af3f-ef69a9766787")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -7850,7 +8040,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -7980,6 +8170,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/c9469be9-c285-41d8-b973-de7d4d808f4b")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -8205,6 +8401,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/49851bfd-14ea-46bd-8fd4-d83a3e9e8f97")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8346,7 +8548,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "dfe014a1-997a-4ba2-b40a-a7ac9fc66e62")
 		)
@@ -8357,7 +8559,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "RX")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "10e4481d-7e70-41b3-9bb1-cb8e5e0f51b5")
 		)
@@ -8368,7 +8570,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "TX")
-			(pinfunction "3")
+			(pinfunction "3_3")
 			(pintype "passive")
 			(uuid "2e70a4ff-fb09-40fc-9a72-779de303f856")
 		)
@@ -8404,7 +8606,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -8534,6 +8736,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/d48a6497-1603-4d91-819a-e6dce50af009")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -8576,7 +8784,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(C123-Pad2)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "fd4c9be6-1f4f-42dd-848d-5765736201a9")
 		)
@@ -8586,7 +8794,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(C125-Pad1)")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "64972d2d-40e8-46d2-94ab-5f34edf38ba2")
 		)
@@ -8692,6 +8900,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/b8c8b39e-4c69-4b7f-b761-653035a4e57a")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
@@ -8714,7 +8928,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(ANT1-ANT)")
-			(pinfunction "ANT")
+			(pinfunction "ANT_1")
 			(pintype "passive")
 			(uuid "94204629-622f-4e33-a597-2e96f50eae77")
 		)
@@ -8750,7 +8964,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -8810,7 +9024,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/b7f5302c-a5b1-4549-9250-6bd7d533f4d1")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -8851,7 +9070,7 @@
 			(size 1 1)
 			(layers "B.Cu" "B.Mask")
 			(net "/MCU/IRQ")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "62eac19c-9e77-4784-960e-49045e2c777f")
 		)
@@ -9015,6 +9234,14 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/9766ec3a-1362-43a3-9d13-36fb4b91f023")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "21" "6" "20" "7" "19" "8" "18" "9" "17" "10"
+					"16" "15" "14" "13" "12" "11"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -9135,7 +9362,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/MCU/SCLK")
-			(pinfunction "SCLK")
+			(pinfunction "SCLK_1")
 			(pintype "passive")
 			(uuid "59d678c0-6e5f-4dd1-9d21-a95f83ab3d8c")
 		)
@@ -9144,7 +9371,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/MCU/SDO")
-			(pinfunction "SO_(GDO1)")
+			(pinfunction "SO_(GDO1)_2")
 			(pintype "passive")
 			(uuid "e0616c87-908f-40ee-a815-af059c01da41")
 		)
@@ -9153,7 +9380,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(IC2-GDO2-Pad3)")
-			(pinfunction "GDO2")
+			(pinfunction "GDO2_3")
 			(pintype "passive+no_connect")
 			(uuid "d5678753-4c2e-459d-b14d-1552e25a44b1")
 		)
@@ -9162,7 +9389,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "RF_VDD")
-			(pinfunction "DVDD")
+			(pinfunction "DVDD_4")
 			(pintype "passive")
 			(uuid "6eb82c2d-c3b8-4437-bff7-aaf797e2e501")
 		)
@@ -9171,7 +9398,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(IC2-DCOUPL)")
-			(pinfunction "DCOUPL")
+			(pinfunction "DCOUPL_5")
 			(pintype "passive")
 			(uuid "62f1357b-51ed-4e95-9812-faefa177f983")
 		)
@@ -9180,7 +9407,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/MCU/IRQ")
-			(pinfunction "GDO0_(ATEST)")
+			(pinfunction "GDO0_(ATEST)_6")
 			(pintype "passive")
 			(uuid "bb306f50-cf9d-482e-a803-755647e7177c")
 		)
@@ -9189,7 +9416,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/MCU/CS")
-			(pinfunction "CSN")
+			(pinfunction "CSN_7")
 			(pintype "passive")
 			(uuid "2e1fbe6c-773f-4434-8ebc-49186cb9e65f")
 		)
@@ -9198,7 +9425,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(IC2-XOSC_Q1)")
-			(pinfunction "XOSC_Q1")
+			(pinfunction "XOSC_Q1_8")
 			(pintype "passive")
 			(uuid "7e12cc39-38d6-4f41-852a-036fc50e00ee")
 		)
@@ -9207,7 +9434,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "RF_VDD")
-			(pinfunction "AVDD_1")
+			(pinfunction "AVDD_1_9")
 			(pintype "passive")
 			(uuid "2735dd47-f4d9-410a-86d6-c339980f36b5")
 		)
@@ -9216,7 +9443,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(IC2-XOSC_Q2)")
-			(pinfunction "XOSC_Q2")
+			(pinfunction "XOSC_Q2_10")
 			(pintype "passive")
 			(uuid "24fd4e41-3151-4e45-a2ec-651bd581920a")
 		)
@@ -9225,7 +9452,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "RF_VDD")
-			(pinfunction "AVDD_2")
+			(pinfunction "AVDD_2_11")
 			(pintype "passive")
 			(uuid "712deba2-068f-48d3-82f8-087417c5374a")
 		)
@@ -9234,7 +9461,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(IC2-RF_P)")
-			(pinfunction "RF_P")
+			(pinfunction "RF_P_12")
 			(pintype "passive")
 			(uuid "c7bc6481-b746-4cf5-9be1-99dde3897b66")
 		)
@@ -9243,7 +9470,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(IC2-RF_N)")
-			(pinfunction "RF_N")
+			(pinfunction "RF_N_13")
 			(pintype "passive")
 			(uuid "d4f36c29-15f4-41b4-b7e3-25f7752c8eae")
 		)
@@ -9252,7 +9479,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "RF_VDD")
-			(pinfunction "AVDD_3")
+			(pinfunction "AVDD_3_14")
 			(pintype "passive")
 			(uuid "0a31ba85-d4f6-4baa-af70-a5861848135f")
 		)
@@ -9261,7 +9488,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "RF_VDD")
-			(pinfunction "AVDD_4")
+			(pinfunction "AVDD_4_15")
 			(pintype "passive")
 			(uuid "37785771-6e78-42bb-b24b-7be56823df0d")
 		)
@@ -9270,7 +9497,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "GND_1")
+			(pinfunction "GND_1_16")
 			(pintype "passive")
 			(uuid "8012ca7d-bf36-4e23-97f7-d74c9897c33c")
 		)
@@ -9279,7 +9506,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(IC2-RBIAS)")
-			(pinfunction "RBIAS")
+			(pinfunction "RBIAS_17")
 			(pintype "passive")
 			(uuid "8631e667-e9b3-4b2f-addf-fab0d1b14ee4")
 		)
@@ -9288,7 +9515,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "RF_VDD")
-			(pinfunction "DGUARD")
+			(pinfunction "DGUARD_18")
 			(pintype "passive")
 			(uuid "8ed89439-5739-4828-adf7-504f3618db88")
 		)
@@ -9297,7 +9524,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "GND_2")
+			(pinfunction "GND_2_19")
 			(pintype "passive")
 			(uuid "6849ac6e-06e2-44eb-94c0-007a3c8b1df3")
 		)
@@ -9306,7 +9533,7 @@
 			(size 0.3 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/MCU/SDI")
-			(pinfunction "SI")
+			(pinfunction "SI_20")
 			(pintype "passive")
 			(uuid "f1711688-4b66-4616-a946-9c3716b756c5")
 		)
@@ -9315,7 +9542,7 @@
 			(size 2.5 2.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "GND_3")
+			(pinfunction "GND_3_21")
 			(pintype "passive")
 			(uuid "d0bdab47-6ff4-4c65-874b-92ff94748a59")
 		)
@@ -9362,7 +9589,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -9422,7 +9649,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/cfd93685-1827-4030-917d-4e75a1841347")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -9463,7 +9695,7 @@
 			(size 1 1)
 			(layers "B.Cu" "B.Mask")
 			(net "/MCU/SDO")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "760a6104-7302-4a15-9579-62419a24378d")
 		)
@@ -9499,7 +9731,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -9559,7 +9791,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/58e36afc-9cc7-4e56-85f6-20d4689795aa")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -9600,7 +9837,7 @@
 			(size 1 1)
 			(layers "B.Cu" "B.Mask")
 			(net "/MCU/SCLK")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "1902122a-df6a-4420-88ef-ad9db885f95f")
 		)
@@ -9636,7 +9873,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -9766,6 +10003,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/abff309a-d73d-4f9c-a09f-a23ce6297275")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -9863,7 +10106,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -9921,6 +10164,12 @@
 		(path "/f659088b-fc8e-46f1-ad95-ea193e7a8302")
 		(sheetname "/")
 		(sheetfile "sensor_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr smd exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -9997,7 +10246,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -10055,6 +10304,12 @@
 		(path "/ce504aec-d020-48ab-9ef5-7f946a3da734")
 		(sheetname "/")
 		(sheetfile "sensor_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr smd exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -10131,7 +10386,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -10191,7 +10446,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/280c3cce-8649-4f17-b068-a8c9bcfcb51c")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -10232,7 +10492,7 @@
 			(size 1 1)
 			(layers "B.Cu" "B.Mask")
 			(net "LED")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "d706fd16-3add-43c3-ade8-90de54c6cafc")
 		)
@@ -10268,7 +10528,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -10396,6 +10656,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/e386951e-b9fc-46dd-8b85-f0cbb9482cad")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10513,7 +10779,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -10643,6 +10909,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/01d18ebd-42f0-45e5-bd31-7ba66bf16c60")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -10685,7 +10957,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(IC2-RF_N)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "4d5ed4f2-78fc-4fe4-a0fa-db05136814b1")
 		)
@@ -10695,7 +10967,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(C121-Pad2)")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "09e8c828-1cbd-491f-9d0a-574723e50602")
 		)
@@ -10742,7 +11014,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -10870,6 +11142,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/ce9bedb0-9f33-44f0-acf4-7456141986e5")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10987,7 +11265,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -11117,6 +11395,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/84445158-e316-48cd-8022-a34614f66c9f")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -11214,7 +11498,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -11344,6 +11628,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/d0fe3689-bd54-4892-9917-2d0ec27d489a")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -11386,7 +11676,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(C121-Pad2)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "07a4d017-f8c8-4035-8c89-de71e7252f0a")
 		)
@@ -11396,7 +11686,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(C122-Pad2)")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "742aeb82-0751-4019-bcf7-009862ac9e26")
 		)
@@ -11443,7 +11733,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -11503,7 +11793,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/60ba597b-7708-46cc-91cf-8a5fe34680b4")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -11544,7 +11839,7 @@
 			(size 1 1)
 			(layers "B.Cu" "B.Mask")
 			(net "RF_VDD")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "129dbcec-c7c1-4d18-a7c8-72b11c9c0a86")
 		)
@@ -11580,7 +11875,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -11710,6 +12005,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/fe945822-9e37-45d7-be4d-19d6562aad7b")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -11807,7 +12108,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -11867,7 +12168,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/be4f7cab-6f25-4f09-9aff-b1cefcaad8c7")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -11908,7 +12214,7 @@
 			(size 1 1)
 			(layers "B.Cu" "B.Mask")
 			(net "VDD")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "923313f7-92d8-461c-9fc6-19df8b634230")
 		)
@@ -11944,7 +12250,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -12072,6 +12378,12 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/b30388f1-f332-4e3c-8083-fab030151ac2")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12189,7 +12501,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -12319,6 +12631,12 @@
 		(path "/af07603d-259f-481d-be2c-d925e27835a3/c590b003-3c11-478b-877a-258adc518e1f")
 		(sheetname "/RF/")
 		(sheetfile "rf_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -12361,7 +12679,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(C121-Pad1)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "1519cf95-a96a-4222-9016-646dda682f98")
 		)
@@ -12371,7 +12689,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(C124-Pad2)")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "b350ce10-4f2a-4400-aa71-de614156c7d4")
 		)
@@ -12546,6 +12864,14 @@
 		(path "/ec220677-d66d-4ee1-961f-1c93fb46783a/63627ebb-7986-4479-9a90-26a0aa9a7cfc")
 		(sheetname "/MCU/")
 		(sheetfile "mcu_rev1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15"
+					"16" "17" "18" "19" "20"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12705,7 +13031,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "TX")
-			(pinfunction "PC5")
+			(pinfunction "PC5_1")
 			(pintype "passive")
 			(uuid "80d1a603-c0e3-416b-a596-e1f038021452")
 		)
@@ -12714,7 +13040,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "RX")
-			(pinfunction "PC6")
+			(pinfunction "PC6_2")
 			(pintype "passive")
 			(uuid "a5b5cd54-5a6a-494f-b850-9412a104ff05")
 		)
@@ -12723,7 +13049,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "SWIM")
-			(pinfunction "PA0")
+			(pinfunction "PA0_3")
 			(pintype "passive")
 			(uuid "e62f8128-03b4-48d1-82bd-fa263ec7d138")
 		)
@@ -12732,7 +13058,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "NRST")
-			(pinfunction "NRST_/_PA1")
+			(pinfunction "NRST_/_PA1_4")
 			(pintype "passive")
 			(uuid "0a29f5e8-9e10-483d-88d6-ca2b3c80f645")
 		)
@@ -12741,7 +13067,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "REED")
-			(pinfunction "PA2")
+			(pinfunction "PA2_5")
 			(pintype "passive")
 			(uuid "033992d4-d738-45a2-9390-c6b1801cee44")
 		)
@@ -12750,7 +13076,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "BTN")
-			(pinfunction "PA3")
+			(pinfunction "PA3_6")
 			(pintype "passive")
 			(uuid "f7ab7cd3-054c-425b-bc4d-9c9ceb43f423")
 		)
@@ -12759,7 +13085,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "VSS/VSSA/VREF-")
+			(pinfunction "VSS/VSSA/VREF-_7")
 			(pintype "passive")
 			(uuid "74ba372b-3206-414e-b41c-ca82e9975295")
 		)
@@ -12768,7 +13094,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "VDD")
-			(pinfunction "VDD/VDDA/VREF+")
+			(pinfunction "VDD/VDDA/VREF+_8")
 			(pintype "passive")
 			(uuid "f738edbd-d8ca-4d3b-b7ed-99e39d0914bd")
 		)
@@ -12777,7 +13103,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "PD0")
+			(pinfunction "PD0_9")
 			(pintype "passive")
 			(uuid "1d4df965-4212-4178-844e-3a3fee1dbb4f")
 		)
@@ -12786,7 +13112,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "LED")
-			(pinfunction "PB0")
+			(pinfunction "PB0_10")
 			(pintype "passive")
 			(uuid "4234e0d2-18bf-4453-8c83-7c37dee94d57")
 		)
@@ -12795,7 +13121,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/MCU/IRQ")
-			(pinfunction "PB1")
+			(pinfunction "PB1_11")
 			(pintype "passive")
 			(uuid "88a55008-0311-4bd3-b8bb-29376d0ea6ae")
 		)
@@ -12804,7 +13130,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "PB2")
+			(pinfunction "PB2_12")
 			(pintype "passive")
 			(uuid "d6d21814-4f47-46ec-a7df-a5a2129052ab")
 		)
@@ -12813,7 +13139,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "PB3")
+			(pinfunction "PB3_13")
 			(pintype "passive")
 			(uuid "336ad1db-a9bc-4900-bc31-1282004899f3")
 		)
@@ -12822,7 +13148,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/MCU/CS")
-			(pinfunction "PB4")
+			(pinfunction "PB4_14")
 			(pintype "passive")
 			(uuid "a4155c93-2f2a-402f-a169-cffca62a3718")
 		)
@@ -12831,7 +13157,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/MCU/SCLK")
-			(pinfunction "PB5")
+			(pinfunction "PB5_15")
 			(pintype "passive")
 			(uuid "70ef29ba-6561-4b5e-8f35-80dd70da9e09")
 		)
@@ -12840,7 +13166,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/MCU/SDI")
-			(pinfunction "PB6")
+			(pinfunction "PB6_16")
 			(pintype "passive")
 			(uuid "7492cd1d-cccf-488f-a042-ecc39b9ef714")
 		)
@@ -12849,7 +13175,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/MCU/SDO")
-			(pinfunction "PB7")
+			(pinfunction "PB7_17")
 			(pintype "passive")
 			(uuid "215c3a2d-7a96-420a-9f9e-7d81168fffd4")
 		)
@@ -12858,7 +13184,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "PC0")
+			(pinfunction "PC0_18")
 			(pintype "passive")
 			(uuid "732a40a5-98c3-4f52-ad15-e9483d8eb636")
 		)
@@ -12867,7 +13193,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "PC1")
+			(pinfunction "PC1_19")
 			(pintype "passive")
 			(uuid "7162af70-7491-482a-aedc-1cfcd27197a1")
 		)
@@ -12876,7 +13202,7 @@
 			(size 0.45 1.475)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "PC4")
+			(pinfunction "PC4_20")
 			(pintype "passive")
 			(uuid "279bd4c1-4ac1-4c52-819b-e274615b6498")
 		)
@@ -13497,6 +13823,15 @@
 		(filling no)
 		(net "GND")
 		(uuid "1e5fca9a-54f1-4f2d-8ea5-e56ef6484506")
+	)
+	(via
+		(at 232.59 126.91)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net "GND")
+		(uuid "1e60219a-3af4-4b57-bd2c-fdc6fe6e3862")
 	)
 	(via
 		(at 239.89 134.79)
@@ -20368,54 +20703,15 @@
 				(xy 229.260509 118.311029) (xy 229.151683 118.361776) (xy 229.065279 118.448181) (xy 229.003956 118.481666)
 				(xy 228.977598 118.4845) (xy 228.417938 118.4845) (xy 228.384686 118.49341) (xy 228.341509 118.504979)
 				(xy 228.341504 118.504982) (xy 228.272995 118.544535) (xy 228.272987 118.544541) (xy 227.661848 119.155681)
-				(xy 227.600525 119.189166) (xy 227.574167 119.192) (xy 226.530247 119.192) (xy 226.47177 119.203631)
-				(xy 226.471769 119.203632) (xy 226.418891 119.238965) (xy 226.352214 119.259843) (xy 226.284834 119.241359)
-				(xy 226.281109 119.238965) (xy 226.22823 119.203632) (xy 226.228229 119.203631) (xy 226.169752 119.192)
-				(xy 226.169748 119.192) (xy 224.930252 119.192) (xy 224.930247 119.192) (xy 224.87177 119.203631)
-				(xy 224.871769 119.203632) (xy 224.805447 119.247947) (xy 224.761132 119.314269) (xy 224.761131 119.31427)
-				(xy 224.7495 119.372747) (xy 224.7495 120.812252) (xy 224.761131 120.870729) (xy 224.761132 120.87073)
-				(xy 224.805447 120.937052) (xy 224.871769 120.981367) (xy 224.87177 120.981368) (xy 224.930247 120.992999)
-				(xy 224.93025 120.993) (xy 224.930252 120.993) (xy 226.16975 120.993) (xy 226.169751 120.992999)
-				(xy 226.184568 120.990052) (xy 226.228229 120.981368) (xy 226.228231 120.981367) (xy 226.263279 120.957948)
-				(xy 226.281108 120.946034) (xy 226.347785 120.925156) (xy 226.415165 120.94364) (xy 226.418886 120.946031)
-				(xy 226.428077 120.952172) (xy 226.471768 120.981367) (xy 226.47177 120.981368) (xy 226.530247 120.992999)
-				(xy 226.53025 120.993) (xy 226.530252 120.993) (xy 227.76975 120.993) (xy 227.769751 120.992999)
-				(xy 227.784568 120.990052) (xy 227.828229 120.981368) (xy 227.828229 120.981367) (xy 227.828231 120.981367)
-				(xy 227.894552 120.937052) (xy 227.938867 120.870731) (xy 227.938867 120.870729) (xy 227.938868 120.870729)
-				(xy 227.950499 120.812252) (xy 227.9505 120.81225) (xy 227.9505 119.995) (xy 228.715496 119.995)
-				(xy 228.757968 120.141195) (xy 228.840278 120.280374) (xy 228.840285 120.280383) (xy 228.954616 120.394714)
-				(xy 228.954625 120.394721) (xy 229.093804 120.477031) (xy 229.249089 120.522145) (xy 229.27 120.523789)
-				(xy 229.27 119.995) (xy 228.715496 119.995) (xy 227.9505 119.995) (xy 227.9505 119.768333) (xy 227.970185 119.701294)
-				(xy 227.986819 119.680652) (xy 228.545652 119.121819) (xy 228.606975 119.088334) (xy 228.633333 119.0855)
-				(xy 228.696291 119.0855) (xy 228.76333 119.105185) (xy 228.809085 119.157989) (xy 228.819029 119.227147)
-				(xy 228.803023 119.272621) (xy 228.757968 119.348804) (xy 228.715496 119.495) (xy 230.353667 119.495)
-				(xy 230.420706 119.514685) (xy 230.441348 119.531319) (xy 230.6411 119.731071) (xy 230.674585 119.792394)
-				(xy 230.669601 119.862086) (xy 230.627729 119.918019) (xy 230.61542 119.926138) (xy 230.545927 119.96626)
-				(xy 230.545917 119.966268) (xy 230.508176 120.004009) (xy 230.446853 120.037494) (xy 230.377161 120.032508)
-				(xy 230.326983 119.995) (xy 229.77 119.995) (xy 229.77 120.531) (xy 229.750315 120.598039) (xy 229.697511 120.643794)
-				(xy 229.646 120.655) (xy 229.584901 120.655) (xy 229.570285 120.669616) (xy 229.570278 120.669625)
-				(xy 229.487968 120.808804) (xy 229.487966 120.808809) (xy 229.442855 120.964081) (xy 229.442854 120.964087)
-				(xy 229.441209 120.984999) (xy 229.44121 120.985) (xy 230.096 120.985) (xy 230.163039 121.004685)
-				(xy 230.208794 121.057489) (xy 230.22 121.109) (xy 230.22 121.361) (xy 230.200315 121.428039) (xy 230.147511 121.473794)
-				(xy 230.096 121.485) (xy 229.44121 121.485) (xy 229.442854 121.50591) (xy 229.487968 121.661195)
-				(xy 229.525701 121.724999) (xy 229.525703 121.725) (xy 229.646 121.725) (xy 229.713039 121.744685)
-				(xy 229.758794 121.797489) (xy 229.77 121.849) (xy 229.77 122.511) (xy 229.750315 122.578039) (xy 229.697511 122.623794)
-				(xy 229.646 122.635) (xy 229.52 122.635) (xy 229.52 122.761) (xy 229.500315 122.828039) (xy 229.447511 122.873794)
-				(xy 229.396 122.885) (xy 228.715496 122.885) (xy 228.757968 123.031195) (xy 228.803023 123.107379)
-				(xy 228.820206 123.175103) (xy 228.798046 123.241366) (xy 228.74358 123.285129) (xy 228.696291 123.2945)
-				(xy 228.021337 123.2945) (xy 227.954298 123.274815) (xy 227.908543 123.222011) (xy 227.898599 123.152853)
-				(xy 227.918235 123.101609) (xy 227.935711 123.075454) (xy 227.938867 123.070731) (xy 227.938867 123.070729)
-				(xy 227.938868 123.070729) (xy 227.950499 123.012252) (xy 227.9505 123.01225) (xy 227.9505 122.385)
-				(xy 228.715496 122.385) (xy 229.27 122.385) (xy 229.27 121.85621) (xy 229.269999 121.856209) (xy 229.249087 121.857854)
-				(xy 229.249081 121.857855) (xy 229.093809 121.902966) (xy 229.093804 121.902968) (xy 228.954625 121.985278)
-				(xy 228.954616 121.985285) (xy 228.840285 122.099616) (xy 228.840278 122.099625) (xy 228.757968 122.238804)
-				(xy 228.715496 122.385) (xy 227.9505 122.385) (xy 227.9505 121.572749) (xy 227.950499 121.572747)
-				(xy 227.938868 121.51427) (xy 227.938867 121.514269) (xy 227.894552 121.447947) (xy 227.82823 121.403632)
-				(xy 227.828229 121.403631) (xy 227.769752 121.392) (xy 227.769748 121.392) (xy 226.530252 121.392)
-				(xy 226.530247 121.392) (xy 226.47177 121.403631) (xy 226.471769 121.403632) (xy 226.418891 121.438965)
-				(xy 226.352214 121.459843) (xy 226.284834 121.441359) (xy 226.281109 121.438965) (xy 226.22823 121.403632)
-				(xy 226.228229 121.403631) (xy 226.169752 121.392) (xy 226.169748 121.392) (xy 224.930252 121.392)
-				(xy 224.930247 121.392) (xy 224.87177 121.403631) (xy 224.871769 121.403632) (xy 224.805447 121.447947)
+				(xy 227.600525 119.189166) (xy 227.574167 119.192) (xy 226.686556 119.192) (xy 226.619517 119.172315)
+				(xy 226.58729 119.142311) (xy 226.50719 119.035312) (xy 226.507187 119.035309) (xy 226.392093 118.949149)
+				(xy 226.392086 118.949145) (xy 226.257379 118.898903) (xy 226.257372 118.898901) (xy 226.197844 118.8925)
+				(xy 225.8 118.8925) (xy 225.8 119.9685) (xy 225.780315 120.035539) (xy 225.727511 120.081294) (xy 225.676 120.0925)
+				(xy 225.55 120.0925) (xy 225.55 120.2185) (xy 225.530315 120.285539) (xy 225.477511 120.331294)
+				(xy 225.426 120.3425) (xy 224.45 120.3425) (xy 224.45 120.840344) (xy 224.456401 120.899872) (xy 224.456403 120.899879)
+				(xy 224.506645 121.034586) (xy 224.506649 121.034593) (xy 224.592809 121.149687) (xy 224.592812 121.14969)
+				(xy 224.707906 121.23585) (xy 224.707913 121.235854) (xy 224.752645 121.252538) (xy 224.808579 121.294409)
+				(xy 224.832996 121.359873) (xy 224.818145 121.428146) (xy 224.811372 121.437218) (xy 224.812233 121.437793)
 				(xy 224.761132 121.514269) (xy 224.761131 121.51427) (xy 224.7495 121.572747) (xy 224.7495 123.012252)
 				(xy 224.761131 123.070729) (xy 224.761132 123.07073) (xy 224.805447 123.137052) (xy 224.871769 123.181367)
 				(xy 224.87177 123.181368) (xy 224.930247 123.192999) (xy 224.93025 123.193) (xy 224.930252 123.193)
@@ -21415,27 +21711,73 @@
 				(xy 222.568074 122.582182) (xy 222.403771 122.5495) (xy 222.403767 122.5495) (xy 222.236233 122.5495)
 				(xy 222.236228 122.5495) (xy 222.071925 122.582182) (xy 222.071917 122.582184) (xy 221.917139 122.646295)
 				(xy 221.777837 122.739373) (xy 221.659373 122.857837) (xy 221.566295 122.997139) (xy 221.502184 123.151917)
-				(xy 221.502182 123.151925) (xy 221.4695 123.316228) (xy 220.2005 123.316228) (xy 220.2005 117.972499)
-				(xy 231.141209 117.972499) (xy 231.14121 117.9725) (xy 231.67 117.9725) (xy 231.67 117.417994) (xy 231.669998 117.417993)
-				(xy 231.523809 117.460465) (xy 231.523806 117.460467) (xy 231.384625 117.542778) (xy 231.384616 117.542785)
-				(xy 231.270285 117.657116) (xy 231.270278 117.657125) (xy 231.187968 117.796304) (xy 231.187966 117.796309)
-				(xy 231.142855 117.951581) (xy 231.142854 117.951587) (xy 231.141209 117.972499) (xy 220.2005 117.972499)
-				(xy 220.2005 113.625) (xy 231.065496 113.625) (xy 231.62 113.625) (xy 232.12 113.625) (xy 232.674504 113.625)
-				(xy 232.632031 113.478804) (xy 232.549721 113.339625) (xy 232.549714 113.339616) (xy 232.435383 113.225285)
-				(xy 232.435374 113.225278) (xy 232.296195 113.142968) (xy 232.29619 113.142966) (xy 232.140918 113.097855)
-				(xy 232.140912 113.097854) (xy 232.12 113.096209) (xy 232.12 113.625) (xy 231.62 113.625) (xy 231.62 113.09621)
-				(xy 231.619999 113.096209) (xy 231.599087 113.097854) (xy 231.599081 113.097855) (xy 231.443809 113.142966)
-				(xy 231.443804 113.142968) (xy 231.304625 113.225278) (xy 231.304616 113.225285) (xy 231.190285 113.339616)
-				(xy 231.190278 113.339625) (xy 231.107968 113.478804) (xy 231.065496 113.625) (xy 220.2005 113.625)
-				(xy 220.2005 109.935) (xy 232.76121 109.935) (xy 232.762854 109.95591) (xy 232.807968 110.111195)
-				(xy 232.890278 110.250374) (xy 232.890285 110.250383) (xy 233.004616 110.364714) (xy 233.004625 110.364721)
-				(xy 233.143804 110.447031) (xy 233.29 110.489504) (xy 233.29 109.935) (xy 232.76121 109.935) (xy 220.2005 109.935)
-				(xy 220.2005 109.434999) (xy 232.761209 109.434999) (xy 232.76121 109.435) (xy 233.29 109.435) (xy 233.29 108.880494)
-				(xy 233.289998 108.880493) (xy 233.143809 108.922965) (xy 233.143806 108.922967) (xy 233.004625 109.005278)
-				(xy 233.004616 109.005285) (xy 232.890285 109.119616) (xy 232.890278 109.119625) (xy 232.807968 109.258804)
-				(xy 232.807966 109.258809) (xy 232.762855 109.414081) (xy 232.762854 109.414087) (xy 232.761209 109.434999)
-				(xy 220.2005 109.434999) (xy 220.2005 102.694) (xy 220.220185 102.626961) (xy 220.272989 102.581206)
-				(xy 220.3245 102.57) (xy 223.989298 102.57)
+				(xy 221.502182 123.151925) (xy 221.4695 123.316228) (xy 220.2005 123.316228) (xy 220.2005 119.344655)
+				(xy 224.45 119.344655) (xy 224.45 119.8425) (xy 225.3 119.8425) (xy 225.3 118.8925) (xy 224.902155 118.8925)
+				(xy 224.842627 118.898901) (xy 224.84262 118.898903) (xy 224.707913 118.949145) (xy 224.707906 118.949149)
+				(xy 224.592812 119.035309) (xy 224.592809 119.035312) (xy 224.506649 119.150406) (xy 224.506645 119.150413)
+				(xy 224.456403 119.28512) (xy 224.456401 119.285127) (xy 224.45 119.344655) (xy 220.2005 119.344655)
+				(xy 220.2005 117.972499) (xy 231.141209 117.972499) (xy 231.14121 117.9725) (xy 231.67 117.9725)
+				(xy 231.67 117.417994) (xy 231.669998 117.417993) (xy 231.523809 117.460465) (xy 231.523806 117.460467)
+				(xy 231.384625 117.542778) (xy 231.384616 117.542785) (xy 231.270285 117.657116) (xy 231.270278 117.657125)
+				(xy 231.187968 117.796304) (xy 231.187966 117.796309) (xy 231.142855 117.951581) (xy 231.142854 117.951587)
+				(xy 231.141209 117.972499) (xy 220.2005 117.972499) (xy 220.2005 113.625) (xy 231.065496 113.625)
+				(xy 231.62 113.625) (xy 232.12 113.625) (xy 232.674504 113.625) (xy 232.632031 113.478804) (xy 232.549721 113.339625)
+				(xy 232.549714 113.339616) (xy 232.435383 113.225285) (xy 232.435374 113.225278) (xy 232.296195 113.142968)
+				(xy 232.29619 113.142966) (xy 232.140918 113.097855) (xy 232.140912 113.097854) (xy 232.12 113.096209)
+				(xy 232.12 113.625) (xy 231.62 113.625) (xy 231.62 113.09621) (xy 231.619999 113.096209) (xy 231.599087 113.097854)
+				(xy 231.599081 113.097855) (xy 231.443809 113.142966) (xy 231.443804 113.142968) (xy 231.304625 113.225278)
+				(xy 231.304616 113.225285) (xy 231.190285 113.339616) (xy 231.190278 113.339625) (xy 231.107968 113.478804)
+				(xy 231.065496 113.625) (xy 220.2005 113.625) (xy 220.2005 109.935) (xy 232.76121 109.935) (xy 232.762854 109.95591)
+				(xy 232.807968 110.111195) (xy 232.890278 110.250374) (xy 232.890285 110.250383) (xy 233.004616 110.364714)
+				(xy 233.004625 110.364721) (xy 233.143804 110.447031) (xy 233.29 110.489504) (xy 233.29 109.935)
+				(xy 232.76121 109.935) (xy 220.2005 109.935) (xy 220.2005 109.434999) (xy 232.761209 109.434999)
+				(xy 232.76121 109.435) (xy 233.29 109.435) (xy 233.29 108.880494) (xy 233.289998 108.880493) (xy 233.143809 108.922965)
+				(xy 233.143806 108.922967) (xy 233.004625 109.005278) (xy 233.004616 109.005285) (xy 232.890285 109.119616)
+				(xy 232.890278 109.119625) (xy 232.807968 109.258804) (xy 232.807966 109.258809) (xy 232.762855 109.414081)
+				(xy 232.762854 109.414087) (xy 232.761209 109.434999) (xy 220.2005 109.434999) (xy 220.2005 102.694)
+				(xy 220.220185 102.626961) (xy 220.272989 102.581206) (xy 220.3245 102.57) (xy 223.989298 102.57)
+			)
+		)
+		(filled_polygon
+			(layer "B.Cu")
+			(pts
+				(xy 228.76333 119.105185) (xy 228.809085 119.157989) (xy 228.819029 119.227147) (xy 228.803023 119.272621)
+				(xy 228.757968 119.348804) (xy 228.715496 119.495) (xy 230.353667 119.495) (xy 230.420706 119.514685)
+				(xy 230.441348 119.531319) (xy 230.6411 119.731071) (xy 230.674585 119.792394) (xy 230.669601 119.862086)
+				(xy 230.627729 119.918019) (xy 230.61542 119.926138) (xy 230.545927 119.96626) (xy 230.545917 119.966268)
+				(xy 230.508176 120.004009) (xy 230.446853 120.037494) (xy 230.377161 120.032508) (xy 230.326983 119.995)
+				(xy 229.77 119.995) (xy 229.77 120.531) (xy 229.750315 120.598039) (xy 229.697511 120.643794) (xy 229.646 120.655)
+				(xy 229.584901 120.655) (xy 229.570285 120.669616) (xy 229.570278 120.669625) (xy 229.487968 120.808804)
+				(xy 229.487966 120.808809) (xy 229.442855 120.964081) (xy 229.442854 120.964087) (xy 229.441209 120.984999)
+				(xy 229.44121 120.985) (xy 230.096 120.985) (xy 230.163039 121.004685) (xy 230.208794 121.057489)
+				(xy 230.22 121.109) (xy 230.22 121.361) (xy 230.200315 121.428039) (xy 230.147511 121.473794) (xy 230.096 121.485)
+				(xy 229.44121 121.485) (xy 229.442854 121.50591) (xy 229.487968 121.661195) (xy 229.525701 121.724999)
+				(xy 229.525703 121.725) (xy 229.646 121.725) (xy 229.713039 121.744685) (xy 229.758794 121.797489)
+				(xy 229.77 121.849) (xy 229.77 122.511) (xy 229.750315 122.578039) (xy 229.697511 122.623794) (xy 229.646 122.635)
+				(xy 229.52 122.635) (xy 229.52 122.761) (xy 229.500315 122.828039) (xy 229.447511 122.873794) (xy 229.396 122.885)
+				(xy 228.715496 122.885) (xy 228.757968 123.031195) (xy 228.803023 123.107379) (xy 228.820206 123.175103)
+				(xy 228.798046 123.241366) (xy 228.74358 123.285129) (xy 228.696291 123.2945) (xy 228.349601 123.2945)
+				(xy 228.282562 123.274815) (xy 228.236807 123.222011) (xy 228.226863 123.152853) (xy 228.233419 123.127166)
+				(xy 228.243597 123.099876) (xy 228.243598 123.099872) (xy 228.249999 123.040344) (xy 228.25 123.040327)
+				(xy 228.25 122.5425) (xy 227.274 122.5425) (xy 227.265314 122.539949) (xy 227.256353 122.541238)
+				(xy 227.232312 122.530259) (xy 227.206961 122.522815) (xy 227.201033 122.515974) (xy 227.192797 122.512213)
+				(xy 227.178507 122.489978) (xy 227.161206 122.470011) (xy 227.158918 122.459496) (xy 227.155023 122.453435)
+				(xy 227.15 122.4185) (xy 227.15 122.385) (xy 228.715496 122.385) (xy 229.27 122.385) (xy 229.27 121.85621)
+				(xy 229.269999 121.856209) (xy 229.249087 121.857854) (xy 229.249081 121.857855) (xy 229.093809 121.902966)
+				(xy 229.093804 121.902968) (xy 228.954625 121.985278) (xy 228.954616 121.985285) (xy 228.840285 122.099616)
+				(xy 228.840278 122.099625) (xy 228.757968 122.238804) (xy 228.715496 122.385) (xy 227.15 122.385)
+				(xy 227.15 122.1665) (xy 227.169685 122.099461) (xy 227.222489 122.053706) (xy 227.274 122.0425)
+				(xy 228.25 122.0425) (xy 228.25 121.544672) (xy 228.249999 121.544655) (xy 228.243598 121.485127)
+				(xy 228.243596 121.48512) (xy 228.193354 121.350413) (xy 228.19335 121.350406) (xy 228.10719 121.235312)
+				(xy 228.107187 121.235309) (xy 227.992093 121.149149) (xy 227.992087 121.149146) (xy 227.947353 121.132461)
+				(xy 227.89142 121.090589) (xy 227.867003 121.025125) (xy 227.881855 120.956852) (xy 227.888652 120.947798)
+				(xy 227.887767 120.947207) (xy 227.917973 120.902) (xy 227.938867 120.870731) (xy 227.938867 120.870729)
+				(xy 227.938868 120.870729) (xy 227.950499 120.812252) (xy 227.9505 120.81225) (xy 227.9505 119.995)
+				(xy 228.715496 119.995) (xy 228.757968 120.141195) (xy 228.840278 120.280374) (xy 228.840285 120.280383)
+				(xy 228.954616 120.394714) (xy 228.954625 120.394721) (xy 229.093804 120.477031) (xy 229.249089 120.522145)
+				(xy 229.27 120.523789) (xy 229.27 119.995) (xy 228.715496 119.995) (xy 227.9505 119.995) (xy 227.9505 119.768333)
+				(xy 227.970185 119.701294) (xy 227.986819 119.680652) (xy 228.545652 119.121819) (xy 228.606975 119.088334)
+				(xy 228.633333 119.0855) (xy 228.696291 119.0855)
 			)
 		)
 	)
