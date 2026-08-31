@@ -293,6 +293,22 @@ Polycase
 - External: 75 x 35 x 12 mm
 - Internal: 25.4 x 26.6 x 5.3 mm (space for useful part of PCB only)
 
+### How to check if the PCB fits the enclosure
+- Use the FreeCad portable application (executable directly => run as a program).
+- Create a new file and save it.
+- Switch to Assembly Workbench in the ComboBox.
+- File -> Import each model file (*.step): ususally PCB and Electronic enclosure.
+- MAke the enclosure and PCB part of the root in tree view. Drag and drop it.
+- Change the transparency of the enclosure: go to left tree view and slect the whole enclosure.
+- If you need, flip or rotate the PCB, do it now with right click on PCB and click Transform.
+- In the new transform menu you can do any rotation or translation of the PCB.
+- Go to root in the Tree View (left). Then on right side click on "Activate Assembly".
+- Finally, "Create Joint" on new menu below previous "Activate Assembly".
+- Select a point in th ePCB and start moving it to the right place using the different views.
+- It can be used also the clipping planes to view a cut in the pieces, like a CT scan, to make sure it fits.
+- To use the clipping planes go to View -> Clipping Plane.
+- Play around with all transparency and enable disable the view of different parts of the enclosure.
+
 ### PCB + PCBA service from JLCPCB
 - Before all, clean the position and BOM, removing all components from top, all test points and FIDx, J1, J2, M1-M4, S1, S3, ANT1, BT1.
 - Use JLCONE
