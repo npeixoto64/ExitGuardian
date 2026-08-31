@@ -1,9 +1,9 @@
-### Footprint positions - created on 2026-08-29T11:44:05 ###
+### Footprint positions - created on 2026-08-31T18:28:55 ###
 ### Printed by KiCad version 10.0.6-10.0.6~ubuntu24.04.1
 ## Unit = mm, Angle = deg.
 ## Side : All
 # Ref     Val                   Package                                 PosX       PosY       Rot  Side
-ANT1      ~                     Antenna_hole                         10.2600    48.7275  180.0000  bottom
+ANT1      ~                     Antenna_hole                         10.2500    48.5275  180.0000  bottom
 C1        GRM31CR61A107MEA8L    GRM31x                                3.3650    25.7200  180.0000  bottom
 C2        1nF                   C_0603_1608Metric                    10.5700     5.8000  180.0000  bottom
 C3        100nF                 C_0603_1608Metric                     7.4350     5.7900  180.0000  bottom
@@ -17,30 +17,38 @@ C11       100nF                 C_0402_1005Metric                     6.4000    
 C51       100nF                 C_0402_1005Metric                     7.7200    29.0400  -90.0000  bottom
 C81       15pF                  C_0402_1005Metric                     5.2200    31.3350   90.0000  bottom
 C101      15pF                  C_0402_1005Metric                     5.2200    35.1850  -90.0000  bottom
-C121      1pF                   C_0402_1005Metric                    10.1700    38.5150    0.0000  bottom
-C122      1.5pF                 C_0402_1005Metric                     9.2700    41.1650   90.0000  bottom
-C123      3.3pF                 C_0402_1005Metric                     9.7200    44.7650    0.0000  bottom
-C124      100pF                 C_0402_1005Metric                     7.5700    40.0950  -90.0000  bottom
-C125      12pF                  C_0402_1005Metric                    10.1700    48.3450   90.0000  bottom
-C131      1.5pF                 C_0402_1005Metric                    11.2000    39.6150    0.0000  bottom
+C121      1pF                   C_0402_1005Metric                    10.1600    38.3150    0.0000  bottom
+C122      1.5pF                 C_0402_1005Metric                     9.2600    40.9650   90.0000  bottom
+C123      3.3pF                 C_0402_1005Metric                     9.7100    44.5650    0.0000  bottom
+C124      100pF                 C_0402_1005Metric                     7.5600    39.8950  -90.0000  bottom
+C125      12pF                  C_0402_1005Metric                    10.1600    48.1450   90.0000  bottom
+C131      1.5pF                 C_0402_1005Metric                    11.1900    39.4150    0.0000  bottom
+CLK1      SPI_CK                TestPoint_Pad_D1.0mm                 16.4600    17.9800  180.0000  bottom
+CS1       SPI_CS                TestPoint_Pad_D1.0mm                  2.3000    19.8400  180.0000  bottom
 D1        597-3008-207F         645-597-3008-207F                    10.1050    25.3800  -90.0000  bottom
 FB1       BLM18KG601SN1D        BLM18SP221SN1B                       14.4300    29.9700  -90.0000  bottom
 FID4      Fiducial              Fiducial_1mm_Mask2mm                 22.6000    57.4500  180.0000  bottom
 FID5      Fiducial              Fiducial_1mm_Mask2mm                 -2.1800    25.8900  180.0000  bottom
 FID6      Fiducial              Fiducial_1mm_Mask2mm                 -2.1800    10.4500  180.0000  bottom
+GD0       GD0                   TestPoint_Pad_D1.0mm                  5.9100    15.7100  180.0000  bottom
 IC1       STM8L051F3P6          SOP65P640X120-20N                    10.2950    11.0520   90.0000  bottom
 IC2       CC1101RGPR            QFN50P400X400X100-21N-D              10.4000    32.6975   90.0000  bottom
 J1        22-28-4044            HDRV4W66P0X254_1X4_1016X249X1067P    22.5000    27.1300   90.0000  bottom
 J2        M20-9770342           HDRV3W66P0X254_1X3_762X254X855P      13.2500     1.7700    0.0000  bottom
 L121      12nH                  L_0402_1005Metric                     9.6200    36.7150   90.0000  bottom
-L122      18nH                  L_0402_1005Metric                     9.1700    39.6150  180.0000  bottom
-L123      12nH                  L_0402_1005Metric                    10.2200    43.2150   90.0000  bottom
-L124      12nH                  L_0402_1005Metric                    10.1700    46.3150   90.0000  bottom
+L122      18nH                  L_0402_1005Metric                     9.1600    39.4150  180.0000  bottom
+L123      12nH                  L_0402_1005Metric                    10.2100    43.0150   90.0000  bottom
+L124      12nH                  L_0402_1005Metric                    10.1600    46.1150   90.0000  bottom
 L131      12nH                  L_0402_1005Metric                    10.7200    36.7150   90.0000  bottom
-L132      18nH                  L_0402_1005Metric                    11.1700    41.2300   90.0000  bottom
+L132      18nH                  L_0402_1005Metric                    11.1600    41.0300   90.0000  bottom
+LED2      LED                   TestPoint_Pad_D1.0mm                  2.6100    11.0100  180.0000  bottom
+MCUVDD1   MCU_VDD               TestPoint_Pad_D1.0mm                  6.7600     3.0700  180.0000  bottom
+MISO1     SPI_MISO              TestPoint_Pad_D1.0mm                 15.8700    15.4700  180.0000  bottom
+MOSI1     SPI_MOSI              TestPoint_Pad_D1.0mm                  4.5100    22.2600  180.0000  bottom
 R1        120                   R_0603_1608Metric                     5.4400     8.9150   90.0000  bottom
 R2        2.2M                  R_0603_1608Metric                     9.4900     4.0400  180.0000  bottom
 R171      56K                   R_0402_1005Metric                    14.2200    33.5650    0.0000  bottom
+RFVDD1    RF_VDD                TestPoint_Pad_D1.0mm                 17.5900    29.3900  180.0000  bottom
 S2        PTS810SJK250SMTR_LFS  PTS810SJK250SMTRLFS                  10.1050    20.6850  180.0000  bottom
 Y1        NX3225GA-26MHZ-TI     NX3225GA26000MSTDCRG2                 2.0500    33.2575   90.0000  bottom
 BT1       CST2032               CST2032                              10.1500    14.4500   60.0000  top
