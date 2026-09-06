@@ -265,7 +265,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "REV2.0"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -806,7 +806,7 @@
       {
         "filename": "gateway_rev2.kicad_sch",
         "name": "gateway_rev2",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "d3cb7130-decc-418b-958e-e5d84a8d867f"
       }
     ],
     "used_designators": "",
@@ -815,15 +815,15 @@
   "sheets": [
     [
       "d3cb7130-decc-418b-958e-e5d84a8d867f",
-      "Root"
-    ],
-    [
-      "ec220677-d66d-4ee1-961f-1c93fb46783a",
-      "MCU"
+      "gateway_rev2"
     ],
     [
       "af07603d-259f-481d-be2c-d925e27835a3",
       "RF"
+    ],
+    [
+      "ec220677-d66d-4ee1-961f-1c93fb46783a",
+      "MCU"
     ],
     [
       "fe77db69-068b-4697-8152-e8993e362189",
