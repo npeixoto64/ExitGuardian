@@ -1,0 +1,219 @@
+(footprint "TLHR4400AS12Z"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "TLHR4400-AS12Z-3")
+	(tags "LED")
+	(property "Reference" "LED**"
+		(at 1.054 0 0)
+		(layer "F.SilkS")
+		(uuid "58d59df9-eadf-4776-9352-e50dc2654e78")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "TLHR4400AS12Z"
+		(at 1.054 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "3a4ff471-6ac7-4d1c-bbc9-d5283425cabf")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "194060b6-9011-4205-b4bf-0882366c86b1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2ce1e55a-3534-49c2-a363-a24440ceb10e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -1.2 -0.1)
+		(end -1.2 -0.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "48d36b96-384d-479a-bd3f-b05da98e98fd")
+	)
+	(fp_line
+		(start -1.2 0)
+		(end -1.2 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "703a3fc6-a6ae-431a-bd3b-ec1465564a47")
+	)
+	(fp_arc
+		(start -1.2 -0.1)
+		(mid -1.15 -0.05)
+		(end -1.2 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6412f45d-cf91-4e47-8b37-2e21026255f0")
+	)
+	(fp_arc
+		(start -1.2 0)
+		(mid -1.25 -0.05)
+		(end -1.2 -0.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "074895b5-2ea5-45ed-a6fd-424442f1c7b0")
+	)
+	(fp_line
+		(start -2.25 -2.6)
+		(end 4.357 -2.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2f4f90e9-30ac-4d7d-9512-8500a1b8d27a")
+	)
+	(fp_line
+		(start -2.25 2.6)
+		(end -2.25 -2.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a2ab36b3-810f-4021-8486-9457650739a6")
+	)
+	(fp_line
+		(start 4.357 -2.6)
+		(end 4.357 2.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cf8b19d2-5b40-463d-a841-2f23ac9a15ed")
+	)
+	(fp_line
+		(start 4.357 2.6)
+		(end -2.25 2.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c91e6634-8411-4a10-b986-9806b85b6c98")
+	)
+	(fp_line
+		(start -0.33 0)
+		(end -0.33 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "48093128-11de-416e-836d-da418103b41b")
+	)
+	(fp_line
+		(start 2.87 0)
+		(end 2.87 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1eda2125-ebd1-4894-a5b0-538d9515b270")
+	)
+	(fp_arc
+		(start -0.33 0)
+		(mid 1.27 -1.6)
+		(end 2.87 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9db89a36-9b85-4781-9817-e450d68c690f")
+	)
+	(fp_arc
+		(start 2.87 0)
+		(mid 1.27 1.6)
+		(end -0.33 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "aac0e6e9-fabc-41e8-bb6b-9af149d9105e")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 1.054 0 0)
+		(layer "F.Fab")
+		(uuid "931fe745-e37b-41cc-bf11-185ad6186efc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.635 1.635)
+		(drill 1.09)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2759a3ac-0cce-4625-b44a-88f3b7ceb412")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 0)
+		(size 1.635 1.635)
+		(drill 1.09)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "67c17553-4e24-4e08-a8d4-28ad182480cc")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/libraries/3dmodels/MyParts/TLHR4400-AS12Z.stp"
+		(offset
+			(xyz 1.3 0 10)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
