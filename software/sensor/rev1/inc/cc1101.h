@@ -70,10 +70,10 @@
 #define CC1101_TXBYTES    0x3A
 #define CC1101_RXBYTES    0x3B   // status reg (read with B=1)
 
-#define CC1101_CSN_PORT   GPIOA
-#define CC1101_CSN_PIN    GPIO_PIN_3
-#define CC1101_MISO_PORT  GPIOC
-#define CC1101_MISO_PIN   GPIO_PIN_7
+#define CC1101_CSN_PORT   GPIOB
+#define CC1101_CSN_PIN    GPIO_Pin_1
+#define CC1101_MISO_PORT  GPIOB
+#define CC1101_MISO_PIN   GPIO_Pin_7
 
 void cc1101_config_gfsk_868_tx_fixed(uint8_t pkt_size);
 void cc1101_config_gfsk_868_rx_fixed(uint8_t pkt_size);

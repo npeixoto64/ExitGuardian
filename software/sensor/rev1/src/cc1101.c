@@ -164,7 +164,7 @@ static void cc1101_write_burst(uint8_t addr, const uint8_t *data, uint8_t len)
     cc1101_deselect();
 }
 
-void cc1101_config_gfsk_433_tx_fixed(uint8_t pkt_size)
+void cc1101_config_gfsk_868_tx_fixed(uint8_t pkt_size)
 {
     cc1101_pktlen_shadow = pkt_size;
 
@@ -185,22 +185,22 @@ void cc1101_config_gfsk_433_tx_fixed(uint8_t pkt_size)
     cc1101_write_reg(CC1101_PKTCTRL1,  0x00);   // no addr check, no append status
     cc1101_write_reg(CC1101_PKTCTRL0,  0x44);   // WHITE_DATA=1, CRC_EN=1, LENGTH_CONFIG=0 (fixed lenght configured in PACKETLEN)
 
-    // ---- Frequency: 433.92 MHz with 26 MHz XOSC
-    // f_carrier = FREQ * fXOSC / 2^16  => FREQ = 0x10B071 :contentReference[oaicite:14]{index=14}
-    cc1101_write_reg(CC1101_FREQ2, 0x10); // Confirmed
-    cc1101_write_reg(CC1101_FREQ1, 0xB0); // Confirmed
-    cc1101_write_reg(CC1101_FREQ0, 0x71); // Confirmed
+    // ---- Frequency: 868.5 MHz with 26 MHz XOSC
+    // f_carrier = FREQ * fXOSC / 2^16  => FREQ = 0x216762 :contentReference[oaicite:14]{index=14}
+    cc1101_write_reg(CC1101_FREQ2, 0x21); // Confirmed
+    cc1101_write_reg(CC1101_FREQ1, 0x67); // Confirmed
+    cc1101_write_reg(CC1101_FREQ0, 0x62); // Confirmed
 
-    // ---- Modem: GFSK + 38.383 kBaud + ~102 kHz RX BW
-    // MDMCFG4: CHANBW_E=3, CHANBW_M=0, DRATE_E=10  => 0xCA :contentReference[oaicite:15]{index=15} :contentReference[oaicite:16]{index=16}
-    // MDMCFG3: DRATE_M=0x83  => ~38.383 kBaud :contentReference[oaicite:17]{index=17}
+    // ---- Modem: GFSK + 1.25 kBaud + ~102 kHz RX BW
+    // MDMCFG4: CHANBW_E=3, CHANBW_M=0, DRATE_E=5  => 0xC5 :contentReference[oaicite:15]{index=15} :contentReference[oaicite:16]{index=16}
+    // MDMCFG3: DRATE_M=0x94  => ~1.25 kBaud :contentReference[oaicite:17]{index=17}
     // MDMCFG2: DEM_DCFILT_OFF=0, MOD_FORMAT=GFSK(001), SYNC_MODE=3 (30/32, repeated sync) => 0x13 :contentReference[oaicite:18]{index=18}
-    // MDMCFG1: use default-ish: 8 preamble bytes, FEC off, CHANSPC_E=2 => 0x42 :contentReference[oaicite:19]{index=19}
+    // MDMCFG1: use default-ish: 8 preamble bytes, FEC ON, CHANSPC_E=2 => 0xC2 :contentReference[oaicite:19]{index=19}
     // MDMCFG0: default channel spacing mantissa 0xF8 (~200 kHz with E=2) :contentReference[oaicite:20]{index=20}
-    cc1101_write_reg(CC1101_MDMCFG4, 0xCA);
-    cc1101_write_reg(CC1101_MDMCFG3, 0x83);
+    cc1101_write_reg(CC1101_MDMCFG4, 0xC5);
+    cc1101_write_reg(CC1101_MDMCFG3, 0x94);
     cc1101_write_reg(CC1101_MDMCFG2, 0x13);
-    cc1101_write_reg(CC1101_MDMCFG1, 0x42);
+    cc1101_write_reg(CC1101_MDMCFG1, 0xC2);
     cc1101_write_reg(CC1101_MDMCFG0, 0xF8);
 
     // ---- Deviation: ~20.63 kHz (E=3, M=5 => 0x35) :contentReference[oaicite:21]{index=21}
@@ -216,22 +216,21 @@ void cc1101_config_gfsk_433_tx_fixed(uint8_t pkt_size)
     cc1101_strobe(CC1101_SCAL);
 }
 
-void cc1101_send_msg(const uint8_t status, const uint32_t chip_id)
+void cc1101_send_msg(const uint32_t chip_id)
 {
-    uint8_t payload[5];
+    uint8_t payload[4];
 
-    payload[0] = status;
-    payload[1] = (uint8_t)(chip_id >> 24);
-    payload[2] = (uint8_t)(chip_id >> 16);
-    payload[3] = (uint8_t)(chip_id >> 8);
-    payload[4] = (uint8_t)(chip_id);
+    payload[0] = (uint8_t)(chip_id >> 24);
+    payload[1] = (uint8_t)(chip_id >> 16);
+    payload[2] = (uint8_t)(chip_id >> 8);
+    payload[3] = (uint8_t)(chip_id);
 
     // Make sure we're in a sane state and TX FIFO is empty
     cc1101_strobe(CC1101_SIDLE);
     cc1101_strobe(CC1101_SFTX);
 
     // Load payload (fixed length mode => NO length byte)
-    cc1101_write_burst(CC1101_TXFIFO, payload, 5);
+    cc1101_write_burst(CC1101_TXFIFO, payload, 4);
     //cc1101_write_burst(CC1101_TXFIFO, buffer, len);
 
     // Start TX (radio will send preamble+sync automatically, then payload, then CRC if enabled) :contentReference[oaicite:25]{index=25}
@@ -261,7 +260,7 @@ void cc1101_send_msg(const uint8_t status, const uint32_t chip_id)
     cc1101_deselect();
 }
 
-void cc1101_config_gfsk_433_rx_fixed(uint8_t pkt_size)
+void cc1101_config_gfsk_868_rx_fixed(uint8_t pkt_size)
 {
     cc1101_pktlen_shadow = pkt_size;
 
@@ -291,16 +290,16 @@ void cc1101_config_gfsk_433_rx_fixed(uint8_t pkt_size)
     // PKTCTRL0: WHITE_DATA=1, CRC_EN=1, LENGTH_CONFIG=0 (fixed length configured in PACKETLEN)
     cc1101_write_reg(CC1101_PKTCTRL0, 0x44);
 
-    // Frequency 433.92 MHz @ 26 MHz XOSC => 0x10B071 (as discussed)
-    cc1101_write_reg(CC1101_FREQ2, 0x10);
-    cc1101_write_reg(CC1101_FREQ1, 0xB0);
-    cc1101_write_reg(CC1101_FREQ0, 0x71);
+    // Frequency 868.5 MHz @ 26 MHz XOSC => 0x216762 (as discussed)
+    cc1101_write_reg(CC1101_FREQ2, 0x21);
+    cc1101_write_reg(CC1101_FREQ1, 0x67);
+    cc1101_write_reg(CC1101_FREQ0, 0x62);
 
-    // Modem config: GFSK, 38.383 kBaud, ~102 kHz RX BW (same as TX)
-    cc1101_write_reg(CC1101_MDMCFG4, 0xCA);
-    cc1101_write_reg(CC1101_MDMCFG3, 0x83);
+    // Modem config: GFSK, 1.25 kBaud, ~102 kHz RX BW (same as TX)
+    cc1101_write_reg(CC1101_MDMCFG4, 0xC5);
+    cc1101_write_reg(CC1101_MDMCFG3, 0x94);
     cc1101_write_reg(CC1101_MDMCFG2, 0x13);
-    cc1101_write_reg(CC1101_MDMCFG1, 0x42);
+    cc1101_write_reg(CC1101_MDMCFG1, 0xC2);
     cc1101_write_reg(CC1101_MDMCFG0, 0xF8);
 
     cc1101_write_reg(CC1101_DEVIATN, 0x35);
@@ -324,20 +323,32 @@ static void cc1101_restart_rx(void)
     cc1101_strobe(CC1101_SRX);
 }
 
-void cc1101_recv_msg(uint32_t *chip_id, uint8_t *status)
+void cc1101_recv_msg(uint32_t *value)
 {
-    uint8_t payload[5];
+    uint8_t payload[4];
     uint8_t rx_bytes = cc1101_read_status(CC1101_RXBYTES);
-    
+    send_string("\r\nRXBYTES: ");
+    send_uint8_t(rx_bytes);
     if (rx_bytes > 0)
     {
         cc1101_read_rxfifo(CC1101_RXFIFO, payload, rx_bytes);
 
-        *status = payload[0];
-        *chip_id = ((uint32_t)payload[1] << 24) |
-                    ((uint32_t)payload[2] << 16) |
-                    ((uint32_t)payload[3] <<  8) |
-                    ((uint32_t)payload[4] <<  0);
+        *value = ((uint32_t)payload[0] << 24) |
+                    ((uint32_t)payload[1] << 16) |
+                    ((uint32_t)payload[2] <<  8) |
+                    ((uint32_t)payload[3] <<  0);
     }
     return;
+}
+
+void cc1101_go_to_sleep(void)
+{
+    cc1101_strobe(CC1101_SIDLE);
+    cc1101_strobe(CC1101_SFTX);
+    cc1101_strobe(CC1101_SPWD);
+}
+
+void cc1101_wake_up(void)
+{
+    cc1101_strobe(CC1101_SIDLE);
 }
