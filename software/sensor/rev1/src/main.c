@@ -167,18 +167,18 @@ static void transmit_sensor_status(uint32_t value)
     send_hex_byte(value & 0xFF);
 }
 
-// static volatile uint8_t  g_irq_cc1101_flag = 0;
+static volatile uint8_t  g_irq_cc1101_flag = 0;
 
 // /* CC1101 GDO0 falling-edge interrupt (IRQ vector 8, PD0).
 //  * Set when the CC1101 asserts its interrupt line (active-low),
 //  * signalling that a packet has been received. Processed in main loop. */
-// INTERRUPT_HANDLER(EXTI0_IRQHandler, 8)
+// INTERRUPT_HANDLER(EXTI0_IRQHandler, 9)
 // {
-//   if (GPIO_ReadInputDataBit(IRQ_CC1101_PORT, IRQ_CC1101_PIN) == RESET)
+//   if (GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_1) == RESET)
 //   {
 //     g_irq_cc1101_flag = 1;
 //   }
-//   EXTI_ClearITPendingBit(EXTI_IT_Pin0);
+//   EXTI_ClearITPendingBit(EXTI_IT_Pin1);
 // }
 
 // /* Push-button both-edges interrupt (IRQ vector 12, PD4).
@@ -211,23 +211,25 @@ static void system_initialize(void)
     mcu_init();
 
 #ifdef TRANSMITTER
-    send_string("\r\nTX MODE\r\n");
-    board_pre_init_tx();
-#else
-    send_string("\r\nRX MODE\r\n");
-    board_pre_init_rx();
+    send_string("\r\n\r\n\r\n**** start [TX MODE] ****");
+    //board_pre_init_tx();
+// #else
+//     send_string("\r\nRX MODE\r\n");
+//     board_pre_init_rx();
 #endif
     
     // LED startup sequence
-    led_hold_on_for_duration(LED_ON_STARTUP_HOLD_TICKS);
-    led_turn_off();
+    //led_hold_on_for_duration(LED_ON_STARTUP_HOLD_TICKS);
+    //led_turn_off();
+    led_turn_on();
+    send_string("\r\nled_turn_on()");
 
     // Initialize system state
-    chip_id_hash = device_id_get_hash();
+    //chip_id_hash = device_id_get_hash();
     //g_reed.current_state = (GPIO_ReadInputPin(GPIOA, GPIO_Pin_2) != 0) ? 1 : 0;
     
-    // Complete board initialization (enables EXTI and interrupts)
-    board_init();
+    // // Complete board initialization (enables EXTI and interrupts)
+    // board_init();
 }
 
 /**
@@ -243,7 +245,11 @@ int main(void)
 {
     system_initialize();
 
+    enableInterrupts();
+
     uint32_t counter = 0;
+
+    send_string("\r\nbefore loop");
 
     while (1)
     {
@@ -252,7 +258,7 @@ int main(void)
 
         // Process button input
 #ifdef TRANSMITTER
-        transmit_sensor_status(counter++);
+        //transmit_sensor_status(counter++);
 #endif
 
         // Handle radio transmission completion
@@ -270,6 +276,10 @@ int main(void)
 #endif
             led_turn_off();
         }
+
+        GPIO_ToggleBits(GPIOB, GPIO_Pin_0);
+
+        send_string("\r\nbefore time count");
 
         timer = g_tim2_ticks;
         while (ticks_elapsed_since(timer) < LED_ON_STARTUP_HOLD_TICKS) {}

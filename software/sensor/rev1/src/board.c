@@ -79,14 +79,12 @@ static void init_led(void)
 /** @brief Configure EXTI edge sensitivity for CC1101, button and reed inputs. */
 static void init_extis(void)
 {
-  disableInterrupts();
   GPIO_Init(GPIOA, GPIO_Pin_2, GPIO_Mode_In_FL_IT);
   GPIO_Init(GPIOA, GPIO_Pin_3, GPIO_Mode_In_FL_IT);
   GPIO_Init(GPIOB, GPIO_Pin_1, GPIO_Mode_In_FL_IT);
   EXTI_SetPinSensitivity(GPIO_Pin_2, EXTI_Trigger_Falling);
   EXTI_SetPinSensitivity(GPIO_Pin_3, EXTI_Trigger_Rising_Falling);
   EXTI_SetPinSensitivity(GPIO_Pin_1, EXTI_Trigger_Rising_Falling);
-  enableInterrupts();
 }
 
 /**
@@ -129,7 +127,10 @@ static void init_unused_gpios(void)
 void mcu_init(void)
 {
   init_clk();
-  init_spi();
+  init_unused_gpios();
+  //init_extis();
+  //init_spi();
+  init_led();
 #ifdef DEBUG
   init_uart();
 #endif
@@ -140,18 +141,18 @@ void board_pre_init_tx(void)
 {
   init_led();
   cc1101_config_gfsk_868_tx_fixed(PACKET_LENGTH);
-  enableInterrupts();
+  //enableInterrupts();
 }
 
 void board_pre_init_rx(void)
 {
   init_led();
   cc1101_config_gfsk_868_rx_fixed(PACKET_LENGTH);
-  enableInterrupts();
+  //enableInterrupts();
 }
 
-void board_init(void)
-{
-  init_unused_gpios();
-  init_extis();
-}
+// void board_init(void)
+// {
+//   init_unused_gpios();
+//   init_extis();
+// }
