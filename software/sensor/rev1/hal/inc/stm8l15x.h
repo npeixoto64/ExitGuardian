@@ -40,7 +40,7 @@
 /* #define STM8L15X_MD */     /*!< STM8L15X_MD: STM8L15x Medium density devices */
 /* #define STM8L15X_MDP */    /*!< STM8L15X_MDP: STM8L15x Medium density plus devices */
 /* #define STM8L15X_HD */     /*!< STM8L15X_HD: STM8L15x/16x High density devices */
-#define STM8L05X_LD_VL      /*!< STM8L05X_LD_VL: STM8L051xx3 Low density value line devices */
+/* #define STM8L05X_LD_VL */  /*!< STM8L05X_LD_VL: STM8L051xx3 Low density value line devices */
 /* #define STM8L05X_MD_VL */  /*!< STM8L05X_MD_VL: STM8L052xx6 Medium density value line devices */
 /* #define STM8L05X_HD_VL */  /*!< STM8L05X_HD_VL: STM8L052xx8 High density value line devices */
 /* #define STM8AL31_L_MD */   /*!< STM8AL31_L_MD: STM8AL3x Medium density devices */

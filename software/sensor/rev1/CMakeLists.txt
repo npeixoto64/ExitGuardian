@@ -16,7 +16,7 @@ set(OUT fw)
 set(CFLAGS_COMMON
   -mstm8
   --std-c11
-#  -DSTM8L05X_LD_VL
+  -DSTM8L05X_LD_VL
   -D__SDCC__
   -DUSE_FULL_ASSERT=0
   -I${CMAKE_SOURCE_DIR}/hal/inc

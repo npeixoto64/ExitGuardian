@@ -79,12 +79,13 @@ static void init_led(void)
 /** @brief Configure EXTI edge sensitivity for CC1101, button and reed inputs. */
 static void init_extis(void)
 {
-  GPIO_Init(GPIOA, GPIO_Pin_2, GPIO_Mode_In_FL_IT);
-  GPIO_Init(GPIOA, GPIO_Pin_3, GPIO_Mode_In_FL_IT);
-  GPIO_Init(GPIOB, GPIO_Pin_1, GPIO_Mode_In_FL_IT);
-  EXTI_SetPinSensitivity(GPIO_Pin_2, EXTI_Trigger_Falling);
+  // GPIO_Init(GPIOA, GPIO_Pin_2, GPIO_Mode_In_FL_IT);
+  GPIO_Init(GPIOA, GPIO_Pin_3, GPIO_Mode_In_PU_IT);
+  // GPIO_Init(GPIOB, GPIO_Pin_1, GPIO_Mode_In_FL_IT);
+  // EXTI_SetPinSensitivity(GPIO_Pin_2, EXTI_Trigger_Falling);
   EXTI_SetPinSensitivity(GPIO_Pin_3, EXTI_Trigger_Rising_Falling);
-  EXTI_SetPinSensitivity(GPIO_Pin_1, EXTI_Trigger_Rising_Falling);
+  // EXTI_SetPinSensitivity(GPIO_Pin_1, EXTI_Trigger_Rising_Falling);
+  //enableInterrupts();
 }
 
 /**
@@ -128,7 +129,7 @@ void mcu_init(void)
 {
   init_clk();
   init_unused_gpios();
-  //init_extis();
+  init_extis();
   //init_spi();
   init_led();
 #ifdef DEBUG

@@ -4,6 +4,7 @@
  */
 #include <stdint.h>
 #include <stdio.h>
+#include "stm8l15x_itc.h"
 #include "board.h"
 #include "device_id.h"
 #include "app_config.h"
@@ -181,13 +182,14 @@ static volatile uint8_t  g_irq_cc1101_flag = 0;
 //   EXTI_ClearITPendingBit(EXTI_IT_Pin1);
 // }
 
-// /* Push-button both-edges interrupt (IRQ vector 12, PD4).
-//  * ISR kept in main.c so the linker always includes button.rel via button_isr(). */
-// INTERRUPT_HANDLER(EXTI4_IRQHandler, 12)
-// {
-//   button_isr();
-//   EXTI_ClearITPendingBit(EXTI_IT_Pin4);
-// }
+/* Push-button both-edges interrupt (IRQ vector 11, PA3).
+ * ISR kept in main.c so the linker always includes button.rel via button_isr(). */
+INTERRUPT_HANDLER(EXTI4_IRQHandler, EXTI3_IRQn)
+{
+  //button_isr();
+  GPIO_ToggleBits(GPIOB, GPIO_Pin_0);
+  EXTI_ClearITPendingBit(EXTI_IT_Pin3);
+}
 
 // /* Reed switch (door sensor) both-edges interrupt (IRQ vector 13, PD5).
 //  * ISR kept in main.c so the linker always includes reed.rel via reed_isr(). */
@@ -200,7 +202,7 @@ static volatile uint8_t  g_irq_cc1101_flag = 0;
 /* TIM4 update/overflow interrupt (IRQ vector 25).
  * Fires at 1 kHz; delegates tick increment and flag clear to board driver.
  * 1 ms tick */
-INTERRUPT_HANDLER(TIM4_UPD_OVF_TRG_IRQHandler, 25)
+INTERRUPT_HANDLER(TIM4_UPD_OVF_TRG_IRQHandler, TIM4_UPD_OVF_TRG_IRQn)
 {
   g_tim2_ticks--;
   TIM4_ClearITPendingBit(TIM4_IT_Update);
@@ -276,8 +278,6 @@ int main(void)
 #endif
             led_turn_off();
         }
-
-        GPIO_ToggleBits(GPIOB, GPIO_Pin_0);
 
         send_string("\r\nbefore time count");
 
