@@ -2,7 +2,7 @@
 #include "app_config.h"
 #include "log.h"
 
-#define STM8_UID_BASE_ADDR 0x4865u
+#define STM8_UID_BASE_ADDR 0x4926u
 #define STM8_UID_LEN       12u
 
 #define FNV_OFFSET_BASIS   0x811C9DC5UL

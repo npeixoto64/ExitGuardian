@@ -170,21 +170,21 @@ static void transmit_sensor_status(uint32_t value)
 
 static volatile uint8_t  g_irq_cc1101_flag = 0;
 
-// /* CC1101 GDO0 falling-edge interrupt (IRQ vector 8, PD0).
-//  * Set when the CC1101 asserts its interrupt line (active-low),
-//  * signalling that a packet has been received. Processed in main loop. */
-// INTERRUPT_HANDLER(EXTI0_IRQHandler, 9)
-// {
-//   if (GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_1) == RESET)
-//   {
-//     g_irq_cc1101_flag = 1;
-//   }
-//   EXTI_ClearITPendingBit(EXTI_IT_Pin1);
-// }
+/* CC1101 GDO0 falling-edge interrupt (IRQ vector 9, PB1).
+ * Set when the CC1101 asserts its interrupt line (active-low),
+ * signalling that a packet has been received. Processed in main loop. */
+INTERRUPT_HANDLER(EXTI1_IRQHandler, EXTI1_IRQn)
+{
+  if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1) == RESET)
+  {
+    g_irq_cc1101_flag = 1;
+  }
+  EXTI_ClearITPendingBit(EXTI_IT_Pin1);
+}
 
 /* Push-button both-edges interrupt (IRQ vector 11, PA3).
  * ISR kept in main.c so the linker always includes button.rel via button_isr(). */
-INTERRUPT_HANDLER(EXTI4_IRQHandler, EXTI3_IRQn)
+INTERRUPT_HANDLER(EXTI3_IRQHandler, EXTI3_IRQn)
 {
   //button_isr();
   GPIO_ToggleBits(GPIOB, GPIO_Pin_0);
@@ -214,24 +214,11 @@ static void system_initialize(void)
 
 #ifdef TRANSMITTER
     send_string("\r\n\r\n\r\n**** start [TX MODE] ****");
-    //board_pre_init_tx();
-// #else
-//     send_string("\r\nRX MODE\r\n");
-//     board_pre_init_rx();
+    board_pre_init_tx();
+ #else
+    send_string("\r\n\r\n\r\n**** start [RX MODE] ****");
+    board_pre_init_rx();
 #endif
-    
-    // LED startup sequence
-    //led_hold_on_for_duration(LED_ON_STARTUP_HOLD_TICKS);
-    //led_turn_off();
-    led_turn_on();
-    send_string("\r\nled_turn_on()");
-
-    // Initialize system state
-    //chip_id_hash = device_id_get_hash();
-    //g_reed.current_state = (GPIO_ReadInputPin(GPIOA, GPIO_Pin_2) != 0) ? 1 : 0;
-    
-    // // Complete board initialization (enables EXTI and interrupts)
-    // board_init();
 }
 
 /**
@@ -249,9 +236,16 @@ int main(void)
 
     enableInterrupts();
 
-    uint32_t counter = 0;
+    // LED startup sequence
+    led_hold_on_for_duration(LED_ON_STARTUP_HOLD_TICKS);
+    led_turn_off();
+    send_string("\r\nled_turn_off()");
 
-    send_string("\r\nbefore loop");
+    // Initialize system state
+    chip_id_hash = device_id_get_hash();
+    //g_reed.current_state = (GPIO_ReadInputPin(GPIOA, GPIO_Pin_2) != 0) ? 1 : 0;
+
+    uint32_t counter = 0;
 
     while (1)
     {
@@ -260,13 +254,13 @@ int main(void)
 
         // Process button input
 #ifdef TRANSMITTER
-        //transmit_sensor_status(counter++);
+        transmit_sensor_status(counter++);
 #endif
 
         // Handle radio transmission completion
-        if (g_power.gdo0_tx_complete_flag)
+        if (g_irq_cc1101_flag)
         {
-            g_power.gdo0_tx_complete_flag = 0;
+            g_irq_cc1101_flag = 0;
 #ifndef TRANSMITTER
             cc1101_recv_msg(&counter);
             led_turn_on();
@@ -277,9 +271,10 @@ int main(void)
             send_hex_byte(counter & 0xFF);
 #endif
             led_turn_off();
+            send_string("\r\nTX done");
         }
 
-        send_string("\r\nbefore time count");
+        //send_string("\r\nbefore time count");
 
         timer = g_tim2_ticks;
         while (ticks_elapsed_since(timer) < LED_ON_STARTUP_HOLD_TICKS) {}
