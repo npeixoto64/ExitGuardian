@@ -159,7 +159,6 @@ static void log_sensor_status(uint8_t battery_capacity, button_action_t btn_acti
 
 static void transmit_sensor_status(uint32_t value)
 {
-    led_turn_on();
     cc1101_send_msg(value);
     send_string("\r\nSend packet: 0x");
     send_hex_byte((value >> 24) & 0xFF);
@@ -263,18 +262,18 @@ int main(void)
             g_irq_cc1101_flag = 0;
 #ifndef TRANSMITTER
             cc1101_recv_msg(&counter);
-            led_turn_on();
-            send_string("\r\nSend packet: 0x");
+            send_string("\r\nReceived packet: 0x");
             send_hex_byte((counter >> 24) & 0xFF);
             send_hex_byte((counter >> 16) & 0xFF);
             send_hex_byte((counter >> 8) & 0xFF);
             send_hex_byte(counter & 0xFF);
-#endif
-            led_turn_off();
+            send_string("\r\nRX done");
+#else
             send_string("\r\nTX done");
+#endif
         }
 
-        //send_string("\r\nbefore time count");
+        GPIO_ToggleBits(GPIOB, GPIO_Pin_0);
 
         timer = g_tim2_ticks;
         while (ticks_elapsed_since(timer) < LED_ON_STARTUP_HOLD_TICKS) {}

@@ -71,7 +71,7 @@
 #define CC1101_RXBYTES    0x3B   // status reg (read with B=1)
 
 #define CC1101_CSN_PORT   GPIOB
-#define CC1101_CSN_PIN    GPIO_Pin_1
+#define CC1101_CSN_PIN    GPIO_Pin_4
 #define CC1101_MISO_PORT  GPIOB
 #define CC1101_MISO_PIN   GPIO_Pin_7
 
