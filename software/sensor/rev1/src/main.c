@@ -237,7 +237,7 @@ int main(void)
 
     // LED startup sequence
     led_hold_on_for_duration(LED_ON_STARTUP_HOLD_TICKS);
-    led_turn_off();
+    //led_turn_off();
     send_string("\r\nled_turn_off()");
 
     // Initialize system state
@@ -273,7 +273,7 @@ int main(void)
 #endif
         }
 
-        GPIO_ToggleBits(GPIOB, GPIO_Pin_0);
+        //GPIO_ToggleBits(GPIOB, GPIO_Pin_0);
 
         timer = g_tim2_ticks;
         while (ticks_elapsed_since(timer) < LED_ON_STARTUP_HOLD_TICKS) {}
