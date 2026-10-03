@@ -14,9 +14,8 @@ package "Application Layer" #LightBlue {
 
 package "Mid-level Drivers" #LightGreen {
     [Board (init / systick / watchdog kick)] as Board
-    [CC1101 RF Transceiver\n(GFSK 433 MHz)] as CC1101
+    [CC1101 RF Transceiver\n(GFSK 868 MHz)] as CC1101
     [FeRAM (FM24xx)\n(NVM, CRC16-CCITT)] as FeRAM
-    [Reed Switch\n(main door)] as Reed
     [Push Button\n(short/long press)] as Button
     [LED (B / Y / R)] as Led
     [Buzzer] as Buzzer
@@ -34,7 +33,6 @@ package "Hardware Abstraction Layer (STM8L15x SPL)" #Pink {
         [EXTI] as EXTI
         [TIM1 (PWM)] as TIM1
         [TIM4 (1 ms tick)] as TIM4
-        [ADC (Vbat)] as ADC
         [IWDG (watchdog)] as IWDG
     }
 }
@@ -51,8 +49,7 @@ Log       -[hidden]down-> FeRAM
 Board   -[hidden]down-> CLK
 CC1101  -[hidden]down-> SPI
 FeRAM   -[hidden]down-> I2C
-Reed    -[hidden]down-> EXTI
-Button  -[hidden]down-> GPIO
+Button  -[hidden]down-> EXTI
 Led     -[hidden]down-> TIM4
 Buzzer  -[hidden]down-> TIM1
 
