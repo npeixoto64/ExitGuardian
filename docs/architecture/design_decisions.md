@@ -297,8 +297,9 @@ Polycase
 - Use the FreeCad portable application (executable directly => run as a program).
 - Create a new file and save it.
 - Switch to Assembly Workbench in the ComboBox.
+- Create a new assembly in the left side root tree.
 - File -> Import each model file (*.step): ususally PCB and Electronic enclosure.
-- MAke the enclosure and PCB part of the root in tree view. Drag and drop it.
+- Make the enclosure and PCB part of the root in tree view. Drag and drop it.
 - Change the transparency of the enclosure: go to left tree view and slect the whole enclosure.
 - If you need, flip or rotate the PCB, do it now with right click on PCB and click Transform.
 - In the new transform menu you can do any rotation or translation of the PCB.
