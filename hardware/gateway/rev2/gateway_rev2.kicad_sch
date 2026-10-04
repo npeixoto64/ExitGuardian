@@ -209,7 +209,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 27.94) (xy 95.25 27.94)
+			(xy 49.53 27.94) (xy 58.42 27.94)
 		)
 		(stroke
 			(width 0)
@@ -219,17 +219,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 29.21) (xy 60.96 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f709654-dc22-48a2-8818-edee18f61f14")
-	)
-	(wire
-		(pts
-			(xy 86.36 22.86) (xy 95.25 22.86)
+			(xy 49.53 22.86) (xy 58.42 22.86)
 		)
 		(stroke
 			(width 0)
@@ -239,7 +229,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 33.02) (xy 95.25 33.02)
+			(xy 49.53 33.02) (xy 58.42 33.02)
 		)
 		(stroke
 			(width 0)
@@ -249,7 +239,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 30.48) (xy 95.25 30.48)
+			(xy 49.53 30.48) (xy 58.42 30.48)
 		)
 		(stroke
 			(width 0)
@@ -259,27 +249,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 22.86) (xy 60.96 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72dfebf2-5b49-4880-83e0-b8157f797bef")
-	)
-	(wire
-		(pts
-			(xy 50.8 26.67) (xy 60.96 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ade48bf-c88e-4514-8e95-44e14e658bb8")
-	)
-	(wire
-		(pts
-			(xy 86.36 25.4) (xy 95.25 25.4)
+			(xy 49.53 25.4) (xy 58.42 25.4)
 		)
 		(stroke
 			(width 0)
@@ -1030,7 +1000,7 @@
 		)
 	)
 	(sheet
-		(at 95.25 19.05)
+		(at 58.42 19.05)
 		(size 25.4 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1046,7 +1016,7 @@
 		)
 		(uuid "af07603d-259f-481d-be2c-d925e27835a3")
 		(property "Sheetname" "RF"
-			(at 95.25 18.3384 0)
+			(at 58.42 18.3384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1057,7 +1027,7 @@
 			)
 		)
 		(property "Sheetfile" "rf_rev2.kicad_sch"
-			(at 95.25 37.4146 0)
+			(at 58.42 37.4146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1068,7 +1038,7 @@
 			)
 		)
 		(pin "CS" input
-			(at 95.25 30.48 180)
+			(at 58.42 30.48 180)
 			(uuid "6e6074eb-8606-4c38-8900-b4b2b904a09e")
 			(effects
 				(font
@@ -1078,7 +1048,7 @@
 			)
 		)
 		(pin "SCLK" input
-			(at 95.25 22.86 180)
+			(at 58.42 22.86 180)
 			(uuid "b7f632f5-dfba-467d-986d-99f85e0e5a30")
 			(effects
 				(font
@@ -1088,7 +1058,7 @@
 			)
 		)
 		(pin "SDI" input
-			(at 95.25 25.4 180)
+			(at 58.42 25.4 180)
 			(uuid "516fd1d2-7d14-466c-88fd-ca1f6919a6d7")
 			(effects
 				(font
@@ -1098,7 +1068,7 @@
 			)
 		)
 		(pin "SDO" input
-			(at 95.25 27.94 180)
+			(at 58.42 27.94 180)
 			(uuid "b0548032-77d5-40c6-a941-959a5a2e6f74")
 			(effects
 				(font
@@ -1108,7 +1078,7 @@
 			)
 		)
 		(pin "IRQ" input
-			(at 95.25 33.02 180)
+			(at 58.42 33.02 180)
 			(uuid "02d0451f-8401-4f7c-936b-3cae6f8eccba")
 			(effects
 				(font
@@ -1126,7 +1096,7 @@
 		)
 	)
 	(sheet
-		(at 60.96 19.05)
+		(at 24.13 19.05)
 		(size 25.4 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1142,7 +1112,7 @@
 		)
 		(uuid "ec220677-d66d-4ee1-961f-1c93fb46783a")
 		(property "Sheetname" "MCU"
-			(at 60.96 18.3384 0)
+			(at 24.13 18.3384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1153,7 +1123,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu_rev2.kicad_sch"
-			(at 60.96 37.4146 0)
+			(at 24.13 37.4146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1163,38 +1133,8 @@
 				(justify left top)
 			)
 		)
-		(pin "BZR_EN" input
-			(at 60.96 22.86 180)
-			(uuid "b40fbf33-adcb-4645-abef-fe7ddfc06d96")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "BZR_N" input
-			(at 60.96 29.21 180)
-			(uuid "e991eb65-a4b0-4b7d-b67e-0fa61d8b9ac9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "BZR_P" input
-			(at 60.96 26.67 180)
-			(uuid "ca407752-d84e-4f86-b31f-4306f09e6ae6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "CS" input
-			(at 86.36 30.48 0)
+			(at 49.53 30.48 0)
 			(uuid "f1a2badb-20b8-4e1f-82ed-d262f5182eea")
 			(effects
 				(font
@@ -1204,7 +1144,7 @@
 			)
 		)
 		(pin "SCLK" input
-			(at 86.36 22.86 0)
+			(at 49.53 22.86 0)
 			(uuid "4c106314-38f9-448b-92ec-0bcbd9ad4f57")
 			(effects
 				(font
@@ -1214,7 +1154,7 @@
 			)
 		)
 		(pin "SDI" input
-			(at 86.36 25.4 0)
+			(at 49.53 25.4 0)
 			(uuid "2099e5ba-2955-48ea-9320-082584fd779c")
 			(effects
 				(font
@@ -1224,7 +1164,7 @@
 			)
 		)
 		(pin "SDO" input
-			(at 86.36 27.94 0)
+			(at 49.53 27.94 0)
 			(uuid "d5b3261d-aaba-4a72-a169-21fcea72338b")
 			(effects
 				(font
@@ -1234,7 +1174,7 @@
 			)
 		)
 		(pin "IRQ" input
-			(at 86.36 33.02 0)
+			(at 49.53 33.02 0)
 			(uuid "024fa846-8d87-49fb-a0d9-23cdf80a7cd8")
 			(effects
 				(font
@@ -1247,82 +1187,6 @@
 			(project "gateway_rev2"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f"
 					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 24.13 19.05)
-		(size 26.67 17.78)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "fe77db69-068b-4697-8152-e8993e362189")
-		(property "Sheetname" "Buzzer"
-			(at 24.13 18.3384 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "buzzer_rev2.kicad_sch"
-			(at 24.13 37.4146 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "BZR_EN" input
-			(at 50.8 22.86 0)
-			(uuid "db4f3e00-5c22-461a-8330-e38981e1813d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "BZR_N" input
-			(at 50.8 29.21 0)
-			(uuid "cd15aca7-6b7a-41a5-bca7-1e00c66e9a7f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "BZR_P" input
-			(at 50.8 26.67 0)
-			(uuid "740b1ba3-afa1-4218-a65d-ce2b33183510")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "gateway_rev2"
-				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f"
-					(page "4")
 				)
 			)
 		)

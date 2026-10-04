@@ -809,7 +809,7 @@
         "uuid": "d3cb7130-decc-418b-958e-e5d84a8d867f"
       }
     ],
-    "used_designators": "R18-20,LS1",
+    "used_designators": "CS1,GD1,Y1,#PWR7-8,#PWR16-18,#PWR35-39,#PWR41-43,#PWR50-53,#PWR58-59,ANT1,LS1,CLK1,MOSI1,MCUVDD1,S3,LEDT_B1-2,J1,L121-124,L131-132,FB1,LED4,R18-20,R171,IC2,RFVDD1,MISO1,C9-14,C51,C81,C101,C121-125,C131,#FLG4,U1",
     "variants": []
   },
   "sheets": [
@@ -824,10 +824,6 @@
     [
       "ec220677-d66d-4ee1-961f-1c93fb46783a",
       "MCU"
-    ],
-    [
-      "fe77db69-068b-4697-8152-e8993e362189",
-      "Buzzer"
     ]
   ],
   "text_variables": {},
