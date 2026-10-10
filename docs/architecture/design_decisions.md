@@ -466,8 +466,11 @@ VCC (≈3.0 V)
   |         |
  GND       ESD diode (if user-exposed)  → to GND
 
- B3F1070
- https://pt.mouser.com/ProductDetail/Omron-Electronics/B3F-1070?qs=CX134%252BdLMDEbZOltqAbCng%3D%3D
+8 mm from PCB to the top of the plastic case.
++ 2 or 3 mm of button down press delta.
+Then: 10 mm from PCB to top of button.
+Mouser: TS02-66-100-BK-160-SCR-D
+https://pt.mouser.com/en/ProductDetail/Same-Sky/TS02-66-100-BK-160-SCR-D?qs=A6eO%252BMLsxmSVhjdeW1GQhQ%3D%3D
  
 ### Gateway LEDs
  Blue: [WP710A10LVBC_D] https://pt.mouser.com/ProductDetail/Kingbright/WP710A10LVBC-D?qs=6oMev5NRZMF7xED66hMqMg%3D%3D
