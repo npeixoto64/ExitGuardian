@@ -7813,7 +7813,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c67645b-afb2-4a7c-acf0-8465b657d370")
-		(property "Reference" "C4"
+		(property "Reference" "C2"
 			(at 45.72 167.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7951,7 +7951,7 @@
 		(instances
 			(project "gateway_rev2"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "C4")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -10411,7 +10411,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b9dd392b-cfbd-45a1-a22a-d82bf46ef73b")
-		(property "Reference" "C3"
+		(property "Reference" "C1"
 			(at 68.58 144.7799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10549,7 +10549,7 @@
 		(instances
 			(project "gateway_rev2"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "C3")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -10743,7 +10743,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8ad654b-b739-437a-a82a-b38b4dc48bae")
-		(property "Reference" "C7"
+		(property "Reference" "C4"
 			(at 264.16 140.9699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10881,7 +10881,7 @@
 		(instances
 			(project "gateway_rev2"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "C7")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -11309,7 +11309,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e386951e-b9fc-46dd-8b85-f0cbb9482cad")
-		(property "Reference" "C5"
+		(property "Reference" "C3"
 			(at 66.04 167.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11447,7 +11447,7 @@
 		(instances
 			(project "gateway_rev2"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "C5")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -12152,7 +12152,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fba7cab6-f196-4c43-8ccb-c2f6556baddb")
-		(property "Reference" "C8"
+		(property "Reference" "C50"
 			(at 276.86 140.9699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12290,7 +12290,7 @@
 		(instances
 			(project "gateway_rev2"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
-					(reference "C8")
+					(reference "C50")
 					(unit 1)
 				)
 			)

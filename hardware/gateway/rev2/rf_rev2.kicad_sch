@@ -5492,7 +5492,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "578faefa-7df9-4e59-9546-02c4080c0e77")
-		(property "Reference" "C10"
+		(property "Reference" "C5"
 			(at 115.57 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5622,7 +5622,7 @@
 		(instances
 			(project "gateway_rev2"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C10")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -5640,7 +5640,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5af9a604-4fb7-4fb3-b11e-91ba273b3797")
-		(property "Reference" "C12"
+		(property "Reference" "C6"
 			(at 143.51 60.9599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5770,7 +5770,7 @@
 		(instances
 			(project "gateway_rev2"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C12")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -6950,7 +6950,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad267728-707c-4acf-bbc3-400e66e9c1ea")
-		(property "Reference" "C11"
+		(property "Reference" "C9"
 			(at 129.54 95.2499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7080,7 +7080,7 @@
 		(instances
 			(project "gateway_rev2"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C11")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -7098,7 +7098,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad6da7fb-dcfe-4c26-8d29-a89994418cea")
-		(property "Reference" "C13"
+		(property "Reference" "C10"
 			(at 143.51 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7228,7 +7228,7 @@
 		(instances
 			(project "gateway_rev2"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C13")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -8090,7 +8090,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "edcfc32e-bc74-4bb3-8b01-277f3f2dcb94")
-		(property "Reference" "C9"
+		(property "Reference" "C7"
 			(at 58.42 95.2499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8220,7 +8220,7 @@
 		(instances
 			(project "gateway_rev2"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C9")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -8238,7 +8238,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f09d223a-6e42-4f35-ab69-1007db39fa8f")
-		(property "Reference" "C14"
+		(property "Reference" "C11"
 			(at 152.4 123.1899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8368,7 +8368,7 @@
 		(instances
 			(project "gateway_rev2"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/af07603d-259f-481d-be2c-d925e27835a3"
-					(reference "C14")
+					(reference "C11")
 					(unit 1)
 				)
 			)
