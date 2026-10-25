@@ -162,7 +162,7 @@
         "min_track_width": 0.15,
         "min_via_annular_width": 0.15,
         "min_via_diameter": 0.25,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -611,7 +611,7 @@
       "plot": "output/PCB/",
       "pos_files": "output/PCBA/",
       "specctra_dsn": "",
-      "step": "output/PCBA/gateway.step",
+      "step": "output/3D/gateway.step",
       "svg": "",
       "vrml": ""
     },
@@ -809,7 +809,7 @@
         "uuid": "d3cb7130-decc-418b-958e-e5d84a8d867f"
       }
     ],
-    "used_designators": "L121-124,L131-132,FB1,LS1,ANT1,#PWR7-8,#PWR10,#PWR14,#PWR16-18,#PWR35-39,#PWR41-43,#PWR50-53,#PWR58-59,Y1,CLK1,SW1,C9-14,C51,C81,C101,C121-125,C131,J_N1,U1,J1,J3-4,MCUVDD1,R18-20,R171,LED4,IC2,RFVDD1,MISO1,CS1,S1,S3,LEDT_B1-2,J_L1,GD1,#FLG4-6,MOSI1",
+    "used_designators": "L121-124,L131-132,FB1,LS1,ANT1,#PWR7-8,#PWR10,#PWR14,#PWR16-18,#PWR35-39,#PWR41-43,#PWR50-53,#PWR58-59,Y1,CLK1,SW1,C9-14,C51,C81,C101,C121-125,C131,J_N1,U1,MOSI1,MCUVDD1,R18-20,R171,LED4,IC2,RFVDD1,MISO1,CS1,S1,S3,LEDT_B1-2,J_L1,GD1,#FLG4-6,J1,J3-4",
     "variants": []
   },
   "sheets": [
