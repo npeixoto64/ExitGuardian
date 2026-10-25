@@ -3842,16 +3842,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Check the MCU pins again, for pull-ups, etc."
-		(exclude_from_sim no)
-		(at 64.008 107.442 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "19f09ee2-4525-4418-8d0a-f2391e111cdf")
-	)
 	(text "Use internal MCU pull-up.\n~45 Kohms"
 		(exclude_from_sim no)
 		(at 62.738 57.658 0)
@@ -6202,8 +6192,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Manufacturer Part Number" "WP710A10LVBC/D"
-			(at 259.08 820.32 0)
+		(property "Manufacturer_Name" "Kingbright"
+			(at 271.78 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6211,11 +6201,11 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Manufacturer_Name" ""
+		(property "Manufacturer_Part_Number" "WP710A10LVBC/D"
 			(at 271.78 26.67 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6224,18 +6214,9 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Kingbright/WP710A10LVBC-D?qs=6oMev5NRZMF7xED66hMqMg%3D%3D"
 			(at 271.78 26.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 271.78 26.67 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6352,8 +6333,8 @@
 				(justify left top)
 			)
 		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/PKMCS1818E20A0-R1?qs=2m8Gdae5Lr0i0Y6WwcK3JA%3D%3D"
-			(at -342.19 96.52 0)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 252.73 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6361,11 +6342,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics"
-			(at -442.19 96.52 0)
+		(property "Manufacturer_Part_Number" "PKMCS1818E20A0-R1"
+			(at 252.73 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6373,43 +6353,11 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
-		(property "Manufacturer Part Number" "PKMCS1818E20A0-R1"
-			(at -542.19 96.52 0)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/Murata-Electronics/PKMCS1818E20A0-R1?qs=2m8Gdae5Lr0i0Y6WwcK3JA%3D%3D"
+			(at 252.73 74.93 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 252.73 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 252.73 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 252.73 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6583,7 +6531,7 @@
 				)
 			)
 		)
-		(property "Mouser Part Number" "71-RCA060310K0JNEA"
+		(property "Mouser Part Number" "594-MCS04020C1002FE0"
 			(at 231.14 127 0)
 			(hide yes)
 			(show_name no)
@@ -6594,7 +6542,7 @@
 				)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Vishay-Draloric/RCA060310K0JNEA?qs=c3C3yipULq2B1qdFMZ0cLA%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C1002FE000?qs=7ZE6F4QMOBZ3EZwk%252BYP9Dg%3D%3D"
 			(at 231.14 127 0)
 			(hide yes)
 			(show_name no)
@@ -6605,7 +6553,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Vishay"
+		(property "Manufacturer_Name" "Vishay"
 			(at 231.14 127 0)
 			(hide yes)
 			(show_name no)
@@ -6616,7 +6564,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "RCA060310K0JNEA"
+		(property "Manufacturer_Part_Number" "MCS04020C1002FE000"
 			(at 231.14 127 0)
 			(hide yes)
 			(show_name no)
@@ -6627,28 +6575,9 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C1002FE000?qs=7ZE6F4QMOBZ3EZwk%252BYP9Dg%3D%3D"
 			(at 231.14 127 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 231.14 127 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 231.14 127 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6994,7 +6923,7 @@
 				)
 			)
 		)
-		(property "Mouser Part Number" "603-SR0603JR-7T33RL"
+		(property "Mouser Part Number" "594-MCS04020C1000FE0"
 			(at 220.98 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -7005,7 +6934,7 @@
 				)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/SR0603JR-7T33RL?qs=1mbolxNpo8eV8es9T7q7Sg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C1000FE000?qs=7ZE6F4QMOBYkwvQlfbkT8w%3D%3D"
 			(at 220.98 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -7016,7 +6945,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer_Name" "Vishay"
 			(at 220.98 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -7027,7 +6956,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "SR0603JR-7T33RL"
+		(property "Manufacturer_Part_Number" "MCS04020C1000FE000"
 			(at 220.98 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -7038,28 +6967,9 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C1000FE000?qs=7ZE6F4QMOBYkwvQlfbkT8w%3D%3D"
 			(at 220.98 90.17 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 220.98 90.17 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 220.98 90.17 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7210,8 +7120,9 @@
 				(justify left top)
 			)
 		)
-		(property "Manufacturer_Name" ""
+		(property "Manufacturer_Name" "RAMXEED"
 			(at 190.5 134.62 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7220,8 +7131,9 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "MB85RC64TAPNF-G-BDERE1"
 			(at 190.5 134.62 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7230,8 +7142,9 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/RAMXEED/MB85RC64TAPNF-G-BDERE1?qs=HBWAp0VN4RjAfCGOi84Ipw%3D%3D"
 			(at 190.5 134.62 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7531,7 +7444,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Mouser Part Number" "78-TLHR4400-AS12Z"
+		(property "Mouser Part Number" "78-TLHY4400-AS12Z"
 			(at 259.08 548.26 0)
 			(hide yes)
 			(show_name no)
@@ -7543,7 +7456,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHR4400-AS12Z?qs=nQ9vpdMXC6AwxmxsGskxgg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/Vishay-Semiconductors/TLHY4400-AS12Z?qs=nQ9vpdMXC6D7BUjVD5tUJw%3D%3D"
 			(at 259.08 648.26 0)
 			(hide yes)
 			(show_name no)
@@ -7555,8 +7468,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Manufacturer" "Vishay"
-			(at 259.08 748.26 0)
+		(property "Manufacturer_Name" "Vishay"
+			(at 271.78 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7564,11 +7477,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Manufacturer Part Number" "TLHR4400-AS12Z"
-			(at 259.08 848.26 0)
+		(property "Manufacturer_Part_Number" "TLHY4400-AS12Z"
+			(at 271.78 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7576,31 +7488,11 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Manufacturer_Name" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/Vishay-Semiconductors/TLHY4400-AS12Z?qs=nQ9vpdMXC6D7BUjVD5tUJw%3D%3D"
 			(at 271.78 54.61 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 271.78 54.61 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 271.78 54.61 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7868,7 +7760,7 @@
 				)
 			)
 		)
-		(property "Mouser Part Number" "603-CC603KRX5R6BB105 "
+		(property "Mouser Part Number" "581-KGM05AV50J105ZH"
 			(at 41.91 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7879,7 +7771,7 @@
 				)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0603KRX5R6BB105?qs=sGAEpiMZZMvsSlwiRhF8qj9NgEuXmwzviUWmAEAQAqw%3D"
+		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/KYOCERA-AVX/KGM05AV50J105ZH?qs=Jm2GQyTW%2Fbh%2FaahRJYQLWg%3D%3D"
 			(at 41.91 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7890,7 +7782,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer_Name" "Kyocera Avx"
 			(at 41.91 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7901,7 +7793,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "CC603KRX5R6BB105 "
+		(property "Manufacturer_Part_Number" "KGM05AV50J105ZH"
 			(at 41.91 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7912,28 +7804,9 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/KYOCERA-AVX/KGM05AV50J105ZH?qs=Jm2GQyTW%2Fbh%2FaahRJYQLWg%3D%3D"
 			(at 41.91 168.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 41.91 168.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 41.91 168.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8126,7 +7999,7 @@
 				(justify left top)
 			)
 		)
-		(property "Supplier Link" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM8L151K4T6?qs=H8t2elxe2QfV%252BTwO2SHNjg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/STMicroelectronics/STM8L151K4T6?qs=H8t2elxe2QfV%252BTwO2SHNjg%3D%3D"
 			(at 120.65 730.81 0)
 			(hide yes)
 			(show_name no)
@@ -8138,8 +8011,8 @@
 				(justify left top)
 			)
 		)
-		(property "Manufacturer" "STMicroelectronics"
-			(at 120.65 830.81 0)
+		(property "Manufacturer_Name" "STMicroelectronics"
+			(at 91.44 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8147,11 +8020,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
-		(property "Manufacturer Part Number" "STM8L151K4T6"
-			(at 120.65 930.81 0)
+		(property "Manufacturer_Part_Number" "STM8L151K4T6"
+			(at 91.44 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8159,31 +8031,11 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
-		(property "Manufacturer_Name" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/STMicroelectronics/STM8L151K4T6?qs=H8t2elxe2QfV%252BTwO2SHNjg%3D%3D"
 			(at 91.44 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 91.44 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 91.44 143.51 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8773,7 +8625,7 @@
 				)
 			)
 		)
-		(property "Mouser Part Number" "603-SR0603JR-7T33RL "
+		(property "Mouser Part Number" "594-MCS04020C1000FE0"
 			(at 220.98 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -8784,7 +8636,7 @@
 				)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/SR0603JR-7T33RL?qs=1mbolxNpo8eV8es9T7q7Sg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C1000FE000?qs=7ZE6F4QMOBYkwvQlfbkT8w%3D%3D"
 			(at 220.98 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -8795,7 +8647,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer_Name" "Vishay"
 			(at 220.98 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -8806,7 +8658,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "SR0603JR-7T33RL "
+		(property "Manufacturer_Part_Number" "MCS04020C1000FE000"
 			(at 220.98 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -8817,28 +8669,9 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C1000FE000?qs=7ZE6F4QMOBYkwvQlfbkT8w%3D%3D"
 			(at 220.98 85.09 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 220.98 85.09 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 220.98 85.09 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9431,7 +9264,7 @@
 				)
 			)
 		)
-		(property "Mouser Part Number" "71-CRCW0603100RJNEBC"
+		(property "Mouser Part Number" "594-MCS04020C1000FE0"
 			(at 246.38 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -9442,7 +9275,7 @@
 				)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Vishay/CRCW0603100RJNEBC?qs=wd5RIQLrsJii9cJ3l5q4HQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C1000FE000?qs=7ZE6F4QMOBYkwvQlfbkT8w%3D%3D"
 			(at 246.38 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -9453,7 +9286,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Vishay"
+		(property "Manufacturer_Name" "Vishay"
 			(at 246.38 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -9464,7 +9297,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "CRCW0603100RJNEBC"
+		(property "Manufacturer_Part_Number" "MCS04020C1000FE000"
 			(at 246.38 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -9475,28 +9308,9 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C1000FE000?qs=7ZE6F4QMOBYkwvQlfbkT8w%3D%3D"
 			(at 246.38 26.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 246.38 26.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 246.38 26.67 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10131,7 +9945,7 @@
 				)
 			)
 		)
-		(property "Mouser Part Number" "667-ERJ-S03J470V"
+		(property "Mouser Part Number" "594-MCS04020C4709FE0"
 			(at 246.38 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -10142,7 +9956,7 @@
 				)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-S03J470V?qs=Zyl8A9hlmJpXNqNzv%252BG9Dw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C4709FE000?qs=1JE6ZgvF9%252BuVJxoFQdFj%2Fw%3D%3D"
 			(at 246.38 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -10153,7 +9967,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Panasonic"
+		(property "Manufacturer_Name" "Vishay"
 			(at 246.38 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -10164,7 +9978,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "ERJ-S03J470V"
+		(property "Manufacturer_Part_Number" "MCS04020C4709FE000"
 			(at 246.38 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -10175,28 +9989,9 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C4709FE000?qs=1JE6ZgvF9%252BuVJxoFQdFj%2Fw%3D%3D"
 			(at 246.38 54.61 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 246.38 54.61 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 246.38 54.61 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10466,7 +10261,7 @@
 				)
 			)
 		)
-		(property "Mouser Part Number" "81-GXT155R71C103KE1D"
+		(property "Mouser Part Number" "963-MSAST105SB7103KF"
 			(at 64.77 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -10477,7 +10272,7 @@
 				)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R71C103KE01D?qs=sGAEpiMZZMt7gvpyg0xT8jBHDtGZvLzXRBbEpz5mViCnwrtFZT9VWg%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/TAIYO-YUDEN/MSAST105SB7103KFNA01?qs=FmjOKN4Os86U2qvc3%252B4v4A%3D%3D"
 			(at 64.77 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -10488,7 +10283,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer_Name" "Taiyo Yuden"
 			(at 64.77 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -10499,7 +10294,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "GXT155R71C103KE01D"
+		(property "Manufacturer_Part_Number" "MSAST105SB7103KFNA01"
 			(at 64.77 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -10510,28 +10305,9 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/TAIYO-YUDEN/MSAST105SB7103KFNA01?qs=FmjOKN4Os86U2qvc3%252B4v4A%3D%3D"
 			(at 64.77 146.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 64.77 146.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 64.77 146.05 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10798,7 +10574,7 @@
 				)
 			)
 		)
-		(property "Mouser Part Number" "81-GXT155R60J105KE1D"
+		(property "Mouser Part Number" "581-KGM05AV50J105ZH"
 			(at 260.35 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -10809,7 +10585,7 @@
 				)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Murata-Electronics/GXT155R60J105KE01D?qs=d0WKAl%252BL4Kb4JfV7cPss8A%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/KYOCERA-AVX/KGM05AV50J105ZH?qs=Jm2GQyTW%2Fbh%2FaahRJYQLWg%3D%3D"
 			(at 260.35 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -10820,7 +10596,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer_Name" "Kyocera Avx"
 			(at 260.35 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -10831,7 +10607,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "GXT155R60J105KE01D "
+		(property "Manufacturer_Part_Number" "KGM05AV50J105ZH"
 			(at 260.35 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -10842,28 +10618,9 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/KYOCERA-AVX/KGM05AV50J105ZH?qs=Jm2GQyTW%2Fbh%2FaahRJYQLWg%3D%3D"
 			(at 260.35 142.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 260.35 142.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 260.35 142.24 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10953,7 +10710,7 @@
 				)
 			)
 		)
-		(property "Mouser Part Number" "71-RCA060310K0JNEA"
+		(property "Mouser Part Number" "594-MCS04020C1002FE0"
 			(at 240.03 127 0)
 			(hide yes)
 			(show_name no)
@@ -10964,18 +10721,7 @@
 				)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Vishay-Draloric/RCA060310K0JNEA?qs=c3C3yipULq2B1qdFMZ0cLA%3D%3D"
-			(at 240.03 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Vishay"
+		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C1002FE000?qs=7ZE6F4QMOBZ3EZwk%252BYP9Dg%3D%3D"
 			(at 240.03 127 0)
 			(hide yes)
 			(show_name no)
@@ -10997,8 +10743,9 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" ""
+		(property "Manufacturer_Name" "Vishay"
 			(at 240.03 127 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11007,8 +10754,9 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "MCS04020C1002FE000"
 			(at 240.03 127 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11017,8 +10765,9 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C1002FE000?qs=7ZE6F4QMOBZ3EZwk%252BYP9Dg%3D%3D"
 			(at 240.03 127 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11107,7 +10856,7 @@
 				)
 			)
 		)
-		(property "Mouser Part Number" "667-ERJ-S03J470V"
+		(property "Mouser Part Number" "594-MCS04020C4709FE0"
 			(at 246.38 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -11118,7 +10867,7 @@
 				)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/Panasonic/ERJ-S03J470V?qs=Zyl8A9hlmJpXNqNzv%252BG9Dw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C4709FE000?qs=1JE6ZgvF9%252BuVJxoFQdFj%2Fw%3D%3D"
 			(at 246.38 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -11129,7 +10878,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Panasonic"
+		(property "Manufacturer_Name" "Vishay"
 			(at 246.38 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -11140,7 +10889,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "ERJ-S03J470V"
+		(property "Manufacturer_Part_Number" "MCS04020C4709FE000"
 			(at 246.38 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -11151,28 +10900,9 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C4709FE000?qs=1JE6ZgvF9%252BuVJxoFQdFj%2Fw%3D%3D"
 			(at 246.38 39.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 246.38 39.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 246.38 39.37 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11364,7 +11094,7 @@
 				)
 			)
 		)
-		(property "Mouser Part Number" "963-MAJCH168BB7104KT"
+		(property "Mouser Part Number" "603-CC402KRX7R7BB104"
 			(at 62.23 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -11375,7 +11105,7 @@
 				)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/TAIYO-YUDEN/MAJCH168BB7104KTEA01?qs=sGAEpiMZZMvsSlwiRhF8qrQG6leidpLjl9Bd57PckJLKQu82PBxkeQ%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 62.23 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -11386,7 +11116,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Taiyo Yuden"
+		(property "Manufacturer_Name" "Yageo"
 			(at 62.23 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -11397,7 +11127,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "MAJCH168BB7104KT"
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
 			(at 62.23 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -11408,28 +11138,9 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 62.23 168.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 62.23 168.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 62.23 168.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11546,7 +11257,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=538-22-28-4044"
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/Molex/22-28-4044?qs=MuwpYaHj751V69MyAElxVw%3D%3D"
 			(at 170.18 620.32 0)
 			(hide yes)
 			(show_name no)
@@ -11669,7 +11380,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "IRM-01-3.3"
+		(property "Datasheet" "https://www.meanwellusa.com/webapp/product/search.aspx?prod=IRM-01"
 			(at 52.07 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -11681,7 +11392,51 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "230V AC to 3.3 V DC"
+			(at 52.07 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "709-IRM01-3.3"
+			(at 52.07 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/MEAN-WELL/IRM-01-3.3?qs=C9r8PV%2F%252BoWPYMhpLuTFr9w%3D%3D"
+			(at 52.07 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Mean Well"
+			(at 52.07 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "IRM-01-3.3"
 			(at 52.07 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -11915,8 +11670,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Manufacturer" "Vishay"
-			(at 259.08 733.02 0)
+		(property "Manufacturer_Name" "Vishay"
+			(at 271.78 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11924,11 +11679,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Manufacturer Part Number" "TLHY4400-AS12Z"
-			(at 259.08 833.02 0)
+		(property "Manufacturer_Part_Number" "TLHY4400-AS12Z"
+			(at 271.78 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11936,31 +11690,11 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Manufacturer_Name" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/Vishay-Semiconductors/TLHY4400-AS12Z?qs=nQ9vpdMXC6D7BUjVD5tUJw%3D%3D"
 			(at 271.78 39.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 271.78 39.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 271.78 39.37 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12051,7 +11785,7 @@
 				)
 			)
 		)
-		(property "Mouser Part Number" "603-AR0603FR-071ML"
+		(property "Mouser Part Number" "594-MCS04020C1002FE0"
 			(at 240.03 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -12062,7 +11796,7 @@
 				)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/AR0603FR-071ML?qs=tggtontpCXN3Ykm7Gt7Sqw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C1002FE000?qs=7ZE6F4QMOBZ3EZwk%252BYP9Dg%3D%3D"
 			(at 240.03 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -12073,7 +11807,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer_Name" "Vishay"
 			(at 240.03 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -12084,7 +11818,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "AR0603FR-071ML"
+		(property "Manufacturer_Part_Number" "MCS04020C1002FE000"
 			(at 240.03 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -12095,28 +11829,9 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C1002FE000?qs=7ZE6F4QMOBZ3EZwk%252BYP9Dg%3D%3D"
 			(at 240.03 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 240.03 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 240.03 87.63 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12218,7 +11933,7 @@
 				)
 			)
 		)
-		(property "Supplier Link" "https://pt.mouser.com/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 273.05 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -12229,7 +11944,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer_Name" "Yageo"
 			(at 273.05 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -12240,7 +11955,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0402KRX7R7BB104"
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
 			(at 273.05 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -12251,28 +11966,9 @@
 				)
 			)
 		)
-		(property "Manufacturer_Name" ""
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
 			(at 273.05 142.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 273.05 142.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 273.05 142.24 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
