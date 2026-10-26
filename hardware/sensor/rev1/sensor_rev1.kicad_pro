@@ -710,6 +710,12 @@
           "label": "Manufacturer_Part_Number",
           "name": "Manufacturer_Part_Number",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
         }
       ],
       "filter_string": "",

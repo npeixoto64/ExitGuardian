@@ -1,40 +1,40 @@
-"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
-1;"ANT1";"Antenna_hole";1;"~";;;
-2;"C1";"C_0402_1005Metric";1;"10nF";;;
-3;"C2, C4";"C_0402_1005Metric";2;"1uF";;;
-4;"C3, C5, C6, C7, C9, C10, C11, C50, C51";"C_0402_1005Metric";9;"100nF";;;
-5;"C81, C101";"C_0402_1005Metric";2;"15pF";;;
-6;"C121";"C_0402_1005Metric";1;"1pF";;;
-7;"C122, C131";"C_0402_1005Metric";2;"1.5pF";;;
-8;"C123";"C_0402_1005Metric";1;"3.3pF";;;
-9;"C124";"C_0402_1005Metric";1;"100pF";;;
-10;"C125";"C_0402_1005Metric";1;"12pF";;;
-11;"CLK1";"TestPoint_Pad_D1.0mm";1;"SPI_CK";;;
-12;"CS1";"TestPoint_Pad_D1.0mm";1;"SPI_CS";;;
-13;"FB1";"BLM18SP221SN1B";1;"BLM18KG601SN1D";;;
-14;"GD1";"TestPoint_Pad_D1.0mm";1;"GD0";;;
-15;"IC1";"QFP80P900X900X160-32N";1;"STM8L151K4T6";;;
-16;"IC2";"QFN50P400X400X100-21N-D";1;"CC1101RGPR";;;
-17;"IC5";"SOIC127P602X173-8N";1;"MB85RC64TAPNF-G-BDERE1";;;
-18;"J1";"HDRV4W66P0X254_1X4_1016X249X1067P";1;"22-28-4044";;;
-19;"J2";"HDRV3W66P0X254_1X3_762X254X855P";1;"M20-9770342";;;
-20;"J_L1, J_N1";"230V";2;"~";;;
-21;"L121, L123, L124, L131";"L_0402_1005Metric";4;"12nH";;;
-22;"L122, L132";"L_0402_1005Metric";2;"18nH";;;
-23;"LED1";"WP710A10LVBCD";1;"WP710A10LVBC_D";;;
-24;"LED2";"TLHY4400AS12Z";1;"TLHY4400-AS12Z";;;
-25;"LED3";"TLHR4400AS12Z";1;"TLHR4400-AS12Z";;;
-26;"LED_B1, LED_R1, LED_Y1";"TestPoint_Pad_D1.0mm";3;"LED";;;
-27;"LS1";"PKMCS1818E20A0R1";1;"PKMCS1818E20A0-R1";;;
-28;"MCUVDD1";"TestPoint_Pad_D1.0mm";1;"MCU_VDD";;;
-29;"MISO1";"TestPoint_Pad_D1.0mm";1;"SPI_MISO";;;
-30;"MOSI1";"TestPoint_Pad_D1.0mm";1;"SPI_MOSI";;;
-31;"R8";"R_0402_1005Metric";1;"100";;;
-32;"R9, R10";"R_0402_1005Metric";2;"47";;;
-33;"R11, R12, R20";"R_0402_1005Metric";3;"10K";;;
-34;"R18, R19";"R_0402_1005Metric";2;"100R";;;
-35;"R171";"R_0402_1005Metric";1;"56K";;;
-36;"RFVDD1";"TestPoint_Pad_D1.0mm";1;"RF_VDD";;;
-37;"S1";"TS0266100BK100LCRD";1;"TS02-66-100-BK-160-SCR-D";;;
-38;"U1";"IRM-01-3-3";1;"IRM-01-3.3";;;
-39;"Y1";"NX3225GA26000MSTDCRG2";1;"NX3225GA-26MHZ-TI";;;
+"Designator","Qty","Value","Package","Mouser Part Number","Supplier Link","#","Manufacturer_Name","Manufacturer_Part_Number"
+"ANT1","1","","MyParts:Antenna_hole","","","1","",""
+"C1","1","10nF","Capacitor_SMD:C_0402_1005Metric","963-MSAST105SB7103KF","https://pt.mouser.com/en/ProductDetail/TAIYO-YUDEN/MSAST105SB7103KFNA01?qs=FmjOKN4Os86U2qvc3%252B4v4A%3D%3D","2","Taiyo Yuden","MSAST105SB7103KFNA01"
+"C2,C4","2","1uF","Capacitor_SMD:C_0402_1005Metric","581-KGM05AV50J105ZH","https://pt.mouser.com/en/ProductDetail/KYOCERA-AVX/KGM05AV50J105ZH?qs=Jm2GQyTW%2Fbh%2FaahRJYQLWg%3D%3D","3","Kyocera Avx","KGM05AV50J105ZH"
+"C3,C5,C6,C7,C9,C10,C11,C50,C51","9","100nF","Capacitor_SMD:C_0402_1005Metric","603-CC402KRX7R7BB104","https://pt.mouser.com/en/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D","4","Yageo","CC0402KRX7R7BB104"
+"C81,C101","2","15pF","Capacitor_SMD:C_0402_1005Metric","77-VJ0402D150FXCAJ","","5","Vishay","VJ0402D150FXCAJ"
+"C121","1","1pF","Capacitor_SMD:C_0402_1005Metric","81-GRM1555C1H1R0BA1J","","6","Murata","GRM1555C1H1R0BA01J"
+"C122,C131","2","1.5pF","Capacitor_SMD:C_0402_1005Metric","81-GRM1555C1E1R5BA1D","","7","Murata","GRM1555C1E1R5BA01D"
+"C123","1","3.3pF","Capacitor_SMD:C_0402_1005Metric","81-GRM1555C1H3R3WA1D","","8","Murata","GRM1555C1H3R3WA01D"
+"C124","1","100pF","Capacitor_SMD:C_0402_1005Metric","81-GRM1555C1H101FA1J","","9","Murata","GRM1555C1H101FA01J"
+"C125","1","12pF","Capacitor_SMD:C_0402_1005Metric","81-GRM1555C1H120FA1D","","10","Murata","GRM1555C1H120FA01D"
+"CLK1","1","SPI_CK","TestPoint:TestPoint_Pad_D1.0mm","","","11","",""
+"CS1","1","SPI_CS","TestPoint:TestPoint_Pad_D1.0mm","","","12","",""
+"FB1","1","BLM18KG601SN1D","MyParts:BLM18SP221SN1B","81-BLM18KG601SN1D","","13","Murata Electronics",""
+"GD1","1","GD0","TestPoint:TestPoint_Pad_D1.0mm","","","14","",""
+"IC1","1","STM8L151K4T6","MyParts:QFP80P900X900X160-32N","511-STM8L151K4T6","https://pt.mouser.com/en/ProductDetail/STMicroelectronics/STM8L151K4T6?qs=H8t2elxe2QfV%252BTwO2SHNjg%3D%3D","15","STMicroelectronics","STM8L151K4T6"
+"IC2","1","CC1101RGPR","MyParts:QFN50P400X400X100-21N-D","595-CC1101RGPR","","16","Texas Instruments",""
+"IC5","1","MB85RC64TAPNF-G-BDERE1","MyParts:SOIC127P602X173-8N","249-85C64TAPNFGBDR1","https://www.mouser.co.uk/ProductDetail/Fujitsu-Semiconductor/MB85RC64TAPNF-G-BDERE1?qs=HBWAp0VN4RjAfCGOi84Ipw%3D%3D","17","RAMXEED","MB85RC64TAPNF-G-BDERE1"
+"J1","1","22-28-4044","MyParts:HDRV4W66P0X254_1X4_1016X249X1067P","538-22-28-4044","","18","Molex","22-28-4044"
+"J2","1","M20-9770342","MyParts:HDRV3W66P0X254_1X3_762X254X855P","855-M20-9770342","https://www.mouser.co.uk/ProductDetail/Harwin/M20-9770342?qs=Jph8NoUxIfVskiTzAX%252BIFA%3D%3D","19","",""
+"J_L1,J_N1","2","","MyParts:230V","","","20","",""
+"L121,L123,L124,L131","4","12nH","Inductor_SMD:L_0402_1005Metric","81-LQW15AN12NJ80D","","21","Murata","LQW15AN12NJ80D"
+"L122,L132","2","18nH","Inductor_SMD:L_0402_1005Metric","81-LQG15HH18NJ02D","","22","Murata","LQG15HH18NJ02D"
+"LED1","1","WP710A10LVBC_D","MyParts:WP710A10LVBCD","604-WP710A10LVBCD","https://www.mouser.co.uk/ProductDetail/Kingbright/WP710A10LVBC-D?qs=6oMev5NRZMF7xED66hMqMg%3D%3D","23","Kingbright","WP710A10LVBC/D"
+"LED2","1","TLHY4400-AS12Z","MyParts:TLHY4400AS12Z","78-TLHY4400-AS12Z","https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHY4400-AS12Z?qs=nQ9vpdMXC6D7BUjVD5tUJw%3D%3D","24","Vishay","TLHY4400-AS12Z"
+"LED3","1","TLHR4400-AS12Z","MyParts:TLHR4400AS12Z","78-TLHY4400-AS12Z","https://pt.mouser.com/en/ProductDetail/Vishay-Semiconductors/TLHY4400-AS12Z?qs=nQ9vpdMXC6D7BUjVD5tUJw%3D%3D","25","Vishay","TLHY4400-AS12Z"
+"LED_B1,LED_R1,LED_Y1","3","LED","TestPoint:TestPoint_Pad_D1.0mm","","","26","",""
+"LS1","1","PKMCS1818E20A0-R1","MyParts:PKMCS1818E20A0R1","81-PKMCS1818E20A0-R1","","27","Murata Electronics","PKMCS1818E20A0-R1"
+"MCUVDD1","1","MCU_VDD","TestPoint:TestPoint_Pad_D1.0mm","","","28","",""
+"MISO1","1","SPI_MISO","TestPoint:TestPoint_Pad_D1.0mm","","","29","",""
+"MOSI1","1","SPI_MOSI","TestPoint:TestPoint_Pad_D1.0mm","","","30","",""
+"R8","1","100","Resistor_SMD:R_0402_1005Metric","594-MCS04020C1000FE0","https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C1000FE000?qs=7ZE6F4QMOBYkwvQlfbkT8w%3D%3D","31","Vishay","MCS04020C1000FE000"
+"R9,R10","2","47","Resistor_SMD:R_0402_1005Metric","594-MCS04020C4709FE0","https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C4709FE000?qs=1JE6ZgvF9%252BuVJxoFQdFj%2Fw%3D%3D","32","Vishay","MCS04020C4709FE000"
+"R11,R12,R20","3","10K","Resistor_SMD:R_0402_1005Metric","594-MCS04020C1002FE0","https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C1002FE000?qs=7ZE6F4QMOBZ3EZwk%252BYP9Dg%3D%3D","33","Vishay","MCS04020C1002FE000"
+"R18,R19","2","100R","Resistor_SMD:R_0402_1005Metric","594-MCS04020C1000FE0","https://pt.mouser.com/en/ProductDetail/Vishay-Beyschlag/MCS04020C1000FE000?qs=7ZE6F4QMOBYkwvQlfbkT8w%3D%3D","34","Vishay","MCS04020C1000FE000"
+"R171","1","56K","Resistor_SMD:R_0402_1005Metric","667-ERJ-PA2F5602X","","35","Panasonic","ERJ-PA2F5602X"
+"RFVDD1","1","RF_VDD","TestPoint:TestPoint_Pad_D1.0mm","","","36","",""
+"S1","1","TS02-66-100-BK-160-SCR-D","MyParts:TS0266100BK100LCRD","179-TS0266100BK160SC","","37","Same Sky","TS02-66-100-BK-160-SCR-D"
+"U1","1","IRM-01-3.3","MyParts:IRM-01-3-3","709-IRM01-3.3","","38","Mean Well","IRM-01-3.3"
+"Y1","1","NX3225GA-26MHZ-TI","MyParts:NX3225GA26000MSTDCRG2","344-NX3225GA26MHZTI","","39","NDK",""
