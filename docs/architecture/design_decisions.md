@@ -497,6 +497,27 @@ Supplier Link
 Manufacturer
 Manufacturer Part Number
 
+### PCB + PCBA service from JLCPCB
+- Before all, clean the position and BOM, removing the following components:
+    - J1, J2, U1, ANT1, J_N1, J_L1, push button, LED1, LED2, LED3, H1-H4, FIDx, all tests points.
+- Use JLCONE
+- Load gerbers.
+- Order 5 PCBs
+- Select the 1.6 mm FR4
+- PCB Assembly: 5 PCBAs
+- PCB Assembly: top side
+- Confirm components replacement (BOM)
+- Confirm components position in the board and fix them.
+
+ToDo:
+    Switch branch and Open Free CAD to check the LEDs and push button place. Check PCB tickness. Check holes diameter.
+    If all good, generate Gerbers, BOM and go to JLCONE to see how it looks like.
+    Order the PCB later.
+
+    Mouser components: U1, LEDs, Push button.
+    Rst is JLC PCB. Caution with buzzer.
+
+
 # Design Decision Document: Low-Power Wireless Window Sensor Node (WSN-01)
 
 **Document ID:** DDD-2026-002 
