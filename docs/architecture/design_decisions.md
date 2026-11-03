@@ -297,8 +297,9 @@ Polycase
 - Use the FreeCad portable application (executable directly => run as a program).
 - Create a new file and save it.
 - Switch to Assembly Workbench in the ComboBox.
+- Create a new assembly in the left side root tree.
 - File -> Import each model file (*.step): ususally PCB and Electronic enclosure.
-- MAke the enclosure and PCB part of the root in tree view. Drag and drop it.
+- Make the enclosure and PCB part of the root in tree view. Drag and drop it.
 - Change the transparency of the enclosure: go to left tree view and slect the whole enclosure.
 - If you need, flip or rotate the PCB, do it now with right click on PCB and click Transform.
 - In the new transform menu you can do any rotation or translation of the PCB.
@@ -465,8 +466,11 @@ VCC (≈3.0 V)
   |         |
  GND       ESD diode (if user-exposed)  → to GND
 
- B3F1070
- https://pt.mouser.com/ProductDetail/Omron-Electronics/B3F-1070?qs=CX134%252BdLMDEbZOltqAbCng%3D%3D
+8 mm from PCB to the top of the plastic case.
++ 2 or 3 mm of button down press delta.
+Then: 10 mm from PCB to top of button.
+Mouser: TS02-66-100-BK-160-SCR-D
+https://pt.mouser.com/en/ProductDetail/Same-Sky/TS02-66-100-BK-160-SCR-D?qs=A6eO%252BMLsxmSVhjdeW1GQhQ%3D%3D
  
 ### Gateway LEDs
  Blue: [WP710A10LVBC_D] https://pt.mouser.com/ProductDetail/Kingbright/WP710A10LVBC-D?qs=6oMev5NRZMF7xED66hMqMg%3D%3D
@@ -481,19 +485,8 @@ VCC (≈3.0 V)
 
 ### Gateway Enclosure
 
-#### Takachi Enclosure
-1. SIC3-5-2W (no screws): https://www.takachi-enclosure.com/products/SIC
-- External: 54 x 25 x 18 mm
-- Internal: 42.6 x 20.1 x 11.1 mm
-
-##### Supertronic Enclosure
-1. PP85B (4 screws): https://supertronic.com/en/universal-plastic-enclosure-for-electronic-devices-pp85b.html#/8-color-white_ral_9010
-- External: 39 x 27 x 18 mm
-- Internal: 31 x 20 x 10 mm
-
-2. PP85C (4 screws): https://supertronic.com/en/universal-plastic-enclosure-for-electronic-devices-pp85c.html#/8-color-white_ral_9010
-- External: 45 x 31 x 20 mm
-- Internal: 40 x 26 x 12 mm
+#### OKW Enclosure
+https://www.okw.com/en/Art-Case/B5013227.htm?var=3980d1e0-784f-11e3-b505-00163e72470b
 
 ## Support
 
@@ -503,6 +496,27 @@ Mouser Part Number
 Supplier Link
 Manufacturer
 Manufacturer Part Number
+
+### PCB + PCBA service from JLCPCB
+- Before all, clean the position and BOM, removing the following components:
+    - J1, J2, U1, ANT1, J_N1, J_L1, push button, LED1, LED2, LED3, H1-H4, FIDx, all tests points.
+- Use JLCONE
+- Load gerbers.
+- Order 5 PCBs
+- Select the 1.6 mm FR4
+- PCB Assembly: 5 PCBAs
+- PCB Assembly: top side
+- Confirm components replacement (BOM)
+- Confirm components position in the board and fix them.
+
+ToDo:
+    Switch branch and Open Free CAD to check the LEDs and push button place. Check PCB tickness. Check holes diameter.
+    If all good, generate Gerbers, BOM and go to JLCONE to see how it looks like.
+    Order the PCB later.
+
+    Mouser components: U1, LEDs, Push button.
+    Rst is JLC PCB. Caution with buzzer.
+
 
 # Design Decision Document: Low-Power Wireless Window Sensor Node (WSN-01)
 
