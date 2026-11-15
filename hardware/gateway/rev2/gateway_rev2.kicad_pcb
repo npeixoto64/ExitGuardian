@@ -2438,12 +2438,6 @@
 		(path "/7fe3501b-4ef0-424f-8968-fc50f4a0ba21")
 		(sheetname "/")
 		(sheetfile "gateway_rev2.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -2481,8 +2475,8 @@
 		)
 		(pad "" np_thru_hole circle
 			(at 0 0)
-			(size 3 3)
-			(drill 3)
+			(size 2.1 2.1)
+			(drill 2.1)
 			(layers "*.Cu" "*.Mask")
 			(uuid "96f03048-e826-4335-a9c0-2522ace8f80d")
 		)
@@ -4853,12 +4847,6 @@
 		(path "/691bba68-3857-4db2-bc85-0f5523faa193")
 		(sheetname "/")
 		(sheetfile "gateway_rev2.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -4896,8 +4884,8 @@
 		)
 		(pad "" np_thru_hole circle
 			(at 0 0)
-			(size 3 3)
-			(drill 3)
+			(size 2.1 2.1)
+			(drill 2.1)
 			(layers "*.Cu" "*.Mask")
 			(uuid "c7129671-e981-482b-9ba9-82c5a355c3e8")
 		)
@@ -6996,12 +6984,6 @@
 		(path "/015bcf54-f2bc-46e5-ae6a-9456b877f5b4")
 		(sheetname "/")
 		(sheetfile "gateway_rev2.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -7039,8 +7021,8 @@
 		)
 		(pad "" np_thru_hole circle
 			(at 0 0)
-			(size 3 3)
-			(drill 3)
+			(size 2.1 2.1)
+			(drill 2.1)
 			(layers "*.Cu" "*.Mask")
 			(uuid "068fd2dc-422b-4346-8a11-fd29e4d3615f")
 		)
@@ -10503,12 +10485,6 @@
 		(path "/a08e8828-d639-4335-b056-ec687ccda680")
 		(sheetname "/")
 		(sheetfile "gateway_rev2.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -10546,8 +10522,8 @@
 		)
 		(pad "" np_thru_hole circle
 			(at 0 0)
-			(size 3 3)
-			(drill 3)
+			(size 2.1 2.1)
+			(drill 2.1)
 			(layers "*.Cu" "*.Mask")
 			(uuid "4204916f-3b52-4837-a293-d40bf1498c8a")
 		)
@@ -16334,7 +16310,7 @@
 		(uuid "20e19169-8591-4e2f-a5e5-4794cd954289")
 	)
 	(gr_text "Exit Guardian - Gateway REV2.0\nNPX4U 2026"
-		(at 198.03 156.69 0)
+		(at 215.01 156.63 0)
 		(layer "F.SilkS")
 		(uuid "190d165c-e379-4748-8c8b-b0fb5e2e08af")
 		(effects
