@@ -4,16 +4,18 @@
 
 
 Person(user, "User")
-System(exitg, "Gateway", "Alerts when leaving with windows open")
-System(sensor1, "Window Sensor 1", "UID + OPEN/CLOSED + PAIR/UNPAIR + BAT STATUS")
-System(sensor2, "Window Sensor 2", "UID + OPEN/CLOSED + PAIR/UNPAIR + BAT STATUS")
-System(sensorN, "Window Sensor N", "UID + OPEN/CLOSED + PAIR/UNPAIR + BAT STATUS")
+System(exitg, "Gateway", "Alerts when the main door is open with windows open")
+System(wd_sensor1, "Window Sensor 1", "UID + OPEN/CLOSED + PAIR/UNPAIR + BAT STATUS")
+System(wd_sensor2, "Window Sensor 2", "UID + OPEN/CLOSED + PAIR/UNPAIR + BAT STATUS")
+System(wd_sensorN, "Window Sensor N", "UID + OPEN/CLOSED + PAIR/UNPAIR + BAT STATUS")
+System(md_sensor, "Main Door Sensor", "UID + OPEN/CLOSED + PAIR/UNPAIR + BAT STATUS")
 
 
 Rel(user, exitg, "Door opens/closes, button presses; hears buzzer/LEDs")
-Rel(sensor1, exitg, "RF events (433 MHz GFSK)")
-Rel(sensor2, exitg, "RF events (433 MHz GFSK)")
-Rel(sensorN, exitg, "RF events (433 MHz GFSK)")
+Rel(wd_sensor1, exitg, "RF events (868 MHz GFSK)")
+Rel(wd_sensor2, exitg, "RF events (868 MHz GFSK)")
+Rel(wd_sensorN, exitg, "RF events (868 MHz GFSK)")
+Rel(md_sensor, exitg, "RF events (868 MHz GFSK)")
 
 
 SHOW_LEGEND()

@@ -7,7 +7,7 @@ skinparam monochrome true
 
 ' --- Components ---
 node "Power Supply" {
-    [DC-DC] as PWR << 5V to 3.3V Regulator >>
+    [AC-DC] as PWR << 230V AC to 3.3V DC >>
 }
 
 node "Processing" {
@@ -15,7 +15,7 @@ node "Processing" {
     [FeRAM] as FERM << 8 KB >>
 }
 
-node "RF Front-End, 433 MHz" {
+node "RF Front-End, 868 MHz" {
     [RF Transceiver] as RF_CHIP << CC1101 >>
     [Balun] as BAL
     [Pi-Match] as PI_NET
@@ -23,8 +23,6 @@ node "RF Front-End, 433 MHz" {
 }
 
 node "Peripherals" {
-    [L Reed Switch] as REEDL
-    [R Reed Switch] as REEDR
     [Push Button] as BTN
     [LED B] as LED_B
     [LED R] as LED_R
@@ -42,8 +40,6 @@ PWR -[bold]-> FERM : VCC
 ' Logic/Signals
 CTRL <-left-> FERM : I2C
 CTRL <-> RF_CHIP : SPI / GDO
-REEDR -up- REEDL
-REEDL -up-> CTRL : GPIO
 BTN -up-> CTRL : GPIO
 LED_B <-up- CTRL : GPIO
 LED_R <-up- CTRL : GPIO

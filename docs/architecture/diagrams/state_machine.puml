@@ -1,15 +1,25 @@
 @startuml
-title Gateway State Machine
+title Gateway State Machine - Exit Guardian v3.0.0
 
-[*] --> Boot
+' --- Global Layout Tweaks ---
+skinparam state {
+  StartColor #333333
+  BorderColor #444444
+  BackgroundColor #FFFFFF
+}
+hide empty description
 
+[*] -down-> Boot
+
+' ---------------- Boot ----------------
 state Boot {
-  Boot : entry / board_init, restore paired list AND per-sensor\n         state/battery from NVM (FR_006, NFR_007, NFR_008)
+  Boot : entry / board_init
+  Boot : entry / restore paired list & sensor states from NVM (FR_006, NFR_007, NFR_008)
   Boot : entry / IWDG enabled (NFR_004, 1 s)
 }
 
-Boot --> WaitingForConfig : [paired list empty]    /* FR_006 */
-Boot --> Monitoring       : [paired list non-empty] /* FR_006 */
+Boot -down-> WaitingForConfig : [paired list empty] /* FR_006 */
+Boot -right-> Monitoring       : [paired list non-empty] /* FR_006 */
 
 ' ---------------- Waiting-for-Configuration ----------------
 state WaitingForConfig {
@@ -22,72 +32,88 @@ state WaitingForConfig {
 
 ' ---------------- Monitoring ----------------
 state Monitoring {
-  [*] --> Idle
+  [*] -down-> Idle
 
   state Idle {
     Idle : entry / Red LED OFF (FR_008)
-    Idle : do    / evaluate ALERT on main-door (debounced 20 ms, FR_011)\n         or sensor packet (FR_012)
+    Idle : do    / evaluate ALERT on main-door event (FR_011) or sensor packet (FR_012)
   }
 
   state Alerting {
-    Alerting : entry / within 500 ms: Buzzer single 2 s ON pulse,\n           start Red LED blink 200 ms / 50% (FR_013)
-    Alerting : do    / Red LED blinking while ALERT (FR_013)
-    Alerting : exit  / truncate buzzer pulse if active,\n           Red LED returns to mode indication (FR_013)
+    Alerting : entry / Buzzer 2 s pulse (within 500 ms) & Red LED blink 200 ms / 50% (FR_013)
+    Alerting : do    / Red LED blinking while ALERT active (FR_013)
+    Alerting : exit  / truncate buzzer pulse & restore Red LED mode state (FR_013)
   }
 
-  Idle     --> Alerting : ALERT becomes true\n(main door OPEN ∧ ∃ paired sensor with last-known state OPEN) /* FR_012 */
-  Alerting --> Idle     : ALERT becomes false /* FR_012, FR_013 */
+  Idle -right-> Alerting : ALERT becomes true\n(main door OPEN ∧ ∃ paired window OPEN) /* FR_012 */
+  Alerting -left-> Idle  : ALERT becomes false /* FR_012, FR_013 */
 
   Monitoring : do / Blue heartbeat (FR_004)
-  Monitoring : do / Yellow low-battery flash 100 ms / 2 s,\n        in phase with blue (FR_022)
+  Monitoring : do / Yellow low-batt flash 100 ms / 2 s in phase with blue (FR_024)
   Monitoring : do / Update last-known sensor state & battery in NVM (NFR_008)
 }
 
-' ---------------- Pairing/Unpairing ----------------
+' ---------------- Pairing/Unpairing Superstate ----------------
 state PairingUnpairing {
-  PairingUnpairing : entry / start 20 s timeout (FR_015)
-  PairingUnpairing : do    / Yellow LED 500 ms / 1 s, Buzzer beep 500 ms / 1 s (FR_015, FR_023)
+  PairingUnpairing : entry / start 20 s timeout (FR_016)
   PairingUnpairing : do    / Blue heartbeat (FR_004)
-  PairingUnpairing : do    / alerts SUSPENDED (FR_016)
-  PairingUnpairing : do    / no ACK back to sensor (FR_027)
-  PairingUnpairing : exit  / stop pairing-mode yellow blink and pairing beep;\n         yellow returns to FR_022 (monitoring) or FR_010 (wait-for-config)
+  PairingUnpairing : do    / alerts SUSPENDED (FR_017)
+  PairingUnpairing : do    / no ACK sent to sensor (FR_029)
+  PairingUnpairing : exit  / stop yellow blink and pairing beep (FR_025)
+
+  state PairingWindow {
+    PairingWindow : do / Yellow LED 500 ms / 1 s (50% duty)\nBuzzer beep 500 ms / 1 s (FR_016)
+  }
+
+  state PairingMainDoor {
+    PairingMainDoor : do / Yellow LED double flash 100 ms / 1 s\nBuzzer double beep 100 ms / 1 s (FR_016)
+  }
 }
 
-' ---------------- Mode transitions ----------------
-WaitingForConfig --> PairingUnpairing : button short press ≤ 2 s /* FR_014 */
-Monitoring       --> PairingUnpairing : button short press ≤ 2 s /* FR_014 */
+' ---------------- Mode transitions into Pairing ----------------
+WaitingForConfig -down-> PairingWindow   : button short press ≤ 2 s\n/* FR_014, FR_023 */
+Monitoring       -down-> PairingWindow   : button short press ≤ 2 s\n/* FR_014, FR_023 */
 
-' Successful pair (FR_018): always returns to Monitoring (a sensor is now paired)
-PairingUnpairing --> Monitoring : PAIR_REQ from new sensor ID /\n  add to list, persist in NVM,\n  buzzer ON 2 s (FR_018, NFR_007)
+WaitingForConfig -down-> PairingMainDoor : button double press\n/* FR_014, FR_023 */
+Monitoring       -down-> PairingMainDoor : button double press\n/* FR_014, FR_023 */
 
-' Successful unpair (FR_020): destination depends on remaining paired count
-PairingUnpairing --> Monitoring : UNPAIR_REQ from known ID /\n  remove from list, persist (NFR_007),\n  buzzer ON 2 s (FR_020) [≥ 1 sensor remains]
-PairingUnpairing --> WaitingForConfig : UNPAIR_REQ from known ID /\n  remove from list, persist (NFR_007),\n  buzzer ON 2 s (FR_020) [no sensors remain]
+' ---------------- Pairing Success / Exit Transitions ----------------
+PairingWindow -up-> Monitoring : PAIR_REQ (new sensor ID)\n/ add window sensor, persist NVM, buzzer ON 2 s\n/* FR_019, NFR_007 */
 
-' Ignored requests (FR_019, FR_021) and timeout/button exit (FR_015, FR_017)
-PairingUnpairing --> WaitingForConfig : (timeout 20 s (FR_015) ∨\n  button short press (FR_017) ∨\n  PAIR_REQ existing ID (FR_019) ∨\n  UNPAIR_REQ unknown ID (FR_021))\n  [no sensors paired]
-PairingUnpairing --> Monitoring       : (timeout 20 s (FR_015) ∨\n  button short press (FR_017) ∨\n  PAIR_REQ existing ID (FR_019) ∨\n  UNPAIR_REQ unknown ID (FR_021))\n  [≥ 1 sensor paired]
+PairingMainDoor -up-> Monitoring : PAIR_REQ (new sensor ID)\n/ replace main-door sensor, persist NVM, buzzer ON 2 s\n/* FR_015, FR_019, NFR_007 */
+
+PairingUnpairing -left-> WaitingForConfig : UNPAIR_REQ (known ID) [no sensors remain]\n/ remove from NVM, buzzer ON 2 s /* FR_021 */
+
+PairingUnpairing -up-> Monitoring : UNPAIR_REQ (known ID) [≥ 1 sensor remains]\n/ remove from NVM, buzzer ON 2 s /* FR_021 */
+
+' Timeout, Ignored Requests, and Manual Cancel Exits
+PairingUnpairing -left-> WaitingForConfig : Exit event [no sensors paired]\n(timeout 20 s / button press / ignored packet)\n/* FR_015, FR_016, FR_018, FR_020, FR_022 */
+
+PairingUnpairing -up-> Monitoring : Exit event [≥ 1 sensor paired]\n(timeout 20 s / button press / ignored packet)\n/* FR_015, FR_016, FR_018, FR_020, FR_022 */
 
 note right of PairingUnpairing
-  Pairing/unpairing exits the mode immediately on
-  the first valid pair/unpair packet (FR_018–FR_021)
-  or on button short press (FR_017) or 20 s timeout (FR_015).
-  Press released in (2 s, 5 s) is ignored (FR_025).
-  No ACK is sent back to the sensor (FR_027).
+  <b>Exit Events:</b>
+  • Timeout 20 s (FR_016, FR_018)
+  • Button short press (FR_018)
+  • PAIR_REQ existing ID (FR_015, FR_020)
+  • UNPAIR_REQ unknown ID (FR_022)
+  
+  <i>Press (2 s, 5 s) ignored (FR_027). No ACK sent (FR_029).</i>
 end note
 
 ' ---------------- Factory RESET ----------------
 state FactoryReset <<choice>>
-WaitingForConfig --> FactoryReset : button held ≥ 5 s, then released /* FR_024 */
-Monitoring       --> FactoryReset : button held ≥ 5 s, then released /* FR_024 */
-PairingUnpairing --> FactoryReset : button held ≥ 5 s, then released /* FR_024 */
-FactoryReset --> WaitingForConfig : clear paired list & state in NVM\n  (FR_009, FR_026)
+
+WaitingForConfig -down-> FactoryReset : button held ≥ 5 s & released /* FR_026 */
+Monitoring       -down-> FactoryReset : button held ≥ 5 s & released /* FR_026 */
+PairingUnpairing -down-> FactoryReset : button held ≥ 5 s & released /* FR_026 */
+
+FactoryReset -up-> WaitingForConfig : clear paired list & NVM state\n/* FR_009, FR_028 */
 
 note right of FactoryReset
-  While holding ≥ 5 s: all LEDs blink 200 ms / 50% (FR_024).
-  A press released in (2 s, 5 s) is ignored (FR_025).
-  Watchdog hard RESET on SW fault (NFR_004, 1 s)
-  re-enters Boot.
+  While holding ≥ 5 s: all LEDs blink 200 ms / 50% (FR_026).
+  Press released in (2 s, 5 s) is ignored (FR_027).
+  Watchdog hard RESET on SW fault (NFR_004, 1 s) re-enters Boot.
 end note
 
 @enduml

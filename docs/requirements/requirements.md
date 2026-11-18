@@ -3,47 +3,63 @@
 ## 1. Introduction
 
 **Project Name:** Exit Guardian
-**Version:** v2.0.0
+**Version:** v3.0.0
 **Author(s):** Nuno Peixoto
 **Date:** 26/04/2026
-**Purpose:** A device installed on the main exit door that triggers an alert with a buzzer when the main exit door is open and any window is also open. When the main door is closed, the alert is always turned off. The device is intended for use in residential and commercial buildings.
+**Purpose:** A plug-in device that triggers an alert with a buzzer at the moment the exit door is open if any window/door is previously opened. When the exit door is closed, the alert is always turned off. The device is intended for use in residential and commercial buildings.
 
 ## 2. Overall System Requirements
 
-```{req} System composed of sensors and gateway
+```{req} System composed of wireless sensors and a single gateway
 :id: SR_001
 :status: approved
 :component: system
 
-The system shall be composed of one or more wireless sensors and a gateway.
+The system shall be composed of one or more wireless sensors for windows/doors, one main-door sensor and a gateway.
 ```
 
-```{req} Sensor reports window status and pair/unpair requests
+```{req} Window/door sensors and main-door sensors type
 :id: SR_002
+:status: approved
+:component: system
+
+The windows/doors and main-door sensor are the same. They are differentiated at the pairing moment with the gateway.
+```
+
+```{req} Sensor reports window/door open close events, user forced update status events and pair/unpair requests
+:id: SR_003
 :status: approved
 :component: sensor
 
-The wireless sensors shall send to the gateway, via RF, the current state of the monitored window (OPEN or CLOSED) together with a request field (PAIR_REQUEST, UNPAIR_REQUEST or NONE). A packet shall be sent on every window open/close event and on every sensor push-button press.
+The wireless sensors shall send to the gateway, via RF, the current state of the monitored window/door (OPEN or CLOSED) together with a request field (PAIR_REQUEST, UNPAIR_REQUEST or NONE). A packet shall be sent on every window or door open/close event and on every sensor push-button press.
 ```
 
 ```{req} Sensor powered by replaceable battery
-:id: SR_003
+:id: SR_004
 :status: approved
 :component: sensor
 
 The wireless sensors shall be powered by a replaceable battery.
 ```
 
+```{req} Main-door sensor
+:id: SR_005
+:status: approved
+:component: sensor
+
+The main-door sensor is a regular window/door sensor but it's paired as a main door sensor. When an open door event is sent, the gateway evaluates the status of other sensors in its internal memory and beeps in case an window or door is open. When the door sends a close event the beep ends.
+```
+
 ```{req} Gateway power supply
-:id: SR_004
+:id: SR_006
 :status: approved
 :component: gateway
 
-The gateway shall be powered by an AC-DC power supply, 230 V AC to 5 V DC.
+The gateway shall be powered by 230 V AC, directly from wall power socket.
 ```
 
 ```{req} Gateway buzzer
-:id: SR_005
+:id: SR_007
 :status: approved
 :component: gateway
 
@@ -51,7 +67,7 @@ The gateway shall have a buzzer.
 ```
 
 ```{req} Gateway button for reset and pairing
-:id: SR_006
+:id: SR_008
 :status: approved
 :component: gateway
 
@@ -59,7 +75,7 @@ The gateway shall have a push button to allow a hard factory reset and to pair/u
 ```
 
 ```{req} Gateway LEDs
-:id: SR_007
+:id: SR_009
 :status: approved
 :component: gateway
 
@@ -67,7 +83,7 @@ The gateway shall have three LEDs (blue, yellow, and red) to indicate its status
 ```
 
 ```{req} LED usage (heartbeat, config, alerts)
-:id: SR_008
+:id: SR_010
 :status: approved
 :component: gateway
 
@@ -77,22 +93,14 @@ The gateway shall use LEDs to indicate:
   - waiting-for-configuration and active alert — red.
 ```
 
-```{req} Gateway main-door sensor
-:id: SR_009
-:status: approved
-:component: gateway
-
-The gateway shall include an integrated sensor capable of detecting open and close events of the main exit door on which it is installed.
-```
-
 ## 3. System Functional Requirements
 
-```{req} Sensor sends a packet on window or push-button events
+```{req} Sensor sends a packet on window/door open/close event or push-button event
 :id: FR_001
 :status: approved
 :component: sensor
 
-When the monitored window is opened or closed, or when the sensor push button is pressed, the sensor shall send a data packet to the gateway via RF.
+When the monitored window/door or main-door is opened or closed, or when the sensor push button is pressed, the sensor shall send a data packet to the gateway via RF.
 ```
 
 ```{req} Sensor packet contents
@@ -103,7 +111,7 @@ When the monitored window is opened or closed, or when the sensor push button is
 Each sensor packet shall include:
   (a) the sensor's unique identifier (FR_003);
   (b) battery status — LOW (Vbat < threshold) or OK;
-  (c) packet type ∈ {OPEN, CLOSE}, reflecting the current state of the monitored window at the time of transmission;
+  (c) packet type ∈ {OPEN, CLOSE}, reflecting the current state of the monitored window/door at the time of transmission;
   (d) request type ∈ {PAIR_REQUEST, UNPAIR_REQUEST, NONE}, set to PAIR_REQUEST or UNPAIR_REQUEST when the packet is triggered by the sensor push button, and NONE otherwise.
 ```
 
@@ -171,20 +179,20 @@ After a factory RESET event, the gateway shall enter waiting-for-configuration m
 While in waiting-for-configuration mode, the yellow LED shall be OFF.
 ```
 
-```{req} Monitor main door open/close
+```{req} Monitor main-door open/close
 :id: FR_011
 :status: approved
 :component: gateway
 
-In monitoring mode, the gateway shall detect open and close events, with 20 ms debounce, of the main door.
+In monitoring mode, if the gateway receives a main-door open or close event it shall evaluate the alert logic.
 ```
 
-```{req} Alert logic based on main door and windows
+```{req} Alert logic based on main-door and windows/doors
 :id: FR_012
 :status: approved
 :component: system
 
-In monitoring mode, the gateway shall maintain the last-known open/closed state of each paired sensor. The alert condition shall be evaluated whenever the main door state changes or any paired sensor reports a state change, using the main door state and the last-known state of each paired sensor: ALERT ⇔ (main door OPEN) ∧ (∃ paired sensor with last-known state OPEN). On entry to monitoring mode, each paired sensor's last-known state shall be initialized from NVM (NFR_008). Sensors with no prior report shall default to CLOSED.
+In monitoring mode, the gateway shall maintain the last-known open/closed state of each paired sensor on windoes/doors. The alert condition shall be evaluated whenever the main door state changes or any paired sensor reports a state change, using the main-door state and the last-known state of each paired sensor: ALERT ⇔ (main door OPEN) ∧ (∃ paired sensor with last-known state OPEN). On entry to monitoring mode, each paired sensor's last-known state shall be initialized from NVM (NFR_008). Sensors with no prior report shall default to CLOSED.
 ```
 
 ```{req} Alert signal pattern
@@ -192,43 +200,63 @@ In monitoring mode, the gateway shall maintain the last-known open/closed state 
 :status: approved
 :component: gateway
 
-After the alert condition (FR_012) becomes true, within 500 ms, the gateway shall: (a) sound the buzzer for an intentional single 2 s ON pulse, and (b) start blinking the red LED with a 200 ms period and 50% duty cycle. The red LED shall continue blinking while the alert condition remains true. When the alert condition becomes false, the buzzer pulse shall be truncated and the red LED shall return to the indication corresponding to the current operating mode (FR_007 / FR_008).
+After the alert condition (FR_012) becomes true, within 500 ms, the gateway shall:
+  - (a) sound the buzzer for an intentional single 2 s ON pulse, and
+  - (b) start blinking the red LED with a 200 ms period and 50% duty cycle.
+ The red LED shall continue blinking while the alert condition remains true (any window open). When the alert condition becomes false, the buzzer pulse shall be truncated and the red LED shall return to the indication corresponding to the current operating mode (FR_007 / FR_008).
 ```
 
-```{req} Push button short press enters pairing/unpairing mode
+```{req} Push button short press or double press enters pairing/unpairing mode for window/door sensor and main-door sensor
 :id: FR_014
 :status: approved
 :component: gateway
 
-If the gateway is in monitoring or waiting-for-configuration mode and the push button is pressed and released in less or equal 2 s, the gateway shall enter pairing/unpairing mode.
+If the gateway is in monitoring or waiting-for-configuration mode and the push button is pressed and released in less or equal 2 s, or the push button is double pressed the gateway shall enter pairing/unpairing mode.
 ```
 
-```{req} Pairing/unpairing mode indicators and timeout
+```{req} Only one main-door sensor is supported
 :id: FR_015
 :status: approved
 :component: gateway
 
-In pairing/unpairing mode of operation, the gateway shall wait up to 20 s for a pair/unpair packet. During this period the yellow LED shall flash for 500 ms every second (50% duty cycle) and the buzzer shall beep for 500 ms every second. If no valid pair/unpair packet is received within 20 s, the gateway shall exit pairing/unpairing mode and return to its previous mode of operation, the buzzer is OFF and the yellow LED state following FR_022 or FR_010.
+If a pairing request from a new (unpaired) sensor ID is received during main-door pairing mode (FR_023), it shall replace the existing main-door sensor in NVM. Pairing requests from the currently registered main-door sensor ID shall be ignored per FR_020.
+```
+
+```{req} Pairing/unpairing mode indicators and timeout
+:id: FR_016
+:status: approved
+:component: gateway
+
+In pairing/unpairing mode, the gateway shall wait up to 20 s for a pair/unpair packet. 
+Indication cadences during this window shall depend on the mode entered (FR_023):
+  - Window/Door Pairing Mode (Single Press): Yellow LED flashes 500 ms ON / 500 ms OFF; 
+    Buzzer beeps 500 ms ON / 500 ms OFF.
+  - Main-Door Pairing Mode (Double Press): Yellow LED flashes 100 ms ON / 100 ms OFF (double flash per second); 
+    Buzzer beeps 100 ms ON / 100 ms OFF (double beep per second).
+If no valid packet is received within 20 s, the gateway shall exit pairing/unpairing mode and restore LED indicators per FR_025.
 ```
 
 ```{req} In pairing/unpairing mode the alerts are suspended
-:id: FR_016
+:id: FR_017
 :status: approved
 :component: gateway
 
 While in pairing/unpairing mode, the gateway shall not evaluate or trigger the alert condition (FR_012).
 ```
 
-```{req} Button press exits pairing/unpairing mode
-:id: FR_017
+```{req} Exit pairing/unpairing mode
+:id: FR_018
 :status: approved
 :component: gateway
 
-If the gateway is in pairing/unpairing mode of operation and the push button is short-pressed once, the gateway shall exit pairing/unpairing mode and return to its previous mode of operation (waiting-for-configuration if no sensors are paired, otherwise monitoring).
+If the gateway is in pairing/unpairing mode of operation it shall exit and return to its previous mode of operation (waiting-for-configuration if no sensors are paired, otherwise monitoring) on any of the following conditions:
+  - The gateway push button is short-pressed once.
+  - The 20 s timeout is reached.
+  - A sensor is successefully paired/unpaired.
 ```
 
 ```{req} Pair sensor confirmation
-:id: FR_018
+:id: FR_019
 :status: approved
 :component: gateway
 
@@ -236,7 +264,7 @@ In case a pairing request from a new sensor ID is received in pairing/unpairing 
 ```
 
 ```{req} Known sensor ID pairing request handling
-:id: FR_019
+:id: FR_020
 :status: approved
 :component: gateway
 
@@ -244,7 +272,7 @@ In case a pairing request from an existing sensor ID is received in pairing/unpa
 ```
 
 ```{req} Unpair sensor confirmation
-:id: FR_020
+:id: FR_021
 :status: approved
 :component: gateway
 
@@ -252,31 +280,40 @@ In case an unpairing request from a known sensor ID is received in pairing/unpai
 ```
 
 ```{req} Unknown sensor ID unpairing request handling
-:id: FR_021
+:id: FR_022
 :status: approved
 :component: gateway
 
 In case an unpairing request from an unknown (non-paired) sensor ID is received in pairing/unpairing mode of operation, the gateway shall ignore it, the pairing beep and pairing yellow blink shall stop and exit pairing/unpairing mode of operation.
 ```
 
-```{req} Indicate sensor low battery via yellow + blue sync
-:id: FR_022
-:status: approved
-:component: gateway
-
-In monitoring mode, in case, at least one paired sensor's last-reported battery status is LOW, the yellow LED shall flash for 100 ms every 2 s, in phase with the blue heartbeat (FR_004).
-```
-
-```{req} Yellow LED functionality in pairing/unpairing mode
+```{req} Differentiate window/door sensors from main-door sensor
 :id: FR_023
 :status: approved
 :component: gateway
 
-While in pairing/unpairing mode, the yellow LED shall follow the pairing-mode pattern (FR_015) and the low-battery indication (FR_022) shall be suspended. On exit from pairing/unpairing mode, the yellow LED state shall follow FR_022 or FR_010.
+When the pairing/unpairing mode is triggered by a single push button press it only allows the pairing of window/door sensors.
+When the pairing/unpairing mode is triggered by a double push button press it only allows the pairing of main-door sensor.
+```
+
+```{req} Indicate sensor low battery via yellow + blue sync
+:id: FR_024
+:status: approved
+:component: gateway
+
+In monitoring mode, if at least one paired sensor's last-reported battery status is LOW, the yellow LED shall flash for 100 ms every 2 s, in phase with the blue heartbeat (FR_004).
+```
+
+```{req} Yellow LED functionality in pairing/unpairing mode
+:id: FR_025
+:status: approved
+:component: gateway
+
+While in pairing/unpairing mode, the yellow LED shall follow the pairing-mode pattern (FR_016) and the low-battery indication (FR_024) shall be suspended. On exit from pairing/unpairing mode, the yellow LED state shall follow FR_024 or FR_010.
 ```
 
 ```{req} Long-press triggers factory reset
-:id: FR_024
+:id: FR_026
 :status: approved
 :component: gateway
 
@@ -284,15 +321,15 @@ If the push button is held for ≥ 5 s, the gateway shall blink all LEDs at a 20
 ```
 
 ```{req} Push button press
-:id: FR_025
+:id: FR_027
 :status: approved
 :component: gateway
 
-A press released in (2 s, 5 s) shall be ignored (no mode change, no factory RESET).
+A press released between 2 s and 5 s shall be ignored (no mode change, no factory RESET).
 ```
 
 ```{req} Post-reset has no paired sensors
-:id: FR_026
+:id: FR_028
 :status: approved
 :component: gateway
 
@@ -300,7 +337,7 @@ After a factory RESET, the gateway shall have no sensors attached, being in wait
 ```
 
 ```{req} Gateway ACK
-:id: FR_027
+:id: FR_029
 :status: approved
 :component: gateway
 
@@ -383,7 +420,8 @@ The RF link between sensors and gateway shall use Gaussian Frequency Shift Keyin
 
 ## 5. System Assumptions & Constraints
 
-- Security is not a critical factor.  
+- Security is not a critical factor.
+- There is no acknowledge of the gateway to messages sent by the sensors. 
 - No tamper detection or advanced security features.
 - System operates in 0–40 °C, 10–90% RH, non-condensing.
 
@@ -397,12 +435,12 @@ The RF link between sensors and gateway shall use Gaussian Frequency Shift Keyin
 Device shall comply with CE marking requirements (Low Voltage Directive, EMC Directive).
 ```
 
-```{req} EU RF compliance (433 MHz ISM)
+```{req} EU RF compliance (868 MHz ISM)
 :id: LR_002
 :status: approved
 :component: system
 
-RF module shall operate only on frequencies allowed in the EU (e.g., 433 MHz ISM band, duty cycle limits).
+RF module shall operate only on frequencies allowed in the EU (e.g., 868 MHz ISM band, duty cycle limits).
 ```
 
 ```{req} RoHS / REACH compliance

@@ -1,0 +1,8 @@
+set(CMAKE_SYSTEM_NAME Generic)
+set(CMAKE_SYSTEM_PROCESSOR stm8)
+
+find_program(SDCC sdcc REQUIRED)
+set(CMAKE_C_COMPILER ${SDCC})
+set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
+
+set(CMAKE_C_FLAGS_INIT "-mstm8 --std-c11 --opt-code-size")
