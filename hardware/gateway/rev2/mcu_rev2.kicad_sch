@@ -688,6 +688,243 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "EEE-FK1C470UR:EEE-FK1C470UR"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 8.89 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "EEE-FK1C470UR"
+				(at 8.89 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "EEE0GA101SR"
+				(at 8.89 -96.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" "http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf"
+				(at 8.89 -196.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "Panasonic Aluminium Electrolytic Capacitor FK SMD Series 16V dc 47uF, Surface Mount Electrolytic, +/-20% +105C C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Height" "6.5"
+				(at 8.89 -396.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Part Number" "667-EEE-FK1C470UR"
+				(at 8.89 -496.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FK1C470UR?qs=qE6bgDGEOCtTLRbnThdRSg%3D%3D"
+				(at 8.89 -596.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Name" "Panasonic"
+				(at 8.89 -696.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Part_Number" "EEE-FK1C470UR"
+				(at 8.89 -796.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(symbol "EEE-FK1C470UR_1_1"
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.064 1.778) (xy 4.064 0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.572 1.27) (xy 3.556 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 2.54)
+					(end 5.842 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 7.62 -2.54) (xy 6.858 -2.54) (xy 6.858 2.54) (xy 7.62 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 0) (xy 10.16 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "IRM-01-3-3:IRM-01-3.3"
 			(pin_names
 				(offset 0.254)
@@ -3844,7 +4081,7 @@
 	)
 	(text "Use internal MCU pull-up.\n~45 Kohms"
 		(exclude_from_sim no)
-		(at 62.738 57.658 0)
+		(at 67.818 77.978 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3925,6 +4162,12 @@
 		(uuid "3f0b0883-e568-4566-bdb8-0716d5016425")
 	)
 	(junction
+		(at 49.53 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b902374-4597-4567-8757-4dd635b968a0")
+	)
+	(junction
 		(at 240.03 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3991,6 +4234,12 @@
 		(uuid "ce6fce30-8e57-40e1-ab57-6d8aa7ee25ed")
 	)
 	(junction
+		(at 39.37 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db61eeeb-1ce7-4587-8e6f-e291cd58f591")
+	)
+	(junction
 		(at 223.52 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4035,7 +4284,7 @@
 		(uuid "1e89f00b-f27e-4377-a43f-621e4ea9d905")
 	)
 	(no_connect
-		(at 91.44 67.31)
+		(at 96.52 87.63)
 		(uuid "1fffdfc9-08e9-4d83-ad83-d7177e1fed94")
 	)
 	(no_connect
@@ -4043,7 +4292,7 @@
 		(uuid "2ea21a98-6c7f-464a-b92a-434345b94499")
 	)
 	(no_connect
-		(at 76.2 67.31)
+		(at 81.28 87.63)
 		(uuid "37337a6e-bf0c-4f6d-9ba3-7d445242841f")
 	)
 	(no_connect
@@ -4125,6 +4374,16 @@
 			(type default)
 		)
 		(uuid "09552eb5-55cb-433e-91ac-ceeb3fd0f6a0")
+	)
+	(wire
+		(pts
+			(xy 49.53 36.83) (xy 52.07 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0993f77e-f3b5-4e67-b7a7-f7c0798fc534")
 	)
 	(wire
 		(pts
@@ -4348,6 +4607,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 36.83) (xy 49.53 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "391b5fb8-4e82-4daf-8003-223a7eaee789")
+	)
+	(wire
+		(pts
 			(xy 153.67 25.4) (xy 149.86 25.4)
 		)
 		(stroke
@@ -4358,7 +4627,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 41.91) (xy 99.06 36.83)
+			(xy 99.06 60.96) (xy 99.06 36.83)
 		)
 		(stroke
 			(width 0)
@@ -4375,6 +4644,16 @@
 			(type default)
 		)
 		(uuid "3b3306bf-28e0-485e-ad39-36d7e381d5be")
+	)
+	(wire
+		(pts
+			(xy 39.37 36.83) (xy 49.53 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b5fdd02-6b11-4ca4-b5a9-28681a7a18ea")
 	)
 	(wire
 		(pts
@@ -4418,6 +4697,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 53.34) (xy 49.53 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f1f9452-b4a3-410b-89b5-73decf6b1c74")
+	)
+	(wire
+		(pts
 			(xy 114.3 123.19) (xy 114.3 128.27)
 		)
 		(stroke
@@ -4428,7 +4717,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 36.83) (xy 52.07 36.83)
+			(xy 34.29 36.83) (xy 39.37 36.83)
 		)
 		(stroke
 			(width 0)
@@ -4488,6 +4777,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 55.88) (xy 39.37 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cfd8d81-1129-4b40-8b91-e009da09799a")
+	)
+	(wire
+		(pts
 			(xy 64.77 138.43) (xy 64.77 142.24)
 		)
 		(stroke
@@ -4528,7 +4827,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 69.85) (xy 101.6 62.23)
+			(xy 106.68 90.17) (xy 106.68 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4538,7 +4837,17 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 62.23) (xy 91.44 62.23)
+			(xy 39.37 36.83) (xy 39.37 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f984193-1e57-44f4-9cda-3b4f2f22fb30")
+	)
+	(wire
+		(pts
+			(xy 106.68 82.55) (xy 96.52 82.55)
 		)
 		(stroke
 			(width 0)
@@ -5188,7 +5497,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 62.23) (xy 76.2 62.23)
+			(xy 71.12 82.55) (xy 81.28 82.55)
 		)
 		(stroke
 			(width 0)
@@ -5880,7 +6189,7 @@
 	)
 	(global_label "BTN"
 		(shape input)
-		(at 66.04 62.23 180)
+		(at 71.12 82.55 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5890,7 +6199,7 @@
 		)
 		(uuid "e09ba37e-19a2-4069-bfb1-6b80ab454710")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.4867 62.23 0)
+			(at 64.5667 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6782,7 +7091,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 99.06 41.91 0)
+		(at 99.06 60.96 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6793,7 +7102,7 @@
 		(fields_autoplaced yes)
 		(uuid "20c605c9-02be-4f6b-a779-863521e1312b")
 		(property "Reference" "#PWR014"
-			(at 99.06 48.26 0)
+			(at 99.06 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6804,7 +7113,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 99.06 46.99 0)
+			(at 99.06 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6814,7 +7123,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 41.91 0)
+			(at 99.06 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6825,7 +7134,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 41.91 0)
+			(at 99.06 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6836,7 +7145,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 99.06 41.91 0)
+			(at 99.06 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6853,6 +7162,143 @@
 			(project "gateway_rev2"
 				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 49.53 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2378cb12-7a20-4356-8de3-f86117a5a5ce")
+		(property "Reference" "C12"
+			(at 53.34 48.2599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 53.34 50.7999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 50.4952 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 49.53 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "603-CC402KRX7R7BB104"
+			(at 49.53 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Link" "https://pt.mouser.com/en/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+			(at 49.53 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 49.53 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC0402KRX7R7BB104"
+			(at 49.53 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://pt.mouser.com/en/ProductDetail/YAGEO/CC0402KRX7R7BB104?qs=AgBp2OyFlx%252BSOyhfyS7hpw%3D%3D"
+			(at 49.53 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3597d2fc-92cf-4835-bcc9-43c6b38efbfa")
+		)
+		(pin "1"
+			(uuid "fb60b88c-c616-41b1-8b15-7d3ccf2c61ab")
+		)
+		(instances
+			(project "gateway_rev2"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -7832,6 +8278,84 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 49.53 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4062f3c2-8eda-4348-a68a-b17fa52ac3c3")
+		(property "Reference" "#PWR015"
+			(at 49.53 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 49.53 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 49.53 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "911b4583-bdea-4f1a-846c-8546641e4e99")
+		)
+		(instances
+			(project "gateway_rev2"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 151.13 60.96 0)
 		(unit 1)
 		(body_style 1)
@@ -8483,6 +9007,227 @@
 		)
 	)
 	(symbol
+		(lib_id "EEE-FK1C470UR:EEE-FK1C470UR")
+		(at 39.37 43.18 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "72b923d4-4e57-41ca-81e9-61ff3c9d8624")
+		(property "Reference" "C8"
+			(at 32.512 48.006 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 30.734 51.054 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MyParts:EEE0GA101SR"
+			(at -56.82 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf"
+			(at -156.82 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Panasonic Aluminium Electrolytic Capacitor FK SMD Series 16V dc 47uF, Surface Mount Electrolytic, +/-20% +105C C"
+			(at 39.37 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "6.5"
+			(at -356.82 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "667-EEE-FK1C470UR"
+			(at -456.82 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FK1C470UR?qs=qE6bgDGEOCtTLRbnThdRSg%3D%3D"
+			(at -556.82 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Panasonic"
+			(at -656.82 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "EEE-FK1C470UR"
+			(at -756.82 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "1"
+			(uuid "ed63a8e5-8ea1-4c49-945e-5473e7379096")
+		)
+		(pin "2"
+			(uuid "9962109c-f1f4-4c92-bb2c-c1141f7509e9")
+		)
+		(instances
+			(project "gateway_rev2"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 39.37 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7553cc62-4d62-44e7-b73c-a38a57eb5db2")
+		(property "Reference" "#PWR019"
+			(at 39.37 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 39.37 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 39.37 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5b2089fb-e02d-4379-a992-ec6ce8f413cf")
+		)
+		(instances
+			(project "gateway_rev2"
+				(path "/d3cb7130-decc-418b-958e-e5d84a8d867f/ec220677-d66d-4ee1-961f-1c93fb46783a"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 223.52 115.57 0)
 		(unit 1)
@@ -8897,7 +9642,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 101.6 69.85 0)
+		(at 106.68 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8908,7 +9653,7 @@
 		(fields_autoplaced yes)
 		(uuid "86316ca6-a2ef-4c32-8a28-148512bd90a0")
 		(property "Reference" "#PWR022"
-			(at 101.6 76.2 0)
+			(at 106.68 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8919,7 +9664,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 101.6 74.93 0)
+			(at 106.68 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8929,7 +9674,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 101.6 69.85 0)
+			(at 106.68 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8940,7 +9685,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 69.85 0)
+			(at 106.68 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8951,7 +9696,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 101.6 69.85 0)
+			(at 106.68 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9053,7 +9798,7 @@
 	)
 	(symbol
 		(lib_id "TS02-66-100-BK-160-SCR-D:TS02-66-100-BK-160-SCR-D")
-		(at 76.2 62.23 0)
+		(at 81.28 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9064,7 +9809,7 @@
 		(fields_autoplaced yes)
 		(uuid "8c2647d6-b2e8-4863-8746-d68239b99e9d")
 		(property "Reference" "S1"
-			(at 83.82 57.15 0)
+			(at 88.9 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9074,7 +9819,7 @@
 			)
 		)
 		(property "Value" "TS02-66-100-BK-160-SCR-D"
-			(at 83.82 59.69 0)
+			(at 88.9 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9084,7 +9829,7 @@
 			)
 		)
 		(property "Footprint" "MyParts:TS0266100BK100LCRD"
-			(at 88.9 158.42 0)
+			(at 93.98 178.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9096,7 +9841,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.sameskydevices.com/product/resource/ts02.pdf"
-			(at 88.9 258.42 0)
+			(at 93.98 278.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9108,7 +9853,7 @@
 			)
 		)
 		(property "Description" "6 x 6 mm, 10 mm Actuator Height Off PCB, 160 gf, Black, Short Crimped, Through Hole, SPST, Tactile Switch"
-			(at 76.2 62.23 0)
+			(at 81.28 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9119,7 +9864,7 @@
 			)
 		)
 		(property "Height" "10.2"
-			(at 88.9 458.42 0)
+			(at 93.98 478.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9131,7 +9876,7 @@
 			)
 		)
 		(property "Mouser Part Number" "179-TS0266100BK160SC"
-			(at 88.9 558.42 0)
+			(at 93.98 578.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9143,7 +9888,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CUI-Devices/TS02-66-100-BK-160-SCR-D?qs=A6eO%252BMLsxmSVhjdeW1GQhQ%3D%3D"
-			(at 88.9 658.42 0)
+			(at 93.98 678.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9155,7 +9900,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Same Sky"
-			(at 88.9 758.42 0)
+			(at 93.98 778.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9167,7 +9912,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "TS02-66-100-BK-160-SCR-D"
-			(at 88.9 858.42 0)
+			(at 93.98 878.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
