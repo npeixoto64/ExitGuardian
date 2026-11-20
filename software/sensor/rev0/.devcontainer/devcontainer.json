@@ -1,0 +1,29 @@
+{
+  "name": "STM8 (SDCC) Dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "ms-vscode.makefile-tools",
+        "xaver.clang-format"
+      ],
+      "settings": {
+        "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+        "editor.formatOnSave": true
+      }
+    }
+  },
+
+  "runArgs": [
+    "--privileged",
+    "--network=host",
+    "--device=/dev/bus/usb:/dev/bus/usb"
+  ]
+}
